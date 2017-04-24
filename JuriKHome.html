@@ -70,12 +70,21 @@ body {margin:0;}
 		font-family: Century Gothic
 	}
 
+.container {
+    position: relative;
+    width: 100%;
+}
+
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #000000;
   position: fixed;
   top: 0;
   width: 100%;
+  
+  display: inline-block;
+  vertical-align: top;
+
 }
 
 .navbar a {
@@ -86,6 +95,12 @@ body {margin:0;}
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  margin-top: 5px;
+	
   
       cursor: pointer;
 
@@ -105,6 +120,51 @@ body {margin:0;}
   font-family: Century Gothic Bold;
 }
 
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;    /* if you want it vertically middle of the navbar. */
+
+}
+
+
+img {
+    width:100%;
+}
+
+#mainmenu ul li {
+  display: inline;  
+}
+
+#mainmenu ul {
+  margin: 0;
+  padding: 0;
+  
+  list-style-type: none;
+}
+
+#mainmenu li {
+  font-size: 1px;
+  width: 1px;
+  padding: 0;
+}
+
+#mainmenu span {
+  height: 31px;
+
+  padding: 0px;
+  margin: 0px
+  font-size: 1px;
+}
+
+#menuitem_1 {
+  width: 29px;
+  background-image: url("jkiconcrop.jpg");
+}
+
 #Home {background-color:red;}
 #News {background-color:green;}
 #Contact {background-color:blue;}
@@ -114,20 +174,34 @@ body {margin:0;}
 
 </head>
 <body>
+	
+    <div class="container">
+
 	<!--Grid Start-->
     
     	         <!-- Navi Start -->		
+                    <div id="mainmenu">
                     <div class="navbar">
+                    <ul>
+ 
+                    <li> <img class="logo" src="jkiconcropD.png"> </li>
+                    
+		            <li><a href="#News"><b></b></a></li>	
+                   	<li><a href="#Portfolio"><b>Portfolio</b></a></li>
+                    <li><a href="#Projects"><b>Projects</b></a></li>
+                    <li><a href="#contact"><b>Contact</b></a></li>
+                    </ul>	
 
-                      <a href="#home"><b>Home</b><background-color: #0></a>
-                      <a href="#news"><b>News</b></a>
-                      <a href="#contact"><b>Contact</b></a>
-                      <a href="#about"><b>About</b></a>
 
+  					</div>
                     </div>
                     
                     <div class="main">
+                      
+                      
                       <h1>Juri Knauth Portfolio</h1>
+                      
+                      <h2>Game Design</h2>
                   
                       <p>page under construction</p>
 
@@ -162,6 +236,6 @@ body {margin:0;}
         <div id="div1" class="fluid">
    		</div>
 	</div>
-   
+	</div>   
 </body>
 </html>
