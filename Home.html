@@ -1,35 +1,290 @@
 <!doctype html>
-<html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="">
+<!--<![endif]-->
+
 <head>
+
 <meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
-<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--Parralax START-->
-body, html {
-    height: 100%;
+<meta name="description" content="Juri Knauths Portfolio">
+<meta name="keywords" content="Juri, Knauth, Portfolio, Game Designer">
+<meta name="author" content="Juri Knauth">
+
+<link rel="favicon" href="https://juriknauth.github.io/favicon.ico" />
+<link rel="favicon-16x16" href="favicon-16x16.ico" type="image/x-icon">
+
+<title>Portfolio Juri Knauth</title>
+
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="../WebWIP3/Home.css" rel="stylesheet" type="text/css">
+
+<script src="respond.min.js"></script>
+
+<style>
+body {margin:0;
+
+				/* The image used */
+				background-image: url("JuriKJBW.jpg");
+			
+				/* Set a specific height */
+				height: 0px;
+			
+				/* Create the parallax scrolling effect */
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+	}
+	
+	{font-family: "Century Gothic", sans-serif;}
+	
+	h1   {    font-family: Century Gothic;}
+	h2   {    font-family: Century Gothic;}
+	h3   {    font-family: Century Gothic;}
+	h4   {    font-family: Century Gothic;}
+	h5   {    font-family: Century Gothic;}
+	h6   {    font-family: Century Gothic;}
+	
+	p    {    font-family: Century Gothic;}
+	
+	a:link {
+		color: DodgerBlue ;
+		background-color: transparent;
+		text-decoration: none;
+		
+		font-family: Century Gothic
+	}
+	
+	a:visited {
+		color: BlueViolet ;
+		background-color: transparent;
+		text-decoration: none;
+		
+		font-family: Century Gothic
+	}
+	
+	a:hover {
+		color: SandyBrown ;
+		background-color: transparent;
+		text-decoration: underline;
+		
+		font-family: Century Gothic
+	}
+	
+	a:active {
+		color: Tomato ;
+		background-color: transparent;
+		text-decoration: underline;
+		
+		font-family: Century Gothic
+	}
+
+.container {
+    position: relative;
+    width: 100%;
 }
- <style>
-.parallax {
-    /* The image used */
-    background-image: url("\Content\Pics.jpg");
 
-    /* Set a specific height */
-    height: 500px;
+.navbar {
+  overflow: hidden;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+  display: inline-block;
+  vertical-align: top;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  margin-top: 5px;
+	
+  
+      cursor: pointer;
+
+  
+  font-family: Century Gothic;
+}
+
+.navbar a:hover {
+    background-color: #777;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 200; /* Used in this example to enable scrolling */
+  
+  font-family: Century Gothic Bold;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;    /* if you want it vertically middle of the navbar. */
+
+}
+
+
+img {
+    width:100%;
+}
+
+#mainmenu ul li {
+  display: inline;  
+}
+
+#mainmenu ul {
+  margin: 0;
+  padding: 0;
+  
+  list-style-type: none;
+}
+
+#mainmenu li {
+  font-size: 1px;
+  width: 1px;
+  padding: 0;
+}
+
+#mainmenu span {
+  height: 31px;
+
+  padding: 0px;
+  margin: 0px
+  font-size: 1px;
+}
+
+#menuitem_1 {
+  width: 29px;
+  background-image: url("jkiconcrop.jpg");
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#Home {background-color:red;}
+#News {background-color:green;}
+#Contact {background-color:blue;}
+#About {background-color:orange;}
+
 </style>
 
-<!-- Container element -->
-<div class="parallax"></div>
+</head>
+<body>
+	
+    <div class="container">
 
-<!--Parralax END-->
+	<!--Grid Start-->
+    
+    	         <!-- Navi Start -->		
+                    <div id="mainmenu">
+                    <div class="navbar">
+                    <ul>
+ 
+                    <li> <img class="logo" src="jkiconcropD.png"> </li>
+                    
+		            <li><a href="#News"><b></b></a></li>	
+                   	<li><a href="#Portfolio"><b>Portfolio</b></a></li>
+                    <li><a href="#Projects"><b>Projects</b></a></li>
+                    <li><a href="#contact"><b>Contact</b></a></li>
+                    </ul>	
 
+
+  					</div>
+                    </div>
+                    
+                    <div class="main">
+                      
+                      
+                      <h1>Juri Knauth Portfolio</h1>
+                      <p>page under construction</p>
+                      
+                      <h2>Game Design</h2>
+                      
+                      <p>
+                      <b>Email: </b><a href="mailto:knauth.juri@gmail.com?Subject=Hello%20via%20Portfolio" target="_top">knauth.juri@gmail.com</a><br>
+                      <b>Tel: </b>+49 17662329631<br>
+                      <b>LinkedIn: </b><a href="https://www.linkedin.com/in/juri-k-777396130">https://www.linkedin.com/in/juri-k-777396130</a> <br>
+                      <b>Sketchfab: </b><a href="https://sketchfab.com/JuriK/models">https://sketchfab.com/JuriK/models</a> <br>
+					
+						
+                        <h2>Team-Projects</h2>
+                            <p>
+                            <b>Boardgames: </b><br>
+                                Adam Mania <br>
+                                Conga Line <br>
+                                Solar Tower Defense <br>
+                                Heroes on the rice <br>
+                            <b>Video Games: </b><br>
+                                Crashed Captain <br>
+                                Fluffy Dice <br>
+                            <b>Physical Games:</b> <br>
+                                Slurp <br>
+                                Dance it off! <br>
+                        
+                        <h2>Solo-Projects</h2>
+                            <p>
+                            <b>Boardgames: </b><br>
+                            	Heul Doch! <br>
+                            <b>Video Game Concepts: </b><br>
+                            	V.o.A. <br>
+                            <b>Scientific Paper:</b> <br>
+                            	America’s Army: Spiel oder Rekrutierungsmittel? <br>
+                            <b>Mods:</b> <br>
+                            	Warcraft III, Shadow of War<br>
+                            <b>Systems:</b> <br>
+                            	Unity, Hazardous Inventory System<br>
+                            <b>Maps:</b> <br>
+                            	Heroes of Might and Magic III, Wake of Gods, Cake Kingdom<br>
+
+                      </p>
+                      
+
+                    </div>
+            <!-- Navi End -->
+    
+	<div class="gridContainer clearfix">
+
+
+            
+
+            
+            <div class="parallax"></div>
+        <div id="div1" class="fluid">
+   		</div>
+	</div>
+	</div>   
 </body>
 </html>
