@@ -20,41 +20,61 @@
 <title>Portfolio Juri Knauth</title>
 
 <link href="boilerplate.css" rel="stylesheet" type="text/css">
-<link href="../WebWIP3/Home.css" rel="stylesheet" type="text/css">
+<link href="file:///L|/WebWIP3/Home.css" rel="stylesheet" type="text/css">
 
 <script src="respond.min.js"></script>
 
 <style>
-body {margin:0;
 
-				/* The image used */
-				background-image: url("JuriKJBW.jpg");
-			
-				/* Set a specific height */
-				height: 0px;
-			
-				/* Create the parallax scrolling effect */
-				background-attachment: fixed;
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: cover;
+	html {
+	  -moz-osx-font-smoothing: grayscale;
+	  -webkit-font-smoothing: antialiased;
+	  min-width: 300px;
+	  overflow-x: hidden;
+	  overflow-y: scroll;
+	  text-rendering: optimizeLegibility;
 	}
+
+	body {
+		
+		margin:0;
 	
-	{font-family: "Century Gothic", sans-serif;}
+		background-image: url("Wohnzimmer1920.jpg");
 	
-	h1   {    font-family: Century Gothic;}
-	h2   {    font-family: Century Gothic;}
-	h3   {    font-family: Century Gothic;}
-	h4   {    font-family: Century Gothic;}
-	h5   {    font-family: Century Gothic;}
-	h6   {    font-family: Century Gothic;}
+		height: 0px;
 	
-	p    {    font-family: Century Gothic;}
+		/* parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+		color: #000000;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.4;
+		
+		margin-bottom:50px;
+
+		}
+	
+		{font-family: "Century Gothic", sans-serif;}
+		
+		h1   {    font-family: Century Gothic;}
+		h2   {    font-family: Century Gothic;}
+		h3   {    font-family: Century Gothic;}
+		h4   {    font-family: Century Gothic;}
+		h5   {    font-family: Century Gothic;}
+		h6   {    font-family: Century Gothic;}
+		
+		p    {    font-family: Century Gothic;}
+	
 	
 	a:link {
 		color: DodgerBlue ;
 		background-color: transparent;
 		text-decoration: none;
+		cursor: pointer;
 		
 		font-family: Century Gothic
 	}
@@ -70,7 +90,6 @@ body {margin:0;
 	a:hover {
 		color: SandyBrown ;
 		background-color: transparent;
-		text-decoration: underline;
 		
 		font-family: Century Gothic
 	}
@@ -83,208 +102,806 @@ body {margin:0;
 		font-family: Century Gothic
 	}
 
-.container {
-    position: relative;
-    width: 100%;
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: #000000;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  
-  display: inline-block;
-  vertical-align: top;
-
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
-  margin-top: 5px;
+	.container {
+		position: relative;
+		height: auto;
+		width: 100%;
+	}
 	
-  
-      cursor: pointer;
+	.logo {
+		vertical-align: top;
+		width: 50px;
+		height: 50px;
+		margin-top: 5px;
+	}
 
-  
-  font-family: Century Gothic;
-}
+	.img {
+		display:block;
+		width: 100%;
+		height: 100%;
+		margin:100% auto;
+	}
+	
+	.cf {
 
-.navbar a:hover {
-    background-color: #777;
-}
+	display:block;
+	background: #eee;
+	position: relative;
+	  height:100%;
+	  width:100%;
+	  margin:70% auto;
 
-.main {
-  padding: 16px;
-  margin-top: 30px;
-  height: 200; /* Used in this example to enable scrolling */
-  
-  font-family: Century Gothic Bold;
-}
+	}
+	
+	#cf {
 
-.logo {
-    display: inline-block;
-    vertical-align: top;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    margin-top: 5px;    /* if you want it vertically middle of the navbar. */
-
-}
+	display:block;
+	background: #eee;
+	position: relative;
+	  width:100%;
+	  margin:70% auto;
 
 
-img {
-    width:100%;
-}
+	  flex: 1;
+	  margin-top: 5px;
+	  background-color: ;
+	  color: black;
+	  
+	}
+	
+	#cf img {
+		
+	  position:absolute;
+	  left:0;
+	  -webkit-transition: opacity 1s ease-in-out;
+	  -moz-transition: opacity 1s ease-in-out;
+	  -o-transition: opacity 1s ease-in-out;
+	  transition: opacity 1s ease-in-out;
+	}
+	
+	#cf img.top:hover {
+	  opacity:0;
+	}
+	
+	.toprow {
+	  overflow: hidden;
+	  background-color: #000000;
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	  
+	  display: inline-block;
+	  vertical-align: top;
+	  	
+	}
 
-#mainmenu ul li {
-  display: inline;  
-}
+	.navbar {
+	  overflow: hidden;
+	  background-color: #000000;
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	  
+	  z-index: 500;
+	  
+	  display: inline-block;
+	  vertical-align: top;
+	  
 
-#mainmenu ul {
-  margin: 0;
-  padding: 0;
-  
-  list-style-type: none;
-}
+	  margin: 0 auto;
+	  max-width: 1040px;
+	  
+	  text-align: center;
+	
+	
+	}
 
-#mainmenu li {
-  font-size: 1px;
-  width: 1px;
-  padding: 0;
-}
+	.navbar a {
+	  float: left;
+	  display: block;
+	  color: #FFFFFF;
+	  text-align: center;
+	  padding: 14px 14px;
+	  text-decoration: none;
+	  font-size: 17px;
+	  
+	  display: inline-block;
+	  vertical-align: top;
+	  margin-right: 0px;
+	  margin-top: 5px;
+	  
+	  margin: 0 auto;
+	  max-width: 1040px;
+	  
+	  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
-#mainmenu span {
-  height: 31px;
+	  display: flex;
+	  flex: 1;
+	  flex-direction: column;
+	  flex-basis: auto;
+	  margin: 5px;
+	  
+	  z-index: 500;	
+	  
+		  cursor: pointer;
+	
+	  
+	  font-family: Century Gothic;
+	}
 
-  padding: 0px;
-  margin: 0px
-  font-size: 1px;
-}
+	.navbar a:hover {
+		background-color: #777;
+	}
 
-#menuitem_1 {
-  width: 29px;
-  background-image: url("jkiconcrop.jpg");
-}
+	.botbar a {
+	  float: left;
+	  display: block;
+	  color: #FFFFFF;
+	  text-align: center;
+	  vertical-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	  	  margin-top: 5px;
+	  
+	  display: inline-block;
+	  vertical-align: bottom;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	  
+	  position: absolute;
+	  
+	  max-width: 1040px;
+	  
+	  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
+	  display: flex;
+	  flex: 1;
+	  flex-direction: column;
+	  flex-basis: auto;
+	  margin: 5px auto;	
+	  
+	  z-index: 500;
+	  
+		  cursor: pointer;
+		  
+	
+	  
+	  font-family: Century Gothic;
+	}
 
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
+	.botbar {
+		
+		cursor: pointer;
+	  overflow: hidden;
+	  background-color: #000000;
+    	position: fixed;
+    	min-height: 30px;
+		vertical-align: center;
+		color: #FFFFFF;
+	  bottom: 0px;
+	  width: 100%;
+	  
+	  z-index: 500;
+	  
+	  display: inline-block;
+	  vertical-align: top;
+	  
+	  margin: 0 auto;
+	  margin-top: 10px;
+	  max-width: 1040px;
+	  
+	  text-align: center;
+	  padding: 0px;
 
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
+	}
 
-#Home {background-color:red;}
-#News {background-color:green;}
-#Contact {background-color:blue;}
-#About {background-color:orange;}
+	.main {
+	  padding: 0px;
+	  margin-top: 30px;
+	  height: 200px;
+	  
+	  margin: 0 auto;
+	  max-width: 1040px;
+	  
+	  font-family: Century Gothic Bold;
+	}
+	
+	#mainmenu ul li {
+	  display: inline;  
+	}
+
+	#mainmenu ul {
+	  margin: 0;
+	  padding: 0;
+	  
+	  list-style-type: none;
+	}
+
+	#mainmenu li {
+	  font-size: 1px;
+	  width: 1px;
+	  padding: 0;
+	}
+
+	#mainmenu span {
+	  height: 31px;
+	
+	  padding: 0px;
+	  margin: 0px
+	  font-size: 1px;
+	}
+
+	#menuitem_1 {
+	  width: 29px;
+	  background-image: url("jkiconcrop.jpg");
+	}
+
+	table {
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	td, th {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px;
+	}
+
+	tr:nth-child(even) {
+		background-color: #dddddd;
+	}
+	
+	a {
+	  text-decoration: none;
+	  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+	}
+
+	div, h2, p, figure {
+	  margin: 0;
+	  padding: 0;
+	}
+
+	.header {
+	  color: black;
+	  padding: 40px 0 20px;
+	  text-align: left;
+	}
+
+	.header h1 {
+	  font-size: 40px;
+	  font-weight: bold;
+	}
+
+	.header h2 a {
+	  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	  color: black;
+	  font-size: 20px;
+	  opacity: 0.5;
+	}
+
+	.header h2 a:hover {
+	  border-bottom-color: black;
+	  opacity: 1;
+	}
+
+	.column {
+	  flex: 1;
+	  flex-direction: column;
+	}
+
+	.article {
+	  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	  color: #000000;
+	  display: flex;
+	  flex: 1;
+	  flex-direction: column;
+	  flex-basis: auto;
+	  margin: 10px;
+	  
+	  height: auto;
+	
+	}
+
+	.article:hover,
+	.article:focus {
+	  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	  color: #444;
+	}
+	
+	.article-image {
+	  background: #000000;
+	  display: block;
+	  padding-top: 75%;
+	  position: relative;
+	  width: 100%;
+	}
+	.article-image img {
+	  display: block;
+	  height: 100%;
+	  left: 0;
+	  position: absolute;
+	  top: 0;
+	  width: 100%;
+	}
+
+	.article-image.is-3by2 {
+	  padding-top: 66.6666%;
+	}
+
+	.article-image.is-16by9 {
+	  padding-top: 56.25%;
+	}
+
+	.articlebody {
+		
+	overflow: auto;
+			
+	  flex: 1;
+	  flex-direction: column;
+	  padding: 20px;
+	  background-color:rgba(255,255,255,0.75);
+
+	  
+	  height: auto;
+	}
+
+	.article-title {
+	  color: #333;
+	  flex-shrink: 0;
+	  font-size: 1.4em;
+	  font-weight: 700;
+	  line-height: 1.2;
+	}
+
+	.article-content {
+	  flex: 1;
+	  margin-top: 5px;
+	  background-color: ;
+	  color: black;
+	  
+	  height: auto;
+		
+	}
+
+	.article-info {
+	  display: flex;
+	  font-size: 0.85em;
+	  justify-content: space-between;
+	  margin-top: 10px;
+	  
+	  color: black;
+	}
+	
+	.bot-info {
+	  display: flex;
+	  font-size: 0.85em;
+	  justify-content: space-between;
+	  margin-top: 10px;
+	  margin-right: 0px;
+	  
+
+	  
+	  	  font-family: Century Gothic;
+		  		  flex-direction: row;
+				  flex: 1;
+				  
+				  padding: 0px 16px;
+				  
+	}
+
+	@media screen and (min-width: 800px) {
+	  .columns,
+	  .column {
+		display: flex;
+	  }
+	}
+	
+	@media screen and (max-width: 375px) {
+		.logo {
+			display: none !important;
+		}
+	}
+
+	  .first-article {
+		flex-direction: row;
+	  }
+
+	  .first-article .articlebody {
+		flex: 1;
+	  }
+
+	  .first-article .article-image {
+		height: 300px;
+		order: 2;
+		padding-top: 0;
+		width: 400px;
+	  }
+
+	  .main-column {
+		flex: 3;
+	  }
+
+	  .nested-column {
+		flex: 2;
+	  }
+
+	.tablinkdum {
+		float: left;
+		padding: 14px 14px;
+		width: auto;
+		border: none;
+		outline: none;
+		margin: 0 auto;
+		min-width: 6px;
+	}
+
+	.tablink {
+		background-color: #555;
+		color: white;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		font-size: 17px;
+		width: auto;
+		
+		margin: 0 auto;
+		min-width: 48px;
+		max-width: 1040px;
+
+		font-family: Century Gothic;	
+	}
+	
+	.tablink:hover {
+		background-color: #777;
+	}
+		
+	.tabcontent {
+	  float: left;
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	  
+	  display: inline-block;
+	  vertical-align: top;
+	  margin-right: 20px;
+	  margin-top: 5px;
+	  
+	  margin: 0 auto;
+	  max-width: 1040px;
+	  width: 96%;
+	  
+	  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+	  display: flex;
+	  flex: 1;
+	  flex-direction: column;
+	  flex-basis: auto;
+	  margin: 5px;
+ 
+	  font-family: Century Gothic;
+	}
+	
+	.switch {
+	  position: relative;
+	  display: inline-block;
+	  width: 60px;
+	  height: 34px;
+	}
+	
+	.switch input {display:none;}
+	
+	.slider {
+	  position: absolute;
+	  cursor: pointer;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background-color: #ccc;
+	  -webkit-transition: .4s;
+	  transition: .4s;
+	}
+	
+	.slider:before {
+	  position: absolute;
+	  content: "";
+	  height: 26px;
+	  width: 26px;
+	  left: 4px;
+	  bottom: 4px;
+	  background-color: white;
+	  -webkit-transition: .4s;
+	  transition: .4s;
+	}
+	
+	input:checked + .slider {
+	  background-color: #2196F3;
+	}
+	
+	input:focus + .slider {
+	  box-shadow: 0 0 1px #2196F3;
+	}
+	
+	input:checked + .slider:before {
+	  -webkit-transform: translateX(26px);
+	  -ms-transform: translateX(26px);
+	  transform: translateX(26px);
+	}
+	
+	.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+	}
+	
+	#Portfolio {background-color:rgba(255,0,0,0.5);}
+	#Projects {background-color:rgba(255,255,0,0.5);}
+	#Contact {background-color:rgba(170,236,255,0.5);}
+	
+	#PortfolioB {background-color:rgba(255,255,255,0.75);}
+	#ProjectsB {background-color:rgba(255,255,255,0.75);}
+	#ContactB {background-color:rgba(255,255,255,0.75);}
 
 </style>
 
+<style type="text/css">
+	#wrapper{ width:100%; float:left; height:auto; border:1px solid #5694cf;}
+</style>
+
 </head>
+
+
 <body>
-	
-    <div class="container">
-
-	<!--Grid Start-->
     
-    	         <!-- Navi Start -->		
-                    <div id="mainmenu">
-                    <div class="navbar">
-                    <ul>
- 
-                    <li> <img class="logo" src="jkiconcropD.png"> </li>
+    <div class="container"> <!--Grid Start--> 
+    				
+    	         	
                     
-		            <li><a href="#News"><b></b></a></li>	
-                   	<li><a href="#Portfolio"><b>Portfolio</b></a></li>
-                    <li><a href="#Projects"><b>Projects</b></a></li>
-                    <li><a href="#contact"><b>Contact</b></a></li>
-                    </ul>	
+                    <div class="main"> <!-- Main Start -->	
 
+                        <div id="mainmenu"> <!-- MainMenu Start -->	
+                            <div class="navbar"> <!-- Navi Start -->            
+                                <ul>
+                                	<li> <span class="tablinkdum"></span></li>
+                                  <li><a id="defaultOpen2" class="tablink" onClick="openTab('Portfolio', this, 'rgba(255,0,0,1)')"><b>Portfolio</b></a></li>
+                                  <li><a id="defaultOpen" class="tablink" onclick="openTab('Projects', this, 'rgba(255,255,0,1)')"><b>Projects</b></a></li>
+                                  <li><a id="defaultOpen3" class="tablink" onClick="openTab('Contact', this, 'rgba(170,236,255,1)')"><b>Contact</b></a></li>
+                                  <li><img class="logo" src="jkiconcropD.png" img align="right"></li> 
+                                </ul>	
+                            </div> <!-- Navi End -->    
+                            
+                            <div class="botbar a"> <!-- Bot Start -->   
+                            		<a id="bottom"></a>
+                                    <footer class="bot-info" id="topfunc" onclick="topFunction()">
+                                    	<span>Page under construction</span>
+                                        <span>Top</span>
+										<span>©2017 JK</span>   
+                                    </footer> 
+                             </div>
+                                    
+            </div> <!-- MainMenu End -->	
 
-  					</div>
-                    </div>
-                    
-                    <div class="main">
-                      
-                      
-                      <h1>Juri Knauth Portfolio</h1>
-                      <p>page under construction</p>
-                      
-                      <h2>Game Design</h2>
-                      
-                      <p>
-                      <b>Email: </b><a href="mailto:knauth.juri@gmail.com?Subject=Hello%20via%20Portfolio" target="_top">knauth.juri@gmail.com</a><br>
-                      <b>Tel: </b>+49 17662329631<br>
-                      <b>LinkedIn: </b><a href="https://www.linkedin.com/in/juri-k-777396130">https://www.linkedin.com/in/juri-k-777396130</a> <br>
-                      <b>Sketchfab: </b><a href="https://sketchfab.com/JuriK/models">https://sketchfab.com/JuriK/models</a> <br>
-					
-						
-                        <h2>Team-Projects</h2>
-                            <p>
-                            <b>Boardgames: </b><br>
-                                Adam Mania <br>
-                                Conga Line <br>
-                                Solar Tower Defense <br>
-                                Heroes on the rice <br>
-                            <b>Video Games: </b><br>
-                                Crashed Captain <br>
-                                Fluffy Dice <br>
-                            <b>Physical Games:</b> <br>
-                                Slurp <br>
-                                Dance it off! <br>
+                        <div id="Portfolio" class="tabcontent">
+    
+                            <header class="header">
+                            
+                            <a class="article first-article" href="#">
+                                <div id="PortfolioB" class="articlebody">
+                                    <h2 class="article-title">
+                                    	Page under construction
+                                    </h2>
+                                    
+                                    <p class="article-content">
+                                        
+                             			I am still working on this web page. This web page will showcase each project I have worked on and link to my Team-Projects, but you will find a brief explanation about them here as well.
+                                                                       
+                                       		<p>
+                                           <h3>Team-Projects</h3>
+                                            <b>Boardgames: </b><br>
+                                                Adam Mania <br>
+                                                Conga Line <br>
+                                                Solar Tower Defense <br>
+                                                Heroes on the rice <br>
+                                            <b>Video Games: </b><br>
+                                                Crashed Captain <br>
+                                                Fluffy Dice <br>
+                                            <b>Physical Games:</b> <br>
+                                                Slurp <br>
+                                                Dance it off! <br>
+                                            </p>
+                                        
+                                             <p>
+                                             	<h3>Solo-Projects</h3>
+                                                    <b>Boardgames: </b><br>
+                                                        Heul Doch! <br>
+                                                    <b>Video Game Concepts: </b><br>
+                                                        V.o.A. <br>
+                                                    <b>Scientific Paper:</b> <br>
+                                                        America’s Army: Spiel oder Rekrutierungsmittel? <br>
+                                                    <b>Mods:</b> <br>
+                                                        Warcraft III, Shadow of War<br>
+                                                    <b>Systems:</b> <br>
+                                                        Unity, Hazardous Inventory System<br>
+                                                    <b>Maps:</b> <br>
+                                                        Heroes of Might and Magic III, Wake of Gods, Cake Kingdom<br>
                         
-                        <h2>Solo-Projects</h2>
-                            <p>
-                            <b>Boardgames: </b><br>
-                            	Heul Doch! <br>
-                            <b>Video Game Concepts: </b><br>
-                            	V.o.A. <br>
-                            <b>Scientific Paper:</b> <br>
-                            	America’s Army: Spiel oder Rekrutierungsmittel? <br>
-                            <b>Mods:</b> <br>
-                            	Warcraft III, Shadow of War<br>
-                            <b>Systems:</b> <br>
-                            	Unity, Hazardous Inventory System<br>
-                            <b>Maps:</b> <br>
-                            	Heroes of Might and Magic III, Wake of Gods, Cake Kingdom<br>
-
-                      </p>
-                      
-
-                    </div>
-            <!-- Navi End -->
+                                              </p>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div id="Projects" class="tabcontent">
     
+                            <header class="header">
+                            
+                            <a class="article first-article" href="#">
+                                <div id="ProjectsB" class="articlebody">
+                                    <h2 class="article-title">
+                                    	Fluffy Dice
+                                    </h2>
+                                    
+                                    <p class="article-content">
+                                        Viele Menschen lieben es mit Würfeln zu spielen, deshalb nehmen sie in
+                                        diesem Spiel Würfel die zentrale Rolle ein, denn sie verkörpern die Spieler
+                                        selbst! Rundenbasiert werden die Avatare von ihren Spielern wie Würfel
+                                        geworfen und dann entsprechend der Augenzahl durch das Level gerollt.
+                                        Während es in der Wurf-Phase um Geschicklichkeit und Intention geht, dreht
+                                        sich in der Zieh-Phase, alles um Planung und Genauigkeit. Die Spieler
+                                        brauchen sowohl Glück als auch Können.
+                                    </p>
+                                    <footer class="article-info">
+                                        <ul>
+                                            <li><span><b>Platform: </b> Windows PC</span></li>
+                                            <li><span><b>Team size: </b> 9</span></li>
+                                            <li><span><b>Position: </b>Game Designer & Programmer</span></li>
+                                        </ul>
+                                    </footer>
+                                </div>
+                            </a>
+                        </div>
+                                        
+                        <div id="Contact" class="tabcontent">
+    
+                            <header class="header">
+
+                            <p class="article first-article">
+                                                                
+                                <div id="ContactB" class="articlebody">
+                                                                   
+                                    <h2 class="article-title">
+                                    	Juri Knauth
+                                    </h2>
+                                                                        
+                                    <p class="article-content">
+									Game Design - communication between different departments - game idea generating, tweaking game play-mechanics, user experience - prototyping - writing dame design 									documents - defining theme, background, stories, assets, support mechanics, level design, content - general drudge - implementing - coding - 3d modeling, rigging, 				animating - 2d art, animation - bug reporting and fixing	
+                                    </p>
+                                    
+                                    <footer class="article-info">
+                                        <ul>                                       
+                                            <li><span><b>Email: </b> <a href="mailto:knauth.juri@gmail.com">knauth.juri@gmail.com </a></span></li>
+                                            <li><span><b>Tel: </b> +49 17662329631</span></li>
+                                            <li><span><b>LinkedIn: </b> <a href="https://www.linkedin.com/in/juri-k-777396130">linkedin.com/in/juri-k-777396130</a></span></li>
+                                            <li><span><b>Sketchfab: </b> <a href="https://sketchfab.com/JuriK/models">sketchfab.com/JuriK/models</a></li>
+                                        </ul>
+                                    </footer>
+                                    
+                                    <div id="cf">
+                                        <a target="_blank" href="IMG_0397JKkF.jpg">  
+                                             <img class="bottom" src="IMG_0397JKkF1920.jpg" alt="Juri Knauth Color Portrait" align="center"/>
+                                             <img class="top" src="IMG_0397JKkP1920.jpg" alt="Juri Knauth BlackAndWhite Portrait" align="center"/>
+                                        </a>
+                          			</div>
+                                </div>
+                            </p>
+                            
+							<p class="article first-article">
+                                                                
+                                <div id="ContactB" class="articlebody">
+                                                                   
+                                    <h3 class="article-title">
+                                    	Business-Card
+                                    </h3>
+                                                                        
+                                    <p class="article-content">
+										
+                                    </p>
+                                    
+                                    <div class="columns">
+                                          <div class="column">
+                                            <a class="article" target="_blank" href="DE Business-Card-Juri Knauth F.pdf">
+                                              <figure class="article-image is-16by9">
+                                                <img src="DE Business-Card-Juri Knauth F.jpg" alt="Juri Knauth Business-Card Front" align="center">
+                                              </figure>
+                                              <div class="article-body">
+                                                <h5 class="article-title">
+                                                Front
+                                                </h5>
+                                                <p class="article-content">
+
+                                                </p>
+                                                <footer class="article-info">
+                                                </footer>
+                                              </div>
+                                            </a>
+                                          </div>
+                                    
+                                          <div class="column">
+                                            <a class="article" target="_blank" href="DE Business-Card-Juri Knauth B.pdf">
+                                              <figure class="article-image is-16by9">
+                                                <img src="DE Business-Card-Juri Knauth B.jpg" alt="Juri Knauth Business-Card Back" align="center">
+                                              </figure>
+                                              <div class="article-body">
+                                                <h5 class="article-title"> 
+                                                Back                                              
+                                                </h5>
+                                                <p class="article-content">
+                                                </p>
+                                                <footer class="article-info">
+                                                </footer>
+                                              </div>
+                                            </a>
+                                          </div>
+                                    
+                                </div>
+                            </p>
+                        </div>  
+                             
+                    </div> <!-- Main End -->	
+
+        <div class="gridContainer clearfix">
+                            
+            <div id="div1" class="fluid">
+            </div>
+        
+        </div>
+    
+	</div> <!--Grid End-->  
+
+	<script>
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+		}
+	
+    function openTab(tabName,elmnt,color) {
+        
+		var i, tabcontent, tablinks, articlebody;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+			tablinks[i].style.color = "#FFFFFF";
+        }
+		articlebody = document.getElementsByClassName("articlebody");
+        for (i = 0; i < articlebody.length; i++) {
+            articlebody[i].style.backgroundColor = "";
+        }
+        document.getElementById(tabName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+		elmnt.style.color = "#000000";
+    
+    }
+	
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+
+    </script>
+
+</body>
 	<div class="gridContainer clearfix">
 
-
-            
-
-            
-
-        <div id="div1" class="fluid">
-   		</div>
 	</div>
-	</div>   
-</body>
 </html>
