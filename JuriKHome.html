@@ -11,13 +11,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="description" content="Juri Knauths Portfolio">
-<meta name="keywords" content="Juri, Knauth, Portfolio, Game Designer">
+<meta name="keywords" content="Juri, Knauth, Portfolio, Blog, Projects, Contact, Game Designer, JK, K">
 <meta name="author" content="Juri Knauth">
 
 <link rel="favicon" href="https://juriknauth.github.io/favicon.ico" />
 <link rel="favicon-16x16" href="favicon-16x16.ico" type="image/x-icon">
 
-<title>Portfolio Juri Knauth</title>
+<title>Blog Juri Knauth</title>
 
 <link href="boilerplate.css" rel="stylesheet" type="text/css">
 <link href="file:///L|/WebWIP3/Home.css" rel="stylesheet" type="text/css">
@@ -121,7 +121,7 @@
 		height: 100%;
 		margin:100% auto;
 	}
-	
+		
 	.cf {
 
 	display:block;
@@ -491,12 +491,6 @@
 				  
 	}
 
-	@media screen and (min-width: 800px) {
-	  .columns,
-	  .column {
-		display: flex;
-	  }
-	}
 	
 	@media screen and (max-width: 375px) {
 		.logo {
@@ -643,11 +637,11 @@
     overflow: hidden;
 	}
 	
-	#Portfolio {background-color:rgba(255,0,0,0.5);}
+	#Blog {background-color:rgba(255,0,0,0.5);}
 	#Projects {background-color:rgba(255,255,0,0.5);}
 	#Contact {background-color:rgba(170,236,255,0.5);}
 	
-	#PortfolioB {background-color:rgba(255,255,255,0.75);}
+	#BlogB {background-color:rgba(255,255,255,0.75);}
 	#ProjectsB {background-color:rgba(255,255,255,0.75);}
 	#ContactB {background-color:rgba(255,255,255,0.75);}
 
@@ -672,8 +666,8 @@
                             <div class="navbar"> <!-- Navi Start -->            
                                 <ul>
                                 	<li> <span class="tablinkdum"></span></li>
-                                  <li><a id="defaultOpen2" class="tablink" onClick="openTab('Portfolio', this, 'rgba(255,0,0,1)')"><b>Portfolio</b></a></li>
-                                  <li><a id="defaultOpen" class="tablink" onclick="openTab('Projects', this, 'rgba(255,255,0,1)')"><b>Projects</b></a></li>
+                                  <li><a id="defaultOpen" class="tablink" onClick="openTab('Blog', this, 'rgba(255,0,0,1)')"><b>Blog</b></a></li>
+                                  <li><a id="defaultOpen2" class="tablink" onclick="openTab('Projects', this, 'rgba(255,255,0,1)')"><b>Projects</b></a></li>
                                   <li><a id="defaultOpen3" class="tablink" onClick="openTab('Contact', this, 'rgba(170,236,255,1)')"><b>Contact</b></a></li>
                                   <li><img class="logo" src="jkiconcropD.png" img align="right"></li> 
                                 </ul>	
@@ -690,37 +684,39 @@
                                     
             </div> <!-- MainMenu End -->	
 
-                        <div id="Portfolio" class="tabcontent">
+                        <div id="Blog" class="tabcontent">
     
                             <header class="header">
                             
-                            <a class="article first-article" href="#">
-                                <div id="PortfolioB" class="articlebody">
+                            <div class="article first-article">
+                                <div id="BlogB" class="articlebody">
                                     <h2 class="article-title">
                                     	Page under construction
                                     </h2>
                                     
                                     <p class="article-content">
                                         
-                             			I am still working on this web page. This web page will showcase each project I have worked on and link to my Team-Projects, but you will find a brief explanation about them here as well.
+                             			I am still working on this web page. This web page will showcase each project I have worked on and link to my Team-Projects, but you will find a brief explanation about them here as well.<br><br>
                                                                        
-                                       		<p>
-                                           <h3>Team-Projects</h3>
-                                            <b>Boardgames: </b><br>
-                                                Adam Mania <br>
-                                                Conga Line <br>
-                                                Solar Tower Defense <br>
-                                                Heroes on the rice <br>
-                                            <b>Video Games: </b><br>
-                                                Crashed Captain <br>
-                                                Fluffy Dice <br>
-                                            <b>Physical Games:</b> <br>
-                                                Slurp <br>
-                                                Dance it off! <br>
-                                            </p>
+                                       		
+                                               <h3 class="article-content">Team-Projects</h3>
+                                               <span class="article-content">
+                                                <b>Boardgames: </b><br>
+                                                    Adam Mania <br>
+                                                    Conga Line <br>
+                                                    Solar Tower Defense <br>
+                                                    Heroes on the rice <br>
+                                                <b>Video Games: </b><br>
+                                                    Crashed Captain <br>
+                                                    <a href="#">Fluffy Dice</a><br> 
+                                                <b>Physical Games:</b> <br>
+                                                    Slurp <br>
+                                                    Dance it off! <br><br>
+                                            	</span>
                                         
-                                             <p>
-                                             	<h3>Solo-Projects</h3>
+                                             
+                                             	<h3 class="article-content">Solo-Projects</h3>
+                                                <span class="article-content">
                                                     <b>Boardgames: </b><br>
                                                         Heul Doch! <br>
                                                     <b>Video Game Concepts: </b><br>
@@ -733,11 +729,11 @@
                                                         Unity, Hazardous Inventory System<br>
                                                     <b>Maps:</b> <br>
                                                         Heroes of Might and Magic III, Wake of Gods, Cake Kingdom<br>
-                        
-                                              </p>
+                        						</span>
+                                             
                                     </p>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     
                         <div id="Projects" class="tabcontent">
@@ -761,6 +757,7 @@
                                     </p>
                                     <footer class="article-info">
                                         <ul>
+                                            <li><span><b>Status: </b> Polishing</span></li>
                                             <li><span><b>Platform: </b> Windows PC</span></li>
                                             <li><span><b>Team size: </b> 9</span></li>
                                             <li><span><b>Position: </b>Game Designer & Programmer</span></li>
@@ -791,16 +788,30 @@
                                             <li><span><b>Email: </b> <a href="mailto:knauth.juri@gmail.com">knauth.juri@gmail.com </a></span></li>
                                             <li><span><b>Tel: </b> +49 17662329631</span></li>
                                             <li><span><b>LinkedIn: </b> <a href="https://www.linkedin.com/in/juri-k-777396130">linkedin.com/in/juri-k-777396130</a></span></li>
-                                            <li><span><b>Sketchfab: </b> <a href="https://sketchfab.com/JuriK/models">sketchfab.com/JuriK/models</a></li>
+                                            <li><span><b>Sketchfab: </b> <a href="https://sketchfab.com/JuriK/models">sketchfab.com/JuriK/models</a></span></li>
                                         </ul>
                                     </footer>
+                                   
+                                          <div class="columns">
+                                          <div class="column">
+                                          
+                                            <h3 class="article-title">
+                                            Business-Card
+                                            </h3>
+                                          
+                                            <a class="article" target="_blank" href="DE Business-Card-Juri Knauth F.pdf">
+                                                    <div id="cf">
+                                                        <a target="_blank" href="IMG_0397JKkF.jpg">  
+                                                             <img class="bottom" src="IMG_0397JKkF1920.jpg" alt="Juri Knauth Color Portrait" align="center"/>
+                                                             <img class="top" src="IMG_0397JKkP1920.jpg" alt="Juri Knauth BlackAndWhite Portrait" align="center"/>
+                                                        </a>
+
+                                            </a>
+                                          </div>
+                                   
                                     
-                                    <div id="cf">
-                                        <a target="_blank" href="IMG_0397JKkF.jpg">  
-                                             <img class="bottom" src="IMG_0397JKkF1920.jpg" alt="Juri Knauth Color Portrait" align="center"/>
-                                             <img class="top" src="IMG_0397JKkP1920.jpg" alt="Juri Knauth BlackAndWhite Portrait" align="center"/>
-                                        </a>
-                          			</div>
+                                </div>
+                                    
                                 </div>
                             </p>
                             
@@ -819,9 +830,7 @@
                                     <div class="columns">
                                           <div class="column">
                                             <a class="article" target="_blank" href="DE Business-Card-Juri Knauth F.pdf">
-                                              <figure class="article-image is-16by9">
-                                                <img src="DE Business-Card-Juri Knauth F.jpg" alt="Juri Knauth Business-Card Front" align="center">
-                                              </figure>
+                                                <img src="DE Business-Card-Juri Knauth F.jpg" alt="Juri Knauth Business-Card Front" align="center"/>
                                               <div class="article-body">
                                                 <h5 class="article-title">
                                                 Front
@@ -837,9 +846,7 @@
                                     
                                           <div class="column">
                                             <a class="article" target="_blank" href="DE Business-Card-Juri Knauth B.pdf">
-                                              <figure class="article-image is-16by9">
-                                                <img src="DE Business-Card-Juri Knauth B.jpg" alt="Juri Knauth Business-Card Back" align="center">
-                                              </figure>
+                                                <img src="DE Business-Card-Juri Knauth B.jpg" alt="Juri Knauth Business-Card Back" align="center"/>
                                               <div class="article-body">
                                                 <h5 class="article-title"> 
                                                 Back                                              

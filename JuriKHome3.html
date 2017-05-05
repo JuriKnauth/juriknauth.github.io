@@ -11,7 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="description" content="Juri Knauths Portfolio">
-<meta name="keywords" content="Juri, Knauth, Portfolio, Blog, Projects, Contact, Game Designer, JK, K">
+<meta name="keywords" content="Juri, Knauth, Portfolio, Blog, Game Designer">
 <meta name="author" content="Juri Knauth">
 
 <link rel="favicon" href="https://juriknauth.github.io/favicon.ico" />
@@ -55,6 +55,10 @@
 		line-height: 1.4;
 		
 		margin-bottom:50px;
+
+		-moz-transform: scale(1.0, 1.0); /* Moz-browsers */
+		zoom: 1.0; /* Other non-webkit browsers */
+		zoom: 100%; /* Webkit browsers */
 
 		}
 	
@@ -106,6 +110,11 @@
 		position: relative;
 		height: auto;
 		width: 100%;
+		overflow: hidden;
+	}
+	
+	.container a {
+    text-decoration: none;
 	}
 	
 	.logo {
@@ -125,7 +134,6 @@
 	.cf {
 
 	display:block;
-	background: #eee;
 	position: relative;
 	  height:100%;
 	  width:100%;
@@ -134,17 +142,12 @@
 	}
 	
 	#cf {
-
+		
 	display:block;
-	background: #eee;
 	position: relative;
 	  width:100%;
 	  margin:70% auto;
-
-
-	  flex: 1;
-	  margin-top: 5px;
-	  background-color: ;
+	  margin-top: 0px;
 	  color: black;
 	  
 	}
@@ -387,14 +390,16 @@
 	}
 
 	.column {
+		display: flex;
 	  flex: 1;
 	  flex-direction: column;
+
 	}
 
 	.article {
 	  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	  color: #000000;
-	  display: flex;
+	  display: inline-block;	
 	  flex: 1;
 	  flex-direction: column;
 	  flex-basis: auto;
@@ -416,6 +421,7 @@
 	  padding-top: 75%;
 	  position: relative;
 	  width: 100%;
+	  display: inline-block;	
 	}
 	.article-image img {
 	  display: block;
@@ -424,21 +430,22 @@
 	  position: absolute;
 	  top: 0;
 	  width: 100%;
+	  display: inline-block;	
 	}
 
 	.article-image.is-3by2 {
 	  padding-top: 66.6666%;
+	  display: inline-block;	
 	}
 
 	.article-image.is-16by9 {
 	  padding-top: 56.25%;
+	  display: inline-block;	
 	}
 
 	.articlebody {
 		
-	overflow: auto;
-			
-	  flex: 1;
+		display: inline-block;		
 	  flex-direction: column;
 	  padding: 20px;
 	  background-color:rgba(255,255,255,0.75);
@@ -462,6 +469,7 @@
 	  color: black;
 	  
 	  height: auto;
+	  display: inline-block;	
 		
 	}
 
@@ -491,6 +499,12 @@
 				  
 	}
 
+	@media screen and (min-width: 800px) {
+	  .columns,
+	  .column {
+		display: flex;
+	  }
+	}
 	
 	@media screen and (max-width: 375px) {
 		.logo {
@@ -546,16 +560,130 @@
 		min-width: 48px;
 		max-width: 1040px;
 
-		font-family: Century Gothic;	
+		font-family: Century Gothic;
+		
+		position: relative;	
 	}
 	
 	.tablink:hover {
 		background-color: #777;
 	}
+
+	.tablink a{
+		background-color: #555;
+		color: white;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		font-size: 17px;
+		width: auto;
 		
+		margin: 0 auto;
+		min-width: 48px;
+		max-width: 1040px;
+
+		font-family: Century Gothic;	
+		
+		display: block;
+		text-decoration: none;
+	}
+	
+	.tablink a:link, .tablink a:visited {
+		background-color: #777;
+	}
+	
+	.tablink a:hover, .tablink a:active {
+		background-color: #777;
+	}
+
+	.tablink ul {
+	margin-top: 5px;
+	list-style-type: none;
+	height: 0px;
+	overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+	
+	-webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    -ms-transition: height 1s ease;
+    transition: height 1s ease;
+	}
+	
+	.tablink:hover ul {
+		height: 115px;
+	}
+	
+	.tablink ul li a {
+		font-size: 20px;
+		width: 80%;
+		margin: 0 auto 0 auto;
+		border-radius: 10px;
+		margin-top: 5px;
+	}
+
+	.tablinkdp {
+		    background-color: inherit;
+		color: white;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		font-size: 17px;
+		width: auto;
+		
+		margin: 0 auto;
+		min-width: 48px;
+		max-width: 1040px;
+
+		font-family: Century Gothic;	
+	}
+	
+	.tablinkdp:hover {
+		background-color: #777;
+	}
+	
+	.dropdown {
+    float: left;
+    overflow: hidden;
+	}
+	
+	.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	}
+	
+	.dropdown-content a {
+		float: none;
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+
+	}
+	
+	.dropdown-content a:hover {
+		background-color: #ddd;
+	}
+	
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+			
 	.tabcontent {
 	  float: left;
-	  display: block;
+	  display: inline-block;
 	  color: #f2f2f2;
 	  text-align: center;
 	  padding: 14px 16px;
@@ -573,7 +701,7 @@
 	  
 	  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
-	  display: flex;
+	  
 	  flex: 1;
 	  flex-direction: column;
 	  flex-basis: auto;
@@ -664,13 +792,17 @@
 
                         <div id="mainmenu"> <!-- MainMenu Start -->	
                             <div class="navbar"> <!-- Navi Start -->            
-                                <ul>
-                                	<li> <span class="tablinkdum"></span></li>
-                                  <li><a id="defaultOpen" class="tablink" onClick="openTab('Blog', this, 'rgba(255,0,0,1)')"><b>Blog</b></a></li>
-                                  <li><a id="defaultOpen2" class="tablink" onclick="openTab('Projects', this, 'rgba(255,255,0,1)')"><b>Projects</b></a></li>
-                                  <li><a id="defaultOpen3" class="tablink" onClick="openTab('Contact', this, 'rgba(170,236,255,1)')"><b>Contact</b></a></li>
-                                  <li><img class="logo" src="jkiconcropD.png" img align="right"></li> 
-                                </ul>	
+                                	<span class="tablinkdum"></span>
+                                      <a id="defaultOpen" class="tablink" onClick="openTab('Blog', this, 'rgba(255,0,0,1)')"><b>Blog</b></a>
+
+                                      <a id="defaultOpen2" class="tablink" onclick="openTab('Projects', this, 'rgba(255,255,0,1)')"><b>Projects</b></a>
+                                                    
+
+                                          
+
+                                                
+                                      <a id="defaultOpen3" class="tablink" onClick="openTab('Contact', this, 'rgba(170,236,255,1)')"><b>Contact</b></a>
+                                      <img class="logo" src="jkiconcropD.png" img align="right">
                             </div> <!-- Navi End -->    
                             
                             <div class="botbar a"> <!-- Bot Start -->   
@@ -696,11 +828,10 @@
                                     
                                     <p class="article-content">
                                         
-                             			I am still working on this web page. This web page will showcase each project I have worked on and link to my Team-Projects, but you will find a brief explanation about them here as well.<br><br>
+                             			I am still working on this web page. This web page will showcase each project I have worked on and link to my Team-Projects, but you will find a brief explanation about them here as well.
                                                                        
-                                       		
-                                               <h3 class="article-content">Team-Projects</h3>
-                                               <span class="article-content">
+                                       		<p class="article-content">
+                                               <h3>Team-Projects</h3>
                                                 <b>Boardgames: </b><br>
                                                     Adam Mania <br>
                                                     Conga Line <br>
@@ -711,12 +842,11 @@
                                                     <a href="#">Fluffy Dice</a><br> 
                                                 <b>Physical Games:</b> <br>
                                                     Slurp <br>
-                                                    Dance it off! <br><br>
-                                            	</span>
+                                                    Dance it off! <br>
+                                            </p>
                                         
-                                             
-                                             	<h3 class="article-content">Solo-Projects</h3>
-                                                <span class="article-content">
+                                             <p class="article-content">
+                                             	<h3>Solo-Projects</h3>
                                                     <b>Boardgames: </b><br>
                                                         Heul Doch! <br>
                                                     <b>Video Game Concepts: </b><br>
@@ -729,8 +859,8 @@
                                                         Unity, Hazardous Inventory System<br>
                                                     <b>Maps:</b> <br>
                                                         Heroes of Might and Magic III, Wake of Gods, Cake Kingdom<br>
-                        						</span>
-                                             
+                        
+                                              </p>
                                     </p>
                                 </div>
                             </div>
@@ -771,7 +901,7 @@
     
                             <header class="header">
 
-                            <p class="article first-article">
+                            <div class="article first-article">
                                                                 
                                 <div id="ContactB" class="articlebody">
                                                                    
@@ -785,7 +915,7 @@
                                     
                                     <footer class="article-info">
                                         <ul>                                       
-                                            <li><span><b>Email: </b> <a href="mailto:knauth.juri@gmail.com">knauth.juri@gmail.com </a></span></li>
+                                            <li><span><b>Email: </b> <a href="mailto:knauth.juri@gmail.com">knauth.juri@gmail.com</a></span></li>
                                             <li><span><b>Tel: </b> +49 17662329631</span></li>
                                             <li><span><b>LinkedIn: </b> <a href="https://www.linkedin.com/in/juri-k-777396130">linkedin.com/in/juri-k-777396130</a></span></li>
                                             <li><span><b>Sketchfab: </b> <a href="https://sketchfab.com/JuriK/models">sketchfab.com/JuriK/models</a></span></li>
@@ -794,28 +924,23 @@
                                    
                                           <div class="columns">
                                           <div class="column">
-                                          
-                                            <h3 class="article-title">
-                                            Business-Card
-                                            </h3>
-                                          
-                                            <a class="article" target="_blank" href="DE Business-Card-Juri Knauth F.pdf">
+
+                                            <a class="article" target="_blank" href="IMG_0397JKkF1920.jpg">
                                                     <div id="cf">
                                                         <a target="_blank" href="IMG_0397JKkF.jpg">  
                                                              <img class="bottom" src="IMG_0397JKkF1920.jpg" alt="Juri Knauth Color Portrait" align="center"/>
                                                              <img class="top" src="IMG_0397JKkP1920.jpg" alt="Juri Knauth BlackAndWhite Portrait" align="center"/>
                                                         </a>
-
+													</div>		
                                             </a>
-                                          </div>
+                                          
                                    
                                     
                                 </div>
                                     
                                 </div>
-                            </p>
-                            
-							<p class="article first-article">
+                            </div>
+                           
                                                                 
                                 <div id="ContactB" class="articlebody">
                                                                    
@@ -860,7 +985,6 @@
                                           </div>
                                     
                                 </div>
-                            </p>
                         </div>  
                              
                     </div> <!-- Main End -->	
