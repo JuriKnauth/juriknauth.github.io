@@ -11,13 +11,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="description" content="Juri Knauths Portfolio">
-<meta name="keywords" content="Juri, Knauth, Portfolio, Blog, Projects, Contact, Game Designer, JK, K">
+<meta name="keywords" content="Juri, Knauth, Portfolio, Blog, Projects, Contact, Game Designer, Game Design, JuriK, JK, J, K">
 <meta name="author" content="Juri Knauth">
 
 <link rel="favicon" href="https://juriknauth.github.io/favicon.ico" />
 <link rel="favicon-16x16" href="favicon-16x16.ico" type="image/x-icon">
 
-<title>Blog Juri Knauth</title>
+<title>Portfolio Juri Knauth</title>
 
 <link href="boilerplate.css" rel="stylesheet" type="text/css">
 <link href="file:///L|/WebWIP3/Home.css" rel="stylesheet" type="text/css">
@@ -33,6 +33,7 @@
 	  overflow-x: hidden;
 	  overflow-y: scroll;
 	  text-rendering: optimizeLegibility;
+	  
 	}
 
 	body {
@@ -55,11 +56,7 @@
 		line-height: 1.4;
 		
 		margin-bottom:50px;
-
-		-moz-transform: scale(0.8, 0.8); /* Moz-browsers */
-		zoom: 0.8; /* Other non-webkit browsers */
-		zoom: 80%; /* Webkit browsers */
-
+		
 		}
 	
 		{font-family: "Century Gothic", sans-serif;}
@@ -124,6 +121,12 @@
 		width: 100%;
 		height: 100%;
 		margin:100% auto;
+		top:0;
+		table-layout:fixed;
+		
+			max-height:100%;
+	  		max-width:100%;
+			
 	}
 		
 	.cf {
@@ -133,7 +136,12 @@
 	position: relative;
 	  height:100%;
 	  width:100%;
+	  		max-height:100%;
+	  		max-width:100%;
 	  margin:70% auto;
+	  top:0;
+	  padding-top: 56.25%;
+	  table-layout:fixed 
 
 	}
 	
@@ -143,18 +151,19 @@
 	background: #eee;
 	position: relative;
 	  width:100%;
-	  margin:70% auto;
+	  hight: 100%;
+	  margin:66.66% auto;
 
 
 	  flex: 1;
-	  margin-top: 5px;
+	  margin-top: 0px;
 	  background-color: ;
 	  color: black;
 	  
 	}
 	
 	#cf img {
-		
+
 	  position:absolute;
 	  left:0;
 	  -webkit-transition: opacity 1s ease-in-out;
@@ -164,7 +173,57 @@
 	}
 	
 	#cf img.top:hover {
+	
 	  opacity:0;
+	}
+	
+	#home {
+    background: url(IMG_0397JKkP1920.jpg);
+		display:block;
+	background-size: 100% 100%;
+		top:0;
+		table-layout:fixed;
+		
+			max-height:100%;
+	  		max-width:100%;
+			
+			left:0;
+			-webkit-transition: background 0.5s linear;
+			-moz-transition: background 0.5s linear;
+			-o-transition: background 0.5s linear;
+			transition: background 0.5s linear;
+
+			
+	}
+	
+	.homeimg {
+	 	opacity:0;
+		display:block;
+
+		position: relative;
+		  height:100%;
+		  width:100%;
+		  		  top:0;
+				max-height:100%;
+				max-width:100%;
+
+		  table-layout:fixed 
+			
+	}
+	
+	#home-background {
+	 	opacity:0;
+
+			
+	}
+	#home:hover {
+		background: url(IMG_0397JKkF1920.jpg);
+		background-size: 100% 100%;
+			-webkit-transition: background 0.5s linear;
+			-moz-transition: background 0.5s linear;
+			-o-transition: background 0.5s linear;
+			transition: background 0.5s linear;
+		
 	}
 	
 	.toprow {
@@ -796,48 +855,29 @@
                                         </ul>
                                     </footer>
                                    
-                                          <div class="columns">
-                                          <div class="column">
-                                          
-                                            <h3 class="article-title">
-                                            Business-Card
-                                            </h3>
-                                          
-                                            <a class="article" target="_blank" href="DE Business-Card-Juri Knauth F.pdf">
-                                                    <div id="cf">
-                                                        <a target="_blank" href="IMG_0397JKkF.jpg">  
-                                                             <img class="bottom" src="IMG_0397JKkF1920.jpg" alt="Juri Knauth Color Portrait" align="center"/>
-                                                             <img class="top" src="IMG_0397JKkP1920.jpg" alt="Juri Knauth BlackAndWhite Portrait" align="center"/>
-                                                        </a>
-
-                                            </a>
-                                          </div>
-                                   
-                                    
-                                </div>
-                                    
-                                </div>
                             </p>
-                            
-							<p class="article first-article">
+ 
+ <!--2nd-->
+ 
+ 							<p class="article first-article">
                                                                 
                                 <div id="ContactB" class="articlebody">
-                                                                   
-                                    <h3 class="article-title">
-                                    	Business-Card
-                                    </h3>
-                                                                        
+                                                                                                                                          
                                     <p class="article-content">
 										
                                     </p>
                                     
                                     <div class="columns">
                                           <div class="column">
-                                            <a class="article" target="_blank" href="DE Business-Card-Juri Knauth F.pdf">
-                                                <img src="DE Business-Card-Juri Knauth F.jpg" alt="Juri Knauth Business-Card Front" align="center"/>
+                                          
+                                          
+                                            <a class="article" target="_blank" href="IMG_0397JKkF1920.jpg">
+                                                    <div id="home">
+                                                        <img class="homeimg" src="DE Business-Card-Juri Knauth B.jpg" alt="Juri Knauth Business-Card Back" align="center"/>                                                        
+                                                    </div>    
                                               <div class="article-body">
                                                 <h5 class="article-title">
-                                                Front
+                                                Portrait
                                                 </h5>
                                                 <p class="article-content">
 
@@ -846,14 +886,36 @@
                                                 </footer>
                                               </div>
                                             </a>
+
+                                            </div>
                                           </div>
+                                          
+                                          
+                                          
+                                          
+                                          
+                                        <div class="column">
+                                            <a class="article" target="_blank" href="DE Business-Card-Juri Knauth F.pdf">
+                                                <img src="DE Business-Card-Juri Knauth F.jpg" alt="Juri Knauth Business-Card Front" align="center"/>
+                                              <div class="article-body">
+                                                <h5 class="article-title">
+                                                Business-Card Front
+                                                </h5>
+                                                <p class="article-content">
+
+                                                </p>
+                                                <footer class="article-info">
+                                                </footer>
+                                              </div>
+                                            </a>
+                                        </div>
                                     
-                                          <div class="column">
+                                        <div class="column">
                                             <a class="article" target="_blank" href="DE Business-Card-Juri Knauth B.pdf">
                                                 <img src="DE Business-Card-Juri Knauth B.jpg" alt="Juri Knauth Business-Card Back" align="center"/>
                                               <div class="article-body">
                                                 <h5 class="article-title"> 
-                                                Back                                              
+                                                Business-Card Back                                              
                                                 </h5>
                                                 <p class="article-content">
                                                 </p>
@@ -861,10 +923,12 @@
                                                 </footer>
                                               </div>
                                             </a>
-                                          </div>
-                                    
-                                </div>
-                            </p>
+                                         </div>
+                                                                        
+                                	</div>
+                            </p>                           
+ 
+ <!--2nd End-->
                         </div>  
                              
                     </div> <!-- Main End -->	
