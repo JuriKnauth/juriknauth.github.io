@@ -227,6 +227,62 @@ a:active {
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
 }
+#img3 {
+	background: url(CockpitIntro.jpg);
+	display: block;
+	background-size: 100% 100%;
+	top: 0;
+	table-layout: fixed;
+	max-height: 100%;
+	max-width: 100%;
+	left: 0;
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
+}
+#img4 {
+	background: url(IngameObjects.jpg);
+	display: block;
+	background-size: 100% 100%;
+	top: 0;
+	table-layout: fixed;
+	max-height: 100%;
+	max-width: 100%;
+	left: 0;
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
+}
+#img5 {
+	background: url(FDIngame.jpg);
+	display: block;
+	background-size: 100% 100%;
+	top: 0;
+	table-layout: fixed;
+	max-height: 100%;
+	max-width: 100%;
+	left: 0;
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
+}
+#img6 {
+	background: url(FDMenu.jpg);
+	display: block;
+	background-size: 100% 100%;
+	top: 0;
+	table-layout: fixed;
+	max-height: 100%;
+	max-width: 100%;
+	left: 0;
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
+}
 #imgda {
 	float: left;
 	background: url(da.jpg);
@@ -1153,6 +1209,12 @@ input:checked + .slider:before {
 }
 #ContactB {
 	background-color: rgba(255,255,255,0.75);
+}
+#Index {
+	background-color: rgba(85,85,85,0.5);
+}
+#IndexB {
+	background-color: rgba(85,85,85,0.75);
 }
 </style>
 <style type="text/css">
