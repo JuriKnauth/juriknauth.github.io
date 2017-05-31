@@ -594,7 +594,7 @@ a:active {
 #imgwa:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
- background: 		background-size: 100% 100%;
+ 	background: 		background-size: 100% 100%;
 	background-size: 100% 100%;
 	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
@@ -628,13 +628,81 @@ a:active {
 #imglf:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
- background: 		background-size: 100% 100%;
+ 	background: 		background-size: 100% 100%;
 	background-size: 100% 100%;
 	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
 }
+
+#imglogoa {
+	vertical-align: top;
+	width: 12px;
+	height: 12px;
+	margin-top: 5px;
+	float: right;
+	background: url(JKLogoN.png);
+	background-color: #000;
+	display: block;
+	background-size: 100% 100%;
+	top: 0;
+	table-layout: fixed;
+	max-height: 100%;
+	max-width: 100%;
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 11px;
+	left: 0;
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
+	max-width: 40px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	cursor: pointer;
+}
+#imglogoa:hover, .article:focus {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	background-color: #FFF;
+ 	background: url(JKLogoH.png);
+	background-size: 100% 100%;
+	nsition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
+}
+#imglogob {
+	vertical-align: top;
+	width: 12px;
+	height: 12px;
+	margin-top: 5px;
+	float: right;
+	background: url(JKLogoCBG.png);
+	background-color: #000;
+	display: block;
+	background-size: 100% 100%;
+	top: 0;
+	table-layout: fixed;
+	max-height: 100%;
+	max-width: 100%;
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 11px;
+	left: 0;
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
+	max-width: 40px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	cursor: pointer;
+}
+
 .toprow {
 	overflow: hidden;
 	background-color: #000000;
@@ -928,14 +996,26 @@ div, p, figure {
 }
 }
 
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 400px) {
 .navbar a {
 	padding: 14px 10px;
 }
 }
 
-@media screen and (max-width: 365px) {
-.logo {
+@media screen and (max-width: 360px) {
+.navbar a {
+	padding: 14px 10px;
+}
+#imglogoa {
+	background-image: none !important;
+	display: none !important;
+}
+#imglogoa:hover, .article:focus {
+	background-image: none !important;
+	display: none !important;
+}
+#imglogob {
+	background-image: none !important;
 	display: none !important;
 }
 }
