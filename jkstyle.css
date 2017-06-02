@@ -200,7 +200,7 @@ a:active {
 	transition: background 0.5s linear;
 }
 #img1 {
-	background: url(DE-Business-Card-Juri-Knauth-F.jpg);
+	background: url(DE-Business-Card-Juri-Knauth-Fv92.jpg);
 	display: block;
 	background-size: 100% 100%;
 	top: 0;
@@ -214,7 +214,7 @@ a:active {
 	transition: background 0.5s linear;
 }
 #img2 {
-	background: url(DE-Business-Card-Juri-Knauth-B.jpg);
+	background: url(DE-Business-Card-Juri-Knauth-Bv92.jpg);
 	display: block;
 	background-size: 100% 100%;
 	top: 0;
@@ -285,16 +285,14 @@ a:active {
 }
 #imgda {
 	float: left;
-	background: url(da.jpg);
-	display: block;
-	background-size: 100% 100%;
+	background: url(da.jpg);	display: block;	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
 	max-width: 100%;
-	padding: 20px;
+	padding: 19px;
 	font-size: 30px;
-	width: 40px;
+	width: 36px;
 	text-align: center;
 	text-decoration: none;
 	margin: 5px 2px;
@@ -319,16 +317,14 @@ a:active {
 }
 #imgsf {
 	float: left;
-	background: url(sf.jpg);
-	display: block;
-	background-size: 100% 100%;
+	background: url(sf.jpg);	display: block;	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
 	max-width: 100%;
-	padding: 20px;
+	padding: 19px;
 	font-size: 30px;
-	width: 40px;
+	width: 36px;
 	text-align: center;
 	text-decoration: none;
 	margin: 5px 2px;
@@ -353,16 +349,14 @@ a:active {
 }
 #imgfb {
 	float: left;
-	background: url(fb.jpg);
-	display: block;
-	background-size: 100% 100%;
+	background: url(fb.jpg);	display: block;	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
 	max-width: 100%;
-	padding: 20px;
+	padding: 19px;
 	font-size: 30px;
-	width: 40px;
+	width: 36px;
 	text-align: center;
 	text-decoration: none;
 	margin: 5px 2px;
@@ -387,16 +381,14 @@ a:active {
 }
 #imgsc {
 	float: left;
-	background: url(sc.jpg);
-	display: block;
-	background-size: 100% 100%;
+	background: url(sc.jpg);	display: block;	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
 	max-width: 100%;
-	padding: 20px;
+	padding: 19px;
 	font-size: 30px;
-	width: 40px;
+	width: 36px;
 	text-align: center;
 	text-decoration: none;
 	margin: 5px 2px;
@@ -421,16 +413,14 @@ a:active {
 }
 #imgas {
 	float: left;
-	background: url(as.jpg);
-	display: block;
-	background-size: 100% 100%;
+	background: url(as.jpg);	display: block;	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
 	max-width: 100%;
-	padding: 20px;
+	padding: 19px;
 	font-size: 30px;
-	width: 40px;
+	width: 36px;
 	text-align: center;
 	text-decoration: none;
 	margin: 5px 2px;
@@ -455,16 +445,14 @@ a:active {
 }
 #imgfr {
 	float: left;
-	background: url(fr.jpg);
-	display: block;
-	background-size: 100% 100%;
+	background: url(fr.jpg);	display: block;	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
 	max-width: 100%;
-	padding: 20px;
+	padding: 19px;
 	font-size: 30px;
-	width: 40px;
+	width: 36px;
 	text-align: center;
 	text-decoration: none;
 	margin: 5px 2px;
@@ -489,16 +477,14 @@ a:active {
 }
 #imgig {
 	float: left;
-	background: url(ig.jpg);
-	display: block;
-	background-size: 100% 100%;
+	background: url(ig.jpg);	display: block;	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
 	max-width: 100%;
-	padding: 20px;
+	padding: 19px;
 	font-size: 30px;
-	width: 40px;
+	width: 36px;
 	text-align: center;
 	text-decoration: none;
 	margin: 5px 2px;
@@ -523,16 +509,14 @@ a:active {
 }
 #imgli {
 	float: left;
-	background: url(li.jpg);
-	display: block;
-	background-size: 100% 100%;
+	background: url(li.jpg);	display: block;	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
 	max-width: 100%;
-	padding: 20px;
+	padding: 19px;
 	font-size: 30px;
-	width: 40px;
+	width: 36px;
 	text-align: center;
 	text-decoration: none;
 	margin: 5px 2px;
@@ -557,16 +541,14 @@ a:active {
 }
 #imgv {
 	float: left;
-	background: url(v.jpg);
-	display: block;
-	background-size: 100% 100%;
+	background: url(v.jpg);	display: block;	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
 	max-width: 100%;
-	padding: 20px;
+	padding: 19px;
 	font-size: 30px;
-	width: 40px;
+	width: 36px;
 	text-align: center;
 	text-decoration: none;
 	margin: 5px 2px;
@@ -591,16 +573,14 @@ a:active {
 }
 #imgyt {
 	float: left;
-	background: url(yt.jpg);
-	display: block;
-	background-size: 100% 100%;
+	background: url(yt.jpg);	display: block;	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
 	max-width: 100%;
-	padding: 20px;
+	padding: 19px;
 	font-size: 30px;
-	width: 40px;
+	width: 36px;
 	text-align: center;
 	text-decoration: none;
 	margin: 5px 2px;
@@ -625,16 +605,14 @@ a:active {
 }
 #imgwa {
 	float: left;
-	background: url(wa.jpg);
-	display: block;
-	background-size: 100% 100%;
+	background: url(wa.jpg);	display: block;	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
 	max-width: 100%;
-	padding: 20px;
+	padding: 19px;
 	font-size: 30px;
-	width: 40px;
+	width: 36px;
 	text-align: center;
 	text-decoration: none;
 	margin: 5px 2px;
@@ -650,7 +628,7 @@ a:active {
 #imgwa:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
- 	background: 		background-size: 100% 100%;
+ background: 		background-size: 100% 100%;
 	background-size: 100% 100%;
 	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
@@ -659,16 +637,14 @@ a:active {
 }
 #imglf {
 	float: left;
-	background: url(lf.jpg);
-	display: block;
-	background-size: 100% 100%;
+	background: url(lf.jpg);	display: block;	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
 	max-width: 100%;
-	padding: 20px;
+	padding: 19px;
 	font-size: 30px;
-	width: 40px;
+	width: 36px;
 	text-align: center;
 	text-decoration: none;
 	margin: 5px 2px;
@@ -684,14 +660,77 @@ a:active {
 #imglf:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
- 	background: 		background-size: 100% 100%;
+ background: 		background-size: 100% 100%;
 	background-size: 100% 100%;
 	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
 }
-
+#imgst {
+	float: left;
+	background: url(st.jpg);	display: block;	background-size: 100% 100%;
+	top: 0;
+	table-layout: fixed;
+	max-height: 100%;
+	max-width: 100%;
+	padding: 19px;
+	font-size: 30px;
+	width: 36px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	left: 0;
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
+	max-width: 40px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	cursor: pointer;
+}
+#imgst:hover, .article:focus {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	color: #444;
+ background: 		background-size: 100% 100%;
+	background-size: 100% 100%;
+	nsition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
+}
+#imgit {
+	float: left;
+	background: url(it.jpg);	display: block;	background-size: 100% 100%;
+	top: 0;
+	table-layout: fixed;
+	max-height: 100%;
+	max-width: 100%;
+	padding: 19px;
+	font-size: 30px;
+	width: 36px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	left: 0;
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
+	max-width: 40px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	cursor: pointer;
+}
+#imgit:hover, .article:focus {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	color: #444;
+ background: 		background-size: 100% 100%;
+	background-size: 100% 100%;
+	nsition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
+}
 #imglogoa {
 	vertical-align: top;
 	width: 12px;
@@ -723,7 +762,7 @@ a:active {
 #imglogoa:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	background-color: #FFF;
- 	background: url(JKLogoH.png);
+	background: url(JKLogoH.png);
 	background-size: 100% 100%;
 	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
@@ -758,7 +797,6 @@ a:active {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	cursor: pointer;
 }
-
 .toprow {
 	overflow: hidden;
 	background-color: #000000;
@@ -936,6 +974,15 @@ div, p, figure {
 .column {
 	flex: 4;
 	flex-direction: row;
+}
+.articlesimple {
+	color: #000000;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	flex-basis: auto;
+	margin: 11px;
+	height: auto;
 }
 .article {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -1216,11 +1263,9 @@ input:checked + .slider:before {
 #IndexB {
 	background-color: rgba(85,85,85,0.75);
 }
-</style>
-<style type="text/css">
-#wrapper {
-	width: 100%;
-	float: left;
-	height: auto;
-	border: 1px solid #5694cf;
+</style> <style type="text/css"> #wrapper {
+ width: 100%;
+ float: left;
+ height: auto;
+ border: 1px solid #5694cf;
 }
