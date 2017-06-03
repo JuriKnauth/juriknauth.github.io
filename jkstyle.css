@@ -775,7 +775,7 @@ a:active {
 	height: 12px;
 	margin-top: 5px;
 	float: right;
-	background: url(JKLogoCBG.png);
+	background: url(JKLogoCBG2.png);
 	background-color: #000;
 	display: block;
 	background-size: 100% 100%;
@@ -1028,6 +1028,15 @@ div, p, figure {
 	height: auto;
 }
 .article-title {
+	float: left;
+	color: black;
+	flex-shrink: 0;
+	font-size: 1.4em;
+	font-weight: 700;
+	line-height: 1.2;
+}
+.article-titleR {
+	float: right;
 	color: black;
 	flex-shrink: 0;
 	font-size: 1.4em;
@@ -1037,6 +1046,22 @@ div, p, figure {
 .article-content {
 	flex: 1;
 	margin-top: 5px;
+ background-color:;
+	color: black;
+	height: auto;
+}
+.article-content2 {
+	flex: 1;
+	margin: 5px;
+ background-color:;
+	color: black;
+	height: auto;
+}
+.article-content3 {
+	flex: 1;
+	margin: 5px;
+	align: center;
+	float: center;
  background-color:;
 	color: black;
 	height: auto;
@@ -1238,6 +1263,68 @@ input:checked + .slider:before {
 	height: 0;
 	padding: 0;
 	overflow: hidden;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.containera {
+  position: relative;
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(40,40,40,0.90);
+}
+
+.containera:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  position: relative;
+	margin: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 #Blog {
 	background-color: rgba(255,0,0,0.5);
