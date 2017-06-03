@@ -35,7 +35,7 @@ body {
           <li><a id="defaultOpen" class="tablink" onClick="location.href='Blog.html'"><b>Blog</b></a></li>
           <li><a id="defaultOpen2" class="tablink" onclick="location.href='Projects.html'"><b>Projects</b></a></li>
           <li><a id="defaultOpen3" class="tablink" onClick="location.href='Contact.html'"><b>Contact</b></a></li>
-          <li><a id="imglogob" target="_blank" href="index.html#"> <img class="homeimg" src="1.png" alt="Dummy" align="right"/> </a></li>
+          <li><a id="imglogob" class="tablink2" target="_blank" href="index.html#"> <img class="homeimg" src="1.png" alt="Dummy" align="right"/> </a></li>
         </ul>
       </div>
       <div class="botbar a">
@@ -90,7 +90,7 @@ body {
 		for (i = 0; i < tabcontent.length; i++) {
 			tabcontent[i].style.display = "none";
 		}
-		tablinks = document.getElementsByClassName("tablink");
+		tablinks = document.getElementsByClassName("tablink" && "tablink2");
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].style.backgroundColor = "";
 			tablinks[i].style.color = "#FFFFFF";

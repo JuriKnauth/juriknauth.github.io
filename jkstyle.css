@@ -1196,8 +1196,11 @@ div, p, figure {
 	max-width: 1040px;
 	font-family: Century Gothic;
 }
+.tablink2 {
+}
 .tablink:hover {
 	background-color: #777;
+	color: #FFFFFF;
 }
 .tabcontent {
 	float: left;
