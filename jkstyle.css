@@ -1028,6 +1028,13 @@ div, p, figure {
 	height: auto;
 }
 .article-title {
+	color: black;
+	flex-shrink: 0;
+	font-size: 1.4em;
+	font-weight: 700;
+	line-height: 1.2;
+}
+.article-titleL {
 	float: left;
 	color: black;
 	flex-shrink: 0;
