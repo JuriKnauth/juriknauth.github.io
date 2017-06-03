@@ -283,6 +283,34 @@ a:active {
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
 }
+#img7 {
+	background: url(HeulDochBox.jpg);
+	display: block;
+	background-size: 100% 100%;
+	top: 0;
+	table-layout: fixed;
+	max-height: 100%;
+	max-width: 100%;
+	left: 0;
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
+}
+#img8 {
+	background: url(HeulDochInGame.jpg);
+	display: block;
+	background-size: 100% 100%;
+	top: 0;
+	table-layout: fixed;
+	max-height: 100%;
+	max-width: 100%;
+	left: 0;
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
+}
 #imgda {
 	float: left;
 	background: url(da.jpg);	display: block;	background-size: 100% 100%;
@@ -1045,9 +1073,10 @@ div, p, figure {
 .article-titleR {
 	float: right;
 	color: black;
+	
 	flex-shrink: 0;
 	font-size: 1.4em;
-	font-weight: 700;
+	font-weight: normal;
 	line-height: 1.2;
 }
 .article-content {
