@@ -6,9 +6,7 @@ html {
 	overflow-x: hidden;
 	overflow-y: scroll;
 	text-rendering: optimizeLegibility;
-	
-	font-family: "Century Gothic", sans-serif;
-}
+	}
 body {
 	margin: 0;
 	background-image: url("Wohnzimmer1920.jpg");
@@ -149,7 +147,7 @@ a:active {
 	margin: 66.66% auto;
 	flex: 1;
 	margin-top: 0px;
- 	background-color: #000000;
+ 	background-color:;
 	color: black;
 }
 #cf img {
@@ -364,9 +362,9 @@ a:active {
 #imgda:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
-	background: 0;
+ background: 		background-size: 100% 100%;
 	background-size: 100% 100%;
-	transition: background 0.5s linear;
+	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
@@ -396,9 +394,9 @@ a:active {
 #imgsf:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
-	background: 0;
+ background: 		background-size: 100% 100%;
 	background-size: 100% 100%;
-	transition: background 0.5s linear;
+	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
@@ -428,9 +426,9 @@ a:active {
 #imgfb:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
- 	background: 0;
+ background: 		background-size: 100% 100%;
 	background-size: 100% 100%;
-	transition: background 0.5s linear;
+	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
@@ -460,9 +458,9 @@ a:active {
 #imgsc:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
-	background: 0;
+ background: 		background-size: 100% 100%;
 	background-size: 100% 100%;
-	transition: background 0.5s linear;
+	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
@@ -492,9 +490,9 @@ a:active {
 #imgas:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
-	background: 0;
+ background: 		background-size: 100% 100%;
 	background-size: 100% 100%;
-	transition: background 0.5s linear;
+	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
@@ -524,9 +522,9 @@ a:active {
 #imgfr:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
-	background: 0;
+ background: 		background-size: 100% 100%;
 	background-size: 100% 100%;
-	transition: background 0.5s linear;
+	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
@@ -556,9 +554,9 @@ a:active {
 #imgig:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
-	background: 0;
+ background: 		background-size: 100% 100%;
 	background-size: 100% 100%;
-	transition: background 0.5s linear;
+	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
@@ -588,9 +586,9 @@ a:active {
 #imgli:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
-	background: 0;
+ background: 		background-size: 100% 100%;
 	background-size: 100% 100%;
-	transition: background 0.5s linear;
+	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
@@ -620,9 +618,9 @@ a:active {
 #imgv:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
-	background: 0;
+ background: 		background-size: 100% 100%;
 	background-size: 100% 100%;
-	transition: background 0.5s linear;
+	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
@@ -652,9 +650,9 @@ a:active {
 #imgyt:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
-	background: 0;
+ background: 		background-size: 100% 100%;
 	background-size: 100% 100%;
-	transition: background 0.5s linear;
+	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
@@ -684,9 +682,9 @@ a:active {
 #imgwa:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
-	background: 0;
+ background: 		background-size: 100% 100%;
 	background-size: 100% 100%;
-	transition: background 0.5s linear;
+	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
@@ -716,9 +714,9 @@ a:active {
 #imglf:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
-	background: 0;
+ background: 		background-size: 100% 100%;
 	background-size: 100% 100%;
-	transition: background 0.5s linear;
+	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
@@ -748,9 +746,9 @@ a:active {
 #imgst:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
-	background: 0;
+ background: 		background-size: 100% 100%;
 	background-size: 100% 100%;
-	transition: background 0.5s linear;
+	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
@@ -780,9 +778,9 @@ a:active {
 #imgit:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
-	background: 0;
+ background: 		background-size: 100% 100%;
 	background-size: 100% 100%;
-	transition: background 0.5s linear;
+	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
@@ -820,7 +818,7 @@ a:active {
 	background-color: #FFF;
 	background: url(JKLogoH.png);
 	background-size: 100% 100%;
-	transition: background 0.5s linear;
+	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
@@ -829,7 +827,7 @@ a:active {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	background-color: rgba(255,255,255,0.85);
 	background-size: 100% 100%;
-	transition: background 0.5s linear;
+	nsition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
@@ -981,8 +979,7 @@ a:active {
 #mainmenu span {
 	height: 31px;
 	padding: 0px;
- 	margin: 0px;
-	font-size: 1px;
+ margin: 0px font-size: 1px;
 }
 #menuitem_1 {
 	width: 29px;
@@ -1065,7 +1062,7 @@ div, p, figure {
 	color: #444;
 }
 .article-image {
-	background: 0;
+	background: #000000;
 	display: block;
 	padding-top: 75%;
 	position: relative;
@@ -1120,14 +1117,14 @@ div, p, figure {
 .article-content {
 	flex: 1;
 	margin-top: 5px;
-	background: 0;
+ background-color: 0;
 	color: black;
 	height: auto;
 }
 .article-content2 {
 	flex: 1;
 	margin: 5px;
-	background: 0;
+ background-color: 0;
 	color: black;
 	height: auto;
 }
@@ -1136,7 +1133,7 @@ div, p, figure {
 	margin: 5px;
 	text-align: center;
 	float: center;
-	background: 0;
+ background-color: 0;
 	color: black;
 	height: auto;
 }
