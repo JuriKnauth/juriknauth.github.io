@@ -10,7 +10,6 @@ html {
 body {
 	margin: 0;
 	background-image: url("BackGround.jpg");
-
 	height: 0px;
 	/* parallax scrolling effect */
 	background-attachment: fixed;
