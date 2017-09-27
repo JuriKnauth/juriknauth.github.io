@@ -11,6 +11,16 @@ body {
 	margin: 0;
 	background-image: url("BackGround.jpg");
 	height: 0px;
+	
+	-webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+	
 	/* parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
