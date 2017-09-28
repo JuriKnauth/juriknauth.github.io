@@ -21,13 +21,13 @@ body {
 	background-size: cover;
 	/* parallax scrolling effect */
 	background-attachment: fixed;
-	background-position: center;
+	background-position: center center;
 	background-repeat: no-repeat;
 	color: #000000;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.4;
-	margin-bottom: 0px;
+	margin-bottom: 50px;
 }
 h1 {
 	font-family: Century Gothic;
