@@ -6,21 +6,19 @@ html {
 	overflow-x: hidden;
 	overflow-y: scroll;
 	text-rendering: optimizeLegibility;
-	}
+}
 body {
 	margin: 0;
 	background-image: url("BackGround.jpg");
 	height: 0px;
-	
 	-webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    background-size: cover;
-	
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	/* parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
@@ -32,7 +30,6 @@ body {
 	line-height: 1.4;
 	margin-bottom: 50px;
 }
-
 h1 {
 	font-family: Century Gothic;
 	font-size: 23px;
@@ -157,7 +154,7 @@ a:active {
 	margin: 66.66% auto;
 	flex: 1;
 	margin-top: 0px;
- 	background-color: 0;
+	background-color: 0;
 	color: black;
 }
 #cf img {
@@ -349,7 +346,9 @@ a:active {
 }
 #imgda {
 	float: left;
-	background: url(da.jpg);	display: block;	background-size: 100% 100%;
+	background: url(da.jpg);
+	display: block;
+	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
@@ -372,7 +371,7 @@ a:active {
 #imgda:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
- 	background-size: 100% 100%;
+	background-size: 100% 100%;
 	transition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
@@ -380,7 +379,9 @@ a:active {
 }
 #imgsf {
 	float: left;
-	background: url(sf.jpg);	display: block;	background-size: 100% 100%;
+	background: url(sf.jpg);
+	display: block;
+	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
@@ -403,7 +404,7 @@ a:active {
 #imgsf:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
- 	background-size: 100% 100%;
+	background-size: 100% 100%;
 	transition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
@@ -411,7 +412,9 @@ a:active {
 }
 #imgfb {
 	float: left;
-	background: url(fb.jpg);	display: block;	background-size: 100% 100%;
+	background: url(fb.jpg);
+	display: block;
+	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
@@ -434,7 +437,7 @@ a:active {
 #imgfb:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
- 	background-size: 100% 100%;
+	background-size: 100% 100%;
 	transition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
@@ -442,7 +445,9 @@ a:active {
 }
 #imgsc {
 	float: left;
-	background: url(sc.jpg);	display: block;	background-size: 100% 100%;
+	background: url(sc.jpg);
+	display: block;
+	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
@@ -465,7 +470,7 @@ a:active {
 #imgsc:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
- 	background-size: 100% 100%;
+	background-size: 100% 100%;
 	transition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
@@ -473,7 +478,9 @@ a:active {
 }
 #imgas {
 	float: left;
-	background: url(as.jpg);	display: block;	background-size: 100% 100%;
+	background: url(as.jpg);
+	display: block;
+	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
@@ -496,7 +503,7 @@ a:active {
 #imgas:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
- 	background-size: 100% 100%;
+	background-size: 100% 100%;
 	transition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
@@ -504,7 +511,9 @@ a:active {
 }
 #imgfr {
 	float: left;
-	background: url(fr.jpg);	display: block;	background-size: 100% 100%;
+	background: url(fr.jpg);
+	display: block;
+	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
@@ -527,7 +536,7 @@ a:active {
 #imgfr:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
- 	background-size: 100% 100%;
+	background-size: 100% 100%;
 	transition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
@@ -535,7 +544,9 @@ a:active {
 }
 #imgig {
 	float: left;
-	background: url(ig.jpg);	display: block;	background-size: 100% 100%;
+	background: url(ig.jpg);
+	display: block;
+	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
@@ -558,7 +569,7 @@ a:active {
 #imgig:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
- 	background-size: 100% 100%;
+	background-size: 100% 100%;
 	transition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
@@ -566,8 +577,8 @@ a:active {
 }
 #imgli {
 	float: left;
-	background: url(li.jpg);	
-	display: block;	
+	background: url(li.jpg);
+	display: block;
 	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
@@ -599,7 +610,9 @@ a:active {
 }
 #imgv {
 	float: left;
-	background: url(v.jpg);	display: block;	background-size: 100% 100%;
+	background: url(v.jpg);
+	display: block;
+	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
@@ -630,7 +643,9 @@ a:active {
 }
 #imgyt {
 	float: left;
-	background: url(yt.jpg);	display: block;	background-size: 100% 100%;
+	background: url(yt.jpg);
+	display: block;
+	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
@@ -653,7 +668,7 @@ a:active {
 #imgyt:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
- 	background-size: 100% 100%;
+	background-size: 100% 100%;
 	transition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
@@ -661,7 +676,9 @@ a:active {
 }
 #imgwa {
 	float: left;
-	background: url(wa.jpg);	display: block;	background-size: 100% 100%;
+	background: url(wa.jpg);
+	display: block;
+	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
@@ -684,7 +701,7 @@ a:active {
 #imgwa:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
- 	background-size: 100% 100%;
+	background-size: 100% 100%;
 	transition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
@@ -692,7 +709,9 @@ a:active {
 }
 #imglf {
 	float: left;
-	background: url(lf.jpg);	display: block;	background-size: 100% 100%;
+	background: url(lf.jpg);
+	display: block;
+	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
@@ -715,7 +734,7 @@ a:active {
 #imglf:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
- 	background-size: 100% 100%;
+	background-size: 100% 100%;
 	transition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
@@ -723,7 +742,9 @@ a:active {
 }
 #imgst {
 	float: left;
-	background: url(st.jpg);	display: block;	background-size: 100% 100%;
+	background: url(st.jpg);
+	display: block;
+	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
@@ -746,7 +767,7 @@ a:active {
 #imgst:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
- 	background-size: 100% 100%;
+	background-size: 100% 100%;
 	transition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
@@ -754,7 +775,9 @@ a:active {
 }
 #imgit {
 	float: left;
-	background: url(it.jpg);	display: block;	background-size: 100% 100%;
+	background: url(it.jpg);
+	display: block;
+	background-size: 100% 100%;
 	top: 0;
 	table-layout: fixed;
 	max-height: 100%;
@@ -777,7 +800,7 @@ a:active {
 #imgit:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
- 	background-size: 100% 100%;
+	background-size: 100% 100%;
 	transition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
@@ -1106,7 +1129,6 @@ div, p, figure {
 .article-titleR {
 	float: right;
 	color: black;
-	
 	flex-shrink: 0;
 	font-size: 1.4em;
 	font-weight: normal;
@@ -1115,14 +1137,14 @@ div, p, figure {
 .article-content {
 	flex: 1;
 	margin-top: 5px;
- background-color: 0;
+	background-color: 0;
 	color: black;
 	height: auto;
 }
 .article-content2 {
 	flex: 1;
 	margin: 5px;
- background-color: 0;
+	background-color: 0;
 	color: black;
 	height: auto;
 }
@@ -1131,7 +1153,7 @@ div, p, figure {
 	margin: 5px;
 	text-align: center;
 	float: center;
- background-color: 0;
+	background-color: 0;
 	color: black;
 	height: auto;
 }
@@ -1337,66 +1359,63 @@ input:checked + .slider:before {
 	overflow: hidden;
 }
 .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
 }
-
 .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 150%;
-    left: 50%;
-    margin-left: -60px;
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	top: 150%;
+	left: 50%;
+	margin-left: -60px;
 }
-
 .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent black transparent;
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent black transparent;
 }
 .tooltip:hover .tooltiptext {
-    visibility: visible;
+	visibility: visible;
 }
 .containera {
-  position: relative;
-  width: 100%;
+	position: relative;
+	width: 100%;
 }
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(40,40,40,0.90);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: rgba(40,40,40,0.90);
 }
-
 .containera:hover .overlay {
-  opacity: 1;
+	opacity: 1;
 }
 .text {
-  color: white;
-  position: relative;
+	color: white;
+	position: relative;
 	margin: 20px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 }
 #Blog {
 	background-color: rgba(255,0,0,0.5);
@@ -1429,8 +1448,8 @@ input:checked + .slider:before {
  border: 1px solid #5694cf;
 }
 a.anchor {
-    display: block;
-    position: relative;
-    top: -100px;
-    visibility: hidden;
+	display: block;
+	position: relative;
+	top: -100px;
+	visibility: hidden;
 }
