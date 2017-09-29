@@ -860,13 +860,8 @@ a:active {
 }
 #imglogob {
 	vertical-align: top;
-<<<<<<< HEAD
-	width: 51px;
-	height: 51px;
-=======
 	width: 12px;
 	height: 12px;
->>>>>>> parent of 5a310fe... JKBrakeAndFix
 	margin-top: 5px;
 	float: right;
 	background: url(JKLogoCBG2.png);
