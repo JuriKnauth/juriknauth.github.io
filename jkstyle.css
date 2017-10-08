@@ -13,8 +13,10 @@ html {
 	text-rendering: optimizeLegibility;
 }
 body {
-	min-height:100%;
-	
+	top: 0;
+	left: 0;
+	z-index: 0;
+
 	margin: 0;
 	background-image: url("BackGround.jpg");
 	height: 0px;
@@ -23,24 +25,32 @@ body {
 	-moz-background-size: 100% 100%;
 	-o-background-size: 100% 100%;
 	background-size: 100% 100%;
-	-webkit-background-attachment: fixed;
-   	-moz-background-attachment: fixed;
-   	-o-background-attachment: fixed;
-   	-ms-background-attachment: fixed;
-   	background-attachment: fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+
+
 	/* parallax scrolling effect */
 	/* background-attachment: cover; */ 
-	background-position: center center;
-	background-repeat: no-repeat;
+
 	color: #000000;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.4;
 	margin-bottom: 50px;
+	
+	min-height:100%;
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+	background-position: center center;
+	background-repeat: no-repeat;
+	
+	-webkit-background-attachment: fixed;
+   	-moz-background-attachment: fixed;
+   	-o-background-attachment: fixed;
+   	-ms-background-attachment: fixed;
+   	background-attachment: fixed;
 }
 h1 {
 	font-family: Century Gothic;
