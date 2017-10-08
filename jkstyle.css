@@ -2,12 +2,19 @@
 html {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+
+	height:100%;
+ 	min-height:100%;
+ 
+
 	min-width: 300px;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	text-rendering: optimizeLegibility;
 }
 body {
+	min-height:100%;
+	
 	margin: 0;
 	background-image: url("BackGround.jpg");
 	height: 0px;
