@@ -114,24 +114,24 @@ a:link {
 	background-color: transparent;
 	text-decoration: none;
 	cursor: pointer;
-	font-family: Century Gothic
+	font-family: Century Gothic;
 }
 a:visited {
 	color: BlueViolet;
 	background-color: transparent;
 	text-decoration: none;
-	font-family: Century Gothic
+	font-family: Century Gothic;
 }
 a:hover {
 	color: SandyBrown;
 	background-color: transparent;
-	font-family: Century Gothic
+	font-family: Century Gothic;
 }
 a:active {
 	color: Tomato;
 	background-color: transparent;
 	text-decoration: underline;
-	font-family: Century Gothic
+	font-family: Century Gothic;
 }
 img {
     vertical-align: middle;
@@ -184,63 +184,6 @@ img {
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
-}
-
-.img-logo {
-	background-color: #555;
-	
-	float: right;
-
-	display: block;
-	
-	table-layout: fixed;
-
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	max-width: 40px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
-}
-.img-logo:hover {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	background-color: #FFF;
-	background: url(JKLogoH.png);
-	background-size: 100% 100%;
-	transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-
-.img-logob {
-	vertical-align: top;
-	width: 12px;
-	height: 12px;
-	margin-top: 5px;
-	float: right;
-	background: url(JKLogoCBG2.png);
-	background-color: #000;
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 20px;
-	font-size: 30px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 11px;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	max-width: 40px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
 }
 
 .container {
@@ -476,468 +419,7 @@ img {
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
 }
-#imgda {
-	float: left;
-	background: url(da.png);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 19px;
-	font-size: 30px;
-	width: 36px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	max-width: 40px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
-}
-#imgda:hover, .article:focus {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	color: #444;
-	background-size: 100% 100%;
-	transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#imgsf {
-	float: left;
-	background: url(sf.png);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 19px;
-	font-size: 30px;
-	width: 36px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	max-width: 40px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
-}
-#imgsf:hover, .article:focus {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	color: #444;
-	background-size: 100% 100%;
-	transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#imgfb {
-	float: left;
-	background: url(fb.png);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 19px;
-	font-size: 30px;
-	width: 36px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	max-width: 40px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
-}
-#imgfb:hover, .article:focus {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	color: #444;
-	background-size: 100% 100%;
-	transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#imgsc {
-	float: left;
-	background: url(sc.png);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 19px;
-	font-size: 30px;
-	width: 36px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	max-width: 40px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
-}
-#imgsc:hover, .article:focus {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	color: #444;
-	background-size: 100% 100%;
-	transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#imgas {
-	float: left;
-	background: url(as.png);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 19px;
-	font-size: 30px;
-	width: 36px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	max-width: 40px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
-}
-#imgas:hover, .article:focus {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	color: #444;
-	background-size: 100% 100%;
-	transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#imgfr {
-	float: left;
-	background: url(fr.png);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 19px;
-	font-size: 30px;
-	width: 36px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	max-width: 40px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
-}
-#imgfr:hover, .article:focus {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	color: #444;
-	background-size: 100% 100%;
-	transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#imgig {
-	float: left;
-	background: url(ig.png);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 19px;
-	font-size: 30px;
-	width: 36px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	max-width: 40px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
-}
-#imgig:hover, .article:focus {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	color: #444;
-	background-size: 100% 100%;
-	transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#imgli {
-	float: left;
-	background: url(li.png);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 19px;
-	font-size: 30px;
-	width: 36px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	max-width: 40px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
-}
-#imgli:hover, .article:focus {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	color: #444;
-	background-size: 100% 100%;
-	transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#imgv {
-	float: left;
-	background: url(v.png);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 19px;
-	font-size: 30px;
-	width: 36px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	max-width: 40px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
-}
-#imgv:hover, .article:focus {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	color: #444;
-	background-size: 100% 100%;
-	transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#imgyt {
-	float: left;
-	background: url(yt.png);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 19px;
-	font-size: 30px;
-	width: 36px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	max-width: 40px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
-}
-#imgyt:hover, .article:focus {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	color: #444;
-	background-size: 100% 100%;
-	transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#imgwa {
-	float: left;
-	background: url(wa.png);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 19px;
-	font-size: 30px;
-	width: 36px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	max-width: 40px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
-}
-#imgwa:hover, .article:focus {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	color: #444;
-	background-size: 100% 100%;
-	transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#imglf {
-	float: left;
-	background: url(lf.png);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 19px;
-	font-size: 30px;
-	width: 36px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	max-width: 40px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
-}
-#imglf:hover, .article:focus {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	color: #444;
-	background-size: 100% 100%;
-	transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#imgst {
-	float: left;
-	background: url(st.png);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 19px;
-	font-size: 30px;
-	width: 36px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	max-width: 40px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
-}
-#imgst:hover, .article:focus {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	color: #444;
-	background-size: 100% 100%;
-	transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#imgit {
-	float: left;
-	background: url(it.png);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 19px;
-	font-size: 30px;
-	width: 36px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	max-width: 40px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
-}
-#imgit:hover, .article:focus {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	color: #444;
-	background-size: 100% 100%;
-	transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
+
 #imglogoa {
 	vertical-align: top;
 	width: 12px;
@@ -984,6 +466,7 @@ img {
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
+	cursor:pointer;
 }
 #imglogob {
 	vertical-align: top;
@@ -1024,7 +507,7 @@ img {
 }
 .navbar {
 	overflow: hidden;
-	background-color: #000000;
+	background-color: rgba(0, 0, 0, 0.75);
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -1060,7 +543,7 @@ img {
 	font-family: Century Gothic;
 }
 .navbar a:hover {
-	background-color: #777;
+	background-color: rgba(119, 119, 119, 0.75);
 }
 .botbar a {
 	float: left;
@@ -1092,7 +575,7 @@ img {
 .botbar {
 	cursor: pointer;
 	overflow: hidden;
-	background-color: #000000;
+	background-color: rgba(0, 0, 0, 0.75);
 	position: fixed;
 	min-height: 30px;
 	vertical-align: center;
@@ -1213,6 +696,7 @@ div, p, figure {
 .article:hover, .article:focus {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	color: #444;
+	cursor:pointer;
 }
 .article-image {
 	background: #000000;
