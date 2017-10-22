@@ -139,12 +139,12 @@ img {
 	
 	display: block;
 	position: relative;
-	height: 100%;
+	height: auto;
 	width: 100%;
 	top: 0;
 	max-height: 100%;
 	max-width: 100%;
-	table-layout: fixed
+	table-layout: fixed;
 }
 .img-fluid {
     max-width: 100%;
