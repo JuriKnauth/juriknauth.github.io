@@ -56,19 +56,17 @@
           familiengerechtes Partyspiel den lokalen Multiplayer unterstützen und mit nur          
           einem Eingabegerät bedienbar sein.</p>
         <div class="columns">
-          <div class="nested-column"> <a class="article" href="FDMenu.jpg">
-           <img class="img-fluid" src="FDMenu.jpg" alt="_preFDIngame" width="640" height="360">
-            <!--<div id="img6"> <img class="homeimg" src="1.png" alt="Dummy" align="center"/> </div>-->
-            <div class="article-body">
+                   <div class="nested-column"> <a class="article" >
+           <img class="img-fluid" src="FDMenu.jpg" alt="_preFDIngame" width="640" height="360" onclick="openModal();currentSlide(1)">
+                        <div class="article-body">
               <h5 class="article-title"> </h5>
               <p class="article-content"> Menu</p>
               <footer class="article-info"> </footer>
             </div>
             </a> </div>
-          <div class="nested-column"> <a class="article" href="FDIngame.jpg">
-          	<img class="img-fluid" src="FDIngame.jpg" alt="_preFDIngame" width="640" height="360">
-            <!--<div id="img5"> <img class="homeimg" src="1.png" alt="Dummy" align="center"/> </div>-->
-            <div class="article-body">
+          <div class="nested-column"> <a class="article" >
+          	<img class="img-fluid" src="FDIngame.jpg" alt="_preFDIngame" width="640" height="360" onclick="openModal();currentSlide(2)">
+                        <div class="article-body">
               <h5 class="article-title"> </h5>
               <p class="article-content"> Ingame</p>
               <footer class="article-info"> </footer>
@@ -231,6 +229,57 @@
   <br>
   <br>
   <br>
+  
+  <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="FDMenu.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="FDIngame.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="CockpitIntro.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="IngameObjects.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+     <div class="demotext" id="caption">
+     </div>
+    </div>
+
+   <div class="columns">
+    <div class="nested-column">
+      <img class="demo cursor" onclick="currentSlide(1)" alt="Fluffy Dice Menu">
+    </div>
+    <div class="nested-column">
+      <img class="demo cursor" onclick="currentSlide(2)" alt="Fluffy Dice Ingame">
+    </div>
+    <div class="nested-column">
+      <img class="demo cursor" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="nested-column">
+      <img class="demo cursor" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    </div>
+
+  </div>
+</div>
+  
 </div>
 <script>
 	function topFunction() {
@@ -263,6 +312,42 @@
     document.getElementById("defaultOpen2").click();
 	document.getElementById("defaultOpen2").touch();
 	
+		function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
     </script>
 </body>
 <div class="gridContainer clearfix"></div>
