@@ -133,6 +133,14 @@ a:active {
 	text-decoration: underline;
 	font-family: Century Gothic
 }
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
 .container {
 	position: relative;
 	height: auto;
