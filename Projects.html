@@ -27,8 +27,8 @@
           <li> <span class="tablinkdum"></span></li>
           <li><a id="defaultOpen" class="tablink" onclick="location.href='Blog.html'"><b>Blog</b></a></li>
           <li><a id="defaultOpen2" class="tablink" onclick="openTab('Projects', this, 'rgba(255,255,0,1)')"><b>Projects</b></a></li>
-          <li><a id="defaultOpen3" class="tablink" onClick="location.href='Contact.html'"><b>Contact</b></a></li>
-          <li><a id="imglogoa" href="JK.html#"> <img class="homeimg" src="1.png" alt="Dummy" align="right"/> </a></li>
+          <li><a id="defaultOpen3" class="tablink" onclick="location.href='Contact.html'"><b>Contact</b></a></li>
+          <li><img class="logo" src="jkiconcropD.png" alt="jklogo" align="right"></li>
         </ul>
       </div>
       <div class="botbar a">
@@ -231,8 +231,8 @@
   <br>
   
   <div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
+  
+  <div id="myModalImg" class="modal-content">
 
     <div class="mySlides">
       <div class="numbertext">1 / 8</div>
@@ -273,6 +273,8 @@
       <div class="numbertext">8 / 8</div>
       <img src="ShadowOfWarPreview.jpg" style="width:100%">
     </div>
+    
+    <a class="close cursor" onclick="closeModal()">&times;</a>
     
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -352,7 +354,7 @@
 function closeModal() {
   document.getElementById('myModal').style.display = "none";
 }
-
+	
 var slideIndex = 1;
 showSlides(slideIndex);
 
