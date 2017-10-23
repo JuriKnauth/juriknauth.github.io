@@ -568,7 +568,7 @@ img {
 	flex-direction: column;
 	flex-basis: auto;
 	margin: 5px auto;
-	z-index: 500;
+	z-index: 400;
 	cursor: pointer;
 	font-family: Century Gothic;
 }
@@ -1082,7 +1082,7 @@ input:checked + .slider:before {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 600;
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -1100,6 +1100,7 @@ input:checked + .slider:before {
   padding: 0;
   width: 90%;
   max-width: 1200px;
+	z-index: 600;
 }
 
 /* The Close Button */
@@ -1110,6 +1111,8 @@ input:checked + .slider:before {
   right: -25px;
   font-size: 35px;
   font-weight: bold;
+	z-index: 610;
+	
 }
 
 .close:hover,
@@ -1117,6 +1120,7 @@ input:checked + .slider:before {
   color: #999;
   text-decoration: none;
   cursor: pointer;
+		z-index: 610;
 }
 
 .mySlides {
