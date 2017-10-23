@@ -42,7 +42,7 @@ body {
 	background-attachment: fixed;
 }
 h1 {
-	font-family: Century Gothic;
+	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 	font-size: 23px;
 	display: inline-block;
 	color: black;
@@ -50,7 +50,7 @@ h1 {
 	padding: 0;
 }
 h2 {
-	font-family: Century Gothic;
+	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 	font-size: 21px;
 	display: inline-block;
 	color: black;
@@ -58,7 +58,7 @@ h2 {
 	padding: 0;
 }
 h3 {
-	font-family: Century Gothic;
+	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 	font-size: 19px;
 	display: inline-block;
 	color: black;
@@ -67,7 +67,7 @@ h3 {
 	padding: 0;
 }
 h4 {
-	font-family: Century Gothic;
+	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 	font-size: 17px;
 	display: inline-block;
 	color: black;
@@ -75,7 +75,7 @@ h4 {
 	padding: 0;
 }
 h5 {
-	font-family: Century Gothic;
+	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 	font-size: 17px;
 	display: inline-block;
 	color: black;
@@ -83,7 +83,7 @@ h5 {
 	padding: 0;
 }
 h6 {
-	font-family: Century Gothic;
+	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 	font-size: 17px;
 	display: inline-block;
 	color: black;
@@ -91,7 +91,7 @@ h6 {
 	padding: 0;
 }
 p {
-	font-family: Century Gothic;
+	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 	font-size: 17px;
 	display: inline-block;
 	color: black;
@@ -103,24 +103,24 @@ a:link {
 	background-color: transparent;
 	text-decoration: none;
 	cursor: pointer;
-	font-family: Century Gothic;
+	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 }
 a:visited {
 	color: BlueViolet;
 	background-color: transparent;
 	text-decoration: none;
-	font-family: Century Gothic;
+	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 }
 a:hover {
 	color: SandyBrown;
 	background-color: transparent;
-	font-family: Century Gothic;
+	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 }
 a:active {
 	color: Tomato;
 	background-color: transparent;
 	text-decoration: underline;
-	font-family: Century Gothic;
+	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 }
 img {
 	vertical-align: middle;
@@ -128,6 +128,8 @@ img {
 	display: block;
 	position: relative;
 	height: auto;
+	-ms-height: 100%;
+	-ms-width: 100%;
 	top: 0;
 	max-height: 100%;
 	max-width: 100%;
@@ -517,7 +519,7 @@ img {
 	margin: 5px;
 	z-index: 500;
 	cursor: pointer;
-	font-family: Century Gothic;
+	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 }
 .navbar a:hover {
 	background-color: rgba(119, 119, 119, 0.75);
@@ -547,7 +549,7 @@ img {
 	margin: 5px auto;
 	z-index: 400;
 	cursor: pointer;
-	font-family: Century Gothic;
+	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 }
 .botbar {
 	cursor: pointer;
@@ -645,7 +647,7 @@ div, p, figure {
 	max-width: 1040px;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	cursor: pointer;
-	font-family: Century Gothic;
+	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 }
 .column {
 	flex: 4;
@@ -686,6 +688,7 @@ div, p, figure {
 	display: block;
 	height: 100%;
 	left: 0;
+	
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -772,7 +775,7 @@ div, p, figure {
 	justify-content: space-between;
 	margin-top: 10px;
 	margin-right: 0px;
-	font-family: Century Gothic;
+	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 	flex-direction: row;
 	flex: 1;
 	padding: 0px 16px;
@@ -871,7 +874,7 @@ div, p, figure {
 	margin: 0 auto;
 	min-width: 48px;
 	max-width: 1040px;
-	font-family: Century Gothic;
+	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 }
 .tablink2 {
 }
@@ -892,7 +895,7 @@ div, p, figure {
 	margin: 0 auto;
 	min-width: 48px;
 	max-width: 1040px;
-	font-family: Century Gothic;
+	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 	table-layout: fixed;
 	display: block;
 }
@@ -1121,7 +1124,7 @@ input:checked + .slider:before {
 	opacity: 0.6;
 }
 .demotext {
-	font-family: Century Gothic;
+	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
 	font-size: 17px;
 	display: inline-block;
 	color: white;
