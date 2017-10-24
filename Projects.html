@@ -18,7 +18,7 @@
 <style></style>
 </head>
 
-<body>
+<body onkeydown="myFunction(event)" onclick="closeOutModal(event)">
 <div class="container">
   <div class="main">
     <div id="mainmenu">
@@ -221,7 +221,7 @@
   <br>
   <br>
   <br>
-  <div id="myModal" class="modal">
+  <div id="myModal" class="modal" tabindex="-1000">
     <div id="myModalImg" class="modal-content">
       <div class="mySlides">
         <div class="numbertext">1 / 8</div>
@@ -295,12 +295,43 @@
     document.getElementById("defaultOpen2").click();
 	document.getElementById("defaultOpen2").touch();
 	
-		function openModal() {
+	// Get the modal
+var modal = document.getElementById('myModal');
+	
+function openModal() {
   document.getElementById('myModal').style.display = "block";
 }
 
 function closeModal() {
   document.getElementById('myModal').style.display = "none";
+}
+	
+function closeOutModal(event) {
+    if (event.target == myModal) {
+        document.getElementById('myModal').style.display = "none";
+    }
+}
+	
+function myFunction(event) {
+    var x = event.which || event.keyCode;
+    if (x == 27) {
+        document.getElementById('myModal').style.display = "none";
+    }
+	else if (x == 37) {
+        plusSlides(-1);
+    }
+	else if (x == 39) {
+        plusSlides(1);
+    }
+	else if (x == 66 || x == 49) {
+        window.location.href='http://www.juriknauth.com/Blog.html';
+    }
+	else if (x == 80 || x == 50) {
+        window.location.href='http://www.juriknauth.com/Projects.html';
+    }
+	else if (x == 67 || x == 51) {
+        window.location.href='http://www.juriknauth.com/Contact.html';
+    }
 }
 	
 var slideIndex = 1;
