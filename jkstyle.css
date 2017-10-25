@@ -1,1195 +1,1081 @@
 @charset "utf-8";
-html {
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	height: 100%;
-	min-height: 100%;
-	min-width: 300px;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	text-rendering: optimizeLegibility;
-}
-body {
-	top: 0;
-	left: 0;
-	z-index: 0;
-	margin: 0;
-	background-image: url("BackGround.jpg");
-	height: 0px;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: 100% 100%;
-	/* parallax scrolling effect */
-	/* background-attachment: cover; */ 
 
-	color: #000000;
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.4;
-	margin-bottom: 0px;
-	min-height: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	-webkit-background-attachment: fixed;
-	-moz-background-attachment: fixed;
-	-o-background-attachment: fixed;
-	-ms-background-attachment: fixed;
-	background-attachment: fixed;
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    min-height: 100%;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
 }
+
+body {
+    top: 0;
+    left: 0;
+    z-index: 0;
+    margin: 0;
+    background-image: url("BackGround.jpg");
+    height: 0px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    /* parallax scrolling effect */
+    /* background-attachment: cover; */
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 0px;
+    min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    -ms-background-attachment: fixed;
+    background-attachment: fixed;
+}
+
 h1 {
-	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
-	font-size: 23px;
-	display: inline-block;
-	color: black;
-	margin: 0px 0px 12px 0px;
-	padding: 0;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    font-size: 23px;
+    display: inline-block;
+    color: black;
+    margin: 0px 0px 12px 0px;
+    padding: 0;
 }
+
 h2 {
-	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
-	font-size: 21px;
-	display: inline-block;
-	color: black;
-	margin: 0px 0px 10px 0px;
-	padding: 0;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    font-size: 21px;
+    display: inline-block;
+    color: black;
+    margin: 0px 0px 10px 0px;
+    padding: 0;
 }
+
 h3 {
-	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
-	font-size: 19px;
-	display: inline-block;
-	color: black;
-	margin: 3;
-	margin: 0px 0px 8px 0px;
-	padding: 0;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    font-size: 19px;
+    display: inline-block;
+    color: black;
+    margin: 3;
+    margin: 0px 0px 8px 0px;
+    padding: 0;
 }
+
 h4 {
-	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
-	font-size: 17px;
-	display: inline-block;
-	color: black;
-	margin: 0px 0px 6px 0px;
-	padding: 0;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    font-size: 17px;
+    display: inline-block;
+    color: black;
+    margin: 0px 0px 6px 0px;
+    padding: 0;
 }
+
 h5 {
-	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
-	font-size: 17px;
-	display: inline-block;
-	color: black;
-	margin: 0px 0px 4px 0px;
-	padding: 0;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    font-size: 17px;
+    display: inline-block;
+    color: black;
+    margin: 0px 0px 4px 0px;
+    padding: 0;
 }
+
 h6 {
-	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
-	font-size: 17px;
-	display: inline-block;
-	color: black;
-	margin: 0px 0px 2px 0px;
-	padding: 0;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    font-size: 17px;
+    display: inline-block;
+    color: black;
+    margin: 0px 0px 2px 0px;
+    padding: 0;
 }
+
 p {
-	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
-	font-size: 17px;
-	display: inline-block;
-	color: black;
-	margin: 0;
-	padding: 0;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    font-size: 17px;
+    display: inline-block;
+    color: black;
+    margin: 0;
+    padding: 0;
 }
+
 a:link {
-	color: DodgerBlue;
-	background-color: transparent;
-	text-decoration: none;
-	cursor: pointer;
-	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    color: DodgerBlue;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
 }
+
 a:visited {
-	color: BlueViolet;
-	background-color: transparent;
-	text-decoration: none;
-	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    color: BlueViolet;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
 }
+
 a:hover {
-	color: SandyBrown;
-	background-color: transparent;
-	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    color: SandyBrown;
+    background-color: transparent;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
 }
+
 a:active {
-	color: Tomato;
-	background-color: transparent;
-	text-decoration: underline;
-	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    color: Tomato;
+    background-color: transparent;
+    text-decoration: underline;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
 }
+
 img {
-	vertical-align: middle;
-	border-style: none;
-	display: block;
-	position: relative;
-	height: auto;
-	-ms-height: 100%;
-	-ms-width: 100%;
-	top: 0;
-	max-height: 100%;
-	max-width: 100%;
-	table-layout: fixed;
+    vertical-align: middle;
+    border-style: none;
+    display: block;
+    position: relative;
+    height: auto;
+    -ms-height: 100%;
+    -ms-width: 100%;
+    top: 0;
+    max-height: 100%;
+    max-width: 100%;
+    table-layout: fixed;
 }
+
 .img-fluid {
-	max-width: 100%;
-	height: auto;
+    max-width: 100%;
+    height: auto;
 }
+
 .img-icon {
-	height: auto;
-	float: left;
-	display: block;
-	top: 0;
-	table-layout: fixed;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	max-width: 71px;
-	cursor: pointer;
+    height: auto;
+    float: left;
+    display: block;
+    top: 0;
+    table-layout: fixed;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    left: 0;
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    max-width: 71px;
+    cursor: pointer;
 }
-.img-icon:hover {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	color: #444;
-	background-size: 100% 100%;
-	transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
+
+    .img-icon:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        color: #444;
+        background-size: 100% 100%;
+        transition: background 0.5s linear;
+        -moz-transition: background 0.5s linear;
+        -o-transition: background 0.5s linear;
+    }
+
 .container {
-	position: relative;
-	height: auto;
-	width: 100%;
+    position: relative;
+    height: auto;
+    width: 100%;
 }
+
 .logo {
-	vertical-align: top;
-	width: 50px;
-	height: 50px;
-	margin-top: 5px;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
 }
+
 .img {
-	display: block;
-	width: 100%;
-	height: 100%;
-	margin: 100% auto;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 100% auto;
+    top: 0;
+    table-layout: fixed;
+    max-height: 100%;
+    max-width: 100%;
 }
-.cf {
-	display: block;
-	background: #eee;
-	position: relative;
-	height: 100%;
-	width: 100%;
-	max-height: 100%;
-	max-width: 100%;
-	margin: 70% auto;
-	top: 0;
-	padding-top: 56.25%;
-	table-layout: fixed
-}
-#cf {
-	display: block;
-	background: #eee;
-	position: relative;
-	width: 100%;
-	height: 100%;
-	margin: 66.66% auto;
-	flex: 1;
-	margin-top: 0px;
-	background-color: 0;
-	color: black;
-}
-#cf img {
-	position: absolute;
-	left: 0;
-	-webkit-transition: opacity 1s ease-in-out;
-	-moz-transition: opacity 1s ease-in-out;
-	-o-transition: opacity 1s ease-in-out;
-	transition: opacity 1s ease-in-out;
-}
-#cf img.top:hover {
-	opacity: 0;
-}
+
 #home {
-	background: url(IMG_0397JKkP1920.jpg);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
+    background: url(IMG_0397JKkP1920.jpg);
+    display: block;
+    background-size: 100% 100%;
+    top: 0;
+    table-layout: fixed;
+    max-height: 100%;
+    max-width: 100%;
+    left: 0;
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
 }
+
 .homeimg {
-	opacity: 0;
-	display: block;
-	position: relative;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	max-height: 100%;
-	max-width: 100%;
-	table-layout: fixed
+    opacity: 0;
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    max-height: 100%;
+    max-width: 100%;
+    table-layout: fixed
 }
+
 #home-background {
-	opacity: 0;
+    opacity: 0;
 }
+
 #home:hover {
-	background: url(IMG_0397JKkF1920.jpg);
-	background-size: 100% 100%;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
+    background: url(IMG_0397JKkF1920.jpg);
+    background-size: 100% 100%;
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
 }
+
 #img1 {
-	background: url(Buisness-Card-Juri-Knauth-Front-v99.png);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
+    background: url(Buisness-Card-Juri-Knauth-Front-v99.png);
+    display: block;
+    background-size: 100% 100%;
+    top: 0;
+    table-layout: fixed;
+    max-height: 100%;
+    max-width: 100%;
+    left: 0;
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
 }
+
 #img2 {
-	background: url(Buisness-Card-Juri-Knauth-Back-v99.png);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
+    background: url(Buisness-Card-Juri-Knauth-Back-v99.png);
+    display: block;
+    background-size: 100% 100%;
+    top: 0;
+    table-layout: fixed;
+    max-height: 100%;
+    max-width: 100%;
+    left: 0;
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
 }
-#img3 {
-	background: url(CockpitIntro.jpg);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#img4 {
-	background: url(IngameObjects.jpg);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#img5 {
-	background: url(FDIngame.jpg);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#img6 {
-	background: url(FDMenu.jpg);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#img7 {
-	background: url(HeulDochBox.jpg);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#img8 {
-	background: url(HeulDochInGame.jpg);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#img9 {
-	background: url(ShadowOfWar.jpg);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#img10 {
-	background: url(ShadowOfWarPreview.jpg);
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#imglogoa {
-	vertical-align: top;
-	width: 12px;
-	height: 12px;
-	margin-top: 5px;
-	float: right;
-	background: url(JKLogoN.png);
-	background-color: #000;
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 20px;
-	font-size: 30px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 11px;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	max-width: 40px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
-}
-#imglogoa:hover {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	background-color: #FFF;
-	background: url(JKLogoH.png);
-	background-size: 100% 100%;
-	transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
+
 .article:focus {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	background-color: rgba(255,255,255,0.85);
-	background-size: 100% 100%;
-	transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background-color: rgba(255,255,255,0.85);
+    background-size: 100% 100%;
+    transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    cursor: pointer;
 }
-#imglogob {
-	vertical-align: top;
-	width: 12px;
-	height: 12px;
-	margin-top: 5px;
-	float: right;
-	background: url(JKLogoCBG2.png);
-	background-color: #000;
-	display: block;
-	background-size: 100% 100%;
-	top: 0;
-	table-layout: fixed;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 20px;
-	font-size: 30px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 11px;
-	left: 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	max-width: 40px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
+
+ulnav {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 1040px;
+    text-align: center;
 }
-.toprow {
-	overflow: hidden;
-	background-color: #000000;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	display: inline-block;
-	vertical-align: top;
+
+linav {
+    padding: 4px 4px;
+    color: white;
+    float: left;
+
 }
-.navbar {
-	overflow: hidden;
-	background-color: rgba(0, 0, 0, 0.75);
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 500;
-	display: inline-block;
-	vertical-align: top;
-	margin: 0 auto;
-	max-width: 1040px;
-	text-align: center;
+
+    linav a, .dropbtn {
+        display: inline-block;
+        color: black;
+        text-align: left;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        linav a:hover, .dropdown:hover .dropbtn {
+            color: black;
+            background-color: rgba(85,85,85,0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.36), 0 1px 2px rgba(0, 0, 0, 0.48);
+            font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+        }
+
+    linav a, .dropdown {
+        color: white;
+        display: inline-block;
+        font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    }
+
+.dropbtn {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
 }
-.navbar a {
-	float: left;
-	display: block;
-	color: #FFFFFF;
-	text-align: center;
-	padding: 14px 14px;
-	text-decoration: none;
-	font-size: 17px;
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 0px;
-	margin-top: 5px;
-	margin: 0 auto;
-	max-width: 1040px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	display: flex;
-	flex: 1;
-	flex-direction: column;
-	flex-basis: auto;
-	margin: 5px;
-	z-index: 500;
-	cursor: pointer;
-	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
-}
-.navbar a:hover {
-	background-color: rgba(119, 119, 119, 0.75);
-}
-.botbar a {
-	float: left;
-	display: block;
-	color: #FFFFFF;
-	text-align: center;
-	vertical-align: center;
+
+.dropdown-content {
+    color: white;
+    display: none;
+    position: absolute;
 	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-	margin-top: 5px;
-	display: inline-block;
-	vertical-align: bottom;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	position: absolute;
-	max-width: 1040px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	display: flex;
-	flex: 1;
-	flex-direction: column;
-	flex-basis: auto;
-	margin: 5px auto;
-	z-index: 400;
-	cursor: pointer;
-	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+	text-align: left;
+    background-color: rgba(249,249,249,0.9);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
+
+    .dropdown-content a {
+        color: BlueViolet;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .dropdown-content a:hover {
+            background-color: rgba(241,241,241,0.9);
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.botbar a {
+    float: left;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 5px;
+    display: inline-block;
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    max-width: 1040px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-basis: auto;
+    margin: 5px auto;
+    z-index: 400;
+    cursor: pointer;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+}
+
 .botbar {
-	cursor: pointer;
-	overflow: hidden;
-	background-color: rgba(0, 0, 0, 0.75);
-	position: fixed;
-	min-height: 30px;
-	vertical-align: center;
-	color: #FFFFFF;
-	bottom: 0px;
-	width: 100%;
-	z-index: 500;
-	display: inline-block;
-	vertical-align: top;
-	margin: 0 auto;
-	margin-top: 10px;
-	max-width: 1040px;
-	text-align: center;
-	padding: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    min-height: 30px;
+    vertical-align: center;
+    color: #FFFFFF;
+    bottom: 0px;
+    width: 100%;
+    z-index: 500;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 10px;
+    max-width: 1040px;
+    text-align: center;
+    padding: 0px;
 }
+
 .main {
-	padding: 0px;
-	margin-top: 30px;
-	height: 200px;
-	margin: 0 auto;
-	max-width: 1040px;
-	font-family: Century Gothic Bold;
+    padding: 0px;
+    margin-top: 30px;
+    height: 200px;
+    margin: 0 auto;
+    max-width: 1040px;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
 }
-#mainmenu ul li {
-	display: inline;
-}
-#mainmenu ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
-#mainmenu li {
-	font-size: 1px;
-	width: 1px;
-	padding: 0;
-}
-#mainmenu span {
-	height: 31px;
-	padding: 0px;
-	margin: 0px;
-}
-#menuitem_1 {
-	width: 29px;
-	background-image: url("jkiconcrop.jpg");
-}
+
 table {
-	border-collapse: collapse;
-	width: 100%;
+    border-collapse: collapse;
+    width: 100%;
 }
+
 td, th {
-	border: 1px solid #dddddd;
-	text-align: left;
-	padding: 8px;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
+
 tr:nth-child(even) {
-	background-color: #dddddd;
+    background-color: #dddddd;
 }
+
 a {
-	text-decoration: none;
-	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
+
 div, p, figure {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 .header {
-	color: black;
-	padding: 40px 0 20px;
-	text-align: left;
+    color: black;
+    padding: 10px 0 10px;
+    text-align: left;
 }
-.header h1 {
-	font-size: 40px;
-	font-weight: bold;
-}
-.header h2 a {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-	color: black;
-	font-size: 20px;
-	opacity: 0.5;
-}
-.header h2 a:hover {
-	border-bottom-color: black;
-	opacity: 1;
-}
+
+    .header h1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .header h2 a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        color: black;
+        font-size: 20px;
+        opacity: 0.5;
+    }
+
+        .header h2 a:hover {
+            border-bottom-color: black;
+            opacity: 1;
+        }
+
 .row {
-	float: left;
-	color: #FFFFFF;
-	text-decoration: none;
-	margin: 0 auto;
-	max-width: 1040px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
-	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    float: left;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 auto;
+    max-width: 1040px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
 }
+
 .column {
-	flex: 4;
-	flex-direction: row;
+    flex: 4;
+    flex-direction: row;
 }
+
 .articlesimple {
-	color: #000000;
-	display: flex;
-	flex: 1;
-	flex-direction: column;
-	flex-basis: auto;
-	margin: 11px;
-	height: auto;
+    color: #000000;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-basis: auto;
+    margin: 11px;
+    height: auto;
 }
+
 .article {
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	color: #000000;
-	display: inherit;
-	flex: 1;
-	flex-direction: column;
-	flex-basis: auto;
-	margin: 10px;
-	height: auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: #000000;
+    display: inherit;
+    flex: 1;
+    flex-direction: column;
+    flex-basis: auto;
+    margin: 10px;
+    height: auto;
 }
-.article:hover, .article:focus {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	color: #444;
-	cursor: pointer;
-}
+
+    .article:hover, .article:focus {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        color: #444;
+        cursor: pointer;
+    }
+
 .article-image {
-	background: #000000;
-	display: block;
-	padding-top: 75%;
-	position: relative;
-	width: 100%;
+    background: #000000;
+    display: block;
+    padding-top: 75%;
+    position: relative;
+    width: 100%;
 }
-.article-image img {
-	display: block;
-	height: 100%;
-	left: 0;
-	
-	position: absolute;
-	top: 0;
-	width: 100%;
-}
-.article-image.is-3by2 {
-	padding-top: 66.6666%;
-}
-.article-image.is-16by9 {
-	padding-top: 56.25%;
-}
+
+    .article-image img {
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    .article-image.is-3by2 {
+        padding-top: 66.6666%;
+    }
+
+    .article-image.is-16by9 {
+        padding-top: 56.25%;
+    }
+
 .articlebody {
-	overflow: auto;
-	flex: 1;
-	flex-direction: column;
-	padding: 20px;
-	background-color: rgba(255,255,255,0.75);
-	height: auto;
+    overflow: auto;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.75);
+    height: auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
+
 .article-title {
-	color: black;
-	flex-shrink: 0;
-	font-size: 1.4em;
-	font-weight: 700;
-	line-height: 1.2;
+    color: black;
+    flex-shrink: 0;
+    font-size: 1.4em;
+    font-weight: 700;
+    line-height: 1.2;
 }
+
 .article-titleL {
-	float: left;
-	color: black;
-	flex-shrink: 0;
-	font-size: 1.4em;
-	font-weight: 700;
-	line-height: 1.2;
+    float: left;
+    color: black;
+    flex-shrink: 0;
+    font-size: 1.4em;
+    font-weight: 700;
+    line-height: 1.2;
 }
+
 .article-titleR {
-	float: right;
-	color: black;
-	flex-shrink: 0;
-	font-size: 1.4em;
-	font-weight: normal;
-	line-height: 1.2;
+    float: right;
+    color: black;
+    flex-shrink: 0;
+    font-size: 1.4em;
+    font-weight: normal;
+    line-height: 1.2;
 }
+
 .article-content {
-	flex: 1;
-	margin-top: 5px;
-	background-color: 0;
-	color: black;
-	height: auto;
+    flex: 1;
+    margin-top: 5px;
+    background-color: 0;
+    color: black;
+    height: auto;
 }
+
 .article-content2 {
-	flex: 1;
-	margin: 5px;
-	background-color: 0;
-	color: black;
-	height: auto;
+    flex: 1;
+    margin: 5px;
+    background-color: 0;
+    color: black;
+    height: auto;
 }
+
 .article-content3 {
-	flex: 1;
-	margin: 5px;
-	text-align: center;
-	float: center;
-	background-color: 0;
-	color: black;
-	height: auto;
+    flex: 1;
+    margin: 5px;
+    text-align: center;
+    float: center;
+    background-color: 0;
+    color: black;
+    height: auto;
 }
+
 .article-info {
-	display: flex;
-	font-size: 0.85em;
-	justify-content: space-between;
-	margin-top: 10px;
-	color: black;
+    display: flex;
+    font-size: 0.85em;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: black;
 }
+
 .article-date {
-	float: right;
-	opacity: 0.5;
-	font-style: italic;
-	display: flex;
-	font-size: 0.85em;
-	margin-top: 10px;
-	color: black;
+    float: right;
+    opacity: 0.5;
+    font-style: italic;
+    display: flex;
+    font-size: 0.85em;
+    margin-top: 10px;
+    color: black;
 }
+
 .bot-info {
-	display: flex;
-	font-size: 0.85em;
-	justify-content: space-between;
-	margin-top: 10px;
-	margin-right: 0px;
-	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
-	flex-direction: row;
-	flex: 1;
-	padding: 0px 16px;
+    display: flex;
+    font-size: 0.85em;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 0px;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    flex-direction: row;
+    flex: 1;
+    padding: 0px 16px;
 }
 
 @media screen and (min-width: 800px) {
-.columns, .column {
-	display: flex;
-}
-.first-article .article-body {
-	flex: 1;
-}
+    .columns, .column {
+        display: flex;
+    }
+
+    .first-article .article-body {
+        flex: 1;
+    }
 }
 
 @media screen and (min-width: 1000px) {
-.first-article {
-	flex-direction: row;
-}
-.first-article .article-body {
-	flex: 1;
-}
-.first-article .article-image {
-	height: 300px;
-	order: 2;
-	padding-top: 0;
-	width: 400px;
-}
-.main-column {
-	flex: 3;
-}
-.nested-column {
-	flex: 2;
-}
-}
+    .first-article {
+        flex-direction: row;
+    }
 
-@media screen and (max-width: 400px) {
-.navbar a {
-	padding: 14px 10px;
+        .first-article .article-body {
+            flex: 1;
+        }
 }
-}
+        .first-article .article-image {
+            height: 300px;
+            order: 2;
+            padding-top: 0;
+            width: 400px;
+        }
 
-@media screen and (max-width: 360px) {
-.navbar a {
-	padding: 14px 10px;
-}
-#imglogoa {
-	background-image: none !important;
-	display: none !important;
-}
-#imglogoa:hover {
-	background-image: none !important;
-	display: none !important;
-}
-#imglogob {
-	background-image: none !important;
-	display: none !important;
-}
-}
-.first-article {
-	flex-direction: row;
-}
-.first-article .articlebody {
-	flex: 1;
-}
-.first-article .article-image {
-	height: 300px;
-	order: 2;
-	padding-top: 0;
-	width: 400px;
-}
-.main-column {
-	flex: 4;
-}
-.nested-column {
-	flex: 2;
-}
-.tablinkdum {
-	float: left;
-	padding: 14px 14px;
-	width: auto;
-	border: none;
-	outline: none;
-	margin: 0 auto;
-	min-width: 6px;
-}
-.tablink {
-	background-color: #555;
-	color: white;
-	float: left;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	padding: 14px 16px;
-	font-size: 17px;
-	width: auto;
-	margin: 0 auto;
-	min-width: 48px;
-	max-width: 1040px;
-	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
-}
-.tablink2 {
-}
-.tablink:hover {
-	background-color: #777;
-	color: #FFFFFF;
-}
-.tablinkr {
-	background-color: #555;
-	color: white;
-	float: right;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	padding: 14px 16px;
-	font-size: 17px;
-	width: auto;
-	margin: 0 auto;
-	min-width: 48px;
-	max-width: 1040px;
-	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
-	table-layout: fixed;
-	display: block;
-}
-.tablinkr:hover {
-	background-color: #777;
-	color: #FFFFFF;
-}
-.tabcontent {
-	float: left;
-	display: block;
-	color: #f2f2f2;
-	text-align: left;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 20px;
-	margin-top: 5px;
-	margin: 0 auto;
-	max-width: 1040px;
-	width: 96%;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	display: flex;
-	flex: 1;
-	flex-direction: column;
-	flex-basis: auto;
-	margin: 5px;
-	font-family: Century Gothic;
-}
-.switch {
-	position: relative;
-	display: inline-block;
-	width: 60px;
-	height: 34px;
-}
-.switch input {
-	display: none;
-}
-.slider {
-	position: absolute;
-	cursor: pointer;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: #ccc;
-	-webkit-transition: .4s;
-	transition: .4s;
-}
-.slider:before {
-	position: absolute;
-	content: "";
-	height: 26px;
-	width: 26px;
-	left: 4px;
-	bottom: 4px;
-	background-color: white;
-	-webkit-transition: .4s;
-	transition: .4s;
-}
-input:checked + .slider {
-	background-color: #2196F3;
-}
-input:focus + .slider {
-	box-shadow: 0 0 1px #2196F3;
-}
-input:checked + .slider:before {
-	-webkit-transform: translateX(26px);
-	-ms-transform: translateX(26px);
-	transform: translateX(26px);
-}
-.embed-responsive {
-	position: relative;
-	display: block;
-	height: 0;
-	padding: 0;
-	overflow: hidden;
-}
-.tooltip {
-	position: relative;
-	display: inline-block;
-	border-bottom: 1px dotted black;
-}
-.tooltip .tooltiptext {
-	visibility: hidden;
-	width: 120px;
-	background-color: black;
-	color: #fff;
-	text-align: center;
-	border-radius: 6px;
-	padding: 5px 0;
-	position: absolute;
-	z-index: 1;
-	top: 150%;
-	left: 50%;
-	margin-left: -60px;
-}
-.tooltip .tooltiptext::after {
-	content: "";
-	position: absolute;
-	bottom: 100%;
-	left: 50%;
-	margin-left: -5px;
-	border-width: 5px;
-	border-style: solid;
-	border-color: transparent transparent black transparent;
-}
-.tooltip:hover .tooltiptext {
-	visibility: visible;
-}
-.containera {
-	position: relative;
-	width: 100%;
-}
-.overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: .5s ease;
-	background-color: rgba(40,40,40,0.90);
-}
-.containera:hover .overlay {
-	opacity: 1;
-}
-.text {
-	color: white;
-	position: relative;
-	margin: 20px;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-}
-/* The Modal */
+    .main-column {
+        flex: 3;
+    }
 
-* {
-	box-sizing: border-box;
-}
-.row > .column {
-	padding: 0 8px;
-}
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-.column {
-	float: left;
-	width: 25%;
-}
-/* The Modal (background) */
-.modal {
-	display: none;
-	position: fixed;
-	z-index: 600;
-	padding-top: 100px;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	background-color: rgba(0, 0, 0, 0.8);
-}
-/* Modal Content */
-.modal-content {
-	position: relative;
-	background-color: #fefefe;
-	margin: auto;
-	padding: 0;
-	width: 90%;
-	max-width: 1200px;
-	z-index: 600;
-}
-/* The Close Button */
-.close {
-	color: white;
-	position: absolute;
-	top: -40px;
-	right: -25px;
-	font-size: 35px;
-	font-weight: bold;
-	z-index: 610;
-}
-.close:hover, .close:focus {
-	color: #999;
-	text-decoration: none;
-	cursor: pointer;
-	z-index: 610;
-}
-.mySlides {
-	display: none;
-	color: white;
-}
-.cursor {
-	cursor: pointer
-}
-/* Next & previous buttons */
-.prev, .next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	padding: 16px;
-	margin-top: -50px;
-	color: white;
-	font-weight: bold;
-	font-size: 20px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
-	user-select: none;
-	-webkit-user-select: none;
-}
-.caption-container {
-	text-align: center;
-	background-color: black;
-	padding: 2px 16px;
-	color: white;
-}
-.demo {
-	display: none;
-	opacity: 0.6;
-}
-.demotext {
-	font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
-	font-size: 17px;
-	display: inline-block;
-	color: white;
-	margin: 0;
-	padding: 0;
-}
-.active, .demo:hover {
-	opacity: 1;
-}
-img.hover-shadow {
-	transition: 0.3s
-}
-.hover-shadow:hover {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-}
-/* Position the "next button" to the right */
-.next {
-	right: 0;
-	border-radius: 3px 0 0 3px;
-}
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-	background-color: rgba(0, 0, 0, 0.8);
-}
-/* Number text (1/3 etc) */
-.numbertext {
-	color: #f2f2f2;
-	font-size: 12px;
-	padding: 8px 12px;
-	position: absolute;
-	top: 0;
-}
-#Blog {
-	background-color: rgba(255,0,0,0.5);
-}
-#Projects {
-	background-color: rgba(255,255,0,0.5);
-}
-#Contact {
-	background-color: rgba(170,236,255,0.5);
-}
-#BlogB {
-	background-color: rgba(255,255,255,0.75);
-}
-#ProjectsB {
-	background-color: rgba(255,255,255,0.75);
-}
-#ContactB {
-	background-color: rgba(255,255,255,0.75);
-}
-#Index {
-	background-color: rgba(85,85,85,0.5);
-}
-#IndexB {
-	background-color: rgba(85,85,85,0.75);
-}
-</style> <style type="text/css"> #wrapper {
- width: 100%;
- float: left;
- height: auto;
- border: 1px solid #5694cf;
-}
-a.anchor {
-	display: block;
-	position: relative;
-	top: -100px;
-	visibility: hidden;
-}
+    .nested-column {
+        flex: 2;
+    }
+
+    .first-article {
+        flex-direction: row;
+    }
+
+        .first-article .articlebody {
+            flex: 1;
+        }
+
+        .first-article .article-image {
+            height: 300px;
+            order: 2;
+            padding-top: 0;
+            width: 400px;
+        }
+
+    .main-column {
+        flex: 4;
+    }
+
+    .nested-column {
+        flex: 2;
+    }
+
+    .tablinkdum {
+        float: left;
+        padding: 14px 14px;
+        width: auto;
+        border: none;
+        outline: none;
+        margin: 0 auto;
+        min-width: 6px;
+    }
+
+    .tablink {
+        background-color: #555;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: auto;
+        margin: 0 auto;
+        min-width: 48px;
+        max-width: 1040px;
+        font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    }
+
+    .tablink2 {
+    }
+
+    .tablink:hover {
+        background-color: #777;
+        color: #FFFFFF;
+    }
+
+    .tablinkr {
+        background-color: #555;
+        color: white;
+        float: right;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: auto;
+        margin: 0 auto;
+        min-width: 48px;
+        max-width: 1040px;
+        font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+        table-layout: fixed;
+        display: block;
+    }
+
+        .tablinkr:hover {
+            background-color: #777;
+            color: #FFFFFF;
+        }
+
+    .tabcontent {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: left;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 20px;
+        margin-top: 5px;
+        margin: 0 auto;
+        max-width: 1040px;
+        width: 96%;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        flex-basis: auto;
+        margin: 5px;
+        font-family: Century Gothic;
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+        .switch input {
+            display: none;
+        }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    .embed-responsive {
+        position: relative;
+        display: block;
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: 150%;
+            left: 50%;
+            margin-left: -60px;
+        }
+
+            .tooltip .tooltiptext::after {
+                content: "";
+                position: absolute;
+                bottom: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: transparent transparent black transparent;
+            }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+    .containera {
+        position: relative;
+        width: 100%;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(40,40,40,0.90);
+    }
+
+    .containera:hover .overlay {
+        opacity: 1;
+    }
+
+    .text {
+        color: white;
+        position: relative;
+        margin: 20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+    /* The Modal */
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .row > .column {
+        padding: 0 8px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+    }
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 600;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-width: 1200px;
+        z-index: 600;
+    }
+    /* The Close Button */
+    .close {
+        color: white;
+        position: absolute;
+        top: -40px;
+        right: -25px;
+        font-size: 35px;
+        font-weight: bold;
+        z-index: 610;
+    }
+
+        .close:hover, .close:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+            z-index: 610;
+        }
+
+    .mySlides {
+        display: none;
+        color: white;
+    }
+
+    .cursor {
+        cursor: pointer
+    }
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .caption-container {
+        text-align: center;
+        background-color: black;
+        padding: 2px 16px;
+        color: white;
+    }
+
+    .demo {
+        display: none;
+        opacity: 0.6;
+    }
+
+    .demotext {
+        font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+        font-size: 17px;
+        display: inline-block;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .active, .demo:hover {
+        opacity: 1;
+    }
+
+    img.hover-shadow {
+        transition: 0.3s
+    }
+
+    .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    #Default {
+        color: white;
+    }
+
+    #Blog {
+        color: black;
+        background-color: rgba(255,0,0,0.95);
+    }
+
+    #Projects {
+        color: black;
+        background-color: rgba(255,255,0,0.95);
+    }
+
+    #Contact {
+        color: black;
+        background-color: rgba(170,236,255,0.95);
+    }
+
+    #BlogB {
+        background-color: rgba(255,0,0,0.75);
+    }
+
+    #ProjectsB {
+        background-color: rgba(255,255,0,0.75);
+    }
+
+    #ContactB {
+        background-color: rgba(170,236,255,0.75);
+    }
+
+    #Index {
+        background-color: rgba(85,85,85,0.5);
+    }
+
+    #IndexB {
+        background-color: rgba(85,85,85,0.75);
+    }
+
+    </style > <style type="text/css" > #wrapper {
+        width: 100%;
+        float: left;
+        height: auto;
+        border: 1px solid #5694cf;
+    }
+
+    a.anchor {
+        display: block;
+        position: relative;
+        top: -25px;
+        visibility: hidden;
+    }
