@@ -3,42 +3,83 @@
 <!--<![endif]-->
 
 <head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=0.85" name="viewport" />
-<meta name="description" content="Juri Knauths Portfolio. I am a Game Designer. This web page will showcase each project I have worked on and link to my Team-Projects, but you will find a brief explanation about them here as well. Team-Project: Boardgames: Adam Mania, Conga Line, Solar Tower Defense, Heroes on the Eice, Video Games: Crashed Captain, Fluffy Dice, Physical Games: Slurp, Dance it off! Solo-Projects: Boardgames: Heul Doch! Video Game: Concepts: V.o.A. Scientific Paper: America’s Army: Spiel oder Rekrutierungsmittel? Mods: Warcraft III, Shadow of War Systems: Unity, Hazardous Inventory SystemMaps: Heroes of Might and Magic III, Wake of Gods, Cake Kingdom">
-<meta name="keywords" content="Juri, Knauth, Portfolio, Blog, Projects, Contact, Game Designer, Game Design, JuriK, juriknauth.com, www.juriknauth.com, JK, J, K">
-<meta name="author" content="Juri Knauth">
-<meta name="google-site-verification" content="rQabFeH1rub_olMtfbNRyzRKYo9M7YI4i3Qw7BW-Aj0" />
-<link rel="stylesheet" type="text/css" href="jkstyle.css">
-<link rel="favicon" href="https://juriknauth.github.io/favicon.ico" />
-<link rel="favicon-16x16" href="favicon-16x16.ico" type="image/x-icon">
-<title>Portfolio Juri Knauth</title>
-<link href="boilerplate.css" rel="stylesheet" type="text/css">
-<script src="respond.min.js"></script>
-<style></style>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=0.85" name="viewport" />
+    <meta name="description" content="Juri Knauths Portfolio. I am a Game Designer. This web page will showcase each project I have worked on and link to my Team-Projects, but you will find a brief explanation about them here as well. Team-Project: Boardgames: Adam Mania, Conga Line, Solar Tower Defense, Heroes on the Eice, Video Games: Crashed Captain, Fluffy Dice, Physical Games: Slurp, Dance it off! Solo-Projects: Boardgames: Heul Doch! Video Game: Concepts: V.o.A. Scientific Paper: America’s Army: Spiel oder Rekrutierungsmittel? Mods: Warcraft III, Shadow of War Systems: Unity, Hazardous Inventory SystemMaps: Heroes of Might and Magic III, Wake of Gods, Cake Kingdom">
+    <meta name="keywords" content="Juri, Knauth, Portfolio, Blog, Projects, Contact, Game Designer, Game Design, JuriK, juriknauth.com, www.juriknauth.com, JK, J, K">
+    <meta name="author" content="Juri Knauth">
+    <meta name="google-site-verification" content="rQabFeH1rub_olMtfbNRyzRKYo9M7YI4i3Qw7BW-Aj0" />
+    <link rel="stylesheet" type="text/css" href="jkstyle.css">
+    <link rel="favicon" href="https://juriknauth.github.io/favicon.ico" />
+    <link rel="favicon-16x16" href="favicon-16x16.ico" type="image/x-icon">
+    <title>Portfolio Juri Knauth</title>
+    <link href="boilerplate.css" rel="stylesheet" type="text/css">
+    <script src="respond.min.js"></script>
+    <style></style>
 </head>
 
-<body>
-<div class="container">
-  <div class="main">
-    <div id="mainmenu">
-      <div class="navbar">
-        <ul>
-          <li> <span class="tablinkdum"></span></li>
-          <li><a id="defaultOpen" class="tablink" onClick="location.href='Blog.html'"><b>Blog</b></a></li>
-          <li><a id="defaultOpen2" class="tablink" onclick="location.href='Projects.html'"><b>Projects</b></a></li>
-          <li><a id="defaultOpen3" class="tablink" onClick="location.href='Contact.html'"><b>Contact</b></a></li>
-          <li><img class="logo" src="jkiconcropD.png" alt="jklogo" align="right"></li>
-        </ul>
-      </div>
-      <div class="botbar a">
-        <footer class="bot-info" id="topfunc" onclick="topFunction()"> <span>Page under construction</span> <span>Top</span> <span>©2017 JK</span> </footer>
-      </div>
-    </div>
-    <div id="Index" class="tabcontent">
-      <header class="header"> </header>
+<body onkeydown="myFunction(event)" onclick="closeOutModal(event)">
+    <div class="container">
+        <div class="main">
+            <div id="mainmenu">
+                <div class="botbar a">
+                    <footer class="bot-info" id="topfunc" onclick="topFunction()"> <span>Portfolio Juri Knauth</span> <span>2017/10/25 v.01</span> </footer>
+                </div>
+                <ulnav>
+                    <linav class="dropdown">
+                        <a href="javascript:void(0)" onclick="location.href='Blog.html'" id="Default" class="dropbtn"><b>Blog</b></a>
+                        <div class="dropdown-content"> 
+							<h10 class="article-content"><em>The blog will feature some minor tasks, crafts and scribbles.</em></h10><br><br>
+							<h8 class="article-content"><b>Video Games:</b></h8>
+							<a href="Blog.html#Astroids3D">Astroids 3D</a>
+							<h8 class="article-content"><b>Board Games:</b></h8>
+							<a href="Blog.html#SolarTowerDefense">Solar Tower Defense</a>
+							<a href="Blog.html#CongaLine">Conga Line</a>
+                      		<h7 class="article-content"><b>Physical Games:</b></h7>
+                      		<a href="Blog.html#Slurp">Slurp</a>
+							<a href="Blog.html#DanceItOff">Dance it off!</a>
+                       		<h8 class="article-content"><b>Systems:</b></h8>
+                       		<a href="Blog.html#HazardousInventorySystem">Unity, Hazardous Inventory System</a>
+                       		<h8 class="article-content"><b>Maps:</b></h8>
+                       		<a href="Blog.html#CakeKingdom">Heroes of Might and Magic III, Wake of Gods, Cake Kingdom</a>
+                        </div>
+                    </linav>
+                    <linav class="dropdown">
+                        <a href="javascript:void(0)" onclick="location.href='Projects.html'" id="Default"><b color="white">Projects</b></a>
+                        <div class="dropdown-content"> 
+							<h10 class="article-content"><em>The project tab will showcase the bigger tasks.</em></h10><br><br>
+							<h7 class="article-content"><b>Video Games:</b></h7>
+                       		<a href="Projects.html#PirateSplashy">Pirate Splashy</a>
+                        	<a href="Projects.html#FluffyDice">Fluffy Dice</a> 
+                        	<a href="Projects.html#CrashedCaptain">Crashed Captain</a> 
+                        	<h7 class="article-content"><b>Video Game Concepts:</b></h7>
+                       		<a href="Projects.html#VoA">V.o.A.</a>
+                        	<h7 class="article-content"><b>Boardgames:</b></h7>
+                        	<a href="Projects.html#HeulDoch">Heul Doch!</a>
+							<a href="Projects.html#AdamMania">Adam Mania</a>
+1							<h7 class="article-content"><b>Escape Room:</b></h7>
+							<a href="Projects.html#Endstation">Endstation</a>
+							<h7 class="article-content"><b>Mods:</b></h7>
+                        	<a href="Projects.html#ShadowOfWar">Warcraft III, Shadow of War</a>
+                        	<h7 class="article-content"><b>Scientific Paper:</b></h7>
+                       		<a href="Projects.html#AmericasArmy">America’s Army: Spiel oder Rekrutierungsmittel?</a><br>
+						</div>
+                    </linav>
+                    <linav class="dropdown">
+                        <a href="javascript:void(0)" onclick="location.href='Contact.html'" id="Default" class="dropbtn"><b>Contact</b></a>
+                        <div class="dropdown-content"> 
+							<h10 class="article-content"><em>Contact details and links to get connected on various platforms.</em></h10><br>
+                        </div>
+                    </linav>
+                    <img class="logo" src="JKLogoCBG2.png" alt="jklogo" align="right">
+                </ulnav>
+            </div>
+            <div id="Index" class="tabcontent"w>
+                <header class="header">
+                    <p align="justify" class="article-content"> <i>This page will forward to the blog at first.</i></p>
+                </header>
       <p class="article first-article">
-      <div id="BlogB" class="articlebody">
+      <div class="articlebody">
         <h3 class="article-title"> Juri Knauth Portfolio</h3>
         <br>
         <p align="justify" class="article-content"> I am a Game Designer. This web page will showcase each project I have worked on and link to my Team-Projects, but you will find a brief explanation about them here as well. </p>
@@ -75,34 +116,161 @@
   <br>
   <br>
 </div>
-<script>
-	function topFunction() {
-		document.body.scrollTop = 0;
-		document.documentElement.scrollTop = 0;
-		}
-	
-    function openTab(tabName,elmnt,color) {
-        
-		var i, tabcontent, tablinks, articlebody;
-		tabcontent = document.getElementsByClassName("tabcontent");
-		for (i = 0; i < tabcontent.length; i++) {
-			tabcontent[i].style.display = "none";
-		}
-		tablinks = document.getElementsByClassName("tablink" && "tablink2");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.backgroundColor = "";
-			tablinks[i].style.color = "#FFFFFF";
+    <script>
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
-		articlebody = document.getElementsByClassName("articlebody");
-        for (i = 0; i < articlebody.length; i++) {
-            articlebody[i].style.backgroundColor = "";
+
+        function openTab(tabName, elmnt, color) {
+
+            var i, tabcontent, tablinks, articlebody;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+                tablinks[i].style.color = "#FFFFFF";
+            }
+            articlebody = document.getElementsByClassName("articlebody");
+            for (i = 0; i < articlebody.length; i++) {
+                articlebody[i].style.backgroundColor = "";
+            }
+            document.getElementById(tabName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+            elmnt.style.color = "#000000";
+
         }
-        document.getElementById(tabName).style.display = "block";
-        elmnt.style.backgroundColor = color;
-		elmnt.style.color = "#000000";
-    
-    }
-	
+
+        document.getElementById("defaultOpen2").click();
+        document.getElementById("defaultOpen2").touch();
+
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        function openModal() {
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        function closeOutModal(event) {
+            if (event.target == myModal) {
+                document.getElementById('myModal').style.display = "none";
+            }
+            else if (event.target == dropdown - content) {
+                document.getElementById(0).classList.toggle("show");
+            }
+
+        }
+
+        function myFunction(event) {
+            var x = event.which || event.keyCode;
+            if (x == 27) {
+                document.getElementById('myModal').style.display = "none";
+            }
+            else if (x == 37) {
+                plusSlides(-1);
+            }
+            else if (x == 39) {
+                plusSlides(1);
+            }
+            else if (x == 66 || x == 49) {
+                window.location.href = 'http://www.juriknauth.com/Blog.html';
+            }
+            else if (x == 80 || x == 50) {
+                window.location.href = 'http://www.juriknauth.com/Projects.html';
+            }
+            else if (x == 67 || x == 51) {
+                window.location.href = 'http://www.juriknauth.com/Contact.html';
+            }
+        }
+
+
+        document.getElementById('myModal').addEventListener('touchstart', handleTouchStart, false);
+        document.getElementById('myModal').addEventListener('touchmove', handleTouchMove, false);
+
+        var xDown = null;
+        var yDown = null;
+
+        function handleTouchStart(evt) {
+            xDown = evt.originalEvent.touches[0].clientX;
+            yDown = evt.originalEvent.touches[0].clientY;
+        };
+
+        function handleTouchMove(evt) {
+            if (!xDown || !yDown) {
+                return;
+            }
+
+            var xUp = evt.originalEvent.touches[0].clientX;
+            var yUp = evt.originalEvent.touches[0].clientY;
+
+            var xDiff = xDown - xUp;
+            var yDiff = yDown - yUp;
+
+            if (Math.abs(xDiff) > Math.abs(yDiff)) {
+                if (xDiff > 0) {
+                    plusSlides(-1);
+                } else {
+                    plusSlides(1);
+                }
+            }
+            /* reset values */
+            xDown = null;
+            yDown = null;
+        };
+
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction(i) {
+            document.getElementById(i).classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
     </script>
 </body>
 <div class="gridContainer clearfix"></div>
