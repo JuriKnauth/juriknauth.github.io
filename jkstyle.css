@@ -193,6 +193,7 @@ img {
     width: 50px;
     height: 50px;
     margin-top: 5px;
+	background-color: rgba(85,85,85,0.9);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.36), 0 1px 2px rgba(0, 0, 0, 0.48);
 	cursor: pointer;
 }
@@ -339,7 +340,7 @@ linav {
     }
 
 .dropbtn {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(85,85,85,0.9);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
 }
 
@@ -1045,6 +1046,7 @@ div, p, figure {
 
     #Default {
         color: white;
+		background-color: rgba(85,85,85,0.9);
     }
 
     #Blog {
