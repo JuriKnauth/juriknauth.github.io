@@ -207,7 +207,7 @@ img {
 }
 
 #home {
-    background: url(IMG_0397JKkP1920.jpg);
+    background: url(preEJK.jpg);
     display: block;
     background-size: 100% 100%;
     top: 0;
@@ -238,7 +238,7 @@ img {
 }
 
 #home:hover {
-    background: url(IMG_0397JKkF1920.jpg);
+    background: url(preJK.jpg);
     background-size: 100% 100%;
     -webkit-transition: background 0.5s linear;
     -moz-transition: background 0.5s linear;
