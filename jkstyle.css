@@ -303,7 +303,7 @@ ulnav {
 }
 
 linav {
-    padding: 4px 4px;
+    padding: 4px 2px;
     color: white;
     float: left;
 
@@ -340,7 +340,7 @@ linav {
     color: white;
     display: none;
     position: absolute;
-	padding: 14px 16px;
+	padding: 14px 14px;
 	text-align: left;
     background-color: rgba(249,249,249,0.9);
     min-width: 160px;
