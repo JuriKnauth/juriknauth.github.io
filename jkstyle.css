@@ -189,6 +189,13 @@ img {
 }
 
 .logo {
+	display: inline-block;
+	color: black;
+	text-align: center;
+
+	text-decoration: none;
+	font-size: 17px;
+	
 	margin-right: 2px;
     vertical-align: top;
     width: 50px;
@@ -641,6 +648,12 @@ div, p, figure {
     flex-direction: row;
     flex: 1;
     padding: 0px 16px;
+}
+
+@media screen and (max-width:360px) {
+	.dropbtn {
+	padding: 14px 12px;
+}
 }
 
 @media screen and (min-width: 800px) {
