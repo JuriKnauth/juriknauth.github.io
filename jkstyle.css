@@ -907,6 +907,10 @@ div, p, figure {
     }
     /* The Modal */
 
+    * {
+        box-sizing: border-box;
+    }
+
     .row > .column {
         padding: 0 8px;
     }
