@@ -652,7 +652,7 @@ div, p, figure {
 
 @media screen and (max-width:360px) {
 	.dropbtn {
-	padding: 14px 12px;
+	padding: 14px 10px;
 }
 }
 
