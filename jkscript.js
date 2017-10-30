@@ -24,10 +24,7 @@
             elmnt.style.color = "#000000";
 
         }
-
-        document.getElementById("defaultOpen2").click();
-        document.getElementById("defaultOpen2").touch();
-
+		
         // Get the modal
         var modal = document.getElementById('myModal');
 
