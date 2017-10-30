@@ -189,6 +189,7 @@ img {
 }
 
 .logo {
+	float: none;
 	display: inline-block;
 	color: black;
 	text-align: center;
@@ -197,8 +198,8 @@ img {
 	font-size: 17px;
 	
     vertical-align: top;
-    width: 52px;
-    height: 52px;
+    width: 51px;
+    height: 51px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.36), 0 1px 2px rgba(0, 0, 0, 0.48);
 	cursor: pointer;
 }
@@ -350,7 +351,7 @@ linav {
 }
 
 linavb {
-    padding: 4px 2px;
+    padding: 4px 2px 0px 2px;
     color: white;
     float: left;
 
