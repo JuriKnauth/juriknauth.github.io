@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Include Common Files</title>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<style>
+	a {
+    color:#000;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:underline;
+}
+a:visited {
+    color:#000;
+}
+.nav {
+    padding:10px;
+    border:solid 1px #c0c0c0;
+    border-radius:5px;
+    float:left;
+}
+.nav li {
+    list-style-type:none;
+    float:left;
+    margin:0 10px;
+}
+.nav li a {
+    text-align:center;
+    width:55px;
+    float:left;
+}
+.nav li.active {
+    background-color:green;
+}
+.nav li.active a {
+    color:#fff;
+    font-weight:bold;
+}
+	</style>
+<body>
+<header>
+    <ul class="nav">
+        <li><a href="#home">Home</a>
+        </li>
+        <li>|</li>
+        <li><a href="#tour">Tour</a>
+        </li>
+        <li>|</li>
+        <li><a href="#about">About</a>
+        </li>
+        <li>|</li>
+        <li><a href="#contact">Contact</a>
+        </li>
+    </ul>
+</header>
+</br></br></br></br></br>
+Main Content
+<div id="header"></div><br />
+<div id="content">
+Main Content
+</div><br />
+<div id="footer"></div>
+<script>
+$("#header").load("test1.html");
+$("#footer").load("footer.html");
+	$(function () {
+    setNavigation();
+});
+
+function setNavigation() {
+    var path = window.location.pathname;
+    path = path.replace(/\/$/, "");
+    path = decodeURIComponent(path);
+
+    $(".nav a").each(function () {
+        var href = $(this).attr('href');
+        if (path.substring(0, href.length) === href) {
+            $(this).closest('li').addClass('active');
+        }
+    });
+}
+</script>
+</body>
+</html>
