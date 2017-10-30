@@ -1120,11 +1120,15 @@ div, p, figure {
     }
 
     #Index {
-        background-color: rgba(85,85,85,0.5);
+        background-color: rgba(85,85,85,0.95);
     }
 
     #IndexB {
         background-color: rgba(85,85,85,0.75);
+    }
+
+    #IndexC {
+        background-color: rgba(85,85,85,0.95);
     }
 
     </style > <style type="text/css" > #wrapper {
