@@ -351,6 +351,39 @@ linav {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
 }
 
+linavb {
+    padding: 0px 0px;
+    color: white;
+    float: left;
+
+}
+
+linavb a, .dropbtnimg {
+        display: inline-block;
+        color: black;
+        text-align: left;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        linavb a:hover, .dropbtnimg: hover {
+            color: black;
+            background-color: rgba(125,125,125,0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.36), 0 1px 2px rgba(0, 0, 0, 0.48);
+            font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+        }
+
+    linavb a {
+        color: white;
+        display: inline-block;
+        font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    }
+
+.dropbtnimg {
+    background-color: rgba(85,85,85,0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
+}
+
 .dropdown-content {
     color: white;
     display: none;
