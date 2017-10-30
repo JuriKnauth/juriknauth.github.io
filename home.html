@@ -71,7 +71,7 @@ $("#footer").load("footer.html");
 
 function setNavigation() {
     var path = window.location.pathname;
-    path = path.replace(/\/$/, "");
+    path = path.replace("http://www.juriknauth.com/", "");
     path = decodeURIComponent(path);
 
     $(".nav a").each(function () {
