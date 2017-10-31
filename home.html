@@ -65,10 +65,10 @@ Main Content
 <div id="footer"></div>
 <script>
     $(function(){
-		HTMLString path = window.location.href;
+		String path = window.location.href;
 		path = path.Remove(0,19);
         $('a').each(function(){
-			HTMLString href = $(this).prop('href');
+			String href = $(this).prop('href');
 			path = path.substring(0, href.length);
             if (href == path) {
                 $(this).addClass('active'); $(this).parents('li').addClass('active');
