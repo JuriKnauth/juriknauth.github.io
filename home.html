@@ -65,12 +65,10 @@ Main Content
 <div id="footer"></div>
 <script>
     $(function(){
-		String path = window.location.href;
-		path = path.Remove(0,19);
+		var path = window.location.href;
         $('a').each(function(){
-			String href = $(this).prop('href');
-			path = path.substring(0, href.length);
-            if (href == path) {
+			var href = $(this).prop('href');
+            if (path.toLowerCase().indexOf(href) >= 0) {
                 $(this).addClass('active'); $(this).parents('li').addClass('active');
             }
         });
