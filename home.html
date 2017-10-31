@@ -46,17 +46,17 @@ a:visited {
         <li><a href="home">Home</a>
         </li>
         <li>|</li>
-        <li><a href="#tour">Tour</a>
+        <li><a href="tour">Tour</a>
         </li>
         <li>|</li>
-        <li><a href="#about">About</a>
+        <li><a href="about">About</a>
         </li>
         <li>|</li>
-        <li><a href="#contact">Contact</a>
+        <li><a href="contact">Contact</a>
         </li>
     </ul>
 </header>
-</br></br></br></br></br>
+	<div></br></br></br></br></br></div>
 Main Content
 <div id="header"></div><br />
 <div id="content">
@@ -65,8 +65,12 @@ Main Content
 <div id="footer"></div>
 <script>
     $(function(){
+		var path = window.location.href;
+		path = path.replace("http://www.juriknauth.com/", "");
         $('a').each(function(){
-            if ($(this).prop('href') == window.location.href) {
+			var href = $(this).prop('href');
+			path = path.substring(0, href.length);
+            if (href == path) {
                 $(this).addClass('active'); $(this).parents('li').addClass('active');
             }
         });
