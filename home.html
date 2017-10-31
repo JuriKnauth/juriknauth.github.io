@@ -66,7 +66,7 @@ Main Content
 <script>
     $(function(){
 		var path = window.location.href;
-		path = path.replace("http://www.juriknauth.com/", "");
+		path = path.Remove(0,26);
         $('a').each(function(){
 			var href = $(this).prop('href');
 			path = path.substring(0, href.length);
