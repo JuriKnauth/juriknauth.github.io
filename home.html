@@ -39,6 +39,12 @@ a:visited {
     color:#fff;
     font-weight:bold;
 }
+#home
+	{
+    color:#fff;
+    font-weight:bold;
+}
+	
 	</style>
 <body>
 <header>
@@ -56,11 +62,9 @@ a:visited {
         </li>
     </ul>
 </header>
-	<div></br></br></br></br></br></div>
 Main Content
 <div id="header"></div><br />
 <div id="content">
-Main Content
 </div><br />
 <div id="footer"></div>
 <script>
@@ -69,7 +73,7 @@ Main Content
         $('a').each(function(){
 			var href = $(this).prop('href');
             if (path.toLowerCase().indexOf(href) >= 0) {
-                $(this).addClass('active'); $(this).parents('li').addClass('active');
+            $(this).closest('li').addClass(href);
             }
         });
     });
