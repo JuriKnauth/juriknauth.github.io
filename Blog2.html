@@ -207,7 +207,7 @@
 			$('a').each(function(){
 				var id = $(this).attr("id");
             	if (path.toLowerCase().indexOf(id) >= 0) {
-				document.getElementById(res).id = "res";
+				$(this).attr('id', ('Default'));
 				}
 			})
 		});
