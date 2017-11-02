@@ -1,21 +1,3 @@
-		$(function(){
-			var path = window.location.href;
-			$('a').each(function(){
-				var href = $(this).prop('id');
-				if (path.toLowerCase().indexOf(href) >= 0) {
-					
-				}
-				else if (href === ('Index'))
-				{
-				
-				}
-				else
-				{
-					$(this).attr('id', ('Default'));					
-				}
-			});
-		});
-
 		function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
