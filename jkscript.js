@@ -55,28 +55,6 @@
 
         }
 
-        function myFunction(event) {
-            var x = event.which || event.keyCode;
-            if (x == 27) {
-                document.getElementById('myModal').style.display = "none";
-            }
-            else if (x == 37) {
-                plusSlides(-1);
-            }
-            else if (x == 39) {
-                plusSlides(1);
-            }
-            else if (x == 66 || x == 49) {
-                window.location.href = 'http://www.juriknauth.com/Blog.html';
-            }
-            else if (x == 80 || x == 50) {
-                window.location.href = 'http://www.juriknauth.com/Projects.html';
-            }
-            else if (x == 67 || x == 51) {
-                window.location.href = 'http://www.juriknauth.com/Contact.html';
-            }
-        }
-
         var slideIndex = 1;
         showSlides(slideIndex);
 
