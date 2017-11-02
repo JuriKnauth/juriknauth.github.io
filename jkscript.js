@@ -1,4 +1,4 @@
-       function topFunction() {
+		function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
@@ -68,42 +68,6 @@
             }
         }
 
-
-        document.getElementById('myModal').addEventListener('touchstart', handleTouchStart, false);
-        document.getElementById('myModal').addEventListener('touchmove', handleTouchMove, false);
-
-        var xDown = null;
-        var yDown = null;
-
-        function handleTouchStart(evt) {
-            xDown = evt.originalEvent.touches[0].clientX;
-            yDown = evt.originalEvent.touches[0].clientY;
-        };
-
-        function handleTouchMove(evt) {
-            if (!xDown || !yDown) {
-                return;
-            }
-
-            var xUp = evt.originalEvent.touches[0].clientX;
-            var yUp = evt.originalEvent.touches[0].clientY;
-
-            var xDiff = xDown - xUp;
-            var yDiff = yDown - yUp;
-
-            if (Math.abs(xDiff) > Math.abs(yDiff)) {
-                if (xDiff > 0) {
-                    plusSlides(-1);
-                } else {
-                    plusSlides(1);
-                }
-            }
-            /* reset values */
-            xDown = null;
-            yDown = null;
-        };
-
-
         var slideIndex = 1;
         showSlides(slideIndex);
 
@@ -147,4 +111,5 @@
                     myDropdown.classList.remove('show');
                 }
             }
-        }
+        }	
+		
