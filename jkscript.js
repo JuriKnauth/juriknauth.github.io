@@ -5,7 +5,7 @@
 				if (path.toLowerCase().indexOf(href) >= 0) {
 					
 				}
-				else if (href === "Index")
+				else if (href === ('Index'))
 				{
 				
 				}
