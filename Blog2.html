@@ -206,7 +206,7 @@
 			var path = window.location.href;
 			$('a').each(function(){
 				var id = $(this).attr("id");
-            	if (res.toLowerCase().indexOf(id) >= 0) {
+            	if (path.toLowerCase().indexOf(id) >= 0) {
 				document.getElementById(res).id = "res";
 				}
 			})
