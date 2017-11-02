@@ -206,7 +206,7 @@
 			var path = window.location.href;
 			$('a').each(function(){
 				var curid = $(this).prop('id');
-            	if (path.toLowerCase().indexOf(id) >= 0) {
+            	if (path.toLowerCase().indexOf(curid) >= 0) {
 				$(this).attr('id', ('Default'));
 				}
 			})
