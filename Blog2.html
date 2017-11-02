@@ -205,19 +205,9 @@
 		$(document).ready(function() {
 			var path = window.location.href;
 			$('a').each(function(){
-				var currentid = $(this).attr("id");
-				if (path.toLowerCase().indexOf(currentid) >= 0) {
-					
-				}
-				else if (currentid === ('Index'))
-				{
-				
-				}
-				else
-				{
-					$(this).attr('id', ('Default'));					
-				}
-			});
+				var id = $(this).attr("id");
+            	if (res.toLowerCase().indexOf(id) >= 0) {
+				document.getElementById(res).id = "res";
 		});
     </script>
 </body>
