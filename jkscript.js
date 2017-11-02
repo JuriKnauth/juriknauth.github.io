@@ -2,8 +2,8 @@
 			var path = window.location.href;
 			$('a').each(function(){
 				var href = $(this).prop('href');
-				if (path.toLowerCase().indexOf(blog) >= 0) {
-					$(this).attr('id', (blog));
+				if (path.toLowerCase().indexOf(href) >= 0) {
+					$(this).attr('id', ('Blog'));
 				}
 			});
 		});
