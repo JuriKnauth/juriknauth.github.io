@@ -1,3 +1,12 @@
+		var path = window.location.href;		
+		
+		function buttonColor(){
+				var href = $(this).prop('href');
+				if (path.toLowerCase().indexOf(href) >= 0) {
+					$(this).attr('id', ('Default'));
+				}
+		}
+
 		function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
