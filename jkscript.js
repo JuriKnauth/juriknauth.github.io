@@ -3,9 +3,13 @@
 			$('a').each(function(){
 				var href = $(this).prop('id');
 				if (path.toLowerCase().indexOf(href).toLowerCase() >= 0) {
-
+					
 				}
-				else
+				else if (href = "index")
+				{
+				
+				}
+				else ()
 				{
 					$(this).attr('id', ('Default'));					
 				}
