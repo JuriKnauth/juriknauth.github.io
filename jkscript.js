@@ -1,9 +1,13 @@
 		$(function(){
 			var path = window.location.href;
 			$('a').each(function(){
-				var href = $(this).prop('onclick');
+				var href = $(this).prop('id');
 				if (path.toLowerCase().indexOf(href).toLowerCase() >= 0) {
-					$(this).attr('id', ('Blog'));
+
+				}
+				else
+				{
+					$(this).attr('id', ('Default'));					
 				}
 			});
 		});
