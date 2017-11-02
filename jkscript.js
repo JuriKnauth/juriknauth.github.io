@@ -9,7 +9,7 @@
 				{
 				
 				}
-				else ()
+				else
 				{
 					$(this).attr('id', ('Default'));					
 				}
