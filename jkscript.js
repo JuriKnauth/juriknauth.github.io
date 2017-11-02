@@ -2,10 +2,10 @@
 			var path = window.location.href;
 			$('a').each(function(){
 				var href = $(this).prop('id');
-				if (path.toLowerCase().indexOf(href).toLowerCase() >= 0) {
+				if (path.toLowerCase().indexOf(href) >= 0) {
 					
 				}
-				else if (href = "index")
+				else if (href === "Index")
 				{
 				
 				}
