@@ -1,12 +1,34 @@
 
+    $(function(){
+		var path = window.location.href;
+    var curId = document.getElementById("Blog");
+    if (path.includes("Blog")){
+
+        }
+      else
+        {
+          curId.id = 'Default';
+        }
+      
+    curId = document.getElementById("Projects");
+    if (path.includes("Projects")){
+
+        }
+      else
+        {
+          curId.id = 'Default';
+        }
 		
-		function buttonColor(){
-				var e = document.getElementById("Blog2");
-				var path = window.location.href;		
-				if (path.toLowerCase().indexOf(e.id) >= 0) {
-					e.id = "Default";
-				}
-		}
+	curId = document.getElementById("Contact");
+    if (path.includes("Contact")){
+
+        }
+      else
+        {
+          curId.id = 'Default';
+        }
+		
+    });  
 
 		function topFunction() {
             document.body.scrollTop = 0;
