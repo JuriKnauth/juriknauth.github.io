@@ -1,11 +1,10 @@
 		var path = window.location.href;		
 		
 		function buttonColor(){
-				var href = $(this).prop('href');
 				var e = document.getElementById("monkey");
-				e.id = "ape";
+				var href = e.prop('href');
 				if (path.toLowerCase().indexOf(e.id) >= 0) {
-					$(this).attr('id', ('Default'));
+					e.id = "Default";
 				}
 		}
 
