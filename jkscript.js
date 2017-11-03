@@ -1,9 +1,20 @@
 		var path = window.location.href;		
 		
 		function buttonColor(){
-				var e = document.getElementById("monkey");
-				var href = e.prop('href');
-				if (path.toLowerCase().indexOf(e.id) >= 0) {
+				var e = document.getElementById("Index");
+				if (path.toLowerCase().indexOf(e.id) = -1) {
+					e.id = "Default";
+				}
+				var e = document.getElementById("Blog");
+				if (path.toLowerCase().indexOf(e.id) = -1) {
+					e.id = "Default";
+				}
+				var e = document.getElementById("Projects");
+				if (path.toLowerCase().indexOf(e.id) = -1) {
+					e.id = "Default";
+				}
+				var e = document.getElementById("Contact");
+				if (path.toLowerCase().indexOf(e.id) = -1) {
 					e.id = "Default";
 				}
 		}
