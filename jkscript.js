@@ -26,6 +26,16 @@
         {
           curId.id = 'Default';
         }
+	
+	path.slice(-14);
+	curId = document.getElementById("Index");
+    if (path === ("juriknauth.com")){
+
+        }
+      else
+        {
+          curId.id = 'Default';
+        }
 		
     }; 
 
