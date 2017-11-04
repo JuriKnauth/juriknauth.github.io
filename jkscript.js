@@ -1,5 +1,4 @@
-
-    function buttonColor(){
+	window.onload = function(){
 		var path = window.location.href;
     var curId = document.getElementById("Blog");
     if (path.includes("Blog")){
@@ -28,7 +27,7 @@
           curId.id = 'Default';
         }
 		
-    };  
+    }); 
 
 		function topFunction() {
             document.body.scrollTop = 0;
