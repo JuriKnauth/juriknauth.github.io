@@ -1,32 +1,3 @@
-	window.onload = function(){
-		var path = window.location.href;
-    var curId = document.getElementById("Blog");
-	var	curId1 = document.getElementById("Projects");
-	var	curId2 = document.getElementById("Contact");
-	var	curId3 = document.getElementById("Index");
-    if (path.includes("Blog")){
-			curId1.id = 'Default';
-			curId2.id = 'Default';
-			curId3.id = 'Default';
-        }
-      else if (path.includes("Projects")){
-          	curId.id = 'Default';
-			curId2.id = 'Default';
-			curId3.id = 'Default';
-        }
-      	else if (path.includes("Contact")){
-			curId.id = 'Default';
-			curId1.id = 'Default';
-			curId3.id = 'Default';
-        }
-      	else
-        {
-			curId.id = 'Default';
-			curId1.id = 'Default';
-			curId2.id = 'Default';
-        }		
-    }; 
-
 		function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
