@@ -1,4 +1,4 @@
-	function buttonColor(){
+	window.onload = function(){
 		var path = window.location.href;
     var curId = document.getElementById("Blog");
 	var	curId1 = document.getElementById("Projects");
