@@ -28,7 +28,7 @@
           curId.id = 'Default';
         }
 		
-    });  
+    };  
 
 		function topFunction() {
             document.body.scrollTop = 0;
