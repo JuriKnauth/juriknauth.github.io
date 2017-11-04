@@ -29,7 +29,29 @@
 <body onkeydown="myFunction(event)" onclick="closeOutModal(event)">
     <div class="container">
         <div class="main">
-			<div id="MainMenu"></div>
+			<div id="mainmenu">
+                <div class="botbar a">
+                    <footer class="bot-info" id="topfunc" onclick="topFunction()"> <span>Portfolio Juri Knauth</span> <span>2017-10-30 v.01</span> </footer>
+                </div>
+                <ulnav>
+                    <linavb class="dropdown">
+                        <a href="javascript:void(0)" onclick="location.href='/'" id="Index" class="dropbtnimg"><img class="logo" src="jkiconcropD.png" id="logo" width="51" height="51" alt="jklogo" align="left" ></a>
+						<div id="loadindexmenu">	</div>
+                    </linavb>
+                    <linav class="dropdown">
+                        <a href="javascript:void(0)" onclick="location.href='Blog.html'" id="Blog" class="dropbtn"><b>Blog</b></a>
+						<div id="loadblogmenu">	</div>
+                    </linav>
+                    <linav class="dropdown">
+                        <a href="javascript:void(0)" onclick="location.href='Projects.html'" id="Projects" class="dropbtn"><b color="white">Projects</b></a>
+						<div id="loadprojectsmenu">	</div>
+                    </linav>
+                    <linav class="dropdown">
+                        <a href="javascript:void(0)" onclick="location.href='Contact.html'" id="Contact" class="dropbtn"><b>Contact</b></a>
+						<div id="loadcontactmenu">	</div>
+                    </linav>
+                </ulnav>
+            </div>
             <div id="ProjectsB" class="tabcontent" w>
                 <header class="header">
                     <p align="justify" class="article-content"> <i>Crashed Captain Detailed Page.</i></p>
