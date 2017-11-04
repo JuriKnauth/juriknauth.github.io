@@ -1089,6 +1089,15 @@ div, p, figure {
         top: 0;
     }
 
+    #Banner {
+        color: white;
+		text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
+    }
+
+    #BannerB {
+		text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
+    }
+
     #Default {
         color: white;
     }
