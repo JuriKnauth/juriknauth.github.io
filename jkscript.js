@@ -1,5 +1,5 @@
 
-    $(function(){
+    function buttonColor(){
 		var path = window.location.href;
     var curId = document.getElementById("Blog");
     if (path.includes("Blog")){
