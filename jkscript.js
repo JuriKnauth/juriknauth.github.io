@@ -1,43 +1,31 @@
-	window.onload = function(){
+	function buttonColor(){
 		var path = window.location.href;
     var curId = document.getElementById("Blog");
+	var	curId1 = document.getElementById("Projects");
+	var	curId2 = document.getElementById("Contact");
+	var	curId3 = document.getElementById("Index");
     if (path.includes("Blog")){
-
+			curId1.id = 'Default';
+			curId2.id = 'Default';
+			curId3.id = 'Default';
         }
-      else
+      else if (path.includes("Projects")){
         {
-          curId.id = 'Default';
+          	curId.id = 'Default';
+			curId2.id = 'Default';
+			curId3.id = 'Default';
         }
-      
-    curId = document.getElementById("Projects");
-    if (path.includes("Projects")){
-
+      	else if (path.includes("Contact")){
+			curId.id = 'Default';
+			curId1.id = 'Default';
+			curId3.id = 'Default';
         }
-      else
+      	else
         {
-          curId.id = 'Default';
-        }
-		
-	curId = document.getElementById("Contact");
-    if (path.includes("Contact")){
-
-        }
-      else
-        {
-          curId.id = 'Default';
-        }
-	
-	var path2 = window.location.href;
-	path2.slice(-15);
-	curId = document.getElementById("Index");
-    if (path2 === ("juriknauth.com/")){
-
-        }
-      else
-        {
-          curId.id = 'Default';
-        }
-		
+			curId.id = 'Default';
+			curId1.id = 'Default';
+			curId2.id = 'Default';
+        }		
     }; 
 
 		function topFunction() {
