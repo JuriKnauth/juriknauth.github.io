@@ -260,6 +260,36 @@
     </div>
     </div>
     <script>
+	$(function(){
+		var path = window.location.href;
+    var curId = document.getElementById("Blog");
+    if (path.includes("Blog")){
+
+        }
+      else
+        {
+          curId.id = 'Default';
+        }
+      
+    curId = document.getElementById("Projects");
+    if (path.includes("Projects")){
+
+        }
+      else
+        {
+          curId.id = 'Default';
+        }
+		
+	curId = document.getElementById("Contact");
+    if (path.includes("Contact")){
+
+        }
+      else
+        {
+          curId.id = 'Default';
+        }
+		
+    }); 
     </script>
 </body>
 <div class="gridContainer clearfix"></div>
