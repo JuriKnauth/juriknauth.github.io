@@ -27,9 +27,10 @@
           curId.id = 'Default';
         }
 	
-	path.slice(-14);
+	var path2 = window.location.href;
+	path2.slice(-15);
 	curId = document.getElementById("Index");
-    if (path === ("juriknauth.com")){
+    if (path2 === ("juriknauth.com/")){
 
         }
       else
