@@ -10,7 +10,6 @@
 			curId3.id = 'Default';
         }
       else if (path.includes("Projects")){
-        {
           	curId.id = 'Default';
 			curId2.id = 'Default';
 			curId3.id = 'Default';
