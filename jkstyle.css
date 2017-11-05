@@ -1094,23 +1094,6 @@ div, p, figure {
 		text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
     }
 
-	a:link#Banner {
-        color: rgb(255, 85, 119);
-		text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
-	} 
-	a:visited#Banner {
-        color: rgb(255, 85, 119);
-		text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
-	}
-	a:hover#Banner {
-        color: rgb(255, 85, 119);
-		text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
-	}
-	a:active#Banner {
-        color: rgb(255, 85, 119);
-		text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
-	}
-
     #BannerB {
 		text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
     }
