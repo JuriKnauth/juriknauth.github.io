@@ -16,7 +16,7 @@ body {
     left: 0;
     z-index: 0;
     margin: 0;
-    background-image: url("BackGround.jpg");
+    background-image: url("../Images/BackGround.jpg");
     height: 0px;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
@@ -222,7 +222,7 @@ img {
 }
 
 #home {
-    background: url(preEJK.jpg);
+    background: url(../Images/preEJK.jpg);
     display: block;
     background-size: 100% 100%;
     top: 0;
@@ -253,7 +253,7 @@ img {
 }
 
 #home:hover {
-    background: url(preJK.jpg);
+    background: url(../Images/preJK.jpg);
     background-size: 100% 100%;
     -webkit-transition: background 0.5s linear;
     -moz-transition: background 0.5s linear;
@@ -262,7 +262,7 @@ img {
 }
 
 #img1 {
-    background: url(Buisness-Card-Juri-Knauth-Front-v99.png);
+    background: url(../Images/Buisness-Card-Juri-Knauth-Front-v99.png);
     display: block;
     background-size: 100% 100%;
     top: 0;
@@ -277,7 +277,7 @@ img {
 }
 
 #img2 {
-    background: url(Buisness-Card-Juri-Knauth-Back-v99.png);
+    background: url(../Images/Buisness-Card-Juri-Knauth-Back-v99.png);
     display: block;
     background-size: 100% 100%;
     top: 0;
