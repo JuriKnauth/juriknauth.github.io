@@ -1091,7 +1091,11 @@ div, p, figure {
 
     #Banner {
         color: rgb(255,128,0);
-		text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
+		text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.75);
+    }
+
+    #Banner .a{
+        color: rgb(119,255,85);
     }
 
     #BannerB {
