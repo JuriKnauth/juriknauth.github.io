@@ -119,6 +119,8 @@ a:link {
   background-color: transparent;
   text-decoration: none;
   cursor: pointer;
+  display: inline;
+  clear: none;
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
     "Avant Garde", Futura, sans-serif;
 }
@@ -661,11 +663,20 @@ figure {
 }
 
 .article-content {
-  flex: 1;
-  margin-top: 5px;
+  float: left;
+  display: block;
+  display: inline-block;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: top;
+  margin: 5 auto;
   background-color: 0;
   color: black;
-  height: auto;
+  height: 0 auto;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-basis: auto;
 }
 
 .article-content2 {
@@ -697,6 +708,7 @@ figure {
 
 .article-date {
   float: right;
+  text-align: right;
   opacity: 0.5;
   font-style: italic;
   display: -ms-flexbox;
@@ -845,27 +857,25 @@ figure {
 }
 
 .tabcontent {
-  float: left;
   display: block;
   color: #f2f2f2;
-  text-align: left;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   display: inline-block;
   vertical-align: top;
-  margin-right: 20px;
   margin-top: 5px;
   margin: 0 auto;
   max-width: 1040px;
-  width: 96%;
+  width: 99%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   display: flex;
   flex: 1;
   flex-direction: column;
   flex-basis: auto;
   margin: 5px;
-  font-family: Century Gothic;
+  font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
+    "Avant Garde", Futura, sans-serif;
 }
 
 .switch {
