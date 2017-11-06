@@ -410,7 +410,7 @@ linavb a {
   background-color: rgba(249, 249, 249, 0.9);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 550;
 }
 
 .dropdown-content a {
@@ -930,7 +930,7 @@ input:checked + .slider:before {
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
-  z-index: 1;
+  z-index: 700;
   top: 150%;
   left: 50%;
   margin-left: -60px;
