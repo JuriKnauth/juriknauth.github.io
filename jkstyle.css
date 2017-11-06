@@ -606,6 +606,7 @@ div, p, figure {
 }
 
 .article-titleL {
+	display: inline-block;
 	overflow: inherit;
 	overflow-wrap: break-word;
     float: left;
@@ -626,6 +627,7 @@ div, p, figure {
 }
 
 .article-content {
+	display: inline-block;
 	overflow: inherit;
 	overflow-wrap: break-word;
     flex: 1;
@@ -640,7 +642,7 @@ div, p, figure {
     margin: 5px;
     background-color: 0;
     color: black;
-    height: auto;
+    height: auto;a
 }
 
 .article-content3 {
@@ -684,6 +686,15 @@ div, p, figure {
     flex-direction: row;
     flex: 1;
     padding: 0px 16px;
+}
+
+.first-article .article-body {
+	float: left;
+    display: block;
+	display: inline-block;
+	overflow: inherit;
+	overflow-wrap: break-word;
+	flex: 1;
 }
 
 @media screen and (max-width:360px) {
