@@ -588,7 +588,11 @@ div, p, figure {
     }
 
 .articlebody {
-    overflow: auto;
+	float: left;
+    display: block;
+	display: inline-block;
+	overflow: inherit;
+	overflow-wrap: break-word;
     flex: 1;
     flex-direction: column;
     padding: 20px;
@@ -686,15 +690,6 @@ div, p, figure {
     flex-direction: row;
     flex: 1;
     padding: 0px 16px;
-}
-
-.first-article .article-body {
-	float: left;
-    display: block;
-	display: inline-block;
-	overflow: inherit;
-	overflow-wrap: break-word;
-	flex: 1;
 }
 
 @media screen and (max-width:360px) {
