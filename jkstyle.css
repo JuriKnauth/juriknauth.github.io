@@ -588,11 +588,7 @@ div, p, figure {
     }
 
 .articlebody {
-	float: left;
-    display: block;
-	display: inline-block;
-	overflow: inherit;
-	overflow-wrap: break-word;
+    overflow: auto;
     flex: 1;
     flex-direction: column;
     padding: 20px;
@@ -703,6 +699,7 @@ div, p, figure {
 		display: -ms-flexbox;
         display: flex;
     }
+	
 
     .first-article .article-body {
         flex: 1;
