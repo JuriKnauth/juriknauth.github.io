@@ -612,22 +612,9 @@ figure {
 }
 
 .articlebody {
-  display: block;
-  padding: 14px 16px;
-  text-decoration: none;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
-  margin-top: 5px;
-  margin: 0 auto;
-  max-width: 1040px;
-  width: 96%;
-  display: flex;
-
+  overflow: auto;
   flex: 1;
   flex-direction: column;
-  flex-basis: auto;
-  margin: 5px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.75);
   height: auto;
