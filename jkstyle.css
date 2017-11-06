@@ -606,6 +606,8 @@ div, p, figure {
 }
 
 .article-titleL {
+	overflow: inherit;
+	overflow-wrap: break-word;
     float: left;
     color: black;
     flex-shrink: 0;
@@ -624,6 +626,8 @@ div, p, figure {
 }
 
 .article-content {
+	overflow: inherit;
+	overflow-wrap: break-word;
     flex: 1;
     margin-top: 5px;
     background-color: 0;
