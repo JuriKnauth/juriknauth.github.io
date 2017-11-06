@@ -393,7 +393,7 @@ linavb a, .dropbtnimg {
     background-color: rgba(249,249,249,0.9);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 550;
 }
 
     .dropdown-content a {
@@ -437,7 +437,7 @@ linavb a, .dropbtnimg {
     flex-direction: column;
     flex-basis: auto;
     margin: 5px auto;
-    z-index: 400;
+    z-index: 300;
     cursor: pointer;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
 }
@@ -452,7 +452,7 @@ linavb a, .dropbtnimg {
     color: #FFFFFF;
     bottom: 0px;
     width: 100%;
-    z-index: 500;
+    z-index: 400;
     display: inline-block;
     margin: 0 auto;
     margin-top: 10px;
@@ -903,7 +903,7 @@ div, p, figure {
             border-radius: 6px;
             padding: 5px 0;
             position: absolute;
-            z-index: 1;
+            z-index: 600;
             top: 150%;
             left: 50%;
             margin-left: -60px;
@@ -978,7 +978,7 @@ div, p, figure {
     .modal {
         display: none;
         position: fixed;
-        z-index: 600;
+        z-index: 700;
         padding-top: 100px;
         left: 0;
         top: 0;
@@ -995,7 +995,7 @@ div, p, figure {
         padding: 0;
         width: 90%;
         max-width: 1200px;
-        z-index: 600;
+        z-index: 700;
     }
     /* The Close Button */
     .close {
@@ -1005,7 +1005,7 @@ div, p, figure {
         right: -25px;
         font-size: 35px;
         font-weight: bold;
-        z-index: 610;
+        z-index: 710;
 		text-shadow: 3px 3px rgba(0, 0, 0, 0.25);
     }
 
@@ -1034,7 +1034,7 @@ div, p, figure {
         margin-top: -50px;
         color: rgba(170,236,255,0.95);
         font-weight: bold;
-		z-index: 610;
+		z-index: 710;
 		text-shadow: 3px 3px rgba(0, 0, 0, 0.25);
         font-size: 20px;
         transition: 0.6s ease;
