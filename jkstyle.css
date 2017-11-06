@@ -393,7 +393,7 @@ linavb a, .dropbtnimg {
     background-color: rgba(249,249,249,0.9);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 550;
+    z-index: 1;
 }
 
     .dropdown-content a {
@@ -437,7 +437,7 @@ linavb a, .dropbtnimg {
     flex-direction: column;
     flex-basis: auto;
     margin: 5px auto;
-    z-index: 300;
+    z-index: 400;
     cursor: pointer;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
 }
@@ -452,7 +452,7 @@ linavb a, .dropbtnimg {
     color: #FFFFFF;
     bottom: 0px;
     width: 100%;
-    z-index: 400;
+    z-index: 500;
     display: inline-block;
     margin: 0 auto;
     margin-top: 10px;
@@ -606,9 +606,6 @@ div, p, figure {
 }
 
 .article-titleL {
-	display: inline-block;
-	overflow: inherit;
-	overflow-wrap: break-word;
     float: left;
     color: black;
     flex-shrink: 0;
@@ -627,9 +624,6 @@ div, p, figure {
 }
 
 .article-content {
-	display: inline-block;
-	overflow: inherit;
-	overflow-wrap: break-word;
     flex: 1;
     margin-top: 5px;
     background-color: 0;
@@ -699,7 +693,6 @@ div, p, figure {
 		display: -ms-flexbox;
         display: flex;
     }
-	
 
     .first-article .article-body {
         flex: 1;
@@ -906,7 +899,7 @@ div, p, figure {
             border-radius: 6px;
             padding: 5px 0;
             position: absolute;
-            z-index: 600;
+            z-index: 1;
             top: 150%;
             left: 50%;
             margin-left: -60px;
@@ -981,7 +974,7 @@ div, p, figure {
     .modal {
         display: none;
         position: fixed;
-        z-index: 700;
+        z-index: 600;
         padding-top: 100px;
         left: 0;
         top: 0;
@@ -998,7 +991,7 @@ div, p, figure {
         padding: 0;
         width: 90%;
         max-width: 1200px;
-        z-index: 700;
+        z-index: 600;
     }
     /* The Close Button */
     .close {
@@ -1008,7 +1001,7 @@ div, p, figure {
         right: -25px;
         font-size: 35px;
         font-weight: bold;
-        z-index: 710;
+        z-index: 610;
 		text-shadow: 3px 3px rgba(0, 0, 0, 0.25);
     }
 
@@ -1037,7 +1030,7 @@ div, p, figure {
         margin-top: -50px;
         color: rgba(170,236,255,0.95);
         font-weight: bold;
-		z-index: 710;
+		z-index: 610;
 		text-shadow: 3px 3px rgba(0, 0, 0, 0.25);
         font-size: 20px;
         transition: 0.6s ease;
@@ -1100,23 +1093,6 @@ div, p, figure {
         color: rgb(119,255,85);
 		text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
     }
-
-	a:link#Banner {
-        color: rgb(255, 85, 119);
-		text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
-	} 
-	a:visited#Banner {
-        color: rgb(255, 85, 119);
-		text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
-	}
-	a:hover#Banner {
-        color: rgb(255, 85, 119);
-		text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
-	}
-	a:active#Banner {
-        color: rgb(255, 85, 119);
-		text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
-	}
 
     #BannerB {
 		text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
