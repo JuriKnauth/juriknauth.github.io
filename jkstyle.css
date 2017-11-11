@@ -10,7 +10,10 @@ html {
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
 }
-
+*, *:before,
+*:after {
+	box-sizing: inherit;
+}
 body {
   top: 0;
   left: 0;
@@ -612,10 +615,8 @@ figure {
 }
 
 .articlebody {
-	color: black;
-  overflow: auto;
-  flex: 1;
-  flex-direction: column;
+  box-sizing: border-box;
+  ction: column;
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 20px;
@@ -651,11 +652,12 @@ figure {
 }
 
 .article-content {
-  flex: 1;
-  margin-top: 5px;
+  margin-bottom: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
   background-color: 0;
   color: black;
-  height: auto;
+  height: inherit;
 }
 
 .article-content2 {
