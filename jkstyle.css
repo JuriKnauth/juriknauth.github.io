@@ -617,8 +617,8 @@ figure {
 .articlebody {
   box-sizing: border-box;
   ction: column;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 7px;
+  margin-bottom: 8px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.75);
   height: auto;
@@ -653,8 +653,8 @@ figure {
 
 .article-content {
   margin-bottom: 0px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
   background-color: 0;
   color: black;
   height: inherit;
