@@ -282,7 +282,7 @@ img {
   table-layout: fixed;
 }
 
-.homeimg {
+.homeimg:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   background-color: rgba(255, 255, 255, 0.85);
   background-size: 100% 100%;
@@ -303,6 +303,16 @@ img {
   -moz-transition: background 0.5s linear;
   -o-transition: background 0.5s linear;
   transition: background 0.5s linear;
+}
+
+.iframe:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: rgba(255, 255, 255, 0.85);
+  background-size: 100% 100%;
+  transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
+  -o-transition: background 0.5s linear;
+  cursor: pointer;
 }
 
 .article:focus {
