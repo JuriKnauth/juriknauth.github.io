@@ -63,15 +63,58 @@
           <p align="justify" class="article-content"> I am a Game Designer. This web page will showcase each project I have worked on and link to my Team-Projects, but you will find a brief explanation about them here as well. </p>
           <br />
           <br />
-          <h3 class="article-content">Tabs</h3>
+          <h3 class="article-title">Tabs</h3>
           <br />
-          <span class="article-content"> <a href="Blog.html"><b>Blog</b></a><br />
-        The blog will feature some minor tasks, crafts and scribbles.<br />
-        <a href="Projects.html"><b>Projects</b></a><br />
-        The project tab will showcase the bigger tasks and link to further in-depth reading.<br />
-        <a href="Contact.html"><b>Contact</b></a><br />
-        Details and links to get connected  on various platforms.<br />
-        </span> 
+          <div class="columns">
+            <div class="nested-column">
+              <a class="article" href="Blog.html">
+              	  <div>
+					  <img class="Slides" src="../Images/preArtNova.jpg" width="100%">
+					  <img class="Slides" src="../Images/preArtWoman.jpg" width="100%">
+					  <img class="Slides" src="../Images/preSword.jpg" width="100%">
+					  <img class="Slides" src="../Images/preArtUrukaiShield.jpg" width="100%">
+					  <img class="Slides" src="../Images/preArtMonster.jpg" width="100%">
+				  </div>
+                <div class="article-body">
+                  <h5 class="article-title"> Blog</h5><br />
+                  <p class="article-content"> The blog will feature some minor tasks, crafts and scribbles.<br /></p>
+                  <footer class="article-info"> </footer>
+                </div>
+              </a>
+           </div>
+           <div class="nested-column">
+              <a class="article" href="Blog.html">
+              	  <div>
+					  <img class="Slides1" src="../Images/prePirateSplasyScreenShotBalanced.jpg" width="100%">
+					  <img class="Slides1" src="../Images/preEndstationStartScreen.jpg" width="100%">
+					  <img class="Slides1" src="../Images/preFluffyDiceDMenu.jpg" width="100%">
+					  <img class="Slides1" src="../Images/preCrashedCaptainCockpitIntro.jpg" width="100%">
+					  <img class="Slides1" src="../Images/preHeulDochBox.jpg" width="100%">
+				  </div>
+                <div class="article-body">
+                  <h5 class="article-title"> Projects</h5><br />
+                  <p class="article-content"> The project tab will showcase the bigger tasks and link to further in-depth reading.</p>
+                  <footer class="article-info"> </footer>
+                </div>
+              </a>
+           </div>
+           <div class="nested-column">
+              <a class="article" href="Blog.html">
+              	  <div>
+					  <img class="Slides2" src="../Images/preJKContact.jpg" width="100%">
+					  <img class="Slides2" src="../Images/preNoBudgetProductionLogo.jpg" width="100%">
+					  <img class="Slides2" src="../Images/preSpielhauerLogo.jpg" width="100%">
+					  <img class="Slides2" src="../Images/preGobblesLogo.jpg" width="100%">
+					  <img class="Slides2" src="../Images/prePIGBanner.jpg" width="100%">
+				  </div>
+                <div class="article-body">
+                  <h5 class="article-title"> Contact</h5><br />
+                  <p class="article-content"> Details and links to get connected  on various platforms.<br /></p>
+                  <footer class="article-info"> </footer>
+                </div>
+              </a>
+           </div>
+          </div>
         </div>
         </p>
         <div id="BlogE" class="articlebody">
@@ -84,7 +127,7 @@
         <div id="BlogE" class="articlebody">
           <a class="anchor" id="Page" name="Page"></a>
           <h2 class="article-title"> Page under construction </h2><br />
-          <p align="left" class="article-content">I am still working on this web page - its about 46% done. </p>
+          <p align="left" class="article-content">I am still working on this web page - its about 46% done.<br /></p>
           <br />
         </div>
         </p>
@@ -99,6 +142,48 @@
     <br />
   </div>
   <script>
+	var myIndex = 0;
+	var myIndex1 = 0;
+	var myIndex2 = 0;
+	carousel();
+	setTimeout(carousel1, 1000)
+	setTimeout(carousel2, 2000)
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("Slides");
+		for (i = 0; i < x.length; i++) {
+		   x[i].style.display = "none";  
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}    
+		x[myIndex-1].style.display = "block";  
+		setTimeout(carousel, 3000); // Change image every 2 seconds
+	}
+	  
+	function carousel1() {
+		var i1;
+		var x1 = document.getElementsByClassName("Slides1");
+		for (i1 = 0; i1 < x1.length; i1++) {
+		   x1[i1].style.display = "none";  
+		}
+		myIndex1++;
+		if (myIndex1 > x1.length) {myIndex1 = 1}    
+		x1[myIndex1-1].style.display = "block";  
+		setTimeout(carousel1, 3000); // Change image every 2 seconds
+	}
+	  
+	function carousel2() {
+		var i2;
+		var x2 = document.getElementsByClassName("Slides2");
+		for (i2 = 0; i2 < x2.length; i2++) {
+		   x2[i2].style.display = "none";  
+		}
+		myIndex2++;
+		if (myIndex2 > x2.length) {myIndex2 = 1}
+		x2[myIndex2-1].style.display = "block";  
+		setTimeout(carousel2, 3000); // Change image every 2 seconds
+	}
 
   </script>
 </body>
