@@ -170,7 +170,22 @@ img {
 .img-fluid:hover {
 	  cursor: pointer;
 }
-
+.Slides {
+  vertical-align: middle;
+  border-style: none;
+  display: none;
+  position: relative;
+  height: auto;
+  -ms-height: 100%;
+  -ms-width: 100%;
+  top: 0;
+  max-height: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+}
+.Slides:hover {
+cursor: pointer;
+}
 .img-icon {
   height: auto;
   float: left;
