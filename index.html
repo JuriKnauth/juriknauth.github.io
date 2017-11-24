@@ -77,13 +77,13 @@
 				  </div>
                 <div class="article-body">
                   <h5 class="article-title"> Blog</h5><br />
-                  <p class="article-content"> The blog will feature some minor tasks, crafts and scribbles.<br /></p>
+                  <p class="article-content"> The blog will feature some minor tasks, crafts and scribbles.</p>
                   <footer class="article-info"> </footer>
                 </div>
               </a>
            </div>
            <div class="nested-column">
-              <a class="article" href="Blog.html">
+              <a class="article" href="Projects.html">
               	  <div>
 					  <img class="Slides1" src="../Images/prePirateSplasyScreenShotBalanced.jpg" width="100%">
 					  <img class="Slides1" src="../Images/preEndstationStartScreen.jpg" width="100%">
@@ -93,13 +93,13 @@
 				  </div>
                 <div class="article-body">
                   <h5 class="article-title"> Projects</h5><br />
-                  <p class="article-content"> The project tab will showcase the bigger tasks and link to further in-depth reading.</p>
+                  <p class="article-content"> The project tab will showcase the bigger tasks.</p>
                   <footer class="article-info"> </footer>
                 </div>
               </a>
            </div>
            <div class="nested-column">
-              <a class="article" href="Blog.html">
+              <a class="article" href="Contact.html">
               	  <div>
 					  <img class="Slides2" src="../Images/preJKContact.jpg" width="100%">
 					  <img class="Slides2" src="../Images/preNoBudgetProductionLogo.jpg" width="100%">
@@ -109,7 +109,7 @@
 				  </div>
                 <div class="article-body">
                   <h5 class="article-title"> Contact</h5><br />
-                  <p class="article-content"> Details and links to get connected  on various platforms.<br /></p>
+                  <p class="article-content"> Details and links to get connected  on various platforms.</p>
                   <footer class="article-info"> </footer>
                 </div>
               </a>
@@ -145,10 +145,18 @@
 	var myIndex = 0;
 	var myIndex1 = 0;
 	var myIndex2 = 0;
+	start();
 	carousel();
-	setTimeout(carousel1, 1000)
-	setTimeout(carousel2, 2000)
+	setTimeout(carousel1, 600);
+	setTimeout(carousel2, 1200);
 
+	function start(){
+		var x1 = document.getElementsByClassName("Slides1");
+		var x2 = document.getElementsByClassName("Slides2");
+		x1[0].style.display = "block";  
+		x2[0].style.display = "block";  
+	}
+	  
 	function carousel() {
 		var i;
 		var x = document.getElementsByClassName("Slides");
@@ -158,7 +166,7 @@
 		myIndex++;
 		if (myIndex > x.length) {myIndex = 1}    
 		x[myIndex-1].style.display = "block";  
-		setTimeout(carousel, 3000); // Change image every 2 seconds
+		setTimeout(carousel, 1800); // Change image every 2 seconds
 	}
 	  
 	function carousel1() {
@@ -170,7 +178,7 @@
 		myIndex1++;
 		if (myIndex1 > x1.length) {myIndex1 = 1}    
 		x1[myIndex1-1].style.display = "block";  
-		setTimeout(carousel1, 3000); // Change image every 2 seconds
+		setTimeout(carousel1, 1800); // Change image every 2 seconds
 	}
 	  
 	function carousel2() {
@@ -182,7 +190,7 @@
 		myIndex2++;
 		if (myIndex2 > x2.length) {myIndex2 = 1}
 		x2[myIndex2-1].style.display = "block";  
-		setTimeout(carousel2, 3000); // Change image every 2 seconds
+		setTimeout(carousel2, 1800); // Change image every 2 seconds
 	}
 
   </script>
