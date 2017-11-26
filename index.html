@@ -147,8 +147,8 @@
 	var myIndex2 = 0;
 	start();
 	carousel();
-	setTimeout(carousel1, 600);
-	setTimeout(carousel2, 1200);
+	setTimeout(carousel1, 1000);
+	setTimeout(carousel2, 2000);
 
 	function start(){
 		var x1 = document.getElementsByClassName("Slides1");
@@ -166,7 +166,7 @@
 		myIndex++;
 		if (myIndex > x.length) {myIndex = 1}    
 		x[myIndex-1].style.display = "block";  
-		setTimeout(carousel, 1800); // Change image every 2 seconds
+		setTimeout(carousel, 3000); // Change image every 2 seconds
 	}
 	  
 	function carousel1() {
@@ -178,7 +178,7 @@
 		myIndex1++;
 		if (myIndex1 > x1.length) {myIndex1 = 1}    
 		x1[myIndex1-1].style.display = "block";  
-		setTimeout(carousel1, 1800); // Change image every 2 seconds
+		setTimeout(carousel1, 3000); // Change image every 2 seconds
 	}
 	  
 	function carousel2() {
@@ -190,7 +190,7 @@
 		myIndex2++;
 		if (myIndex2 > x2.length) {myIndex2 = 1}
 		x2[myIndex2-1].style.display = "block";  
-		setTimeout(carousel2, 1800); // Change image every 2 seconds
+		setTimeout(carousel2, 3000); // Change image every 2 seconds
 	}
 
   </script>
