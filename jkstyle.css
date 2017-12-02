@@ -608,7 +608,7 @@ figure {
 
 .articlebody {
   box-sizing: border-box;
-  ction: column;
+  flex-direction: column;
   margin-top: 7px;
   margin-bottom: 8px;
   padding: 20px;
