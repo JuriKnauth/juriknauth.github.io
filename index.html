@@ -62,7 +62,7 @@
           <a class="anchor" id="JuriKnauthPortfolio" name="JuriKnauthPortfolio"></a>
           <h3 class="article-title"> Juri Knauth's Portfolio</h3>
           <br />
-          <p align="justify" class="article-content"> I am a Game Designer. This web page will showcase each project I worked on as well as link to my team-projects. You will find brief remarks, too.</p>
+			<p class="article-content" id=GreetingsVar></p><br /><p align="justify" class="article-content">I am a Game Designer. This web page will showcase each project I worked on as well as link to my team-projects. You will find brief remarks, too.</p>
           <br />
           <br />
           <h3 class="article-title">Tabs</h3>
@@ -144,6 +144,21 @@
     <br />
   </div>
   <script>
+	var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12)
+        greet = 'Good Morning';
+    else if (hrs >= 12 && hrs <= 17)
+        greet = 'Good Afternoon';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good Evening';
+
+    document.getElementById('GreetingsVar').innerHTML =
+        '<em>' + greet + ' and welcome to my portfolio!</em>';  
+	  
 	var myIndex = 0;
 	var myIndex1 = 0;
 	var myIndex2 = 0;
