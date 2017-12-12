@@ -62,7 +62,8 @@
           <a class="anchor" id="JuriKnauthPortfolio" name="JuriKnauthPortfolio"></a>
           <h3 class="article-title"> Juri Knauth's Portfolio</h3>
           <br />
-			<p class="article-content" id=GreetingsVar></p><br /><p align="justify" class="article-content">I am a Game Designer. This web page will showcase each project I worked on as well as link to my team-projects. You will find brief remarks, too.</p>
+          <p class="article-content" id=GreetingsVar></p><br />
+          <p align="justify" class="article-content">I am a Game Designer. This web page will showcase each project I worked on as well as link to my team-projects. You will find brief remarks, too.</p>
           <br />
           <br />
           <h3 class="article-title">Tabs</h3>
@@ -70,52 +71,52 @@
           <div class="columns">
             <div class="nested-column">
               <a class="article" href="Blog.html">
-              	  <div>
-					  <img class="Slides" src="../Images/preArtNova.jpg" width="100%">
-					  <img class="Slides" src="../Images/preArtWoman.jpg" width="100%">
-					  <img class="Slides" src="../Images/preSword.jpg" width="100%">
-					  <img class="Slides" src="../Images/preArtUrukaiShield.jpg" width="100%">
-					  <img class="Slides" src="../Images/preArtMonster.jpg" width="100%">
-				  </div>
+                <div>
+                  <img class="Slides" src="../Images/preArtNova.jpg" width="100%">
+                  <img class="Slides" src="../Images/preArtWoman.jpg" width="100%">
+                  <img class="Slides" src="../Images/preSword.jpg" width="100%">
+                  <img class="Slides" src="../Images/preArtUrukaiShield.jpg" width="100%">
+                  <img class="Slides" src="../Images/preArtMonster.jpg" width="100%">
+                </div>
                 <div class="article-body">
                   <h5 class="article-title"> Blog</h5><br />
                   <p class="article-content"> The blog will feature some minor tasks, crafts and scribbles.</p>
                   <footer class="article-info"> </footer>
                 </div>
               </a>
-           </div>
-           <div class="nested-column">
+            </div>
+            <div class="nested-column">
               <a class="article" href="Projects.html">
-              	  <div>
-					  <img class="Slides1" src="../Images/prePirateSplasyScreenShotBalanced.jpg" width="100%">
-					  <img class="Slides1" src="../Images/preEndstationStartScreen.jpg" width="100%">
-					  <img class="Slides1" src="../Images/preFluffyDiceDMenu.jpg" width="100%">
-					  <img class="Slides1" src="../Images/preCrashedCaptainCockpitIntro.jpg" width="100%">
-					  <img class="Slides1" src="../Images/preHeulDochBox.jpg" width="100%">
-				  </div>
+                <div>
+                  <img class="Slides1" src="../Images/prePirateSplasyScreenShotBalanced.jpg" width="100%">
+                  <img class="Slides1" src="../Images/preEndstationStartScreen.jpg" width="100%">
+                  <img class="Slides1" src="../Images/preFluffyDiceDMenu.jpg" width="100%">
+                  <img class="Slides1" src="../Images/preCrashedCaptainCockpitIntro.jpg" width="100%">
+                  <img class="Slides1" src="../Images/preHeulDochBox.jpg" width="100%">
+                </div>
                 <div class="article-body">
                   <h5 class="article-title"> Projects</h5><br />
                   <p class="article-content"> The project tab will showcase the bigger tasks.</p>
                   <footer class="article-info"> </footer>
                 </div>
               </a>
-           </div>
-           <div class="nested-column">
+            </div>
+            <div class="nested-column">
               <a class="article" href="Contact.html">
-              	  <div>
-					  <img class="Slides2" src="../Images/preJKContact.jpg" width="100%">
-					  <img class="Slides2" src="../Images/preNoBudgetProductionLogo.jpg" width="100%">
-					  <img class="Slides2" src="../Images/preSpielhauerLogo.jpg" width="100%">
-					  <img class="Slides2" src="../Images/preGobblesLogo.jpg" width="100%">
-					  <img class="Slides2" src="../Images/prePIGBanner.jpg" width="100%">
-				  </div>
+                <div>
+                  <img class="Slides2" src="../Images/preJKContact.jpg" width="100%">
+                  <img class="Slides2" src="../Images/preNoBudgetProductionLogo.jpg" width="100%">
+                  <img class="Slides2" src="../Images/preSpielhauerLogo.jpg" width="100%">
+                  <img class="Slides2" src="../Images/preGobblesLogo.jpg" width="100%">
+                  <img class="Slides2" src="../Images/prePIGBanner.jpg" width="100%">
+                </div>
                 <div class="article-body">
                   <h5 class="article-title"> Contact</h5><br />
-                  <p class="article-content"> Details and links to get connected  on various platforms.</p>
+                  <p class="article-content"> Details and links to get connected on various platforms.</p>
                   <footer class="article-info"> </footer>
                 </div>
               </a>
-           </div>
+            </div>
           </div>
         </div>
         </p>
@@ -144,72 +145,74 @@
     <br />
   </div>
   <script>
-	var myDate = new Date();
+    var myDate = new Date();
     var hrs = myDate.getHours();
-
+    
     var greet;
-
-    if (hrs < 12)
-        greet = 'Good Morning';
-    else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good Afternoon';
-    else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good Evening';
-
-    document.getElementById('GreetingsVar').innerHTML =
-        '<em>' + greet + ' and Welcome to my Portfolio!</em>';  
-	  
-	var myIndex = 0;
-	var myIndex1 = 0;
-	var myIndex2 = 0;
-	start();
-	carousel();
-	setTimeout(carousel1, 1000);
-	setTimeout(carousel2, 2000);
-
-	function start(){
-		var x1 = document.getElementsByClassName("Slides1");
-		var x2 = document.getElementsByClassName("Slides2");
-		x1[0].style.display = "block";  
-		x2[0].style.display = "block";  
-	}
-	  
-	function carousel() {
-		var i;
-		var x = document.getElementsByClassName("Slides");
-		for (i = 0; i < x.length; i++) {
-		   x[i].style.display = "none";  
-		}
-		myIndex++;
-		if (myIndex > x.length) {myIndex = 1}    
-		x[myIndex-1].style.display = "block";  
-		setTimeout(carousel, 3000); // Change image every 2 seconds
-	}
-	  
-	function carousel1() {
-		var i1;
-		var x1 = document.getElementsByClassName("Slides1");
-		for (i1 = 0; i1 < x1.length; i1++) {
-		   x1[i1].style.display = "none";  
-		}
-		myIndex1++;
-		if (myIndex1 > x1.length) {myIndex1 = 1}    
-		x1[myIndex1-1].style.display = "block";  
-		setTimeout(carousel1, 3000); // Change image every 2 seconds
-	}
-	  
-	function carousel2() {
-		var i2;
-		var x2 = document.getElementsByClassName("Slides2");
-		for (i2 = 0; i2 < x2.length; i2++) {
-		   x2[i2].style.display = "none";  
-		}
-		myIndex2++;
-		if (myIndex2 > x2.length) {myIndex2 = 1}
-		x2[myIndex2-1].style.display = "block";  
-		setTimeout(carousel2, 3000); // Change image every 2 seconds
-	}
-
+    
+    if (hrs < 12) greet = "Good Morning";
+    else if (hrs >= 12 && hrs <= 17) greet = "Good Afternoon";
+    else if (hrs >= 17 && hrs <= 24) greet = "Good Evening";
+    
+    document.getElementById("GreetingsVar").innerHTML =
+      "<em>" + greet + " and Welcome to my Portfolio!</em>";
+    
+    var myIndex = 0;
+    var myIndex1 = 0;
+    var myIndex2 = 0;
+    start();
+    carousel();
+    setTimeout(carousel1, 1000);
+    setTimeout(carousel2, 2000);
+    
+    function start() {
+      var x1 = document.getElementsByClassName("Slides1");
+      var x2 = document.getElementsByClassName("Slides2");
+      x1[0].style.display = "block";
+      x2[0].style.display = "block";
+    }
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("Slides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1;
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
+    
+    function carousel1() {
+      var i1;
+      var x1 = document.getElementsByClassName("Slides1");
+      for (i1 = 0; i1 < x1.length; i1++) {
+        x1[i1].style.display = "none";
+      }
+      myIndex1++;
+      if (myIndex1 > x1.length) {
+        myIndex1 = 1;
+      }
+      x1[myIndex1 - 1].style.display = "block";
+      setTimeout(carousel1, 3000); // Change image every 2 seconds
+    }
+    
+    function carousel2() {
+      var i2;
+      var x2 = document.getElementsByClassName("Slides2");
+      for (i2 = 0; i2 < x2.length; i2++) {
+        x2[i2].style.display = "none";
+      }
+      myIndex2++;
+      if (myIndex2 > x2.length) {
+        myIndex2 = 1;
+      }
+      x2[myIndex2 - 1].style.display = "block";
+      setTimeout(carousel2, 3000); // Change image every 2 seconds
+    }
   </script>
 </body>
 <div class="gridContainer clearfix"></div>
