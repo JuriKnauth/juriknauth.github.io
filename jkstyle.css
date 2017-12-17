@@ -1019,9 +1019,8 @@ input:checked + .slider:before {
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-	width:auto;
-	max-width:100%;
-	height:auto;
+  width: 90%;
+  max-width: 1200px;
   z-index: 600;
 }
 /* The Close Button */
