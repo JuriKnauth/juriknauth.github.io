@@ -1005,7 +1005,7 @@ input:checked + .slider:before {
   display: none;
   position: fixed;
   z-index: 600;
-  padding-top: 40px;
+  padding-top: 0px;
   left: 0;
   top: 0;
   width: 100%;
@@ -1018,9 +1018,10 @@ input:checked + .slider:before {
   position: relative;
   background-color: #fefefe;
   margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
+  padding: 40;
+	width:auto;
+	max-width:90%;
+	height:auto;
   z-index: 600;
 }
 /* The Close Button */
