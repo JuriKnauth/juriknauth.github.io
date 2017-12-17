@@ -1016,7 +1016,6 @@ input:checked + .slider:before {
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
   margin: auto;
 	width:auto;
 	max-width:80%;
