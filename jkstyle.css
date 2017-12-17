@@ -1018,18 +1018,19 @@ input:checked + .slider:before {
   position: relative;
   background-color: #fefefe;
   margin: auto;
-  padding: 40;
+  padding: 50;
 	width:auto;
 	max-width:90%;
 	height:auto;
+	max-height:90%;
   z-index: 600;
 }
 /* The Close Button */
 .close {
   color: rgba(170, 236, 255, 0.95);
   position: absolute;
-  top: -40px;
-  right: -25px;
+  top: 40px;
+  right: 25px;
   font-size: 35px;
   font-weight: bold;
   z-index: 610;
