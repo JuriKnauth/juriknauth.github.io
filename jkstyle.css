@@ -173,6 +173,7 @@ img {
 .img-container {
   	margin: auto;
     max-width: 90vw;
+	min-height: 90vh;
     max-height: 90vh;
     height: auto;
     width: auto;
