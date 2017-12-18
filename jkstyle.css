@@ -170,6 +170,10 @@ img {
 .img-fluid:hover {
 	  cursor: pointer;
 }
+.img-container {
+  max-width: 100%;
+  height: auto;
+}
 .Slides, .Slides1, .Slides2 {
   vertical-align: middle;
   border-style: none;
