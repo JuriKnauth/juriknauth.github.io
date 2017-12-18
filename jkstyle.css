@@ -1064,11 +1064,32 @@ input:checked + .slider:before {
   cursor: pointer;
 }
 /* Next & previous buttons */
-.prev,
+.prev{
+  cursor: pointer;
+  position: absolute;
+  position: fixed;
+  top: 50%;
+  left: 25px;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgba(170, 236, 255, 0.95);
+  font-weight: bold;
+  z-index: 610;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 .next {
   cursor: pointer;
   position: absolute;
+  position: fixed;
   top: 50%;
+  right: 25px;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -1084,7 +1105,11 @@ input:checked + .slider:before {
 }
 
 .caption-container {
-  margin-top: 25px;
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  left: 0px;
+  width: 100%;
   text-align: center;
   background-color: black;
   padding: 2px 16px;
