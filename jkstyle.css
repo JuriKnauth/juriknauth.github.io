@@ -1005,7 +1005,7 @@ input:checked + .slider:before {
   display: none;
   position: fixed;
   z-index: 600;
-  padding-top: 50px;
+  padding-top: 25px;
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
@@ -1076,6 +1076,7 @@ input:checked + .slider:before {
 }
 
 .caption-container {
+  margin-top: 25px;
   text-align: center;
   background-color: black;
   padding: 2px 16px;
