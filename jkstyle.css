@@ -1005,7 +1005,7 @@ input:checked + .slider:before {
   display: none;
   position: fixed;
   z-index: 600;
-  padding-top: 0px;
+  padding-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
