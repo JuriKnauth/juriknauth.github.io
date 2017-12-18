@@ -224,6 +224,7 @@ img {
   position: relative;
   height: auto;
   width: 100%;
+  min-height: 100%;
 }
 
 .logo {
