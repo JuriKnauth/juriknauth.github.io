@@ -1,3 +1,13 @@
+// Include the STOMT JavaScript SDK
+  (function(w, d, n, r, t, s){
+    w.Stomt = w.Stomt||[];
+    t = d.createElement(n);
+    s = d.getElementsByTagName(n)[0];
+    t.async=1;
+    t.src=r;
+    s.parentNode.insertBefore(t,s);
+  })(window, document, 'script', 'https://www.stomt.com/widget.js');
+
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
