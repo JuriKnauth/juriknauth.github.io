@@ -103,6 +103,3 @@ window.onclick = function(e) {
 
 // Adjust the 'APP_ID' to your application id
 // you can find it here: https://www.stomt.com/YOUR_PAGE/apps
-Stomt.push(["addTab", { appId: "APP_ID" }]);
-Stomt.push(["addFeed", { appId: "APP_ID" }]);
-Stomt.push(["addCreate", { appId: "APP_ID" }]);
