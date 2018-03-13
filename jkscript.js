@@ -90,16 +90,3 @@ window.onclick = function(e) {
     }
   }
 };
-
-// Include the STOMT JavaScript SDK
-(function(w, d, n, r, t, s) {
-  w.Stomt = w.Stomt || [];
-  t = d.createElement(n);
-  s = d.getElementsByTagName(n)[0];
-  t.async = 1;
-  t.src = r;
-  s.parentNode.insertBefore(t, s);
-})(window, document, "script", "https://www.stomt.com/widget.js");
-
-// Adjust the 'APP_ID' to your application id
-// you can find it here: https://www.stomt.com/YOUR_PAGE/apps
