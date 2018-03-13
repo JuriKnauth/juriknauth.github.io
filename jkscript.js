@@ -6,7 +6,11 @@
     t.async=1;
     t.src=r;
     s.parentNode.insertBefore(t,s);
-  })(window, document, 'script', 'https://www.stomt.com/widget.js');
+  })(window, document, 'script', 'https://www.stomt.com/juriknauth.js');
+ 
+	  Stomt.push(['addTab', {appId: 'APP_ID'}]);
+	  Stomt.push(['addFeed', {appId: 'APP_ID'}]);
+	  Stomt.push(['addCreate', {appId: 'APP_ID'}]);
 
 function topFunction() {
   document.body.scrollTop = 0;
