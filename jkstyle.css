@@ -1165,8 +1165,8 @@ img.hover-shadow {
 .stomt-button {
   height: auto !important;
   border-radius: 50% !important;
-  right: 50px !important;
-  bottom: 50px !important;
+  right: 5px !important;
+  bottom: 5px !important;
   color: transparent !important;
 
   transform: none !important;
