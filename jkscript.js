@@ -42,19 +42,16 @@ var modal = document.getElementById("myModal");
 
 function openModal() {
   document.getElementById("myModal").style.display = "block";
-  Stomt.push(['hideTag']);
 }
 
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
-  Stomt.push(['showTab', options]);
 }
 
 function closeOutModal(event) {
   if (event.target == myModal) {
     document.getElementById("myModal").style.display = "none";
-	Stomt.push(['showTab', options]);      
-  } else if (event.target == dropdown - content) {
+    } else if (event.target == dropdown - content) {
     document.getElementById(0).classList.toggle("show");
   }
 }
