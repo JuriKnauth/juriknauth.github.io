@@ -1163,15 +1163,15 @@ img.hover-shadow {
 }
 
 .stomt-button {
-  height: auto;
-  border-radius: 50%;
-  right: 50px;
-  bottom: 50px;
-  color: transparent;
+  height: auto !important;
+  border-radius: 50% !important;
+  right: 50px !important;
+  bottom: 50px !important;
+  color: transparent !important;
 
-  transform: none;
-  float: none;
-  padding: 0;
+  transform: none !important;
+  float: none !important;
+  padding: 0 !important;
 }
 
 #Banner {
@@ -1239,3 +1239,17 @@ a.anchor {
   top: -25px;
   visibility: hidden;
 }
+
+<style stomt-widget>
+.stomt-button {
+  height: auto !important;
+  border-radius: 50% !important;
+  right: 50px !important;
+  bottom: 50px !important;
+  color: transparent !important;
+
+  transform: none !important;
+  float: none !important;
+  padding: 0 !important;
+}
+</style >
