@@ -1162,6 +1162,18 @@ img.hover-shadow {
   top: 0;
 }
 
+.stomt-button {
+  height: auto;
+  border-radius: 50%;
+  right: 50px;
+  bottom: 50px;
+  color: transparent;
+
+  transform: none;
+  float: none;
+  padding: 0;
+}
+
 #Banner {
   color: rgb(119, 255, 85);
   text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
