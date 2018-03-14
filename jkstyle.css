@@ -1239,17 +1239,3 @@ a.anchor {
   top: -25px;
   visibility: hidden;
 }
-
-<style stomt-widget>
-.stomt-button {
-  height: auto !important;
-  border-radius: 50% !important;
-  right: 50px !important;
-  bottom: 50px !important;
-  color: transparent !important;
-
-  transform: none !important;
-  float: none !important;
-  padding: 0 !important;
-}
-</style >
