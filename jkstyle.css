@@ -1164,14 +1164,35 @@ img.hover-shadow {
 
 .stomt-button {
   height: auto !important;
-  border-radius: 50% !important;
-  right: 5px !important;
-  bottom: 5px !important;
+  border-radius: 0% !important;
+  right: 2px !important;
+  bottom: 35px !important;
+  height: 50px !important;
+  width: 59px !important;
   color: transparent !important;
 
   transform: none !important;
   float: none !important;
-  padding: 0 !important;
+  padding: 14px 2px !important;
+  font-size: 17px !important;
+
+  list-style-type: none !important;
+  margin: 4px 4px auto !important;
+  overflow: hidden !important;
+  background-color: rgba(0, 145, 201, 0.65) !important;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2) !important;;
+  z-index: 1000 !important;
+  display: inline-block !important;
+  vertical-align: center !important;
+  text-decoration: none !important;;
+  font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
+    "Avant Garde", Futura, sans-serif !important;
+}
+
+@media screen and (max-width: 399px) {
+  .stomt-button {
+    bottom: 50px !important;
+  }
 }
 
 #Banner {
