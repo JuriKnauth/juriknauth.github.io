@@ -9,7 +9,7 @@
   <meta name="author" content="Juri Knauth">
   <meta name="google-site-verification" content="rQabFeH1rub_olMtfbNRyzRKYo9M7YI4i3Qw7BW-Aj0">
   <base href="http://www.juriknauth.com/">
-  <link rel="canonical" href="http://www.juriknauth.com/Projects/CrashedCaptain.html">
+  <link rel="canonical" href="http://www.juriknauth.com/Projects/Experiment/SpaceShooter.html">
   <link rel="stylesheet" type="text/css" href="jkstyle.css">
   <link rel="favicon" href="https://juriknauth.github.io/favicon.ico">
   <link rel="favicon-16x16" href="favicon-16x16.ico" type="image/x-icon">
@@ -17,6 +17,11 @@
   <link href="boilerplate.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="jkscript.js"></script>
   <script src="respond.min.js"></script>
+  <script src="TemplateData/UnityProgress.js"></script>  
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+	 var gameInstance = UnityLoader.instantiate("gameContainer", "Build/v1.json", {onProgress: UnityProgress});
+  </script>
   <script
   src="https://code.jquery.com/jquery-1.12.4.min.js"
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
@@ -56,19 +61,25 @@
       </div>
       <div id="ProjectsB" class="tabcontent" w>
         <header class="header">
-          <p align="justify" class="article-content" id="BannerB"> <i>Crashed Captain Detailed Page.</i></p>
+          <p align="justify" class="article-content" id="BannerB"> <i>Space Shooter.</i></p>
         </header>
         <div class="articlebody">
           <a class="anchor" id="CrashedCaptain" name="CrashedCaptain"></a>
-          <h2 class="article-titleL" float="left"> Crashed Captain </h2>
+          <h2 class="article-titleL" float="left"> Space Shooter </h2>
           <br />
-          <p align="justify" class="article-content"> The player will struggle to keep a paralyzed captain alive and bring him safely from a damaged ship. The only means of getting him to the escape pods is by using centrifugal or gravitational force since the player controls the ship and not the
-            captain. A tilt sensor and accelerometer are preferred input devices. A mobile resembles the defective ship, which is tumbling around. This gives the player a realistic feeling for the forces he is subjecting the captain to. The game is a competitive
-            arcade marble game, which has some depth. The players are feeling sorry whenever they shoot the human ball across the map in order to save time.<br />
+          <p align="justify" class="article-content"> I am trying WepGL integration. Space Shooter from Unity tutorial. Chrome might not be supported. <br />
           </p>
           <div class="columns">
             <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preCrashedCaptainCockpitIntro.jpg" alt="Crashed Captain Intro/Menu/Ingame" width="640" height="360" onclick="openModal();currentSlide(1)">
+              <a class="article">     
+				  	<div class="webgl-content">
+					  <div id="gameContainer" style="width: 600px; height: 900px"></div>
+					  <div class="footer">
+						<div class="webgl-logo"></div>
+						<div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+						<div class="title">SpaceShooter</div>
+					  </div>
+					</div>
                 <div class="article-body">
                   <h5 class="article-title"> </h5>
                   <p class="article-content"> Intro/Menu/Ingame</p>
@@ -76,249 +87,13 @@
                 </div>
               </a>
             </div>
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preCrashedCaptainIngameObjects.jpg" alt="Crashed Captain Ingame" width="640" height="360" onclick="openModal();currentSlide(2)">
-                <div class="article-body">
-                  <h5 class="article-title"> </h5>
-                  <p class="article-content"> Ingame</p>
-                  <footer class="article-info"> </footer>
-                </div>
-              </a>
-            </div>
           </div>
           <footer class="article-info">
             <ul>
-              <li><b>Status: </b> Alpha</li>
-              <li><b>Platform: </b> Android Smartphone</li>
-              <li><b>Team size: </b>5</li>
-              <li><b>Position: </b>Product Owner and Game Designer</li>
-              <li><b>Period: </b>2016/08 - 2016/08</li>
+              <li><b>Status: </b> Test</li>
+              <li><b>Platform: </b> WebGL</li>
             </ul>
           </footer>
-        </div>
-        </p>
-        <div class="articlebody">
-          <a class="anchor" id="Screenshots" name="Screenshots"></a>
-          <h2 class="article-title"> Screenshots </h2>
-          <p class="article-content"><i>(7)</i></p>
-          <br />
-          <div class="columns">
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preCrashedCaptainIngameWallBlend.jpg" alt="Crashed Captain Intro/Menu/Ingame" width="640" height="360" onclick="openModal();currentSlide(3)">
-                <div class="article-body">
-                  <h5 class="article-title"> </h5>
-                  <p class="article-content"> Ingame Wall Blend</p>
-                  <footer class="article-info"> </footer>
-                </div>
-              </a>
-            </div>
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preCrashedCaptainHighscore.jpg" alt="Crashed Captain Intro/Menu/Ingame" width="640" height="360" onclick="openModal();currentSlide(4)">
-                <div class="article-body">
-                  <h5 class="article-title"> </h5>
-                  <p class="article-content"> High Score</p>
-                  <footer class="article-info"> </footer>
-                </div>
-              </a>
-            </div>
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preCrashedCaptainIngame.jpg" alt="Crashed Captain Ingame" width="640" height="360" onclick="openModal();currentSlide(5)">
-                <div class="article-body">
-                  <h5 class="article-title"> </h5>
-                  <p class="article-content"> Avatar</p>
-                  <footer class="article-info"> </footer>
-                </div>
-              </a>
-            </div>
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preCrashedCaptainInEditorCC.jpg" alt="Crashed Captain Ingame" width="640" height="360" onclick="openModal();currentSlide(6)">
-                <div class="article-body">
-                  <h5 class="article-title"> </h5>
-                  <p class="article-content"> In Editor</p>
-                  <footer class="article-info"> </footer>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        </p>
-        <div class="articlebody">
-          <a class="anchor" id="Video" name="Video"></a>
-          <h2 class="article-title"> Video </h2>
-          <br />
-          <div class="columns">
-            <div class="nested-column">
-              <div class="article">
-                <div class="article-content" align="center">
-                  <iframe src="https://www.youtube.com/embed/8KaVGNwHw7s" height="520" border="none" overflow="hidden" width="100%" scrolling="no" frameborder="0" allowTransparency="true" allowfullscreen></iframe>
-                </div>
-                <div class="article-body">
-                  <h5 class="article-title"> </h5>
-                  <p class="article-content"> Crashed Captain Intro/Menu/In-Game</p>
-                  <footer class="article-info"> </footer>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </p>
-        <div class="articlebody">
-          <a class="anchor" id="MyContribution" name="MyContribution"></a>
-          <h2 class="article-titleL" float="left"> My Contribution  </h2>
-          <br /><br />
-          <div class="columns">
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/pre2CrashedCaptainObjectSize.jpg" alt="Graphics Object scaled to fit the Captain" height="520" border="none" overflow="hidden" width="100%" scrolling="no" frameborder="0"  onclick="openModal();currentSlide(7)">
-                <div class="article-body">
-                  <h5 class="article-title"> </h5>
-                  <p class="article-content"> Graphics Object scaled to fit the Captain</p>
-                  <footer class="article-info">Captain-Avatar-Art by Tom Pieper</footer>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="columns">
-                <div class="article-body">
-					<h9 class="article-title"><br />&#9658; Game Designer/Product Owner</h9>
-                  <p align="justify" class="article-content"> 
-                  	<ul class="article-content">
-                  		<li>Generated game idea</li>
-                  		<li>Pitched game idea</li>
-                  		<li>Defined core and support game mechanics</li>                  	
-                  		<li>Wrote game design document</li>
-                  		<li>Research to artificial gravity and rocket science</li>		                  		
-                  		<li>Wrote a background story</li>
-                  		<li>Wrote Dialogs</li>
-                  		<li>Playtested</li>
-                  		<li>Collected feedback</li>
-                  	</ul></p>
-                </div>
-            <div class="nested-column">
-                <div class="article-body">
-					<h9 class="article-title"><br />&#9658; As Artist/Developer</h9>
-                  <p align="justify" class="article-content"> 
-                  	<ul class="article-content">
-                  		<li>2D Graphics for assets, menu and cockpit</li>
-						<li>3D mars and sky box (Textures from <a href="https://www.nasa.gov/mission_pages/mars/images/index.html">Nasa</a>)</li>
-                  		<li>Helped unwrap and texture walls</li>
-                  		<li>Designed icons and logos</li>
-                  		<li>Implementation asset and created colliders</li>
-                  		<li>Bug reports</li>
-                  		<li>Menu and intro</li>
-                  	</ul></p>
-                </div>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="nested-column">
-              <a class="article"> <iframe src="https://onedrive.live.com/embed?resid=B955FC3F781E9008%21159&authkey=%21AJDaI4ewc9h-RfI&em=2&wdStartOn=4" width="100%" height="576" frameborder="0" scrolling="no"></iframe>
-                <div class="article-body">
-                  <h5 class="article-title"> </h5>
-                  <p class="article-content"> Game Design Document </p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="articlebody">
-          <a class="anchor" id="Team" name="Team"></a>
-          <h2 class="article-titleL" float="left"> PIG <i>(Political incorrect games)</i></h2>
-		  <h3 class="article-titleR" float="right"> <a href="../Contact/PoliticalIncorrectGames.html">Detailed Page</a></h3>
-          <br />
-          <p align="justify" class="article-content">Political incorrect games, Inc. (Pig), also known as "political incorrect", "piggy games" or "oink oink you kinky pig", is a group of German game design students founded April 28, 2016.<br />
-          </p>
-          <div class="columns">
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/prePIGBanner.jpg" alt="Crashed Captain PIG Logo" height="520" border="none" overflow="hidden" width="100%" scrolling="no" frameborder="0"  onclick="openModal();currentSlide(8)">
-                <div class="article-body">
-                  <h5 class="article-title"> </h5>
-                  <p class="article-content"> PIG Logo</p>
-                  <footer class="article-info"> </footer>
-                </div>
-              </a>
-            </div>
-          </div>
-          <footer class="article-info">
-            <ul>
-              <li><strong>Product Owner and Game Designer: </strong> Juri Knauth </li>
-              <li><strong>Scrum Master and Artist: </strong> Leo Taylor Lüdemann </li>
-              <li><strong>Lead Artist: </strong> Tom Pieper </li>
-              <li><strong>Lead Programmer: </strong>Clemens Haesler</li>
-              <li><strong>Lead Devs Ops Engineer and Programmer: </strong>Fabian Oyvin Kopp </li>
-            </ul>
-          </footer>
-        </div>
-        </p>
-        <div class="articlebody">
-          <a class="anchor" id="ExternalLinks" name="ExternalLinks"></a>
-          <h2 class="article-title"> External Links </h2>
-          <br />
-          <div class="columns">
-			<div class="nested-column">
-			  <div class="article-body" align="center">
-				  <a class="article" target="_blank" href="https://bitbucket.org/cptcripple/cptcripple/overview">
-					<img class="img-fluid" src="../Icons/bb.png" alt="Bitbucket Logo" height="72" border="none" overflow="hidden" width="72" scrolling="no" frameborder="0">
-					<p class="article-content"> Crashed Captain Repository <br /> <em>on Bitbucket</em> </p>
-				  </a>
-			  </div>
-			</div>
-          </div>
-          <div class="columns">
-            <div class="nested-column">
-              <div class="article-body" align="center">
-                <h5 class="article-title"> </h5>
-                <div class="article-content" align="center">
-                  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCrashed-Captain-1781012968878046%2F&tabs&width=270&height=180&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="270"
-                    height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                </div>
-              </div>
-            </div>
-            <div class="nested-column">
-              <div class="article-body" align="center">
-                <h5 class="article-title"> </h5>
-                <div class="article-content" align="center">
-                  <iframe width="270" frameborder="0" height="180" src="https://itch.io/embed/148577"></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </p>
-        <div class="articlebody">
-          <a class="anchor" id="Forum" name="Forum"></a>
-          <h2 class="article-title"> Forum Crashed Captain </h2>
-          <p class="article-content"><i>(I welcome relevant, respectful comments.)</i></p>
-          <br />
-          <div class="columns">
-            <div class="nested-column">
-              <div class="article-body" align="center">
-                <div id="disqus_thread"></div>
-                <script>
-                  /**
-                                                        						*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                                                        						*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                  
-                  var disqus_config = function() {
-                    this.page.url = "http://www.juriknauth.com/Projects/CrashedCaptain.html"; // Replace PAGE_URL with your page's canonical URL variable
-
-                    this.page.identifier = "CrashedCaptainDetailedPage"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                  };
-                  
-                  (function() {
-                    // DON'T EDIT BELOW THIS LINE
-                    var d = document,
-                      s = d.createElement("script");
-                    s.src = "https://juriknauth.disqus.com/embed.js";
-                    s.setAttribute("data-timestamp", +new Date());
-                    (d.head || d.body).appendChild(s);
-                  })();
-                </script>
-                <noscript>
-              Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-              </noscript>
-              </div>
-            </div>
-          </div>
         </div>
         </p>
       </div>
@@ -331,48 +106,6 @@
     <br />
     <br />
   </div>
-	<div id="myModal" class="modal" tabindex="-1000">
-      <div id="myModalImg" class="modal-content">
-        <div class="mySlides">
-          <div class="numbertext">1 / 8</div>
-          <img src="../Images/CrashedCaptainCockpitIntro.jpg" class="img-container"> </div>
-        <div class="mySlides">
-          <div class="numbertext">2 / 8</div>
-          <img src="../Images/CrashedCaptainIngameObjects.jpg" class="img-container"> </div>
-        <div class="mySlides">
-          <div class="numbertext">3 / 8</div>
-          <img src="../Images/CrashedCaptainIngameWallBlend.jpg" class="img-container"> </div>
-        <div class="mySlides">
-          <div class="numbertext">4 / 8</div>
-          <img src="../Images/CrashedCaptainHighscore.jpg" class="img-container"> </div>
-        <div class="mySlides">
-          <div class="numbertext">5 / 8</div>
-          <img src="../Images/CrashedCaptainIngame.jpg" class="img-container"> </div>
-        <div class="mySlides">
-          <div class="numbertext">6 / 8</div>
-          <img src="../Images/CrashedCaptainInEditorCC.jpg" class="img-container"> </div>
-        <div class="mySlides">
-          <div class="numbertext">7 / 8</div>
-          <img src="../Images/CrashedCaptainObjectSize.jpg" class="img-container"> </div>
-        <div class="mySlides">
-          <div class="numbertext">8 / 8</div>
-          <img src="../Images/PIGLogo.jpg" class="img-container"> </div>
-        <a class="close cursor" onclick="closeModal()">&times;</a> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        <div class="caption-container">
-          <div class="bot-info" id="caption"> </div>
-        </div>
-        <div class="columns">
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(1)" alt="<span>Crashed Captain</span> <span>Intro/Menu/Ingame</span> <span>1/8</span>"> </div>
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(2)" alt="<span>Crashed Captain</span> <span>Ingame</span> <span>2/8</span>"> </div>
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(3)" alt="<span>Screenshots</span> <span>Ingame Wall Blend</span> <span>3/8</span>"> </div>
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(4)" alt="<span>Screenshots</span> <span>High Score</span> <span>4/8</span>"> </div>
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(5)" alt="<span>Screenshots</span> <span>Avatar/Menu/Ingame</span> <span>5/8</span>"> </div>
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(6)" alt="<span>Screenshots</span> <span>In Editor</span> <span>6/8</span>"> </div>
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(7)" alt="<span>Crashed Captain</span> <span>Object Scale</span> <span>7/8</span>"> </div>
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(8)" alt="<span>Team</span> <span>PIG Logo</span> <span>8/8</span>"> </div>
-        </div>
-      </div>
-    </div>
   <script>
     $("#MainMenu").load("MainMenu.html");
   </script>
