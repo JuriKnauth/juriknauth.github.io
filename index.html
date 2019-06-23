@@ -156,9 +156,34 @@
         document.getElementById("GreetingsVar").innerHTML =
             "<em>" + greet + " and Welcome to my Portfolio!</em>";
 
+        var window_focus;
+
         var myIndex = 0;
         var myIndex1 = 0;
         var myIndex2 = 0;
+
+        $(window).focus(function() {
+            window_focus = true;
+            if (window_focus) {
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1;
+                    myIndex1++;
+                    if (myIndex1 > x1.length) {
+                        myIndex1 = 1;
+                    }
+                    myIndex2++;
+                    if (myIndex2 > x2.length) {
+                        myIndex2 = 1;
+                    }
+                };
+            };
+        });
+
+        $(window).focusout(function() {
+            window_focus = false;
+        });
+
         start();
         carousel();
         setTimeout(carousel1, 1000);
