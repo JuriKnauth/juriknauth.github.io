@@ -146,6 +146,8 @@
     <script>
         var myDate = new Date();
         var hrs = myDate.getHours();
+        var sec = myDate.getSeconds();
+        var lastSecDigit = sec % 10;
 
         var greet;
 
@@ -165,18 +167,9 @@
         $(window).focus(function() {
             window_focus = true;
             if (window_focus) {
-                myIndex++;
-                if (myIndex > x.length) {
-                    myIndex = 1;
-                    myIndex1++;
-                    if (myIndex1 > x1.length) {
-                        myIndex1 = 1;
-                    }
-                    myIndex2++;
-                    if (myIndex2 > x2.length) {
-                        myIndex2 = 1;
-                    }
-                };
+                setTimeout(carousel, 0);
+                setTimeout(carousel1, 1000);
+                setTimeout(carousel2, 2000);
             };
         });
 
