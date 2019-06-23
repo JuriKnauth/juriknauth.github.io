@@ -167,7 +167,7 @@
         $(window).focus(function() {
             window_focus = true;
             if (window_focus) {
-                setTimeout(carousel, 0);
+                carousel();
                 setTimeout(carousel1, 1000);
                 setTimeout(carousel2, 2000);
             };
@@ -178,9 +178,9 @@
         });
 
         start();
-        carousel();
-        setTimeout(carousel1, 1000);
-        setTimeout(carousel2, 2000);
+        // carousel();
+        // setTimeout(carousel1, 1000);
+        // setTimeout(carousel2, 2000);
 
         function start() {
             var x1 = document.getElementsByClassName("Slides1");
