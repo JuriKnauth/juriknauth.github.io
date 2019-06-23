@@ -158,7 +158,7 @@
         document.getElementById("GreetingsVar").innerHTML =
             "<em>" + greet + " and Welcome to my Portfolio!</em>";
 
-        var window_focus;
+        var window_focus = true;
 
         var myIndex = 0;
         var myIndex1 = 0;
@@ -176,10 +176,11 @@
 
         $(window).focusout(function() {
             window_focus = false;
-
-            clearInterval(carousel);
-            clearInterval(carousel1);
-            clearInterval(carousel2);
+            if (!window_focus) {
+                clearInterval(carousel);
+                clearInterval(carousel1);
+                clearInterval(carousel2);
+            };
         });
 
         start();
