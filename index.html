@@ -166,6 +166,7 @@
 
         $(window).focus(function() {
             window_focus = true;
+
             if (window_focus) {
                 carousel();
                 setTimeout(carousel1, 1000);
@@ -189,50 +190,56 @@
         function start() {
             var x1 = document.getElementsByClassName("Slides1");
             var x2 = document.getElementsByClassName("Slides2");
-            x1[0].style.display = "block";
-            x2[0].style.display = "block";
+            x1[myIndex1].style.display = "block";
+            x2[myIndex2].style.display = "block";
         }
 
         function carousel() {
-            var i;
-            var x = document.getElementsByClassName("Slides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+            if (window_focus) {
+                var i;
+                var x = document.getElementsByClassName("Slides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1;
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000); // Change image every 2 seconds
             }
-            myIndex++;
-            if (myIndex > x.length) {
-                myIndex = 1;
-            }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 3000); // Change image every 2 seconds
         }
 
         function carousel1() {
-            var i1;
-            var x1 = document.getElementsByClassName("Slides1");
-            for (i1 = 0; i1 < x1.length; i1++) {
-                x1[i1].style.display = "none";
+            if (window_focus) {
+                var i1;
+                var x1 = document.getElementsByClassName("Slides1");
+                for (i1 = 0; i1 < x1.length; i1++) {
+                    x1[i1].style.display = "none";
+                }
+                myIndex1++;
+                if (myIndex1 > x1.length) {
+                    myIndex1 = 1;
+                }
+                x1[myIndex1 - 1].style.display = "block";
+                setTimeout(carousel1, 3000); // Change image every 2 seconds
             }
-            myIndex1++;
-            if (myIndex1 > x1.length) {
-                myIndex1 = 1;
-            }
-            x1[myIndex1 - 1].style.display = "block";
-            setTimeout(carousel1, 3000); // Change image every 2 seconds
         }
 
         function carousel2() {
-            var i2;
-            var x2 = document.getElementsByClassName("Slides2");
-            for (i2 = 0; i2 < x2.length; i2++) {
-                x2[i2].style.display = "none";
+            if (window_focus) {
+                var i2;
+                var x2 = document.getElementsByClassName("Slides2");
+                for (i2 = 0; i2 < x2.length; i2++) {
+                    x2[i2].style.display = "none";
+                }
+                myIndex2++;
+                if (myIndex2 > x2.length) {
+                    myIndex2 = 1;
+                }
+                x2[myIndex2 - 1].style.display = "block";
+                setTimeout(carousel2, 3000); // Change image every 2 seconds
             }
-            myIndex2++;
-            if (myIndex2 > x2.length) {
-                myIndex2 = 1;
-            }
-            x2[myIndex2 - 1].style.display = "block";
-            setTimeout(carousel2, 3000); // Change image every 2 seconds
         }
     </script>
 </body>
