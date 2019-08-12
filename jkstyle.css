@@ -48,7 +48,7 @@ body {
 
 h1 {
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
   font-size: 23px;
   display: inline-block;
   color: black;
@@ -58,7 +58,7 @@ h1 {
 
 h2 {
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
   font-size: 21px;
   display: inline-block;
   color: black;
@@ -68,7 +68,7 @@ h2 {
 
 h3 {
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
   font-size: 19px;
   display: inline-block;
   color: black;
@@ -79,7 +79,7 @@ h3 {
 
 h4 {
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
   font-size: 17px;
   display: inline-block;
   color: black;
@@ -89,7 +89,7 @@ h4 {
 
 h5 {
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
   font-size: 17px;
   display: inline-block;
   color: black;
@@ -99,7 +99,7 @@ h5 {
 
 h6 {
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
   font-size: 17px;
   display: inline-block;
   color: black;
@@ -109,7 +109,7 @@ h6 {
 
 p {
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
   font-size: 17px;
   display: inline-block;
   color: black;
@@ -123,7 +123,7 @@ a:link {
   text-decoration: none;
   cursor: pointer;
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
 }
 
 a:visited {
@@ -131,14 +131,14 @@ a:visited {
   background-color: transparent;
   text-decoration: none;
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
 }
 
 a:hover {
   color: SandyBrown;
   background-color: transparent;
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
 }
 
 a:active {
@@ -146,7 +146,7 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
 }
 
 img {
@@ -171,10 +171,10 @@ img {
 	  cursor: pointer;
 }
 .img-container {
-  	margin: auto;
-    max-height: 90vh;
-    height: auto;
-    width: auto;
+	margin: auto;
+	max-height: 90vh;
+	height: auto;
+	width: auto;
 	vertical-align: middle;
 }
 .Slides, .Slides1, .Slides2 {
@@ -354,7 +354,7 @@ linav a:hover,
   background-color: rgba(125, 125, 125, 0.9);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.36), 0 1px 2px rgba(0, 0, 0, 0.48);
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
 }
 
 linav a,
@@ -362,7 +362,7 @@ linav a,
   color: white;
   display: inline-block;
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
 }
 
 .dropbtn {
@@ -390,14 +390,14 @@ linavb a:hover, .dropbtnimg: hover {
   background-color: rgba(125, 125, 125, 0.9);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.36), 0 1px 2px rgba(0, 0, 0, 0.48);
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
 }
 
 linavb a {
   color: white;
   display: inline-block;
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
 }
 
 .dropbtnimg {
@@ -461,7 +461,7 @@ linavb a {
   z-index: 400;
   cursor: pointer;
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
 }
 
 .botbar {
@@ -490,7 +490,7 @@ linavb a {
   margin: 0 auto;
   max-width: 1040px;
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
 }
 
 table {
@@ -553,7 +553,7 @@ figure {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   cursor: pointer;
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
 }
 
 .column {
@@ -712,7 +712,7 @@ figure {
   margin-top: 10px;
   margin-right: 0px;
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
   flex-direction: row;
   flex: 1;
   padding: 0px 16px;
@@ -720,29 +720,29 @@ figure {
 
 @media screen and (max-width: 360px) {
   .dropbtn {
-    padding: 14px 10px;
+	padding: 14px 10px;
   }
 }
 
 @media screen and (min-width: 800px) {
   .columns,
   .column {
-    display: -ms-flexbox;
-    display: flex;
+	display: -ms-flexbox;
+	display: flex;
   }
 
   .first-article .article-body {
-    flex: 1;
+	flex: 1;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .first-article {
-    flex-direction: row;
+	flex-direction: row;
   }
 
   .first-article .article-body {
-    flex: 1;
+	flex: 1;
   }
 }
 .first-article .article-image {
@@ -807,7 +807,7 @@ figure {
   min-width: 48px;
   max-width: 1040px;
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
 }
 
 .tablink2 {
@@ -833,7 +833,7 @@ figure {
   min-width: 48px;
   max-width: 1040px;
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
   table-layout: fixed;
   display: block;
 }
@@ -865,7 +865,7 @@ figure {
   flex-basis: auto;
   margin: 5px;
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
 }
 
 .switch {
@@ -1126,7 +1126,7 @@ input:checked + .slider:before {
 
 .demotext {
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif;
+	"Avant Garde", Futura, sans-serif;
   font-size: 17px;
   display: inline-block;
   color: white;
@@ -1189,12 +1189,12 @@ img.hover-shadow {
   vertical-align: center !important;
   text-decoration: none !important;;
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
-    "Avant Garde", Futura, sans-serif !important;
+	"Avant Garde", Futura, sans-serif !important;
 }
 
 @media screen and (max-width: 399px) {
   .stomt-button {
-    bottom: 50px !important;
+	bottom: 50px !important;
   }
 }
 
