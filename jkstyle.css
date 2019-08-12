@@ -627,6 +627,7 @@ figure {
 
 .article-title {
   color: black;
+  padding: 8px;
   flex-shrink: 0;
   font-size: 1.4em;
   font-weight: 700;
@@ -653,8 +654,7 @@ figure {
 
 .article-content {
   margin-bottom: 0px;
-	padding-top: 8px;
-	padding-bottom: 8px;
+	padding: 8px;
   background-color: 0;
   color: black;
   height: inherit;
