@@ -657,6 +657,8 @@ figure {
   margin-bottom: 0px;
   padding-left: 5px;
   padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: 0;
   color: black;
   height: inherit;
