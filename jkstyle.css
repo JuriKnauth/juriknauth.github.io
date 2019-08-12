@@ -627,7 +627,8 @@ figure {
 
 .article-title {
   color: black;
-  padding: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
   flex-shrink: 0;
   font-size: 1.4em;
   font-weight: 700;
@@ -654,7 +655,8 @@ figure {
 
 .article-content {
   margin-bottom: 0px;
-	padding: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
   background-color: 0;
   color: black;
   height: inherit;
@@ -684,6 +686,8 @@ figure {
 .article-info {
   display: -ms-flexbox;
   display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
   font-size: 0.85em;
   justify-content: space-between;
   margin-top: 10px;
