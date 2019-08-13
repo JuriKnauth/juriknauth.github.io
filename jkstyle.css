@@ -243,7 +243,7 @@ img {
   cursor: pointer;
 }
 .logo:hover {
-  background-color: rgba(125, 125, 125, 0.9);
+  background-color: rgba(99, 110, 114, 0.9);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.36), 0 1px 2px rgba(0, 0, 0, 0.48);
   cursor: pointer;
 }
@@ -309,7 +309,7 @@ img {
 
 .article:focus {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  background-color: rgba(176, 176, 176, 1);
+  background-color: rgba(178, 190, 195, 1);
   background-size: 100% 100%;
   transition: background 0.5s linear;
   -moz-transition: background 0.5s linear;
@@ -351,7 +351,7 @@ linav a,
 linav a:hover,
 .dropdown:hover .dropbtn {
   color: black;
-  background-color: rgba(125, 125, 125, 0.9);
+  background-color: rgba(99, 110, 114, 0.9);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.36), 0 1px 2px rgba(0, 0, 0, 0.48);
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
 	"Avant Garde", Futura, sans-serif;
@@ -366,7 +366,7 @@ linav a,
 }
 
 .dropbtn {
-  background-color: rgba(85, 85, 85, 0.9);
+  background-color: rgba(178, 190, 195, 0.9);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
 }
 
@@ -387,7 +387,7 @@ linavb a,
 
 linavb a:hover, .dropbtnimg: hover {
   color: black;
-  background-color: rgba(125, 125, 125, 0.9);
+  background-color: rgba(178, 190, 195, 0.9);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.36), 0 1px 2px rgba(0, 0, 0, 0.48);
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
 	"Avant Garde", Futura, sans-serif;
@@ -401,7 +401,7 @@ linavb a {
 }
 
 .dropbtnimg {
-  background-color: rgba(85, 85, 85, 0.9);
+  background-color: rgba(99, 110, 114, 0.9);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
 }
 
@@ -411,7 +411,7 @@ linavb a {
   position: absolute;
   padding: 14px 14px;
   text-align: left;
-  background-color: rgba(249, 249, 249, 0.9);
+  background-color: rgba(223, 230, 233, 0.9);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 550;
@@ -427,7 +427,7 @@ linavb a {
 }
 
 .dropdown-content a:hover {
-  background-color: rgba(241, 241, 241, 0.9);
+  background-color: rgba(223, 230, 233, 0.9);
 }
 
 .dropdown:hover .dropdown-content {
@@ -500,13 +500,13 @@ table {
 
 td,
 th {
-  border: 1px solid #dddddd;
+  border: 1px solid #dfe6e9;
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #dfe6e9;
 }
 
 a {
@@ -620,7 +620,7 @@ figure {
   margin-top: 7px;
   margin-bottom: 8px;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
   height: auto;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
@@ -656,7 +656,7 @@ figure {
 .article-content {
   margin-bottom: 0px;
   padding: 5px;
-  background-color: 0;
+  background-color: #ffffff;
   color: black;
   height: inherit;
 }
@@ -667,7 +667,7 @@ figure {
 .article-content2 {
   flex: 1;
   margin: 5px;
-  background-color: 0;
+  background-color: #ffffff;
   color: black;
   height: auto;
 }
@@ -677,7 +677,7 @@ figure {
   margin: 5px;
   text-align: center;
   float: center;
-  background-color: 0;
+  background-color: #ffffff;
   color: black;
   height: auto;
 }
@@ -794,7 +794,7 @@ figure {
 }
 
 .tablink {
-  background-color: #555;
+  background-color: #2d3436;
   color: white;
   float: left;
   border: none;
@@ -815,12 +815,12 @@ figure {
 
 .tablink:hover {
 
-  background-color: #777;
+  background-color: #636e72;
   color: #ffffff;
 }
 
 .tablinkr {
-  background-color: #555;
+  background-color: #2d3436;
   color: white;
   float: right;
   border: none;
@@ -839,7 +839,7 @@ figure {
 }
 
 .tablinkr:hover {
-  background-color: #777;
+  background-color: #636e72;
   color: #ffffff;
 }
 
@@ -886,7 +886,7 @@ figure {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #dfe6e9;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -904,11 +904,11 @@ figure {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #0984e3;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #0984e3;
 }
 
 input:checked + .slider:before {
@@ -976,7 +976,7 @@ input:checked + .slider:before {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: rgba(40, 40, 40, 0.9);
+  background-color: rgba(45, 52, 54, 0.9);
 }
 
 .containera:hover .overlay {
@@ -1182,7 +1182,7 @@ img.hover-shadow {
   list-style-type: none !important;
   margin: 4px 4px auto !important;
   overflow: hidden !important;
-  background-color: rgba(0, 145, 201, 0.65) !important;
+  background-color: rgba(9, 132, 227, 0.65) !important;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2) !important;;
   z-index: 1000 !important;
   display: inline-block !important;
@@ -1200,11 +1200,11 @@ img.hover-shadow {
 
 #Banner {
   color: rgb(119, 255, 85);
-  text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
+  text-shadow: 2px 2px 3px rgba(178, 190, 195, 0.75);
 }
 
 #BannerB {
-  text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
+  text-shadow: 2px 2px 3px rgba(178, 190, 195, 0.75);
 }
 
 #Default {
@@ -1213,41 +1213,41 @@ img.hover-shadow {
 
 #Blog {
   color: black;
-  background-color: rgba(255, 0, 0, 0.95);
+  background-color: rgba(214, 48, 49, 0.95);
 }
 
 #Projects {
   color: black;
-  background-color: rgba(255, 255, 0, 0.95);
+  background-color: rgba(253, 203, 110, 0.95);
 }
 
 #Contact {
   color: black;
-  background-color: rgba(170, 236, 255, 0.95);
+  background-color: rgba(129, 236, 236, 0.95);
 }
 
 #BlogB {
-  background-color: rgba(255, 0, 0, 0.75);
+  background-color: rgba(214, 48, 49, 0.75);
 }
 
 #ProjectsB {
-  background-color: rgba(255, 255, 0, 0.75);
+  background-color: rgba(253, 203, 110, 0.75);
 }
 
 #ContactB {
-  background-color: rgba(170, 236, 255, 0.75);
+  background-color: rgba(129, 236, 236, 0.75);
 }
 
 #Index {
-  background-color: rgba(85, 85, 85, 0.95);
+  background-color: rgba(99, 110, 114, 0.95);
 }
 
 #IndexB {
-  background-color: rgba(85, 85, 85, 0.5);
+  background-color: rgba(99, 110, 114, 0.5);
 }
 
 #IndexC {
-  background-color: rgba(85, 85, 85, 0.95);
+  background-color: rgba(99, 110, 114, 0.95);
 }
 
 </style > <style type="text/css" > #wrapper {
