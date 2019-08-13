@@ -796,7 +796,7 @@ figure {
 
 .tablinkdum {
   float: left;
-  padding: 14px 14px;
+  padding: 4px 6px;
   width: auto;
   border: none;
   outline: none;
@@ -811,7 +811,7 @@ figure {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 4px 6px;
   font-size: 17px;
   width: auto;
   margin: 0 auto;
@@ -825,7 +825,7 @@ figure {
 }
 
 .tablink:hover {
-
+  z-index: 99 !important;
   background-color: #636e72;
   color: #ffffff;
 }
@@ -837,7 +837,7 @@ figure {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 4px 6px;
   font-size: 17px;
   width: auto;
   margin: 0 auto;
@@ -850,6 +850,7 @@ figure {
 }
 
 .tablinkr:hover {
+  z-index: 99 !important;
   background-color: #636e72;
   color: #ffffff;
 }
@@ -859,7 +860,7 @@ figure {
   display: block;
   color: #f2f2f2;
   text-align: left;
-  padding: 14px 16px;
+  padding: 4px 6px;
   text-decoration: none;
   font-size: 17px;
   display: inline-block;
