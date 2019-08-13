@@ -625,6 +625,17 @@ figure {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
+.articlebodyDesc {
+  box-sizing: border-box;
+  flex-direction: column;
+  margin-top: 3px;
+  margin-bottom: 4px;
+  padding: 20px;
+  background-color: #ffffff;
+  height: auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
 .article-title {
   color: black;
   padding-left: 5px;
@@ -1199,7 +1210,6 @@ img.hover-shadow {
 }
 
 #Banner {
-  color: rgb(119, 255, 85);
   text-shadow: 2px 2px 3px rgba(178, 190, 195, 0.75);
 }
 
