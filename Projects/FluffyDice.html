@@ -1,545 +1,547 @@
 <!doctype html>
-<html>
+<html lang="en-US">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=0.85" name="viewport">
-  <meta name="description" content="Juri Knauth’s Portfolio. I am a Game Designer. This web page will showcase each project I worked on as well as link to my team-projects. Fluffy Dice Page.">
-  <meta name="keywords" content="JK,Juri,Knauth,Game,Design,Portfolio,Showcase,Blog,Projects,Contact,Video,Board,Maps,3D,2D,Art,Concepts,Escape,Room,Mods,Pirate,Splashy,Fluffy,Dice,Crashed,Captain,Endstation,Companies,PIG,Spielhauer">
-  <meta name="author" content="Juri Knauth">
-  <meta name="google-site-verification" content="rQabFeH1rub_olMtfbNRyzRKYo9M7YI4i3Qw7BW-Aj0">
-  <base href="http://www.juriknauth.com/">
-  <link rel="canonical" href="http://www.juriknauth.com/Projects/FluffyDice.html">
-  <link rel="stylesheet" type="text/css" href="jkstyle.css">
-  <link rel="favicon" href="https://juriknauth.github.io/favicon.ico">
-  <link rel="favicon-16x16" href="favicon-16x16.ico" type="image/x-icon">
-  <title>Portfolio Juri Knauth</title>
-  <link href="boilerplate.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src="jkscript.js"></script>
-  <script src="respond.min.js"></script>
-  <script
-  src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
-  <script>
-    $(function() {
-      $("#loadbotbar").load("BotBar.html");
-      $("#loadindexmenu").load("IndexMenu.html");
-      $("#loadblogmenu").load("BlogMenu.html");
-      $("#loadprojectsmenu").load("ProjectsMenu.html");
-      $("#loadcontactmenu").load("ContactMenu.html");
-    });
-  </script>
-  <style></style>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=0.85" name="viewport">
+    <meta name="description" content="Juri Knauth’s Portfolio. I am a Game Designer. This web page will showcase each project I worked on as well as link to my team-projects. Fluffy Dice Page.">
+    <meta name="keywords" content="JK,Juri,Knauth,Game,Design,Portfolio,Showcase,Blog,Projects,Contact,Video,Board,Maps,3D,2D,Art,Concepts,Escape,Room,Mods,Pirate,Splashy,Fluffy,Dice,Crashed,Captain,Endstation,Companies,PIG,Spielhauer">
+    <meta name="author" content="Juri Knauth">
+    <meta name="google-site-verification" content="rQabFeH1rub_olMtfbNRyzRKYo9M7YI4i3Qw7BW-Aj0">
+    <base href="http://www.juriknauth.com/">
+    <link rel="canonical" href="http://www.juriknauth.com/Projects/FluffyDice.html">
+    <link rel="stylesheet" type="text/css" href="jkstyle.css">
+    <link rel="favicon" href="https://juriknauth.github.io/favicon.ico">
+    <link rel="favicon-16x16" href="favicon-16x16.ico" type="image/x-icon">
+    <title>Portfolio Juri Knauth</title>
+    <link href="boilerplate.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="jkscript.js"></script>
+    <script src="respond.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#loadbotbar").load("BotBar.html");
+            $("#loadindexmenu").load("IndexMenu.html");
+            $("#loadblogmenu").load("BlogMenu.html");
+            $("#loadprojectsmenu").load("ProjectsMenu.html");
+            $("#loadcontactmenu").load("ContactMenu.html");
+        });
+    </script>
+    <style></style>
 </head>
 
 <body onkeydown="myFunction(event)" onclick="closeOutModal(event)">
-  <div class="container">
-    <div class="main">
-      <div id="mainmenu">
-        <div id="loadbotbar"> </div>
-        <ulnav>
-          <linavb class="dropdown">
-            <a href="javascript:void(0)" onclick="location.href='/'" id="Default" class="dropbtnimg"><img class="logo" src="jkiconcropD.png" id="logo" width="51.25" height="51.25" alt="jklogo" align="left"></a>
-            <div id="loadindexmenu"> </div>
-          </linavb>
-          <linav class="dropdown"> <a href="javascript:void(0)" onclick="location.href='Blog.html'" id="Default" class="dropbtn"><b>Blog</b></a>
-            <div id="loadblogmenu"> </div>
-          </linav>
-          <linav class="dropdown"> <a href="javascript:void(0)" onclick="location.href='Projects.html'" id="Projects" class="dropbtn"><b color="white">Projects</b></a>
-            <div id="loadprojectsmenu"> </div>
-          </linav>
-          <linav class="dropdown"> <a href="javascript:void(0)" onclick="location.href='Contact.html'" id="Default" class="dropbtn"><b>Contact</b></a>
-            <div id="loadcontactmenu"> </div>
-          </linav>
-        </ulnav>
-      </div>
-      <div id="ProjectsB" class="tabcontent" w>
-        <div class="articlebodyDesc">
-          <p align="justify" class="article-content" id="BannerB"> <i>Fluffy Dice Detailed Page.</i></p>
-        </div>
-        <div class="articlebody">
-          <a class="anchor" id="FluffyDice" name="FluffyDice"></a>
-          <h2 class="article-title"> Fluffy Dice </h2>
-          <br />
-          <p align="justify" class="article-content"> Cats, turned into cubes by a witch, participate in a board-game. They are thrown like dice, where the outcome of the roll determines how far the cube/cat can move. At each step the cube rolls over, triggering new effects, for example
-            a cat can jumping, when turned on its tail. Skillfully rolling the dice and carefully planning moves is essential to winning the race against other felines. A few cats fight with claws over the scarce ingredients, which are needed to lift the spell. </p>
-          <br />
-          <div class="columns">
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceDMenu.jpg" alt="Fluffy Dice Menu" width="640" height="360" onclick="openModal();currentSlide(1)">
-                <div class="article-body">
-                  
-                  <p class="article-content"> Menu</p>
-                  <footer class="article-info">David Störmer's Background Art</footer>
-                </div>
-              </a>
+    <div class="container">
+        <div class="main">
+            <div id="mainmenu">
+                <div id="loadbotbar"> </div>
+                <ulnav>
+                    <linavb class="dropdown">
+                        <a href="javascript:void(0)" onclick="location.href='/'" id="Default" class="dropbtnimg"><img class="logo" src="jkiconcropD.png" id="logo" width="51.25" height="51.25" alt="jklogo" align="left"></a>
+                        <div id="loadindexmenu"> </div>
+                    </linavb>
+                    <linav class="dropdown"> <a href="javascript:void(0)" onclick="location.href='Blog.html'" id="Default" class="dropbtn"><b>Blog</b></a>
+                        <div id="loadblogmenu"> </div>
+                    </linav>
+                    <linav class="dropdown"> <a href="javascript:void(0)" onclick="location.href='Projects.html'" id="Projects" class="dropbtn"><b color="white">Projects</b></a>
+                        <div id="loadprojectsmenu"> </div>
+                    </linav>
+                    <linav class="dropdown"> <a href="javascript:void(0)" onclick="location.href='Contact.html'" id="Default" class="dropbtn"><b>Contact</b></a>
+                        <div id="loadcontactmenu"> </div>
+                    </linav>
+                </ulnav>
             </div>
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceIngame.jpg" alt="Fluffy Dice Ingame" width="640" height="360" onclick="openModal();currentSlide(2)">
-                <div class="article-body">
-                  
-                  <p class="article-content"> In-Game</p>
-                  <footer class="article-info"><br /></footer>
+            <div id="ProjectsB" class="tabcontent" w>
+                <div class="articlebodyDesc">
+                    <p align="justify" class="article-content" id="BannerB"> <i>Fluffy Dice Detailed Page.</i></p>
                 </div>
-              </a>
-            </div>
-          </div>
-          <footer class="article-info">
-            <ul>
-              <li><b>Status: </b> Beta</li>
-		      <li><b>Platform: </b> Windows PC <em>(Unreal Engine)</em></li>
-              <li><b>Engine: </b> Unreal Engine 4</em></li>
-              <li><b>Team size: </b> 9</li>
-              <li><b>Position: </b>Game Designer and Programmer</li>
-              <li><b>Period: </b>2017/01 - 2017/02</li>
-            </ul>
-          </footer>
-        </div>
-        </p>
-        <div class="articlebody">
-          <a class="anchor" id="Instructions" name="Instructions"></a>
-          <h2 class="article-title"> Instructions </h2>
-          <p class="article-content"><i>(5)</i></p>
-          <br />
-          <div class="columns">
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceGoal.jpg" alt="Goal" width="640" height="360" onclick="openModal();currentSlide(3)">
-                <div class="article-body">
-                  
-                  <p class="article-content"> Goal</p>
-                  <footer class="article-info"> </footer>
+                <div class="articlebody">
+                    <a class="anchor" id="FluffyDice" name="FluffyDice"></a>
+                    <h2 class="article-title"> Fluffy Dice </h2>
+                    <br />
+                    <p align="justify" class="article-content"> Cats, turned into cubes by a witch, participate in a board-game. They are thrown like dice, where the outcome of the roll determines how far the cube/cat can move. At each step the cube rolls over, triggering new effects, for example
+                        a cat can jumping, when turned on its tail. Skillfully rolling the dice and carefully planning moves is essential to winning the race against other felines. A few cats fight with claws over the scarce ingredients, which are needed
+                        to lift the spell. </p>
+                    <br />
+                    <div class="columns">
+                        <div class="nested-column">
+                            <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceDMenu.jpg" alt="Fluffy Dice Menu" width="640" height="360" onclick="openModal();currentSlide(1)">
+                                <div class="article-body">
+
+                                    <p class="article-content"> Menu</p>
+                                    <footer class="article-info">David Störmer's Background Art</footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column">
+                            <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceIngame.jpg" alt="Fluffy Dice Ingame" width="640" height="360" onclick="openModal();currentSlide(2)">
+                                <div class="article-body">
+
+                                    <p class="article-content"> In-Game</p>
+                                    <footer class="article-info"><br /></footer>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <footer class="article-info">
+                        <ul>
+                            <li><b>Status: </b> Beta</li>
+                            <li><b>Platform: </b> Windows PC <em>(Unreal Engine)</em></li>
+                            <li><b>Engine: </b> Unreal Engine 4</em>
+                            </li>
+                            <li><b>Team size: </b> 9</li>
+                            <li><b>Position: </b>Game Designer and Programmer</li>
+                            <li><b>Period: </b>2017/01 - 2017/02</li>
+                        </ul>
+                    </footer>
                 </div>
-              </a>
-            </div>
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceTurnOrder.jpg" alt="Phases" width="640" height="360" onclick="openModal();currentSlide(4)">
-                <div class="article-body">
-                  
-                  <p class="article-content"> Phases</p>
-                  <footer class="article-info"> </footer>
+                </p>
+                <div class="articlebody">
+                    <a class="anchor" id="Instructions" name="Instructions"></a>
+                    <h2 class="article-title"> Instructions </h2>
+                    <p class="article-content"><i>(5)</i></p>
+                    <br />
+                    <div class="columns">
+                        <div class="nested-column">
+                            <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceGoal.jpg" alt="Goal" width="640" height="360" onclick="openModal();currentSlide(3)">
+                                <div class="article-body">
+
+                                    <p class="article-content"> Goal</p>
+                                    <footer class="article-info"> </footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column">
+                            <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceTurnOrder.jpg" alt="Phases" width="640" height="360" onclick="openModal();currentSlide(4)">
+                                <div class="article-body">
+
+                                    <p class="article-content"> Phases</p>
+                                    <footer class="article-info"> </footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column">
+                            <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceChart.jpg" alt="Dice Chart" width="640" height="360" onclick="openModal();currentSlide(5)">
+                                <div class="article-body">
+
+                                    <p class="article-content"> Dice Chart</p>
+                                    <footer class="article-info"> </footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column">
+                            <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceShootingPhase.jpg" alt="Throwing Phase" width="640" height="360" onclick="openModal();currentSlide(6)">
+                                <div class="article-body">
+
+                                    <p class="article-content"> Throwing Phase</p>
+                                    <footer class="article-info"> </footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column">
+                            <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceTipOverPhase.jpg" alt="Tip-Over Phase" width="640" height="360" onclick="openModal();currentSlide(7)">
+                                <div class="article-body">
+
+                                    <p class="article-content"> Tip-Over Phase</p>
+                                    <footer class="article-info"> </footer>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </a>
-            </div>
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceChart.jpg" alt="Dice Chart" width="640" height="360" onclick="openModal();currentSlide(5)">
-                <div class="article-body">
-                  
-                  <p class="article-content"> Dice Chart</p>
-                  <footer class="article-info"> </footer>
+                </p>
+                <div class="articlebody">
+                    <a class="anchor" id="Video" name="Video"></a>
+                    <h2 class="article-title"> Video </h2>
+                    <br />
+                    <div class="columns">
+                        <div class="nested-column">
+                            <div class="article">
+                                <div class="article-content" align="center">
+                                    <iframe src="https://www.youtube.com/embed/TbruTDmh2gE" height="520" border="none" overflow="hidden" width="100%" scrolling="no" frameborder="0" allowTransparency="true" allowfullscreen></iframe>
+                                </div>
+                                <div class="article-body">
+
+                                    <p class="article-content"> Fluffy Dice Gameplay</p>
+                                    <footer class="article-info"> </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </a>
-            </div>
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceShootingPhase.jpg" alt="Throwing Phase" width="640" height="360" onclick="openModal();currentSlide(6)">
-                <div class="article-body">
-                  
-                  <p class="article-content"> Throwing Phase</p>
-                  <footer class="article-info"> </footer>
+                </p>
+                <div class="articlebody">
+                    <a class="anchor" id="ArtAndConcepts" name="ArtAndConcepts"></a>
+                    <h2 class="article-title"> Art and Concepts </h2>
+                    <p class="article-content"><i>(4)</i></p>
+                    <br />
+                    <div class="columns">
+                        <div class="nested-column">
+                            <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceCharConcept.jpg" alt="Fluffy Dice Avatar Concept" width="640" height="360" onclick="openModal();currentSlide(8)">
+                                <div class="article-body">
+
+                                    <p class="article-content"> Avatar Concepts</p>
+                                    <footer class="article-info">David Störmer's Art</footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column">
+                            <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceObjConcept.jpg" alt="Fluffy Dice Object Concept" width="640" height="360" onclick="openModal();currentSlide(9)">
+                                <div class="article-body">
+
+                                    <p class="article-content"> Objcts Concepts</p>
+                                    <footer class="article-info">David Störmer's Art</footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column">
+                            <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceConcept.jpg" alt="Fluffy Dice Concept" width="640" height="360" onclick="openModal();currentSlide(10)">
+                                <div class="article-body">
+
+                                    <p class="article-content"> Fluffy Dice Concepts</p>
+                                    <footer class="article-info">David Störmer's Art</footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column">
+                            <a class="article"> <img class="img-fluid" src="../Images/preCatCover.jpg" alt="Fluffy Dice Cover" width="640" height="360" onclick="openModal();currentSlide(11)">
+                                <div class="article-body">
+
+                                    <p class="article-content"> Cover Art</p>
+                                    <footer class="article-info">David Störmer's Art</footer>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </a>
-            </div>
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceTipOverPhase.jpg" alt="Tip-Over Phase" width="640" height="360" onclick="openModal();currentSlide(7)">
-                <div class="article-body">
-                  
-                  <p class="article-content"> Tip-Over Phase</p>
-                  <footer class="article-info"> </footer>
+                </p>
+                <div class="articlebody">
+                    <a class="anchor" id="FluffyDiceComic" name="FluffyDiceComic"></a>
+                    <h2 class="article-title"> Comic </h2>
+                    <br />
+                    <div class="columns">
+                        <div class="nested-column">
+                            <a class="article"> <img class="img-fluid" src="../Images/preBigFluffyDiceCatComic.jpg" alt="Gameplay Comic" width="1280" height="720" onclick="openModal();currentSlide(12)">
+                                <div class="article-body">
+
+                                    <p class="article-content"> Gameplay Snippet - Comic</p>
+                                    <footer class="article-info">David Störmer's Comic</footer>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        </p>
-        <div class="articlebody">
-          <a class="anchor" id="Video" name="Video"></a>
-          <h2 class="article-title"> Video </h2>
-          <br />
-          <div class="columns">
-            <div class="nested-column">
-              <div class="article">
-                <div class="article-content" align="center">
-                  <iframe src="https://www.youtube.com/embed/TbruTDmh2gE" height="520" border="none" overflow="hidden" width="100%" scrolling="no" frameborder="0" allowTransparency="true" allowfullscreen></iframe>
+                </p>
+                <div class="articlebody">
+                    <a class="anchor" id="GameDesignDocument" name="GameDesignDocument"></a>
+                    <h2 class="article-title"> Game Design Document </h2>
+                    <br />
+                    <div class="columns">
+                        <div class="nested-column">
+                            <a class="article"> <iframe src="https://onedrive.live.com/embed?cid=B955FC3F781E9008&resid=B955FC3F781E9008%21115&authkey=AIlu8FE_EfjALWY&em=2" width="100%" height="576" frameborder="0" scrolling="no"></iframe>
+                                <div class="article-body">
+
+                                    <p class="article-content"> Game Design Document <em>(German Print Version)</em> </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="article-body">
-                  
-                  <p class="article-content"> Fluffy Dice Gameplay</p>
-                  <footer class="article-info"> </footer>
+                </p>
+                <div class="articlebody">
+                    <a class="anchor" id="MyContribution" name="MyContribution"></a>
+                    <h2 class="article-title"> My Contribution </h2>
+                    <br />
+                    <div class="columns">
+                        <div class="nested-column">
+                            <a class="article"> <img class="img-fluid" src="../Images/preFluffyDicePaperPrototype.jpg" alt="Dice Chart" width="100%" height="315" onclick="openModal();currentSlide(13)">
+                                <div class="article-body">
+
+                                    <p class="article-content"> Paper Prototype In-Game</p>
+                                    <footer class="article-info"> </footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column">
+                            <div class="article-body">
+                                <h9 class="article-title"><br />&#9658; As Game Designer</h9>
+                                <p align="justify" class="article-content">
+                                    <ul class="article-content">
+                                        <li>Aided to keep vision</li>
+                                        <li><a href="https://1drv.ms/b/s!AgiQHng__FW5gR3_3k2ZniNFHwUk">Wrote a background story </a><em>(Dismissed)</em></li>
+                                        <li>Helped define core and support game mechanics</li>
+                                        <li>Prototyped</li>
+                                        <li>Co-wrote prototype manual</li>
+                                        <li>Co-wrote game design document</li>
+                                        <li>Co-wrote introductory poem</li>
+                                        <li>Layouted the print version</li>
+                                        <li>Playtested</li>
+                                        <li>Collected feedback</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="nested-column">
+                            <a class="article"> <iframe src="https://onedrive.live.com/embed?cid=B955FC3F781E9008&resid=B955FC3F781E9008%21156&authkey=ACmUWEhz29k9RXE&em=2" width="100%" height="360" frameborder="0" scrolling="no"></iframe>
+                                <div class="article-body">
+
+                                    <p class="article-content"> Paper Prototype Manual</p>
+                                    <footer class="article-info"> </footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column">
+                            <a class="article"> <iframe src="https://onedrive.live.com/embed?cid=B955FC3F781E9008&resid=B955FC3F781E9008%21161&authkey=AFExBpxDCdw588M&em=2" width="100%" height="360" frameborder="0" scrolling="no"></iframe>
+                                <div class="article-body">
+
+                                    <p class="article-content"> Introductory Poem <em>(German)</em></p>
+                                    <footer class="article-info"> </footer>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="nested-column">
+                            <div class="article">
+                                <div class="article-content" align="center">
+                                    <iframe src="https://www.youtube.com/embed/ec3u5qFXbDQ" height="315" border="none" overflow="hidden" width="100%" scrolling="no" frameborder="0" allowTransparency="true" allowfullscreen></iframe>
+                                </div>
+                                <div class="article-body">
+
+                                    <p class="article-content"> Fluffy Dice Alternative Rig</p>
+                                    <footer class="article-info"> </footer>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nested-column">
+                            <div class="article-body">
+                                <h5 class="article-title"><br /><span>&#9658; As Programmer/Developer/Artist</span></h5>
+                                <p align="justify" class="article-content">
+                                    <ul class="article-content">
+                                        <li>UI animations</li>
+                                        <li>Feedback system</li>
+                                        <li>Inventory</li>
+                                        <li>Asset implementation and colliders</li>
+                                        <li>Bug reports and some fixes</li>
+                                        <li>Menu</li>
+                                        <li>Rigging, skinning and animation <em>(Dismissed)</em></li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </p>
-        <div class="articlebody">
-          <a class="anchor" id="ArtAndConcepts" name="ArtAndConcepts"></a>
-          <h2 class="article-title"> Art and Concepts </h2>
-          <p class="article-content"><i>(4)</i></p>
-          <br />
-          <div class="columns">
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceCharConcept.jpg" alt="Fluffy Dice Avatar Concept" width="640" height="360" onclick="openModal();currentSlide(8)">
-                <div class="article-body">
-                  
-                  <p class="article-content"> Avatar Concepts</p>
-                  <footer class="article-info">David Störmer's Art</footer>
+                </p>
+                <div class="articlebody">
+                    <a class="anchor" id="Comments" name="Comments"></a>
+                    <h2 class="article-title">Comments</h2>
+                    <br />
+                    <div class="columns">
+                        <div class="nested-column">
+                            <ul class="article-content">
+                                <li>WIP</li>
+                            </ul>
+                        </div>
+                        <div class="nested-column">
+                            <ul class="article-content">
+                                <li>...</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </p>
                 </div>
-              </a>
-            </div>
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceObjConcept.jpg" alt="Fluffy Dice Object Concept" width="640" height="360" onclick="openModal();currentSlide(9)">
-                <div class="article-body">
-                  
-                  <p class="article-content"> Objcts Concepts</p>
-                  <footer class="article-info">David Störmer's Art</footer>
+                </p>
+                <div class="articlebody">
+                    <a class="anchor" id="Gobble" name="Gobble"></a>
+                    <h2 class="article-titleL" float="left"> Gobble Games </h2>
+                    <h3 class="article-titleR" float="right"> <a href="../Contact/GobbleGames.html">Detailed Page</a></h3>
+                    <br />
+                    <p align="justify" class="article-content">The team name describes the action "to gobble down games" or the so called bird. The group consists of game design students from the Media Design Hochschule (Berlin). <br />
+                    </p>
+                    <div class="columns">
+                        <div class="nested-column">
+                            <a class="article"> <img class="img-fluid" src="../Images/preGobblesLogo.jpg" alt="Gobble Games Logo" height="520" border="none" overflow="hidden" width="100%" scrolling="no" frameborder="0" onclick="openModal();currentSlide(14)">
+                                <div class="article-body">
+
+                                    <p class="article-content"> Gobble Games </p>
+                                    <footer class="article-info"> Kien Le's Logo</footer>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <footer class="article-info">
+                        <ul>
+                            <li><strong>Product Owner, Game Designer and Programmer: </strong> Felix Schmidt </li>
+                            <li><strong>Lead Programmer: </strong>Fabian Oyvin Kopp </li>
+                            <li><strong>Game Designer and Programmer: </strong>Juri Knauth </li>
+                            <li><strong>Lead Game Designer: </strong> Lars Willmer </li>
+                            <li><strong>Scrum Master and Game Designer: </strong> Armando Gracia </li>
+                            <li><strong>Lead Artist: </strong> David Maximilian Störmer </li>
+                            <li><strong>Level Designer and Artist: </strong> Leo Taylor Lüdemann </li>
+                            <li><strong>Artist: </strong> José Antonio Rodriguez Chinchilla </li>
+                            <li><strong>Artist: </strong>Kien Le </li>
+                        </ul>
+                    </footer>
                 </div>
-              </a>
-            </div>
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preFluffyDiceConcept.jpg" alt="Fluffy Dice Concept" width="640" height="360" onclick="openModal();currentSlide(10)">
-                <div class="article-body">
-                  
-                  <p class="article-content"> Fluffy Dice Concepts</p>
-                  <footer class="article-info">David Störmer's Art</footer>
+                </p>
+                <div class="articlebody">
+                    <a class="anchor" id="ExternalLinks" name="ExternalLinks"></a>
+                    <h2 class="article-title"> External Links </h2>
+                    <br />
+                    <div class="columns">
+                        <div class="nested-column">
+                            <div class="article-body" align="center">
+
+                                <div class="article-content" align="center">
+                                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffluffydice%2F&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="130" style="border:none;overflow:hidden"
+                                        scrolling="no" frameborder="0" allowTransparency="true"></iframe><br />
+                                    <p class="article-content"> Facebook Page</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="nested-column">
+                            <div class="article-body" align="center">
+                                <div class="article-content">
+                                    <a class="article" target="_blank" href="">
+                                        <img class="img-fluid" src="../Icons/bb.png" alt="Github Logo" height="72" border="none" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                        <p class="article-content"> Fluffy Dice Repository <br /> <em>on Bitbucket *soon*</em> </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nested-column">
+                            <div class="article-body" align="center">
+                                <div class="article-content">
+                                    <a class="article" target="_blank" href="https://1drv.ms/u/s!AgiQHng__FW5dSGfcwC4Bbmmdbg">
+                                        <img class="img-fluid" src="../Icons/Games/FluffyDice.jpg" alt="FluffyDice Logo" height="72" border="none" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                        <p class="article-content"> Game Demo for Windows<br /> <em>Download from OneDrive</em> </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </a>
-            </div>
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preCatCover.jpg" alt="Fluffy Dice Cover" width="640" height="360" onclick="openModal();currentSlide(11)">
-                <div class="article-body">
-                  
-                  <p class="article-content"> Cover Art</p>
-                  <footer class="article-info">David Störmer's Art</footer>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        </p>
-        <div class="articlebody">
-          <a class="anchor" id="FluffyDiceComic" name="FluffyDiceComic"></a>
-          <h2 class="article-title"> Comic </h2>
-          <br />
-          <div class="columns">
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preBigFluffyDiceCatComic.jpg" alt="Gameplay Comic" width="1280" height="720" onclick="openModal();currentSlide(12)">
-                <div class="article-body">
-                  
-                  <p class="article-content"> Gameplay Snippet - Comic</p>
-                  <footer class="article-info">David Störmer's Comic</footer>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        </p>
-        <div class="articlebody">
-          <a class="anchor" id="GameDesignDocument" name="GameDesignDocument"></a>
-          <h2 class="article-title"> Game Design Document </h2>
-          <br />
-          <div class="columns">
-            <div class="nested-column">
-              <a class="article"> <iframe src="https://onedrive.live.com/embed?cid=B955FC3F781E9008&resid=B955FC3F781E9008%21115&authkey=AIlu8FE_EfjALWY&em=2" width="100%" height="576" frameborder="0" scrolling="no"></iframe>
-                <div class="article-body">
-                  
-                  <p class="article-content"> Game Design Document <em>(German Print Version)</em> </p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        </p>
-        <div class="articlebody">
-          <a class="anchor" id="MyContribution" name="MyContribution"></a>
-          <h2 class="article-title"> My Contribution </h2>
-          <br />
-          <div class="columns">
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preFluffyDicePaperPrototype.jpg" alt="Dice Chart" width="100%" height="315" onclick="openModal();currentSlide(13)">
-                <div class="article-body">
-                  
-                  <p class="article-content"> Paper Prototype In-Game</p>
-                  <footer class="article-info"> </footer>
-                </div>
-              </a>
-            </div>
-            <div class="nested-column">
-                <div class="article-body">
-					<h9 class="article-title"><br />&#9658; As Game Designer</h9>
-                  <p align="justify" class="article-content"> 
-                  	<ul class="article-content">
-                  		<li>Aided to keep vision</li>
-						<li><a href="https://1drv.ms/b/s!AgiQHng__FW5gR3_3k2ZniNFHwUk">Wrote a background story </a><em>(Dismissed)</em></li>
-                  		<li>Helped define core and support game mechanics</li>
-                  		<li>Prototyped</li>
-                  		<li>Co-wrote prototype manual</li>
-                  		<li>Co-wrote game design document</li>
-                  		<li>Co-wrote introductory poem</li>
-                  		<li>Layouted the print version</li>
-                  		<li>Playtested</li>
-                  		<li>Collected feedback</li>
-                  	</ul></p>
-                </div>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="nested-column">
-              <a class="article"> <iframe src="https://onedrive.live.com/embed?cid=B955FC3F781E9008&resid=B955FC3F781E9008%21156&authkey=ACmUWEhz29k9RXE&em=2" width="100%" height="360" frameborder="0" scrolling="no"></iframe>
-                <div class="article-body">
-                  
-                  <p class="article-content"> Paper Prototype Manual</p>
-                  <footer class="article-info"> </footer>
-                </div>
-              </a>
-            </div>
-             <div class="nested-column">
-              <a class="article"> <iframe src="https://onedrive.live.com/embed?cid=B955FC3F781E9008&resid=B955FC3F781E9008%21161&authkey=AFExBpxDCdw588M&em=2" width="100%" height="360" frameborder="0" scrolling="no"></iframe>
-                <div class="article-body">
-                  
-					<p class="article-content"> Introductory Poem <em>(German)</em></p>
-                  <footer class="article-info"> </footer>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="nested-column">
-              <div class="article">
-                <div class="article-content" align="center">
-                  <iframe src="https://www.youtube.com/embed/ec3u5qFXbDQ" height="315" border="none" overflow="hidden" width="100%" scrolling="no" frameborder="0" allowTransparency="true" allowfullscreen></iframe>
-                </div>
-                <div class="article-body">
-                  
-                  <p class="article-content"> Fluffy Dice Alternative Rig</p>
-                  <footer class="article-info"> </footer>
-                </div>
-              </div>
-            </div>
-            <div class="nested-column">
-                <div class="article-body">
-					<h5 class="article-title"><br /><span>&#9658; As Programmer/Developer/Artist</span></h5>
-                  <p align="justify" class="article-content"> 
-                  	<ul class="article-content">
-                  		<li>UI animations</li>
-                  		<li>Feedback system</li>
-						<li>Inventory</li>
-                  		<li>Asset implementation and colliders</li>                  		
-                  		<li>Bug reports and some fixes</li>
-                  		<li>Menu</li>
-                  		<li>Rigging, skinning and animation <em>(Dismissed)</em></li>
-                  	</ul></p>
-                </div>
-            </div>
-          </div>
-        </div>
-        </p>
-        <div class="articlebody">
-          <a class="anchor" id="Comments" name="Comments"></a>
-          <h2 class="article-title">Comments</h2>
-          <br />
-          <div class="columns">
-            <div class="nested-column">
-                    <ul class="article-content">
-                  		<li>WIP</li>
-                  	</ul> 
-            </div>
-            <div class="nested-column">
-                	<ul class="article-content">
-                  		<li>...</li>
-                  	</ul>
-            </div>
-          </div>
-          </p>
-        </div>
-        </p>
-        <div class="articlebody">
-          <a class="anchor" id="Gobble" name="Gobble"></a>
-          <h2 class="article-titleL" float="left"> Gobble Games </h2>
-          <h3 class="article-titleR" float="right"> <a href="../Contact/GobbleGames.html">Detailed Page</a></h3>
-          <br />
-          <p align="justify" class="article-content">The team name describes the action "to gobble down games" or the so called bird. The group consists of game design students from the Media Design Hochschule (Berlin). <br />
-          </p>
-          <div class="columns">
-            <div class="nested-column">
-              <a class="article"> <img class="img-fluid" src="../Images/preGobblesLogo.jpg" alt="Gobble Games Logo" height="520" border="none" overflow="hidden" width="100%" scrolling="no" frameborder="0" onclick="openModal();currentSlide(14)">
-                <div class="article-body">
-                  
-                  <p class="article-content"> Gobble Games </p>
-                  <footer class="article-info"> Kien Le's Logo</footer>
-                </div>
-              </a>
-            </div>
-          </div>
-          <footer class="article-info">
-            <ul>
-              <li><strong>Product Owner, Game Designer and Programmer: </strong> Felix Schmidt </li>
-              <li><strong>Lead Programmer: </strong>Fabian Oyvin Kopp </li>
-              <li><strong>Game Designer and Programmer: </strong>Juri Knauth </li>
-              <li><strong>Lead Game Designer: </strong> Lars Willmer </li>
-              <li><strong>Scrum Master and Game Designer: </strong> Armando Gracia </li>
-              <li><strong>Lead Artist: </strong> David Maximilian Störmer </li>
-              <li><strong>Level Designer and Artist: </strong> Leo Taylor Lüdemann </li>
-              <li><strong>Artist: </strong> José Antonio Rodriguez Chinchilla </li>
-              <li><strong>Artist: </strong>Kien Le </li>
-            </ul>
-          </footer>
-        </div>
-        </p>
-        <div class="articlebody">
-          <a class="anchor" id="ExternalLinks" name="ExternalLinks"></a>
-          <h2 class="article-title"> External Links </h2>
-          <br />
-			  <div class="columns">
-				<div class="nested-column">
-				  <div class="article-body" align="center">
-					
-					<div class="article-content" align="center">
-					  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffluffydice%2F&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><br />
-					  <p class="article-content"> Facebook Page</p>	
-					</div>
-				  </div>
-				</div>
-			</div>
-			<div class="columns">
-				<div class="nested-column">
-				  <div class="article-body" align="center">
-					<div class="article-content">
-					  <a class="article" target="_blank" href="">
-						<img class="img-fluid" src="../Icons/bb.png" alt="Github Logo" height="72" border="none" overflow="hidden" width="72" scrolling="no" frameborder="0">
-						<p class="article-content"> Fluffy Dice Repository <br /> <em>on Bitbucket *soon*</em> </p>
-					  </a>
-					</div>
-				  </div>
-				</div>
-				<div class="nested-column">
-				  <div class="article-body" align="center">
-					<div class="article-content">
-					  <a class="article" target="_blank" href="https://1drv.ms/u/s!AgiQHng__FW5dSGfcwC4Bbmmdbg">
-						<img class="img-fluid" src="../Icons/Games/FluffyDice.jpg" alt="FluffyDice Logo" height="72" border="none" overflow="hidden" width="72" scrolling="no" frameborder="0">
-						<p class="article-content"> Game Demo for Windows<br /> <em>Download from OneDrive</em> </p>
-					  </a>
-					</div>
-				  </div>
-				</div>
-        	</div>
-		</div>
-        </p>
-        <div class="articlebody">
-          <a class="anchor" id="Forum" name="Forum"></a>
-          <h2 class="article-title"> Forum Fluffy Dice </h2>
-          <p class="article-content"><i>(I welcome relevant, respectful comments.)</i></p>
-          <br />
-          <div class="columns">
-            <div class="nested-column">
-              <div class="article-body" align="center">
-                <div id="disqus_thread"></div>
-                <script>
-                  /**
-                                                                                            						*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                                                                                            						*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                  
-                  var disqus_config = function() {
-                    this.page.url = "http://www.juriknauth.com/Projects/FluffyDice.html"; // Replace PAGE_URL with your page's canonical URL variable
-                  
-                    this.page.identifier = "FluffyDiceDetailedPage"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                  };
-                  
-                  (function() {
-                    // DON'T EDIT BELOW THIS LINE
-                    var d = document,
-                      s = d.createElement("script");
-                    s.src = "https://juriknauth.disqus.com/embed.js";
-                    s.setAttribute("data-timestamp", +new Date());
-                    (d.head || d.body).appendChild(s);
-                  })();
-                </script>
-                <noscript>
+                </p>
+                <div class="articlebody">
+                    <a class="anchor" id="Forum" name="Forum"></a>
+                    <h2 class="article-title"> Forum Fluffy Dice </h2>
+                    <p class="article-content"><i>(I welcome relevant, respectful comments.)</i></p>
+                    <br />
+                    <div class="columns">
+                        <div class="nested-column">
+                            <div class="article-body" align="center">
+                                <div id="disqus_thread"></div>
+                                <script>
+                                    /**
+                                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                                    var disqus_config = function() {
+                                        this.page.url = "http://www.juriknauth.com/Projects/FluffyDice.html"; // Replace PAGE_URL with your page's canonical URL variable
+
+                                        this.page.identifier = "FluffyDiceDetailedPage"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                                    };
+
+                                    (function() {
+                                        // DON'T EDIT BELOW THIS LINE
+                                        var d = document,
+                                            s = d.createElement("script");
+                                        s.src = "https://juriknauth.disqus.com/embed.js";
+                                        s.setAttribute("data-timestamp", +new Date());
+                                        (d.head || d.body).appendChild(s);
+                                    })();
+                                </script>
+                                <noscript>
               Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
               </noscript>
-              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </p>
             </div>
-          </div>
         </div>
-        </p>
-      </div>
-    </div>
-    <div class="gridContainer clearfix">
-      <div id="div1" class="fluid"> </div>
-    </div>
-    <br />
-    <br />
-    <br />
-    <br />
-  </div>
-	<div id="myModal" class="modal" tabindex="-1000">
-      <div id="myModalImg" class="modal-content">
-        <div class="mySlides">
-          <div class="numbertext">1 / 15</div>
-          <img src="../Images/FluffyDiceMenu.jpg" class="img-container"> </div>
-        <div class="mySlides">
-          <div class="numbertext">2 / 15</div>
-          <img src="../Images/FluffyDiceIngame.jpg" class="img-container"> </div>
-		<div class="mySlides">
-          <div class="numbertext">3 / 15</div>
-          <img src="../Images/FluffyDiceGoal.jpg" class="img-container"> </div>
-        <div class="mySlides">
-          <div class="numbertext">4 / 15</div>
-          <img src="../Images/FluffyDiceTurnOrder.jpg" class="img-container"> </div>
-        <div class="mySlides">
-          <div class="numbertext">5 / 15</div>
-          <img src="../Images/FluffyDiceChart.jpg" class="img-container"> </div>
-        <div class="mySlides">
-          <div class="numbertext">6 / 15</div>
-          <img src="../Images/FluffyDiceShootingPhase.jpg" class="img-container"> </div>
-        <div class="mySlides">
-          <div class="numbertext">7 / 15</div>
-          <img src="../Images/FluffyDiceTipOverPhase.jpg" class="img-container"> </div>
-        <div class="mySlides">
-          <div class="numbertext">8 / 15</div>
-          <img src="../Images/FluffyDiceCharConcept.jpg" class="img-container"> </div>
-        <div class="mySlides">
-          <div class="numbertext">9 / 15</div>
-          <img src="../Images/FluffyDiceObjConcept.jpg" class="img-container"> </div>
-        <div class="mySlides">
-          <div class="numbertext">10 / 15</div>
-          <img src="../Images/FluffyDiceConcept.jpg" class="img-container"> </div>
-        <div class="mySlides">
-          <div class="numbertext">11 / 15</div>
-          <img src="../Images/FluffyDiceCover.jpg" class="img-container"> </div>
-		<div class="mySlides">
-          <div class="numbertext">12 / 15</div>
-          <img src="../Images/FluffyDiceCatComic2.jpg" class="img-container"> </div>
-		<div class="mySlides">
-          <div class="numbertext">13 / 14</div>
-          <img src="../Images/FluffyDicePaperPrototype.jpg" class="img-container"> </div>
-        <div class="mySlides">
-          <div class="numbertext">14 / 14</div>
-          <img src="../Images/GobblesLogo.jpg" class="img-container"> </div>
-        <a class="close cursor" onclick="closeModal()">&times;</a> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        <div class="caption-container">
-          <div class="bot-info" id="caption"> </div>
+        <div class="gridContainer clearfix">
+            <div id="div1" class="fluid"> </div>
         </div>
-        <div class="columns">
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(1)" alt="<span>Fluffy Dice</span> <span>Menu</span> <span>1/14</span>"> </div>
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(2)" alt="<span>Fluffy Dice</span> <span>In-Game</span> <span>2/14</span>"> </div>
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(3)" alt="<span>Instructions</span> <span>Goal</span> <span>3/14</span>"> </div>
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(4)" alt="<span>Instructions</span> <span>Phases</span> <span>4/14</span>"> </div>
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(5)" alt="<span>Instructions</span> <span>Dice Chart</span> <span>5/14</span>"> </div>
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(6)" alt="<span>Instructions</span> <span>Throwing Phase</span> <span>6/14</span>"> </div>
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(7)" alt="<span>Instructions</span> <span>Tip-Over Phase</span> <span>7/14</span>"> </div>
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(8)" alt="<span>Art and Concepts Dice</span> <span>Avatar Concepts</span> <span>8/14</span>"> </div>
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(9)" alt="<span>Art and Concepts Dice</span> <span>Objcts Concepts</span> <span>9/14</span>"> </div>
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(10)" alt="<span>Art and Concepts Dice</span> <span>Fluffy Dice Concepts</span> <span>10/14</span>"> </div>
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(11)" alt="<span>Art and Concepts Dice</span> <span>Cover Art</span> <span>11/14</span>"> </div>
-          <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(12)" alt="<span>Comic</span> <span>Gameplay Snippet - Comic</span> <span>12/14</span>"> </div>
-		  <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(13)" alt="<span>Prototype</span> <span>Paper Prototype</span> <span>13/14</span>"> </div>
-		  <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(14)" alt="<span>Team</span> <span>Gobble Games</span> <span>14/14</span>"> </div>
-        </div>
-      </div>
+        <br />
+        <br />
+        <br />
+        <br />
     </div>
-  <script>
-    $("#MainMenu").load("MainMenu.html");
-  </script>
+    <div id="myModal" class="modal" tabindex="-1000">
+        <div id="myModalImg" class="modal-content">
+            <div class="mySlides">
+                <div class="numbertext">1 / 15</div>
+                <img src="../Images/FluffyDiceMenu.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 15</div>
+                <img src="../Images/FluffyDiceIngame.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 15</div>
+                <img src="../Images/FluffyDiceGoal.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 15</div>
+                <img src="../Images/FluffyDiceTurnOrder.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 15</div>
+                <img src="../Images/FluffyDiceChart.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 15</div>
+                <img src="../Images/FluffyDiceShootingPhase.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">7 / 15</div>
+                <img src="../Images/FluffyDiceTipOverPhase.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">8 / 15</div>
+                <img src="../Images/FluffyDiceCharConcept.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">9 / 15</div>
+                <img src="../Images/FluffyDiceObjConcept.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">10 / 15</div>
+                <img src="../Images/FluffyDiceConcept.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">11 / 15</div>
+                <img src="../Images/FluffyDiceCover.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">12 / 15</div>
+                <img src="../Images/FluffyDiceCatComic2.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">13 / 14</div>
+                <img src="../Images/FluffyDicePaperPrototype.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">14 / 14</div>
+                <img src="../Images/GobblesLogo.jpg" class="img-container"> </div>
+            <a class="close cursor" onclick="closeModal()">&times;</a> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+                <div class="bot-info" id="caption"> </div>
+            </div>
+            <div class="columns">
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(1)" alt="<span>Fluffy Dice</span> <span>Menu</span> <span>1/14</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(2)" alt="<span>Fluffy Dice</span> <span>In-Game</span> <span>2/14</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(3)" alt="<span>Instructions</span> <span>Goal</span> <span>3/14</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(4)" alt="<span>Instructions</span> <span>Phases</span> <span>4/14</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(5)" alt="<span>Instructions</span> <span>Dice Chart</span> <span>5/14</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(6)" alt="<span>Instructions</span> <span>Throwing Phase</span> <span>6/14</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(7)" alt="<span>Instructions</span> <span>Tip-Over Phase</span> <span>7/14</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(8)" alt="<span>Art and Concepts Dice</span> <span>Avatar Concepts</span> <span>8/14</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(9)" alt="<span>Art and Concepts Dice</span> <span>Objcts Concepts</span> <span>9/14</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(10)" alt="<span>Art and Concepts Dice</span> <span>Fluffy Dice Concepts</span> <span>10/14</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(11)" alt="<span>Art and Concepts Dice</span> <span>Cover Art</span> <span>11/14</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(12)" alt="<span>Comic</span> <span>Gameplay Snippet - Comic</span> <span>12/14</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(13)" alt="<span>Prototype</span> <span>Paper Prototype</span> <span>13/14</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(14)" alt="<span>Team</span> <span>Gobble Games</span> <span>14/14</span>"> </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $("#MainMenu").load("MainMenu.html");
+    </script>
 </body>
 <div class="gridContainer clearfix"></div>
 
