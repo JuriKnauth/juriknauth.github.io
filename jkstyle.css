@@ -1,6 +1,4 @@
-﻿@charset
-
-utf-8;
+﻿@charset "utf-8";
 html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -12,7 +10,9 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-*, :before, :after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -20,13 +20,19 @@ body {
     top: 0;
     left: 0;
     z-index: 0;
-    background-color: rgba(0,0,0,1);
-    background-image: url(../Images/BackGround.jpg);
-    height: 0;
-    color: #000;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 1);
+    background-image: url("../Images/BackGround.jpg");
+    height: 0px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    color: #000000;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
+    margin-bottom: 0px;
     min-height: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -39,15 +45,14 @@ body {
     -o-background-attachment: fixed;
     -ms-background-attachment: fixed;
     background-attachment: fixed;
-    margin: 0;
 }
 
 h1 {
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     font-size: 23px;
     display: inline-block;
-    color: #000;
-    margin: 0 0 12px;
+    color: black;
+    margin: 0px 0px 12px 0px;
     padding: 0;
 }
 
@@ -55,8 +60,8 @@ h2 {
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     font-size: 21px;
     display: inline-block;
-    color: #000;
-    margin: 0 0 10px;
+    color: black;
+    margin: 0px 0px 10px 0px;
     padding: 0;
 }
 
@@ -64,8 +69,9 @@ h3 {
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     font-size: 19px;
     display: inline-block;
-    color: #000;
-    margin: 0 0 8px;
+    color: black;
+    margin: 3;
+    margin: 0px 0px 8px 0px;
     padding: 0;
 }
 
@@ -73,8 +79,8 @@ h4 {
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     font-size: 17px;
     display: inline-block;
-    color: #000;
-    margin: 0 0 6px;
+    color: black;
+    margin: 0px 0px 6px 0px;
     padding: 0;
 }
 
@@ -82,8 +88,8 @@ h5 {
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     font-size: 17px;
     display: inline-block;
-    color: #000;
-    margin: 0 0 4px;
+    color: black;
+    margin: 0px 0px 4px 0px;
     padding: 0;
 }
 
@@ -91,8 +97,8 @@ h6 {
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     font-size: 17px;
     display: inline-block;
-    color: #000;
-    margin: 0 0 2px;
+    color: black;
+    margin: 0px 0px 2px 0px;
     padding: 0;
 }
 
@@ -100,13 +106,13 @@ p {
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     font-size: 17px;
     display: inline-block;
-    color: #000;
+    color: black;
     margin: 0;
     padding: 0;
 }
 
 a:link {
-    color: #1E90FF;
+    color: DodgerBlue;
     background-color: transparent;
     text-decoration: none;
     cursor: pointer;
@@ -114,20 +120,20 @@ a:link {
 }
 
 a:visited {
-    color: #8A2BE2;
+    color: BlueViolet;
     background-color: transparent;
     text-decoration: none;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
 }
 
 a:hover {
-    color: #F4A460;
+    color: SandyBrown;
     background-color: transparent;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
 }
 
 a:active {
-    color: #FF6347;
+    color: Tomato;
     background-color: transparent;
     text-decoration: underline;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
@@ -135,6 +141,7 @@ a:active {
 
 img {
     vertical-align: middle;
+    border-style: none;
     display: block;
     position: relative;
     height: auto;
@@ -144,7 +151,6 @@ img {
     max-height: 100%;
     max-width: 100%;
     table-layout: fixed;
-    border-style: none;
 }
 
 .img-fluid {
@@ -152,16 +158,23 @@ img {
     height: auto;
 }
 
+    .img-fluid:hover {
+        cursor: pointer;
+    }
+
 .img-container {
+    margin: auto;
     max-height: 90vh;
     height: auto;
     width: auto;
     vertical-align: middle;
-    margin: auto;
 }
 
-.Slides, .Slides1, .Slides2 {
+.Slides,
+.Slides1,
+.Slides2 {
     vertical-align: middle;
+    border-style: none;
     display: none;
     position: relative;
     height: auto;
@@ -171,7 +184,6 @@ img {
     max-height: 100%;
     max-width: 100%;
     table-layout: fixed;
-    border-style: none;
 }
 
 .img-icon {
@@ -182,24 +194,24 @@ img {
     table-layout: fixed;
     text-align: center;
     text-decoration: none;
+    margin: 5px 2px;
     left: 0;
-    -webkit-transition: background .5s linear;
-    -moz-transition: background .5s linear;
-    -o-transition: background .5s linear;
-    transition: background .5s linear;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     max-width: 71px;
     cursor: pointer;
-    margin: 5px 2px;
 }
 
     .img-icon:hover {
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
         color: #444;
         background-size: 100% 100%;
-        transition: background .5s linear;
-        -moz-transition: background .5s linear;
-        -o-transition: background .5s linear;
+        transition: background 0.5s linear;
+        -moz-transition: background 0.5s linear;
+        -o-transition: background 0.5s linear;
     }
 
 .container {
@@ -212,20 +224,20 @@ img {
 .logo {
     float: none;
     display: inline-block;
-    color: #000;
+    color: black;
     text-align: center;
     text-decoration: none;
     font-size: 17px;
     max-height: 100%;
     max-width: 100%;
     vertical-align: top;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.36), 0 1px 2px rgba(0,0,0,0.48);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.36), 0 1px 2px rgba(0, 0, 0, 0.48);
     cursor: pointer;
 }
 
     .logo:hover {
-        background-color: rgba(99,110,114,0.9);
-        box-shadow: 0 4px 8px rgba(0,0,0,0.36), 0 1px 2px rgba(0,0,0,0.48);
+        background-color: rgba(99, 110, 114, 0.9);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.36), 0 1px 2px rgba(0, 0, 0, 0.48);
         cursor: pointer;
     }
 
@@ -233,12 +245,16 @@ img {
     display: block;
     width: 100%;
     height: 100%;
+    margin: 100% auto;
     top: 0;
     table-layout: fixed;
     max-height: 100%;
     max-width: 100%;
-    margin: 100% auto;
 }
+
+    .img:hover {
+        cursor: pointer;
+    }
 
 #home {
     background: url(../Images/preEJK.jpg);
@@ -249,10 +265,10 @@ img {
     max-height: 100%;
     max-width: 100%;
     left: 0;
-    -webkit-transition: background .5s linear;
-    -moz-transition: background .5s linear;
-    -o-transition: background .5s linear;
-    transition: background .5s linear;
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
 }
 
 .homeimg {
@@ -267,6 +283,10 @@ img {
     table-layout: fixed;
 }
 
+    .homeimg:hover {
+        cursor: pointer;
+    }
+
 #home-background {
     opacity: 0;
 }
@@ -274,26 +294,28 @@ img {
 #home:hover {
     background: url(../Images/preJK.jpg);
     background-size: 100% 100%;
-    -webkit-transition: background .5s linear;
-    -moz-transition: background .5s linear;
-    -o-transition: background .5s linear;
-    transition: background .5s linear;
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
 }
 
 .article:focus {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    background-color: rgba(178,190,195,1);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background-color: rgba(178, 190, 195, 1);
     background-size: 100% 100%;
-    transition: background .5s linear;
-    -moz-transition: background .5s linear;
-    -o-transition: background .5s linear;
+    transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
 }
 
 ulnav {
     list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
     overflow: hidden;
-    background-color: rgba(99,110,114,0.75);
-    color: #FFF;
+    background-color: rgba(99, 110, 114, 0.75);
+    color: white;
     top: 0;
     width: 100%;
     z-index: 500;
@@ -301,143 +323,166 @@ ulnav {
     vertical-align: top;
     max-width: 1040px;
     text-align: center;
-    margin: 0 auto;
-    padding: 0;
 }
 
 linav {
-    color: #FFF;
-    float: left;
     padding: 4px 2px;
+    color: white;
+    float: left;
 }
 
-    linav a, .dropbtn {
+    linav a,
+    .dropbtn {
         display: inline-block;
-        color: #000;
+        color: black;
         text-align: left;
+        padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
-        padding: 14px 16px;
     }
 
-        linav a:hover, .dropdown:hover .dropbtn {
-            color: #000;
-            background-color: rgba(99,110,114,1);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.36), 0 1px 2px rgba(0,0,0,0.48);
+        linav a:hover,
+        .dropdown:hover .dropbtn {
+            color: black;
+            background-color: rgba(99, 110, 114, 1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.36), 0 1px 2px rgba(0, 0, 0, 0.48);
             font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
         }
 
+    linav a,
+    .dropdown {
+        color: white;
+        display: inline-block;
+        font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    }
+
 .dropbtn {
-    background-color: rgba(178,190,195,0.9);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.36);
+    background-color: rgba(178, 190, 195, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
 }
 
 linavb {
-    color: #FFF;
+    padding: 4px 2px 0px 2px;
+    color: white;
     float: left;
-    padding: 4px 2px 0;
 }
 
-    linavb a, .dropbtnimg {
+    linavb a,
+    .dropbtnimg {
         display: inline-block;
-        color: #000;
+        color: black;
         text-align: left;
         text-decoration: none;
         font-size: 17px;
     }
 
-        linavb a:hover, .dropbtnimg: hover {
-            color: #000;
-            background-color: rgba(178,190,195,0.9);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.36), 0 1px 2px rgba(0,0,0,0.48);
+        linavb a:hover,
+        .dropbtnimg: hover {
+            color: black;
+            background-color: rgba(178, 190, 195, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.36), 0 1px 2px rgba(0, 0, 0, 0.48);
             font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
         }
 
+    linavb a {
+        color: white;
+        display: inline-block;
+        font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    }
+
 .dropbtnimg {
-    background-color: rgba(99,110,114,0.9);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.36);
+    background-color: rgba(99, 110, 114, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
 }
 
 .dropdown-content {
-    color: #FFF;
+    color: white;
     display: none;
     position: absolute;
+    padding: 14px 14px;
     text-align: left;
-    background-color: rgba(223,230,233,1);
+    background-color: rgba(223, 230, 233, 1);
     min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 550;
-    padding: 14px;
 }
 
     .dropdown-content a {
-        color: #000;
+        color: BlueViolet;
+        color: black;
+        padding: 12px 16px;
         text-decoration: none;
         display: block;
         text-align: left;
-        padding: 12px 16px;
     }
 
     .dropdown-content h8: {
-        background-color: rgba(255,255,255,0);
+        background-color: rgba(255, 255, 255, 0);
     }
 
     .dropdown-content a:hover {
-        background-color: rgba(223,230,233,1);
+        background-color: rgba(223, 230, 233, 1);
     }
 
 .dropdown:hover .dropdown-content {
     display: block;
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .botbar a {
     float: left;
-    color: #fff;
+    display: block;
+    color: #ffffff;
     text-align: center;
+    vertical-align: center;
+    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    margin-top: 5px;
+    display: inline-block;
     vertical-align: bottom;
     bottom: 0;
     left: 0;
     position: absolute;
     max-width: 1040px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: -ms-flexbox;
     display: flex;
     flex: 1;
     flex-direction: column;
     flex-basis: auto;
+    margin: 5px auto;
     z-index: 400;
     cursor: pointer;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
-    margin: 5px auto;
-    padding: 14px 16px;
 }
 
 .botbar {
     cursor: pointer;
     overflow: hidden;
-    background-color: rgba(99,110,114,0.75);
+    background-color: rgba(99, 110, 114, 0.75);
     position: absolute;
     min-height: 30px;
     vertical-align: center;
-    color: #fff;
-    bottom: 0;
+    color: #ffffff;
+    bottom: 0px;
     width: 100%;
     z-index: 500;
     display: inline-block;
+    margin: 0 auto;
+    margin-top: 10px;
     max-width: 1040px;
     text-align: center;
-    margin: 10px auto 0;
-    padding: 0;
+    padding: 0px;
 }
 
 .main {
+    padding: 0px;
+    margin-top: 30px;
     height: 200px;
+    margin: 0 auto;
     max-width: 1040px;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
-    margin: 0 auto;
-    padding: 0;
 }
 
 table {
@@ -445,7 +490,8 @@ table {
     width: 100%;
 }
 
-td, th {
+td,
+th {
     border: 1px solid #dfe6e9;
     text-align: left;
     padding: 8px;
@@ -457,83 +503,85 @@ tr:nth-child(even) {
 
 a {
     text-decoration: none;
-    transition: all .3s cubic-bezier(0.25,0.8,0.25,1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-div, p, figure {
+div,
+p,
+figure {
     margin: 0;
     padding: 0;
 }
 
 .header {
-    color: #000;
+    color: black;
+    padding: 10px 0 10px;
     text-align: left;
-    padding: 10px 0;
 }
 
     .header h1 {
         font-size: 40px;
-        font-weight: 700;
+        font-weight: bold;
     }
 
     .header h2 a {
-        border-bottom: 1px solid rgba(255,255,255,0.5);
-        color: #000;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        color: black;
         font-size: 20px;
         opacity: 0.5;
     }
 
         .header h2 a:hover {
-            border-bottom-color: #000;
+            border-bottom-color: black;
             opacity: 1;
         }
 
 .row {
     float: left;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
+    margin: 0 auto;
     max-width: 1040px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     cursor: pointer;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
-    margin: 0 auto;
 }
 
 .column {
     flex: 4;
     flex-direction: row;
-    float: left;
-    width: 25%;
 }
 
 .articlesimple {
-    color: #000;
+    color: #000000;
+    display: -ms-flexbox;
     display: flex;
     flex: 1;
     flex-direction: column;
     flex-basis: auto;
-    height: auto;
     margin: 11px;
+    height: auto;
 }
 
 .article {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    color: #000;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: #000000;
     display: inherit;
     flex: 1;
     flex-direction: column;
     flex-basis: auto;
-    height: auto;
     margin: 10px;
+    height: auto;
 }
 
-    .article:hover, .article:focus {
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    .article:hover,
+    .article:focus {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
         color: #444;
     }
 
 .article-image {
-    background: #000;
+    background: #000000;
     display: block;
     padding-top: 75%;
     position: relative;
@@ -562,10 +610,10 @@ div, p, figure {
     flex-direction: column;
     margin-top: 7px;
     margin-bottom: 8px;
-    background-color: #fff;
-    height: auto;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     padding: 20px;
+    background-color: #ffffff;
+    height: auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .articlebodyDesc {
@@ -573,14 +621,14 @@ div, p, figure {
     flex-direction: column;
     margin-top: 1px;
     margin-bottom: 2px;
-    background-color: #fff;
-    height: auto;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     padding: 20px;
+    background-color: #ffffff;
+    height: auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .article-title {
-    color: #000;
+    color: black;
     padding-left: 5px;
     padding-right: 5px;
     flex-shrink: 0;
@@ -591,7 +639,7 @@ div, p, figure {
 
 .article-titleL {
     float: left;
-    color: #000;
+    color: black;
     flex-shrink: 0;
     font-size: 1.4em;
     font-weight: 700;
@@ -600,77 +648,111 @@ div, p, figure {
 
 .article-titleR {
     float: right;
-    color: #000;
+    color: black;
     flex-shrink: 0;
     font-size: 1.4em;
-    font-weight: 400;
+    font-weight: normal;
     line-height: 1.2;
 }
 
 .article-content {
-    margin-bottom: 0;
-    background-color: #fff;
-    color: #000;
-    height: inherit;
+    margin-bottom: 0px;
     padding: 5px;
+    background-color: #ffffff;
+    color: black;
+    height: inherit;
 }
 
 .article-content-dropdown {
-    margin-bottom: 0;
-    background-color: background-color: rgba(255,255,255,0);
-    color: #000;
-    height: inherit;
+    margin-bottom: 0px;
     padding: 5px;
+    background-color: background-color: rgba(255, 255, 255, 0);
+    color: black;
+    height: inherit;
+}
+
+.tableclass {
 }
 
 .article-content2 {
     flex: 1;
-    background-color: #fff;
-    color: #000;
-    height: auto;
     margin: 5px;
+    background-color: #ffffff;
+    color: black;
+    height: auto;
 }
 
 .article-content3 {
     flex: 1;
+    margin: 5px;
     text-align: center;
     float: center;
-    background-color: #fff;
-    color: #000;
+    background-color: #ffffff;
+    color: black;
     height: auto;
-    margin: 5px;
 }
 
 .article-info {
+    display: -ms-flexbox;
     display: flex;
     padding-left: 5px;
     padding-right: 5px;
-    font-size: .85em;
+    font-size: 0.85em;
     justify-content: space-between;
     margin-top: 10px;
-    color: #000;
+    color: black;
 }
 
 .article-date {
     float: right;
     opacity: 0.5;
     font-style: italic;
+    display: -ms-flexbox;
     display: flex;
-    font-size: .85em;
+    font-size: 0.85em;
     margin-top: 10px;
-    color: #000;
+    color: black;
 }
 
 .bot-info {
+    display: -ms-flexbox;
     display: flex;
-    font-size: .85em;
+    font-size: 0.85em;
     justify-content: space-between;
     margin-top: 10px;
-    margin-right: 0;
+    margin-right: 0px;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     flex-direction: row;
     flex: 1;
-    padding: 0 16px;
+    padding: 0px 16px;
+}
+
+@media screen and (max-width: 360px) {
+    .dropbtn {
+        padding: 14px 10px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .columns,
+    .column {
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .first-article .article-body {
+        flex: 1;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .first-article {
+        flex-direction: row;
+    }
+
+        .first-article .article-body {
+            flex: 1;
+        }
 }
 
 .first-article .article-image {
@@ -681,7 +763,7 @@ div, p, figure {
 }
 
 .main-column {
-    flex: 4;
+    flex: 3;
 }
 
 .nested-column {
@@ -696,67 +778,102 @@ div, p, figure {
         flex: 1;
     }
 
+    .first-article .article-image {
+        height: 300px;
+        order: 2;
+        padding-top: 0;
+        width: 400px;
+    }
+
+.main-column {
+    flex: 4;
+}
+
+.nested-column {
+    flex: 2;
+}
+
 .tablinkdum {
     float: left;
+    padding: 4px 6px;
     width: auto;
     border: none;
     outline: none;
-    min-width: 6px;
     margin: 0 auto;
-    padding: 4px 6px;
+    min-width: 6px;
 }
 
 .tablink {
     background-color: #2d3436;
-    color: #FFF;
+    color: white;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
+    padding: 4px 6px;
     font-size: 17px;
     width: auto;
+    margin: 0 auto;
     min-width: 48px;
     max-width: 1040px;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
-    margin: 0 auto;
-    padding: 4px 6px;
+}
+
+.tablink2 {
+}
+
+.tablink:hover {
+    z-index: 99 !important;
+    background-color: #636e72;
+    color: #ffffff;
 }
 
 .tablinkr {
     background-color: #2d3436;
-    color: #FFF;
+    color: white;
     float: right;
     border: none;
     outline: none;
     cursor: pointer;
+    padding: 4px 6px;
     font-size: 17px;
     width: auto;
+    margin: 0 auto;
     min-width: 48px;
     max-width: 1040px;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     table-layout: fixed;
     display: block;
-    margin: 0 auto;
-    padding: 4px 6px;
 }
+
+    .tablinkr:hover {
+        z-index: 99 !important;
+        background-color: #636e72;
+        color: #ffffff;
+    }
 
 .tabcontent {
     float: left;
+    display: block;
     color: #f2f2f2;
     text-align: left;
+    padding: 4px 6px;
     text-decoration: none;
     font-size: 17px;
+    display: inline-block;
     vertical-align: top;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin: 0 auto;
     max-width: 1040px;
     width: 99%;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     display: flex;
     flex: 1;
     flex-direction: column;
     flex-basis: auto;
-    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     margin: 5px;
-    padding: 4px 6px;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
 }
 
 .switch {
@@ -778,8 +895,8 @@ div, p, figure {
     right: 0;
     bottom: 0;
     background-color: #dfe6e9;
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
 }
 
     .slider:before {
@@ -789,9 +906,9 @@ div, p, figure {
         width: 26px;
         left: 4px;
         bottom: 4px;
-        background-color: #FFF;
-        -webkit-transition: .4s;
-        transition: .4s;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
     }
 
 input:checked + .slider {
@@ -812,29 +929,29 @@ input:checked + .slider:before {
     position: relative;
     display: block;
     height: 0;
-    overflow: hidden;
     padding: 0;
+    overflow: hidden;
 }
 
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted #000;
+    border-bottom: 1px dotted black;
 }
 
     .tooltip .tooltiptext {
         visibility: hidden;
         width: 120px;
-        background-color: #000;
+        background-color: black;
         color: #fff;
         text-align: center;
         border-radius: 6px;
+        padding: 5px 0;
         position: absolute;
         z-index: 700;
         top: 150%;
         left: 50%;
         margin-left: -60px;
-        padding: 5px 0;
     }
 
         .tooltip .tooltiptext::after {
@@ -843,9 +960,9 @@ input:checked + .slider:before {
             bottom: 100%;
             left: 50%;
             margin-left: -5px;
-            border-color: transparent transparent #000;
-            border-style: solid;
             border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent black transparent;
         }
 
     .tooltip:hover .tooltiptext {
@@ -866,18 +983,25 @@ input:checked + .slider:before {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(45,52,54,0.9);
+    transition: 0.5s ease;
+    background-color: rgba(45, 52, 54, 0.9);
+}
+
+.containera:hover .overlay {
+    opacity: 1;
 }
 
 .text {
-    color: #FFF;
+    color: white;
     position: relative;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
     margin: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
+
+
+/* The Modal */
 
 * {
     box-sizing: border-box;
@@ -893,6 +1017,1829 @@ input:checked + .slider:before {
     clear: both;
 }
 
+.column {
+    float: left;
+    width: 25%;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 600;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    width: auto;
+    max-width: 80%;
+    height: auto;
+    max-height: 80%;
+    z-index: 600;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: rgba(170, 236, 255, 0.95);
+    position: absolute;
+    position: fixed;
+    top: 0px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    z-index: 610;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+    .close:hover,
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+        z-index: 610;
+    }
+
+.mySlides {
+    display: none;
+    color: white;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/* Next & previous buttons */
+
+.prev {
+    cursor: pointer;
+    position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 25px;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgba(170, 236, 255, 0.95);
+    font-weight: bold;
+    z-index: 610;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    position: fixed;
+    top: 50%;
+    right: 25px;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgba(170, 236, 255, 0.95);
+    font-weight: bold;
+    z-index: 610;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.caption-container {
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.demo {
+    display: none;
+    opacity: 0.6;
+}
+
+.demotext {
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    font-size: 17px;
+    display: inline-block;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+    /* On hover, add a black background color with a little bit see-through */
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    opacity: 0.0;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.stomt-button {
+    height: auto !important;
+    border-radius: 0% !important;
+    right: 2px !important;
+    bottom: 35px !important;
+    height: 50px !important;
+    width: 59px !important;
+    color: transparent !important;
+    transform: none !important;
+    float: none !important;
+    padding: 14px 2px !important;
+    font-size: 17px !important;
+    list-style-type: none !important;
+    margin: 4px 4px auto !important;
+    overflow: hidden !important;
+    background-color: rgba(9, 132, 227, 0.65) !important;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2) !important;
+    ;
+    z-index: 1000 !important;
+    display: inline-block !important;
+    vertical-align: center !important;
+    text-decoration: none !important;
+    ;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif !important;
+}
+
+@media screen and (max-width: 399px) {
+    .stomt-button {
+        bottom: 50px !important;
+    }
+}
+
+#Banner {
+    text-shadow: 2px 2px 3px rgba(178, 190, 195, 0.75);
+}
+
+#BannerB {
+    text-shadow: 2px 2px 3px rgba(178, 190, 195, 0.75);
+}
+
+#Default {
+    color: white;
+}
+
+#Blog {
+    color: black;
+    background-color: rgba(214, 48, 49, 0.95);
+}
+
+#Projects {
+    color: black;
+    background-color: rgba(253, 203, 110, 0.95);
+}
+
+#Contact {
+    color: black;
+    background-color: rgba(129, 236, 236, 0.95);
+}
+
+#BlogB {
+    background-color: rgba(214, 48, 49, 0.75);
+}
+
+#ProjectsB {
+    background-color: rgba(253, 203, 110, 0.75);
+}
+
+#ContactB {
+    background-color: rgba(129, 236, 236, 0.75);
+}
+
+#Index {
+    background-color: rgba(99, 110, 114, 0.95);
+}
+
+#IndexB {
+    background-color: rgba(99, 110, 114, 0.5);
+}
+
+#IndexC {
+    background-color: rgba(99, 110, 114, 0.95);
+}
+
+</style > <style type="text/css" > #wrapper {
+    width: 100%;
+    float: left;
+    height: auto;
+    border: 1px solid #5694cf;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -25px;
+    visibility: hidden;
+}
+
+CSS von URL:
+Code Layout
+Komprimierung (Code Layout):
+
+Benutzerdefinierte Vorlage
+Optionen
+CSS erhalten
+Selektoren sortieren (Vorsicht)
+Eigenschaften sortieren
+Selektoren umgruppieren
+
+Shorthands optimieren
+
+Farben komprimieren
+font-weight komprimieren
+Selektoren in Kleinbuchstaben
+Groß-/Kleinschreibung für Eigenschaften
+Keine
+Kleinbuchstaben
+Großbuchstaben
+Unnötige Backslashes entfernen
+Letztes; entfernen
+Ungültige Eigenschaften entfernen
+
+Zeitstempel hinzufügen
+Als Datei ausgeben
+Anzeigen
+3
+Invalid property in CSS2.1: -moz-osx-font-smoothing
+4
+Invalid property in CSS2.1: -webkit-font-smoothing
+8
+Invalid property in CSS2.1: overflow-x
+9
+Invalid property in CSS2.1: overflow-y
+10
+Invalid property in CSS2.1: text-rendering
+16
+Invalid property in CSS2.1: box-sizing
+26
+Optimised number: Changed "0px" to "0"
+27
+Invalid property in CSS2.1: -webkit-background-size
+28
+Invalid property in CSS2.1: -moz-background-size
+29
+Invalid property in CSS2.1: -o-background-size
+30
+Invalid property in CSS2.1: background-size
+33
+Optimised color: Changed "#000000" to "#000"
+37
+Optimised number: Changed "0px" to "0"
+39
+Invalid property in CSS2.1: -webkit-background-size
+40
+Invalid property in CSS2.1: -moz-background-size
+41
+Invalid property in CSS2.1: -o-background-size
+42
+Invalid property in CSS2.1: background-size
+45
+Invalid property in CSS2.1: -webkit-background-attachment
+46
+Invalid property in CSS2.1: -moz-background-attachment
+47
+Invalid property in CSS2.1: -o-background-attachment
+48
+Invalid property in CSS2.1: -ms-background-attachment
+56
+Optimised color: Changed "black" to "#000"
+57
+Optimised number: Changed "0px" to "0"
+Optimised shorthand notation (margin): Changed "0 0 12px 0" to "0 0 12px"
+65
+Optimised color: Changed "black" to "#000"
+66
+Optimised number: Changed "0px" to "0"
+Optimised shorthand notation (margin): Changed "0 0 10px 0" to "0 0 10px"
+74
+Optimised color: Changed "black" to "#000"
+75
+Fixed invalid number: Changed "3" to "3px"
+76
+Optimised number: Changed "0px" to "0"
+Optimised shorthand notation (margin): Changed "0 0 8px 0" to "0 0 8px"
+84
+Optimised color: Changed "black" to "#000"
+85
+Optimised number: Changed "0px" to "0"
+Optimised shorthand notation (margin): Changed "0 0 6px 0" to "0 0 6px"
+93
+Optimised color: Changed "black" to "#000"
+94
+Optimised number: Changed "0px" to "0"
+Optimised shorthand notation (margin): Changed "0 0 4px 0" to "0 0 4px"
+102
+Optimised color: Changed "black" to "#000"
+103
+Optimised number: Changed "0px" to "0"
+Optimised shorthand notation (margin): Changed "0 0 2px 0" to "0 0 2px"
+111
+Optimised color: Changed "black" to "#000"
+117
+Optimised color: Changed "DodgerBlue" to "#1E90FF"
+125
+Optimised color: Changed "BlueViolet" to "#8A2BE2"
+132
+Optimised color: Changed "SandyBrown" to "#F4A460"
+138
+Optimised color: Changed "Tomato" to "#FF6347"
+150
+Invalid property in CSS2.1: -ms-height
+151
+Invalid property in CSS2.1: -ms-width
+183
+Invalid property in CSS2.1: -ms-height
+184
+Invalid property in CSS2.1: -ms-width
+201
+Optimised number: Changed "0.5s" to ".5s"
+Invalid property in CSS2.1: -webkit-transition
+202
+Optimised number: Changed "0.5s" to ".5s"
+Invalid property in CSS2.1: -moz-transition
+203
+Optimised number: Changed "0.5s" to ".5s"
+Invalid property in CSS2.1: -o-transition
+204
+Optimised number: Changed "0.5s" to ".5s"
+Invalid property in CSS2.1: transition
+205
+Invalid property in CSS2.1: box-shadow
+211
+Invalid property in CSS2.1: box-shadow
+213
+Invalid property in CSS2.1: background-size
+214
+Optimised number: Changed "0.5s" to ".5s"
+Invalid property in CSS2.1: transition
+215
+Optimised number: Changed "0.5s" to ".5s"
+Invalid property in CSS2.1: -moz-transition
+216
+Optimised number: Changed "0.5s" to ".5s"
+Invalid property in CSS2.1: -o-transition
+229
+Optimised color: Changed "black" to "#000"
+236
+Invalid property in CSS2.1: box-shadow
+242
+Invalid property in CSS2.1: box-shadow
+264
+Invalid property in CSS2.1: background-size
+270
+Optimised number: Changed "0.5s" to ".5s"
+Invalid property in CSS2.1: -webkit-transition
+271
+Optimised number: Changed "0.5s" to ".5s"
+Invalid property in CSS2.1: -moz-transition
+272
+Optimised number: Changed "0.5s" to ".5s"
+Invalid property in CSS2.1: -o-transition
+273
+Optimised number: Changed "0.5s" to ".5s"
+Invalid property in CSS2.1: transition
+277
+Invalid property in CSS2.1: opacity
+293
+Invalid property in CSS2.1: opacity
+298
+Invalid property in CSS2.1: background-size
+299
+Optimised number: Changed "0.5s" to ".5s"
+Invalid property in CSS2.1: -webkit-transition
+300
+Optimised number: Changed "0.5s" to ".5s"
+Invalid property in CSS2.1: -moz-transition
+301
+Optimised number: Changed "0.5s" to ".5s"
+Invalid property in CSS2.1: -o-transition
+302
+Optimised number: Changed "0.5s" to ".5s"
+Invalid property in CSS2.1: transition
+306
+Invalid property in CSS2.1: box-shadow
+308
+Invalid property in CSS2.1: background-size
+309
+Optimised number: Changed "0.5s" to ".5s"
+Invalid property in CSS2.1: transition
+310
+Optimised number: Changed "0.5s" to ".5s"
+Invalid property in CSS2.1: -moz-transition
+311
+Optimised number: Changed "0.5s" to ".5s"
+Invalid property in CSS2.1: -o-transition
+320
+Optimised color: Changed "white" to "#FFF"
+332
+Optimised color: Changed "white" to "#FFF"
+339
+Optimised color: Changed "black" to "#000"
+348
+Optimised color: Changed "black" to "#000"
+350
+Invalid property in CSS2.1: box-shadow
+356
+Optimised color: Changed "white" to "#FFF"
+363
+Invalid property in CSS2.1: box-shadow
+367
+Optimised number: Changed "0px" to "0"
+Optimised shorthand notation (padding): Changed "4px 2px 0 2px" to "4px 2px 0"
+368
+Optimised color: Changed "white" to "#FFF"
+375
+Optimised color: Changed "black" to "#000"
+383
+Optimised color: Changed "black" to "#000"
+385
+Invalid property in CSS2.1: box-shadow
+390
+Optimised color: Changed "white" to "#FFF"
+397
+Invalid property in CSS2.1: box-shadow
+401
+Optimised color: Changed "white" to "#FFF"
+404
+Optimised shorthand notation (padding): Changed "14px 14px" to "14px"
+408
+Optimised number: Changed "0px" to "0"
+Invalid property in CSS2.1: box-shadow
+413
+Optimised color: Changed "BlueViolet" to "#8A2BE2"
+414
+Optimised color: Changed "black" to "#000"
+437
+Optimised color: Changed "#ffffff" to "#fff"
+450
+Invalid property in CSS2.1: box-shadow
+451
+Optimised number: Changed "-ms-flexbox" to "0"
+453
+Invalid property in CSS2.1: flex
+454
+Invalid property in CSS2.1: flex-direction
+455
+Invalid property in CSS2.1: flex-basis
+469
+Optimised color: Changed "#ffffff" to "#fff"
+470
+Optimised number: Changed "0px" to "0"
+478
+Optimised number: Changed "0px" to "0"
+482
+Optimised number: Changed "0px" to "0"
+508
+Optimised number: Changed "0.3s" to ".3s"
+Invalid property in CSS2.1: transition
+519
+Optimised color: Changed "black" to "#000"
+520
+Optimised shorthand notation (padding): Changed "10px 0 10px" to "10px 0"
+526
+Optimised font-weight: Changed "bold" to "700"
+531
+Optimised color: Changed "black" to "#000"
+533
+Invalid property in CSS2.1: opacity
+537
+Optimised color: Changed "black" to "#000"
+538
+Invalid property in CSS2.1: opacity
+543
+Optimised color: Changed "#ffffff" to "#fff"
+547
+Invalid property in CSS2.1: box-shadow
+553
+Invalid property in CSS2.1: flex
+554
+Invalid property in CSS2.1: flex-direction
+558
+Optimised color: Changed "#000000" to "#000"
+559
+Optimised number: Changed "-ms-flexbox" to "0"
+561
+Invalid property in CSS2.1: flex
+562
+Invalid property in CSS2.1: flex-direction
+563
+Invalid property in CSS2.1: flex-basis
+569
+Invalid property in CSS2.1: box-shadow
+570
+Optimised color: Changed "#000000" to "#000"
+572
+Invalid property in CSS2.1: flex
+573
+Invalid property in CSS2.1: flex-direction
+574
+Invalid property in CSS2.1: flex-basis
+581
+Invalid property in CSS2.1: box-shadow
+586
+Optimised color: Changed "#000000" to "#000"
+611
+Invalid property in CSS2.1: box-sizing
+612
+Invalid property in CSS2.1: flex-direction
+616
+Optimised color: Changed "#ffffff" to "#fff"
+618
+Invalid property in CSS2.1: box-shadow
+622
+Invalid property in CSS2.1: box-sizing
+623
+Invalid property in CSS2.1: flex-direction
+627
+Optimised color: Changed "#ffffff" to "#fff"
+629
+Invalid property in CSS2.1: box-shadow
+633
+Optimised color: Changed "black" to "#000"
+636
+Invalid property in CSS2.1: flex-shrink
+644
+Optimised color: Changed "black" to "#000"
+645
+Invalid property in CSS2.1: flex-shrink
+653
+Optimised color: Changed "black" to "#000"
+654
+Invalid property in CSS2.1: flex-shrink
+656
+Optimised font-weight: Changed "normal" to "400"
+661
+Optimised number: Changed "0px" to "0"
+663
+Optimised color: Changed "#ffffff" to "#fff"
+664
+Optimised color: Changed "black" to "#000"
+669
+Optimised number: Changed "0px" to "0"
+672
+Optimised color: Changed "black" to "#000"
+679
+Invalid property in CSS2.1: flex
+681
+Optimised color: Changed "#ffffff" to "#fff"
+682
+Optimised color: Changed "black" to "#000"
+687
+Invalid property in CSS2.1: flex
+691
+Optimised color: Changed "#ffffff" to "#fff"
+692
+Optimised color: Changed "black" to "#000"
+697
+Optimised number: Changed "-ms-flexbox" to "0"
+701
+Optimised number: Changed "0.85em" to ".85em"
+702
+Invalid property in CSS2.1: justify-content
+704
+Optimised color: Changed "black" to "#000"
+709
+Invalid property in CSS2.1: opacity
+711
+Optimised number: Changed "-ms-flexbox" to "0"
+713
+Optimised number: Changed "0.85em" to ".85em"
+715
+Optimised color: Changed "black" to "#000"
+719
+Optimised number: Changed "-ms-flexbox" to "0"
+721
+Optimised number: Changed "0.85em" to ".85em"
+722
+Invalid property in CSS2.1: justify-content
+724
+Optimised number: Changed "0px" to "0"
+726
+Invalid property in CSS2.1: flex-direction
+727
+Invalid property in CSS2.1: flex
+728
+Optimised number: Changed "0px" to "0"
+740
+Optimised number: Changed "-ms-flexbox" to "0"
+744
+Invalid property in CSS2.1: flex
+750
+Invalid property in CSS2.1: flex-direction
+753
+Invalid property in CSS2.1: flex
+759
+Invalid property in CSS2.1: order
+765
+Invalid property in CSS2.1: flex
+769
+Invalid property in CSS2.1: flex
+773
+Invalid property in CSS2.1: flex-direction
+777
+Invalid property in CSS2.1: flex
+782
+Invalid property in CSS2.1: order
+788
+Invalid property in CSS2.1: flex
+792
+Invalid property in CSS2.1: flex
+807
+Optimised color: Changed "white" to "#FFF"
+826
+Optimised color: Changed "#ffffff" to "#fff"
+831
+Optimised color: Changed "white" to "#FFF"
+850
+Optimised color: Changed "#ffffff" to "#fff"
+868
+Invalid property in CSS2.1: box-shadow
+870
+Invalid property in CSS2.1: flex
+871
+Invalid property in CSS2.1: flex-direction
+872
+Invalid property in CSS2.1: flex-basis
+896
+Optimised number: Changed "0.4s" to ".4s"
+Invalid property in CSS2.1: -webkit-transition
+897
+Optimised number: Changed "0.4s" to ".4s"
+Invalid property in CSS2.1: transition
+907
+Optimised color: Changed "white" to "#FFF"
+908
+Optimised number: Changed "0.4s" to ".4s"
+Invalid property in CSS2.1: -webkit-transition
+909
+Optimised number: Changed "0.4s" to ".4s"
+Invalid property in CSS2.1: transition
+917
+Invalid property in CSS2.1: box-shadow
+921
+Invalid property in CSS2.1: -webkit-transform
+922
+Invalid property in CSS2.1: -ms-transform
+923
+Invalid property in CSS2.1: transform
+937
+Optimised color: Changed "black" to "#000"
+943
+Optimised color: Changed "black" to "#000"
+946
+Invalid property in CSS2.1: border-radius
+963
+Optimised color: Changed "black" to "#000"
+Optimised shorthand notation (border-color): Changed "transparent transparent #000 transparent" to "transparent transparent #000"
+983
+Invalid property in CSS2.1: opacity
+984
+Optimised number: Changed "0.5s" to ".5s"
+Invalid property in CSS2.1: transition
+989
+Invalid property in CSS2.1: opacity
+993
+Optimised color: Changed "white" to "#FFF"
+997
+Invalid property in CSS2.1: transform
+998
+Invalid property in CSS2.1: -ms-transform
+1005
+Invalid property in CSS2.1: box-sizing
+1062
+Optimised number: Changed "0px" to "0"
+1065
+Optimised font-weight: Changed "bold" to "700"
+1067
+Invalid property in CSS2.1: text-shadow
+1080
+Optimised color: Changed "white" to "#FFF"
+1100
+Optimised font-weight: Changed "bold" to "700"
+1102
+Invalid property in CSS2.1: text-shadow
+1104
+Optimised number: Changed "0.6s" to ".6s"
+Invalid property in CSS2.1: transition
+1105
+Invalid property in CSS2.1: border-radius
+1106
+Invalid property in CSS2.1: user-select
+1107
+Invalid property in CSS2.1: -webkit-user-select
+1120
+Optimised font-weight: Changed "bold" to "700"
+1122
+Invalid property in CSS2.1: text-shadow
+1124
+Optimised number: Changed "0.6s" to ".6s"
+Invalid property in CSS2.1: transition
+1125
+Invalid property in CSS2.1: border-radius
+1126
+Invalid property in CSS2.1: user-select
+1127
+Invalid property in CSS2.1: -webkit-user-select
+1134
+Optimised number: Changed "0px" to "0"
+1137
+Optimised color: Changed "black" to "#000"
+1139
+Optimised color: Changed "white" to "#FFF"
+1144
+Invalid property in CSS2.1: opacity
+1151
+Optimised color: Changed "white" to "#FFF"
+1158
+Invalid property in CSS2.1: opacity
+1162
+Optimised number: Changed "0.3s" to ".3s"
+Invalid property in CSS2.1: transition
+1166
+Invalid property in CSS2.1: box-shadow
+1174
+Invalid property in CSS2.1: border-radius
+1189
+Invalid property in CSS2.1: opacity
+1198
+Optimised number: Changed "0%" to "0"
+Invalid property in CSS2.1: border-radius
+1204
+Invalid property in CSS2.1: transform
+1212
+Optimised number: Changed "0px" to "0"
+Invalid property in CSS2.1: box-shadow
+1229
+Invalid property in CSS2.1: text-shadow
+1233
+Invalid property in CSS2.1: text-shadow
+1237
+Optimised color: Changed "white" to "#FFF"
+1241
+Optimised color: Changed "black" to "#000"
+1246
+Optimised color: Changed "black" to "#000"
+1251
+Optimised color: Changed "black" to "#000"
+Eingabe: 26.658KB, Ausgabe:19.366KB, Komprimierungsrate: 27.4%(-7292 Bytes)
+Auserwählt oder Copy
+@charset utf-8;html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    min-height: 100%;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility
+}
+
+* {
+    box-sizing: border-box
+}
+
+:before {
+    box-sizing: inherit
+}
+
+:after {
+    box-sizing: inherit
+}
+
+body {
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: rgba(0,0,0,1);
+    background-image: url(../Images/BackGround.jpg);
+    height: 0;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    -ms-background-attachment: fixed;
+    background-attachment: fixed;
+    margin: 0
+}
+
+h1 {
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    font-size: 23px;
+    display: inline-block;
+    color: #000;
+    margin: 0 0 12px;
+    padding: 0
+}
+
+h2 {
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    font-size: 21px;
+    display: inline-block;
+    color: #000;
+    margin: 0 0 10px;
+    padding: 0
+}
+
+h3 {
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    font-size: 19px;
+    display: inline-block;
+    color: #000;
+    margin: 0 0 8px;
+    padding: 0
+}
+
+h4 {
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    font-size: 17px;
+    display: inline-block;
+    color: #000;
+    margin: 0 0 6px;
+    padding: 0
+}
+
+h5 {
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    font-size: 17px;
+    display: inline-block;
+    color: #000;
+    margin: 0 0 4px;
+    padding: 0
+}
+
+h6 {
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    font-size: 17px;
+    display: inline-block;
+    color: #000;
+    margin: 0 0 2px;
+    padding: 0
+}
+
+p {
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    font-size: 17px;
+    display: inline-block;
+    color: #000;
+    margin: 0;
+    padding: 0
+}
+
+a:link {
+    color: #1E90FF;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif
+}
+
+a:visited {
+    color: #8A2BE2;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif
+}
+
+a:hover {
+    color: #F4A460;
+    background-color: transparent;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif
+}
+
+a:active {
+    color: #FF6347;
+    background-color: transparent;
+    text-decoration: underline;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif
+}
+
+img {
+    vertical-align: middle;
+    display: block;
+    position: relative;
+    height: auto;
+    -ms-height: 100%;
+    -ms-width: 100%;
+    top: 0;
+    max-height: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+    border-style: none
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto
+}
+
+    .img-fluid:hover {
+        cursor: pointer
+    }
+
+.img-container {
+    max-height: 90vh;
+    height: auto;
+    width: auto;
+    vertical-align: middle;
+    margin: auto
+}
+
+.Slides {
+    vertical-align: middle;
+    display: none;
+    position: relative;
+    height: auto;
+    -ms-height: 100%;
+    -ms-width: 100%;
+    top: 0;
+    max-height: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+    border-style: none
+}
+
+.Slides1 {
+    vertical-align: middle;
+    display: none;
+    position: relative;
+    height: auto;
+    -ms-height: 100%;
+    -ms-width: 100%;
+    top: 0;
+    max-height: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+    border-style: none
+}
+
+.Slides2 {
+    vertical-align: middle;
+    display: none;
+    position: relative;
+    height: auto;
+    -ms-height: 100%;
+    -ms-width: 100%;
+    top: 0;
+    max-height: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+    border-style: none
+}
+
+.img-icon {
+    height: auto;
+    float: left;
+    display: block;
+    top: 0;
+    table-layout: fixed;
+    text-align: center;
+    text-decoration: none;
+    left: 0;
+    -webkit-transition: background .5s linear;
+    -moz-transition: background .5s linear;
+    -o-transition: background .5s linear;
+    transition: background .5s linear;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    max-width: 71px;
+    cursor: pointer;
+    margin: 5px 2px
+}
+
+    .img-icon:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        color: #444;
+        background-size: 100% 100%;
+        transition: background .5s linear;
+        -moz-transition: background .5s linear;
+        -o-transition: background .5s linear
+    }
+
+.container {
+    position: relative;
+    height: auto;
+    width: 100%;
+    min-height: 100%
+}
+
+.logo {
+    float: none;
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: top;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.36), 0 1px 2px rgba(0,0,0,0.48);
+    cursor: pointer
+}
+
+    .logo:hover {
+        background-color: rgba(99,110,114,0.9);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.36), 0 1px 2px rgba(0,0,0,0.48);
+        cursor: pointer
+    }
+
+.img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    table-layout: fixed;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 100% auto
+}
+
+    .img:hover {
+        cursor: pointer
+    }
+
+#home {
+    background: url(../Images/preEJK.jpg);
+    display: block;
+    background-size: 100% 100%;
+    top: 0;
+    table-layout: fixed;
+    max-height: 100%;
+    max-width: 100%;
+    left: 0;
+    -webkit-transition: background .5s linear;
+    -moz-transition: background .5s linear;
+    -o-transition: background .5s linear;
+    transition: background .5s linear
+}
+
+.homeimg {
+    opacity: 0;
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    max-height: 100%;
+    max-width: 100%;
+    table-layout: fixed
+}
+
+    .homeimg:hover {
+        cursor: pointer
+    }
+
+#home-background {
+    opacity: 0
+}
+
+#home:hover {
+    background: url(../Images/preJK.jpg);
+    background-size: 100% 100%;
+    -webkit-transition: background .5s linear;
+    -moz-transition: background .5s linear;
+    -o-transition: background .5s linear;
+    transition: background .5s linear
+}
+
+.article:focus {
+    background-color: rgba(178,190,195,1);
+    background-size: 100% 100%;
+    transition: background .5s linear;
+    -moz-transition: background .5s linear;
+    -o-transition: background .5s linear;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    color: #444
+}
+
+ulnav {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgba(99,110,114,0.75);
+    color: #FFF;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 1040px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0
+}
+
+linav {
+    color: #FFF;
+    float: left;
+    padding: 4px 2px
+}
+
+    linav a {
+        text-align: left;
+        text-decoration: none;
+        font-size: 17px;
+        color: #FFF;
+        display: inline-block;
+        font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+        padding: 14px 16px
+    }
+
+.dropbtn {
+    display: inline-block;
+    color: #000;
+    text-align: left;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: rgba(178,190,195,0.9);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.36);
+    padding: 14px 16px
+}
+
+linav a:hover {
+    color: #000;
+    background-color: rgba(99,110,114,1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.36), 0 1px 2px rgba(0,0,0,0.48);
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif
+}
+
+.dropdown:hover .dropbtn {
+    color: #000;
+    background-color: rgba(99,110,114,1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.36), 0 1px 2px rgba(0,0,0,0.48);
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif
+}
+
+.dropdown {
+    color: #FFF;
+    display: inline-block;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif
+}
+
+linavb {
+    color: #FFF;
+    float: left;
+    padding: 4px 2px 0
+}
+
+    linavb a {
+        text-align: left;
+        text-decoration: none;
+        font-size: 17px;
+        color: #FFF;
+        display: inline-block;
+        font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif
+    }
+
+.dropbtnimg {
+    display: inline-block;
+    color: #000;
+    text-align: left;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: rgba(99,110,114,0.9);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.36)
+}
+
+linavb a:hover {
+    color: #000;
+    background-color: rgba(178,190,195,0.9);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.36), 0 1px 2px rgba(0,0,0,0.48);
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif
+}
+
+.dropbtnimg: hover {
+    color: #000;
+    background-color: rgba(178,190,195,0.9);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.36), 0 1px 2px rgba(0,0,0,0.48);
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif
+}
+
+.dropdown-content {
+    color: #FFF;
+    display: none;
+    position: absolute;
+    text-align: left;
+    background-color: rgba(223,230,233,1);
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 550;
+    padding: 14px
+}
+
+    .dropdown-content a {
+        color: #000;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        padding: 12px 16px
+    }
+
+    .dropdown-content h8: {
+        background-color: rgba(255,255,255,0)
+    }
+
+    .dropdown-content a:hover {
+        background-color: rgba(223,230,233,1)
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: rgba(255,255,255,1)
+}
+
+.botbar a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    vertical-align: bottom;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    max-width: 1040px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-basis: auto;
+    z-index: 400;
+    cursor: pointer;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    margin: 5px auto;
+    padding: 14px 16px
+}
+
+.botbar {
+    cursor: pointer;
+    overflow: hidden;
+    background-color: rgba(99,110,114,0.75);
+    position: absolute;
+    min-height: 30px;
+    vertical-align: center;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    z-index: 500;
+    display: inline-block;
+    max-width: 1040px;
+    text-align: center;
+    margin: 10px auto 0;
+    padding: 0
+}
+
+.main {
+    height: 200px;
+    max-width: 1040px;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    margin: 0 auto;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%
+}
+
+td {
+    border: 1px solid #dfe6e9;
+    text-align: left;
+    padding: 8px
+}
+
+th {
+    border: 1px solid #dfe6e9;
+    text-align: left;
+    padding: 8px
+}
+
+tr:nth-child(even) {
+    background-color: #dfe6e9
+}
+
+a {
+    text-decoration: none;
+    transition: all .3s cubic-bezier(0.25,0.8,0.25,1)
+}
+
+div {
+    margin: 0;
+    padding: 0
+}
+
+figure {
+    margin: 0;
+    padding: 0
+}
+
+.header {
+    color: #000;
+    text-align: left;
+    padding: 10px 0
+}
+
+    .header h1 {
+        font-size: 40px;
+        font-weight: 700
+    }
+
+    .header h2 a {
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+        color: #000;
+        font-size: 20px;
+        opacity: 0.5
+    }
+
+        .header h2 a:hover {
+            border-bottom-color: #000;
+            opacity: 1
+        }
+
+.row {
+    float: left;
+    color: #fff;
+    text-decoration: none;
+    max-width: 1040px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    cursor: pointer;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    margin: 0 auto
+}
+
+.column {
+    flex: 4;
+    flex-direction: row;
+    float: left;
+    width: 25%
+}
+
+.articlesimple {
+    color: #000;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-basis: auto;
+    height: auto;
+    margin: 11px
+}
+
+.article {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color: #000;
+    display: inherit;
+    flex: 1;
+    flex-direction: column;
+    flex-basis: auto;
+    height: auto;
+    margin: 10px
+}
+
+    .article:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        color: #444
+    }
+
+.article-image {
+    background: #000;
+    display: block;
+    padding-top: 75%;
+    position: relative;
+    width: 100%
+}
+
+    .article-image img {
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%
+    }
+
+    .article-image.is-3by2 {
+        padding-top: 66.6666%
+    }
+
+    .article-image.is-16by9 {
+        padding-top: 56.25%
+    }
+
+.articlebody {
+    box-sizing: border-box;
+    flex-direction: column;
+    margin-top: 7px;
+    margin-bottom: 8px;
+    background-color: #fff;
+    height: auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 20px
+}
+
+.articlebodyDesc {
+    box-sizing: border-box;
+    flex-direction: column;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    background-color: #fff;
+    height: auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 20px
+}
+
+.article-title {
+    color: #000;
+    padding-left: 5px;
+    padding-right: 5px;
+    flex-shrink: 0;
+    font-size: 1.4em;
+    font-weight: 700;
+    line-height: 1.2
+}
+
+.article-titleL {
+    float: left;
+    color: #000;
+    flex-shrink: 0;
+    font-size: 1.4em;
+    font-weight: 700;
+    line-height: 1.2
+}
+
+.article-titleR {
+    float: right;
+    color: #000;
+    flex-shrink: 0;
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.2
+}
+
+.article-content {
+    margin-bottom: 0;
+    background-color: #fff;
+    color: #000;
+    height: inherit;
+    padding: 5px
+}
+
+.article-content-dropdown {
+    margin-bottom: 0;
+    background-color: background-color: rgba(255,255,255,0);
+    color: #000;
+    height: inherit;
+    padding: 5px
+}
+
+.article-content2 {
+    flex: 1;
+    background-color: #fff;
+    color: #000;
+    height: auto;
+    margin: 5px
+}
+
+.article-content3 {
+    flex: 1;
+    text-align: center;
+    float: center;
+    background-color: #fff;
+    color: #000;
+    height: auto;
+    margin: 5px
+}
+
+.article-info {
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: .85em;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: #000
+}
+
+.article-date {
+    float: right;
+    opacity: 0.5;
+    font-style: italic;
+    display: flex;
+    font-size: .85em;
+    margin-top: 10px;
+    color: #000
+}
+
+.bot-info {
+    display: flex;
+    font-size: .85em;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 0;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    flex-direction: row;
+    flex: 1;
+    padding: 0 16px
+}
+
+.first-article .article-image {
+    height: 300px;
+    order: 2;
+    padding-top: 0;
+    width: 400px
+}
+
+.main-column {
+    flex: 4
+}
+
+.nested-column {
+    flex: 2
+}
+
+.first-article {
+    flex-direction: row
+}
+
+    .first-article .articlebody {
+        flex: 1
+    }
+
+.tablinkdum {
+    float: left;
+    width: auto;
+    border: none;
+    outline: none;
+    min-width: 6px;
+    margin: 0 auto;
+    padding: 4px 6px
+}
+
+.tablink {
+    background-color: #2d3436;
+    color: #FFF;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    width: auto;
+    min-width: 48px;
+    max-width: 1040px;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    margin: 0 auto;
+    padding: 4px 6px
+}
+
+    .tablink:hover {
+        z-index: 99 !important;
+        background-color: #636e72;
+        color: #fff
+    }
+
+.tablinkr {
+    background-color: #2d3436;
+    color: #FFF;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    width: auto;
+    min-width: 48px;
+    max-width: 1040px;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    table-layout: fixed;
+    display: block;
+    margin: 0 auto;
+    padding: 4px 6px
+}
+
+    .tablinkr:hover {
+        z-index: 99 !important;
+        background-color: #636e72;
+        color: #fff
+    }
+
+.tabcontent {
+    float: left;
+    color: #f2f2f2;
+    text-align: left;
+    text-decoration: none;
+    font-size: 17px;
+    vertical-align: top;
+    max-width: 1040px;
+    width: 99%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-basis: auto;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    margin: 5px;
+    padding: 4px 6px
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px
+}
+
+    .switch input {
+        display: none
+    }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #dfe6e9;
+    -webkit-transition: .4s;
+    transition: .4s
+}
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: #FFF;
+        -webkit-transition: .4s;
+        transition: .4s
+    }
+
+input:checked + .slider {
+    background-color: #0984e3
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #0984e3
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px)
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding: 0
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #000
+}
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 700;
+        top: 150%;
+        left: 50%;
+        margin-left: -60px;
+        padding: 5px 0
+    }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-color: transparent transparent #000;
+            border-style: solid;
+            border-width: 5px
+        }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible
+    }
+
+.containera {
+    position: relative;
+    width: 100%
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(45,52,54,0.9)
+}
+
+.containera:hover .overlay {
+    opacity: 1
+}
+
+.text {
+    color: #FFF;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    margin: 20px
+}
+
+.row > .column {
+    padding: 0 8px
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -903,7 +2850,7 @@ input:checked + .slider:before {
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.8);
-    padding: 25px 50px 50px;
+    padding: 25px 50px 50px
 }
 
 .modal-content {
@@ -913,7 +2860,7 @@ input:checked + .slider:before {
     height: auto;
     max-height: 80%;
     z-index: 600;
-    margin: auto;
+    margin: auto
 }
 
 .close {
@@ -924,19 +2871,30 @@ input:checked + .slider:before {
     font-size: 35px;
     font-weight: 700;
     z-index: 610;
-    text-shadow: 3px 3px rgba(0,0,0,0.25);
+    text-shadow: 3px 3px rgba(0,0,0,0.25)
 }
 
-    .close:hover, .close:focus {
+    .close:hover {
         color: #999;
         text-decoration: none;
         cursor: pointer;
-        z-index: 610;
+        z-index: 610
+    }
+
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+        z-index: 610
     }
 
 .mySlides {
     display: none;
-    color: #FFF;
+    color: #FFF
+}
+
+.cursor {
+    cursor: pointer
 }
 
 .prev {
@@ -955,7 +2913,7 @@ input:checked + .slider:before {
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-    padding: 16px;
+    padding: 16px
 }
 
 .next {
@@ -974,7 +2932,7 @@ input:checked + .slider:before {
     -webkit-user-select: none;
     right: 0;
     border-radius: 3px 0 0 3px;
-    padding: 16px;
+    padding: 16px
 }
 
 .caption-container {
@@ -985,12 +2943,12 @@ input:checked + .slider:before {
     text-align: center;
     background-color: #000;
     color: #FFF;
-    padding: 2px 16px;
+    padding: 2px 16px
 }
 
 .demo {
     display: none;
-    opacity: 0.6;
+    opacity: 0.6
 }
 
 .demotext {
@@ -999,19 +2957,31 @@ input:checked + .slider:before {
     display: inline-block;
     color: #FFF;
     margin: 0;
-    padding: 0;
+    padding: 0
+}
+
+.active {
+    opacity: 1
+}
+
+.demo:hover {
+    opacity: 1
 }
 
 img.hover-shadow {
-    transition: .3s;
+    transition: .3s
 }
 
 .hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+.prev:hover {
+    background-color: rgba(0,0,0,0.8)
+}
+
+.next:hover {
+    background-color: rgba(0,0,0,0.8)
 }
 
 .numbertext {
@@ -1019,7 +2989,7 @@ img.hover-shadow {
     font-size: 12px;
     position: absolute;
     top: 0;
-    padding: 8px 12px;
+    padding: 8px 12px
 }
 
 .stomt-button {
@@ -1042,114 +3012,106 @@ img.hover-shadow {
     text-decoration: none !important;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif !important;
     margin: 4px 4px auto !important;
-    padding: 14px 2px !important;
+    padding: 14px 2px !important
+}
+
+#Banner {
+    text-shadow: 2px 2px 3px rgba(178,190,195,0.75)
+}
+
+#BannerB {
+    text-shadow: 2px 2px 3px rgba(178,190,195,0.75)
 }
 
 #Default {
-    color: #FFF;
+    color: #FFF
 }
 
 #Blog {
     color: #000;
-    background-color: rgba(214,48,49,0.95);
+    background-color: rgba(214,48,49,0.95)
 }
 
 #Projects {
     color: #000;
-    background-color: rgba(253,203,110,0.95);
+    background-color: rgba(253,203,110,0.95)
 }
 
 #Contact {
     color: #000;
-    background-color: rgba(129,236,236,0.95);
+    background-color: rgba(129,236,236,0.95)
 }
 
 #BlogB {
-    background-color: rgba(214,48,49,0.75);
+    background-color: rgba(214,48,49,0.75)
 }
 
 #ProjectsB {
-    background-color: rgba(253,203,110,0.75);
+    background-color: rgba(253,203,110,0.75)
 }
 
 #ContactB {
-    background-color: rgba(129,236,236,0.75);
+    background-color: rgba(129,236,236,0.75)
+}
+
+#Index {
+    background-color: rgba(99,110,114,0.95)
 }
 
 #IndexB {
-    background-color: rgba(99,110,114,0.5);
+    background-color: rgba(99,110,114,0.5)
+}
+
+#IndexC {
+    background-color: rgba(99,110,114,0.95)
 }
 
 </style > <style type="text/css" > #wrapper {
     width: 100%;
     float: left;
     height: auto;
-    border: 1px solid #5694cf;
+    border: 1px solid #5694cf
 }
 
 a.anchor {
     display: block;
     position: relative;
     top: -25px;
-    visibility: hidden;
-}
-
-.img-fluid:hover, .img:hover, .homeimg:hover, .cursor {
-    cursor: pointer;
-}
-
-linav a, .dropdown, linavb a {
-    color: #FFF;
-    display: inline-block;
-    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
-}
-
-.tablink:hover, .tablinkr:hover {
-    z-index: 99 !important;
-    background-color: #636e72;
-    color: #fff;
-}
-
-.containera:hover .overlay, .active, .demo:hover {
-    opacity: 1;
-}
-
-#Banner, #BannerB {
-    text-shadow: 2px 2px 3px rgba(178,190,195,0.75);
-}
-
-#Index, #IndexC {
-    background-color: rgba(99,110,114,0.95);
+    visibility: hidden
 }
 
 @media screen and max-width 360px {
     .dropbtn {
-        padding: 14px 10px;
+        padding: 14px 10px
     }
 }
 
 @media screen and min-width 800px {
-    .columns, .column {
-        display: flex;
+    .columns {
+        display: flex
+    }
+
+    .column {
+        display: flex
     }
 
     .first-article .article-body {
-        flex: 1;
+        flex: 1
     }
 }
 
 @media screen and min-width 1000px {
     .first-article {
-        flex-direction: row;
+        flex-direction: row
     }
 
         .first-article .article-body {
-            flex: 1;
+            flex: 1
         }
 }
 
 @media screen and max-width 399px {
     .stomt-button {
-        bottom: 50px !important;
+        bottom: 50px !important
     }
 }
