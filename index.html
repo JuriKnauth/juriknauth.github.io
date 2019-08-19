@@ -71,13 +71,10 @@
                     <div class="columns">
                         <div class="nested-column">
                             <a class="article" href="Blog.html">
-                                <div>
-                                    <img class="Slides" src="../Images/preArtNova.jpg" width="100%">
-                                    <img class="Slides" src="../Images/preArtWoman.jpg" width="100%">
-                                    <img class="Slides" src="../Images/preSword.jpg" width="100%">
-                                    <img class="Slides" src="../Images/preArtUrukaiShield.jpg" width="100%">
-                                    <img class="Slides" src="../Images/preArtMonster.jpg" width="100%">
-                                </div>
+                                <picture class="img-fluid" width="100%" height="480">
+                                    <source srcset="../Icons/Colors/red.webp" type="image/webp">
+                                    <img src="../Icons/Colors/red.jpg" alt="red">
+                                </picture>
                                 <div class="article-body">
                                     <h5 class="article-title"> Blog</h5><br />
                                     <p class="article-content"> The blog will feature some minor tasks, crafts and scribbles.</p>
@@ -152,94 +149,6 @@
 
         document.getElementById("GreetingsVar").innerHTML =
             "<em>" + greet + " and Welcome to my Portfolio!</em>";
-
-        var window_focus = true;
-
-        var myIndex = 0;
-        var myIndex1 = 0;
-        var myIndex2 = 0;
-
-        $(window).focus(function() {
-            window_focus = true;
-
-            if (window_focus) {
-                carousel();
-                setTimeout(carousel1, 1000);
-                setTimeout(carousel2, 2000);
-            };
-        });
-
-        $(window).focusout(function() {
-            window_focus = false;
-            if (!window_focus) {
-                clearInterval(carousel);
-                clearInterval(carousel1);
-                clearInterval(carousel2);
-            };
-        });
-
-        start();
-        carousel();
-        setTimeout(carousel1, 1000);
-        setTimeout(carousel2, 2000);
-
-        function start() {
-            var x1 = document.getElementsByClassName("Slides1");
-            var x2 = document.getElementsByClassName("Slides2");
-            x1[myIndex1].style.display = "block";
-            x2[myIndex2].style.display = "block";
-        }
-
-        function carousel() {
-            if (window_focus) {
-                var i;
-                var x = document.getElementsByClassName("Slides");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                myIndex++;
-                if (myIndex > x.length) {
-                    myIndex = 1;
-                }
-                x[myIndex - 1].style.display = "block";
-                clearInterval(carousel);
-                setTimeout(carousel, 3000); // Change image every 2 seconds
-            }
-        }
-
-        function carousel1() {
-            if (window_focus) {
-                var i1;
-                var x1 = document.getElementsByClassName("Slides1");
-                for (i1 = 0; i1 < x1.length; i1++) {
-                    x1[i1].style.display = "none";
-                }
-                myIndex1++;
-                if (myIndex1 > x1.length) {
-                    myIndex1 = 1;
-                }
-                x1[myIndex1 - 1].style.display = "block";
-                clearInterval(carousel1);
-                setTimeout(carousel1, 3000); // Change image every 2 seconds
-            }
-        }
-
-        function carousel2() {
-            if (window_focus) {
-                var i2;
-                var x2 = document.getElementsByClassName("Slides2");
-                for (i2 = 0; i2 < x2.length; i2++) {
-                    x2[i2].style.display = "none";
-                }
-                myIndex2++;
-                if (myIndex2 > x2.length) {
-                    myIndex2 = 1;
-                }
-                x2[myIndex2 - 1].style.display = "block";
-                clearInterval(carousel2);
-                setTimeout(carousel2, 3000); // Change image every 2 seconds
-            }
-        }
     </script>
 </body>
 <div class="gridContainer clearfix"></div>
