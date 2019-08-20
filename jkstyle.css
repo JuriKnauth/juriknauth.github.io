@@ -331,10 +331,6 @@ linav {
     box-shadow: 0 2px 5px rgba(0,0,0,.24),0 1px 2px rgba(0,0,0,.36)
 }
 
-    .dropbtn a {
-        background-color: #636e72;
-    }
-
 linavb {
     color: #fff;
     float: left;
@@ -1106,6 +1102,14 @@ a.anchor {
 .article-content, .article-content-dropdown {
     margin-bottom: 0;
     background-color: #fff;
+    color: #000;
+    height: inherit;
+    padding: 5px
+}
+
+.article-content-dropdown {
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0);
     color: #000;
     height: inherit;
     padding: 5px
