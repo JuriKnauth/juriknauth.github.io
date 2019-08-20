@@ -412,7 +412,7 @@ linavb {
 .botbar {
     cursor: pointer;
     overflow: hidden;
-    background-color: #2d3436;
+    background-color: #000;
     position: absolute;
     min-height: 30px;
     vertical-align: center;
