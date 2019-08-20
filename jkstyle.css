@@ -1055,7 +1055,8 @@ a.anchor {
 }
 
 #Default {
-    color: #fff
+    color: #fff;
+    background-color: #636e72
 }
 
 #Blog {
@@ -1131,10 +1132,4 @@ a.anchor {
 
 #Index, #IndexB, #IndexC {
     background-color: #b2bec3
-}
-
-#Button {
-    outline: 5px #fff;
-    color: #fff;
-    background-color: #636e72
 }
