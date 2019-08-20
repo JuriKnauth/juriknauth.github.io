@@ -291,7 +291,7 @@ img {
 ulnav {
     list-style-type: none;
     overflow: hidden;
-    background-color: #636e72;
+    background-color: #2d3436;
     color: #fff;
     top: 0;
     width: 100%;
@@ -412,7 +412,7 @@ linavb {
 .botbar {
     cursor: pointer;
     overflow: hidden;
-    background-color: #636e72;
+    background-color: #2d3436;
     position: absolute;
     min-height: 30px;
     vertical-align: center;
