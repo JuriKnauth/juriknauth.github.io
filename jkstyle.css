@@ -1,5 +1,4 @@
 ﻿@charset "utf-8";
-
 html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -11,7 +10,9 @@ html {
     text-rendering: optimizeLegibility
 }
 
-*, :after, :before {
+*,
+ :after,
+ :before {
     box-sizing: inherit
 }
 
@@ -42,7 +43,7 @@ body {
 }
 
 h1 {
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     font-size: 23px;
     display: inline-block;
     color: #000;
@@ -51,7 +52,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     font-size: 21px;
     display: inline-block;
     color: #000;
@@ -60,7 +61,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     font-size: 19px;
     display: inline-block;
     color: #000;
@@ -69,7 +70,7 @@ h3 {
 }
 
 h4 {
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     font-size: 17px;
     display: inline-block;
     color: #000;
@@ -78,7 +79,7 @@ h4 {
 }
 
 h5 {
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     font-size: 17px;
     display: inline-block;
     color: #000;
@@ -87,7 +88,7 @@ h5 {
 }
 
 h6 {
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     font-size: 17px;
     display: inline-block;
     color: #000;
@@ -96,7 +97,7 @@ h6 {
 }
 
 p {
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     font-size: 17px;
     display: inline-block;
     color: #000;
@@ -109,34 +110,34 @@ a:link {
     background-color: transparent;
     text-decoration: none;
     cursor: pointer;
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif
 }
 
 a:visited {
     color: #8a2be2;
     background-color: transparent;
     text-decoration: none;
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif
 }
 
 a:hover {
     color: #f4a460;
     background-color: transparent;
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif
 }
 
 a:active {
     color: #ff6347;
     background-color: transparent;
     text-decoration: underline;
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif
 }
 
 img {
-    vertical-align: middle;
     display: block;
     position: relative;
     height: auto;
+    width: 100%;
     -ms-height: 100%;
     -ms-width: 100%;
     top: 0;
@@ -159,11 +160,14 @@ img {
     margin: auto
 }
 
-.Slides, .Slides1, .Slides2 {
+.Slides,
+.Slides1,
+.Slides2 {
     vertical-align: middle;
     display: none;
     position: relative;
     height: auto;
+    width: 100%;
     -ms-height: 100%;
     -ms-width: 100%;
     top: 0;
@@ -186,20 +190,20 @@ img {
     -moz-transition: background .5s linear;
     -o-transition: background .5s linear;
     transition: background .5s linear;
-    box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
     max-width: 71px;
     cursor: pointer;
     margin: 5px 2px
 }
 
-    .img-icon:hover {
-        box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);
-        color: #444;
-        background-size: 100% 100%;
-        transition: background .5s linear;
-        -moz-transition: background .5s linear;
-        -o-transition: background .5s linear
-    }
+.img-icon:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+    color: #444;
+    background-size: 100% 100%;
+    transition: background .5s linear;
+    -moz-transition: background .5s linear;
+    -o-transition: background .5s linear
+}
 
 .container {
     position: relative;
@@ -218,15 +222,15 @@ img {
     max-height: 100%;
     max-width: 100%;
     vertical-align: top;
-    box-shadow: 0 4px 8px rgba(0,0,0,.36),0 1px 2px rgba(0,0,0,.48);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .36), 0 1px 2px rgba(0, 0, 0, .48);
     cursor: pointer
 }
 
-    .logo:hover {
-        background-color: #636e72;
-        box-shadow: 0 4px 8px rgba(0,0,0,.36),0 1px 2px rgba(0,0,0,.48);
-        cursor: pointer
-    }
+.logo:hover {
+    background-color: #636e72;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .36), 0 1px 2px rgba(0, 0, 0, .48);
+    cursor: pointer
+}
 
 .img {
     display: block;
@@ -280,7 +284,7 @@ img {
 }
 
 .article:focus {
-    box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
     background-color: #b2bec3;
     background-size: 100% 100%;
     transition: background .5s linear;
@@ -310,25 +314,27 @@ linav {
     padding: 4px 2px
 }
 
-    .dropbtn, linav a {
-        display: inline-block;
-        color: #000;
-        text-align: left;
-        text-decoration: none;
-        font-size: 17px;
-        padding: 14px 16px
-    }
+.dropbtn,
+linav a {
+    display: inline-block;
+    color: #000;
+    text-align: left;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px
+}
 
-        .dropdown:hover .dropbtn, linav a:hover {
-            color: #000;
-            background-color: #636e72;
-            box-shadow: 0 4px 8px rgba(0,0,0,.36),0 1px 2px rgba(0,0,0,.48);
-            font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif
-        }
+.dropdown:hover .dropbtn,
+linav a:hover {
+    color: #000;
+    background-color: #636e72;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .36), 0 1px 2px rgba(0, 0, 0, .48);
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif
+}
 
 .dropbtn {
     background-color: #b2bec3;
-    box-shadow: 0 2px 5px rgba(0,0,0,.24),0 1px 2px rgba(0,0,0,.36)
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .24), 0 1px 2px rgba(0, 0, 0, .36)
 }
 
 linavb {
@@ -337,24 +343,26 @@ linavb {
     padding: 4px 2px 0
 }
 
-    .dropbtnimg, linavb a {
-        display: inline-block;
-        color: #000;
-        text-align: left;
-        text-decoration: none;
-        font-size: 17px
-    }
+.dropbtnimg,
+linavb a {
+    display: inline-block;
+    color: #000;
+    text-align: left;
+    text-decoration: none;
+    font-size: 17px
+}
 
-        .dropbtnimg:hover, linavb a:hover {
-            color: #000;
-            background-color: #b2bec3;
-            box-shadow: 0 4px 8px rgba(0,0,0,.36),0 1px 2px rgba(0,0,0,.48);
-            font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif
-        }
+.dropbtnimg:hover,
+linavb a:hover {
+    color: #000;
+    background-color: #b2bec3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .36), 0 1px 2px rgba(0, 0, 0, .48);
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif
+}
 
 .dropbtnimg {
     background-color: #636e72;
-    box-shadow: 0 2px 5px rgba(0,0,0,.24),0 1px 2px rgba(0,0,0,.36)
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .24), 0 1px 2px rgba(0, 0, 0, .36)
 }
 
 .dropdown-content {
@@ -364,22 +372,22 @@ linavb {
     text-align: left;
     background-color: #dfe6e9;
     min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
     z-index: 550;
     padding: 14px
 }
 
-    .dropdown-content a {
-        color: #000;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-        padding: 12px 16px
-    }
+.dropdown-content a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 12px 16px
+}
 
-    .dropdown-content h8 {
-        background-color: rgba(255, 255, 255, 0)
-    }
+.dropdown-content h8 {
+    background-color: rgba(255, 255, 255, 0)
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -397,14 +405,14 @@ linavb {
     left: 0;
     position: absolute;
     max-width: 1040px;
-    box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
     display: flex;
     flex: 1;
     flex-direction: column;
     flex-basis: auto;
     z-index: 400;
     cursor: pointer;
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     margin: 5px auto;
     padding: 14px 16px
 }
@@ -430,7 +438,7 @@ linavb {
 .main {
     height: 200px;
     max-width: 1040px;
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     margin: 0 auto;
     padding: 0
 }
@@ -440,7 +448,8 @@ table {
     width: 100%
 }
 
-td, th {
+td,
+th {
     border: 1px solid #dfe6e9;
     text-align: left;
     padding: 8px
@@ -448,10 +457,12 @@ td, th {
 
 a {
     text-decoration: none;
-    transition: all .3s cubic-bezier(.25,.8,.25,1)
+    transition: all .3s cubic-bezier(.25, .8, .25, 1)
 }
 
-div, figure, p {
+div,
+figure,
+p {
     margin: 0;
     padding: 0
 }
@@ -462,31 +473,31 @@ div, figure, p {
     padding: 10px 0
 }
 
-    .header h1 {
-        font-size: 40px;
-        font-weight: 700
-    }
+.header h1 {
+    font-size: 40px;
+    font-weight: 700
+}
 
-    .header h2 a {
-        border-bottom: 1px solid #fff;
-        color: #000;
-        font-size: 20px;
-        opacity: .5
-    }
+.header h2 a {
+    border-bottom: 1px solid #fff;
+    color: #000;
+    font-size: 20px;
+    opacity: .5
+}
 
-        .header h2 a:hover {
-            border-bottom-color: #000;
-            opacity: 1
-        }
+.header h2 a:hover {
+    border-bottom-color: #000;
+    opacity: 1
+}
 
 .row {
     float: left;
     color: #fff;
     text-decoration: none;
     max-width: 1040px;
-    box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
     cursor: pointer;
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     margin: 0 auto
 }
 
@@ -508,7 +519,7 @@ div, figure, p {
 }
 
 .article {
-    box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
     color: #000;
     display: inherit;
     flex: 1;
@@ -518,10 +529,11 @@ div, figure, p {
     margin: 10px
 }
 
-    .article:focus, .article:hover {
-        box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);
-        color: #444
-    }
+.article:focus,
+.article:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+    color: #444
+}
 
 .article-image {
     background: #000;
@@ -531,22 +543,22 @@ div, figure, p {
     width: 100%
 }
 
-    .article-image img {
-        display: block;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%
-    }
+.article-image img {
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
 
-    .article-image.is-3by2 {
-        padding-top: 66.6666%
-    }
+.article-image.is-3by2 {
+    padding-top: 66.6666%
+}
 
-    .article-image.is-16by9 {
-        padding-top: 56.25%
-    }
+.article-image.is-16by9 {
+    padding-top: 56.25%
+}
 
 .articlebody {
     box-sizing: border-box;
@@ -555,7 +567,7 @@ div, figure, p {
     margin-bottom: 8px;
     background-color: #fff;
     height: auto;
-    box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
     padding: 20px
 }
 
@@ -566,7 +578,7 @@ div, figure, p {
     margin-bottom: 2px;
     background-color: #fff;
     height: auto;
-    box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
     padding: 20px
 }
 
@@ -642,7 +654,7 @@ div, figure, p {
     justify-content: space-between;
     margin-top: 10px;
     margin-right: 0;
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     flex-direction: row;
     flex: 1;
     padding: 0 16px
@@ -667,9 +679,9 @@ div, figure, p {
     flex-direction: row
 }
 
-    .first-article .articlebody {
-        flex: 1
-    }
+.first-article .articlebody {
+    flex: 1
+}
 
 @media screen and (max-width:360px) {
     .dropbtn {
@@ -678,11 +690,11 @@ div, figure, p {
 }
 
 @media screen and (min-width:800px) {
-    .column, .columns {
+    .column,
+    .columns {
         display: -ms-flexbox;
         display: flex
     }
-
     .first-article .article-body {
         flex: 1
     }
@@ -692,10 +704,9 @@ div, figure, p {
     .first-article {
         flex-direction: row
     }
-
-        .first-article .article-body {
-            flex: 1
-        }
+    .first-article .article-body {
+        flex: 1
+    }
 }
 
 .tablinkdum {
@@ -719,7 +730,7 @@ div, figure, p {
     width: auto;
     min-width: 48px;
     max-width: 1040px;
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     margin: 0 auto;
     padding: 4px 6px
 }
@@ -735,7 +746,7 @@ div, figure, p {
     width: auto;
     min-width: 48px;
     max-width: 1040px;
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     table-layout: fixed;
     display: block;
     margin: 0 auto;
@@ -751,12 +762,12 @@ div, figure, p {
     vertical-align: top;
     max-width: 1040px;
     width: 99%;
-    box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
     display: flex;
     flex: 1;
     flex-direction: column;
     flex-basis: auto;
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     margin: 5px;
     padding: 4px 6px
 }
@@ -768,9 +779,9 @@ div, figure, p {
     height: 34px
 }
 
-    .switch input {
-        display: none
-    }
+.switch input {
+    display: none
+}
 
 .slider {
     position: absolute;
@@ -784,27 +795,27 @@ div, figure, p {
     transition: .4s
 }
 
-    .slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: #fff;
-        -webkit-transition: .4s;
-        transition: .4s
-    }
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s
+}
 
-input:checked + .slider {
+input:checked+.slider {
     background-color: #0984e3
 }
 
-input:focus + .slider {
+input:focus+.slider {
     box-shadow: 0 0 1px #0984e3
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px)
@@ -824,35 +835,35 @@ input:checked + .slider:before {
     border-bottom: 1px dotted #000
 }
 
-    .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 120px;
-        background-color: #000;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        position: absolute;
-        z-index: 700;
-        top: 150%;
-        left: 50%;
-        margin-left: -60px;
-        padding: 5px 0
-    }
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 700;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+    padding: 5px 0
+}
 
-        .tooltip .tooltiptext::after {
-            content: "";
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            margin-left: -5px;
-            border-color: transparent transparent #000;
-            border-style: solid;
-            border-width: 5px
-        }
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-color: transparent transparent #000;
+    border-style: solid;
+    border-width: 5px
+}
 
-    .tooltip:hover .tooltiptext {
-        visibility: visible
-    }
+.tooltip:hover .tooltiptext {
+    visibility: visible
+}
 
 .containera {
     position: relative;
@@ -876,8 +887,8 @@ input:checked + .slider:before {
     color: #fff;
     position: relative;
     left: 50%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     margin: 20px
 }
 
@@ -885,7 +896,7 @@ input:checked + .slider:before {
     box-sizing: border-box
 }
 
-.row > .column {
+.row>.column {
     padding: 0 8px
 }
 
@@ -904,7 +915,7 @@ input:checked + .slider:before {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0, 0, 0, .8);
     padding: 25px 50px 50px
 }
 
@@ -926,15 +937,16 @@ input:checked + .slider:before {
     font-size: 35px;
     font-weight: 700;
     z-index: 610;
-    text-shadow: 3px 3px rgba(0,0,0,.25)
+    text-shadow: 3px 3px rgba(0, 0, 0, .25)
 }
 
-    .close:focus, .close:hover {
-        color: #999;
-        text-decoration: none;
-        cursor: pointer;
-        z-index: 610
-    }
+.close:focus,
+.close:hover {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 610
+}
 
 .mySlides {
     display: none;
@@ -951,7 +963,7 @@ input:checked + .slider:before {
     color: #aaecff;
     font-weight: 700;
     z-index: 610;
-    text-shadow: 3px 3px rgba(0,0,0,.25);
+    text-shadow: 3px 3px rgba(0, 0, 0, .25);
     font-size: 20px;
     transition: .6s ease;
     border-radius: 0 3px 3px 0;
@@ -969,7 +981,7 @@ input:checked + .slider:before {
     color: #aaecff;
     font-weight: 700;
     z-index: 610;
-    text-shadow: 3px 3px rgba(0,0,0,.25);
+    text-shadow: 3px 3px rgba(0, 0, 0, .25);
     font-size: 20px;
     transition: .6s ease;
     user-select: none;
@@ -996,7 +1008,7 @@ input:checked + .slider:before {
 }
 
 .demotext {
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     font-size: 17px;
     display: inline-block;
     color: #fff;
@@ -1009,11 +1021,12 @@ img.hover-shadow {
 }
 
 .hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19)
 }
 
-.next:hover, .prev:hover {
-    background-color: rgba(0,0,0,.8)
+.next:hover,
+.prev:hover {
+    background-color: rgba(0, 0, 0, .8)
 }
 
 .numbertext {
@@ -1036,13 +1049,13 @@ img.hover-shadow {
     font-size: 17px !important;
     list-style-type: none !important;
     overflow: hidden !important;
-    background-color: rgba(9,132,227,.65) !important;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2) !important;
+    background-color: rgba(9, 132, 227, .65) !important;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2) !important;
     z-index: 1000 !important;
     display: inline-block !important;
     vertical-align: center !important;
     text-decoration: none !important;
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif !important;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif !important;
     margin: 4px 4px auto !important;
     padding: 14px 2px !important
 }
@@ -1085,21 +1098,28 @@ a.anchor {
     background-color: #81ecec
 }
 
-.img-fluid:hover, .img:hover, .homeimg:hover, .cursor {
+.img-fluid:hover,
+.img:hover,
+.homeimg:hover,
+.cursor {
     cursor: pointer
 }
 
-.dropdown, linav a, linavb a {
+.dropdown,
+linav a,
+linavb a {
     color: #fff;
     display: inline-block;
-    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif
 }
 
-.dropdown-content a:hover, tr:nth-child(even) {
+.dropdown-content a:hover,
+tr:nth-child(even) {
     background-color: #dfe6e9
 }
 
-.article-content, .article-content-dropdown {
+.article-content,
+.article-content-dropdown {
     margin-bottom: 0;
     background-color: #fff;
     color: #000;
@@ -1115,20 +1135,26 @@ a.anchor {
     padding: 5px
 }
 
-.tablink:hover, .tablinkr:hover {
+.tablink:hover,
+.tablinkr:hover {
     z-index: 99 !important;
     background-color: #636e72;
     color: #fff
 }
 
-.containera:hover .overlay, .active, .demo:hover {
+.containera:hover .overlay,
+.active,
+.demo:hover {
     opacity: 1
 }
 
-#Banner, #BannerB {
-    text-shadow: 2px 2px 3px rgba(178,190,195,.75)
+#Banner,
+#BannerB {
+    text-shadow: 2px 2px 3px rgba(178, 190, 195, .75)
 }
 
-#Index, #IndexB, #IndexC {
+#Index,
+#IndexB,
+#IndexC {
     background-color: #b2bec3
 }

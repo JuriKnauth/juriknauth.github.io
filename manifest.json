@@ -1,23 +1,22 @@
 {
-  "short_name": "JuriKnauth",
-  "name": "Juri Knauth's Portfolio",
-  "description": "Juri Knauth’s Portfolio. I am a Game Designer. This web page will showcase each project I worked on as well as link to my team-projects.",
-  "icons": [
-    {
-      "src": "/Icons/jk/jk1_192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "/images/jk1_512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": "http://www.juriknauth.com/",
-  "background_color": "#000000",
-  "lang": "en-US",
-  "display": "standalone",
-  "scope": "/maps/",
-  "theme_color": "#000000"
+    "short_name": "JuriKnauth",
+    "name": "Juri Knauth's Portfolio",
+    "description": "Juri Knauthï¿½s Portfolio. I am a Game Designer. This web page will showcase each project I worked on as well as link to my team-projects.",
+    "icons": [{
+            "src": "/Icons/jk/jk1_192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/images/jk1_512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "http://www.juriknauth.com/",
+    "background_color": "#000000",
+    "lang": "en-US",
+    "display": "standalone",
+    "scope": "/maps/",
+    "theme_color": "#000000"
 }
