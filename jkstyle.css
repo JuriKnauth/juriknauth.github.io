@@ -137,9 +137,7 @@ img {
     display: block;
     position: relative;
     height: auto;
-    width: 100%;
     -ms-height: 100%;
-    -ms-width: 100%;
     top: 0;
     max-height: 100%;
     max-width: 100%;
