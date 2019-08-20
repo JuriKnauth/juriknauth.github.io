@@ -1,6 +1,5 @@
 ﻿<!doctype html>
 <html lang="en-US">
-
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=0.85" name="viewport">
@@ -31,7 +30,6 @@
     </script>
     <style></style>
 </head>
-
 <body onkeydown="myFunction(event)" onclick="closeOutModal(event)">
     <div class="container">
         <div class="main">
@@ -144,17 +142,13 @@
         var hrs = myDate.getHours();
         var sec = myDate.getSeconds();
         var lastSecDigit = sec % 10;
-
         var greet;
-
         if (hrs < 12) greet = "Good Morning";
         else if (hrs >= 12 && hrs <= 17) greet = "Good Afternoon";
         else if (hrs >= 17 && hrs <= 24) greet = "Good Evening";
-
         document.getElementById("GreetingsVar").innerHTML =
             "<em>" + greet + " and Welcome to my Portfolio!</em>";
     </script>
 </body>
 <div class="gridContainer clearfix"></div>
-
 </html>
