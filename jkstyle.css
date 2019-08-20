@@ -1130,5 +1130,9 @@ a.anchor {
 }
 
 #Index, #IndexB, #IndexC {
+    background-color: #b2bec3
+}
+
+#Button {
     background-color: #636e72
 }
