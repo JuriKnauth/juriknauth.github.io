@@ -1134,5 +1134,7 @@ a.anchor {
 }
 
 #Button {
+    outline: 5px #fff;
+    color: #fff;
     background-color: #636e72
 }
