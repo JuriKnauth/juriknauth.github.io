@@ -656,7 +656,7 @@ div, figure, p {
 }
 
 .main-column {
-    flex: 4
+    flex: 3
 }
 
 .nested-column {
@@ -670,6 +670,33 @@ div, figure, p {
     .first-article .articlebody {
         flex: 1
     }
+
+@media screen and (max-width:360px) {
+    .dropbtn {
+        padding: 14px 10px
+    }
+}
+
+@media screen and (min-width:800px) {
+    .column, .columns {
+        display: -ms-flexbox;
+        display: flex
+    }
+
+    .first-article .article-body {
+        flex: 1
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .first-article {
+        flex-direction: row
+    }
+
+        .first-article .article-body {
+            flex: 1
+        }
+}
 
 .tablinkdum {
     float: left;
@@ -1096,36 +1123,4 @@ a.anchor {
 
 #Index, #IndexB, #IndexC {
     background-color: #636e72
-}
-
-@media screen and max-width360px {
-    .dropbtn {
-        padding: 14px 10px
-    }
-}
-
-@media screen and min-width800px {
-    .column, .columns {
-        display: flex
-    }
-
-    .first-article .article-body {
-        flex: 1
-    }
-}
-
-@media screen and min-width1000px {
-    .first-article {
-        flex-direction: row
-    }
-
-        .first-article .article-body {
-            flex: 1
-        }
-}
-
-@media screen and max-width399px {
-    .stomt-button {
-        bottom: 50px !important
-    }
 }
