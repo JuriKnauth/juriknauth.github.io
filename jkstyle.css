@@ -916,6 +916,18 @@ input:checked+.slider:before {
     padding: 25px 50px 50px
 }
 
+.modal2 {
+    position: fixed;
+    z-index: 600;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 25px 50px 50px
+}
+
 .modal-content {
     position: relative;
     width: auto;
@@ -948,6 +960,10 @@ input:checked+.slider:before {
 .mySlides {
     display: none;
     color: #fff
+}
+
+.mySlides2 {
+    color: #000
 }
 
 .prev {
