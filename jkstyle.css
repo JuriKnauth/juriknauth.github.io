@@ -1098,22 +1098,22 @@ a.anchor {
 
 #DefaultI {
     color: #fff;
-    text-shadow: 1px 1px #d63031, 2px 2px #fdcb6e, 3px 3px #81ecec;
+    text-shadow: 1px 0px #d63031, 2px 0px #fdcb6e, 3px 0px #81ecec;
 }
 
 #DefaultB {
     color: #fff;
-    text-shadow: 3px 3px #d63031;
+    text-shadow: 3px 0px #d63031;
 }
 
 #DefaultP {
     color: #fff;
-    text-shadow: 3px 3px #fdcb6e;
+    text-shadow: 3px 0px #fdcb6e;
 }
 
 #DefaultC {
     color: #fff;
-    text-shadow: 3px 3px #81ecec;
+    text-shadow: 3px 0px #81ecec;
 }
 
 #Blog {
