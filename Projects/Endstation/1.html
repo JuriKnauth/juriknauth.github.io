@@ -26,11 +26,30 @@
     <style></style>
 </head>
 
-<body onkeydown="myFunction(event)" onclick="closeOutModal(event)" background-image="none">
+<body onkeydown="myFunction(event)" onclick="closeOutModal(event)">
     <div class="container">
         <div class="main">
             <div id="mainmenu">
                 <div id="loadbotbar"> </div>
+            </div>
+            <div id="myModal " class="modal " tabindex="-1000 ">
+                <div id="myModalImg " class="modal-content ">
+                    <div class="mySlides ">
+                        <div class="numbertext ">1 / 13</div>
+                        <img src="../Images/EndstationNewOldCar.jpg " class="img-container "> 
+                    </div>
+                    <a class="close cursor " onclick="closeModal() ">&times;</a> 
+                    <a class="prev " onclick="plusSlides(-1) ">&#10094;</a> 
+                    <a class="next " onclick="plusSlides(1) ">&#10095;</a>
+                    <div class="caption-container ">
+                        <div class="bot-info " id="caption "> </div>
+                    </div>
+                    <div class="columns ">
+                        <div class="nested-column "> <img class="demo cursor " onclick="currentSlide(1) " alt="<span>Endstation</span> <span>Original old VW Golf</span> <span>1/13</span>"> </div>
+                            <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(2)" alt="<span>Endstation</span> <span>Melting cable insulation</span> <span>2/13</span>"> </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="gridContainer clearfix ">
