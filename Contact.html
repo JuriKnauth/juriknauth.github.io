@@ -21,10 +21,6 @@
     <script>
         $(function() {
             $("#loadbotbar").load("BotBar.html");
-            $("#loadindexmenu").load("IndexMenu.html");
-            $("#loadblogmenu").load("BlogMenu.html");
-            $("#loadprojectsmenu").load("ProjectsMenu.html");
-            $("#loadcontactmenu").load("ContactMenu.html");
         });
     </script>
     <style></style>
@@ -37,21 +33,17 @@
                 <div id="loadbotbar"> </div>
                 <ulnav>
                     <linavb class="dropdown">
-                        <a href="javascript:void(0)" onclick="location.href='/'" id="Default" class="dropbtnimg">
+                        <a href="/" onclick="location.href='/'" id="Default" class="dropbtnimg">
                             <picture class="logo" id="logo" width="51" height="51" alt="jklogo" align="left">
                                 <img src="jkiconcropD.png" alt="logo" id="logo" width="51" height="51" align="left">
                             </picture>
                         </a>
-                        <div id="loadindexmenu"> </div>
                     </linavb>
-                    <linav class="dropdown"> <a href="javascript:void(0)" onclick="location.href='Blog.html'" id="Default" class="dropbtn"><b>Blog</b></a>
-                        <div id="loadblogmenu"> </div>
+                    <linav class="dropdown"> <a href="Blog.html" onclick="location.href='Blog.html'" id="Default" class="dropbtn"><b>Blog</b></a>
                     </linav>
-                    <linav class="dropdown"> <a href="javascript:void(0)" onclick="location.href='Projects.html'" id="Default" class="dropbtn"><b>Projects</b></a>
-                        <div id="loadprojectsmenu"> </div>
+                    <linav class="dropdown"> <a href="Projects.html" onclick="location.href='Projects.html'" id="Default" class="dropbtn"><b>Projects</b></a>
                     </linav>
-                    <linav class="dropdown"> <a href="javascript:void(0)" onclick="location.href='Contact.html'" id="Contact" class="dropbtn"><b>Contact</b></a>
-                        <div id="loadcontactmenu"> </div>
+                    <linav class="dropdown"> <a href="Contact.html" onclick="location.href='Contact.html'" id="Contact" class="dropbtn"><b>Contact</b></a>
                     </linav>
                 </ulnav>
             </div>
