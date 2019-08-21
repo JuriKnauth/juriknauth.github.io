@@ -646,6 +646,7 @@ p {
 }
 
 .bot-info {
+    color: #fff;
     display: flex;
     font-size: .85em;
     justify-content: space-between;
