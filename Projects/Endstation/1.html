@@ -30,23 +30,28 @@
     <div class="container">
         <div class="main">
             <div id="mainmenu">
-                <div id="loadbotbar"> </div>
+                <div class="botbar a">
+                    <div id="loadbotbar"> </div>
+                    <div class="bottom">
+                        <footer class="bot-info" id="topfunc" onclick="location.href='/'">
+                            <span>Endstation</span> <span>Original old VW Golf</span> <span>1/13</span>
+                            <br /><br />
+                        </footer>
+                    </div>
+                </div>
             </div>
             <p>Loading</p>
-            <div class="modal2" tabindex="-1000" display="block">
-                <div class="mySlides ">
+            <div class="modal2" tabindex="-1000">
+                <div class="mySlides2">
                     <div class="numbertext ">1 / 13</div>
-                    <img src="../Images/EndstationNewOldCar.jpg " class="img-container "> 
+                    <picture class="img-container ">
+                            <source srcset="../Images/EndstationNewOldCar.webp" type="image/webp">
+                            <img src="../Images/EndstationNewOldCar.jpg" alt="Original old VW Golf">
+                    </picture>
                 </div>
-                <a class="close cursor " onclick="closeModal() ">&times;</a> 
+                <a class="close cursor " >&times;</a> 
                 <a class="prev " >&#10094;</a> 
                 <a class="next " >&#10095;</a>
-                <div class="caption-container ">
-                    <div class="bot-info " id="caption "> </div>
-                </div>
-                <div class="columns ">
-                    <div class="nested-column "> <img class="demo cursor " alt="<span>Endstation</span> <span>Original old VW Golf</span> <span>1/13</span>"> </div>
-                </div>
             </div>
         </div>
         <div class="gridContainer clearfix ">

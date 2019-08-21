@@ -1015,6 +1015,17 @@ input:checked+.slider:before {
     padding: 2px 16px
 }
 
+.caption-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 2px 16px
+}
+
 .demo {
     display: none;
     opacity: .6
