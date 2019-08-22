@@ -1096,19 +1096,24 @@ a.anchor {
     color: #fff;
 }
 
+#DefaultI {
+    color: #fff;
+    box-shadow: 3px 0px #b2bec3
+}
+
 #DefaultB {
     color: #fff;
-    text-shadow: 1px 0px #d63031;
+    box-shadow: 3px 0px #d63031
 }
 
 #DefaultP {
     color: #fff;
-    text-shadow: 1px 0px #fdcb6e;
+    box-shadow: 3px 0px #fdcb6e
 }
 
 #DefaultC {
     color: #fff;
-    text-shadow: 1px 0px #81ecec;
+    box-shadow: 3px 0px #81ecec
 }
 
 #Blog {
