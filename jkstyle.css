@@ -1098,7 +1098,7 @@ a.anchor {
 
 #DefaultI {
     color: #fff;
-    box-shadow: 3px 0px #b2bec3
+    box-shadow: 2px 0px #b2bec3
 }
 
 #DefaultB {
@@ -1108,27 +1108,41 @@ a.anchor {
 
 #DefaultP {
     color: #fff;
-    box-shadow: 1px 0px #fdcb6e
+    box-shadow: 2px 0px #fdcb6e
 }
 
 #DefaultC {
     color: #fff;
-    box-shadow: 3px 0px #81ecec
+    box-shadow: 2px 0px #81ecec
+}
+
+#Index {
+    color: #000;
+    background-color: #b2bec3;
+    box-shadow: 2px 0px #b2bec3
+}
+
+#IndexB,
+#IndexC {
+    background-color: #b2bec3
 }
 
 #Blog {
     color: #000;
-    background-color: #d63031
+    background-color: #d63031;
+    box-shadow: 2px 0px #d63031
 }
 
 #Projects {
     color: #000;
-    background-color: #fdcb6e
+    background-color: #fdcb6e;
+    box-shadow: 2px 0px #fdcb6e
 }
 
 #Contact {
     color: #000;
-    background-color: #81ecec
+    background-color: #81ecec;
+    box-shadow: 2px 0px #81ecec
 }
 
 #BlogB {
@@ -1196,10 +1210,4 @@ tr:nth-child(even) {
 #Banner,
 #BannerB {
     text-shadow: 2px 2px 3px rgba(178, 190, 195, .75)
-}
-
-#Index,
-#IndexB,
-#IndexC {
-    background-color: #b2bec3
 }
