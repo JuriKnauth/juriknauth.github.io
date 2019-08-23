@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=0.85" name="viewport">
+    <meta name="description"
+        content="Juri Knauth’s Portfolio. I am a Game Designer. This web page will showcase each project I worked on as well as link to my team-projects. Crashed Captain Page.">
+    <meta name="keywords"
+        content="JK,Juri,Knauth,Game,Design,Portfolio,Showcase,Blog,Projects,Contact,Video,Board,Maps,3D,2D,Art,Concepts,Escape,Room,Mods,Pirate,Splashy,Fluffy,Dice,Crashed,Captain,Endstation,Companies,PIG,Spielhauer">
+    <meta name="author" content="Juri Knauth">
+    <meta name="google-site-verification" content="rQabFeH1rub_olMtfbNRyzRKYo9M7YI4i3Qw7BW-Aj0">
+    <base href="http://www.juriknauth.com/">
+    <link rel="canonical" href="http://www.juriknauth.com/Projects/VoA.html">
+    <link rel="stylesheet" type="text/css" href="jkstyle.css">
+    <link rel="favicon" href="https://juriknauth.github.io/favicon.ico">
+    <link rel="favicon-16x16" href="favicon-16x16.ico" type="image/x-icon">
+    <title>Portfolio Juri Knauth</title>
+    <link href="boilerplate.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="jkscript.js"></script>
+    <script src="respond.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#loadbotbar").load("BotBar.html");
+            $("#loadindexmenu").load("IndexMenu.html");
+            $("#loadblogmenu").load("BlogMenu.html");
+            $("#loadprojectsmenu").load("ProjectsMenu.html");
+            $("#loadcontactmenu").load("ContactMenu.html");
+        });
+    </script>
+    <style></style>
+</head>
+
+<body onkeydown="myFunction(event)" onclick="closeOutModal(event)">
+    <div class="container">
+        <div class="main">
+            <div id="mainmenu">
+                <div id="loadbotbar"> </div>
+                <ulnav>
+                    <linavb class="dropdown">
+                        <a href="/" onclick="location.href='/'" id="DefaultI" class="dropbtnimg">
+                            <picture class="logo" id="logo" width="51" height="51" alt="jklogo" align="left">
+                                <img src="jkiconcropD.png" alt="logo" id="logo" width="51" height="51" align="left">
+                            </picture>
+                        </a>
+                        <div id="loadindexmenu"> </div>
+                    </linavb>
+                    <linav class="dropdown"> <a href="Blog.html" onclick="location.href='Blog.html'" id="DefaultB"
+                            class="dropbtn"><b>Blog</b></a>
+                        <div id="loadblogmenu"> </div>
+                    </linav>
+                    <linav class="dropdown"> <a href="Projects.html" onclick="location.href='Projects.html'"
+                            id="Projects" class="dropbtn"><b color="white">Projects</b></a>
+                        <div id="loadprojectsmenu"> </div>
+                    </linav>
+                    <linav class="dropdown"> <a href="Contact.html" onclick="location.href='Contact.html'" id="DefaultC"
+                            class="dropbtn"><b>Contact</b></a>
+                        <div id="loadcontactmenu"> </div>
+                    </linav>
+                </ulnav>
+            </div>
+            <div id="ProjectsB" class="tabcontent" w>
+                <div class="articlebodyDesc">
+                    <p align="justify" class="article-content" id="BannerB"> <i>V.o.A. Detailed Page.</i></p>
+                </div>
+                <div class="articlebody">
+                    <a class="anchor" id="VoA" name="VoA"></a>
+                    <h2 class="article-titleL"> V.o.A. </h2>
+                    <br /><br />
+                    <p align="justify" class="article-content"><span>I wrote a game design document for V.o.A. and it is available upon request. I plan to disclose the paper soon.</span></p>
+                    <br />
+                    <footer class="article-info">
+                        <ul>
+                            <li><b>Status: </b> Undisclosed</li>
+                        </ul>
+                    </footer>
+                </div>
+                <p></p>
+            </div>
+        </div>
+        <div class="gridContainer clearfix">
+            <div id="div1" class="fluid"> </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+    <script>
+        $("#MainMenu").load("MainMenu.html");
+    </script>
+</body>
+<div class="gridContainer clearfix"></div>
+
+</html>
