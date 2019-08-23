@@ -1092,8 +1092,12 @@ a.anchor {
     visibility: hidden
 }
 
+.nobull {
+    list-style-type: none
+}
+
 #Default {
-    color: #fff;
+    color: #fff
 }
 
 #DefaultI {
