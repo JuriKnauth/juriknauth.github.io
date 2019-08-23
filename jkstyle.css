@@ -1193,7 +1193,7 @@ tr:nth-child(even) {
     color: #000;
     height: inherit;
     padding: 5px;
-    left: 10px
+    padding-left: 45px
 }
 
 .article-content-dropdown {
