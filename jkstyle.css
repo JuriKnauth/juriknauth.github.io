@@ -1,4 +1,5 @@
 ﻿@charset "utf-8";
+
 html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -11,8 +12,8 @@ html {
 }
 
 *,
- :after,
- :before {
+:after,
+:before {
     box-sizing: inherit
 }
 
@@ -687,11 +688,13 @@ p {
 }
 
 @media screen and (min-width:800px) {
+
     .column,
     .columns {
         display: -ms-flexbox;
         display: flex
     }
+
     .first-article .article-body {
         flex: 1
     }
@@ -701,6 +704,7 @@ p {
     .first-article {
         flex-direction: row
     }
+
     .first-article .article-body {
         flex: 1
     }
