@@ -1053,6 +1053,12 @@ img.hover-shadow {
     background-color: rgba(0, 0, 0, .8)
 }
 
+.close cursor a:visited, 
+.prev a:visited, 
+.next a:visited{
+    text-decoration: none
+}
+
 .numbertext {
     opacity: 0;
     font-size: 12px;
