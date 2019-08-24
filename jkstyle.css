@@ -1048,18 +1048,10 @@ img.hover-shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19)
 }
 
+.closeCursor,
 .next:hover,
 .prev:hover {
     background-color: #d1d1d1
-}
-
-.close cursor a:visited, 
-.prev a:visited, 
-.next a:visited{
-    color:#d1d1d1;
-    text-decoration: none;
-    cursor: pointer;
-    z-index: 610
 }
 
 .numbertext {
