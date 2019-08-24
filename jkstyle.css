@@ -1056,7 +1056,7 @@ img.hover-shadow {
 .close cursor a:visited, 
 .prev a:visited, 
 .next a:visited{
-    text-decoration: none
+    color:#000
 }
 
 .numbertext {
