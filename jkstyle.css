@@ -518,7 +518,8 @@ p {
     flex: 1;
     flex-direction: column;
     flex-basis: auto;
-    height: auto
+    height: auto;
+    margin: 5px 6px
 }
 
 .article {
