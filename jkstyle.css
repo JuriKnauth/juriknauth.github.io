@@ -690,6 +690,10 @@ p {
     flex: 2
 }
 
+.nested-column2 {
+    flex: 2 2 320px
+}
+
 .first-article {
     flex-direction: row
 }
