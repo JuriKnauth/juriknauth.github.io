@@ -441,6 +441,13 @@ linavb a:hover {
     padding: 0
 }
 
+.bottomMain {
+    max-width: 1040px;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    margin: 0 auto;
+    padding: 0
+}
+
 table {
     border-collapse: collapse;
     width: 100%
