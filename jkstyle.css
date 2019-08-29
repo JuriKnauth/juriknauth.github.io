@@ -430,7 +430,8 @@ linavb a:hover {
     max-width: 1040px;
     text-align: center;
     margin: 10px auto 0;
-    padding: 0
+    padding: 0;
+    bottom: 0px
 }
 
 .main {
