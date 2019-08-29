@@ -24,6 +24,18 @@
 	<link href="boilerplate.css" rel="stylesheet" type="text/css">
 	<title>Redirecting to Portfolio Juri Knauth</title>
 	<meta http-equiv="refresh" content="1; url=http://www.juriknauth.com/">
+	<script type="text/javascript" src="../jkscript.js"></script>
+    <script src="../respond.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#loadbotbar").load("BotBar.html");
+            $("#loadindexmenu").load("IndexMenu.html");
+            $("#loadblogmenu").load("BlogMenu.html");
+            $("#loadprojectsmenu").load("ProjectsMenu.html");
+            $("#loadcontactmenu").load("ContactMenu.html");
+        });
+	</script>
 </head>
 
 <body>

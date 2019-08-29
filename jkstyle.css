@@ -412,7 +412,8 @@ linavb a:hover {
     cursor: pointer;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     margin: 5px auto;
-    padding: 14px 16px
+    padding: 14px 16px;
+    bottom: 0px
 }
 
 .botbar {
@@ -429,7 +430,8 @@ linavb a:hover {
     max-width: 1040px;
     text-align: center;
     margin: 10px auto 0;
-    padding: 0
+    padding: 0;
+    bottom: 0px
 }
 
 .main {
