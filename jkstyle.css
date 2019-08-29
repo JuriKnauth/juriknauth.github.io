@@ -897,7 +897,8 @@ input:checked+.slider:before {
 }
 
 .containera {
-    position: relative;
+    top: 0px;
+    position:absolute;
     width: 100%
 }
 
