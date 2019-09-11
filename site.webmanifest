@@ -1,8 +1,8 @@
 {
-    "name": "juriknauth",
-    "short_name": "juriknauth",
-    "icons": [
-        {
+    "short_name": "JuriKnauth",
+    "name": "Juri Knauth's Portfolio",
+    "description": "Juri Knauth�s Portfolio. I am a Game Designer. This web page will showcase each project I worked on as well as link to my team-projects.",
+    "icons": [{
             "src": "/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
@@ -13,6 +13,10 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff"
+    "start_url": "http://www.juriknauth.com/",
+    "background_color": "#000000",
+    "lang": "en-US",
+    "display": "standalone",
+    "scope": "/maps/",
+    "theme_color": "#000000"
 }

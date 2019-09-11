@@ -3,14 +3,14 @@
     "name": "Juri Knauth's Portfolio",
     "description": "Juri Knauth�s Portfolio. I am a Game Designer. This web page will showcase each project I worked on as well as link to my team-projects.",
     "icons": [{
-            "src": "/Icons/jk/jk1_192.png",
-            "type": "image/png",
-            "sizes": "192x192"
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
         },
         {
-            "src": "/images/jk1_512.png",
-            "type": "image/png",
-            "sizes": "512x512"
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
         }
     ],
     "start_url": "http://www.juriknauth.com/",
