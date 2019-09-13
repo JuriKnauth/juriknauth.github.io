@@ -1256,7 +1256,6 @@ tr:nth-child(even) {
 
 .switch {
     display: inline-table;
-    padding: 0 10px 20px 0;
 }
 
 .switch h3 {
@@ -1276,7 +1275,7 @@ tr:nth-child(even) {
     border-radius: 60px;
     padding: 2px;
     width: 150px;
-    height: 50px;
+    height: 25px;
     overflow: hidden;
 }
 
@@ -1288,7 +1287,7 @@ tr:nth-child(even) {
     top: 1px;
     left: 1px;
     bottom: 1px;
-    padding: 15px;
+    padding: 2px;
     color: #FFF;
 }
 
@@ -1321,14 +1320,13 @@ tr:nth-child(even) {
 input.toggle-round-right-left+label {
     text-align: center;
     overflow: hidden;
-    height: 55px;
+    height: 25px;
     border-radius: 0;
 }
 
 input.toggle-round-right-left+label:before,
 input.toggle-round-right-left+label:after {
     width: 100%;
-    padding-top: 12%;
     color: #FFF;
     border-radius: 0;
     padding-left: 0;
