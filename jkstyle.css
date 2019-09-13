@@ -1255,7 +1255,7 @@ tr:nth-child(even) {
 }
 
 .switch {
-    display: block;
+    display: inline-table;
     padding: 0 10px 20px 0;
 }
 
@@ -1328,13 +1328,11 @@ input.toggle-round-right-left+label {
 input.toggle-round-right-left+label:before,
 input.toggle-round-right-left+label:after {
     width: 100%;
-    height: 58%;
     padding-top: 12%;
     color: #FFF;
     border-radius: 0;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 5px;
 }
 
 input.toggle-round-right-left+label:before {
