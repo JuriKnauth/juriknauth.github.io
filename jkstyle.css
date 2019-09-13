@@ -97,7 +97,8 @@ h6 {
     padding: 0
 }
 
-p {
+p,
+pre {
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     font-size: 17px;
     display: inline-block;
