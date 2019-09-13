@@ -1253,3 +1253,67 @@ tr:nth-child(even) {
 #BannerB {
     text-shadow: 2px 2px 3px rgba(178, 190, 195, .75)
 }
+
+.switch {
+    display: block;
+    padding: 0 10px 20px 0;
+}
+
+.switch h3 {
+    font-weight: normal;
+}
+
+.toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
+
+.toggle+label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    border-radius: 60px;
+    padding: 2px;
+    width: 150px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.toggle+label:before,
+.toggle+label:after {
+    display: block;
+    border-radius: 60px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    padding: 15px;
+    color: #FFF;
+}
+
+.toggle+label:before {
+    content: "On";
+    right: 1px;
+    background-color: #bfbfbf;
+    text-indent: -90px;
+}
+
+.toggle+label:after {
+    content: "Off";
+    text-indent: 90px;
+    width: 20px;
+    background-color: #fff;
+    margin: 1px;
+    box-shadow: 0 2px 5px rgba(000, 000, 000, 0.2)
+}
+
+.toggle:checked+label:before {
+    background-color: #0088cc;
+    text-indent: 0;
+}
+
+.toggle:checked+label:after {
+    margin-left: 101px;
+    box-shadow: none;
+}

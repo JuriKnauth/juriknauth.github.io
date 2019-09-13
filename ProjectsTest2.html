@@ -25,6 +25,9 @@
     <title>Portfolio Juri Knauth</title>
     <link rel="stylesheet" type="text/css" href="boilerplate.min.css">
     <script type="text/javascript" src="jkscript.min.js"></script>
+    <script src="respond.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script>
         $(function () {
             $("#loadbotbar").load("BotBar.html");
@@ -72,13 +75,30 @@
                     <h2 class="article-titleL" float="left"> Projects</h2>
                     <br />
                     <br />
+                    <div class="columns">
+                        <div class="nested-column">
+                            <div class="articlesimple">
+                                <p>
+                                    <div class="switch">
+                                        <input id="toggle-4" class="toggle toggle-round-right-left" type="checkbox">
+                                        <label for="toggle-4"></label>
+                                    </div>
+                                    <div class="switch">
+                                        <input id="toggle-4" class="toggle toggle-round-right-left" type="checkbox">
+                                        <label for="toggle-4"></label>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="columns" style="flex-wrap: wrap;">
                         <div class="nested-column2">
                             <a class="anchor" id="PirateSplashy" name="PirateSplashy"></a>
                             <a class="article" href="../Projects/PirateSplashy.html">
                                 <picture class="img-fluid" width="640" height="480">
                                     <source srcset="../Images/prePirateSplasyScreenShotBalanced.webp" type="image/webp">
-                                    <img src="../Images/prePirateSplasyScreenShotBalanced.jpg" alt="Pirate Splashy">
+                                    <img class="img-fluid" src="../Images/prePirateSplasyScreenShotBalanced.jpg"
+                                        alt="Pirate Splashy">
                                 </picture>
                                 <div class="article-body">
                                     <p class="article-content"> <b>Pirate Splashy</b> </p>
@@ -94,7 +114,7 @@
                             <a class="article" href="../Projects/NinjaCar.html">
                                 <picture class="img-fluid" width="640" height="480">
                                     <source srcset="../Images/preWIPSD.webp" type="image/webp">
-                                    <img src="../Images/preWIPSD.jpg" alt="WIP">
+                                    <img class="img-fluid" src="../Images/preWIPSD.jpg" alt="WIP">
                                 </picture>
                                 <div class="article-body">
                                     <p class="article-content"> <b>Ninja Car </b> </p>
@@ -110,7 +130,8 @@
                             <a class="article" href="../Projects/ChloeAndBrendan2018.html">
                                 <picture class="img-fluid" width="640" height="480">
                                     <source srcset="../Images/ChloeAndBrendan_IG_Bench_640.webp" type="image/webp">
-                                    <img src="../Images/ChloeAndBrendan_IG_Bench_640.jpg" alt="Chloe And Brendan 2018">
+                                    <img class="img-fluid" src="../Images/ChloeAndBrendan_IG_Bench_640.jpg"
+                                        alt="Chloe And Brendan 2018">
                                 </picture>
                                 <div class="article-body">
                                     <p class="article-content"> <b>Chloe And Brendan 2018</b> </p>
@@ -126,7 +147,7 @@
                             <a class="article" href="../Projects/BT.html">
                                 <picture class="img-fluid" width="640" height="480">
                                     <source srcset="../Images/PreBT.webp" type="image/webp">
-                                    <img src="../Images/PreBT.png" alt="BT">
+                                    <img class="img-fluid" src="../Images/PreBT.png" alt="BT">
                                 </picture>
                                 <div class="article-body">
                                     <p class="article-content"> <b>Bachelor thesis: MDAPPRC</b> </p>
@@ -142,7 +163,8 @@
                             <a class="article" href="../Projects/Endstation.html">
                                 <picture class="img-fluid" width="640" height="480">
                                     <source srcset="../Images/preEndstationCoverSD.webp" type="image/webp">
-                                    <img src="../Images/preFluffyDiceDMenu.jpg" alt="preFluffyDiceDMenu">
+                                    <img class="img-fluid" src="../Images/preFluffyDiceDMenu.jpg"
+                                        alt="preFluffyDiceDMenu">
                                 </picture>
                                 <div class="article-body">
                                     <p class="article-content"> <b>Endstation</b> </p>
@@ -158,7 +180,8 @@
                             <a class="article" href="../Projects/BreadAndGames.html">
                                 <picture class="img-fluid" width="640" height="480">
                                     <source srcset="../Images/preBreadAndGamesCover2.webp" type="image/webp">
-                                    <img src="../Images/preBreadAndGamesCover2.jpg" alt="Bread And Games">
+                                    <img class="img-fluid" src="../Images/preBreadAndGamesCover2.jpg"
+                                        alt="Bread And Games">
                                 </picture>
                                 <div class="article-body">
                                     <p class="article-content"> <b>Bread And Games</b> </p>
@@ -174,7 +197,8 @@
                             <a class="article" href="../Projects/FluffyDice.html">
                                 <picture class="img-fluid" width="640" height="480">
                                     <source srcset="../Images/preFluffyDiceDMenu.webp" type="image/webp">
-                                    <img src="../Images/preFluffyDiceDMenu.jpg" alt="preFluffyDiceDMenu">
+                                    <img class="img-fluid" src="../Images/preFluffyDiceDMenu.jpg"
+                                        alt="preFluffyDiceDMenu">
                                 </picture>
                                 <div class="article-body">
                                     <p class="article-content"> <b>Fluffy Dice</b> </p>
@@ -190,7 +214,7 @@
                             <a class="article" href="../Projects/CrashedCaptain.html">
                                 <picture class="img-fluid" width="640" height="480">
                                     <source srcset="../Images/preCrashedCaptainCockpitIntro.webp" type="image/webp">
-                                    <img src="../Images/preCrashedCaptainCockpitIntro.jpg"
+                                    <img class="img-fluid" src="../Images/preCrashedCaptainCockpitIntro.jpg"
                                         alt="Crashed Captain Intro/Menu/Ingame">
                                 </picture>
                                 <div class="article-body">
@@ -207,7 +231,7 @@
                             <a class="article" href="../Projects/VoA.html">
                                 <picture class="img-fluid" width="640" height="480">
                                     <source srcset="../Images/preLockSDA.webp" type="image/webp">
-                                    <img src="../Images/preLockSDA.jpg" alt="Crashed Captain Ingame">
+                                    <img class="img-fluid" src="../Images/preLockSDA.jpg" alt="Crashed Captain Ingame">
                                 </picture>
                                 <div class="article-body">
                                     <p class="article-content"> <b>VoA</b> </p>
@@ -219,27 +243,12 @@
                             </a>
                         </div>
                         <div class="nested-column2">
-                            <a class="anchor" id="HeulDoch" name="HeulDoch"></a>
-                            <a class="article" href="../Projects/HeulDoch.html">
-                                <picture class="img-fluid" width="640" height="480">
-                                    <source srcset="../Images/preHeulDochInGame.webp" type="image/webp">
-                                    <img src="../Images/preHeulDochInGame.jpg" alt="Heul Doch! Ingame">
-                                </picture>
-                                <div class="article-body">
-                                    <p class="article-content"> <b>Heul Doch!</b> </p>
-                                    <br />
-                                    <p align="justify" class="article-content2">
-                                        2015/02 - 2015/06<br />
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="nested-column2">
                             <a class="anchor" id="AdamMania" name="AdamMania"></a>
                             <a class="article" href="../Projects/AdamMania.html">
                                 <picture class="img-fluid" width="640" height="480">
                                     <source srcset="../Images/preAdamMania_ShowCase.webp" type="image/webp">
-                                    <img src="../Images/preAdamMania_ShowCase.jpg" alt="Adam Mania Playing Cards">
+                                    <img class="img-fluid" src="../Images/preAdamMania_ShowCase.jpg"
+                                        alt="Adam Mania Playing Cards">
                                 </picture>
                                 <div class="article-body">
                                     <p class="article-content"> <b>Adam Mania!</b> </p>
@@ -255,7 +264,8 @@
                             <a class="article" href="../Projects/ShadowOfWar.html">
                                 <picture class="img-fluid" width="640" height="480">
                                     <source srcset="../Images/preShadowOfWar.webp" type="image/webp">
-                                    <img src="../Images/preShadowOfWar.jpg" alt="Shadow Of War Banner">
+                                    <img class="img-fluid" src="../Images/preShadowOfWar.jpg"
+                                        alt="Shadow Of War Banner">
                                 </picture>
                                 <div class="article-body">
                                     <div class="article-body">
@@ -274,7 +284,7 @@
                                 <picture class="img-fluid" width="640" height="480">
                                     <source srcset="../Images/preProSeminarArbeitAmericasArmy-1A.webp"
                                         type="image/webp">
-                                    <img src="../Images/preProSeminarArbeitAmericasArmy-1A.jpg"
+                                    <img class="img-fluid" src="../Images/preProSeminarArbeitAmericasArmy-1A.jpg"
                                         alt="ProSeminar Arbeit Americas Army - Research Paper">
                                 </picture>
                                 <div class="article-body">
@@ -286,18 +296,41 @@
                                 </div>
                             </a>
                         </div>
+                        <div class="nested-column2">
+                            <a class="anchor" id="HeulDoch" name="HeulDoch"></a>
+                            <a class="article" href="../Projects/HeulDoch.html">
+                                <picture class="img-fluid" width="640" height="480">
+                                    <source srcset="../Images/preHeulDochInGame.webp" type="image/webp">
+                                    <img class="img-fluid" src="../Images/preHeulDochInGame.jpg"
+                                        alt="Heul Doch! Ingame">
+                                </picture>
+                                <div class="article-body">
+                                    <p class="article-content"> <b>Heul Doch!</b> </p>
+                                    <br />
+                                    <p align="justify" class="article-content2">
+                                        2015/02 - 2015/06<br />
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column2">
+                        </div>
+                        <div class="nested-column2">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="gridContainer clearfix">
-                <div id="div1" class="fluid"> </div>
-            </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <div id="loadbotbar" class="bottomMain"> </div>
         </div>
+        <div class="gridContainer clearfix">
+            <div id="div1" class="fluid"> </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div id="loadbotbar" class="bottomMain"> </div>
+    </div>
 </body>
 
 </html>
+<
