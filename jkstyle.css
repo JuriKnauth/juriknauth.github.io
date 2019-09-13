@@ -1334,13 +1334,11 @@ input.toggle-round-right-left+label:after {
 }
 
 input.toggle-round-right-left+label:before {
-    content: "Um..";
     background-color: #bfbfbf;
     text-indent: inherit;
 }
 
 input.toggle-round-right-left+label:after {
-    content: "Yup!";
     background-color: #0088cc;
     top: 0;
     left: -101%;
