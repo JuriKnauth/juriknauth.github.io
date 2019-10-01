@@ -1355,3 +1355,50 @@ input.toggle-round-right-left:checked+label:after {
     margin-left: 0;
     left: 0;
 }
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Green {
+    color: #00b894;
+}
+
+#Red {
+    color: #d63031;
+}
+
+#Yellow {
+    color: #fdcb6e;
+}
+
+#Blue {
+    color: #0984e3;
+}
