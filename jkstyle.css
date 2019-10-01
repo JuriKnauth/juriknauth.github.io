@@ -1403,6 +1403,10 @@ input.toggle-round-right-left:checked+label:after {
     color: #fdcb6e;
 }
 
+#Purple {
+    color: #6c5ce7;
+}
+
 #Blue {
     color: #0984e3;
 }
