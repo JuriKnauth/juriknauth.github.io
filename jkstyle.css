@@ -1356,28 +1356,32 @@ input.toggle-round-right-left:checked+label:after {
     left: 0;
 }
 
+.icon-container{
+    position: relative;
+}
+
 .bottom-left {
     position: absolute;
-    bottom: 8px;
-    left: 16px;
+    padding: 5px;
+    left: 0px;
 }
 
 .top-left {
     position: absolute;
-    top: 8px;
-    left: 16px;
+    padding: 5px;
+    left: 0px;
 }
 
 .top-right {
     position: absolute;
-    top: 8px;
-    right: 16px;
+    padding: 5px;
+    right: 0px;
 }
 
 .bottom-right {
     position: absolute;
-    bottom: 8px;
-    right: 16px;
+    padding: 5px;
+    right: 0px;
 }
 
 .centered {
