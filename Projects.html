@@ -39,10 +39,12 @@
 
         function toggleDiv(attribute) {
             var x = document.getElementById(attribute);
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
+            if (x !== null) {
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
             }
         }
     </script>
@@ -56,11 +58,11 @@
         }
 
         #toggle-2+label:before {
-            content: "Date";
+            content: "Rating";
         }
 
         #toggle-2+label:after {
-            content: "Date";
+            content: "Rating";
         }
 
         #toggle-3+label:before {
@@ -126,6 +128,22 @@
         #toggle-10+label:after {
             content: "Position";
         }
+
+        #toggle-11+label:before {
+            content: "Date";
+        }
+
+        #toggle-11+label:after {
+            content: "Date";
+        }
+
+        #toggle-12+label:before {
+            content: "Updated";
+        }
+
+        #toggle-12+label:after {
+            content: "Updated";
+        }
     </style>
 </head>
 
@@ -173,11 +191,12 @@
                                 <p>
                                     <div class="switch" value="true">
                                         <input id="toggle-1" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-1" onclick="toggleDiv('Title')" onload="toggleDiv('Title')"></label>
+                                        <label for="toggle-1" onclick="toggleDiv('Title')"
+                                            onload="toggleDiv('Title')"></label>
                                     </div>
                                     <div class="switch">
                                         <input id="toggle-2" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-2" onclick="toggleDiv('Date')"></label>
+                                        <label for="toggle-2" onclick="toggleDiv('Rating')"></label>
                                     </div>
                                     <div class="switch">
                                         <input id="toggle-3" class="toggle toggle-round-right-left" type="checkbox">
@@ -210,6 +229,14 @@
                                     <div class="switch">
                                         <input id="toggle-10" class="toggle toggle-round-right-left" type="checkbox">
                                         <label for="toggle-10" onclick="toggleDiv('Position')"></label>
+                                    </div>
+                                    <div class="switch">
+                                        <input id="toggle-11" class="toggle toggle-round-right-left" type="checkbox">
+                                        <label for="toggle-11" onclick="toggleDiv('Date')"></label>
+                                    </div>
+                                    <div class="switch">
+                                        <input id="toggle-12" class="toggle toggle-round-right-left" type="checkbox">
+                                        <label for="toggle-12" onclick="toggleDiv('Updated')"></label>
                                     </div>
                                 </p>
                             </div>
@@ -425,18 +452,19 @@
                                 </div>
                                 <div class="article-body">
                                     <p class="article-content" id="Title"> <b>Adam Mania!</b> </p>
-                                        <footer class="article-info" style="padding:0px 0px">
-                                            <ul style="margin-block-start:0em; margin-block-end:0em; list-style-type:none;">
-                                                <li id="Genre" style="display: none"><b>Genre: </b> Dungen Crawler </li>
-                                                <li id="Players" style="display: none"><b>Player Count: </b> 2-4 </li>
-                                                <li id="Age" style="display: none"><b>Age rating: </b> 12</li>
-                                                <li id="Platform" style="display: none"><b>Platform: </b> Board Game </li>
-                                                <li id="Status" style="display: none"><b>Status: </b> Prototype </li>
-                                                <li id="TeamSize" style="display: none"><b>Team size: </b> 4</li>
-                                                <li id="Position" style="display: none"><b>Position: </b> Game Designer, Artist </li>
-                                                <li id="Date" style="display: none"><b>Date: </b> 2015/12 </li>
-                                            </ul>
-                                        </footer>
+                                    <footer class="article-info" style="padding:0px 0px">
+                                        <ul style="margin-block-start:0em; margin-block-end:0em; list-style-type:none;">
+                                            <li id="Genre" style="display: none"><b>Genre: </b> Dungen Crawler </li>
+                                            <li id="Players" style="display: none"><b>Player Count: </b> 2-4 </li>
+                                            <li id="Age" style="display: none"><b>Age rating: </b> 12</li>
+                                            <li id="Platform" style="display: none"><b>Platform: </b> Board Game </li>
+                                            <li id="Status" style="display: none"><b>Status: </b> Prototype </li>
+                                            <li id="TeamSize" style="display: none"><b>Team size: </b> 4</li>
+                                            <li id="Position" style="display: none"><b>Position: </b> Game Designer,
+                                                Artist </li>
+                                            <li id="Date" style="display: none"><b>Date: </b> 2015/12 </li>
+                                        </ul>
+                                    </footer>
                                     <p><br /></p>
                                 </div>
                             </a>
@@ -453,13 +481,18 @@
                                     <div id="Blue" class="top-right">■</div>
                                 </div>
                                 <div class="article-body">
-                                    <div class="article-body">
-                                        <p class="article-content"> <b>Shadow of War</b> </p>
-                                        <br />
-                                        <p class="article-content2">
-                                            2013/01 - Present<br />
-                                        </p>
-                                    </div>
+                                    <p class="article-content" id="Title"> <b>Shadow of War</b> </p>
+                                    <footer class="article-info" style="padding:0px 0px">
+                                        <ul style="margin-block-start:0em; margin-block-end:0em; list-style-type:none;">
+                                            <li id="Platform" style="display: none"><b>Platform: </b> PC </li>
+                                            <li id="Input" style="display: none"><b>Input: </b> Keyboard & Mouse </li>
+                                            <li id="Status" style="display: none"><b>Status: </b> Undisclosed </li>
+                                            <li id="TeamSize" style="display: none"><b>Team size: </b> 4</li>
+                                            <li id="Position" style="display: none"><b>Position: </b> Solopreneure </li>
+                                            <li id="Date" style="display: none"><b>Date: </b> 2013/03 </li>
+                                        </ul>
+                                    </footer>
+                                    <p><br /></p>
                                 </div>
                             </a>
                         </div>
@@ -476,11 +509,16 @@
                                     <div id="Green" class="top-right">⯈</div>
                                 </div>
                                 <div class="article-body">
-                                    <p class="article-content"> <b>Game or recruitment tool?</b> </p>
-                                    <br />
-                                    <p class="article-content2">
-                                        2015/11 - 2015/12<br />
-                                    </p>
+                                    <p class="article-content" id="Title"> <b>Game or recruitment tool?</b> </p>
+                                    <footer class="article-info" style="padding:0px 0px">
+                                        <ul style="margin-block-start:0em; margin-block-end:0em; list-style-type:none;">
+                                            <li id="Status" style="display: none"><b>Status: </b> Certified </li>
+                                            <li id="TeamSize" style="display: none"><b>Team size: </b> 1 </li>
+                                            <li id="Position" style="display: none"><b>Position: </b> Researcher </li>
+                                            <li id="Date" style="display: none"><b>Date: </b> 2015/01 </li>
+                                        </ul>
+                                    </footer>
+                                    <p><br /></p>
                                 </div>
                             </a>
                         </div>
