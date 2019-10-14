@@ -173,43 +173,43 @@
                                 <p>
                                     <div class="switch">
                                         <input id="toggle-1" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-1" data-name="Title" onclick="toggleDiv('Title')"></label>
+                                        <label for="toggle-1" onclick="toggleDiv('Title')"></label>
                                     </div>
                                     <div class="switch">
                                         <input id="toggle-2" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-2" data-name="Date" onclick="toggleDiv('Date')" onload="toggleDiv()"></label>
+                                        <label for="toggle-2" onclick="toggleDiv('Date')"></label>
                                     </div>
                                     <div class="switch">
                                         <input id="toggle-3" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-3" data-name="Genre" onclick="toggleDiv()" onload="toggleDiv()"></label>
+                                        <label for="toggle-3" onclick="toggleDiv('Genre')"></label>
                                     </div>
-                                    <div class="switch" data-name="Players" onclick="toggleDiv('Players')" onload="toggleDiv()">
+                                    <div class="switch">
                                         <input id="toggle-4" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-4"></label>
+                                        <label for="toggle-4" onclick="toggleDiv('Players')"></label>
                                     </div>
-                                    <div class="switch" data-name="Age" onclick="toggleDiv()" onload="toggleDiv()">
+                                    <div class="switch" onclick="toggleDiv()">
                                         <input id="toggle-5" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-5"></label>
+                                        <label for="toggle-5" onclick="toggleDiv('Age')"></label>
                                     </div>
-                                    <div class="switch" data-name="Platform" onclick="toggleDiv()" onload="toggleDiv()">
+                                    <div class="switch" onclick="toggleDiv()">
                                         <input id="toggle-6" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-6"></label>
+                                        <label for="toggle-6" onclick="toggleDiv('Platform')"></label>
                                     </div>
-                                    <div class="switch" data-name="Input" onclick="toggleDiv()" onload="toggleDiv()">
+                                    <div class="switch" onclick="toggleDiv()">
                                         <input id="toggle-7" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-7"></label>
+                                        <label for="toggle-7" onclick="toggleDiv('Input')"></label>
                                     </div>
-                                    <div class="switch" data-name="Status" onclick="toggleDiv()" onload="toggleDiv()">
+                                    <div class="switch" onclick="toggleDiv()">
                                         <input id="toggle-8" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-8"></label>
+                                        <label for="toggle-8" onclick="toggleDiv('Status')"></label>
                                     </div>
-                                    <div class="switch" data-name="TeamSize" onclick="toggleDiv()" onload="toggleDiv()">
+                                    <div class="switch" onclick="toggleDiv()">
                                         <input id="toggle-9" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-9"></label>
+                                        <label for="toggle-9" onclick="toggleDiv('TeamSize')"></label>
                                     </div>
-                                    <div class="switch" data-name="Position" onclick="toggleDiv()" onload="toggleDiv()">
+                                    <div class="switch" onclick="toggleDiv()">
                                         <input id="toggle-10" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-10"></label>
+                                        <label for="toggle-10" onclick="toggleDiv('Position')"></label>
                                     </div>
                                 </p>
                             </div>
@@ -424,11 +424,10 @@
                                     <div id="Green" class="top-right">⯈</div>
                                 </div>
                                 <div class="article-body">
-                                    <p class="article-content"> <b>Adam Mania!</b> </p>
-                                    <br />
+                                    <p class="article-content" id="Title"> <b>Adam Mania!</b> </p>
                                     <p class="article-content2">
                                         <footer class="article-info" style="padding:0px 0px">
-                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em; list-style-type:none;">
                                                 <li id="Genre"><b>Genre: </b> Dungen Crawler </li>
                                                 <li id="Player"><b>Player Count: </b> 2-4 </li>
                                                 <li id="Age"><b>Age rating: </b> 12</li>
@@ -439,7 +438,6 @@
                                                 <li id="Date"><b>Date: </b> 2015/12 </li>
                                             </ul>
                                         </footer>
-                                        2015/12/17 - 2016/01/07<br />
                                     </p>
                                 </div>
                             </a>
