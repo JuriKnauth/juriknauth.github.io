@@ -173,7 +173,7 @@
                                 <p>
                                     <div class="switch">
                                         <input id="toggle-1" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-1" onclick="toggleDiv('Title')"></label>
+                                        <label for="toggle-1" onclick="toggleDiv('Title')" onload="toggleDiv('Title')"></label>
                                     </div>
                                     <div class="switch">
                                         <input id="toggle-2" class="toggle toggle-round-right-left" type="checkbox">
@@ -187,27 +187,27 @@
                                         <input id="toggle-4" class="toggle toggle-round-right-left" type="checkbox">
                                         <label for="toggle-4" onclick="toggleDiv('Players')"></label>
                                     </div>
-                                    <div class="switch" onclick="toggleDiv()">
+                                    <div class="switch">
                                         <input id="toggle-5" class="toggle toggle-round-right-left" type="checkbox">
                                         <label for="toggle-5" onclick="toggleDiv('Age')"></label>
                                     </div>
-                                    <div class="switch" onclick="toggleDiv()">
+                                    <div class="switch">
                                         <input id="toggle-6" class="toggle toggle-round-right-left" type="checkbox">
                                         <label for="toggle-6" onclick="toggleDiv('Platform')"></label>
                                     </div>
-                                    <div class="switch" onclick="toggleDiv()">
+                                    <div class="switch">
                                         <input id="toggle-7" class="toggle toggle-round-right-left" type="checkbox">
                                         <label for="toggle-7" onclick="toggleDiv('Input')"></label>
                                     </div>
-                                    <div class="switch" onclick="toggleDiv()">
+                                    <div class="switch">
                                         <input id="toggle-8" class="toggle toggle-round-right-left" type="checkbox">
                                         <label for="toggle-8" onclick="toggleDiv('Status')"></label>
                                     </div>
-                                    <div class="switch" onclick="toggleDiv()">
+                                    <div class="switch">
                                         <input id="toggle-9" class="toggle toggle-round-right-left" type="checkbox">
                                         <label for="toggle-9" onclick="toggleDiv('TeamSize')"></label>
                                     </div>
-                                    <div class="switch" onclick="toggleDiv()">
+                                    <div class="switch">
                                         <input id="toggle-10" class="toggle toggle-round-right-left" type="checkbox">
                                         <label for="toggle-10" onclick="toggleDiv('Position')"></label>
                                     </div>
@@ -425,20 +425,18 @@
                                 </div>
                                 <div class="article-body">
                                     <p class="article-content" id="Title"> <b>Adam Mania!</b> </p>
-                                    <p class="article-content2">
                                         <footer class="article-info" style="padding:0px 0px">
                                             <ul style="margin-block-start:0em; margin-block-end:0em; list-style-type:none;">
-                                                <li id="Genre"><b>Genre: </b> Dungen Crawler </li>
-                                                <li id="Player"><b>Player Count: </b> 2-4 </li>
-                                                <li id="Age"><b>Age rating: </b> 12</li>
-                                                <li id="Platform"><b>Platform: </b> Board Game </li>
-                                                <li id="Status"><b>Status: </b> Prototype </li>
-                                                <li id="TeamSize"><b>Team size: </b> 4</li>
-                                                <li id="Position"><b>Position: </b> Game Designer, Artist </li>
-                                                <li id="Date"><b>Date: </b> 2015/12 </li>
+                                                <li id="Genre" style="display: none"><b>Genre: </b> Dungen Crawler </li>
+                                                <li id="Players" style="display: none"><b>Player Count: </b> 2-4 </li>
+                                                <li id="Age" style="display: none"><b>Age rating: </b> 12</li>
+                                                <li id="Platform" style="display: none"><b>Platform: </b> Board Game </li>
+                                                <li id="Status" style="display: none"><b>Status: </b> Prototype </li>
+                                                <li id="TeamSize" style="display: none"><b>Team size: </b> 4</li>
+                                                <li id="Position" style="display: none"><b>Position: </b> Game Designer, Artist </li>
+                                                <li id="Date" style="display: none"><b>Date: </b> 2015/12 </li>
                                             </ul>
                                         </footer>
-                                    </p>
                                 </div>
                             </a>
                         </div>
