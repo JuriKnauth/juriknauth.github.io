@@ -38,7 +38,8 @@
         });
 
         function toggleDiv() {
-            var x = this.getAttribute("data-name");
+            var y = this.getAttribute("data-name");
+            var x = document.getElementById(y);
             if (x.style.display === "none") {
                 x.style.display = "block";
             } else {
