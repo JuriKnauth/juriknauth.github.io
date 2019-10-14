@@ -1294,7 +1294,7 @@ tr:nth-child(even) {
 .toggle+label:before {
     content: "On";
     right: 1px;
-    background-color: #bfbfbf;
+    background-color: #2d3436;
     text-indent: -90px;
 }
 
@@ -1308,7 +1308,7 @@ tr:nth-child(even) {
 }
 
 .toggle:checked+label:before {
-    background-color: #0088cc;
+    background-color: #0984e3;
     text-indent: 0;
 }
 
@@ -1327,19 +1327,19 @@ input.toggle-round-right-left+label {
 input.toggle-round-right-left+label:before,
 input.toggle-round-right-left+label:after {
     width: 100%;
-    color: #FFF;
+    color: #fff;
     border-radius: 0;
     padding-left: 0;
     padding-right: 0;
 }
 
 input.toggle-round-right-left+label:before {
-    background-color: #bfbfbf;
+    background-color: #2d3436;
     text-indent: inherit;
 }
 
 input.toggle-round-right-left+label:after {
-    background-color: #0088cc;
+    background-color: #0984e3;
     top: 0;
     left: -101%;
     box-shadow: none;
@@ -1348,7 +1348,7 @@ input.toggle-round-right-left+label:after {
 
 input.toggle-round-right-left:checked+label:before {
     left: 83%;
-    background-color: #e7e7e7;
+    background-color: #b2bec3;
 }
 
 input.toggle-round-right-left:checked+label:after {
