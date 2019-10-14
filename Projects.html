@@ -36,6 +36,15 @@
             $("#loadprojectsmenu").load("ProjectsMenu.html");
             $("#loadcontactmenu").load("ContactMenu.html");
         });
+
+        function toggleDiv() {
+            var x = this.getAttribute("data-name");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
     </script>
     <style>
         #toggle-1+label:before {
@@ -93,7 +102,7 @@
         #toggle-7+label:after {
             content: "Input";
         }
-        
+
         #toggle-8+label:before {
             content: "Status";
         }
@@ -162,43 +171,43 @@
                         <div class="nested-column">
                             <div class="articlesimple" style="display: block; margin:10px;">
                                 <p>
-                                    <div class="switch">
+                                    <div class="switch" data-name="Title" onclick="toggleDiv()">
                                         <input id="toggle-1" class="toggle toggle-round-right-left" type="checkbox">
                                         <label for="toggle-1"></label>
                                     </div>
-                                    <div class="switch">
+                                    <div class="switch" data-name="Date" onclick="toggleDiv()" onload="toggleDiv()">
                                         <input id="toggle-2" class="toggle toggle-round-right-left" type="checkbox">
                                         <label for="toggle-2"></label>
                                     </div>
-                                    <div class="switch">
+                                    <div class="switch" data-name="Genre" onclick="toggleDiv()" onload="toggleDiv()">
                                         <input id="toggle-3" class="toggle toggle-round-right-left" type="checkbox">
                                         <label for="toggle-3"></label>
                                     </div>
-                                    <div class="switch">
+                                    <div class="switch" data-name="Players" onclick="toggleDiv()" onload="toggleDiv()">
                                         <input id="toggle-4" class="toggle toggle-round-right-left" type="checkbox">
                                         <label for="toggle-4"></label>
                                     </div>
-                                    <div class="switch">
+                                    <div class="switch" data-name="Age" onclick="toggleDiv()" onload="toggleDiv()">
                                         <input id="toggle-5" class="toggle toggle-round-right-left" type="checkbox">
                                         <label for="toggle-5"></label>
                                     </div>
-                                    <div class="switch">
+                                    <div class="switch" data-name="Platform" onclick="toggleDiv()" onload="toggleDiv()">
                                         <input id="toggle-6" class="toggle toggle-round-right-left" type="checkbox">
                                         <label for="toggle-6"></label>
                                     </div>
-                                    <div class="switch">
+                                    <div class="switch" data-name="Input" onclick="toggleDiv()" onload="toggleDiv()">
                                         <input id="toggle-7" class="toggle toggle-round-right-left" type="checkbox">
                                         <label for="toggle-7"></label>
                                     </div>
-                                    <div class="switch">
+                                    <div class="switch" data-name="Status" onclick="toggleDiv()" onload="toggleDiv()">
                                         <input id="toggle-8" class="toggle toggle-round-right-left" type="checkbox">
                                         <label for="toggle-8"></label>
                                     </div>
-                                    <div class="switch">
+                                    <div class="switch" data-name="TeamSize" onclick="toggleDiv()" onload="toggleDiv()">
                                         <input id="toggle-9" class="toggle toggle-round-right-left" type="checkbox">
                                         <label for="toggle-9"></label>
                                     </div>
-                                    <div class="switch">
+                                    <div class="switch" data-name="Position" onclick="toggleDiv()" onload="toggleDiv()">
                                         <input id="toggle-10" class="toggle toggle-round-right-left" type="checkbox">
                                         <label for="toggle-10"></label>
                                     </div>
@@ -418,6 +427,18 @@
                                     <p class="article-content"> <b>Adam Mania!</b> </p>
                                     <br />
                                     <p class="article-content2">
+                                        <footer class="article-info" style="padding:0px 0px">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                                <li id="Genre"><b>Genre: </b> Dungen Crawler </li>
+                                                <li id="Player"><b>Player Count: </b> 2-4 </li>
+                                                <li id="Age"><b>Age rating: </b> 12</li>
+                                                <li id="Platform"><b>Platform: </b> Board Game </li>
+                                                <li id="Status"><b>Status: </b> Prototype </li>
+                                                <li id="TeamSize"><b>Team size: </b> 4</li>
+                                                <li id="Position"><b>Position: </b> Game Designer, Artist </li>
+                                                <li id="Date"><b>Date: </b> 2015/12 </li>
+                                            </ul>
+                                        </footer>
                                         2015/12/17 - 2016/01/07<br />
                                     </p>
                                 </div>
