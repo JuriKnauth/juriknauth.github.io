@@ -39,17 +39,16 @@
 
         function toggleDiv(attribute) {
             var elements = document.getElementsByClassName("infoClass");
-            var allElements = document.getElementById(attribute);
-            for (i = 0; i < allElements.length; i++) {
-                if (allElements[i].id == attribute) {
-                    if (allElements[i].style.display === "none") {
-                        allElements[i].style.display = "block";
+            for (i = 0; i < elements.length; i++) {
+                if (elements[i].id === attribute) {
+                    if (elements[i].style.display === "none") {
+                        elements[i].style.display = "block";
                     } else {
-                        allElements[i].style.display = "none";
+                        elements[i].style.display = "none";
                     }
                 }
             }
-        }
+        };
     </script>
     <style>
         #toggle-1+label:before {
