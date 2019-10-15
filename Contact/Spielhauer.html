@@ -4,10 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=0.85" name="viewport">
-	<meta name="description"
-		content="Juri Knauth’s Portfolio. I am a Game Designer. This web page will showcase each project I worked on as well as link to my team-projects. Spielhauer Page.">
-	<meta name="keywords"
-		content="JK,Juri,Knauth,Game,Design,Portfolio,Showcase,Blog,Projects,Contact,Video,Board,Maps,3D,2D,Art,Concepts,Escape,Room,Mods,Pirate,Splashy,Fluffy,Dice,Crashed,Captain,Endstation,Companies,PIG,Spielhauer">
+	<meta name="description" content="Juri Knauth’s Portfolio. I am a Game Designer. This web page will showcase each project I worked on as well as link to my team-projects. Spielhauer Page.">
+	<meta name="keywords" content="JK,Juri,Knauth,Game,Design,Portfolio,Showcase,Blog,Projects,Contact,Video,Board,Maps,3D,2D,Art,Concepts,Escape,Room,Mods,Pirate,Splashy,Fluffy,Dice,Crashed,Captain,Endstation,Companies,PIG,Spielhauer">
 	<meta name="author" content="Juri Knauth">
 	<meta name="google-site-verification" content="rQabFeH1rub_olMtfbNRyzRKYo9M7YI4i3Qw7BW-Aj0">
 	<base href="http://www.juriknauth.com/">
@@ -19,10 +17,9 @@
 	<link href="../boilerplate.min.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="../jkscript.min.js"></script>
 	<script src="../respond.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script>
-		$(function () {
+		$(function() {
 			$("#loadbotbar").load("BotBar.html");
 			$("#loadindexmenu").load("IndexMenu.html");
 			$("#loadblogmenu").load("BlogMenu.html");
@@ -33,143 +30,128 @@
 </head>
 
 <body>
-	<div class="backgroundImage">
-		<div class="container">
-			<div class="main">
-				<div id="mainmenu">
-					<ulnav>
-						<linavb class="dropdown">
-							<a href="/" id="DefaultI" class="dropbtnimg">
-								<picture class="logo" id="logo" width="52" height="52" alt="jklogo"
-									style="text-align:left;">
-									<source srcset="jkiconcropD.webp" type="image/webp">
-									<img src="jkiconcropD.png" alt="logo" id="logo" width="52" height="52"
-										style="text-align:left;">
+	<div class="container">
+		<div class="main">
+			<div id="mainmenu">
+				<ulnav>
+					<linavb class="dropdown">
+						<a href="/" id="DefaultI" class="dropbtnimg">
+							<picture class="logo" id="logo" width="52" height="52" alt="jklogo" style="text-align:left;">
+								<source srcset="jkiconcropD.webp" type="image/webp">
+								<img src="jkiconcropD.png" alt="logo" id="logo" width="52" height="52" style="text-align:left;">
+							</picture>
+						</a>
+						<div id="loadindexmenu"> </div>
+					</linavb>
+					<linav class="dropdown"> <a href="Blog.html" id="DefaultB" class="dropbtn"><b>Blog</b></a>
+						<div id="loadblogmenu"> </div>
+					</linav>
+					<linav class="dropdown"> <a href="Projects.html" id="DefaultP" class="dropbtn"><b>Projects</b></a>
+						<div id="loadprojectsmenu"> </div>
+					</linav>
+					<linav class="dropdown"> <a href="Contact.html" id="Contact" class="dropbtn"><b>Contact</b></a>
+						<div id="loadcontactmenu"> </div>
+					</linav>
+				</ulnav>
+			</div>
+			<div id="ContactB" class="tabcontent">
+				<div class="articlebodyDesc">
+					<p style="text-align:justify;" class="article-content"> <i>Spielhauer Detailed Page</i></p>
+				</div>
+				<div class="articlebody">
+					<a class="anchor" id="Team" name="Team"></a>
+					<h2 class="article-titleL" float="left"> Spielhauer</h2><br />
+					<br />
+					<p style="text-align:justify;" class="article-content"><em>"Game Sculptors"</em><br /><br />Spielhauer is a group of game design students from the Media Design Hochschule (Berlin).<br />
+					</p>
+					<div class="columns">
+						<div class="nested-column">
+							<a class="anchor" id="1" name="1"></a>
+							<a class="article" href="Contact/Spielhauer/Pictures/1.html">
+								<picture class="img-fluid" height="520" overflow="hidden" width="100%" scrolling="no" frameborder="0">
+									<source srcset="../Images/SpielhauerLogo.webp" type="image/webp">
+									<img src="../Images/SpielhauerLogo.jpg" alt="Spielhauer Logo" height="520" overflow="hidden" width="100%" scrolling="no" frameborder="0">
 								</picture>
-							</a>
-							<div id="loadindexmenu"> </div>
-						</linavb>
-						<linav class="dropdown"> <a href="Blog.html" id="DefaultB" class="dropbtn"><b>Blog</b></a>
-							<div id="loadblogmenu"> </div>
-						</linav>
-						<linav class="dropdown"> <a href="Projects.html" id="DefaultP"
-								class="dropbtn"><b>Projects</b></a>
-							<div id="loadprojectsmenu"> </div>
-						</linav>
-						<linav class="dropdown"> <a href="Contact.html" id="Contact" class="dropbtn"><b>Contact</b></a>
-							<div id="loadcontactmenu"> </div>
-						</linav>
-					</ulnav>
-				</div>
-				<div id="ContactB" class="tabcontent">
-					<div class="articlebodyDesc">
-						<p style="text-align:justify;" class="article-content"> <i>Spielhauer Detailed Page</i></p>
-					</div>
-					<div class="articlebody">
-						<a class="anchor" id="Team" name="Team"></a>
-						<h2 class="article-titleL" float="left"> Spielhauer</h2><br />
-						<br />
-						<p style="text-align:justify;" class="article-content"><em>"Game
-								Sculptors"</em><br /><br />Spielhauer is a group of game design students from the Media
-							Design Hochschule (Berlin).<br />
-						</p>
-						<div class="columns">
-							<div class="nested-column">
-								<a class="anchor" id="1" name="1"></a>
-								<a class="article" href="Contact/Spielhauer/Pictures/1.html">
-									<picture class="img-fluid" height="520" overflow="hidden" width="100%"
-										scrolling="no" frameborder="0">
-										<source srcset="../Images/SpielhauerLogo.webp" type="image/webp">
-										<img src="../Images/SpielhauerLogo.jpg" alt="Spielhauer Logo" height="520"
-											overflow="hidden" width="100%" scrolling="no" frameborder="0">
-									</picture>
-									<div class="article-body">
-										<p class="article-content"> Spielhauer Logo</p>
-										<footer class="article-info"> </footer>
-									</div>
-								</a>
-							</div>
-						</div>
-						<footer class="article-info">
-							<ul>
-								<li><strong>Product Owner, Game Designer and Programmer: </strong> Juri Knauth </li>
-								<li><strong>Scrum Master and Programmer: </strong> Maximilian Santa </li>
-								<li><strong>Lead Artist: </strong> Tom Pieper </li>
-								<li><strong>Lead Programmer: </strong>Clemens Haesler</li>
-							</ul>
-						</footer>
-					</div>
-					<div class="articlebody">
-						<a class="anchor" id="Platforms" name="Platforms"></a>
-						<h2 class="article-titleL" float="left"> Games</h2>
-						<br /><br />
-						<div class="columns">
-							<div class="nested-column">
-								<a class="article" href="Projects/PirateSplashy.html">
-									<picture class="img-fluid" height="520" overflow="hidden" width="100%"
-										scrolling="no" frameborder="0">
-										<source srcset="../Images/PirateSplasyScreenShotBalanced.webp"
-											type="image/webp">
-										<img src="../Images/PirateSplasyScreenShotBalanced.jpg"
-											alt="Pirate Slpashy Ingame" height="520" overflow="hidden" width="100%"
-											scrolling="no" frameborder="0">
-									</picture>
-									<div class="article-body">
-										<p class="article-content"> Pirate Slpashy</p>
-										<footer class="article-info"> </footer>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="articlebody">
-						<a class="anchor" id="Forum" name="Forum"></a>
-						<h2 class="article-title"> Forum Spielhauer </h2>
-						<p class="article-content"><i>(I welcome relevant, respectful comments.)</i></p>
-						<br />
-						<div class="columns">
-							<div class="nested-column">
-								<div class="article-body" style="text-align: -webkit-center;">
-									<div id="disqus_thread"></div>
-									<script>
-										/**
-										 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-										 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-										var disqus_config = function () {
-											this.page.url =
-											"http://www.juriknauth.com/Contact/Spielhauer.html"; // Replace PAGE_URL with your page's canonical URL variable
-											this.page.identifier =
-											"SpielhauerDetailedPage"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-										};
-										(function () {
-											// DON'T EDIT BELOW THIS LINE
-											var d = document,
-												s = d.createElement("script");
-											s.src = "https://juriknauth.disqus.com/embed.js";
-											s.setAttribute("data-timestamp", +new Date());
-											(d.head || d.body).appendChild(s);
-										})();
-									</script>
-									<noscript>
-										Please enable JavaScript to view the <a
-											href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-									</noscript>
+								<div class="article-body">
+									<p class="article-content"> Spielhauer Logo</p>
+									<footer class="article-info"> </footer>
 								</div>
+							</a>
+						</div>
+					</div>
+					<footer class="article-info">
+						<ul>
+							<li><strong>Product Owner, Game Designer and Programmer: </strong> Juri Knauth </li>
+							<li><strong>Scrum Master and Programmer: </strong> Maximilian Santa </li>
+							<li><strong>Lead Artist: </strong> Tom Pieper </li>
+							<li><strong>Lead Programmer: </strong>Clemens Haesler</li>
+						</ul>
+					</footer>
+				</div>
+				<div class="articlebody">
+					<a class="anchor" id="Platforms" name="Platforms"></a>
+					<h2 class="article-titleL" float="left"> Games</h2>
+					<br /><br />
+					<div class="columns">
+						<div class="nested-column">
+							<a class="article" href="Projects/PirateSplashy.html">
+								<picture class="img-fluid" height="520" overflow="hidden" width="100%" scrolling="no" frameborder="0">
+									<source srcset="../Images/PirateSplasyScreenShotBalanced.webp" type="image/webp">
+									<img src="../Images/PirateSplasyScreenShotBalanced.jpg" alt="Pirate Slpashy Ingame" height="520" overflow="hidden" width="100%" scrolling="no" frameborder="0">
+								</picture>
+								<div class="article-body">
+									<p class="article-content"> Pirate Slpashy</p>
+									<footer class="article-info"> </footer>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="articlebody">
+					<a class="anchor" id="Forum" name="Forum"></a>
+					<h2 class="article-title"> Forum Spielhauer </h2>
+					<p class="article-content"><i>(I welcome relevant, respectful comments.)</i></p>
+					<br />
+					<div class="columns">
+						<div class="nested-column">
+							<div class="article-body" style="text-align: -webkit-center;">
+								<div id="disqus_thread"></div>
+								<script>
+									/**
+									 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+									 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+									var disqus_config = function() {
+										this.page.url = "http://www.juriknauth.com/Contact/Spielhauer.html"; // Replace PAGE_URL with your page's canonical URL variable
+										this.page.identifier = "SpielhauerDetailedPage"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+									};
+									(function() {
+										// DON'T EDIT BELOW THIS LINE
+										var d = document,
+											s = d.createElement("script");
+										s.src = "https://juriknauth.disqus.com/embed.js";
+										s.setAttribute("data-timestamp", +new Date());
+										(d.head || d.body).appendChild(s);
+									})();
+								</script>
+								<noscript>
+			  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+			  </noscript>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="gridContainer clearfix">
-				<div id="div1" class="fluid"> </div>
-			</div>
-			<br />
-			<br />
-			<br />
-			<br />
-			<div id="loadbotbar" class="bottomMain"> </div>
 		</div>
+		<div class="gridContainer clearfix">
+			<div id="div1" class="fluid"> </div>
+		</div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<div id="loadbotbar" class="bottomMain"> </div>
 	</div>
+
 </body>
 
 </html>

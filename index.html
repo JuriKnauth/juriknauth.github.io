@@ -4,17 +4,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=0.85" name="viewport">
-	<meta name="description"
-		content="Juri Knauth’s Portfolio. I am a Game Designer. This web page will showcase each project I worked on as well as link to my team-projects. Index Page.">
-	<meta name="keywords"
-		content="JK,Juri,Knauth,Game,Design,Portfolio,Showcase,Blog,Projects,Contact,Video,Board,Maps,3D,2D,Art,Concepts,Escape,Room,Mods,Pirate,Splashy,Fluffy,Dice,Crashed,Captain,Endstation,Companies,PIG,Spielhauer">
+	<meta name="description" content="Juri Knauth’s Portfolio. I am a Game Designer. This web page will showcase each project I worked on as well as link to my team-projects. Index Page.">
+	<meta name="keywords" content="JK,Juri,Knauth,Game,Design,Portfolio,Showcase,Blog,Projects,Contact,Video,Board,Maps,3D,2D,Art,Concepts,Escape,Room,Mods,Pirate,Splashy,Fluffy,Dice,Crashed,Captain,Endstation,Companies,PIG,Spielhauer">
 	<meta name="author" content="Juri Knauth">
 	<meta name="google-site-verification" content="rQabFeH1rub_olMtfbNRyzRKYo9M7YI4i3Qw7BW-Aj0">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<base href="http://www.juriknauth.com/">
 	<link rel="canonical" href="http://www.juriknauth.com/">
 	<link rel="stylesheet" type="text/css" href="jkstyle.min.css">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png">
 	<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
@@ -27,10 +25,9 @@
 	<link rel="stylesheet" type="text/css" href="boilerplate.min.css">
 	<script type="text/javascript" src="jkscript.min.js"></script>
 	<script src="respond.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script>
-		$(function () {
+		$(function() {
 			$("#loadbotbar").load("BotBar.html");
 			$("#loadindexmenu").load("IndexMenu.html");
 			$("#loadblogmenu").load("BlogMenu.html");
@@ -41,136 +38,122 @@
 </head>
 
 <body>
-	<div class="backgroundImage">
-		<div class="container">
-			<div class="main">
-				<div id="mainmenu">
-					<ulnav>
-						<linavb class="dropdown">
-							<a href="/" id="Index" class="dropbtnimg">
-								<picture class="logo" width="52" height="52" alt="jklogo" style="text-align:left;">
-									<source srcset="jkiconcropDC.webp" type="image/webp">
-									<img src="jkiconcropDC.png" alt="logo" id="logo" width="52" height="52"
-										style="text-align:left;">
-								</picture>
-							</a>
-							<div id="loadindexmenu"> </div>
-						</linavb>
-						<linav class="dropdown"> <a href="Blog.html" id="DefaultB" class="dropbtn"><b>Blog</b></a>
-							<div id="loadblogmenu"> </div>
-						</linav>
-						<linav class="dropdown"> <a href="Projects.html" id="DefaultP"
-								class="dropbtn"><b>Projects</b></a>
-							<div id="loadprojectsmenu"> </div>
-						</linav>
-						<linav class="dropdown"> <a href="Contact.html" id="DefaultC" class="dropbtn"><b>Contact</b></a>
-							<div id="loadcontactmenu"> </div>
-						</linav>
-					</ulnav>
+	<div class="container">
+		<div class="main">
+			<div id="mainmenu">
+				<ulnav>
+					<linavb class="dropdown">
+						<a href="/" id="Index" class="dropbtnimg">
+							<picture class="logo" width="52" height="52" alt="jklogo" style="text-align:left;">
+								<source srcset="jkiconcropDC.webp" type="image/webp">
+								<img src="jkiconcropDC.png" alt="logo" id="logo" width="52" height="52" style="text-align:left;">
+							</picture>
+						</a>
+						<div id="loadindexmenu"> </div>
+					</linavb>
+					<linav class="dropdown"> <a href="Blog.html" id="DefaultB" class="dropbtn"><b>Blog</b></a>
+						<div id="loadblogmenu"> </div>
+					</linav>
+					<linav class="dropdown"> <a href="Projects.html" id="DefaultP" class="dropbtn"><b>Projects</b></a>
+						<div id="loadprojectsmenu"> </div>
+					</linav>
+					<linav class="dropdown"> <a href="Contact.html" id="DefaultC" class="dropbtn"><b>Contact</b></a>
+						<div id="loadcontactmenu"> </div>
+					</linav>
+				</ulnav>
+			</div>
+			<div id="IndexB" class="tabcontent">
+				<div class="articlebodyDesc">
+					<p style="text-align:justify;" class="article-content" id="Banner"> <i>Home.</i><br /></p>
 				</div>
-				<div id="IndexB" class="tabcontent">
-					<div class="articlebodyDesc">
-						<p style="text-align:justify;" class="article-content" id="Banner"> <i>Home.</i><br /></p>
-					</div>
-					<div class="articlebody">
-						<a class="anchor" id="JuriKnauthPortfolio" name="JuriKnauthPortfolio"></a>
-						<h3 class="article-title"> Juri Knauth's Portfolio</h3>
-						<br />
-						<p class="article-content" id=GreetingsVar></p><br />
-						<p style="text-align:justify;" class="article-content">I am a Game Designer/Developer. This web
-							page will showcase each project I worked on as well as link to my team-projects. You will
-							find brief remarks, too.</p>
-						<br />
-						<br />
-						<h3 class="article-title">Tabs</h3>
-						<br />
-						<div class="columns">
-							<div class="nested-column">
-								<a class="article" href="Blog.html">
-									<picture class="img-fluid" width="100%" height="480">
-										<source srcset="../Icons/Colors/red.webp" type="image/webp">
-										<img src="../Icons/Colors/red.jpg" alt="red">
-									</picture>
-									<div class="article-body">
-										<h5 class="article-title"> Blog</h5><br />
-										<p class="article-content"> The blog will feature some minor tasks, crafts and
-											scribbles.</p>
-										<footer class="article-info"> </footer>
-									</div>
-								</a>
-							</div>
-							<div class="nested-column">
-								<a class="article" href="Projects.html">
-									<picture class="img-fluid" width="100%" height="480">
-										<source srcset="../Icons/Colors/yellow.webp" type="image/webp">
-										<img src="../Icons/Colors/yellow.jpg" alt="yellow">
-									</picture>
-									<div class="article-body">
-										<h5 class="article-title"> Projects</h5><br />
-										<p class="article-content"> The project tab will showcase the bigger
-											tasks.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										</p>
-										<footer class="article-info"> </footer>
-									</div>
-								</a>
-							</div>
-							<div class="nested-column">
-								<a class="article" href="Contact.html">
-									<picture class="img-fluid" width="100%" height="480">
-										<source srcset="../Icons/Colors/cyan.webp" type="image/webp">
-										<img src="../Icons/Colors/cyan.jpg" alt="cyan">
-									</picture>
-									<div class="article-body">
-										<h5 class="article-title"> Contact</h5><br />
-										<p class="article-content"> Details and links to get connected on various
-											platforms.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-										<footer class="article-info"> </footer>
-									</div>
-								</a>
-							</div>
+				<div class="articlebody">
+					<a class="anchor" id="JuriKnauthPortfolio" name="JuriKnauthPortfolio"></a>
+					<h3 class="article-title"> Juri Knauth's Portfolio</h3>
+					<br />
+					<p class="article-content" id=GreetingsVar></p><br />
+					<p style="text-align:justify;" class="article-content">I am a Game Designer/Developer. This web page will showcase each project I worked on as well as link to my team-projects. You will find brief remarks, too.</p>
+					<br />
+					<br />
+					<h3 class="article-title">Tabs</h3>
+					<br />
+					<div class="columns">
+						<div class="nested-column">
+							<a class="article" href="Blog.html">
+								<picture class="img-fluid" width="100%" height="480">
+									<source srcset="../Icons/Colors/red.webp" type="image/webp">
+									<img src="../Icons/Colors/red.jpg" alt="red">
+								</picture>
+								<div class="article-body">
+									<h5 class="article-title"> Blog</h5><br />
+									<p class="article-content"> The blog will feature some minor tasks, crafts and scribbles.</p>
+									<footer class="article-info"> </footer>
+								</div>
+							</a>
+						</div>
+						<div class="nested-column">
+							<a class="article" href="Projects.html">
+								<picture class="img-fluid" width="100%" height="480">
+									<source srcset="../Icons/Colors/yellow.webp" type="image/webp">
+									<img src="../Icons/Colors/yellow.jpg" alt="yellow">
+								</picture>
+								<div class="article-body">
+									<h5 class="article-title"> Projects</h5><br />
+									<p class="article-content"> The project tab will showcase the bigger tasks.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+									<footer class="article-info"> </footer>
+								</div>
+							</a>
+						</div>
+						<div class="nested-column">
+							<a class="article" href="Contact.html">
+								<picture class="img-fluid" width="100%" height="480">
+									<source srcset="../Icons/Colors/cyan.webp" type="image/webp">
+									<img src="../Icons/Colors/cyan.jpg" alt="cyan">
+								</picture>
+								<div class="article-body">
+									<h5 class="article-title"> Contact</h5><br />
+									<p class="article-content"> Details and links to get connected on various platforms.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+									<footer class="article-info"> </footer>
+								</div>
+							</a>
 						</div>
 					</div>
-					<div class="articlebody">
-						<a class="anchor" id="AllRightsReserved" name="AllRightsReserved"></a>
-						<h2 class="article-title"> All Rights Reserved </h2><br />
-						<p style="text-align:left;" class="article-content">All works (games, codes, design-documents,
-							pictures, logos, names, videos and texts) are protected by copyright. All rights are mine
-							(Juri Knauth's) and in part the collaborative works as well.</p>
-						<br />
-					</div>
-					<div class="articlebody">
-						<a class="anchor" id="Page" name="Page"></a>
-						<h2 class="article-title"> Page under construction </h2>
-						<h2 class="article-titleR" id="Red">⬤</h2><br />
-						<p style="text-align:left;" class="article-content">I am still working on this web page - it's
-							about 75% done. Newest games are currently only on my <a
-								href="https://jurik.itch.io/">itch.io</a> page.<br /></p>
-						<br />
-					</div>
+				</div>
+				<div class="articlebody">
+					<a class="anchor" id="AllRightsReserved" name="AllRightsReserved"></a>
+					<h2 class="article-title"> All Rights Reserved </h2><br />
+					<p style="text-align:left;" class="article-content">All works (games, codes, design-documents, pictures, logos, names, videos and texts) are protected by copyright. All rights are mine (Juri Knauth's) and in part the collaborative works as well.</p>
+					<br />
+				</div>
+				<div class="articlebody">
+					<a class="anchor" id="Page" name="Page"></a>
+					<h2 class="article-title"> Page under construction </h2>
+					<h2 class="article-titleR" id="Red">⬤</h2><br />
+					<p style="text-align:left;" class="article-content">I am still working on this web page - it's about 75% done. Newest games are currently only on my <a href="https://jurik.itch.io/">itch.io</a> page.<br /></p>
+					<br />
 				</div>
 			</div>
-			<div class="gridContainer clearfix">
-				<div id="div1" class="fluid"> </div>
-			</div>
-			<br />
-			<br />
-			<br />
-			<br />
-			<div id="loadbotbar" class="bottomMain"> </div>
 		</div>
-		<script>
-			var myDate = new Date();
-			var hrs = myDate.getHours();
-			var sec = myDate.getSeconds();
-			var lastSecDigit = sec % 10;
-			var greet;
-			if (hrs < 12) greet = "Good Morning";
-			else if (hrs >= 12 && hrs <= 17) greet = "Good Afternoon";
-			else if (hrs >= 17 && hrs <= 24) greet = "Good Evening";
-			document.getElementById("GreetingsVar").innerHTML =
-				"<em>" + greet + " and Welcome to my Portfolio!</em>";
-		</script>
+		<div class="gridContainer clearfix">
+			<div id="div1" class="fluid"> </div>
+		</div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<div id="loadbotbar" class="bottomMain"> </div>
 	</div>
+	<script>
+		var myDate = new Date();
+		var hrs = myDate.getHours();
+		var sec = myDate.getSeconds();
+		var lastSecDigit = sec % 10;
+		var greet;
+		if (hrs < 12) greet = "Good Morning";
+		else if (hrs >= 12 && hrs <= 17) greet = "Good Afternoon";
+		else if (hrs >= 17 && hrs <= 24) greet = "Good Evening";
+		document.getElementById("GreetingsVar").innerHTML =
+			"<em>" + greet + " and Welcome to my Portfolio!</em>";
+	</script>
 </body>
 
 </html>
