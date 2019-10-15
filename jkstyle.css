@@ -689,6 +689,10 @@ p {
     padding: 0px 16px 0px 16px
 }
 
+.bot-infoModal {
+    box-sizing: border-box;
+}
+
 .first-article .article-image {
     height: 300px;
     order: 2;
@@ -970,12 +974,12 @@ input:checked+.slider:before {
 
 .modal-content {
     position: relative;
-    width: auto;
+    width: fit-content;
     max-width: 100%;
-    height: auto;
+    height: fit-content;
     max-height: 100%;
     z-index: 600;
-    margin: auto;
+    margin: 0px auto;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -985,7 +989,9 @@ input:checked+.slider:before {
     color: #aaecff;
     position: fixed;
     top: 0;
-    right: 25px;
+    border-radius: 0 3px 3px 0;
+    padding: 16px;
+    right: 0px;
     font-size: 35px;
     font-weight: 700;
     z-index: 610;
