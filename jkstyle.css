@@ -1361,25 +1361,25 @@ input.toggle-round-right-left:checked+label:after {
 
 .bottom-left {
     position: absolute;
-    padding: 5px;
+    padding: 0px 10px 0px 10px;
     left: 0px;
 }
 
 .top-left {
     position: absolute;
-    padding: 5px;
+    padding: 0px 10px 0px 10px;
     left: 0px;
 }
 
 .top-right {
     position: absolute;
-    padding: 5px;
+    padding: 0px 10px 0px 10px;
     right: 0px;
 }
 
 .bottom-right {
     position: absolute;
-    padding: 5px;
+    padding: 0px 10px 0px 10px;
     right: 0px;
 }
 
