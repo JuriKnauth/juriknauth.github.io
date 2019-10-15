@@ -25,70 +25,75 @@
 	<title>Redirecting to Portfolio Juri Knauth</title>
 	<meta http-equiv="refresh" content="1; url=http://www.juriknauth.com/">
 	<script type="text/javascript" src="../jkscript.min.js"></script>
-    <script src="../respond.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script>
-        $(function() {
-            $("#loadbotbar").load("BotBar.html");
-            $("#loadindexmenu").load("IndexMenu.html");
-            $("#loadblogmenu").load("BlogMenu.html");
-            $("#loadprojectsmenu").load("ProjectsMenu.html");
-            $("#loadcontactmenu").load("ContactMenu.html");
-        });
+	<script src="../respond.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script>
+		$(function () {
+			$("#loadbotbar").load("BotBar.html");
+			$("#loadindexmenu").load("IndexMenu.html");
+			$("#loadblogmenu").load("BlogMenu.html");
+			$("#loadprojectsmenu").load("ProjectsMenu.html");
+			$("#loadcontactmenu").load("ContactMenu.html");
+		});
 	</script>
 </head>
 
 <body>
-	<div class="container">
-		<div class="main">
-			<div id="mainmenu">
-				<ulnav>
-					<linavb class="dropdown">
-						<a href="/" id="Index" class="dropbtnimg">
-							<picture class="logo" width="52" height="52" alt="jklogo" style="text-align:left;">
-								<source srcset="jkiconcropDC.webp" type="image/webp">
-								<img src="jkiconcropDC.png" alt="logo" id="logo" width="52" height="52" style="text-align:left;">
-							</picture>
-						</a>
-						<div id="loadindexmenu"> </div>
-					</linavb>
-					<linav class="dropdown"> <a href="Blog.html" id="DefaultB" class="dropbtn"><b>Blog</b></a>
-						<div id="loadblogmenu"> </div>
-					</linav>
-					<linav class="dropdown"> <a href="Projects.html" id="DefaultP" class="dropbtn"><b>Projects</b></a>
-						<div id="loadprojectsmenu"> </div>
-					</linav>
-					<linav class="dropdown"> <a href="Contact.html" id="DefaultC" class="dropbtn"><b>Contact</b></a>
-						<div id="loadcontactmenu"> </div>
-					</linav>
-				</ulnav>
-			</div>
-			<div id="IndexB" class="tabcontent">
-				<div class="articlebodyDesc">
-					<div class="article-content" id="BannerB">
-						<p>
-							<h1 class="article-title" style="font-size: 64px;"> 503</h1><br />
-							<em>Service Unavailable.</em><br /><br />
-							Redirecting to Portfolio Juri Knauth<br />
-							<a href="http://www.juriknauth.com/"><em>Click here if you are not redirected.</em></a>
-						</p>
+	<div class="backgroundImage">
+		<div class="container">
+			<div class="main">
+				<div id="mainmenu">
+					<ulnav>
+						<linavb class="dropdown">
+							<a href="/" id="Index" class="dropbtnimg">
+								<picture class="logo" width="52" height="52" alt="jklogo" style="text-align:left;">
+									<source srcset="jkiconcropDC.webp" type="image/webp">
+									<img src="jkiconcropDC.png" alt="logo" id="logo" width="52" height="52"
+										style="text-align:left;">
+								</picture>
+							</a>
+							<div id="loadindexmenu"> </div>
+						</linavb>
+						<linav class="dropdown"> <a href="Blog.html" id="DefaultB" class="dropbtn"><b>Blog</b></a>
+							<div id="loadblogmenu"> </div>
+						</linav>
+						<linav class="dropdown"> <a href="Projects.html" id="DefaultP"
+								class="dropbtn"><b>Projects</b></a>
+							<div id="loadprojectsmenu"> </div>
+						</linav>
+						<linav class="dropdown"> <a href="Contact.html" id="DefaultC" class="dropbtn"><b>Contact</b></a>
+							<div id="loadcontactmenu"> </div>
+						</linav>
+					</ulnav>
+				</div>
+				<div id="IndexB" class="tabcontent">
+					<div class="articlebodyDesc">
+						<div class="article-content" id="BannerB">
+							<p>
+								<h1 class="article-title" style="font-size: 64px;"> 503</h1><br />
+								<em>Service Unavailable.</em><br /><br />
+								Redirecting to Portfolio Juri Knauth<br />
+								<a href="http://www.juriknauth.com/"><em>Click here if you are not redirected.</em></a>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
+			<div class="gridContainer clearfix">
+				<div id="div1" class="fluid"> </div>
+			</div>
+			<br />
+			<br />
+			<br />
+			<br />
+			<div id="loadbotbar" class="bottomMain"> </div>
 		</div>
-		<div class="gridContainer clearfix">
-			<div id="div1" class="fluid"> </div>
-		</div>
-		<br />
-		<br />
-		<br />
-		<br />
-		<div id="loadbotbar" class="bottomMain"> </div>
+		<script>
+			var n = location.href.replace("index.php?url=", "").replace("index.php?/", "");
+			if (n != location.href) location = n;
+		</script>
 	</div>
-	<script>
-		var n = location.href.replace("index.php?url=", "").replace("index.php?/", "");
-		if (n != location.href) location = n;
-	</script>
 </body>
 
 </html>
