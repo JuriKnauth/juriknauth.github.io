@@ -36,9 +36,11 @@ body {
     left: 0;
     z-index: 0;
     background-color: #000;
-    height: 0;
+    height: auto;
+    width: auto;
     min-height: 100%;
-    margin: 0;
+    vertical-align: middle;
+    margin: auto;
     background-image: url(../Images/BackGround.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
