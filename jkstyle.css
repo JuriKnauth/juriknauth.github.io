@@ -590,12 +590,12 @@ p {
 .articlebody {
     box-sizing: border-box;
     flex-direction: column;
-    margin-top: 7px;
-    margin-bottom: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-color: #fff;
     height: auto;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
-    padding: 10px
+    padding: 10px 10px 20px 10px
 }
 
 .articlebodyDesc {
@@ -753,7 +753,7 @@ p {
     outline: 0;
     min-width: 6px;
     margin: 0 auto;
-    padding: 8px 8px
+    padding: 9px 9px
 }
 
 .tablink {
@@ -769,7 +769,7 @@ p {
     max-width: 1040px;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     margin: 0 auto;
-    padding: 8px 8px
+    padding: 9px 9px
 }
 
 .tablinkr {
@@ -787,7 +787,7 @@ p {
     table-layout: fixed;
     display: block;
     margin: 0 auto;
-    padding: 8px 8px
+    padding: 9px 9px
 }
 
 .tabcontent {
@@ -805,8 +805,8 @@ p {
     flex-direction: column;
     flex-basis: auto;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
-    margin: 5px;
-    padding: 8px 8px
+    margin: 2px;
+    padding: 9px 9px
 }
 
 .switch {
