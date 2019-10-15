@@ -973,7 +973,10 @@ input:checked+.slider:before {
     height: auto;
     max-height: 80%;
     z-index: 600;
-    margin: auto
+    margin: auto;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .close {
