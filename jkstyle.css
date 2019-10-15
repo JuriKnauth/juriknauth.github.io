@@ -22,13 +22,17 @@ body {
     left: 0;
     z-index: 0;
     background-color: #000;
-    background-image: url(../Images/BackGround.jpg);
     height: 0;
     color: #000;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
     min-height: 100%;
+    margin: 0
+}
+
+.backgroundImage {
+    background-image: url(../Images/BackGround.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -40,7 +44,10 @@ body {
     -o-background-attachment: fixed;
     -ms-background-attachment: fixed;
     background-attachment: fixed;
-    margin: 0
+}
+
+.backgroundOverlay {
+    background-color: rgba(0, 0, 0, .8);
 }
 
 h1 {
