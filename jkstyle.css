@@ -524,7 +524,6 @@ p {
     flex-direction: column;
     flex-basis: auto;
     height: auto;
-    margin: 5px 6px
 }
 
 .article {
@@ -596,7 +595,7 @@ p {
     background-color: #fff;
     height: auto;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
-    padding: 20px
+    padding: 10px
 }
 
 .articlebodyDesc {
@@ -607,7 +606,7 @@ p {
     background-color: #fff;
     height: auto;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
-    padding: 20px
+    padding: 10px
 }
 
 .article-title {
@@ -701,12 +700,12 @@ p {
 
 .nested-column {
     flex: 2;
-    margin: 10px 0px 0px 0px
+    margin: 5px
 }
 
 .nested-column2 {
     flex: 2 2 320px;
-    margin: 10px 0px 0px 0px
+    margin: 5px
 }
 
 .first-article {
@@ -754,7 +753,7 @@ p {
     outline: 0;
     min-width: 6px;
     margin: 0 auto;
-    padding: 4px 6px
+    padding: 8px 8px
 }
 
 .tablink {
@@ -770,7 +769,7 @@ p {
     max-width: 1040px;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     margin: 0 auto;
-    padding: 4px 6px
+    padding: 8px 8px
 }
 
 .tablinkr {
@@ -788,7 +787,7 @@ p {
     table-layout: fixed;
     display: block;
     margin: 0 auto;
-    padding: 4px 6px
+    padding: 8px 8px
 }
 
 .tabcontent {
@@ -807,7 +806,7 @@ p {
     flex-basis: auto;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     margin: 5px;
-    padding: 4px 6px
+    padding: 8px 8px
 }
 
 .switch {
