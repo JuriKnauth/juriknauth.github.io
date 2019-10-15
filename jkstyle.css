@@ -32,6 +32,13 @@ body {
 }
 
 .backgroundImage {
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: #000;
+    height: 0;
+    min-height: 100%;
+    margin: 0;
     background-image: url(../Images/BackGround.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -47,6 +54,12 @@ body {
 }
 
 .backgroundOverlay {
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 0;
+    min-height: 100%;
+    margin: 0;
     background-color: rgba(0, 0, 0, .8);
 }
 
