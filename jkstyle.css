@@ -151,6 +151,7 @@ img {
     max-width: 100%;
     width: 100%;
     vertical-align: middle;
+    padding: 5px
 }
 
 .img-container {
@@ -638,7 +639,6 @@ p {
     height: auto;
     font-size: 1.0em;
     font-weight: 400;
-    margin: 5px
 }
 
 .article-content3 {
@@ -648,7 +648,6 @@ p {
     background-color: #fff;
     color: #000;
     height: auto;
-    margin: 5px
 }
 
 .article-info {
@@ -803,7 +802,7 @@ p {
     flex-basis: auto;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     margin: 2px;
-    padding: 18px 9px 18px 9px 
+    padding: 18px 9px 18px 9px
 }
 
 .switch {
@@ -1223,7 +1222,6 @@ tr:nth-child(even) {
     margin-bottom: 0;
     color: #000;
     padding: 5px;
-    margin: 5px
 }
 
 .article-content-dropdown {
@@ -1231,7 +1229,6 @@ tr:nth-child(even) {
     background-color: rgba(255, 255, 255, 0);
     color: #000;
     padding: 5px;
-    margin: 5px
 }
 
 .tablink:hover,
