@@ -1226,15 +1226,16 @@ tr:nth-child(even) {
 .article-content-dropdown {
     margin-bottom: 0;
     color: #000;
-    padding: 5px
+    padding: 5px;
+    margin: 5px
 }
 
 .article-content-dropdown {
     margin-bottom: 0;
     background-color: rgba(255, 255, 255, 0);
     color: #000;
-    height: inherit;
-    padding: 5px
+    padding: 5px;
+    margin: 5px
 }
 
 .tablink:hover,
