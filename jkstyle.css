@@ -536,7 +536,7 @@ p {
     flex-basis: auto;
     flex-wrap: wrap;
     height: 100%;
-    margin: 10px 0px 0px 10px
+    margin: 10px 0px 0px 0px
 }
 
 .article:focus,
@@ -612,8 +612,6 @@ p {
 
 .article-title {
     color: #000;
-    padding-left: 5px;
-    padding-right: 5px;
     flex-shrink: 0;
     font-size: 1.4em;
     font-weight: 700;
@@ -730,7 +728,8 @@ p {
     .column,
     .columns {
         display: -ms-flexbox;
-        display: flex
+        display: flex;
+        width: 100%
     }
 
     .first-article .article-body {
