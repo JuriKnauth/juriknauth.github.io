@@ -26,7 +26,7 @@
     <link rel="stylesheet" type="text/css" href="boilerplate.min.css">
     <script type="text/javascript" src="jkscript.min.js"></script>
     <script type="text/javascript" src="respond.min.js"></script>
-    <script type="text/javascript" src="isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="isotope.pkgd.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
@@ -73,7 +73,7 @@
             }
 
             iso.arrange({
-                sortBy: attribute
+                sortBy: 'Genre'
             });
         };
     </script>
@@ -212,63 +212,65 @@
                 <div class="articlebody">
                     <a class="anchor" id="Projects" name="Projects"></a>
                     <h2 class="article-titleL" float="left"> Projects</h2>
-                    <br />
-                    <br />
+                    <br>
+                    <br>
                     <div class="columns">
                         <div class="nested-column">
                             <div class="articlesimple" style="display: block; margin:10px;">
                                 <p>
-                                    <div class="switch">
-                                        <input id="toggle-1" class="toggle toggle-round-right-left" type="checkbox"
-                                            checked>
-                                        <label for="toggle-1" onclick="toggleDiv('Title')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-2" class="toggle toggle-round-right-left" type="checkbox"
-                                            checked>
-                                        <label for="toggle-2" onclick="toggleDiv('Ranking')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-3" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-3" onclick="toggleDiv('Genre')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-4" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-4" onclick="toggleDiv('Players')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-5" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-5" onclick="toggleDiv('Age')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-6" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-6" onclick="toggleDiv('Platform')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-7" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-7" onclick="toggleDiv('Input')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-8" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-8" onclick="toggleDiv('Status')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-9" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-9" onclick="toggleDiv('TeamSize')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-10" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-10" onclick="toggleDiv('Position')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-11" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-11" onclick="toggleDiv('Date')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-12" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-12" onclick="toggleDiv('Updated')"></label>
-                                    </div>
                                 </p>
+                                <div class="switch">
+                                    <input id="toggle-1" class="toggle toggle-round-right-left" type="checkbox"
+                                        checked="">
+                                    <label for="toggle-1" onclick="toggleDiv('Title')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-2" class="toggle toggle-round-right-left" type="checkbox"
+                                        checked="">
+                                    <label for="toggle-2" onclick="toggleDiv('Ranking')"></label>
+                                </div>
+                                <div class="switch" data-sort-value="Genre">
+                                    <input id="toggle-3" class="toggle toggle-round-right-left" data-sort-value="Genre"
+                                        type="checkbox">
+                                    <label for="toggle-3" data-sort-value="Genre" onclick="toggleDiv('Genre')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-4" class="toggle toggle-round-right-left" type="checkbox">
+                                    <label for="toggle-4" onclick="toggleDiv('Players')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-5" class="toggle toggle-round-right-left" type="checkbox">
+                                    <label for="toggle-5" onclick="toggleDiv('Age')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-6" class="toggle toggle-round-right-left" type="checkbox">
+                                    <label for="toggle-6" onclick="toggleDiv('Platform')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-7" class="toggle toggle-round-right-left" type="checkbox">
+                                    <label for="toggle-7" onclick="toggleDiv('Input')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-8" class="toggle toggle-round-right-left" type="checkbox">
+                                    <label for="toggle-8" onclick="toggleDiv('Status')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-9" class="toggle toggle-round-right-left" type="checkbox">
+                                    <label for="toggle-9" onclick="toggleDiv('TeamSize')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-10" class="toggle toggle-round-right-left" type="checkbox">
+                                    <label for="toggle-10" onclick="toggleDiv('Position')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-11" class="toggle toggle-round-right-left" type="checkbox">
+                                    <label for="toggle-11" onclick="toggleDiv('Date')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-12" class="toggle toggle-round-right-left" type="checkbox">
+                                    <label for="toggle-12" onclick="toggleDiv('Updated')"></label>
+                                </div>
+                                <p></p>
                             </div>
                         </div>
                     </div>
@@ -285,18 +287,18 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                        <div class="infoClass" id="Title">
+                                        <div class="infoClass" id="Title" style="display: none;">
                                             <h6> <b>A Shot In The Dark</b></h6>
                                         </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
                                             style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
-                                            <li class="infoClass" id="Ranking" style="display: none">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
                                             </li>
-                                            <li class="infoClass" id="Genre" style="display: none"><b>Genre: </b>
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
                                                 Twin-Stick, Top-Down-Shooter </li>
-                                            <li class="infoClass" id="Players" style="display: none"><b>Player Count:
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
                                                 </b> 2-4 Local-Multiplayer </li>
                                             <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 12
                                             </li>
@@ -332,18 +334,18 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                        <div class="infoClass" id="Title">
+                                        <div class="infoClass" id="Title" style="display: none;">
                                             <h6> <b>Pirate Splashy</b></h6>
                                         </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
                                             style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
-                                            <li class="infoClass" id="Ranking" style="display: none">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
                                             </li>
-                                            <li class="infoClass" id="Genre" style="display: none"><b>Genre: </b>
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
                                                 Party </li>
-                                            <li class="infoClass" id="Players" style="display: none"><b>Player Count:
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
                                                 </b> 1-6 Local-Multiplayer </li>
                                             <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 0
                                             </li>
@@ -378,18 +380,18 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                        <div class="infoClass" id="Title">
+                                        <div class="infoClass" id="Title" style="display: none;">
                                             <h6> <b>Ninja Car</b></h6>
                                         </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
                                             style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
-                                            <li class="infoClass" id="Ranking" style="display: none">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
                                             </li>
-                                            <li class="infoClass" id="Genre" style="display: none"><b>Genre: </b>
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
                                                 Racing </li>
-                                            <li class="infoClass" id="Players" style="display: none"><b>Player Count:
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
                                                 </b> 1-2 Local-Multiplayer </li>
                                             <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 6
                                             </li>
@@ -425,18 +427,18 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                        <div class="infoClass" id="Title">
+                                        <div class="infoClass" id="Title" style="display: none;">
                                             <h6> <b>Chloe and Brendan 2018</b></h6>
                                         </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
                                             style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
-                                            <li class="infoClass" id="Ranking" style="display: none">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
                                             </li>
-                                            <li class="infoClass" id="Genre" style="display: none"><b>Genre: </b>
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
                                                 Romance, Story, Personalized </li>
-                                            <li class="infoClass" id="Players" style="display: none"><b>Player Count:
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
                                                 </b> 2 Server-based networked multiplayer </li>
                                             <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 0
                                             </li>
@@ -471,17 +473,17 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                        <div class="infoClass" id="Title">
+                                        <div class="infoClass" id="Title" style="display: none;">
                                             <h6> <b>Bachelor thesis: MDAPPRC</b></h6>
                                         </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
                                             style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
-                                            <li class="infoClass" id="Ranking" style="display: none">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
                                             </li>
-                                            <li class="infoClass" id="Genre" style="display: none"></li>
-                                            <li class="infoClass" id="Players" style="display: none"></li>
+                                            <li class="infoClass" id="Genre" style="display: block;"></li>
+                                            <li class="infoClass" id="Players" style="display: none;"></li>
                                             <li class="infoClass" id="Age" style="display: none"></li>
                                             <li class="infoClass" id="Platform" style="display: none"></li>
                                             <li class="infoClass" id="Input" style="display: none"></li>
@@ -512,18 +514,18 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                        <div class="infoClass" id="Title">
+                                        <div class="infoClass" id="Title" style="display: none;">
                                             <h6> <b>Endstation</b></h6>
                                         </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
                                             style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
-                                            <li class="infoClass" id="Ranking" style="display: none">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
                                             </li>
-                                            <li class="infoClass" id="Genre" style="display: none"><b>Genre: </b>
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
                                                 Riddles, Puzzle </li>
-                                            <li class="infoClass" id="Players" style="display: none"><b>Player Count:
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
                                                 </b> 2-4</li>
                                             <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 6
                                             </li>
@@ -557,18 +559,18 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                        <div class="infoClass" id="Title">
+                                        <div class="infoClass" id="Title" style="display: none;">
                                             <h6> <b>Bread and Games</b></h6>
                                         </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
                                             style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
-                                            <li class="infoClass" id="Ranking" style="display: none">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
                                             </li>
-                                            <li class="infoClass" id="Genre" style="display: none"><b>Genre: </b>
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
                                                 Twin-Stick, Top-Down-Shooter </li>
-                                            <li class="infoClass" id="Players" style="display: none"><b>Player Count:
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
                                                 </b> 2 Local-Multiplayer </li>
                                             <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 6
                                             </li>
@@ -604,18 +606,18 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                        <div class="infoClass" id="Title">
+                                        <div class="infoClass" id="Title" style="display: none;">
                                             <h6> <b>Fluffy Dice</b></h6>
                                         </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
                                             style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
-                                            <li class="infoClass" id="Ranking" style="display: none">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
                                             </li>
-                                            <li class="infoClass" id="Genre" style="display: none"><b>Genre: </b>
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
                                                 Party, Sport, Dice-Rolling </li>
-                                            <li class="infoClass" id="Players" style="display: none"><b>Player Count:
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
                                                 </b> 1-2 Local-Multiplayer </li>
                                             <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 6
                                             </li>
@@ -652,18 +654,18 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                        <div class="infoClass" id="Title">
+                                        <div class="infoClass" id="Title" style="display: none;">
                                             <h6> <b>Crashed Captain</b></h6>
                                         </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
                                             style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
-                                            <li class="infoClass" id="Ranking" style="display: none">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
                                             </li>
-                                            <li class="infoClass" id="Genre" style="display: none"><b>Genre: </b>
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
                                                 Marble, Arcade </li>
-                                            <li class="infoClass" id="Players" style="display: none"><b>Player Count:
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
                                                 </b> 1 </li>
                                             <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 12
                                             </li>
@@ -699,17 +701,17 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                        <div class="infoClass" id="Title">
+                                        <div class="infoClass" id="Title" style="display: none;">
                                             <h6> <b>V.o.A.</b></h6>
                                         </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
                                             style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
-                                            <li class="infoClass" id="Ranking" style="display: none">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
                                             </li>
-                                            <li class="infoClass" id="Genre" style="display: none"></li>
-                                            <li class="infoClass" id="Players" style="display: none"></li>
+                                            <li class="infoClass" id="Genre" style="display: block;"></li>
+                                            <li class="infoClass" id="Players" style="display: none;"></li>
                                             <li class="infoClass" id="Age" style="display: none"></li>
                                             <li class="infoClass" id="Platform" style="display: none"></li>
                                             <li class="infoClass" id="Input" style="display: none"></li>
@@ -742,18 +744,19 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                        <div class="infoClass" id="Title">
+                                        <div class="infoClass" id="Title" style="display: none;">
                                             <h6> <b>Adam Mania!</b></h6>
                                         </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
                                             style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
-                                            <li class="infoClass" id="Ranking" style="display: none">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
                                             </li>
-                                            <li class="infoClass" id="Genre" style="display: none"><b>Genre: </b> Dungen
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
+                                                Dungen
                                                 Crawler </li>
-                                            <li class="infoClass" id="Players" style="display: none"><b>Player Count:
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
                                                 </b> 2-4 </li>
                                             <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 12
                                             </li>
@@ -789,23 +792,23 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                        <div class="infoClass" id="Title">
+                                        <div class="infoClass" id="Title" style="display: none;">
                                             <h6> <b>Shadow of War</b></h6>
                                         </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
                                             style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
-                                            <li class="infoClass" id="Ranking" style="display: none">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
                                             </li>
-                                            <li class="infoClass" id="Genre" style="display: none"></li>
-                                            <li class="infoClass" id="Players" style="display: none"></li>
-                                            <li class="infoClass" id="Age" style="display: none">Age rating: </b> 12
+                                            <li class="infoClass" id="Genre" style="display: block;"></li>
+                                            <li class="infoClass" id="Players" style="display: none;"></li>
+                                            <li class="infoClass" id="Age" style="display: none">Age rating: 12
                                             </li>
                                             <li class="infoClass" id="Platform" style="display: none"><b>Platform: </b>
                                                 PC </li>
                                             <li class="infoClass" id="Input" style="display: none"><b>Input: </b>
-                                                Keyboard & Mouse </li>
+                                                Keyboard &amp; Mouse </li>
                                             <li class="infoClass" id="Status" style="display: none"><b>Status: </b>
                                                 Undisclosed </li>
                                             <li class="infoClass" id="TeamSize" style="display: none"><b>Team size: </b>
@@ -835,17 +838,17 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                        <div class="infoClass" id="Title">
+                                        <div class="infoClass" id="Title" style="display: none;">
                                             <h6> <b>Game or recruitment tool?</b></h6>
                                         </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
                                             style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
-                                            <li class="infoClass" id="Ranking" style="display: none">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
                                             </li>
-                                            <li class="infoClass" id="Genre" style="display: none"></li>
-                                            <li class="infoClass" id="Players" style="display: none"></li>
+                                            <li class="infoClass" id="Genre" style="display: block;"></li>
+                                            <li class="infoClass" id="Players" style="display: none;"></li>
                                             <li class="infoClass" id="Age" style="display: none"></li>
                                             <li class="infoClass" id="Platform" style="display: none"></li>
                                             <li class="infoClass" id="Input" style="display: none"></li>
@@ -876,18 +879,18 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                        <div class="infoClass" id="Title">
+                                        <div class="infoClass" id="Title" style="display: none;">
                                             <h6> <b>Heul Doch!</b></h6>
                                         </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
                                             style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
-                                            <li class="infoClass" id="Ranking" style="display: none">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
                                             </li>
-                                            <li class="infoClass" id="Genre" style="display: none"><b>Genre: </b>
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
                                                 Strategy </li>
-                                            <li class="infoClass" id="Players" style="display: none"><b>Player Count:
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
                                                 </b> 2-4 </li>
                                             <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 12
                                             </li>
@@ -919,11 +922,12 @@
         <div class="gridContainer clearfix">
             <div id="div1" class="fluid"> </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <div id="loadbotbar" class="bottomMain"> </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="loadbotbar" class="bottomMain">
+        </div>
     </div>
 </body>
 
