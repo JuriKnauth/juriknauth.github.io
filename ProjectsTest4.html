@@ -30,6 +30,10 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script>
+            $grid.isotope({
+                sortBy: attribute
+            });
+
         $(function () {
             $("#loadbotbar").load("BotBar.html");
             $("#loadindexmenu").load("IndexMenu.html");
@@ -49,9 +53,7 @@
                     }
                 }
             }
-            $grid.isotope({
-                sortBy: attribute
-            });
+            iso.arrange({attribute});
         };
 
         var iso = $('.grid').isotope({
@@ -214,7 +216,7 @@
                     <h2 class="article-titleL" float="left"> Projects</h2>
                     <br />
                     <br />
-                    <div class="columns">
+                    <div class="grid columns">
                         <div class="nested-column">
                             <div class="articlesimple" style="display: block; margin:10px;">
                                 <p>
