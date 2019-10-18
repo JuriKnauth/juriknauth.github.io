@@ -1446,6 +1446,12 @@ input.toggle-round-right-left:checked+label:after {
     transform: translate(-50%, -50%);
 }
 
+.article-center {
+    text-align: center;
+    text-align: -webkit-center;
+    text-align: -moz-center
+}
+
 #Green {
     color: #00b894;
 }
