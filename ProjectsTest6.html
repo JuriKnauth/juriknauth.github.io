@@ -1,0 +1,936 @@
+﻿<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=0.85" name="viewport">
+    <meta name="description"
+        content="Juri Knauth’s Portfolio. I am a Game Designer. This web page will showcase each project I worked on as well as link to my team-projects. Projects Page.">
+    <meta name="keywords"
+        content="JK,Juri,Knauth,Game,Design,Portfolio,Showcase,Blog,Projects,Contact,Video,Board,Maps,3D,2D,Art,Concepts,Escape,Room,Mods,Pirate,Splashy,Fluffy,Dice,Crashed,Captain,Endstation,Companies,PIG,Spielhauer">
+    <meta name="author" content="Juri Knauth">
+    <meta name="google-site-verification" content="rQabFeH1rub_olMtfbNRyzRKYo9M7YI4i3Qw7BW-Aj0">
+    <base href="http://www.juriknauth.com/">
+    <link rel="canonical" href="http://www.juriknauth.com/Projects.html">
+    <link rel="stylesheet" type="text/css" href="jkstyle.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Portfolio Juri Knauth</title>
+    <link rel="stylesheet" type="text/css" href="boilerplate.min.css">
+    <script type="text/javascript" src="jkscript.min.js"></script>
+    <script type="text/javascript" src="respond.min.js"></script>
+    <script type="text/javascript" src="isotope.pkgd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        var iso = new Isotope('.grid', {
+            itemSelector: '.nested-column2',
+            layoutMode: 'fitRows',
+            getSortData: {
+                Ranking: '.Ranking parseInt',
+                Genre: '.Genre',
+                Players: '.Players parseInt',
+                Age: '.Age parseInt',
+                Platform: '.Platform',
+                Input: '.Input',
+                Status: '.Status',
+                TeamSize: '.TeamSize parseInt',
+                Position: '.Position',
+                Date: '.Date parseInt',
+                Updated: '.Updated parseInt',
+                weight: function (itemElem) {
+                    var weight = itemElem.querySelector('.weight').textContent;
+                    return parseFloat(weight.replace(/[\(\)]/g, ''));
+                }
+            }
+        });
+
+        $(function () {
+            $("#loadbotbar").load("BotBar.html");
+            $("#loadindexmenu").load("IndexMenu.html");
+            $("#loadblogmenu").load("BlogMenu.html");
+            $("#loadprojectsmenu").load("ProjectsMenu.html");
+            $("#loadcontactmenu").load("ContactMenu.html");
+        });
+
+        function toggleDiv(attribute) {
+            var elements = document.getElementsByClassName("infoClass");
+            for (i = 0; i < elements.length; i++) {
+                if (elements[i].id === attribute) {
+                    if (elements[i].style.display === "none") {
+                        elements[i].style.display = "block";
+                    } else {
+                        elements[i].style.display = "none";
+                    }
+                }
+            }
+
+            iso.arrange({
+                sortBy: 'Genre'
+            });
+        };
+    </script>
+    <style>
+        #toggle-1+label:before {
+            content: "Title";
+        }
+
+        #toggle-1+label:after {
+            content: "Title";
+        }
+
+        #toggle-2+label:before {
+            content: "Ranking";
+        }
+
+        #toggle-2+label:after {
+            content: "Ranking";
+        }
+
+        #toggle-3+label:before {
+            content: "Genre";
+        }
+
+        #toggle-3+label:after {
+            content: "Genre";
+        }
+
+        #toggle-4+label:before {
+            content: "Player Count";
+        }
+
+        #toggle-4+label:after {
+            content: "Player Count";
+        }
+
+        #toggle-5+label:before {
+            content: "Age Rating";
+        }
+
+        #toggle-5+label:after {
+            content: "Age Rating";
+        }
+
+        #toggle-6+label:before {
+            content: "Platform";
+        }
+
+        #toggle-6+label:after {
+            content: "Platform";
+        }
+
+        #toggle-7+label:before {
+            content: "Input";
+        }
+
+        #toggle-7+label:after {
+            content: "Input";
+        }
+
+        #toggle-8+label:before {
+            content: "Status";
+        }
+
+        #toggle-8+label:after {
+            content: "Status";
+        }
+
+        #toggle-9+label:before {
+            content: "Team Size";
+        }
+
+        #toggle-9+label:after {
+            content: "Team Size";
+        }
+
+        #toggle-10+label:before {
+            content: "Position";
+        }
+
+        #toggle-10+label:after {
+            content: "Position";
+        }
+
+        #toggle-11+label:before {
+            content: "Date";
+        }
+
+        #toggle-11+label:after {
+            content: "Date";
+        }
+
+        #toggle-12+label:before {
+            content: "Updated";
+        }
+
+        #toggle-12+label:after {
+            content: "Updated";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containerBG">
+        <div class="main">
+            <div id="mainmenu">
+                <ulnav>
+                    <linavb class="dropdown">
+                        <a href="/" id="DefaultI" class="dropbtnimg">
+                            <picture class="logo" id="logo" width="52" height="52" alt="jklogo"
+                                style="text-align:left;">
+                                <source srcset="jkiconcropD.webp" type="image/webp">
+                                <img src="jkiconcropD.png" alt="logo" id="logo" width="52" height="52"
+                                    style="text-align:left;">
+                            </picture>
+                        </a>
+                        <div id="loadindexmenu"> </div>
+                    </linavb>
+                    <linav class="dropdown"> <a href="Blog.html" id="DefaultB" class="dropbtn"><b>Blog</b></a>
+                        <div id="loadblogmenu"> </div>
+                    </linav>
+                    <linav class="dropdown"> <a href="Projects.html" id="Projects" class="dropbtn"><b
+                                color="white">Projects</b></a>
+                        <div id="loadprojectsmenu"> </div>
+                    </linav>
+                    <linav class="dropdown"> <a href="Contact.html" id="DefaultC" class="dropbtn"><b>Contact</b></a>
+                        <div id="loadcontactmenu"> </div>
+                    </linav>
+                </ulnav>
+            </div>
+            <div id="ProjectsB" class="tabcontent">
+                <div class="articlebodyDesc">
+                    <p class="article-content" id="BannerB"> <em>The project tab will showcase the
+                            bigger tasks and link to further in-depth reading. </em></p>
+
+                            ∎1 &#8718;	∎2 &#x220e; 
+                </div>
+                <div class="articlebody">
+                    <a class="anchor" id="Projects" name="Projects"></a>
+                    <h2 class="article-titleL" float="left"> Projects</h2>
+                    <br>
+                    <br>
+                    <div class="columns">
+                        <div class="nested-column">
+                            <div class="articlesimple" style="display: block; margin:10px;">
+                                <p>
+                                </p>
+                                <div class="switch">
+                                    <input id="toggle-1" class="toggle toggle-round-right-left" type="checkbox"
+                                        checked="">
+                                    <label for="toggle-1" onclick="toggleDiv('Title')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-2" class="toggle toggle-round-right-left" type="checkbox"
+                                        checked="">
+                                    <label for="toggle-2" onclick="toggleDiv('Ranking')"></label>
+                                </div>
+                                <div class="switch" data-sort-value="Genre">
+                                    <input id="toggle-3" class="toggle toggle-round-right-left" data-sort-value="Genre"
+                                        type="checkbox">
+                                    <label for="toggle-3" data-sort-value="Genre" onclick="toggleDiv('Genre')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-4" class="toggle toggle-round-right-left" type="checkbox">
+                                    <label for="toggle-4" onclick="toggleDiv('Players')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-5" class="toggle toggle-round-right-left" type="checkbox">
+                                    <label for="toggle-5" onclick="toggleDiv('Age')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-6" class="toggle toggle-round-right-left" type="checkbox">
+                                    <label for="toggle-6" onclick="toggleDiv('Platform')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-7" class="toggle toggle-round-right-left" type="checkbox">
+                                    <label for="toggle-7" onclick="toggleDiv('Input')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-8" class="toggle toggle-round-right-left" type="checkbox">
+                                    <label for="toggle-8" onclick="toggleDiv('Status')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-9" class="toggle toggle-round-right-left" type="checkbox">
+                                    <label for="toggle-9" onclick="toggleDiv('TeamSize')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-10" class="toggle toggle-round-right-left" type="checkbox">
+                                    <label for="toggle-10" onclick="toggleDiv('Position')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-11" class="toggle toggle-round-right-left" type="checkbox">
+                                    <label for="toggle-11" onclick="toggleDiv('Date')"></label>
+                                </div>
+                                <div class="switch">
+                                    <input id="toggle-12" class="toggle toggle-round-right-left" type="checkbox">
+                                    <label for="toggle-12" onclick="toggleDiv('Updated')"></label>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid columns" style="flex-wrap: wrap;">
+                        <div class="nested-column2">
+                            <a class="anchor" id="AShotInTheDark" name="AShotInTheDark"></a>
+                            <a class="article" href="../Projects/AShotInTheDark.html">
+                                <picture class="img-fluid" width="640" height="480">
+                                    <source srcset="../Images/preWIPSD.webp" type="image/webp">
+                                    <img class="img-fluid" src="../Images/preWIPSD.jpg" alt="WIP">
+                                </picture>
+                                <div class="icon-container">
+                                    <div id="Green" class="top-right">⯈</div>
+                                </div>
+                                <div class="article-body">
+                                    <div class="article-content">
+                                        <div class="infoClass" id="Title" style="display: none;">
+                                            <h6> <b>A Shot In The Dark</b></h6>
+                                        </div>
+                                    </div>
+                                    <footer class="article-info" style="padding:0px 0px">
+                                        <ul
+                                            style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
+                                            </li>
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
+                                                Twin-Stick, Top-Down-Shooter </li>
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
+                                                </b> 2-4 Local-Multiplayer </li>
+                                            <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 12
+                                            </li>
+                                            <li class="infoClass" id="Platform" style="display: none"><b>Platform: </b>
+                                                PC </li>
+                                            <li class="infoClass" id="Input" style="display: none"><b>Input: </b>
+                                                Gamepad </li>
+                                            <li class="infoClass" id="Status" style="display: none"><b>Status: </b>
+                                                Released Versin 0.2 </li>
+                                            <li class="infoClass" id="TeamSize" style="display: none"><b>Team size: </b>
+                                                4</li>
+                                            <li class="infoClass" id="Position" style="display: none"><b>Position: </b>
+                                                Game Developer </li>
+                                            <li class="infoClass" id="Date" style="display: none"><b>Date: </b> 2019/04
+                                            </li>
+                                            <li class="infoClass" id="Updated" style="display: none"><b>Updated: </b>
+                                            </li>
+                                        </ul>
+                                    </footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column2">
+                            <a class="anchor" id="PirateSplashy" name="PirateSplashy"></a>
+                            <a class="article" href="../Projects/PirateSplashy.html">
+                                <picture class="img-fluid" width="640" height="480">
+                                    <source srcset="../Images/prePirateSplasyScreenShotBalanced.webp" type="image/webp">
+                                    <img class="img-fluid" src="../Images/prePirateSplasyScreenShotBalanced.jpg"
+                                        alt="Pirate Splashy">
+                                </picture>
+                                <div class="icon-container">
+                                    <div id="Purple" class="top-right">■</div>
+                                </div>
+                                <div class="article-body">
+                                    <div class="article-content">
+                                        <div class="infoClass" id="Title" style="display: none;">
+                                            <h6> <b>Pirate Splashy</b></h6>
+                                        </div>
+                                    </div>
+                                    <footer class="article-info" style="padding:0px 0px">
+                                        <ul
+                                            style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
+                                            </li>
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
+                                                Party </li>
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
+                                                </b> 1-6 Local-Multiplayer </li>
+                                            <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 0
+                                            </li>
+                                            <li class="infoClass" id="Platform" style="display: none"><b>Platform: </b>
+                                                Xbox One, PC </li>
+                                            <li class="infoClass" id="Input" style="display: none"><b>Input: </b>
+                                                Kinect, Webcam, Gamepad, Keyboard </li>
+                                            <li class="infoClass" id="Status" style="display: none"><b>Status: </b>
+                                                Closed Beta </li>
+                                            <li class="infoClass" id="TeamSize" style="display: none"><b>Team size: </b>
+                                                4</li>
+                                            <li class="infoClass" id="Position" style="display: none"><b>Position: </b>
+                                                Product Owner, Game Designer and Developer </li>
+                                            <li class="infoClass" id="Date" style="display: none"><b>Date: </b> 2017/07
+                                            </li>
+                                            <li class="infoClass" id="Updated" style="display: none"><b>Updated: </b>
+                                            </li>
+                                        </ul>
+                                    </footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column2">
+                            <a class="anchor" id="NinjaCar" name="NinjaCar"></a>
+                            <a class="article" href="../Projects/NinjaCar.html">
+                                <picture class="img-fluid" width="640" height="480">
+                                    <source srcset="../Images/preWIPSD.webp" type="image/webp">
+                                    <img class="img-fluid" src="../Images/preWIPSD.jpg" alt="WIP">
+                                </picture>
+                                <div class="icon-container">
+                                    <div id="Red" class="top-right">⬤</div>
+                                </div>
+                                <div class="article-body">
+                                    <div class="article-content">
+                                        <div class="infoClass" id="Title" style="display: none;">
+                                            <h6> <b>Ninja Car</b></h6>
+                                        </div>
+                                    </div>
+                                    <footer class="article-info" style="padding:0px 0px">
+                                        <ul
+                                            style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
+                                            </li>
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
+                                                Racing </li>
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
+                                                </b> 1-2 Local-Multiplayer </li>
+                                            <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 6
+                                            </li>
+                                            <li class="infoClass" id="Platform" style="display: none"><b>Platform: </b>
+                                                Android </li>
+                                            <li class="infoClass" id="Input" style="display: none"><b>Input: </b>
+                                                Touch </li>
+                                            <li class="infoClass" id="Status" style="display: none"><b>Status: </b>
+                                                Closed Beta </li>
+                                            <li class="infoClass" id="TeamSize" style="display: none"><b>Team size: </b>
+                                                2</li>
+                                            <li class="infoClass" id="Position" style="display: none"><b>Position: </b>
+                                                Game Developer, Game Designer </li>
+                                            <li class="infoClass" id="Date" style="display: none"><b>Date: </b> 2018/11
+                                            </li>
+                                            <li class="infoClass" id="Updated" style="display: none"><b>Updated: </b>
+                                            </li>
+                                        </ul>
+                                    </footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column2">
+                            <a class="anchor" id="ChloeAndBrendan2018" name="ChloeAndBrendan2018"></a>
+                            <a class="article" href="../Projects/ChloeAndBrendan2018.html">
+                                <picture class="img-fluid" width="640" height="480">
+                                    <source srcset="../Images/ChloeAndBrendan_IG_Bench_640.webp" type="image/webp">
+                                    <img class="img-fluid" src="../Images/ChloeAndBrendan_IG_Bench_640.jpg"
+                                        alt="Chloe And Brendan 2018">
+                                </picture>
+                                <div class="icon-container">
+                                    <div id="Purple" class="top-right">■</div>
+                                </div>
+                                <div class="article-body">
+                                    <div class="article-content">
+                                        <div class="infoClass" id="Title" style="display: none;">
+                                            <h6> <b>Chloe and Brendan 2018</b></h6>
+                                        </div>
+                                    </div>
+                                    <footer class="article-info" style="padding:0px 0px">
+                                        <ul
+                                            style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
+                                            </li>
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
+                                                Romance, Story, Personalized </li>
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
+                                                </b> 2 Server-based networked multiplayer </li>
+                                            <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 0
+                                            </li>
+                                            <li class="infoClass" id="Platform" style="display: none"><b>Platform: </b>
+                                                Android </li>
+                                            <li class="infoClass" id="Input" style="display: none"><b>Input: </b>
+                                                Touch </li>
+                                            <li class="infoClass" id="Status" style="display: none"><b>Status: </b>
+                                                Closed Alpha - Paused </li>
+                                            <li class="infoClass" id="TeamSize" style="display: none"><b>Team size: </b>
+                                                2</li>
+                                            <li class="infoClass" id="Position" style="display: none"><b>Position: </b>
+                                                Game Developer, Game Designer </li>
+                                            <li class="infoClass" id="Date" style="display: none"><b>Date: </b> 2018/05
+                                            </li>
+                                            <li class="infoClass" id="Updated" style="display: none"><b>Updated: </b>
+                                            </li>
+                                        </ul>
+                                    </footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column2">
+                            <a class="anchor" id="BT" name="BT"></a>
+                            <a class="article" href="../Projects/BT.html">
+                                <picture class="img-fluid" width="640" height="480">
+                                    <source srcset="../Images/PreBT.webp" type="image/webp">
+                                    <img class="img-fluid" src="../Images/PreBT.png" alt="BT">
+                                </picture>
+                                <div class="icon-container">
+                                    <div id="Green" class="top-right">⯈</div>
+                                </div>
+                                <div class="article-body">
+                                    <div class="article-content">
+                                        <div class="infoClass" id="Title" style="display: none;">
+                                            <h6> <b>Bachelor thesis: MDAPPRC</b></h6>
+                                        </div>
+                                    </div>
+                                    <footer class="article-info" style="padding:0px 0px">
+                                        <ul
+                                            style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
+                                            </li>
+                                            <li class="infoClass" id="Genre" style="display: block;"></li>
+                                            <li class="infoClass" id="Players" style="display: none;"></li>
+                                            <li class="infoClass" id="Age" style="display: none"></li>
+                                            <li class="infoClass" id="Platform" style="display: none"></li>
+                                            <li class="infoClass" id="Input" style="display: none"></li>
+                                            <li class="infoClass" id="Status" style="display: none"><b>Status: </b>
+                                                Certified </li>
+                                            <li class="infoClass" id="TeamSize" style="display: none"><b>Team size: </b>
+                                                1</li>
+                                            <li class="infoClass" id="Position" style="display: none"><b>Position: </b>
+                                                Researcher </li>
+                                            <li class="infoClass" id="Date" style="display: none"><b>Date: </b> 2019/01
+                                            </li>
+                                            <li class="infoClass" id="Updated" style="display: none"><b>Updated: </b>
+                                            </li>
+                                        </ul>
+                                    </footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column2">
+                            <a class="anchor" id="Endstation" name="Endstation"></a>
+                            <a class="article" href="../Projects/Endstation.html">
+                                <picture class="img-fluid" width="640" height="480">
+                                    <source srcset="../Images/preEndstationCoverSD.webp" type="image/webp">
+                                    <img class="img-fluid" src="../Images/preEndstationCoverSD.jpg" alt="Endstation">
+                                </picture>
+                                <div class="icon-container">
+                                    <div id="Teal" class="top-right">⯇⯇</div>
+                                </div>
+                                <div class="article-body">
+                                    <div class="article-content">
+                                        <div class="infoClass" id="Title" style="display: none;">
+                                            <h6> <b>Endstation</b></h6>
+                                        </div>
+                                    </div>
+                                    <footer class="article-info" style="padding:0px 0px">
+                                        <ul
+                                            style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
+                                            </li>
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
+                                                Riddles, Puzzle </li>
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
+                                                </b> 2-4</li>
+                                            <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 6
+                                            </li>
+                                            <li class="infoClass" id="Platform" style="display: none"><b>Platform: </b>
+                                                Escape Room </li>
+                                            <li class="infoClass" id="Status" style="display: none"><b>Status: </b>
+                                                Dismantled </li>
+                                            <li class="infoClass" id="TeamSize" style="display: none"><b>Team size: </b>
+                                                10</li>
+                                            <li class="infoClass" id="Position" style="display: none"><b>Position: </b>
+                                                Game Designer, Mechanic </li>
+                                            <li class="infoClass" id="Date" style="display: none"><b>Date: </b> 2017/06
+                                            </li>
+                                            <li class="infoClass" id="Updated" style="display: none"><b>Updated: </b>
+                                            </li>
+                                        </ul>
+                                    </footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column2">
+                            <a class="anchor" id="BreadAndGames" name="BreadAndGames"></a>
+                            <a class="article" href="../Projects/BreadAndGames.html">
+                                <picture class="img-fluid" width="640" height="480">
+                                    <source srcset="../Images/preBreadAndGamesCover2.webp" type="image/webp">
+                                    <img class="img-fluid" src="../Images/preBreadAndGamesCover2.jpg"
+                                        alt="Bread And Games">
+                                </picture>
+                                <div class="icon-container">
+                                    <div id="Green" class="top-right">⯈</div>
+                                </div>
+                                <div class="article-body">
+                                    <div class="article-content">
+                                        <div class="infoClass" id="Title" style="display: none;">
+                                            <h6> <b>Bread and Games</b></h6>
+                                        </div>
+                                    </div>
+                                    <footer class="article-info" style="padding:0px 0px">
+                                        <ul
+                                            style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
+                                            </li>
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
+                                                Twin-Stick, Top-Down-Shooter </li>
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
+                                                </b> 2 Local-Multiplayer </li>
+                                            <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 6
+                                            </li>
+                                            <li class="infoClass" id="Platform" style="display: none"><b>Platform: </b>
+                                                PC </li>
+                                            <li class="infoClass" id="Input" style="display: none"><b>Input: </b>
+                                                Gamepad </li>
+                                            <li class="infoClass" id="Status" style="display: none"><b>Status: </b>
+                                                Released Version 1.2 </li>
+                                            <li class="infoClass" id="TeamSize" style="display: none"><b>Team size: </b>
+                                                12</li>
+                                            <li class="infoClass" id="Position" style="display: none"><b>Position: </b>
+                                                Lead Game Developer, Game Designer </li>
+                                            <li class="infoClass" id="Date" style="display: none"><b>Date: </b> 2018/01
+                                            </li>
+                                            <li class="infoClass" id="Updated" style="display: none"><b>Updated: </b>
+                                            </li>
+                                        </ul>
+                                    </footer>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column2">
+                            <a class="anchor" id="FluffyDice" name="FluffyDice"></a>
+                            <a class="article" href="../Projects/FluffyDice.html">
+                                <picture class="img-fluid" width="640" height="480">
+                                    <source srcset="../Images/preFluffyDiceDMenu.webp" type="image/webp">
+                                    <img class="img-fluid" src="../Images/preFluffyDiceDMenu.jpg" alt="Fluffy Dice">
+                                </picture>
+                                <div class="icon-container">
+                                    <div id="Green" class="top-right">⯈</div>
+                                </div>
+                                <div class="article-body">
+                                    <div class="article-content">
+                                        <div class="infoClass" id="Title" style="display: none;">
+                                            <h6> <b>Fluffy Dice</b></h6>
+                                        </div>
+                                    </div>
+                                    <footer class="article-info" style="padding:0px 0px">
+                                        <ul
+                                            style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
+                                            </li>
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
+                                                Party, Sport, Dice-Rolling </li>
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
+                                                </b> 1-2 Local-Multiplayer </li>
+                                            <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 6
+                                            </li>
+                                            <li class="infoClass" id="Platform" style="display: none"><b>Platform: </b>
+                                                PC </li>
+                                            <li class="infoClass" id="Input" style="display: none"><b>Input: </b>
+                                                Gamepad, Keyboard </li>
+                                            <li class="infoClass" id="Status" style="display: none"><b>Status: </b>
+                                                Beta </li>
+                                            <li class="infoClass" id="TeamSize" style="display: none"><b>Team size: </b>
+                                                9</li>
+                                            <li class="infoClass" id="Position" style="display: none"><b>Position: </b>
+                                                Game Designer, Game Developer </li>
+                                            <li class="infoClass" id="Date" style="display: none"><b>Date: </b> 2017/01
+                                            </li>
+                                            <li class="infoClass" id="Updated" style="display: none"><b>Updated: </b>
+                                            </li>
+                                        </ul>
+                                    </footer>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column2">
+                            <a class="anchor" id="CrashedCaptain" name="CrashedCaptain"></a>
+                            <a class="article" href="../Projects/CrashedCaptain.html">
+                                <picture class="img-fluid" width="640" height="480">
+                                    <source srcset="../Images/preCrashedCaptainCockpitIntro.webp" type="image/webp">
+                                    <img class="img-fluid" src="../Images/preCrashedCaptainCockpitIntro.jpg"
+                                        alt="Crashed Captain">
+                                </picture>
+                                <div class="icon-container">
+                                    <div id="Blue" class="top-right">■</div>
+                                </div>
+                                <div class="article-body">
+                                    <div class="article-content">
+                                        <div class="infoClass" id="Title" style="display: none;">
+                                            <h6> <b>Crashed Captain</b></h6>
+                                        </div>
+                                    </div>
+                                    <footer class="article-info" style="padding:0px 0px">
+                                        <ul
+                                            style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
+                                            </li>
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
+                                                Marble, Arcade </li>
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
+                                                </b> 1 </li>
+                                            <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 12
+                                            </li>
+                                            <li class="infoClass" id="Platform" style="display: none"><b>Platform: </b>
+                                                Android </li>
+                                            <li class="infoClass" id="Input" style="display: none"><b>Input: </b>
+                                                Gyroscope </li>
+                                            <li class="infoClass" id="Status" style="display: none"><b>Status: </b>
+                                                Alpha - Frozen </li>
+                                            <li class="infoClass" id="TeamSize" style="display: none"><b>Team size: </b>
+                                                5</li>
+                                            <li class="infoClass" id="Position" style="display: none"><b>Position: </b>
+                                                Product Owner, Game Designer </li>
+                                            <li class="infoClass" id="Date" style="display: none"><b>Date: </b> 2016/08
+                                            </li>
+                                            <li class="infoClass" id="Updated" style="display: none"><b>Updated: </b>
+                                            </li>
+                                        </ul>
+                                    </footer>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column2">
+                            <a class="anchor" id="VoA" name="VoA"></a>
+                            <a class="article" href="../Projects/VoA.html">
+                                <picture class="img-fluid" width="640" height="480">
+                                    <source srcset="../Images/preLockSDA.webp" type="image/webp">
+                                    <img class="img-fluid" src="../Images/preLockSDA.jpg" alt="V.o.A.">
+                                </picture>
+                                <div class="icon-container">
+                                    <div id="Green" class="top-right">⯈</div>
+                                </div>
+                                <div class="article-body">
+                                    <div class="article-content">
+                                        <div class="infoClass" id="Title" style="display: none;">
+                                            <h6> <b>V.o.A.</b></h6>
+                                        </div>
+                                    </div>
+                                    <footer class="article-info" style="padding:0px 0px">
+                                        <ul
+                                            style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
+                                            </li>
+                                            <li class="infoClass" id="Genre" style="display: block;"></li>
+                                            <li class="infoClass" id="Players" style="display: none;"></li>
+                                            <li class="infoClass" id="Age" style="display: none"></li>
+                                            <li class="infoClass" id="Platform" style="display: none"></li>
+                                            <li class="infoClass" id="Input" style="display: none"></li>
+                                            <li class="infoClass" id="Status" style="display: none"><b>Status: </b>
+                                                Undisclosed
+                                            </li>
+                                            <li class="infoClass" id="TeamSize" style="display: none"><b>Team size: </b>
+                                                1</li>
+                                            <li class="infoClass" id="Position" style="display: none"><b>Position: </b>
+                                                Solopreneure </li>
+                                            <li class="infoClass" id="Date" style="display: none"><b>Date: </b> 2016/03
+                                            </li>
+                                            <li class="infoClass" id="Updated" style="display: none"><b>Updated: </b>
+                                            </li>
+                                        </ul>
+                                    </footer>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column2">
+                            <a class="anchor" id="AdamMania" name="AdamMania"></a>
+                            <a class="article" href="../Projects/AdamMania.html">
+                                <picture class="img-fluid" width="640" height="480">
+                                    <source srcset="../Images/preAdamMania_ShowCase.webp" type="image/webp">
+                                    <img class="img-fluid" src="../Images/preAdamMania_ShowCase.jpg" alt="Adam Mania!">
+                                </picture>
+                                <div class="icon-container">
+                                    <div id="Green" class="top-right">⯈</div>
+                                </div>
+                                <div class="article-body">
+                                    <div class="article-content">
+                                        <div class="infoClass" id="Title" style="display: none;">
+                                            <h6> <b>Adam Mania!</b></h6>
+                                        </div>
+                                    </div>
+                                    <footer class="article-info" style="padding:0px 0px">
+                                        <ul
+                                            style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
+                                            </li>
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
+                                                Dungen
+                                                Crawler </li>
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
+                                                </b> 2-4 </li>
+                                            <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 12
+                                            </li>
+                                            <li class="infoClass" id="Platform" style="display: none"><b>Platform: </b>
+                                                Board Game </li>
+                                            <li class="infoClass" id="Input" style="display: none"></li>
+                                            <li class="infoClass" id="Status" style="display: none"><b>Status: </b>
+                                                Prototype </li>
+                                            <li class="infoClass" id="TeamSize" style="display: none"><b>Team size: </b>
+                                                4</li>
+                                            <li class="infoClass" id="Position" style="display: none"><b>Position: </b>
+                                                Game Designer,
+                                                Artist </li>
+                                            <li class="infoClass" id="Date" style="display: none"><b>Date: </b> 2015/12
+                                            </li>
+                                            <li class="infoClass" id="Updated" style="display: none"><b>Updated: </b>
+                                            </li>
+                                        </ul>
+                                    </footer>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column2">
+                            <a class="anchor" id="ShadowOfWar" name="ShadowOfWar"></a>
+                            <a class="article" href="../Projects/ShadowOfWar.html">
+                                <picture class="img-fluid" width="640" height="480">
+                                    <source srcset="../Images/preShadowOfWar.webp" type="image/webp">
+                                    <img class="img-fluid" src="../Images/preShadowOfWar.jpg" alt="Shadow Of War">
+                                </picture>
+                                <div class="icon-container">
+                                    <div id="Blue" class="top-right">■</div>
+                                </div>
+                                <div class="article-body">
+                                    <div class="article-content">
+                                        <div class="infoClass" id="Title" style="display: none;">
+                                            <h6> <b>Shadow of War</b></h6>
+                                        </div>
+                                    </div>
+                                    <footer class="article-info" style="padding:0px 0px">
+                                        <ul
+                                            style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
+                                            </li>
+                                            <li class="infoClass" id="Genre" style="display: block;"></li>
+                                            <li class="infoClass" id="Players" style="display: none;"></li>
+                                            <li class="infoClass" id="Age" style="display: none">Age rating: 12
+                                            </li>
+                                            <li class="infoClass" id="Platform" style="display: none"><b>Platform: </b>
+                                                PC </li>
+                                            <li class="infoClass" id="Input" style="display: none"><b>Input: </b>
+                                                Keyboard &amp; Mouse </li>
+                                            <li class="infoClass" id="Status" style="display: none"><b>Status: </b>
+                                                Undisclosed </li>
+                                            <li class="infoClass" id="TeamSize" style="display: none"><b>Team size: </b>
+                                                4</li>
+                                            <li class="infoClass" id="Position" style="display: none"><b>Position: </b>
+                                                Solopreneure </li>
+                                            <li class="infoClass" id="Date" style="display: none"><b>Date: </b> 2013/03
+                                            </li>
+                                            <li class="infoClass" id="Updated" style="display: none"><b>Updated: </b>
+                                            </li>
+                                        </ul>
+                                    </footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column2">
+                            <a class="anchor" id="AmericasArmy" name="AmericasArmy"></a>
+                            <a class="article" href="../Projects/AmericasArmyGameOrRecruitmentTool.html">
+                                <picture class="img-fluid" width="640" height="480">
+                                    <source srcset="../Images/preProSeminarArbeitAmericasArmy-1A.webp"
+                                        type="image/webp">
+                                    <img class="img-fluid" src="../Images/preProSeminarArbeitAmericasArmy-1A.jpg"
+                                        alt="Game or recruitment tool?">
+                                </picture>
+                                <div class="icon-container">
+                                    <div id="Green" class="top-right">⯈</div>
+                                </div>
+                                <div class="article-body">
+                                    <div class="article-content">
+                                        <div class="infoClass" id="Title" style="display: none;">
+                                            <h6> <b>Game or recruitment tool?</b></h6>
+                                        </div>
+                                    </div>
+                                    <footer class="article-info" style="padding:0px 0px">
+                                        <ul
+                                            style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
+                                            </li>
+                                            <li class="infoClass" id="Genre" style="display: block;"></li>
+                                            <li class="infoClass" id="Players" style="display: none;"></li>
+                                            <li class="infoClass" id="Age" style="display: none"></li>
+                                            <li class="infoClass" id="Platform" style="display: none"></li>
+                                            <li class="infoClass" id="Input" style="display: none"></li>
+                                            <li class="infoClass" id="Status" style="display: none"><b>Status: </b>
+                                                Certified </li>
+                                            <li class="infoClass" id="TeamSize" style="display: none"><b>Team size: </b>
+                                                1 </li>
+                                            <li class="infoClass" id="Position" style="display: none"><b>Position: </b>
+                                                Researcher </li>
+                                            <li class="infoClass" id="Date" style="display: none"><b>Date: </b> 2015/01
+                                            </li>
+                                            <li class="infoClass" id="Updated" style="display: none"><b>Updated: </b>
+                                            </li>
+                                        </ul>
+                                    </footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column2">
+                            <a class="anchor" id="HeulDoch" name="HeulDoch"></a>
+                            <a class="article" href="../Projects/HeulDoch.html">
+                                <picture class="img-fluid" width="640" height="480">
+                                    <source srcset="../Images/preHeulDochInGame.webp" type="image/webp">
+                                    <img class="img-fluid" src="../Images/preHeulDochInGame.jpg" alt="Heul Doch!">
+                                </picture>
+                                <div class="icon-container">
+                                    <div id="Green" class="top-right">⯈</div>
+                                </div>
+                                <div class="article-body">
+                                    <div class="article-content">
+                                        <div class="infoClass" id="Title" style="display: none;">
+                                            <h6> <b>Heul Doch!</b></h6>
+                                        </div>
+                                    </div>
+                                    <footer class="article-info" style="padding:0px 0px">
+                                        <ul
+                                            style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
+                                            <li class="infoClass" id="Ranking" style="display: block;">
+                                            </li>
+                                            <li class="infoClass" id="Genre" style="display: block;"><b>Genre: </b>
+                                                Strategy </li>
+                                            <li class="infoClass" id="Players" style="display: none;"><b>Player Count:
+                                                </b> 2-4 </li>
+                                            <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 12
+                                            </li>
+                                            <li class="infoClass" id="Platform" style="display: none"><b>Platform: </b>
+                                                Board Game </li>
+                                            <li class="infoClass" id="Input" style="display: none"></li>
+                                            <li class="infoClass" id="Status" style="display: none"><b>Status: </b>
+                                                Prototype Versin 1.2
+                                            </li>
+                                            <li class="infoClass" id="TeamSize" style="display: none"><b>Team size: </b>
+                                                1</li>
+                                            <li class="infoClass" id="Position" style="display: none"><b>Position: </b>
+                                                Solopreneure </li>
+                                            <li class="infoClass" id="Date" style="display: none"><b>Date: </b> 2019/04
+                                            </li>
+                                            <li class="infoClass" id="Updated" style="display: none"><b>Updated: </b>
+                                            </li>
+                                        </ul>
+                                    </footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nested-column2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gridContainer clearfix">
+            <div id="div1" class="fluid"> </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="loadbotbar" class="bottomMain">
+        </div>
+    </div>
+</body>
+
+</html>
