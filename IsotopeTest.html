@@ -35,28 +35,10 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
     <script>
-    $(function () {
-      $("#loadbotbar").load("BotBar.html");
-      $("#loadindexmenu").load("IndexMenu.html");
-      $("#loadblogmenu").load("BlogMenu.html");
-      $("#loadprojectsmenu").load("ProjectsMenu.html");
-      $("#loadcontactmenu").load("ContactMenu.html");
-    });
+    // external js: isotope.pkgd.js
 
-    function toggleDiv(attribute) {
-      var elements = document.getElementsByClassName("infoClass");
-      for (i = 0; i < elements.length; i++) {
-        if (elements[i].id === attribute) {
-          if (elements[i].style.display === "none") {
-            elements[i].style.display = "block";
-          } else {
-            elements[i].style.display = "none";
-          }
-        }
-      }
-    };
-
-    var iso = new Isotope('.grid', {
+    // init Isotope
+    var $grid = $('.grid').isotope({
       itemSelector: '.element-item',
       layoutMode: 'fitRows',
       getSortData: {
@@ -65,40 +47,28 @@
         number: '.number parseInt',
         category: '[data-category]',
         weight: function (itemElem) {
-          var weight = itemElem.querySelector('.weight').textContent;
+          var weight = $(itemElem).find('.weight').text();
           return parseFloat(weight.replace(/[\(\)]/g, ''));
         }
       }
     });
 
     // bind sort button click
-    var sortByGroup = document.querySelector('.sort-by-button-group');
-    sortByGroup.addEventListener('click', function (event) {
-      // only button clicks
-      if (!matchesSelector(event.target, '.button')) {
-        return;
-      }
-      var sortValue = event.target.getAttribute('data-sort-value');
-      iso.arrange({
+    $('.sort-by-button-group').on('click', 'button', function () {
+      var sortValue = $(this).attr('data-sort-value');
+      $grid.isotope({
         sortBy: sortValue
       });
     });
 
     // change is-checked class on buttons
-    var buttonGroups = document.querySelectorAll('.button-group');
-    for (var i = 0; i < buttonGroups.length; i++) {
-      buttonGroups[i].addEventListener('click', onButtonGroupClick);
-    }
-
-    function onButtonGroupClick(event) {
-      // only button clicks
-      if (!matchesSelector(event.target, '.button')) {
-        return;
-      }
-      var button = event.target;
-      button.parentNode.querySelector('.is-checked').classList.remove('is-checked');
-      button.classList.add('is-checked');
-    }
+    $('.button-group').each(function (i, buttonGroup) {
+      var $buttonGroup = $(buttonGroup);
+      $buttonGroup.on('click', 'button', function () {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        $(this).addClass('is-checked');
+      });
+    });
   </script>
     <style>
     * {
