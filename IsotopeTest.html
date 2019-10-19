@@ -38,7 +38,7 @@
     // external js: isotope.pkgd.js
 
     // init Isotope
-    var $grid = $('.grid').isotope({
+    var iso = new Isotope('.grid', {
       itemSelector: '.element-item',
       layoutMode: 'fitRows',
       getSortData: {
