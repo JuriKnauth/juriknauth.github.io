@@ -261,6 +261,30 @@ img {
     background-attachment: fixed;
 }
 
+.containerBGV {
+    top: 0px;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    min-height: 100%;
+    z-index: 0;
+    min-height: 100%;
+    vertical-align: middle;
+    margin: auto;
+    background-image: url(../Valpha/Images/ValphaBG.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    -ms-background-attachment: fixed;
+    background-attachment: fixed;
+}
+
 .logo {
     float: none;
     display: inline-block;
@@ -1256,6 +1280,10 @@ a.anchor {
 
 #ContactB {
     background-color: #81ecec
+}
+
+#ContactV {
+    background-color: #b71540
 }
 
 .img-fluid:hover,
