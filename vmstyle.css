@@ -1,5 +1,4 @@
 ﻿@charset "utf-8";
-
 html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -793,14 +792,12 @@ p {
 }
 
 @media screen and (min-width:800px) {
-
     .column,
     .columns {
         display: -ms-flexbox;
         display: flex;
         width: 100%
     }
-
     .first-article .article-body {
         flex: 1
     }
@@ -810,7 +807,6 @@ p {
     .first-article {
         flex-direction: row
     }
-
     .first-article .article-body {
         flex: 1
     }
@@ -1283,7 +1279,7 @@ a.anchor {
 }
 
 #ContactV {
-    background-color: #b71540
+    background-color: #ea8685
 }
 
 .img-fluid:hover,
