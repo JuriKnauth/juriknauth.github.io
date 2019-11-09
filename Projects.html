@@ -25,128 +25,129 @@
     <title>Portfolio Juri Knauth</title>
     <link rel="stylesheet" type="text/css" href="boilerplate.min.css">
     <script type="text/javascript" src="jkscript.min.js"></script>
-    <type="text/javascript" script src="respond.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script>
-        $(function () {
-            $("#loadbotbar").load("BotBar.html");
-            $("#loadindexmenu").load("IndexMenu.html");
-            $("#loadblogmenu").load("BlogMenu.html");
-            $("#loadprojectsmenu").load("ProjectsMenu.html");
-            $("#loadcontactmenu").load("ContactMenu.html");
-        });
+    <type="text/javascript" script src="respond.min.js">
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script>
+            $(function () {
+                $("#loadbotbar").load("BotBar.html");
+                $("#loadindexmenu").load("IndexMenu.html");
+                $("#loadblogmenu").load("BlogMenu.html");
+                $("#loadprojectsmenu").load("ProjectsMenu.html");
+                $("#loadcontactmenu").load("ContactMenu.html");
+            });
 
-        function toggleDiv(attribute) {
-            var elements = document.getElementsByClassName("infoClass");
-            for (i = 0; i < elements.length; i++) {
-                if (elements[i].id === attribute) {
-                    if (elements[i].style.display === "none") {
-                        elements[i].style.display = "block";
-                    } else {
-                        elements[i].style.display = "none";
+            function toggleDiv(attribute) {
+                var elements = document.getElementsByClassName("infoClass");
+                for (i = 0; i < elements.length; i++) {
+                    if (elements[i].id === attribute) {
+                        if (elements[i].style.display === "none") {
+                            elements[i].style.display = "block";
+                        } else {
+                            elements[i].style.display = "none";
+                        }
                     }
                 }
+            };
+        </script>
+        <style>
+            #toggle-1+label:before {
+                content: "Title";
             }
-        };
-    </script>
-    <style>
-        #toggle-1+label:before {
-            content: "Title";
-        }
 
-        #toggle-1+label:after {
-            content: "Title";
-        }
+            #toggle-1+label:after {
+                content: "Title";
+            }
 
-        #toggle-2+label:before {
-            content: "Ranking";
-        }
+            #toggle-2+label:before {
+                content: "Ranking";
+            }
 
-        #toggle-2+label:after {
-            content: "Ranking";
-        }
+            #toggle-2+label:after {
+                content: "Ranking";
+            }
 
-        #toggle-3+label:before {
-            content: "Genre";
-        }
+            #toggle-3+label:before {
+                content: "Genre";
+            }
 
-        #toggle-3+label:after {
-            content: "Genre";
-        }
+            #toggle-3+label:after {
+                content: "Genre";
+            }
 
-        #toggle-4+label:before {
-            content: "Player Count";
-        }
+            #toggle-4+label:before {
+                content: "Player Count";
+            }
 
-        #toggle-4+label:after {
-            content: "Player Count";
-        }
+            #toggle-4+label:after {
+                content: "Player Count";
+            }
 
-        #toggle-5+label:before {
-            content: "Age Rating";
-        }
+            #toggle-5+label:before {
+                content: "Age Rating";
+            }
 
-        #toggle-5+label:after {
-            content: "Age Rating";
-        }
+            #toggle-5+label:after {
+                content: "Age Rating";
+            }
 
-        #toggle-6+label:before {
-            content: "Platform";
-        }
+            #toggle-6+label:before {
+                content: "Platform";
+            }
 
-        #toggle-6+label:after {
-            content: "Platform";
-        }
+            #toggle-6+label:after {
+                content: "Platform";
+            }
 
-        #toggle-7+label:before {
-            content: "Input";
-        }
+            #toggle-7+label:before {
+                content: "Input";
+            }
 
-        #toggle-7+label:after {
-            content: "Input";
-        }
+            #toggle-7+label:after {
+                content: "Input";
+            }
 
-        #toggle-8+label:before {
-            content: "Status";
-        }
+            #toggle-8+label:before {
+                content: "Status";
+            }
 
-        #toggle-8+label:after {
-            content: "Status";
-        }
+            #toggle-8+label:after {
+                content: "Status";
+            }
 
-        #toggle-9+label:before {
-            content: "Team Size";
-        }
+            #toggle-9+label:before {
+                content: "Team Size";
+            }
 
-        #toggle-9+label:after {
-            content: "Team Size";
-        }
+            #toggle-9+label:after {
+                content: "Team Size";
+            }
 
-        #toggle-10+label:before {
-            content: "Position";
-        }
+            #toggle-10+label:before {
+                content: "Position";
+            }
 
-        #toggle-10+label:after {
-            content: "Position";
-        }
+            #toggle-10+label:after {
+                content: "Position";
+            }
 
-        #toggle-11+label:before {
-            content: "Date";
-        }
+            #toggle-11+label:before {
+                content: "Date";
+            }
 
-        #toggle-11+label:after {
-            content: "Date";
-        }
+            #toggle-11+label:after {
+                content: "Date";
+            }
 
-        #toggle-12+label:before {
-            content: "Updated";
-        }
+            #toggle-12+label:before {
+                content: "Updated";
+            }
 
-        #toggle-12+label:after {
-            content: "Updated";
-        }
-    </style>
+            #toggle-12+label:after {
+                content: "Updated";
+            }
+        </style>
 </head>
 
 <body>
@@ -188,60 +189,54 @@
                     <br />
                     <br />
                     <div class="columns">
-                        <div class="nested-column">
-                            <div class="articlesimple" style="display: block; margin:10px;">
-                                <p>
-                                    <div class="switch">
-                                        <input id="toggle-1" class="toggle toggle-round-right-left" type="checkbox"
-                                            checked>
-                                        <label for="toggle-1" onclick="toggleDiv('Title')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-2" class="toggle toggle-round-right-left" type="checkbox"
-                                            checked>
-                                        <label for="toggle-2" onclick="toggleDiv('Ranking')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-3" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-3" onclick="toggleDiv('Genre')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-4" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-4" onclick="toggleDiv('Players')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-5" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-5" onclick="toggleDiv('Age')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-6" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-6" onclick="toggleDiv('Platform')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-7" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-7" onclick="toggleDiv('Input')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-8" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-8" onclick="toggleDiv('Status')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-9" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-9" onclick="toggleDiv('TeamSize')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-10" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-10" onclick="toggleDiv('Position')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-11" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-11" onclick="toggleDiv('Date')"></label>
-                                    </div>
-                                    <div class="switch">
-                                        <input id="toggle-12" class="toggle toggle-round-right-left" type="checkbox">
-                                        <label for="toggle-12" onclick="toggleDiv('Updated')"></label>
-                                    </div>
-                                </p>
+                        <div class="nested-column" style="margin: 4px;">
+                            <div class="switch">
+                                <input id="toggle-1" class="toggle toggle-round-right-left" type="checkbox" checked>
+                                <label for="toggle-1" onclick="toggleDiv('Title')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-2" class="toggle toggle-round-right-left" type="checkbox" checked>
+                                <label for="toggle-2" onclick="toggleDiv('Ranking')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-3" class="toggle toggle-round-right-left" type="checkbox">
+                                <label for="toggle-3" onclick="toggleDiv('Genre')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-4" class="toggle toggle-round-right-left" type="checkbox">
+                                <label for="toggle-4" onclick="toggleDiv('Players')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-5" class="toggle toggle-round-right-left" type="checkbox">
+                                <label for="toggle-5" onclick="toggleDiv('Age')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-6" class="toggle toggle-round-right-left" type="checkbox">
+                                <label for="toggle-6" onclick="toggleDiv('Platform')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-7" class="toggle toggle-round-right-left" type="checkbox">
+                                <label for="toggle-7" onclick="toggleDiv('Input')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-8" class="toggle toggle-round-right-left" type="checkbox">
+                                <label for="toggle-8" onclick="toggleDiv('Status')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-9" class="toggle toggle-round-right-left" type="checkbox">
+                                <label for="toggle-9" onclick="toggleDiv('TeamSize')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-10" class="toggle toggle-round-right-left" type="checkbox">
+                                <label for="toggle-10" onclick="toggleDiv('Position')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-11" class="toggle toggle-round-right-left" type="checkbox">
+                                <label for="toggle-11" onclick="toggleDiv('Date')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-12" class="toggle toggle-round-right-left" type="checkbox">
+                                <label for="toggle-12" onclick="toggleDiv('Updated')"></label>
                             </div>
                         </div>
                     </div>
@@ -258,7 +253,9 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                         <div class="infoClass" id="Title"><h6> <b>A Shot In The Dark</b></h6></div>
+                                        <div class="infoClass" id="Title">
+                                            <h6> <b>A Shot In The Dark</b></h6>
+                                        </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
@@ -303,7 +300,9 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                         <div class="infoClass" id="Title"><h6> <b>Pirate Splashy</b></h6></div>
+                                        <div class="infoClass" id="Title">
+                                            <h6> <b>Pirate Splashy</b></h6>
+                                        </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
@@ -347,7 +346,9 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                         <div class="infoClass" id="Title"><h6> <b>Ninja Car</b></h6></div>
+                                        <div class="infoClass" id="Title">
+                                            <h6> <b>Ninja Car</b></h6>
+                                        </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
@@ -392,7 +393,9 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                         <div class="infoClass" id="Title"><h6> <b>Chloe and Brendan 2018</b></h6></div>
+                                        <div class="infoClass" id="Title">
+                                            <h6> <b>Chloe and Brendan 2018</b></h6>
+                                        </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
@@ -436,7 +439,9 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                         <div class="infoClass" id="Title"><h6> <b>Bachelor thesis: MDAPPRC</b></h6></div>
+                                        <div class="infoClass" id="Title">
+                                            <h6> <b>Bachelor thesis: MDAPPRC</b></h6>
+                                        </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
@@ -475,7 +480,9 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                         <div class="infoClass" id="Title"><h6> <b>Endstation</b></h6></div>
+                                        <div class="infoClass" id="Title">
+                                            <h6> <b>Endstation</b></h6>
+                                        </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
@@ -518,7 +525,9 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                         <div class="infoClass" id="Title"><h6> <b>Bread and Games</b></h6></div>
+                                        <div class="infoClass" id="Title">
+                                            <h6> <b>Bread and Games</b></h6>
+                                        </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
@@ -563,7 +572,9 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                         <div class="infoClass" id="Title"><h6> <b>Fluffy Dice</b></h6></div>
+                                        <div class="infoClass" id="Title">
+                                            <h6> <b>Fluffy Dice</b></h6>
+                                        </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
@@ -609,7 +620,9 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                         <div class="infoClass" id="Title"><h6> <b>Crashed Captain</b></h6></div>
+                                        <div class="infoClass" id="Title">
+                                            <h6> <b>Crashed Captain</b></h6>
+                                        </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
@@ -654,7 +667,9 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                         <div class="infoClass" id="Title"><h6> <b>V.o.A.</b></h6></div>
+                                        <div class="infoClass" id="Title">
+                                            <h6> <b>V.o.A.</b></h6>
+                                        </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
@@ -695,7 +710,9 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                         <div class="infoClass" id="Title"><h6> <b>Adam Mania!</b></h6></div>
+                                        <div class="infoClass" id="Title">
+                                            <h6> <b>Adam Mania!</b></h6>
+                                        </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
@@ -740,7 +757,9 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                         <div class="infoClass" id="Title"><h6> <b>Shadow of War</b></h6></div>
+                                        <div class="infoClass" id="Title">
+                                            <h6> <b>Shadow of War</b></h6>
+                                        </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
@@ -784,7 +803,9 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                         <div class="infoClass" id="Title"><h6> <b>Game or recruitment tool?</b></h6></div>
+                                        <div class="infoClass" id="Title">
+                                            <h6> <b>Game or recruitment tool?</b></h6>
+                                        </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
@@ -823,7 +844,9 @@
                                 </div>
                                 <div class="article-body">
                                     <div class="article-content">
-                                         <div class="infoClass" id="Title"><h6> <b>Heul Doch!</b></h6></div>
+                                        <div class="infoClass" id="Title">
+                                            <h6> <b>Heul Doch!</b></h6>
+                                        </div>
                                     </div>
                                     <footer class="article-info" style="padding:0px 0px">
                                         <ul
