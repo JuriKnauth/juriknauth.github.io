@@ -1279,7 +1279,7 @@ a.anchor {
 }
 
 #ContactV {
-    background-color: #ea8685
+    box-shadow: none
 }
 
 .img-fluid:hover,
