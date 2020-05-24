@@ -30,7 +30,117 @@
 			$("#loadprojectsmenu").load("ProjectsMenu.html");
 			$("#loadcontactmenu").load("ContactMenu.html");
 		});
+
+		function toggleDiv(attribute) {
+			var elements = document.getElementsByClassName("infoClass");
+			for (i = 0; i < elements.length; i++) {
+				if (elements[i].id === attribute) {
+					if (elements[i].style.display === "none") {
+						elements[i].style.display = "block";
+					} else {
+						elements[i].style.display = "none";
+					}
+				}
+			}
+		};
 	</script>
+	<style>
+		#toggle-1+label:before {
+			content: "Title";
+		}
+		
+		#toggle-1+label:after {
+			content: "Title";
+		}
+		
+		#toggle-2+label:before {
+			content: "Ranking";
+		}
+		
+		#toggle-2+label:after {
+			content: "Ranking";
+		}
+		
+		#toggle-3+label:before {
+			content: "Genre";
+		}
+		
+		#toggle-3+label:after {
+			content: "Genre";
+		}
+		
+		#toggle-4+label:before {
+			content: "Player Count";
+		}
+		
+		#toggle-4+label:after {
+			content: "Player Count";
+		}
+		
+		#toggle-5+label:before {
+			content: "Age Rating";
+		}
+		
+		#toggle-5+label:after {
+			content: "Age Rating";
+		}
+		
+		#toggle-6+label:before {
+			content: "Platform";
+		}
+		
+		#toggle-6+label:after {
+			content: "Platform";
+		}
+		
+		#toggle-7+label:before {
+			content: "Input";
+		}
+		
+		#toggle-7+label:after {
+			content: "Input";
+		}
+		
+		#toggle-8+label:before {
+			content: "Status";
+		}
+		
+		#toggle-8+label:after {
+			content: "Status";
+		}
+		
+		#toggle-9+label:before {
+			content: "Team Size";
+		}
+		
+		#toggle-9+label:after {
+			content: "Team Size";
+		}
+		
+		#toggle-10+label:before {
+			content: "Position";
+		}
+		
+		#toggle-10+label:after {
+			content: "Position";
+		}
+		
+		#toggle-11+label:before {
+			content: "Date";
+		}
+		
+		#toggle-11+label:after {
+			content: "Date";
+		}
+		
+		#toggle-12+label:before {
+			content: "Updated";
+		}
+		
+		#toggle-12+label:after {
+			content: "Updated";
+		}
+	</style>
 </head>
 
 <body>
