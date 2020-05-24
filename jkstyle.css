@@ -744,9 +744,9 @@ p {
     color: #000;
     opacity: .5;
     flex-shrink: 0;
-    display: flex;
     font-size: .85em;
-    line-height: 1.2
+    line-height: 1.2;
+    text-align: right
 }
 
 .bot-info {
