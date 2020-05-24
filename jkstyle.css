@@ -739,6 +739,16 @@ p {
     color: #000
 }
 
+.article-date-update {
+    float: right;
+    color: #000;
+    opacity: .5;
+    flex-shrink: 0;
+    display: flex;
+    font-size: .85em;
+    line-height: 1.2
+}
+
 .bot-info {
     color: #fff;
     display: flex;
