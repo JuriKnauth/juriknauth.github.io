@@ -1,5 +1,4 @@
 ﻿@charset "utf-8";
-
 html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -606,7 +605,8 @@ p {
     flex-basis: auto;
     flex-wrap: wrap;
     height: 100%;
-    margin: 10px 0px 0px 0px
+    margin: 10px 0px 0px 0px;
+    padding-right: 4px
 }
 
 .article:focus,
@@ -793,14 +793,12 @@ p {
 }
 
 @media screen and (min-width:800px) {
-
     .column,
     .columns {
         display: -ms-flexbox;
         display: flex;
         width: 100%
     }
-
     .first-article .article-body {
         flex: 1
     }
@@ -810,7 +808,6 @@ p {
     .first-article {
         flex-direction: row
     }
-
     .first-article .article-body {
         flex: 1
     }
