@@ -1377,7 +1377,6 @@ tr:nth-child(even) {
     position: absolute;
     top: 1px;
     left: 1px;
-    bottom: 1px;
     color: #FFF;
 }
 
