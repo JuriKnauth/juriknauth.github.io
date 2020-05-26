@@ -2,139 +2,132 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=0.85" name="viewport">
-  <meta name="description" content="Juri Knauth’s Portfolio. I am a Game Designer. This web page will showcase each project I worked on as well as link to my team-projects. Projects Page.">
-  <meta name="keywords" content="JK,Juri,Knauth,Game,Design,Portfolio,Showcase,Blog,Projects,Contact,Video,Board,Maps,3D,2D,Art,Concepts,Escape,Room,Mods,Pirate,Splashy,Fluffy,Dice,Crashed,Captain,Endstation,Companies,PIG,Spielhauer">
-  <meta name="author" content="Juri Knauth">
-  <meta name="google-site-verification" content="rQabFeH1rub_olMtfbNRyzRKYo9M7YI4i3Qw7BW-Aj0">
-  <base href="https://www.juriknauth.com/">
-  <link rel="canonical" href="https://www.juriknauth.com/ProjectsTest.html">
-  <link rel="stylesheet" type="text/css" href="jkstyle.min.css">
-  <link rel="favicon" href="https://juriknauth.github.io/favicon.ico">
-  <link rel="favicon-16x16" href="favicon-16x16.ico" type="image/x-icon">
-  <title>Portfolio Juri Knauth</title>
-  <link rel="stylesheet" type="text/css" href="boilerplate.min.css">
-  <script type="text/javascript" src="jkscript.min.js"></script>
-  <type="text/javascript" script src="respond.min.js"></script>
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-  <script>
-	$(function() {
-	  $("#loadbotbar").load("BotBar.html");
-	  $("#loadindexmenu").load("IndexMenu.html");
-	  $("#loadblogmenu").load("BlogMenu.html");
-	  $("#loadprojectsmenu").load("ProjectsMenu.html");
-	  $("#loadcontactmenu").load("ContactMenu.html");
-	  $("#article1").load(aricleLoaders[0].adress);
-	});
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=0.85" name="viewport">
+    <meta name="description" content="Juri Knauth’s Portfolio. I am a Game Designer. This web page will showcase each project I worked on as well as link to my team-projects. Projects Page.">
+    <meta name="keywords" content="JK,Juri,Knauth,Game,Design,Portfolio,Showcase,Blog,Projects,Contact,Video,Board,Maps,3D,2D,Art,Concepts,Escape,Room,Mods,Pirate,Splashy,Fluffy,Dice,Crashed,Captain,Endstation,Companies,PIG,Spielhauer">
+    <meta name="author" content="Juri Knauth">
+    <meta name="google-site-verification" content="Dq4rDSuTWs3ExXxiyk6i_zEx1SzejW9sK8RM-V13lU">
+    <base href="https://www.juriknauth.com/">
+    <link rel="canonical" href="https://www.juriknauth.com/ProjectsTest.html">
+    <link rel="stylesheet" type="text/css" href="jkstyle.min.css">
+    <link rel="favicon" href="https://juriknauth.github.io/favicon.ico">
+    <link rel="favicon-16x16" href="favicon-16x16.ico" type="image/x-icon">
+    <title>Portfolio Juri Knauth</title>
+    <link rel="stylesheet" type="text/css" href="boilerplate.min.css">
+    <script type="text/javascript" src="jkscript.min.js"></script>
+    <type="text/javascript" script src="respond.min.js">
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script>
+            $(function() {
+                $("#loadbotbar").load("BotBar.html");
+                $("#loadindexmenu").load("IndexMenu.html");
+                $("#loadblogmenu").load("BlogMenu.html");
+                $("#loadprojectsmenu").load("ProjectsMenu.html");
+                $("#loadcontactmenu").load("ContactMenu.html");
+                $("#article1").load(aricleLoaders[0].adress);
+            });
 
-	class articleLoader
-	{
-		constructor(id, adress)
-		{
-			this.id = id;
-			this.adress = adress;
-		}
-	}
+            class articleLoader {
+                constructor(id, adress) {
+                    this.id = id;
+                    this.adress = adress;
+                }
+            }
 
-	var articleLoader_One = new articleLoader(0, 'https://www.juriknauth.com/Projects/PirateSplashyTest.html');
+            var articleLoader_One = new articleLoader(0, 'https://www.juriknauth.com/Projects/PirateSplashyTest.html');
 
-	var aricleLoaders = [articleLoader_One];
+            var aricleLoaders = [articleLoader_One];
+        </script>
 
-
-  </script>
-  
 </head>
 
 <body>
-  <div class="containerBG">
-	<div class="main">
-	  <div id="mainmenu">
-									
-		<ulnav>
-		  <linavb class="dropdown">
-			<a href="javascript:void(0)" id="Default" class="dropbtnimg"><img class="logo" src="jkiconcropD.png" id="logo" width="52" height="52" alt="jklogo" style="text-align:left;"></a>
-			<div id="loadindexmenu"> </div>
-		  </linavb>
-		  <linav class="dropdown"> <a href="javascript:void(0)" id="Default" class="dropbtn"><b>Blog</b></a>
-			<div id="loadblogmenu"> </div>
-		  </linav>
-		  <linav class="dropdown"> <a href="javascript:void(0)" id="Projects" class="dropbtn"><b color="white">Projects</b></a>
-			<div id="loadprojectsmenu"> </div>
-		  </linav>
-		  <linav class="dropdown"> <a href="javascript:void(0)" id="Default" class="dropbtn"><b>Contact</b></a>
-			<div id="loadcontactmenu"> </div>
-		  </linav>
-		</ulnav>
-	  </div>
-	  <div id="ProjectsB" class="tabcontent">
-		<div id="article1"> </div>
-	  </div>
-	</div>
-	<div class="gridContainer clearfix">
-	  <div id="div1" class="fluid"> </div>
-	</div>
-	<br />
-	<br />
-	<br />
-	<br />
-  </div>
-	<div id="myModal" class="modal" tabindex="-1000">
-	  <div id="myModalImg" class="modal-content">
-		<div class="mySlides">
-		  <div class="numbertext">1 / 8</div>
-		  <img src="../Images/FluffyDiceMenu.jpg" class="img-container"> </div>
-		<div class="mySlides">
-		  <div class="numbertext">2 / 8</div>
-		  <img src="../Images/FluffyDiceIngame.jpg" class="img-container"> </div>
-		<div class="mySlides">
-		  <div class="numbertext">3 / 8</div>
-		  <img src="../Images/CrashedCaptainCockpitIntro.jpg" class="img-container"> </div>
-		<div class="mySlides">
-		  <div class="numbertext">4 / 8</div>
-		  <img src="../Images/CrashedCaptainIngameObjects.jpg" class="img-container"> </div>
-		<div class="mySlides">
-		  <div class="numbertext">5 / 8</div>
-		  <img src="../Images/AdamMania_ShowCase.jpg" class="img-container"> </div>
-		<div class="mySlides">
-		  <div class="numbertext">6 / 8</div>
-		  <img src="../Images/AdamMania_FM35HD.jpg" class="img-container"> </div>
-		<div class="mySlides">
-		  <div class="numbertext">7 / 8</div>
-		  <img src="../Images/HeulDochBox.jpg" class="img-container"> </div>
-		<div class="mySlides">
-		  <div class="numbertext">8 / 10</div>
-		  <img src="../Images/HeulDochInGame.jpg" class="img-container"> </div>
-		<div class="mySlides">
-		  <div class="numbertext">9 / 10</div>
-		  <img src="../Images/ShadowOfWar.jpg" class="img-container"> </div>
-		<div class="mySlides">
-		  <div class="numbertext">10 / 10</div>
-		  <img src="../Images/ShadowOfWar_Preview.jpg" class="img-container"> </div>
-		<a class="close cursor" onclick="closeModal()">&times;</a> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a>
-		<div class="caption-container">
-		  <div class="bot-info" id="caption"> </div>
-		</div>
-		<div class="columns">
-		  <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(1)" alt="<span>Fluffy Dice</span> <span>Menu - David Störmer's Art</span> <span>1/10</span>"> </div>
-		  <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(2)" alt="<span>Fluffy Dice</span> <span>In-Game</span> <span>2/10</span>"> </div>
-		  <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(3)" alt="<span>Crashed Captain</span> <span>Intro/Menu/In-Game</span> <span>3/10</span>"> </div>
-		  <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(4)" alt="<span>Crashed Captain</span> <span>In-Game</span> <span>4/10</span>"> </div>
-		  <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(5)" alt="<span>Adam Mania</span> <span>Playing Cards</span> <span>5/10</span>"> </div>
-		  <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(6)" alt="<span>Adam Mania</span> <span>Playboard</span> <span>6/10</span>"> </div>
-		  <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(7)" alt="<span>Heul Doch!</span> <span>Box</span> <span>7/10</span>"> </div>
-		  <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(8)" alt="<span>Heul Doch!</span> <span>In-Game</span> <span>8/10</span>"> </div>
-		  <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(9)" alt="<span>Shadow of War</span> <span>Banner</span> <span>9/10</span>"> </div>
-		  <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(10)" alt="<span>Shadow of War</span> <span>Preview</span> <span>10/10</span>"> </div>
-		</div>
-	  </div>
-	</div>
-  <script>
+    <div class="containerBG">
+        <div class="main">
+            <div id="mainmenu">
 
-  </script>
+                <ulnav>
+                    <linavb class="dropdown">
+                        <a href="javascript:void(0)" id="Default" class="dropbtnimg"><img class="logo" src="jkiconcropD.png" id="logo" width="52" height="52" alt="jklogo" style="text-align:left;"></a>
+                        <div id="loadindexmenu"> </div>
+                    </linavb>
+                    <linav class="dropdown"> <a href="javascript:void(0)" id="Default" class="dropbtn"><b>Blog</b></a>
+                        <div id="loadblogmenu"> </div>
+                    </linav>
+                    <linav class="dropdown"> <a href="javascript:void(0)" id="Projects" class="dropbtn"><b color="white">Projects</b></a>
+                        <div id="loadprojectsmenu"> </div>
+                    </linav>
+                    <linav class="dropdown"> <a href="javascript:void(0)" id="Default" class="dropbtn"><b>Contact</b></a>
+                        <div id="loadcontactmenu"> </div>
+                    </linav>
+                </ulnav>
+            </div>
+            <div id="ProjectsB" class="tabcontent">
+                <div id="article1"> </div>
+            </div>
+        </div>
+        <div class="gridContainer clearfix">
+            <div id="div1" class="fluid"> </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+    <div id="myModal" class="modal" tabindex="-1000">
+        <div id="myModalImg" class="modal-content">
+            <div class="mySlides">
+                <div class="numbertext">1 / 8</div>
+                <img src="../Images/FluffyDiceMenu.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 8</div>
+                <img src="../Images/FluffyDiceIngame.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 8</div>
+                <img src="../Images/CrashedCaptainCockpitIntro.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 8</div>
+                <img src="../Images/CrashedCaptainIngameObjects.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 8</div>
+                <img src="../Images/AdamMania_ShowCase.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 8</div>
+                <img src="../Images/AdamMania_FM35HD.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">7 / 8</div>
+                <img src="../Images/HeulDochBox.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">8 / 10</div>
+                <img src="../Images/HeulDochInGame.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">9 / 10</div>
+                <img src="../Images/ShadowOfWar.jpg" class="img-container"> </div>
+            <div class="mySlides">
+                <div class="numbertext">10 / 10</div>
+                <img src="../Images/ShadowOfWar_Preview.jpg" class="img-container"> </div>
+            <a class="close cursor" onclick="closeModal()">&times;</a> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+                <div class="bot-info" id="caption"> </div>
+            </div>
+            <div class="columns">
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(1)" alt="<span>Fluffy Dice</span> <span>Menu - David Störmer's Art</span> <span>1/10</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(2)" alt="<span>Fluffy Dice</span> <span>In-Game</span> <span>2/10</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(3)" alt="<span>Crashed Captain</span> <span>Intro/Menu/In-Game</span> <span>3/10</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(4)" alt="<span>Crashed Captain</span> <span>In-Game</span> <span>4/10</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(5)" alt="<span>Adam Mania</span> <span>Playing Cards</span> <span>5/10</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(6)" alt="<span>Adam Mania</span> <span>Playboard</span> <span>6/10</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(7)" alt="<span>Heul Doch!</span> <span>Box</span> <span>7/10</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(8)" alt="<span>Heul Doch!</span> <span>In-Game</span> <span>8/10</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(9)" alt="<span>Shadow of War</span> <span>Banner</span> <span>9/10</span>"> </div>
+                <div class="nested-column"> <img class="demo cursor" onclick="currentSlide(10)" alt="<span>Shadow of War</span> <span>Preview</span> <span>10/10</span>"> </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
 </body>
 
 </html>
