@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "http://www.juriknauth.com/",
+    "start_url": "https://www.juriknauth.com/",
     "background_color": "#000000",
     "lang": "en-US",
     "display": "standalone",
