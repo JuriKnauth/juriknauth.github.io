@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BlogPictures",
+    "\\Contact",
+    "\\Contact\\NoBudgetProduction",
+    "\\Contact\\NoBudgetProduction\\Pictures"
   ],
-  "SelectedNode": "\\.editorconfig",
   "PreviewInSolutionExplorer": false
 }
