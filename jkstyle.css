@@ -183,6 +183,14 @@ img {
     margin: auto
 }
 
+.iframe-container {
+    max-height: 90vh;
+    height: auto;
+    width: auto;
+    vertical-align: middle;
+    margin: auto
+}
+
 .Slides,
 .Slides1,
 .Slides2 {
