@@ -23,128 +23,128 @@
     <title>Portfolio Juri Knauth</title>
     <link rel="stylesheet" type="text/css" href="boilerplate.min.css">
     <script type="text/javascript" src="jkscript.min.js"></script>
-    <type="text/javascript" script src="respond.min.js">
-        </script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script>
-            $(function() {
-                $("#loadbotbar").load("BotBar.html");
-                $("#loadindexmenu").load("IndexMenu.html");
-                $("#loadblogmenu").load("BlogMenu.html");
-                $("#loadprojectsmenu").load("ProjectsMenu.html");
-                $("#loadcontactmenu").load("ContactMenu.html");
-            });
+    <script type="text/javascript" script src="respond.min.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#loadbotbar").load("BotBar.html");
+            $("#loadindexmenu").load("IndexMenu.html");
+            $("#loadblogmenu").load("BlogMenu.html");
+            $("#loadprojectsmenu").load("ProjectsMenu.html");
+            $("#loadcontactmenu").load("ContactMenu.html");
+        });
 
-            function toggleDiv(attribute) {
-                var elements = document.getElementsByClassName("infoClass");
-                for (i = 0; i < elements.length; i++) {
-                    if (elements[i].id === attribute) {
-                        if (elements[i].style.display === "none") {
-                            elements[i].style.display = "block";
-                        } else {
-                            elements[i].style.display = "none";
-                        }
+        function toggleDiv(attribute) {
+            var elements = document.getElementsByClassName("infoClass");
+            for (i = 0; i < elements.length; i++) {
+                if (elements[i].id === attribute) {
+                    if (elements[i].style.display === "none") {
+                        elements[i].style.display = "block";
+                    } else {
+                        elements[i].style.display = "none";
                     }
                 }
-            };
-        </script>
-        <style>
-            #toggle-1+label:before {
-                content: "Title";
             }
-            
-            #toggle-1+label:after {
-                content: "Title";
-            }
-            
-            #toggle-2+label:before {
-                content: "Ranking";
-            }
-            
-            #toggle-2+label:after {
-                content: "Ranking";
-            }
-            
-            #toggle-3+label:before {
-                content: "Genre";
-            }
-            
-            #toggle-3+label:after {
-                content: "Genre";
-            }
-            
-            #toggle-4+label:before {
-                content: "Player Count";
-            }
-            
-            #toggle-4+label:after {
-                content: "Player Count";
-            }
-            
-            #toggle-5+label:before {
-                content: "Age Rating";
-            }
-            
-            #toggle-5+label:after {
-                content: "Age Rating";
-            }
-            
-            #toggle-6+label:before {
-                content: "Platform";
-            }
-            
-            #toggle-6+label:after {
-                content: "Platform";
-            }
-            
-            #toggle-7+label:before {
-                content: "Input";
-            }
-            
-            #toggle-7+label:after {
-                content: "Input";
-            }
-            
-            #toggle-8+label:before {
-                content: "Status";
-            }
-            
-            #toggle-8+label:after {
-                content: "Status";
-            }
-            
-            #toggle-9+label:before {
-                content: "Team Size";
-            }
-            
-            #toggle-9+label:after {
-                content: "Team Size";
-            }
-            
-            #toggle-10+label:before {
-                content: "Position";
-            }
-            
-            #toggle-10+label:after {
-                content: "Position";
-            }
-            
-            #toggle-11+label:before {
-                content: "Date";
-            }
-            
-            #toggle-11+label:after {
-                content: "Date";
-            }
-            
-            #toggle-12+label:before {
-                content: "Updated";
-            }
-            
-            #toggle-12+label:after {
-                content: "Updated";
-            }
-        </style>
+        };
+    </script>
+    <style>
+        #toggle-1+label:before {
+            content: "Title";
+        }
+        
+        #toggle-1+label:after {
+            content: "Title";
+        }
+        
+        #toggle-2+label:before {
+            content: "Ranking";
+        }
+        
+        #toggle-2+label:after {
+            content: "Ranking";
+        }
+        
+        #toggle-3+label:before {
+            content: "Genre";
+        }
+        
+        #toggle-3+label:after {
+            content: "Genre";
+        }
+        
+        #toggle-4+label:before {
+            content: "Player Count";
+        }
+        
+        #toggle-4+label:after {
+            content: "Player Count";
+        }
+        
+        #toggle-5+label:before {
+            content: "Age Rating";
+        }
+        
+        #toggle-5+label:after {
+            content: "Age Rating";
+        }
+        
+        #toggle-6+label:before {
+            content: "Platform";
+        }
+        
+        #toggle-6+label:after {
+            content: "Platform";
+        }
+        
+        #toggle-7+label:before {
+            content: "Input";
+        }
+        
+        #toggle-7+label:after {
+            content: "Input";
+        }
+        
+        #toggle-8+label:before {
+            content: "Status";
+        }
+        
+        #toggle-8+label:after {
+            content: "Status";
+        }
+        
+        #toggle-9+label:before {
+            content: "Team Size";
+        }
+        
+        #toggle-9+label:after {
+            content: "Team Size";
+        }
+        
+        #toggle-10+label:before {
+            content: "Position";
+        }
+        
+        #toggle-10+label:after {
+            content: "Position";
+        }
+        
+        #toggle-11+label:before {
+            content: "Date";
+        }
+        
+        #toggle-11+label:after {
+            content: "Date";
+        }
+        
+        #toggle-12+label:before {
+            content: "Updated";
+        }
+        
+        #toggle-12+label:after {
+            content: "Updated";
+        }
+    </style>
 </head>
 
 <body>
@@ -176,7 +176,7 @@
             <div id="ProjectsB" class="tabcontent">
                 <div class="articlebodyDesc">
                     <p class="article-content" id="BannerB"> <em>The project tab will showcase the
-                            bigger tasks and link to further in-depth reading. </em></p>
+                            bigger tasks and link to further in-depth reading. </em> </p>
                 </div>
                 <div class="articlebody">
                     <a class="anchor" id="Projects" name="Projects"></a>
@@ -336,7 +336,8 @@
                                         <ul style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
                                             <li class="infoClass" id="Ranking" style="display: none">
                                             </li>
-                                            <li class="infoClass" id="Genre" style="display: none"><b>Genre: </b> Party </li>
+                                            <li class="infoClass" id="Genre" style="display: none"><b>Genre: </b> Party
+                                            </li>
                                             <li class="infoClass" id="Players" style="display: none"><b>Player Count:
                                                 </b> 1-6 Local-Multiplayer </li>
                                             <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 0
@@ -376,13 +377,15 @@
                                         <ul style="margin-block-start:0em; margin-block-end:0em; list-style-type:none; margin-top: 0px; padding:0px 0px 5px 10px;">
                                             <li class="infoClass" id="Ranking" style="display: none">
                                             </li>
-                                            <li class="infoClass" id="Genre" style="display: none"><b>Genre: </b> Racing </li>
+                                            <li class="infoClass" id="Genre" style="display: none"><b>Genre: </b> Racing
+                                            </li>
                                             <li class="infoClass" id="Players" style="display: none"><b>Player Count:
                                                 </b> 1-2 Local-Multiplayer </li>
                                             <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 6
                                             </li>
                                             <li class="infoClass" id="Platform" style="display: none"><b>Platform: </b> Android </li>
-                                            <li class="infoClass" id="Input" style="display: none"><b>Input: </b> Touch </li>
+                                            <li class="infoClass" id="Input" style="display: none"><b>Input: </b> Touch
+                                            </li>
                                             <li class="infoClass" id="Status" style="display: none"><b>Status: </b> Released Demo </li>
                                             <li class="infoClass" id="TeamSize" style="display: none"><b>Team size: </b> 2
                                             </li>
@@ -422,7 +425,8 @@
                                             <li class="infoClass" id="Age" style="display: none"><b>Age rating: </b> 0
                                             </li>
                                             <li class="infoClass" id="Platform" style="display: none"><b>Platform: </b> Android </li>
-                                            <li class="infoClass" id="Input" style="display: none"><b>Input: </b> Touch </li>
+                                            <li class="infoClass" id="Input" style="display: none"><b>Input: </b> Touch
+                                            </li>
                                             <li class="infoClass" id="Status" style="display: none"><b>Status: </b> Closed Alpha - Paused </li>
                                             <li class="infoClass" id="TeamSize" style="display: none"><b>Team size: </b> 2
                                             </li>
@@ -621,7 +625,8 @@
                                             </li>
                                             <li class="infoClass" id="Platform" style="display: none"><b>Platform: </b> PC </li>
                                             <li class="infoClass" id="Input" style="display: none"><b>Input: </b> Gamepad, Keyboard </li>
-                                            <li class="infoClass" id="Status" style="display: none"><b>Status: </b> Beta </li>
+                                            <li class="infoClass" id="Status" style="display: none"><b>Status: </b> Beta
+                                            </li>
                                             <li class="infoClass" id="TeamSize" style="display: none"><b>Team size: </b> 9
                                             </li>
                                             <li class="infoClass" id="Position" style="display: none"><b>Position: </b> Game Designer, Game Developer </li>
