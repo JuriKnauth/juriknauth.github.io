@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BlogPictures",
     "\\Contact",
     "\\Contact\\NoBudgetProduction",
-    "\\Contact\\NoBudgetProduction\\Pictures"
+    "\\Projects",
+    "\\Projects\\NinjaCar"
   ],
   "PreviewInSolutionExplorer": false
 }
