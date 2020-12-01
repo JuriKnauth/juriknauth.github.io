@@ -72,15 +72,13 @@
         var today = new Date();
         var date = today.getDate() + (today.getMonth() + 1) + today.getFullYear();
 
-        window.onload = (function CheckDate()
+        function CheckDate()
         {
           document.write("CheckDate");
             if(varDate > date)
             {
-              
               document.write("true");
               window.location.href = "https://www.juriknauth.com";
-              
             }
             else
             {
@@ -88,8 +86,7 @@
                 window.location.href = "https://www.google.com";
 
             }
-        });
-
+        };
     </script>
 </body>
 
