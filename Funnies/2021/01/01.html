@@ -68,25 +68,19 @@
         <div id="loadbotbar" class="bottomMain"> </div>
     </div>
     <script>
-        var varDate = new Date(01-12-2020);
-        var today = new Date();
-        var date = today.getDate() + (today.getMonth() + 1) + today.getFullYear();
-
-        function CheckDate()
+        Date.prototype.today = function () 
         {
-          document.write("CheckDate");
-            if(varDate > date)
-            {
-              document.write("true");
-              location.href = "https://www.juriknauth.com";
-            }
-            else
-            {
-              document.write("false");
-              location.href = "https://www.google.com";
+            return ((this.getDate() < 10)?"0":"") + this.getDate() +"/"+(((this.getMonth()+1) < 10)?"0":"") + (this.getMonth()+1) +"/"+ this.getFullYear();
+        }
 
-            }
-        };
+        if((new Date().today()) < "01/08/2014")
+        {
+            location.href ="https://www.juriknauth.com/";
+        }
+        else
+        {
+            location.href="https://www.google.com/";
+        }
     </script>
 </body>
 
