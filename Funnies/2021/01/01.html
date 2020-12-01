@@ -69,8 +69,8 @@
     </div>
     <script>
         var varDate = new Date(01-11-2021);
-        var today = new Date().getDate ;
-        var date = today.getDate()+today.getMonth()+today.getFullYear();
+        var today = new Date();
+        var date = today.getDate() + (today.getMonth() + 1) + today.getFullYear();
 
         window.onload = (function CheckDate()
         {
