@@ -71,10 +71,14 @@
         var varDate = new Date(01-11-2021);
         var today = new Date();
 
-        if(varDate > today)
+        $(function() 
         {
-            window.location.href = 'http://www.google.com';
-        }
+            if(varDate > today)
+            {
+                window.location.href = 'http://www.google.com';
+            }
+        });
+
     </script>
 </body>
 
