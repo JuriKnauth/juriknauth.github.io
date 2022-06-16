@@ -15,3 +15,4 @@ Stomt.push(['addFeed', {
 Stomt.push(['addCreate', {
     appId: 'zJAwvWmlssF2Z8YCTAKehPgAa'
 }]);
+document.addEventListener('touchstart', onTouchStart, {passive: true});
