@@ -1,0 +1,2739 @@
+﻿<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=0.85" name="viewport">
+    <meta name="description" content="Juri Knauth’s Portfolio. I am a Solo Game Developer. This website showcases every project I have worked on and contains links to my team projects. You will also find short comments.Blog Page.">
+    <meta name="keywords" content="JK,Juri,Knauth,Game,Design,Portfolio,Showcase,Blog,Projects,Contact,Video,Board,Maps,3D,2D,Art,Concepts,Escape,Room,Mods,Pirate,Splashy,Fluffy,Dice,Crashed,Captain,Endstation,Companies,PIG,Spielhauer">
+    <meta name="author" content="Juri Knauth">
+    <meta name="google-site-verification" content="Dq4rDSuTWs3ExXxiyk6i_zEx1SzejW9sK8RM-V13lU">
+    <base href="https://www.juriknauth.com/">
+    <link rel="canonical" href="https://www.juriknauth.com/Blog.html">
+    <link rel="stylesheet" type="text/css" href="jkstyle.min.css">
+    <link rel="favicon" href="https://juriknauth.github.io/favicon.ico">
+    <link rel="favicon-16x16" href="favicon-16x16.ico" type="image/x-icon">
+    <title>Portfolio Juri Knauth</title>
+    <link rel="stylesheet" type="text/css" href="boilerplate.min.css">
+    <script type="text/javascript" src="jkscript.min.js"></script>
+    <<script type="text/javascript" script src="respond.min.js"></script>
+        <script type="text/javascript" script src="jquery-3.6.0.min.js"></script>
+        <script>
+            $(function() {
+                $("#loadbotbar").load("BotBar.html");
+                $("#loadindexmenu").load("IndexMenu.html");
+                $("#loadblogmenu").load("BlogMenu.html");
+                $("#loadprojectsmenu").load("ProjectsMenu.html");
+                $("#loadcontactmenu").load("ContactMenu.html");
+            });
+
+            function toggleDiv(attribute) {
+                var elements = document.getElementsByClassName("infoClass");
+                for (i = 0; i < elements.length; i++) {
+                    if (elements[i].id === attribute) {
+                        if (elements[i].style.display === "none") {
+                            elements[i].style.display = "block";
+                        } else {
+                            elements[i].style.display = "none";
+                        }
+                    }
+                }
+            };
+        </script>
+        <style>
+            #toggle-1+label:before {
+                content: "News";
+            }
+            
+            #toggle-1+label:after {
+                content: "News";
+            }
+            
+            #toggle-2+label:before {
+                content: "Game Jam";
+            }
+            
+            #toggle-2+label:after {
+                content: "Game Jam";
+            }
+            
+            #toggle-3+label:before {
+                content: "Game Design";
+            }
+            
+            #toggle-3+label:after {
+                content: "Game Design";
+            }
+            
+            #toggle-4+label:before {
+                content: "Level Design";
+            }
+            
+            #toggle-4+label:after {
+                content: "Level Design";
+            }
+            
+            #toggle-5+label:before {
+                content: "Board Game";
+            }
+            
+            #toggle-5+label:after {
+                content: "Board Game";
+            }
+            
+            #toggle-6+label:before {
+                content: "2D Art";
+            }
+            
+            #toggle-6+label:after {
+                content: "2D Art";
+            }
+            
+            #toggle-7+label:before {
+                content: "3D Art";
+            }
+            
+            #toggle-7+label:after {
+                content: "3D Art";
+            }
+            
+            #toggle-8+label:before {
+                content: "Motion";
+            }
+            
+            #toggle-8+label:after {
+                content: "Motion";
+            }
+            
+            #toggle-9+label:before {
+                content: "Web";
+            }
+            
+            #toggle-9+label:after {
+                content: "Web";
+            }
+            
+            #toggle-10+label:before {
+                content: "Programming";
+            }
+            
+            #toggle-10+label:after {
+                content: "Programming";
+            }
+            
+            #toggle-11+label:before {
+                content: "Other";
+            }
+            
+            #toggle-11+label:after {
+                content: "Other";
+            }
+        </style>
+</head>
+
+<body>
+    <div class="containerBG">
+        <div class="main">
+            <div id="mainmenu">
+                <ulnav>
+                    <linavb class="dropdown">
+                        <a href="/" id="DefaultI" class="dropbtnimg">
+                            <picture class="logo" id="logo" width="52" height="52" alt="jklogo" style="text-align:left;">
+                                <img src="jkiconcropD.png" alt="logo" id="logo" width="52" height="52" style="text-align:left;">
+                            </picture>
+                        </a>
+                        <div id="loadindexmenu"> </div>
+                    </linavb>
+                    <linav class="dropdown"> <a href="Blog.html" id="Blog" class="dropbtn"><b>Blog</b></a>
+                        <div id="loadblogmenu"> </div>
+                    </linav>
+                    <linav class="dropdown"> <a href="Projects.html" id="DefaultP" class="dropbtn"><b>Projects</b></a>
+                        <div id="loadprojectsmenu"> </div>
+                    </linav>
+                    <linav class="dropdown"> <a href="Contact.html" id="DefaultC" class="dropbtn"><b>Contact</b></a>
+                        <div id="loadcontactmenu"> </div>
+                    </linav>
+                </ulnav>
+            </div>
+            <div id="BlogB" class="tabcontent">
+                <div class="articlebodyDesc">
+                    <p style="text-align:justify;" class="article-content" id="BannerB"> <em>The blog will feature some
+                            minor tasks,
+                            crafts and scribbles. <br /></em> </p>
+                </div class="articlebody">
+                </dib>
+                <div class="articlebody">
+                    <a class="anchor" id="Blog" name="Blog"></a>
+                    <h2 class="article-titleL" float="left"> Blog</h2>
+                    <br />
+                    <br />
+                    <div class="columns">
+                        <div class="nested-column" style="margin: 4px;">
+                            <div class="switch">
+                                <input id="toggle-1" class="toggle toggle-round-right-left" type="checkbox" checked>
+                                <label for="toggle-1" onclick="toggleDiv('News')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-2" class="toggle toggle-round-right-left" type="checkbox" checked>
+                                <label for="toggle-2" onclick="toggleDiv('Game Jam')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-3" class="toggle toggle-round-right-left" type="checkbox" checked>
+                                <label for="toggle-3" onclick="toggleDiv('Game Design')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-4" class="toggle toggle-round-right-left" type="checkbox" checked>
+                                <label for="toggle-4" onclick="toggleDiv('Level Design')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-5" class="toggle toggle-round-right-left" type="checkbox" checked>
+                                <label for="toggle-5" onclick="toggleDiv('Board Game')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-6" class="toggle toggle-round-right-left" type="checkbox" checked>
+                                <label for="toggle-6" onclick="toggleDiv('2D Art')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-7" class="toggle toggle-round-right-left" type="checkbox" checked>
+                                <label for="toggle-7" onclick="toggleDiv('3D Art')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-8" class="toggle toggle-round-right-left" type="checkbox" checked>
+                                <label for="toggle-8" onclick="toggleDiv('Motion')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-9" class="toggle toggle-round-right-left" type="checkbox" checked>
+                                <label for="toggle-9" onclick="toggleDiv('Web')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-10" class="toggle toggle-round-right-left" type="checkbox" checked>
+                                <label for="toggle-10" onclick="toggleDiv('Programming')"></label>
+                            </div>
+                            <div class="switch">
+                                <input id="toggle-11" class="toggle toggle-round-right-left" type="checkbox" checked>
+                                <label for="toggle-11" onclick="toggleDiv('Other')"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="infoClass" id="Web" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="Portfolio" name="Portfolio"></a>
+                        <h2 class="article-title"> This Web Page </h2>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> This portfolio is designed and developed by me. The page is hosted on <a href="https://github.com/JuriKnauth/juriknauth.github.io">GitHub</a>, which only supports static web pages.<br />
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="82" name="82"></a>
+                                <a class="article" href="BlogCarousel/82.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preWebPage.webp" type="image/webp">
+                                        <img src="../Images/preWebPage.jpg" alt="This Portfolio">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> This Portfolio </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="83" name="83"></a>
+                                <a class="article" href="BlogCarousel/83.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preGitHubPages.webp" type="image/webp">
+                                        <img src="../Images/preGitHubPages.jpg" alt="On GitHub">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> On GitHub </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Web Page: 2020-05-28 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Game Jam" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="LostInTheWoods" name="LostInTheWoods"></a>
+                        <h2 class="article-title"> Game Jam: Lost in the Woods </h2>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> <em>First you get lost in the woods. Then someone comes and tries to find you.</em><br /><br />
+                            In the first phase you get lost in the forest. Walk around with the WASD keys and use the mouse. Keep screaming for help and try to mesmerize your surroundings. Try to create a footprint trail that is easy to spot and follow.
+                            In the second phase, try to find the person from the first phase. His movements and calls for help will be replayed. Try to find him before the time runs out.<br /><br />
+                            Global Game Jam Game 2021 - Theme Lost & Found<br />
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="84" name="84"></a>
+                                <a class="article" href="BlogCarousel/84.html">
+                                    <picture class="img-fluid" width="100%" height="360">
+                                        <source srcset="../Images/LostInTheWoods.webp" type="image/webp">
+                                        <img src="../Images/LostInTheWoods.jpg" alt="Lost in the Woods">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Lost in the Woods </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body">
+                                    <div class="article-content" style="padding:0px 6px">
+                                        <footer class="article-info" style="padding:0px 0px">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                                <li><b>Genre: </b> Action, Casual, Survival </li>
+                                                <li><b>Player Count: </b> 1-2 Local Multiplayer </li>
+                                                <li><b>Age rating: </b> 12 </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nested-column">
+                                <div class="article-body">
+                                    <div class="article-content" style="padding:0px 6px">
+                                        <footer class="article-info" style="padding:0px 0px">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                                <li><b>Team size: </b> 1 </li>
+                                                <li><b>Position: </b> Game Developer </li>
+                                                <li><b>Date: </b> 2021/01/31 </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body article-center">
+                                    <a class="article" target="_blank" href="https://jurik.itch.io/lost-in-the-woods">
+                                        <picture class="img-fluid" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <source srcset="../Icons/it.webp" type="image/webp" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <img src="../Icons/it.png" alt="Itch
+                                                        Logo" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                        </picture>
+                                        <p class="article-content"> Lost in the Woods <br /> <em>on Itch</em>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Game Design: 2021-01-31 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Game Design" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="TrailReplay" name="TrailReplay"></a>
+                        <h2 class="article-title"> Game Design: Trail Replay </h2>
+                        <h2 class="article-titleR" id="Red">&#11044;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> My dad is quite the mountain biker. I prototyped a mountain bike simulator with his own 360° footage and his <a href="https://eu.wahoofitness.com/devices/bike-trainers/kickr-core-indoor-smart-trainer-single">KickR</a>.<br /> The
+                            game is fairly straightforward: the replay speed of the video-footage is adjusted to the torque of the KickR. Another feature is to adjust the resistance of the KickR to an elevation-data-track at the same time.<br />
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="80" name="80"></a>
+                                <a class="article" href="BlogCarousel/80.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preBikeCoverClear.webp" type="image/webp">
+                                        <img src="../Images/preBikeCoverClear.jpg" alt="Trail Replay Cover">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Trail Replay Cover </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="81" name="81"></a>
+                                <a class="article" href="BlogCarousel/81.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preBikeManual.webp" type="image/webp">
+                                        <img src="../Images/preBikeManual.jpg" alt="Trail Replay Manual">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Trail Replay Manual </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Game Design: 2019-12-21 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="2D Art" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="TheFourPs" name="TheFourPs"></a>
+                        <h2 class="article-title"> 2D Art: The Four Ps </h2>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> At last year's congress, the Illumat just closed in front of us and despite queuing for quite a while we were left empty-handed. So I played a substitute for a saddened fan of the lovely machine, which can create illustrations
+                            to your own wish. <br /><br />The request was the four Ps: Pizza, Panda, Pineapple, and Perugia.
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="79" name="79"></a>
+                                <a class="article" href="BlogCarousel/79.html">
+                                    <div class="article-content article-center" style="padding: 0px;">
+                                        <picture class="img-fluid" width="100%" height="480">
+                                            <source srcset="../Images/the_four_ps__pizza__panda__pinnapple_and_perugiaSD-min.webp" type="image/webp">
+                                            <img src="../Images/the_four_ps__pizza__panda__pinnapple_and_perugiaSD-min.jpg" alt="The Four Ps">
+                                        </picture>
+                                    </div>
+                                    <div class="article-body">
+                                        <p class="article-content"> The Four Ps </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> 2D Art: 2018-10-14 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Game Jam" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="PolarMeltdown" name="PolarMeltdown"></a>
+                        <h2 class="article-title"> Game Jam: Polar Meltdown </h2>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content">
+                            <em>The poles are melting. Keep your eggs afloat!</em><br />
+                        </p>
+                        <div style="text-align:justify;" class="article-content">
+                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                <li>Eggs: Carry and protect your eggs</li>
+                                <li>Ice Blocks: They float but melt</li>
+                                <li>Packice: Creates and protects ice</li>
+                                <li>Shark; Eats Everything</li>
+                                <li>Snowballs: Throw them to create Ice Blocks</li>
+                                <li>Gold: Hoard 5 coins to win</li>
+                            </ul>
+                            <br />
+                            <p><em>Credits:<br />Gant, Ixsen, Juri, Mr. Sink<br /></em><em>Pingu Art by Catherine M.</em></p>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="75" name="75"></a>
+                                <a class="article" href="BlogCarousel/75.html">
+                                    <picture class="img-fluid" width="100%" height="360">
+                                        <source srcset="../Images/PolarMeltdownIngame02.webp" type="image/webp" width="100%" height="360">
+                                        <img src="../Images/PolarMeltdownIngame02.jpg" alt="Ingame 1" width="100%" height="360">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Ingame 1 </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="76" name="76"></a>
+                                <a class="article" href="BlogCarousel/76.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/prePolarMeltdownIngame01.webp" type="image/webp">
+                                        <img src="../Images/prePolarMeltdownIngame01.jpg" alt="Ingame 2">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Ingame 2 </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="77" name="77"></a>
+                                <a class="article" href="BlogCarousel/77.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/prePolarMeltdownExplanation01.webp" type="image/webp">
+                                        <img src="../Images/prePolarMeltdownExplanation01.jpg" alt="Explanation">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Explanation </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="78" name="78"></a>
+                                <a class="article" href="BlogCarousel/78.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/prePolarMeltdownControls.webp" type="image/webp">
+                                        <img src="../Images/prePolarMeltdownControls.jpg" alt="Controls">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Controls </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body">
+                                    <div class="article-content" style="padding:0px 6px">
+                                        <footer class="article-info" style="padding:0px 0px">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                                <li><b>Genre: </b> Twin Stick Shooter, Co-Op </li>
+                                                <li><b>Player Count: </b> 1-2 Local Multiplayer </li>
+                                                <li><b>Age rating: </b> 6 </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nested-column">
+                                <div class="article-body">
+                                    <div class="article-content" style="padding:0px 6px">
+                                        <footer class="article-info" style="padding:0px 0px">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                                <li><b>Team size: </b> 4 </li>
+                                                <li><b>Position: </b> Game Developer </li>
+                                                <li><b>Date: </b> 2020/02/02 </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body article-center">
+                                    <a class="article" target="_blank" href="https://jurik.itch.io/polar-meltdown">
+                                        <picture class="img-fluid" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <source srcset="../Icons/it.webp" type="image/webp" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <img src="../Icons/it.png" alt="Itch
+                                                        Logo" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                        </picture>
+                                        <p class="article-content"> Polar Meltdown <br /> <em>on Itch</em>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Game Jam: 2020-02-02 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="2D Art" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="CVPics" name="CVPics"></a>
+                        <h2 class="article-title"> 2D Art: CV Pics </h2>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> I also do CV pics. <br />
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="73" name="73"></a>
+                                <a class="article" href="BlogCarousel/73.html">
+                                    <div class="article-content article-center" style="padding: 0px;">
+                                        <picture class="img-fluid" width="100%" height="360">
+                                            <source srcset="../Images/preValphaCVPic00-min.webp" type="image/webp">
+                                            <img src="../Images/preValphaCVPic01-min.jpg" alt="Hindenburg Disaster Tourist">
+                                        </picture>
+                                    </div>
+                                    <div class="article-body">
+                                        <p class="article-content"> Hindenburg Disaster Tourist </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="74" name="74"></a>
+                                <a class="article" href="BlogCarousel/74.html">
+                                    <div class="article-content article-center" style="padding: 0px;">
+                                        <picture class="img-fluid" width="100%" height="360">
+                                            <source srcset="../Images/preValphaCVPic02-min.webp" type="image/webp">
+                                            <img src="../Images/preValphaCVPic02-min.jpg" alt="Disaster Business Woman">
+                                        </picture>
+                                    </div>
+                                    <div class="article-body">
+                                        <p class="article-content"> Disaster Business Woman </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> 2D Art: 2019-11-23 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Game Jam" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="HolyPigs" name="HolyPigs"></a>
+                        <h2 class="article-title"> Game Jam: Holy Pigs </h2>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content">Run from the e-scooters! Drop the holy pigs!
+                            <br /><br /> One player drives the car with the WASD buttons. The other player drops pigs with the mouse. Coins must be collected in order to unlock pigs. Apples will restore health. Colliding with anything else will cost health.
+                            E-Scooters will be chasing you!
+                            <br /><br /> This game was created at the Berlin Mini Jam 2019 September.
+                            <br /><br /> Credits:
+                            <br /> Alessio, Joe, Juri, Leo, Luca, Martin & Nils
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="70" name="70"></a>
+                                <a class="article" href="BlogCarousel/70.html">
+                                    <picture class="img-fluid" width="100%" height="360">
+                                        <source srcset="../Images/HolyPigs01.webp" type="image/webp" width="100%" height="360">
+                                        <img src="../Images/HolyPigs01.jpg" alt="Ingame" width="100%" height="360">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Ingame </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="71" name="71"></a>
+                                <a class="article" href="BlogCarousel/71.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preHolyPigs02.webp" type="image/webp">
+                                        <img src="../Images/preHolyPigs02.jpg" alt="Enter Name">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Enter Name </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="72" name="72"></a>
+                                <a class="article" href="BlogCarousel/72.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preHolyPigs03.webp" type="image/webp">
+                                        <img src="../Images/preHolyPigs03.jpg" alt="Highscore">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Highscore </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body">
+                                    <div class="article-content" style="padding:0px 6px">
+                                        <footer class="article-info" style="padding:0px 0px">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                                <li><b>Genre: </b> Multiplayer, Arcade, Local Co-OP </li>
+                                                <li><b>Player Count: </b> 1-2 </li>
+                                                <li><b>Age rating: </b> 9 </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nested-column">
+                                <div class="article-body">
+                                    <div class="article-content" style="padding:0px 6px">
+                                        <footer class="article-info" style="padding:0px 0px">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                                <li><b>Team size: </b> 7 </li>
+                                                <li><b>Position: </b> Game Developer </li>
+                                                <li><b>Date: </b> 2019/09/15 </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body article-center">
+                                    <a class="article" target="_blank" href="https://jurik.itch.io/holy-pigs">
+                                        <picture class="img-fluid" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <source srcset="../Icons/it.webp" type="image/webp" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <img src="../Icons/it.png" alt="Itch
+                                                        Logo" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                        </picture>
+                                        <p class="article-content"> Holy Pigs <br /> <em>on Itch</em>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Game Jam: 2019-09-15 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="3D Art" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="3DPrint" name="3DPrint"></a>
+                        <h2 class="article-title"> 3D Art: 3D Printed Bunny </h2>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> 3D Printed Bunny <br /><br /> <em>Skipping around a physical keyboard, mumbling cusswords.</em><br />
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="69" name="69"></a>
+                                <a class="article" href="BlogCarousel/69.html">
+                                    <div class="article-content article-center">
+                                        <picture class="img-fluid" width="100%" height="480">
+                                            <source srcset="../Images/3DBunny-min.webp" type="image/webp">
+                                            <img src="../Images/3DBunny-min.jpg" alt="3D Printed Bunny">
+                                        </picture>
+                                    </div>
+                                    <div class="article-body">
+                                        <p class="article-content"> 3D Printed Bunny </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> 3D Art: 2020-05-18 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Game Jam" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="PhantomAlien" name="PhantomAlien"></a>
+                        <h2 class="article-title"> Game Jam: Phantom Alien </h2>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> You are a scientist of Area 51 and one of your Aliens sneaked out at night and ate a human child. Since it snugged back into the lab before you could notice its disappearance, you do not know which Alien actually did it. You have
+                            to find out before the Alien can unleash its true power! <br /><br /> Investigate! Talk to the inhabitants of Roswell and reconstruct the miscreant! <br /><br />
+                            <em>We are Team Ginga Inga and we worked on this game during a 30 hours Game Jam at Kolibri Games' Experience Jam. Theme: Area 51</em>
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="66" name="66"></a>
+                                <a class="article" href="BlogCarousel/66.html">
+                                    <picture class="img-fluid" width="100%" height="360">
+                                        <source srcset="../Images/PhantomAlien01.webp" type="image/webp" width="100%" height="360">
+                                        <img src="../Images/PhantomAlien01.jpg" alt="Ingame" width="100%" height="360">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Ingame </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="67" name="67"></a>
+                                <a class="article" href="BlogCarousel/67.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/prePhantomAlien02.webp" type="image/webp">
+                                        <img src="../Images/prePhantomAlien02.jpg" alt="Phantom Aliens">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Phantom Aliens </p>
+                                        <footer class="article-info"> Art by Vivian Maria Köhler </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="68" name="68"></a>
+                                <a class="article" href="BlogCarousel/68.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/prePhantomAlien03.webp" type="image/webp">
+                                        <img src="../Images/prePhantomAlien03.jpg" alt="Lose Screen">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Lose Screen </p>
+                                        <footer class="article-info"> Art by Vivian Maria Köhler </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body">
+                                    <div class="article-content" style="padding:0px 6px">
+                                        <footer class="article-info" style="padding:0px 0px">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                                <li><b>Genre: </b> Singleplayer, Investigative </li>
+                                                <li><b>Player Count: </b> 1 </li>
+                                                <li><b>Age rating: </b> 12 </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nested-column">
+                                <div class="article-body">
+                                    <div class="article-content" style="padding:0px 6px">
+                                        <footer class="article-info" style="padding:0px 0px">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                                <li><b>Team size: </b> 9 </li>
+                                                <li><b>Position: </b> Game Developer </li>
+                                                <li><b>Date: </b> 2019/09/22 </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body article-center">
+                                    <a class="article" target="_blank" href="https://vivianmoria.itch.io/phantom-alien">
+                                        <picture class="img-fluid" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <source srcset="../Icons/it.webp" type="image/webp" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <img src="../Icons/it.png" alt="Itch
+                                                        Logo" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                        </picture>
+                                        <p class="article-content"> Phantom Alien <br /> <em>on Itch</em>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Game Jam: 2019-09-22 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Game Jam" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="ColorPhoenix" name="ColorPhoenix"></a>
+                        <h2 class="article-title"> Game Jam: Color Phoenix </h2>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content">
+                            <em>Spread your wings and colors!</em><br /><br /> Whoever spreads their color the furthest wins!<br /><br />
+                            <em>Low pass flybys will color in the terrain.<br></em><em>You can steal points from other players by painting over their stuff.<br></em><em>Buildings and sky-islands give more points.<br></em><em>Crashing into obstacles will cost points.</em>
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="61" name="61"></a>
+                                <a class="article" href="BlogCarousel/61.html">
+                                    <picture class="img-fluid" width="100%" height="360">
+                                        <source srcset="../Images/ColorPhoenix01.webp" type="image/webp" width="100%" height="360">
+                                        <img src="../Images/ColorPhoenix01.jpg" alt="Ingame" width="100%" height="360">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Ingame 1 </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="62" name="62"></a>
+                                <a class="article" href="BlogCarousel/62.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preColorPhoenix02.webp" type="image/webp">
+                                        <img src="../Images/preColorPhoenix02.jpg" alt="Ingame 2">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Ingame 2 </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="63" name="63"></a>
+                                <a class="article" href="BlogCarousel/63.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preColorPhoenix03.webp" type="image/webp">
+                                        <img src="../Images/preColorPhoenix03.jpg" alt="Ingame Menu">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Ingame Menu </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="64" name="64"></a>
+                                <a class="article" href="BlogCarousel/64.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preColorPhoenix04.webp" type="image/webp">
+                                        <img src="../Images/preColorPhoenix04.jpg" alt="Ingame 3">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Ingame 3 </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="65" name="65"></a>
+                                <a class="article" href="BlogCarousel/65.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preColorPhoenix05.webp" type="image/webp">
+                                        <img src="../Images/preColorPhoenix05.jpg" alt="Overveiw">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Overveiw </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <br />
+                        <p style="text-align:justify;" class="article-content">
+                            <strong>Controls:</strong><br>
+                            <table class="tableclass" style="color:#000000;">
+                                <tbody>
+                                    <tr>
+                                        <td>Left Stick X</td>
+                                        <td>Yaw</td>
+                                        <td>Left/Right</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Left Stick Y</td>
+                                        <td>Pitch</td>
+                                        <td>Up/Down</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Right Stick X</td>
+                                        <td>Roll</td>
+                                        <td>Left/Right</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Left Bumper&nbsp;</td>
+                                        <td>Map View</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Start</td>
+                                        <td>Pause Menu</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>A (Xbox)</td>
+                                        <td>Submit</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>B (Xbox)</td>
+                                        <td>Cancel</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <p><strong>Credits:</strong><br><em><span></span>Bernhard Faeth,&nbsp;Rahel Focken,&nbsp;Juri Knauth,&nbsp;Julian Koch&nbsp;aka Cookie,&nbsp;Yannic&nbsp;Kugler</em><em>&nbsp;aka Petapetilon</em></p>
+                            <p><span></span></p>
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body">
+                                    <div class="article-content" style="padding:0px 6px">
+                                        <footer class="article-info" style="padding:0px 0px">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                                <li><b>Genre: </b> Atmospheric Multiplayer </li>
+                                                <li><b>Player Count: </b> 1-3 Local-Multiplayer </li>
+                                                <li><b>Age rating: </b> 6 </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nested-column">
+                                <div class="article-body">
+                                    <div class="article-content" style="padding:0px 6px">
+                                        <footer class="article-info" style="padding:0px 0px">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                                <li><b>Team size: </b> 5 </li>
+                                                <li><b>Position: </b> Game Developer </li>
+                                                <li><b>Date: </b> 2019/06/18 </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body article-center">
+                                    <a class="article" target="_blank" href="https://colorphoenix.itch.io/colorphoenix">
+                                        <picture class="img-fluid" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <source srcset="../Icons/it.webp" type="image/webp" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <img src="../Icons/it.png" alt="Itch
+                                                        Logo" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                        </picture>
+                                        <p class="article-content"> Color Phoenix <br /> <em>on Itch</em>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Game Jam: 2019-06-18 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="2D Art" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="PixelartSwearToGod" name="PixelartSwearToGod"></a>
+                        <h2 class="article-title"> 2D Art: Swear To God Pixel Art </h2>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> Pixel art for the game <a href=../Projects/SwearToGod.html>Swear To God</a>. <br /> 200 by 200 pixels. <br />
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="60" name="60"></a>
+                                <a class="article" href="BlogCarousel/60.html">
+                                    <div class="article-content article-center">
+                                        <picture class="img-fluid" width="100%" height="480">
+                                            <source srcset="../Images/prePixelArtSwearToGod.webp" type="image/webp">
+                                            <img src="../Images/prePixelArtSwearToGod.jpg" alt="PixelartSwearToGod">
+                                        </picture>
+                                    </div>
+                                    <div class="article-body">
+                                        <p class="article-content"> Pixelart for Swear To God </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> 2D Art: 2020-05-15 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Programming" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="ColorNamingApp" name="ColorNamingApp"></a>
+                        <h2 class="article-title"> Programming: Color Naming App </h2>
+                        <h2 class="article-titleR" id="Red">&#11044;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> The Color Naming App searches for a known color that is most similar to the selected color within a selected library. <br />
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="57" name="57"></a>
+                                <div class="article">
+                                    <div class="article-content article-center">
+                                        <iframe title="Color Naming App Alpha" src="https://www.youtube.com/embed/ymzCB4EQHGc" height="520" overflow="hidden" width="100%" scrolling="no" frameborder="0" allowTransparency="true" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="article-body">
+                                        <p class="article-content"> Color Naming App Alpha </p>
+                                        <footer class="article-info"></footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="58" name="58"></a>
+                                <a class="article" href="BlogCarousel/58.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preColorNamingApp00.webp" type="image/webp">
+                                        <img src="../Images/preColorNamingApp00.jpg" alt="Selecting a Color">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Selecting a Color </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="59" name="59"></a>
+                                <a class="article" href="BlogCarousel/59.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preColorNamingApp02.webp" type="image/webp">
+                                        <img src="../Images/preColorNamingApp02.jpg" alt="HUE Color Sorting">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> HUE Color Sorting </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Programming: 2019-04-14 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Game Jam" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="CatAndMouse" name="CatAndMouse"></a>
+                        <h2 class="article-title"> Game Jam: Cat and Mouse </h2>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content">This game is split into two phases: In the first phase, the mouse gets to run away and paint a path. In the second phase, the cat has to trace the path. Players take turns; alternating who paints the path first, and who traces
+                            it second. Player one is blue and player two is orange. The player wins who has traced the previous path of the mouse closer.
+                            <br /><br />Be aware of the objects flying around, as they will freeze whoever bumps into it into place! You can play with a game-pad (Left-Stick) or the arrow keys on your keyboard!
+                            <br /><br />
+                            <em>This game was created at the Berlin Mini Jam - so within 8 hours. The theme was "I see
+                                what you did there", "Long forgotten" and "That's cheating!". So there is an easy, very
+                                unsportsmanlike way to cheat, which we left in the game for you to discover!</em><br />
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="54" name="54"></a>
+                                <a class="article" href="BlogCarousel/54.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preCatAndMouse01.webp" type="image/webp">
+                                        <img src="../Images/preCatAndMouse01.jpg" alt="Mouse Path">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Mouse Path </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="55" name="55"></a>
+                                <a class="article" href="BlogCarousel/55.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preCatAndMouse02.webp" type="image/webp">
+                                        <img src="../Images/preCatAndMouse02.jpg" alt="Cat Tracing">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Cat Tracing </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="56" name="56"></a>
+                                <a class="article" href="BlogCarousel/56.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preCatAndMouse03.webp" type="image/webp">
+                                        <img src="../Images/preCatAndMouse03.jpg" alt="Score">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Score </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body">
+                                    <div class="article-content" style="padding:0px 6px">
+                                        <footer class="article-info" style="padding:0px 0px">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                                <li><b>Genre: </b> Local multiplayer </li>
+                                                <li><b>Player Count: </b> 2 </li>
+                                                <li><b>Age rating: </b> 6 </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nested-column">
+                                <div class="article-body">
+                                    <div class="article-content" style="padding:0px 6px">
+                                        <footer class="article-info" style="padding:0px 0px">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                                <li><b>Team size: </b> 4 </li>
+                                                <li><b>Position: </b> Game Developer </li>
+                                                <li><b>Date: </b> 2019/08/31 </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body article-center">
+                                    <a class="article" target="_blank" href="https://jurik.itch.io/cat-and-mouse">
+                                        <picture class="img-fluid" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <source srcset="../Icons/it.webp" type="image/webp" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <img src="../Icons/it.png" alt="Itch
+                                                        Logo" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                        </picture>
+                                        <p class="article-content"> Cat and Mouse <br /> <em>on Itch</em>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Game Jam: 2019-08-31 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Game Jam" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="FoodChainCollapse" name="FoodChainCollapse"></a>
+                        <h2 class="article-title"> Game Jam: Food Chain Collapse </h2>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> In this game you will learn that when you exploit nature, it takes damage. Poisons are released into the environment. Plants and animals absorb the toxins and because they are not organically degradable, the concentration increases
+                            the higher a creature is in the food chain. <br />
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="50" name="50"></a>
+                                <a class="article" href="BlogCarousel/50.html">
+                                    <picture class="img-fluid" width="100%" height="360">
+                                        <source srcset="../Images/FoodChainCollapseIngame.webp" type="image/webp" width="100%" height="360">
+                                        <img src="../Images/FoodChainCollapseIngame.jpg" alt="Ingame" width="100%" height="360">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Ingame </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="51" name="51"></a>
+                                <a class="article" href="BlogCarousel/51.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preFoodChainCollapseIntro.webp" type="image/webp">
+                                        <img src="../Images/preFoodChainCollapseIntro.jpg" alt="Intro">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Intro </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="52" name="52"></a>
+                                <a class="article" href="BlogCarousel/52.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preFoodChainCollapseHUD.webp" type="image/webp">
+                                        <img src="../Images/preFoodChainCollapseHUD.jpg" alt="HUD">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> HUD </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="53" name="53"></a>
+                                <a class="article" href="BlogCarousel/53.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preFoodChainCollapseTower.webp" type="image/webp">
+                                        <img src="../Images/preFoodChainCollapseTower.jpg" alt="Tower options">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Tower options </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body">
+                                    <div class="article-content" style="padding:0px 6px">
+                                        <footer class="article-info" style="padding:0px 0px">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                                <li><b>Genre: </b> Singleplayer </li>
+                                                <li><b>Player Count: </b> 1 </li>
+                                                <li><b>Age rating: </b> 6 </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nested-column">
+                                <div class="article-body">
+                                    <div class="article-content" style="padding:0px 6px">
+                                        <footer class="article-info" style="padding:0px 0px">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                                <li><b>Team size: </b> 1 </li>
+                                                <li><b>Position: </b> Game Developer </li>
+                                                <li><b>Date: </b> 2019/12/09 </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body article-center">
+                                    <a class="article" target="_blank" href="https://jurik.itch.io/food-chain-collapse">
+                                        <picture class="img-fluid" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <source srcset="../Icons/it.webp" type="image/webp" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <img src="../Icons/it.png" alt="Itch
+                                                        Logo" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                        </picture>
+                                        <p class="article-content"> Food Chain Collapse <br /> <em>on Itch</em>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Game Jam: 2019-12-09 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Other" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="JuriVSJuri" name="JuriVSJuri"></a>
+                        <h2 class="article-title"> Doodle: Juri vs Juri </h2>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> <em>I challenge every Juri to a button
+                                smashing competition! There can only be one Juri! </em> <br /><br /> The game pretends to connect to me and I challenge you to smash the keyboard keys faster than me, which you can't - I will always win. At least the non-web
+                            version checks if you are connected to the internet.<br /><br /> <em>This game was crafted on a train ride from Frankfurt to Berlin, as a response to another Juri, who was quite audacious that day.</em> <br />
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="48" name="48"></a>
+                                <a class="article" href="BlogCarousel/48.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preJuriVsJuriFight.webp" type="image/webp">
+                                        <img src="../Images/preJuriVsJuriFight.jpg" alt="Juri vs Juri">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Juri vs Juri </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="49" name="49"></a>
+                                <a class="article" href="BlogCarousel/49.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preJuriVsJuriConnecting.webp" type="image/webp">
+                                        <img src="../Images/preJuriVsJuriConnecting.jpg" alt="Pretending to connect">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Pretending to connect </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body">
+                                    <div class="article-content" style="padding:0px 6px">
+                                        <footer class="article-info" style="padding:0px 0px">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                                <li><b>Genre: </b> Singleplayer </li>
+                                                <li><b>Player Count: </b> 1 </li>
+                                                <li><b>Age rating: </b> 0 </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nested-column">
+                                <div class="article-body">
+                                    <div class="article-content" style="padding:0px 6px">
+                                        <footer class="article-info" style="padding:0px 0px">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                                <li><b>Team size: </b> 1 </li>
+                                                <li><b>Position: </b> Game Developer </li>
+                                                <li><b>Date: </b> 2019/12/10 </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body article-center">
+                                    <a class="article" target="_blank" href="https://jurik.itch.io/juri-vs-juri">
+                                        <picture class="img-fluid" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <source srcset="../Icons/it.webp" type="image/webp" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <img src="../Icons/it.png" alt="Itch
+                                                        Logo" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                        </picture>
+                                        <p class="article-content"> Juri vs Juri <br /> <em>on Itch</em>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Other: Doodle 2019-12-10 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Game Jam" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="AMazechen" name="AMazechen"></a>
+                        <h2 class="article-title"> Game Jam: A Mazechen </h2>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> I co-hosted a game jam at an <a href="https://www.sae.edu/deu/de/campus/berlin">SAE college</a> and worked on A Mazchen with these game-art students: Dean Przybilla Natalia Olszewska, Maximillion Karl, Eric Schneider, and a sound-design
+                            student: Joe Chen. In the game, you have to find gardening tools within a labyrinth covered in darkness to save your last plant from death. Stepping on switches open and closes gates and gives you a brief overview of the maze.<br
+                            />
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="46" name="46"></a>
+                                <a class="article" href="BlogCarousel/46.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preAMazechen01.webp" type="image/webp">
+                                        <img src="../Images/preAMazechen01.jpg" alt="InGame">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Ingame </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="47" name="47"></a>
+                                <a class="article" href="BlogCarousel/47.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preAMazechen02.webp" type="image/webp">
+                                        <img src="../Images/preAMazechen02.jpg" alt="Your last plant">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Your last plant </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body">
+                                    <div class="article-content" style="padding:0px 6px">
+                                        <footer class="article-info" style="padding:0px 0px">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                                <li><b>Genre: </b> Singleplayer </li>
+                                                <li><b>Player Count: </b> 1 </li>
+                                                <li><b>Age rating: </b> 0 </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nested-column">
+                                <div class="article-body">
+                                    <div class="article-content" style="padding:0px 6px">
+                                        <footer class="article-info" style="padding:0px 0px">
+                                            <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                                <li><b>Team size: </b> 6 </li>
+                                                <li><b>Position: </b> Game Developer </li>
+                                                <li><b>Date: </b> 2019/10/26 </li>
+                                            </ul>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body article-center">
+                                    <a class="article" target="_blank" href="https://kire-exion.itch.io/amazechen">
+                                        <picture class="img-fluid" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <source srcset="../Icons/it.webp" type="image/webp" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <img src="../Icons/it.png" alt="Itch
+                                                        Logo" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                        </picture>
+                                        <p class="article-content"> A Mazechen <br /> <em>on Itch</em>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Game Jam: 2019-10-26 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Game Jam" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="Hackaton-News" name="Hackaton-News"></a>
+                        <h2 class="article-title"> VR Hackathon#2 - 2nd Place </h2>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> Christopher Remde, Tom Pieper, Maximilian Santa, Edgar Schoenknecht and I won the 2nd price on the VR Hackaton#2 in Berlin with <b>Two Player One
+                                Capsule</b> - a tiny two-player virtual reality game. Two players guide a manikin through an obstacle course with deadly traps. The manikin-capsule will follow the middle-point of both players focus points, so both players
+                            have to time and communicate their inputs well in order to win. <br />
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="44" name="44"></a>
+                                <a class="article" href="BlogCarousel/44.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preVRBLNHackaton2InGame.webp" type="image/webp">
+                                        <img src="../Images/preVRBLNHackaton2InGame.jpg" alt="InGame">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> InGame </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="45" name="45"></a>
+                                <a class="article" href="BlogCarousel/45.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preVRBLNHackaton2InDev.webp" type="image/webp">
+                                        <img src="../Images/preVRBLNHackaton2InDev.jpg" alt="InDev">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> InDev </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Game Jam: Hackaton-News 2018-08-06 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="News" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="PirateSplashyPatch" name="PirateSplashyPatch"></a>
+                        <h2 class="article-title"> Pirate Splashy: Patch 1.1 </h2>
+                        <h2 class="article-titleR" id="Blue">&#11035;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> <a href="https://www.juriknauth.com/Projects/PirateSplashy.html"> Pirate Splashy</a> has received visual and performance improvements. It will be online soon. A more realistic ship behaviour is planned for the near feature. <br
+                            />
+                        </p><br />
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> News 2018-07-22 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="2D Art" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="PixelArt" name="PixelArt"></a>
+                        <h3 class="article-title"> 2D Art: Pixel Art </h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content">I tried some pixel art.<br />
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="42" name="42"></a>
+                                <a class="article" href="BlogCarousel/42.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <img src="../Images/PixelJuri500500.gif" alt="Me 50x50px">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Me 50x50px </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="43" name="43"></a>
+                                <a class="article" href="BlogCarousel/43.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/PixelJuri16.webp" type="image/webp">
+                                        <img src="../Images/PixelJuri16.jpg" alt="Me 16x16px">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Me 16x16px </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> 2D Art: Doodle 2018-05-18 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Programming" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="AstroidsOpenGL" name="AstroidsOpenGL"></a>
+                        <h3 class="article-title"> Graphic Programming: Astroids OpenGL</h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content">Edgar Schoenknecht and I experimented with <a href="https://www.opengl.org/">OpenGL</a>.
+                        </p>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="41" name="41"></a>
+                                <div class="article">
+                                    <div class="article-content article-center">
+                                        <iframe title="Astroids OpenGL" src="https://www.youtube.com/embed/8u-EqBJtUlI" height="520" overflow="hidden" width="100%" scrolling="no" frameborder="0" allowTransparency="true" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="article-body">
+                                        <p class="article-content"> Astroids OpenGL </p>
+                                        <footer class="article-info"><span><b>IDE:</b> Visual Studio <b> Language:</b>
+                                                C,
+                                                C++ and GLSL</span></footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body article-center">
+                                    <a class="article" target="_blank" href="https://github.com/JuriKnauth/AstroidsOpenGL">
+                                        <picture class="img-fluid" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <source srcset="../Icons/gh.webp" type="image/webp">
+                                            <img src="../Icons/gh.png" alt="Github Logo">
+                                        </picture>
+                                        <p class="article-content"> Astroids OpenGL Repository <br /> <em>on Github</em>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Programming: Assignment 2017-07-10
+                            </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Programming" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="JavaRenderPipeline" name="JavaRenderPipeline"></a>
+                        <h3 class="article-title"> Graphic Programming: Java JFrame Render Pipeline</h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content">Fellow students and I programmed this render pipeline with Dr. Nils Semmelrock in the summer semester 2017.
+                        </p>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="40" name="40"></a>
+                                <div class="article">
+                                    <div class="article-content article-center">
+                                        <iframe title="Java JFrame Render Pipeline" src="https://www.youtube.com/embed/VyZiABRZ81Y" height="520" overflow="hidden" width="100%" scrolling="no" frameborder="0" allowTransparency="true" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="article-body">
+                                        <p class="article-content"> Java JFrame Render Pipeline </p>
+                                        <footer class="article-info"><span><b>IDE:</b> Eclipse <b> Language:</b>
+                                                Java</span>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body article-center">
+                                    <a class="article" target="_blank" href="https://github.com/JuriKnauth/eclipse-workspace">
+                                        <picture class="img-fluid" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <source srcset="../Icons/gh.webp" type="image/webp">
+                                            <img src="../Icons/gh.png" alt="Github Logo">
+                                        </picture>
+                                        <p class="article-content"> Render Pipeline Repository <br /> <em>on Github</em>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Programming: Graphic Programming Task 2016-2017 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Game Design" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="SimulationEditorStrife" name="SimulationEditorStrife"></a>
+                        <h3 class="article-title"> Game Design Document: Simulation Editor Strife</h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> I worked out this unique game idea and presented it in
+                            <a href="https://en.wikipedia.org/wiki/PechaKucha/">PechaKucha</a> form to my fellow students. .
+                            <br />
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="39" name="39"></a>
+                                <a class="article" target="_blank" href="https://drive.google.com/file/d/1oGwSv2x9AB83-wZIhUjsM-nBH-SOtahW/view?usp=sharing">
+                                    <iframe title="One Sheet Game Design Document: Simulation Editor Strife" src="https://drive.google.com/file/d/1oGwSv2x9AB83-wZIhUjsM-nBH-SOtahW/preview" width="100%" height="288"></iframe>
+                                    <div class="article-body">
+                                        <p class="article-content"> One Sheet Game Design Document: Simulation Editor Strife
+                                        </p>
+                                        <footer class="article-info"><br /></footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Game Design: Task 2017-10-13 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Board Game" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="SolarTowerDefense" name="SolarTowerDefense"></a>
+                        <h3 class="article-title"> Board Game/Paper Prototype: Solar Tower Defense</h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> Edgar Schoenknecht and I upgraded this paper prototype over a day to become a board game. However, it is not completely finished yet.
+                            <br /><br />Players are challenged to calculate flight paths and plan where they should most ideally build their towers on a rotating disc flying through space. <br />
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="36" name="36"></a>
+                                <a class="article" target="_blank" href="https://drive.google.com/file/d/1njKmuK78CQHyKllx7NSkGovt9kRpo9L0/view?usp=sharing">
+                                    <iframe title="Solar Tower Defense" src="https://drive.google.com/file/d/1njKmuK78CQHyKllx7NSkGovt9kRpo9L0/preview" width="100%" height="288"></iframe>
+                                    <div class="article-body">
+                                        <p class="article-content"> Solar Tower Defense </p>
+                                        <footer class="article-info"><br /></footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="37" name="37"></a>
+                                <a class="article" href="BlogCarousel/37.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preSTD-InGame.webp" type="image/webp">
+                                        <img src="../Images/preSTD-InGame.jpg" alt="Solar Tower Defense In-Game">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Solar Tower Defense In-Game <br /> </p>
+                                        <footer class="article-info"></footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="38" name="38"></a>
+                                <a class="article" href="BlogCarousel/38.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preSolarTowerDefensePrototyping.webp" type="image/webp">
+                                        <img src="../Images/preSolarTowerDefensePrototyping.jpg" alt="Solar Tower Defense Prototyping">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Solar Tower Defense Prototyping <br /> </p>
+                                        <footer class="article-info"></footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="article" target="_blank" href="../Images/STD-InGame.jpg">
+                                    <div class="article-body">
+                                        <p class="article-content"> Solar Tower Defense In-Game <br /> </p>
+                                        <footer class="article-info"><em>High Resolution Image</em></footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Board Game: Task 2016-12-07 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Board Game" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="CongaLine" name="CongaLine"></a>
+                        <h3 class="article-title"> Board Game: Conga Line</h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> Tom Pieper, Kevin Rampf and I created this game over a weekend and entered it in the Spring 2016 Family Game Challenge from <a href="https://www.hasbrogaminglab.com/">Hasbro Gaming Lab</a>.<br />
+                        </p><br />
+                        <div class="columns">
+                            <a class="anchor" id="35" name="35"></a>
+                            <div class="nested-column">
+                                <a class="article" target="_blank" href="https://drive.google.com/file/d/1PMmYG3c57eSKtJmv4ySCH1fxtxGEZmM8/view?usp=sharing">
+                                    <iframe title="Conga Line Manual" src="https://drive.google.com/file/d/1PMmYG3c57eSKtJmv4ySCH1fxtxGEZmM8/preview" width="100%" height="288"></iframe>
+                                    <div class="article-body">
+                                        <p class="article-content"> Conga Line Manual </p>
+                                        <footer class="article-info"><br /></footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Board Game: Family-Game-Challange 2016-05-15 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Other" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="DanceItOff" name="DanceItOff"></a>
+                        <a class="anchor" id="Slurp" name="Slurp"></a>
+                        <h3 class="article-title"> Physical Games: Slurp and Dance it off!</h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content">The <a href="http://gamestorm-berlin.blogspot.de/">Gamestorm-Berlin> </a> X Body Play Jam was about creating physical games. We split into tiny groups and made various simple games. 'Slurp' and 'Dance it off!' were made by William
+                            Zack Wood, Merle Leufgen and me.
+                        </p><br />
+                        <div class="columns">
+                            <a class="anchor" id="32" name="32"></a>
+                            <div class="nested-column">
+                                <div class="article">
+                                    <div class="article-content article-center">
+                                        <iframe title="Slurp In Game" src="https://www.youtube.com/embed/4uLGqtrF7ZE" height="520" overflow="hidden" width="100%" scrolling="no" frameborder="0" allowTransparency="true" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="article-body">
+                                        <p class="article-content"> Slurp In Game </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="33" name="33"></a>
+                                <a class="article" href="BlogCarousel/33.html">
+                                    <picture class="img-fluid" width="640" height="360">
+                                        <source srcset="../Images/preSlurp.webp" type="image/webp" width="640" height="360">
+                                        <img src="../Images/preSlurp.jpg" alt="Slurp Rules" width="640" height="360">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Slurp Rules <br /> </p>
+                                        <footer class="article-info"><em></em></footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="34" name="34"></a>
+                                <a class="article" href="BlogCarousel/34.html">
+                                    <picture class="img-fluid" width="640" height="360">
+                                        <source srcset="../Images/preDanceItOff.webp" type="image/webp" width="640" height="360">
+                                        <img src="../Images/preDanceItOff.jpg" alt="DanceItOff Rules" width="640" height="360">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Dance it off! Rules <br /> </p>
+                                        <footer class="article-info"><em></em></footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Other: Gamestorm X Body Play Jam 2016-02-13 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Level Design" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="CakeKingdom" name="CakeKingdom"></a>
+                        <h3 class="article-title"> Map: Heroes of Might and Magic III: Wake of Gods, Cake Kingdom</h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> I made this colossal and well-balanced map in my spare-time. It includes everything a nostalgic player wouldn’t want to miss.
+                            <br /><br /><em>The
+                                elementalists have conjured up the mightiest heroes to fight to death in their arena.
+                                They
+                                imitated the realms
+                                of each hero and shaped them to fit in a deadly, two-layered cake. The winner gets to
+                                eat it
+                                all! A kingdom for a piece of cake!</em><br />
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="30" name="30"></a>
+                                <a class="article" href="BlogCarousel/30.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preCakeKingdomInGamePlay.webp" type="image/webp">
+                                        <img src="../Images/preCakeKingdomInGamePlay.jpg" alt="CakeKingdom InGame">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> In-Game <br /> </p>
+                                        <footer class="article-info"><em></em></footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="31" name="31"></a>
+                                <a class="article" href="BlogCarousel/31.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preCakeKingdomMapOverGround21Mpx.webp" type="image/webp">
+                                        <img src="../Images/preCakeKingdomMapOverGround21Mpx.jpg" alt="CakeKingdom Preview">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Preview<br /> </p>
+                                        <footer class="article-info"></footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="article" target="_blank" href="https://www.maps4heroes.com/forum/opinions.php?map_id=2205&game=3">
+                                    <div class="article-body">
+                                        <p class="article-content"> Download Map <br /> </p>
+                                        <footer class="article-info"><em>from maps4heroes.com</em></footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="article" target="_blank" href="../Images/CakeKingdomMapOverGround7Mpx.jpg">
+                                    <div class="article-body">
+                                        <p class="article-content"> Surface Overview<br /> </p>
+                                        <footer class="article-info"><em>High Resolution Image</em></footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="article" target="_blank" href="../Images/CakeKingdomMapUnderGround7Mpx.jpg">
+                                    <div class="article-body">
+                                        <p class="article-content"> Underground Overview<br /> </p>
+                                        <footer class="article-info"><em>High Resolution Image</em></footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Level Design: Hobby 2015-04-14 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="3D Art" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="Nova" name="Nova"></a>
+                        <h3 class="article-title"> Sculpting: Nova Heroes of the Storm</h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> I worked six days on my first high-poly character and explained the process on <a href="https://www.artstation.com/artwork/k1A6A">Artstation</a>. <a href="http://us.battle.net/heroes/en/heroes/nova/">Nova</a> is a character from
+                            the
+                            <a href="https://starcraft2.com/de-de/">Starcraft</a> Universe. This sculpt is based on the
+                            <a href="http://us.battle.net/heroes/en/">Heroes of the Storm</a> in-game-model. Sculpted in
+                            <a href="http://pixologic.com/features/">Zbrush</a>. Tweaked in <a href="https://www.autodesk.eu/products/3ds-max/overview">3ds-Max</a>. Baked in
+                            <a href="https://www.allegorithmic.com/products/substance-painter">Substance-Painter</a>.<br />
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="29" name="29"></a>
+                                <div class="article">
+                                    <div class="article-content article-center">
+                                        <div class="sketchfab-embed-wrapper"><iframe height="520" overflow="hidden" width="100%" scrolling="no" frameborder="0" allowTransparency="true" src="https://sketchfab.com/models/4d5772be723e4a58b11b337fd9c59a6c/embed" allowvr allowfullscreen mozallowfullscreen="true"
+                                                webkitallowfullscreen="true" onmousewheel=""></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="article-body">
+                                        <p class="article-content"> <a href="https://sketchfab.com/models/4d5772be723e4a58b11b337fd9c59a6c?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #0984e3;">Nova - Heroes
+                                                of
+                                                the Storm - Woman -Sculpt</a> by <a href="https://sketchfab.com/JuriK?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #0984e3;">Juri
+                                                Knauth</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #0984e3;">Sketchfab</a>
+                                        </p><br />
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> 3D Art: Advanced 3D Assignment 2017-03-06 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="3D Art" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="Woman" name="Woman"></a>
+                        <h3 class="article-title"> Low Poly Modeling: Woman or Humanoid A.I.</h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> My goal was to have a somewhat decent topology with 1700 polys. I mostly did the unwrapping manually and edited Autodesk CAT-Rig for the walk animation. There are some more details about it on <a href="https://www.artstation.com/artwork/mdxe9">Artstation</a>.
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="28" name="28"></a>
+                                <div class="article">
+                                    <div class="article-content article-center">
+                                        <div class="sketchfab-embed-wrapper">
+                                            <iframe title="Low Poly Woman or Humanoid A.I." height="520" overflow="hidden" width="100%" scrolling="no" frameborder="0" allowTransparency="true" src="https://sketchfab.com/models/73bb5a356a0e493cbe0ce58da8a98807/embed" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
+                                                onmousewheel=""></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="article-body">
+                                        <p class="article-content"> <a href="https://sketchfab.com/models/73bb5a356a0e493cbe0ce58da8a98807?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #0984e3;">Low Poly
+                                                Woman or
+                                                Humanoid A.I.</a> by
+                                            <a href="https://sketchfab.com/JuriK?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #0984e3;">Juri
+                                                Knauth</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #0984e3;">Sketchfab</a>
+                                        </p><br />
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> 3D Art: Exercise 2017-03-11 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="3D Art" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="Diarama" name="Diarama"></a>
+                        <h3 class="article-title"> Low Poly Modeling: Frozen-Upside-Down-Lake-Diarama</h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> In this scene an ice-witch is about to pull some clueless ice fisherman beneath the surface.
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="27" name="27"></a>
+                                <div class="article">
+                                    <div class="article-content article-center">
+                                        <div class="sketchfab-embed-wrapper">
+                                            <iframe title="Diarama - Still in the Works - Fixing Issues" height="520" overflow="hidden" width="100%" scrolling="no" frameborder="0" allowTransparency="true" src="https://sketchfab.com/models/3beacf96c87b41eaa3840c3bb10c97ff/embed" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
+                                                onmousewheel=""></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="article-body">
+                                        <p class="article-content"> <a href="https://sketchfab.com/models/3beacf96c87b41eaa3840c3bb10c97ff?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #0984e3;">Diarama -
+                                                Still
+                                                in the Works - Fixing Issues</a> by <a href="https://sketchfab.com/JuriK?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #0984e3;">Juri
+                                                Knauth</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #0984e3;">Sketchfab</a>
+                                        </p><br />
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> 3D Art: 3D Assignment 2016-12-23 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="3D Art" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="UrukaiShield" name="UrukaiShield"></a>
+                        <h3 class="article-title"> Low Poly Modeling: Urukai Shield and Medieval Short Sword</h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> Two tasks for university. Lightbaking was done within <a href="https://www.autodesk.eu/products/3ds-max/overview">3ds-Max</a>. There are no textures other than base color.
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="25" name="25"></a>
+                                <div class="article">
+                                    <div class="article-content article-center">
+                                        <iframe title="Urukai Shield" height="315" overflow="hidden" width="100%" scrolling="no" frameborder="0" allowTransparency="true" src="https://sketchfab.com/models/2429c359d2134a23a6cd9d633d7b0225/embed" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
+                                            onmousewheel=""></iframe>
+                                    </div>
+                                    <div class="article-body">
+                                        <p class="article-content"> <a href="https://sketchfab.com/models/2429c359d2134a23a6cd9d633d7b0225?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #0984e3;">Urukai
+                                                Shield</a> by
+                                            <a href="https://sketchfab.com/JuriK?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #0984e3;">Juri
+                                                Knauth</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #0984e3;">Sketchfab</a>
+                                        </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="26" name="26"></a>
+                                <div class="article">
+                                    <div class="article-content article-center">
+                                        <iframe title="Medieval Short Sword" height="315" overflow="hidden" width="100%" scrolling="no" frameborder="0" allowTransparency="true" src="https://sketchfab.com/models/35bf3514dc78463ab9abcbccf00ed157/embed" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
+                                            onmousewheel=""></iframe>
+                                    </div>
+                                    <div class="article-body">
+                                        <p class="article-content"> <a href="https://sketchfab.com/models/35bf3514dc78463ab9abcbccf00ed157?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #0984e3;">Medieval
+                                                Short
+                                                Sword</a> by <a href="https://sketchfab.com/JuriK?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #0984e3;">Juri
+                                                Knauth</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #0984e3;">Sketchfab</a>
+                                        </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> 3D Art: Tasks 2016-11-28 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="3D Art" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="Monster" name="Monster"></a>
+                        <h3 class="article-title"> Sculpting: Monster - WIP</h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> 3D-Model inspired by Sam Santala’s Monster: <a href="https://www.artstation.com/artwork/JwwDZ">Oryctomus</a>.
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="24" name="24"></a>
+                                <div class="article">
+                                    <div class="article-content article-center">
+                                        <div class="sketchfab-embed-wrapper">
+                                            <iframe title="Sculpting: Monster - WIP" height="520" overflow="hidden" width="100%" scrolling="no" frameborder="0" allowTransparency="true" src="https://sketchfab.com/models/d4e82459acc44ccc86fd96495bf0bd33/embed" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
+                                                onmousewheel=""></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="article-body">
+                                        <p class="article-content"> <a href="https://sketchfab.com/models/d4e82459acc44ccc86fd96495bf0bd33?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #0984e3;">Sculpting:
+                                                Monster - WIP</a> by <a href="https://sketchfab.com/JuriK?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #0984e3;">Juri
+                                                Knauth</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #0984e3;">Sketchfab</a>
+                                        </p>
+                                        <br />
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> 3D Art: Task 2016-11-21 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="3D Art" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="ClayHead" name="ClayHead"></a>
+                        <h3 class="article-title"> Sculpting: Clay Head </h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="22" name="22"></a>
+                                <a class="article" href="BlogCarousel/22.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preARTclay_head_by_juriknauth-db1mpbv.webp" type="image/webp">
+                                        <img src="../Images/preARTclay_head_by_juriknauth-db1mpbv.jpg" alt="Clay Head Front">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Clay Head Front </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="23" name="23"></a>
+                                <a class="article" href="BlogCarousel/23.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preARTclay_head_by_juriknauth-db1mpd0.webp" type="image/webp">
+                                        <img src="../Images/preARTclay_head_by_juriknauth-db1mpd0.jpg" alt="Clay Head Side">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Clay Head Side </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> 3D Art: Task 2016-02-15 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="2D Art" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="BarFuss" name="BarFuss"></a>
+                        <h3 class="article-title"> 2D Animated Short Film: BarFuss</h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"><em>“Barfuß” is German for
+                                “barefoot”.</em><br /><br /> I did this short 2D-vector graphic movie for college with
+                            <a href="http://www.adobe.com/products/aftereffects.html">Adobe After Effects</a> and <a href=http://www.adobe-students.com/de/products/illustrator.html>Adobe Illustrator</a>. The short should address robots vs. humans. Humping
+                            Robot from <a href="http://www.adultswim.com/videos/robot-chicken/>Robot">Chicken</a> inspired the look of this robot - could be his background story.
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="21" name="21"></a>
+                                <div class="article">
+                                    <div class="article-content article-center">
+                                        <iframe title="BarFuss" src="https://www.youtube.com/embed/JDgFKJgwGWA" height="520" overflow="hidden" width="100%" scrolling="no" frameborder="0" allowTransparency="true" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="article-body">
+                                        <p class="article-content"> BarFuss </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> 2D Art: Animation Assignment 2016-06-25 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Motion" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="ImWestenNichtsNeues" name="ImWestenNichtsNeues"></a>
+                        <h3 class="article-title"> Storyboard thumbs: <em>Im Westen nichts Neues, Kapitel XI Auszug</em></h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"><em>“All Quiet on the Western Front,
+                                excerpt from chapter
+                                XI".</em><br /><br /> First storyboard thumbnails I did.
+                            <em>"Im Westen nichts Neues"</em> by Erich Maria Remarque is the most frequently translated German novel. I highly recommend it! It's about a German soldier and his struggle to survive in the trenches of the First World War.
+                            It paints a very realistic picture of the cruelties and senseless killings at the front, where people are transformed into animals - only looking to find the next meal and shelter from the cold. Bullets are just another cause
+                            of death. These boys are lost in the mud and even those who escape the shrapnel are scared for life.
+                            <br /><br />In this scene the last remaining friend of the main character is wounded.
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="20" name="20"></a>
+                                <a class="article" target="_blank" href="https://drive.google.com/file/d/1Kuh5E5D2UcGcyGCHYKbkfXMDDQlxMa4L/view?usp=sharing">
+                                    <iframe title="Storyboard-thumbs: Im Westen nichts Neues, Kapitel XI Auszug" src="https://drive.google.com/file/d/1Kuh5E5D2UcGcyGCHYKbkfXMDDQlxMa4L/preview" width="100%" height="288"></iframe>
+                                    <div class="article-body">
+                                        <p class="article-content"> Storyboard-thumbs: Im Westen nichts Neues, Kapitel XI Auszug
+                                        </p>
+                                        <footer class="article-info"><br /></footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Motion: Motion Assignment 2017-01-17 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="2D Art" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="Drawings" name="Drawings"></a>
+                        <h3 class="article-title"> 2D Art: Drawings </h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content">More drawings on <a href="https://juriknauth.deviantart.com/gallery/">Deviant Art</a>.<br />
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="13" name="13"></a>
+                                <a class="article" href="BlogCarousel/13.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preARTcrossbowman_by_juriknauth-db1llap.webp" type="image/webp">
+                                        <img src="../Images/preARTcrossbowman_by_juriknauth-db1llap.jpg" alt="Crossbowman">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Crossbowman </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="14" name="14"></a>
+                                <a class="article" href="BlogCarousel/14.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preARTmale_antonymy_by_juriknauth-db1md82.webp" type="image/webp">
+                                        <img src="../Images/preARTmale_antonymy_by_juriknauth-db1md82.jpg" alt="Male Anatomy">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Male Anatomy </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="15" name="15"></a>
+                                <a class="article" href="BlogCarousel/15.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preARThuman_skull_antonymy_by_juriknauth-db1mfcs.webp" type="image/webp">
+                                        <img src="../Images/preARThuman_skull_antonymy_by_juriknauth-db1mfcs.jpg" alt="Skull Anatomy">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Skull Anatomy </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="16" name="16"></a>
+                                <a class="article" href="BlogCarousel/16.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preARThuman_spreARTkull_antonymy_side_by_juriknauth-db1mfqe.webp" type="image/webp">
+                                        <img src="../Images/preARThuman_spreARTkull_antonymy_side_by_juriknauth-db1mfqe.jpg" alt="Skull Anatomy Side">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Skull Anatomy Side </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="17" name="17"></a>
+                                <a class="article" href="BlogCarousel/17.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preARTface_antonymy_side_by_juriknauth-db1mek3.webp" type="image/webp">
+                                        <img src="../Images/preARTface_antonymy_side_by_juriknauth-db1mek3.jpg" alt="Face Anatomy Side">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Face Anatomy Side </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="18" name="18"></a>
+                                <a class="article" href="BlogCarousel/18.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preARTfruit_and_egg_by_juriknauth-db1m6a1.webp" type="image/webp">
+                                        <img src="../Images/preARTfruit_and_egg_by_juriknauth-db1m6a1.jpg" alt="Fruits">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Fruits </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="19" name="19"></a>
+                                <a class="article" href="BlogCarousel/19.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preARTman_at_bar_high_contrast_and_darker_by_kptnholz-db1l92c.webp" type="image/webp">
+                                        <img src="../Images/preARTman_at_bar_high_contrast_and_darker_by_kptnholz-db1l92c.jpg" alt="Man at Bar">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Man at Bar </p>
+                                        <footer class="article-info"> </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> 2D Art: Tasks 2016-03-15 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="2D Art" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="LogoDesign" name="LogoDesign"></a>
+                        <h3 class="article-title"> Graphics: Logo Design </h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="8" name="8"></a>
+                                <a class="article" href="BlogCarousel/8.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preGuessworkWithCredits.webp" type="image/webp">
+                                        <img src="../Images/preGuessworkWithCredits.jpg" alt="Guesswork Logo">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Guesswork </p>
+                                        <footer class="article-info"><br /></footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="9" name="9"></a>
+                                <a class="article" href="BlogCarousel/9.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preNoBudgetProductionLogo.webp" type="image/webp">
+                                        <img src="../Images/preNoBudgetProductionLogo.jpg" alt="no budget production Logo">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> no budget production </p>
+                                        <footer class="article-info"><br /></footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="10" name="10"></a>
+                                <a class="article " href="BlogCarousel/10.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/preSpielhauerLogo.webp" type="image/webp">
+                                        <img src="../Images/preSpielhauerLogo.jpg" alt="Spielhauer Logo">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> Spielhauer </p>
+                                        <footer class="article-info">Game Sculptors</footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="11" name="11"></a>
+                                <a class="article" href="BlogCarousel/11.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/prePIGBanner.webp" type="image/webp">
+                                        <img src="../Images/prePIGBanner.jpg" alt="PIG Logo">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> PIG </p>
+                                        <footer class="article-info">Political Incorrect Games</footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="12" name="12"></a>
+                                <a class="article" href="BlogCarousel/12.html">
+                                    <picture class="img-fluid" width="100%" height="480">
+                                        <source srcset="../Images/prejkiconcropDC.webp" type="image/webp">
+                                        <img src="../Images/prejkiconcropDC.jpg" alt="JK Banner">
+                                    </picture>
+                                    <div class="article-body">
+                                        <p class="article-content"> JK </p>
+                                        <footer class="article-info">Initials: Juri Knauth</footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> 2D Art: Diverse </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Other" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="HearthstoneCards" name="HearthstoneCards"></a>
+                        <h3 class="article-title"> Custom Hearthstone Cards</h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> I designed these cards for <a href="https://playhearthstone.com/en-us/">Hearthstone</a>.<br />
+                        </p><br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="article">
+                                    <div class="article-body">
+                                        <p class="article-content"> Treant Of Life </p>
+                                        <p class="article-info article-center"> <span><strong>Battlecry: </strong> Add a
+                                                'Living Roots' spell to your hand.<br /><br /><br /></span> </p>
+                                        <footer class="article-info"><span><b>Cost:</b> 2<br /><b>Attack:</b>
+                                                2<br /><b>Health:</b> 2<br /></span> <span><b>Class:</b>
+                                                Druid<br /><b>Rarity:</b> Rare<br /><b>Type:</b>
+                                                Minion<br /><br /></span>
+                                        </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="article">
+                                    <div class="article-body">
+                                        <p class="article-content"> Gnomeregan Guardian </p>
+                                        <p class="article-info article-center"> <span><strong>Charge. Taunt.</strong>
+                                                Whenever you end your turn and this minion did not attack, gain
+                                                +1/+1.<br /><br /></span> </p>
+                                        <footer class="article-info"><span><b>Cost:</b> 5<br /><b>Attack:</b>
+                                                1<br /><b>Health:</b> 8<br /></span> <span><b>Class:</b>
+                                                Neutral<br /><b>Rarity:</b> Rare<br /><b>Type:</b>
+                                                Minion<br /><b>Subtype:</b> Mech</span>
+                                        </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="article">
+                                    <div class="article-body">
+                                        <p class="article-content"> Guardian Angel </p>
+                                        <p class="article-info article-center"> <span><strong></strong> Whenever your
+                                                hero
+                                                takes fatal damage and if it's not your turn, prevent it and Guardian
+                                                Angel
+                                                becomes the new target.</span> </p>
+                                        <footer class="article-info"><span><b>Cost:</b> 8<br /><b>Attack:</b>
+                                                7<br /><b>Health:</b> 8<br /></span> <span><b>Class:</b>
+                                                Paladin<br /><b>Rarity:</b> Epic<br /><b>Type:</b> Minion</span>
+                                        </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="article">
+                                    <div class="article-body">
+                                        <p class="article-content"> Tormented Soul Portal </p>
+                                        <p class="article-info article-center"><span><strong>Inspire:</strong> Add a
+                                                'Soulfire' spell to your hand.<br /><br /><br /></span> </p>
+                                        <footer class="article-info"><span><b>Cost:</b> 2<br /><b>Attack:</b>
+                                                0<br /><b>Health:</b> 3<br /></span> <span><b>Class:</b>
+                                                Warlock<br /><b>Rarity:</b> Epic<br /><b>Type:</b>
+                                                Minion<br /><br /></span>
+                                        </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="article">
+                                    <div class="article-body">
+                                        <p class="article-content"> Ancient Shepherd </p>
+                                        <p class="article-info article-center"><span></span><strong></strong> At the end of your turn, add an 'Innervate' spell to your hand.<br /><br /><br /> </p>
+                                        <footer class="article-info"><span><b>Cost:</b> 3<br /><b>Attack:</b>
+                                                1<br /><b>Health:</b> 6<br /></span> <span><b>Class:</b>
+                                                Druid<br /><b>Rarity:</b> Common<br /><b>Type:</b>
+                                                Minion<br /><br /></span>
+                                        </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="article">
+                                    <div class="article-body">
+                                        <p class="article-content"> Corrupted Ancient </p>
+                                        <p class="article-info article-center"><span><strong>Taunt. </strong> Whenever a
+                                                minion is damaged by this minion add a 'Corruption' spell to your
+                                                hand.<br /><br /></span> </p>
+                                        <footer class="article-info"><span><b>Cost:</b> 5<br /><b>Attack:</b>
+                                                2<br /><b>Health:</b> 7<br /></span> <span><b>Class:</b>
+                                                Warlock<br /><b>Rarity:</b> Rare<br /><b>Type:</b>
+                                                Minion<br /><br /></span>
+                                        </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="article">
+                                    <div class="article-body">
+                                        <p class="article-content"> Siege Tortoise </p>
+                                        <p class="article-info article-center"><span>Whenever you end your turn and this
+                                                minion did not attack, restore this minion to full
+                                                Health.<br /><br /></span> </p>
+                                        <footer class="article-info"><span><b>Cost:</b> 4<br /><b>Attack:</b>
+                                                2<br /><b>Health:</b> 5<br /></span> <span><b>Class:</b>
+                                                Neutral<br /><b>Rarity:</b> Rare<br /><b>Type:</b>
+                                                Minion<br /><br /></span>
+                                        </footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="article">
+                                    <div class="article-body">
+                                        <p class="article-content"> Goblin Shadowmancer </p>
+                                        <p class="article-info article-center"><span><strong>Stealth.</strong> At the
+                                                start
+                                                of your turn, give your other minions <strong>Stealth</strong> until
+                                                your
+                                                next turn.<br /><br /><br /></span> </p>
+                                        <footer class="article-info"><span><b>Cost:</b> 3<br /><b>Attack:</b>
+                                                3<br /><b>Health:</b> 2<br /></span> <span><b>Class:</b>
+                                                Rogue<br /><b>Rarity:</b> Common<br /><b>Type:</b>
+                                                Minion<br /><br /></span>
+                                        </footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Other: Hobby 2016-05-15 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Game Design" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody" id="BlogE">
+                        <a class="anchor" id="Paradroid2" name="Paradroid2"></a>
+                        <h2 id="Paradroid" name="Paradroid" class="article-titleL" float="left"> Paradroid 2.0 Concept
+                        </h2>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> The task was to conceptualize a sequel for the classic Commodore 64 computer game <a href="https://en.wikipedia.org/wiki/Paradroid">Paradroid</a>. This was a group assignment. I worked with Franz and Kien on this homework assignment.<br
+                            /> </p>
+                        <br />
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="7" name="7"></a>
+                                <a class="article" target="_blank" href="https://drive.google.com/file/d/1MEK5ibDKsqkSmVJ2VUuShpRFmnQ49LJ_/view?usp=sharing">
+                                    <iframe title="Paradroid 2.0" src="https://drive.google.com/file/d/1MEK5ibDKsqkSmVJ2VUuShpRFmnQ49LJ_/preview" width="100%" height="288"></iframe>
+                                    <div class="article-body">
+                                        <p class="article-content"> Paradroid 2.0 <em>(German)</em> </p>
+                                        <footer class="article-info"><br /></footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Game Design: Theory of Computer Games Homework 2015-11-18
+                            </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Level Design" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody" id="BlogE">
+                        <a class="anchor" id="LemmingsMap" name="LemmingsMap"></a>
+                        <h2 id="Paradroid" name="Paradroid" class="article-titleL" float="left"> Map: Lemmings Level 14
+                        </h2>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> A task for college was to make a level for <a href="httphttps://www.neolemmix.com/">Lemmings</a>. In a fixed order each student made a level with increased difficulty.<br /> </p><br />
+                        <div class="nested-column">
+                            <a class="anchor" id="6" name="6"></a>
+                            <a class="article" href="BlogCarousel/6.html">
+                                <img class="img-fluid" src="../Images/preLemmingeLevel14IG.jpg" alt="Lemminge Level 14" width="100%" height="360">
+                                <div class="article-body">
+                                    <p class="article-content"> Lemmings Level 14 </p>
+                                    <footer class="article-info"> </footer>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <div class="article-body article-center">
+                                    <a class="article" target="_blank" href="https://1drv.ms/u/s!AgiQHng__FW5gR7uR56s7ytaa8mc">
+                                        <picture class="img-fluid" height="72" overflow="hidden" width="72" scrolling="no" frameborder="0">
+                                            <img src="../Icons/Games/NeoLemmix_0000.ico" alt="Lemmings Logo">
+                                        </picture>
+                                        <p class="article-content"> Download Lemmings Level 14 <br /> <em>on
+                                                OneDrive</em>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Level Design: Task 2017-04-04 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Board Game" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody" id="BlogE">
+                        <a class="anchor" id="WallCrawl" name="WallCrawl"></a>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <h2 id="Paradroid" name="Paradroid" class="article-titleL" float="left"> Miniature Game: Wall Crawl
+                        </h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> Wall Crawl is a vertical dungeon crawler. Players are challenged to quickly spot and count objects within a certain time limit.
+                            <br /> </p><br />
+                        <div class="nested-column">
+                            <a class="anchor" id="5" name="5"></a>
+                            <a class="article" href="BlogCarousel/5.html">
+                                <picture class="img-fluid" width="100%" height="360">
+                                    <source srcset="../Images/preWallCrawl.webp" type="image/webp" width="100%" height="360">
+                                    <img src="../Images/preWallCrawl.jpg" alt="Wall Crawl" width="100%" height="360">
+                                </picture>
+                                <div class="article-body">
+                                    <p class="article-content"> Wall Crawl </p>
+                                    <footer style="text-align:justify;" class="article-info">Kien Le, Franz Lisdat, Felix Schmidt, Armando Gracia, Hieu Le, Kevin Rampf, Edgar Schoenknecht, Maximilian Santa, Fabian Kopp, Antonio Rodriguez Chinchilla and I worked together on this project. </footer>
+                                </div>
+                            </a>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Board Game: Task 2016-03-14 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Other" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody" id="BlogE">
+                        <a class="anchor" id="HeroesOfMightAndMagic3bConcept" name="HeroesOfMightAndMagic3bConcept"></a>
+                        <h2 id="Paradroid" name="Paradroid" class="article-titleL" float="left"> Alternative Heroes of Might and Magic III Concept </h2>
+                        <h2 class="article-titleR" id="Blue">&#11035;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content"> My brother and I conceptualized how <a href="https://en.wikipedia.org/wiki/Heroes_of_Might_and_Magic_III">Heroes of Might and
+                                Magic
+                                III</a> might have been. I need to get hold of an old floppy disk drive to be able to read the old data.
+                            <br /> </p><br />
+                        <div class="nested-column">
+                            <a class="anchor" id="4" name="4"></a>
+                            <a class="article" href="BlogCarousel/4.html">
+                                <picture class="img-fluid" width="100%" height="360">
+                                    <source srcset="../Images/preFirstDigGameConcept.webp" type="image/webp" width="100%" height="360">
+                                    <img src="../Images/preFirstDigGameConcept.jpg" alt="Alternative Heroes of Might And Magic 3 Concept" width="100%" height="360">
+                                </picture>
+                                <div class="article-body">
+                                    <p class="article-content"> Alternative Heroes Of Might And Magic III Concept </p>
+                                    <footer class="article-info"> </footer>
+                                </div>
+                            </a>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Other: Hobby 1999 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="infoClass" id="Other" style="margin: 0px; padding: 0px; display: block">
+                    <div class="articlebody">
+                        <a class="anchor" id="JavaRenderPipeline" name="JavaRenderPipeline"></a>
+                        <h3 class="article-title"> Let's Play: Dungeon Master</h3>
+                        <h2 class="article-titleR" id="Green">&#9658;</h2>
+                        <br />
+                        <p style="text-align:justify;" class="article-content">I analyzed <a href="https://en.wikipedia.org/wiki/Dungeon_Master_(video_game)">Dungeon Master</a>
+                            <em>(1987)</em>and made this Lets PLay for college.
+                        </p>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="1" name="1"></a>
+                                <div class="article">
+                                    <div class="article-content article-center">
+                                        <iframe title="Dungeon Master - Let's Play (Longplay)" src="https://www.youtube.com/embed/ylIIniZEUNM" height="520" overflow="hidden" width="100%" scrolling="no" frameborder="0" allowTransparency="true" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="article-body">
+                                        <p class="article-content"> Dungeon Master - Let's Play (Longplay)
+                                            <em>(German)</em>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="nested-column">
+                                <a class="anchor" id="2" name="2"></a>
+                                <a class="article">
+                                    <iframe title="Dungeon Master - Presentation" src="https://onedrive.live.com/embed?cid=B955FC3F781E9008&resid=B955FC3F781E9008%21149&authkey=ALMbdvnTwnVsrZs&em=2&wdAr=1.7777777777777777" width="100%" height="288" frameborder="0" scrolling="no">Dies ist ein
+                                        eingebettetes
+                                        <a target='_blank' href='https://office.com'>Microsoft Office</a>-Dokument,
+                                        unterstützt von <a target='_blank' href='https://office.com/webapps'>Office
+                                            Online</a>.</iframe>
+                                    <div class="article-body">
+                                        <p class="article-content"> Dungeon Master - Presentation <em>(German)</em> </p>
+                                        <footer class="article-info"></footer>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nested-column">
+                                <a class="anchor" id="3" name="3"></a>
+                                <a class="article">
+                                    <iframe title="Dungeon Master - Monster Exel Chart" src="https://onedrive.live.com/embed?cid=B955FC3F781E9008&resid=B955FC3F781E9008%21151&authkey=AEmJPXw5l6mTFO0&em=2" width="100%" height="288" frameborder="0" scrolling="no"></iframe>
+                                    <div class="article-body">
+                                        <p class="article-content"> Dungeon Master - Monster Exel Chart
+                                            <em>(German)</em>
+                                        </p>
+                                        <footer class="article-info"></footer>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="text-align:justify;" class="article-content">
+                            <footer class="article-date"> Other: History of Computer Games Task 2015-12-23 </footer>
+                        </p>
+                    </div>
+                </div>
+                <div class="articlebody">
+                    <a class="anchor" id="Forum" name="Forum"></a>
+                    <h2 class="article-title"> Forum Blog </h2>
+                    <br />
+                    <p class="article-content"><i>(I welcome relevant, respectful comments.)</i> </p>
+                    <br />
+                    <div class="columns">
+                        <div class="nested-column">
+                            <div class="article-body article-center">
+                                <div id="disqus_thread"></div>
+                                <script>
+                                    /**
+                                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                                    var disqus_config = function() {
+                                        this.page.url =
+                                            "https://www.juriknauth.com/Blog.html"; // Replace PAGE_URL with your page's canonical URL variable
+                                        this.page.identifier =
+                                            "Blog"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                                    };
+                                    (function() {
+                                        // DON'T EDIT BELOW THIS LINE
+                                        var d = document,
+                                            s = d.createElement("script");
+                                        s.src = "https://juriknauth.disqus.com/embed.js";
+                                        s.setAttribute("data-timestamp", +new Date());
+                                        (d.head || d.body).appendChild(s);
+                                    })();
+                                </script>
+                                <noscript>
+                                    Please enable JavaScript to view the <a
+                                        href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                                </noscript>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gridContainer clearfix">
+            <div id="div1" class="fluid"> </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div id="loadbotbar" class="bottomMain"> </div>
+    </div>
+</body>
+
+</html>
