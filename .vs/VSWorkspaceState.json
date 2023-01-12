@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Contact",
     "\\Contact\\NoBudgetProduction",
-    "\\Projects",
-    "\\Projects\\NinjaCar"
+    "\\Projects\\NinjaCar",
+    "\\Valpha\\Carousel"
   ],
+  "SelectedNode": "\\CarGame.html",
   "PreviewInSolutionExplorer": false
 }
