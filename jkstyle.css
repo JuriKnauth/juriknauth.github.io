@@ -760,7 +760,7 @@ p {
     color: #fff;
     display: flex;
     font-size: .85em;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 10px;
     margin-right: 0;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
