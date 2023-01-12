@@ -1,10 +1,8 @@
 # juriknauth.github.io
-Juri Knauth's Game Design Portfolio:
+Juri Knauth's Services and Portfolio:
 
-I am a Game Designer/Developer. This web page will showcase each project I worked on as well as link to my team-projects. You will find brief remarks, too.
+I am a Software/Game Developer and Mentor. This website presents the services I offer and my projects.
 
 https://www.juriknauth.com/
 
-![alt text](https://www.juriknauth.com/Images/EJK.png)
-
-test
+![alt text](https://juriknauth.com/Icons/jk/jpg/PixelJuri500500.jpg)
