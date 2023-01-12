@@ -1,7 +1,7 @@
 {
     "short_name": "JuriKnauth",
-    "name": "Juri Knauth's Portfolio",
-    "description": "Juri Knauth�s Portfolio. I am a Solo Game Developer. This website showcases every project I have worked on and contains links to my team projects. You will also find short comments.",
+    "name": "Juri Knauth",
+    "description": "Juri Knauth�s. Software/Game Developer and Mentor. This website showcases every project I have worked on and contains links to my team projects. You will also find short comments.",
     "icons": [{
             "src": "/android-chrome-192x192.png",
             "sizes": "192x192",
