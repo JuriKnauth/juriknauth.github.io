@@ -547,6 +547,10 @@ a {
     transition: all .3s cubic-bezier(.25, .8, .25, 1);
 }
 
+.tabcontent a {
+    word-break: break-all;
+}
+
 div,
 figure,
 p {
