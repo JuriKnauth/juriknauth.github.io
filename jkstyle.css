@@ -547,7 +547,7 @@ a {
     transition: all .3s cubic-bezier(.25, .8, .25, 1);
 }
 
-.tabcontent a {
+.breakAll {
     word-break: break-all;
 }
 
