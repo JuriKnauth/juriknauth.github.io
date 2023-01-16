@@ -24,10 +24,18 @@
     <meta name="theme-color" content="#ffffff">
     <title>Juri Knauth's Services and Portfolio. Software/Game Developer/Mentor. </title>
     <link rel="stylesheet" type="text/css" href="boilerplate.min.css">
-    <script type="text/javascript" src="jkscript.min.js"></script>
-    <script type="text/javascript" script src="respond.min.js">
+    <script type="text/javascript" script src="jkscript.min.js"></script>
+    <script type="text/javascript" script src="respond.min.js"></script>
+    <script type="text/javascript" src="jquery-3.6.3.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#loadbotbar").load("BotBar.html");
+            $("#loadindexmenu").load("IndexMenu.html");
+            $("#loadblogmenu").load("BlogMenu.html");
+            $("#loadprojectsmenu").load("ProjectsMenu.html");
+            $("#loadcontactmenu").load("ContactMenu.html");
+        });
     </script>
-    <script type="text/javascript" script src="jquery-3.6.0.min.js"></script>
     <!--ContactForm Header-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="alternate" type="application/json+oembed"
@@ -373,7 +381,6 @@
 
         /*
         & when ( @buttonFontType = google ) {
-            
         }
         */
         h2.form-header {
@@ -1548,15 +1555,6 @@
         }, 20);
     </script>
     <!--/ContactForm Header-->
-    <script>
-        $(function() {
-            $("#loadbotbar").load("BotBar.html");
-            $("#loadindexmenu").load("IndexMenu.html");
-            $("#loadblogmenu").load("BlogMenu.html");
-            $("#loadprojectsmenu").load("ProjectsMenu.html");
-            $("#loadcontactmenu").load("ContactMenu.html");
-        });
-    </script>
 </head>
 
 <body>
