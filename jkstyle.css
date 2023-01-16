@@ -999,38 +999,6 @@ input:checked+.slider:before {
     width: 100%
 }
 
-.contact-form-container{
-    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact-form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.contact-input, .contact-textarea{
-    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
-    border: 0;
-    margin: 10px 0;
-    padding: 20px;
-    outline: none;
-}
-
-.contact-bottom
-{
-    padding: 15px;
-    background-color:#00cec9;
-    color: black;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
 .overlay {
     position: absolute;
     top: 0;
