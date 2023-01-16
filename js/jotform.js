@@ -554,7 +554,7 @@ var JotForm = {
     /**
      * Find the correct server url from forms action url, if there is no form use the defaults
      */
-    getServerURL: function () {
+    getServerURL: function() {
         var form = $$('.jotform-form')[0];
         var action;
         var origin = window.location.origin || (window.location.protocol + '//' + window.location.hostname);
@@ -716,7 +716,7 @@ var JotForm = {
      * A short snippet for detecting versions of IE in JavaScript
      * without resorting to user-agent sniffing
      */
-    ie: function () {
+    ie: function() {
         var undef,
             v = 3,
             div = document.createElement('div'),
@@ -744,10 +744,10 @@ var JotForm = {
     /**
      * Creates the console arguments
      */
-    createConsole: function () {
+    createConsole: function() {
         var consoleFunc = ['log', 'info', 'warn', 'error'];
         $A(consoleFunc).each(function (c) {
-            this[c] = function () {
+            this[c] = function() {
                 if (JotForm.debug) {
                     if ('console' in window) {
                         try {
@@ -776,7 +776,7 @@ var JotForm = {
      * Initiates the form and all actions
      */
     init: function (callback) {
-        var ready = function () {
+        var ready = function() {
             try {
                 // this.initSentry();
 
@@ -977,7 +977,7 @@ var JotForm = {
 
                     if (visibleCaptcha) {
                         var count = 0;
-                        var captchaInterval = setInterval(function () {
+                        var captchaInterval = setInterval(function() {
                             if (count > 5) {
                                 clearInterval(captchaInterval);
                             }
@@ -1048,7 +1048,7 @@ var JotForm = {
                 this.setCalculationResultReadOnly();
                 this.prePopulations();
 
-                JotForm.onTranslationsFetch(function () {
+                JotForm.onTranslationsFetch(function() {
                     if (document.createEvent) {
                         try {
                             var event = new CustomEvent('PrepopulationCompleted');
@@ -1394,7 +1394,7 @@ var JotForm = {
         }
     },
 
-    mobileTouchlessModeTest: function () {
+    mobileTouchlessModeTest: function() {
         var touchlessBox = '<div class="touchless-wrapper"> <div class="touchless-box"> <div class="touchless-info"> <span class="touchless-title">Contactless Form</span> <span class="touchless-desc">Scan QR code for fill the form on your device or continue to fill it here.</span> </div><div class="touchless-qr"> <img src="data:image/png;base64, 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" width="80" height="80"/> </div><style>.jfCard-wrapper.with-qr{padding-top:220px;padding-bottom:50px}.isMobile .jfCard-wrapper.with-qr{padding-top:150px}.jfCard-wrapper.with-qr .jfCard-question,.jfCard-wrapper.with-qr .jfReview-content{max-height:100%!important}.touchless-wrapper{display:flex;align-items:center;justify-content:center;width:100%;padding:20px 14px;text-align:left}.touchless-wrapper,.touchless-wrapper *{box-sizing:border-box}.jfCardForm .touchless-wrapper{padding:12px 30px}.formMode .jfWelcome .touchless-wrapper{display:none}.jfCard-wrapper .touchless-wrapper{position:absolute;top:0}.touchless-box{position:relative;display:flex;flex-direction:row;align-items:center;max-width:500px;padding:20px;background-color:#606d8f;border-radius:10px;box-shadow:0 4px 4px rgba(0,0,0,.05);border:1px solid rgba(44,51,69,.3)}.jfCardForm .touchless-box{background-color:#fff}.isMobile .touchless-box{max-width:400px;padding:16px}.touchless-wrapper:first-child{margin-bottom:0;padding-bottom:0}.touchless-info{flex:1;margin-right:20px;padding-left:5px}.isMobile .touchless-info{margin-right:16px}.touchless-title{display:block;margin-bottom:15px;font-size:22px;font-weight:700;color:#fff}.jfCardForm .touchless-title{color:#2c3345}.isMobile .touchless-title{margin-bottom:10px;font-size:20px}.touchless-desc{display:block;font-size:15px;line-height:19px;color:#fff}.jfCardForm .touchless-desc{color:#2c3345}.isMobile .touchless-desc{font-size:12px;line-height:16px}.touchless-qr{padding:5px;background-color:#fff;border-radius:4px}.touchless-qr img{display:block;width:100px;height:100px}.isMobile .touchless-qr img{width:80px;height:80px}@media screen and (max-width:400px){.jfCardForm .touchless-wrapper{padding:12px 10px}.isMobile .touchless-box{padding:12px}.touchless-title{margin-bottom:7px;font-size:17px}}</style> </div></div>'
         var maskWrapper = document.querySelector('.jfForm-background-mask');
         var welcomeWrapper = document.querySelector('.jfWelcome-wrapper');
@@ -1439,7 +1439,7 @@ var JotForm = {
     },
 
 
-    handleIFrameHeight: function () {
+    handleIFrameHeight: function() {
         var form = $$('.jotform-form').length > 0 ? $$('.jotform-form')[0] : $$('body')[0];
         var height = Math.max(form.getHeight(), form.scrollHeight, form.offsetHeight);
 
@@ -1531,7 +1531,7 @@ var JotForm = {
 
         window.parent.postMessage('setHeight:' + height + ':' + form.id, '*');
     },
-    removeCover: function () {
+    removeCover: function() {
         $$('.form-cover-wrapper').each(function (el) {
             el.remove();
         });
@@ -1539,7 +1539,7 @@ var JotForm = {
             el.removeClassName('top-cover').removeClassName('left-cover').removeClassName('right-cover');
         });
     },
-    fixIESubmitURL: function () {
+    fixIESubmitURL: function() {
         try {
             // IE on XP does not support TLS SSL
             // http://en.wikipedia.org/wiki/Server_Name_Indication#Support
@@ -1562,15 +1562,15 @@ var JotForm = {
      * Find screenshot buttons and set events
      * HIDE or SHOW according to the environment
      */
-    handleScreenshot: function () {
+    handleScreenshot: function() {
         var $this = this;
-        setTimeout(function () {
+        setTimeout(function() {
             $$('.form-screen-button').each(function (button) {
                 //$this.getContainer(button).hide();
                 // If window parent has feedback then show screenshot
                 if (window.parent && window.parent.JotformFeedbackManager) {
                     $this.getContainer(button).show();
-                    button.observe('click', function () {
+                    button.observe('click', function() {
                         $this.passive = false;
                         try {
                             $this.takeScreenShot(button.id.replace('button_', ''));
@@ -1578,7 +1578,7 @@ var JotForm = {
                             console.error(e);
                         }
                     });
-                    setTimeout(function () {
+                    setTimeout(function() {
                         $this.passive = !window.parent.wishboxInstantLoad;
                         $this.takeScreenShot(button.id.replace('button_', ''));
                     }, 0);
@@ -1618,7 +1618,7 @@ var JotForm = {
      * (fixes bug of pending submissions when jotform validator accepts email field
      * and browsers' own validator doesn't )
      */
-    disableHTML5FormValidation: function () {
+    disableHTML5FormValidation: function() {
         $$("form").each(function (f) {
             f.setAttribute("novalidate", true);
         });
@@ -1727,7 +1727,7 @@ var JotForm = {
         // This is the iframe that we will submit the form into
         var iframe = new Element('iframe', {name: 'screen_frame', id: 'screen_frame_id'}).hide();
         // When iframe is loaded it usually means screenshot is completed but we still need to make sure.
-        iframe.observe('load', function () {
+        iframe.observe('load', function() {
             // Let's check server if screenshot correctly created there
             $this.checkScreenShot();
         });
@@ -1744,7 +1744,7 @@ var JotForm = {
     /**
      * Checks if JSON is available and loads it if not
      */
-    checkJSON: function () {
+    checkJSON: function() {
         if (typeof JSON !== 'object') {
             var script = document.createElement('script');
             script.type = "text/javascript";
@@ -1755,7 +1755,7 @@ var JotForm = {
     /**
      * Send a request to server and asks if given screenshot is created
      */
-    checkScreenShot: function () {
+    checkScreenShot: function() {
         var $this = this;
         var p = window.parent;
         var count = 10; // will try 10 times after that it will fail
@@ -1776,7 +1776,7 @@ var JotForm = {
                     });
                 } else {
                     if ((data.status == 'waiting' || data.status == 'working') && --count) {
-                        setTimeout(function () {
+                        setTimeout(function() {
                             $this.checkScreenShot(); // If not try again. {TODO: We need to limit this check}
                         }, 1000);
                     } else {
@@ -1842,7 +1842,7 @@ var JotForm = {
                     // Put a close button outside of the iframe
                     var b = p.$jot('<button style="color:#fff;font-size:14px;background:#F59202;border:1px solid #Fa98a2;font-weight:bold;position:fixed;top:5px;right:40px;width:100px;z-index:100000001;">Close Editor</button>').appendTo('body');
                     // When close button clicked go fetch the saved image, if image is not saved then ask user are they sure?
-                    b.click(function () {
+                    b.click(function() {
 
                         p.$jot.getJSON('https://screenshots.jotform.com/wishbox-server.php?callback=?', {
                             action: 'getImage',
@@ -1867,7 +1867,7 @@ var JotForm = {
                     var frameDocument = (e.contentWindow) ? e.contentWindow : (e.contentDocument.document) ? e.contentDocument.document : e.contentDocument;
                     frameDocument.document.open();
                     frameDocument.document.write(res.template);
-                    setTimeout(function () {
+                    setTimeout(function() {
                         frameDocument.document.close();
                     }, 200);
 
@@ -1876,13 +1876,13 @@ var JotForm = {
                 }
 
                 // Closes the frame and removes all trace behind it
-                var closeFrame = function () {
+                var closeFrame = function() {
                     if ($this.compact) {
                         editorFrame.remove();
                         p.$jot('#js-form-content').css('width', '100%');
 //                        p.$jot('.jt-content, .jt-title').css('width', 'auto');
                     } else {
-                        editorFrame.hide('slow', function () {
+                        editorFrame.hide('slow', function() {
                             editorFrame.remove();
                         });
                     }
@@ -1901,7 +1901,7 @@ var JotForm = {
                 };
 
                 // Cancel  and close the editor
-                p.JotformCancelEditor = function () {
+                p.JotformCancelEditor = function() {
                     closeFrame();
                 };
 
@@ -1911,7 +1911,7 @@ var JotForm = {
                     putImageOnForm(image);
                     $this.imageSaved = true;
                     if ($this.compact) {
-                        setTimeout(function () {
+                        setTimeout(function() {
                             $(document).fire('image:loaded');
                         }, 100);
                     }
@@ -1923,7 +1923,7 @@ var JotForm = {
     /**
      * Will get additional URL queries from SCRIPT embed or feedback widget
      */
-    populateGet: function () {
+    populateGet: function() {
         try {
             if ('FrameBuilder' in window.parent && "get" in window.parent.FrameBuilder && window.parent.FrameBuilder.get != []) {
 
@@ -1984,17 +1984,17 @@ var JotForm = {
     /**
      * Initiates multiple upload scripts
      */
-    initMultipleUploads: function () {
+    initMultipleUploads: function() {
         var self = this;
         // for mobile; prevent device sleep
         // but not in jotform next. fix for #1816394, #1878538, #1879000
         var isJotFormNext = JotForm.isJotFormNext || /jotformNext=1/.test(window.location.href);
         if (JotForm.browserIs.mobile() && !isJotFormNext) {
             var loadingNoSleepScript = true;
-            JotForm.loadScript(window.location.protocol + '//' + window.location.host + '/js/vendor/NoSleep.min.js?v_' + (new Date()).getTime(), function () {
+            JotForm.loadScript(window.location.protocol + '//' + window.location.host + '/js/vendor/NoSleep.min.js?v_' + (new Date()).getTime(), function() {
                 loadingNoSleepScript = false;
             });
-            var toggleNoSleep = function () {
+            var toggleNoSleep = function() {
                 if (loadingNoSleepScript || typeof NoSleep === 'undefined') { return; }
                 var noSleep = new NoSleep();
                 noSleep.enable();
@@ -2203,7 +2203,7 @@ var JotForm = {
                 });
 
                 var initWarningTranslations = function(t) {
-                    setTimeout(function () {
+                    setTimeout(function() {
                         if (uploader && uploader._options) {
                             uploader._options.messages = {
                                 typeError: self.texts.multipleFileUploads_typeError,
@@ -2247,7 +2247,7 @@ var JotForm = {
     /**
      *  Restores multiple file upload markup (with uploaded file info) to it's original (not scripted yet) state.
      */
-    resetMultipleUploadsBasicMarkup: function () {
+    resetMultipleUploadsBasicMarkup: function() {
         Object.keys(JotForm.rawMultipleFileInputs).forEach(function(qID) {
             var fileInput = document.querySelector('li#id_' + qID + ' input[type="file"]');
             var inputContainer = fileInput.up('div.validate\\[multipleUpload\\]');
@@ -2272,7 +2272,7 @@ var JotForm = {
     },
 
     /* Initiate new multi upload */
-    initNewMultipleUploads: function () {
+    initNewMultipleUploads: function() {
         var self = this;
 
         $$('.form-upload-multiple-new').each(function (file) {
@@ -2287,7 +2287,7 @@ var JotForm = {
                 if (parent.className.indexOf("validate[required]") === -1) {
                     parent.addClassName("validate[required]");
                 }
-                parent.validateInput = function () {
+                parent.validateInput = function() {
                     // Don't fire validations for hidden elements
                     if (!JotForm.isVisible(parent)) {
                         JotForm.corrected(parent);
@@ -2354,7 +2354,7 @@ var JotForm = {
          * Last page back button has two click events they both should work
          * but saving status prevents second one to be working
          */
-        setTimeout(function () {
+        setTimeout(function() {
             JotForm.saving = true;
             JotForm.disableButtons();
         }, 10);
@@ -2362,7 +2362,7 @@ var JotForm = {
 
         if (!$('hidden_submit_form')) {
             var iframe = new Element('iframe', {name: 'hidden_submit', id: 'hidden_submit_form'}).hide();
-            iframe.observe('load', function () {
+            iframe.observe('load', function() {
                 JotForm.makeUploadChecks();
                 $$('.form-saving-indicator').invoke('remove');
                 JotForm.saving = false;
@@ -2409,7 +2409,7 @@ var JotForm = {
             var xhr = new XMLHttpRequest();
             xhr.withCredentials = true;
             xhr.open('POST', frmAction, true);
-            xhr.addEventListener('load', function () {
+            xhr.addEventListener('load', function() {
                 var response = this;
                 if (isCardForm) {
                     JotForm.saving = false;
@@ -2473,7 +2473,7 @@ var JotForm = {
      * If they are completed, then makes them empty to prevent
      * Multiple upload of the same file
      */
-    makeUploadChecks: function () {
+    makeUploadChecks: function() {
         var formIDField = $$('input[name="formID"]')[0];
         var parameters = {
             action: 'getSavedUploadResults',
@@ -2517,7 +2517,7 @@ var JotForm = {
     /**
      * Handles the form being saved stuation
      */
-    handleSavedForm: function () {
+    handleSavedForm: function() {
 
         if (!JotForm.sessionID) {
             return;
@@ -2652,7 +2652,7 @@ var JotForm = {
     /*
      * Add browser class to html element.
      */
-    setHTMLClass: function () {
+    setHTMLClass: function() {
         // only ie for now
         var ie = this.ie();
         if (ie) {
@@ -2662,17 +2662,17 @@ var JotForm = {
     /**
      * Sets the last focus event to keep latest focused element
      */
-    setFocusEvents: function () {
+    setFocusEvents: function() {
         $$('.form-radio, .form-checkbox, .newDefaultTheme-dateIcon').each(function (input) { //Neil: use mousedown event for radio & checkbox (Webkit bug:181934)
-            input.observe('mousedown', function () {
+            input.observe('mousedown', function() {
                 JotForm.lastFocus = input;
             })
-            input.observe('focus', function () { // To set lastFocus when Tab key is used
+            input.observe('focus', function() { // To set lastFocus when Tab key is used
                 JotForm.lastFocus = input;
             })
         });
         $$('.form-textbox, .form-password, .form-textarea, .form-upload, .form-dropdown').each(function (input) {
-            input.observe('focus', function () {
+            input.observe('focus', function() {
                 JotForm.lastFocus = input;
             });
         });
@@ -2763,7 +2763,7 @@ var JotForm = {
                     element.up('.form-product-item').classList.add('p_selected');
                 }
 
-                element.observe('click', function () {
+                element.observe('click', function() {
                     element.checked && element.up('.form-product-item') ?
                         element.up('.form-product-item').classList.add('p_selected') :
                         element.up('.form-product-item').classList.remove('p_selected')
@@ -2794,7 +2794,7 @@ var JotForm = {
                 if (element.checked) {
                     element.up('.form-product-item').classList.add('p_selected');
                 }
-                element.observe('change', function () {
+                element.observe('change', function() {
                     element.up('.form-product-item').classList.add('p_selected')
                     $$('.form-product-item .form-radio').each(function (subElement) {
                         if (subElement !== element) subElement.up('.form-product-item').classList.remove('p_selected')
@@ -2806,7 +2806,7 @@ var JotForm = {
     /**
      * Disables Accept for Google Chrome browsers
      */
-    disableAcceptonChrome: function () {
+    disableAcceptonChrome: function() {
         if (!Prototype.Browser.WebKit) {
             return;
         }
@@ -2820,7 +2820,7 @@ var JotForm = {
         });
     },
 
-    browserInformations: function () {
+    browserInformations: function() {
         var is = JotForm.browserIs;
 
         function OS() {
@@ -2893,7 +2893,7 @@ var JotForm = {
      * Show Difference Between time ranges
      */
     displayTimeRangeDuration: function (id, justCalculate) {
-        var displayDuration = function () {
+        var displayDuration = function() {
             if ($('input_' + id + '_hourSelectRange')) {
                 var sHour = $('input_' + id + '_hourSelect').value;
                 var sMin = $('input_' + id + '_minuteSelect').value || '00';
@@ -2963,7 +2963,7 @@ var JotForm = {
         }
         var timeDiff;
         if(JotForm.isEditMode()){
-            var waitDom = function () {
+            var waitDom = function() {
                 if($('input_' + id + '_hourSelectRange') && $('input_' + id + '_hourSelectRange').value.empty()) {
                     window.setTimeout(waitDom, 100);
                 } else {
@@ -3100,7 +3100,7 @@ var JotForm = {
                 triggerElement: "input_" + id + "_pick",
                 dateField: "year_" + id,
                 parentElement: parent,
-                closeHandler: function () {
+                closeHandler: function() {
                     JotForm.calendarClose.apply(this, arguments);
                     if ($('lite_mode_' + id)) {
                         if(JotForm.newDefaultTheme && ($('lite_mode_' + id).hasClassName('calendar-opened'))){
@@ -3113,13 +3113,13 @@ var JotForm = {
                         $('lite_mode_' + id).triggerEvent('blur');
                     }
                 },
-                selectHandler: function () {
+                selectHandler: function() {
                     JotForm.formatDate.apply(this, arguments);
                 },
                 startOnMonday: startOnMonday,
                 limits: limits
             });
-            field.observe('keyup', function () {
+            field.observe('keyup', function() {
                 field.fire('date:changed');
             });
             var clearDate = function() {
@@ -3257,7 +3257,7 @@ var JotForm = {
         }
     },
 
-    currentDateReadonly: function () {},
+    currentDateReadonly: function() {},
 
     calendarClose: function (calendar) {
         var calendar_id = !calendar.isNewTheme ? calendar.id : calendar.dateField.id[calendar.dateField.id.length -1];
@@ -3282,7 +3282,7 @@ var JotForm = {
      * Collects all inital values of the fields and saves them as default values
      * to be restored later
      */
-    getDefaults: function () {
+    getDefaults: function() {
         $$('.form-textbox, .form-dropdown, .form-textarea, .form-hidden-time').each(function (input) {
             if (input.hinted || input.value === "") {
                 return;
@@ -3303,7 +3303,7 @@ var JotForm = {
     /**
      * Enables or disables the Other option on radiobuttons/checkboxes
      */
-    handleOtherOptions: function () {
+    handleOtherOptions: function() {
         $$('.form-radio-other-input, .form-checkbox-other-input').each(function (inp) {
             inp.hint(inp.getAttribute('data-otherhint') || 'Other');
         });
@@ -3319,7 +3319,7 @@ var JotForm = {
             if (other) {
                 var other_input = $('input_' + id); // text input
 
-                other_input.observe('keyup', function () {
+                other_input.observe('keyup', function() {
                     other.value = other_input.value;
                     var willInputBeChecked = other_input.value !== '';
                     var isInputChecked = other.checked;
@@ -3423,7 +3423,7 @@ var JotForm = {
         }
     },
 
-    handleSingleChoiceWithMultiTypeColumns: function () {
+    handleSingleChoiceWithMultiTypeColumns: function() {
         /*
             This function is used for additional check when used input table with multi-type
             column and single choice. It takes all item in matrix and then check any radio
@@ -3458,9 +3458,9 @@ var JotForm = {
         }
     },
 
-    handleSingleChoiceWithMultiTypeColumnsForCardForms: function () {},
+    handleSingleChoiceWithMultiTypeColumnsForCardForms: function() {},
 
-    handleDateTimeChecks: function () {
+    handleDateTimeChecks: function() {
         try {
         $$('[name$=\[month\]]').each(function (monthElement) {
             var isBirthdate = monthElement.type !== "tel" && monthElement.type !== "text";
@@ -3593,7 +3593,7 @@ var JotForm = {
         }
     },
 
-    handleTimeChecks: function () {
+    handleTimeChecks: function() {
         try {
             $$('.form-line[data-type=control_time]').each(function (timeField) {
 
@@ -3663,7 +3663,7 @@ var JotForm = {
         }
     },
 
-    handleTextareaLimits: function () {
+    handleTextareaLimits: function() {
         $$('.form-textarea-limit-indicator span').each(function (el) {
             var inpID = el.id.split('-')[0];
             if (!$(inpID)) {
@@ -3752,7 +3752,7 @@ var JotForm = {
     /**
      * Activates all autocomplete fields
      */
-    handleAutoCompletes: function () {
+    handleAutoCompletes: function() {
       // Edit mode first initialize
         var editModeFirst = [];
         // Get all autocomplete fields
@@ -3780,7 +3780,7 @@ var JotForm = {
                     zIndex: '10000'
                 }).hide();
 
-            var render = function () {
+            var render = function() {
 
                 var isCardForm = window.FORM_MODE === 'cardform';
                 if(isCardForm) {
@@ -3813,14 +3813,14 @@ var JotForm = {
             // parent.insert(list);
             $(document.body).insert(list);
 
-            list.close = function () {
+            list.close = function() {
                 list.update();
                 list.hide();
                 selectCount = 0;
             };
 
             // Hide list when field get blurred
-            el.observe('blur', function () {
+            el.observe('blur', function() {
                 list.close();
             });
 
@@ -3866,7 +3866,7 @@ var JotForm = {
                             JotForm.error(e);
                         }
                         li.insert(val);
-                        li.onmousedown = function () {
+                        li.onmousedown = function() {
                             el.value = JotForm.decodeHtmlEntities(match);
                             el.triggerEvent('change');
                             list.close();
@@ -4002,7 +4002,7 @@ var JotForm = {
     /**
      * Set APIUrl field according to current domain
      */
-    setAPIUrl: function () {
+    setAPIUrl: function() {
         if (JotForm.enterprise !== 'undefined' && JotForm.enterprise) {
             this.APIUrl = '/API';
             return;
@@ -4046,7 +4046,7 @@ var JotForm = {
     /**
      * Get current session user and set it to JFUser property of window object
      */
-    setJotFormUserInfo: function () {
+    setJotFormUserInfo: function() {
         var formID = $$('input[name="formID"]')[0].value;
         JotForm.createXHRRequest(JotForm.APIUrl + '/formuser/'+ formID +'/combinedinfo?master=1', 'GET', null, function (responseData) {
             var user = responseData.content.credentials;
@@ -4064,7 +4064,7 @@ var JotForm = {
         }, function (err) {}, true);
     },
 
-    setAsanaTaskID: function () {
+    setAsanaTaskID: function() {
         var taskID = getQuerystring('asanaTaskID');
         var form = $$('.jotform-form')[0];
         form.insert(new Element('input', {type: 'hidden', name: 'asanaTaskID'}).setValue(taskID));
@@ -4087,7 +4087,7 @@ var JotForm = {
     /**
      * It reads window.JFUser, takes name and email and fills first matched fields with these
      */
-    setNameAndEmailFieldsFromUserCredentials: function () {
+    setNameAndEmailFieldsFromUserCredentials: function() {
         if (!window.JFUser || getQuerystring('preview')) {
             return;
         }
@@ -4227,7 +4227,7 @@ var JotForm = {
                     if ($(stub + i)) $(stub + i).value = grades[i];
                 }
             } else if (input && (input.hasClassName('form-checkbox-other-input') || input.hasClassName('form-radio-other-input'))) {
-                JotForm.onTranslationsFetch(function () {
+                JotForm.onTranslationsFetch(function() {
                     input = $(input.id); // Get input from DOM again because in setTimeout callback, input does not refer to the input in DOM.
                     var inputId = input.id.split("_").pop();
                     if (n.indexOf('[other]') > -1) {
@@ -4451,7 +4451,7 @@ var JotForm = {
 
         var self = this;
         if (!window.editModeFunction) {
-            this.loadScript(preLink + '/js/form.edit.mode.js?v_' + (new Date()).getTime(), function () {
+            this.loadScript(preLink + '/js/form.edit.mode.js?v_' + (new Date()).getTime(), function() {
                 //editModeFunction is function name defined in form.edit.mode.js
                 self.editMode = editModeFunction;
                 if (JotForm.sessionID && data) {
@@ -4466,7 +4466,7 @@ var JotForm = {
     /**
      * Helper function that will tell if form is in edit mode
      */
-    isEditMode: function () {
+    isEditMode: function() {
         if (window.FORM_MODE === 'cardform') {
             return CardForm.layoutParams.isEditMode;
         }
@@ -4778,7 +4778,7 @@ var JotForm = {
         return elemShown;
     },
 
-    collectStylesheet: function () {
+    collectStylesheet: function() {
         var styles = $$('style, link');
         var styleTags = [];
 
@@ -4791,7 +4791,7 @@ var JotForm = {
         return styleTags;
     },
 
-    handleWidgetStyles: function () {
+    handleWidgetStyles: function() {
         var team = getQuerystring('team')
 
         if (JotForm.newDefaultTheme) {
@@ -4863,7 +4863,7 @@ var JotForm = {
      * Some other processes, like payments or encryption, might have to perform the submit action
      * @returns {boolean}
      */
-    shouldWidgetSkipSubmit: function () {
+    shouldWidgetSkipSubmit: function() {
         if (JotForm.isEncrypted || JotForm.disableSubmitButton) { return true; }
 
         var selfSubmittingPayments = ["stripe", "braintree", "square", "eway", "bluepay", "moneris", "paypalcomplete", "mollie"];
@@ -6133,7 +6133,7 @@ var JotForm = {
             }
         }
 
-        var conditionInfiniteLoop = function () {
+        var conditionInfiniteLoop = function() {
             // prevent calculation&condition infinite loop by limiting the nuber of times
             // a calculation can be run on an element in a 500ms period
             var timestamp = new Date().getTime();
@@ -6864,7 +6864,7 @@ var JotForm = {
     },
 
 
-    setCalculationResultReadOnly: function () {
+    setCalculationResultReadOnly: function() {
         $A(JotForm.calculations).each(function (calc, index) {
             if ((calc.readOnly && calc.readOnly != "0") && $('input_' + calc.resultField) != null) {
                 $('input_' + calc.resultField).setAttribute('readOnly', 'true');
@@ -6872,11 +6872,11 @@ var JotForm = {
         });
     },
 
-    setCalculationEvents: function () {
+    setCalculationEvents: function() {
         var setCalculationListener = function (el, ev, calc) {
-            $(el).observe(ev, function () {
+            $(el).observe(ev, function() {
                 if (ev === "paste") { //same action as other events but wait for the text to be pasted
-                    setTimeout(function () {
+                    setTimeout(function() {
                         el.addClassName('calculatedOperand');
                         JotForm.checkCalculation(calc);
                     }, 10);
@@ -8578,7 +8578,7 @@ var JotForm = {
                 }
         }
 
-        var infiniteLoop = function () {
+        var infiniteLoop = function() {
 
             var checkVal = typeof output === 'object' ? JSON.stringify(output) : output;
             var checkField = calc.resultSubField||calc.resultField;
@@ -8719,7 +8719,7 @@ var JotForm = {
     /**
      * Sets all events and actions for form conditions
      */
-    setConditionEvents: function () {
+    setConditionEvents: function() {
         try {
             $A(JotForm.conditions).each(function (condition) {
 
@@ -8877,7 +8877,7 @@ var JotForm = {
                             return;
                         }
 
-                        nextButton.observe('mousedown', function () {
+                        nextButton.observe('mousedown', function() {
                             // JotForm.warn('Checking ' + $('label_' + id).innerHTML.strip());
                             JotForm.checkCondition(condition);
                         });
@@ -8896,48 +8896,48 @@ var JotForm = {
                     return;
                 }
                 if (event == "autocomplete") { // if event type is trigger by autocomplete, listen to blur and keyup events
-                    $(field).observe('blur', function () {
+                    $(field).observe('blur', function() {
                         $A(conds).each(function (cond) {
                             JotForm.checkCondition(cond);
                         });
                     }).run('blur');
-                    $(field).observe('keyup', function () {
+                    $(field).observe('keyup', function() {
                         $A(conds).each(function (cond) {
                             JotForm.checkCondition(cond);
                         });
                     }).run('keyup');
                 } else if (event == "number") {
-                    $(field).observe('change', function () {
+                    $(field).observe('change', function() {
                         $A(conds).each(function (cond) {
                             JotForm.checkCondition(cond);
                         });
                     }).run('change');
-                    $(field).observe('keyup', function () {
+                    $(field).observe('keyup', function() {
                         $A(conds).each(function (cond) {
                             JotForm.checkCondition(cond);
                         });
                     }).run('keyup');
                 } else if (event == "autofill") {
-                    $(field).observe('blur', function () {
+                    $(field).observe('blur', function() {
                         $A(conds).each(function (cond) {
                             JotForm.checkCondition(cond);
                         });
                     }).run('blur');
-                    $(field).observe('keyup', function () {
+                    $(field).observe('keyup', function() {
                         $A(conds).each(function (cond) {
                             JotForm.checkCondition(cond);
                         });
                     }).run('keyup');
 
                     if (!(!Prototype.Browser.IE9 && !Prototype.Browser.IE10 && Prototype.Browser.IE)) {
-                        $(field).observe('change', function () {
+                        $(field).observe('change', function() {
                             $A(conds).each(function (cond) {
                                 JotForm.checkCondition(cond);
                             });
                         }).run('change');
                     }
                 } else {
-                    $(field).observe(event, function () {
+                    $(field).observe(event, function() {
                         $A(conds).each(function (cond) {
                             JotForm.checkCondition(cond);
                         });
@@ -9058,7 +9058,7 @@ var JotForm = {
         }
     },
 
-    handleSubscriptionPrice: function () {
+    handleSubscriptionPrice: function() {
         // safari fix (input focus bug)
         if (navigator.userAgent.toLowerCase().indexOf('safari/') > -1) {
             $$('.form-product-custom_price').each(function (inp) {
@@ -9086,7 +9086,7 @@ var JotForm = {
                 events[sourceId] = [];
             }
 
-            var getVal = function () {
+            var getVal = function() {
                 var val = source.value;
                 if (typeof val !== 'number') {
                     val = val.replace(/[^0-9\.]/gi, "");
@@ -9105,7 +9105,7 @@ var JotForm = {
         // attach events to source fields
         priceSources.each(function (source) {
             var id = source.id.replace('input_', '');
-            source.onkeyup = function () {
+            source.onkeyup = function() {
                 events[id].each(function (evt) {
                     evt();
                 });
@@ -9119,16 +9119,16 @@ var JotForm = {
      * Handles payment donations
      */
 
-    handleDonationAmount: function () {
+    handleDonationAmount: function() {
         // donation amount input
         var donationField = JotForm.donationField = $$('input[id*="_donation"]')[0];
         // default
         JotForm.paymentTotal = donationField.value || 0;
         // observe changes
-        donationField.observe('keyup', function () {
+        donationField.observe('keyup', function() {
             JotForm.paymentTotal = this.value = this.value.replace(/[^.0-9]+/g, "");
         });
-        donationField.observe('change', function () {
+        donationField.observe('change', function() {
             JotForm.paymentTotal = this.value;
         })
         // if donation gets its amount from a calculation widget
@@ -9140,7 +9140,7 @@ var JotForm = {
                 return;
             }
             // get value from calculation widget
-            setTimeout(function () {
+            setTimeout(function() {
                 JotForm.updateDonationAmount();
                 donationField.triggerEvent('keyup');
             }, 1000);
@@ -9151,7 +9151,7 @@ var JotForm = {
         } else if (donationField.hasAttribute('data-min-amount')) {
             var currency = donationField.nextSibling.textContent.strip();
             var minAmount = parseFloat(donationField.readAttribute('data-min-amount'));
-            donationField.validateMinimum = function () { // called at setFieldValidation
+            donationField.validateMinimum = function() { // called at setFieldValidation
                 var val = this.getValue();
                 if (isNaN(val) || val < minAmount) {
                     var errorTxt = JotForm.texts.ccDonationMinLimitError.replace('{minAmount}', minAmount).replace('{currency}', currency);
@@ -9177,7 +9177,7 @@ var JotForm = {
             JotForm.donationField.value = JotForm.paymentTotal = amount;
             return;
         }
-        var getVal = function () {
+        var getVal = function() {
             var val = JotForm.donationSourceField.value;
 
             var sourceField = JotForm.calculations.find(function(c){
@@ -9214,7 +9214,7 @@ var JotForm = {
      * @returns {Boolean}
      */
 
-    isPaymentSelected: function () {
+    isPaymentSelected: function() {
         var selected = false;
         var inputSimpleFpc = document.querySelector('input[name="simple_fpc"]');
         var paymentFieldId = inputSimpleFpc && inputSimpleFpc.value;
@@ -9336,7 +9336,7 @@ var JotForm = {
      * @returns {undefined}
      */
 
-    handlePaypalButtons: function () {
+    handlePaypalButtons: function() {
         var products = window.productID;
         var requiredPayment = false;
         var paymentFieldId = $$('input[name="simple_fpc"]')[0].value;
@@ -9358,7 +9358,7 @@ var JotForm = {
         // set button trigger if payment is not required
         if (!requiredPayment) {
             $H(products).each(function (p) {
-                $(p.value).observe('click', function () {
+                $(p.value).observe('click', function() {
                     JotForm.togglePaypalButtons(JotForm.isPaymentSelected());
                 });
             });
@@ -9609,7 +9609,7 @@ var JotForm = {
      * Sends url of the form's parent page
      * @returns {undefined}
      */
-    checkEmbed: function () {
+    checkEmbed: function() {
         var form = $$('.jotform-form')[0];
         if (window !== window.top) {
             form.insert(new Element('input', {
@@ -9654,7 +9654,7 @@ var JotForm = {
      * @returns {undefined}
      */
 
-    handlePaypalExpress: function () {
+    handlePaypalExpress: function() {
         if (typeof _paypalExpress !== "function" || $('express_category').getAttribute('data-digital_goods') === "No") {
             return;
         }
@@ -9667,7 +9667,7 @@ var JotForm = {
      * @returns {undefined}
      */
 
-    handleEcheck: function () {
+    handleEcheck: function() {
         if (typeof _echeck !== "function") {
             return;
         }
@@ -9679,7 +9679,7 @@ var JotForm = {
      * Handles Braintree payments
      */
 
-    handleBraintree: function () {
+    handleBraintree: function() {
         // skip on edit mode
         if (window.location.pathname.match(/^\/edit/) || (["edit", "inlineEdit", "submissionToPDF"].indexOf(document.get.mode) > -1 && document.get.sid)) {
             return;
@@ -9693,7 +9693,7 @@ var JotForm = {
         JotForm.braintree.init();
     },
 
-    handlePagseguro: function () {
+    handlePagseguro: function() {
       // skip on edit mode
       if (window.location.pathname.match(/^\/edit/) || (["edit", "inlineEdit", "submissionToPDF"].indexOf(document.get.mode) > -1 && document.get.sid)) {
         return;
@@ -9707,7 +9707,7 @@ var JotForm = {
       JotForm.pagseguro.init();
     },
 
-    handleSquare: function () {
+    handleSquare: function() {
         // skip on edit mode
         if (/*JotForm.paidSubmission && */(window.location.href.match(/mode=inlineEdit/) || window.location.pathname.match(/^\/\/edit/) || window.location.pathname.match(/^\/edit/) || window.location.href.match(/mode=submissionToPDF/)) && document.get.sid) { // ["edit", "inlineEdit", "submissionToPDF"].indexOf(document.get.mode) > -1 does not work, JotForm.paidSubmission is unreachable from here (set in form.edit.mode.js)
             return;
@@ -9732,7 +9732,7 @@ var JotForm = {
         });
     },
 
-    handleStripeACH: function () {
+    handleStripeACH: function() {
       if (JotForm.isEditMode()) return;
 
       if (typeof __stripeACH === "undefined") {
@@ -9745,7 +9745,7 @@ var JotForm = {
       JotForm.stripeACH.init();
     },
     
-    handleMollie: function () {
+    handleMollie: function() {
       if (JotForm.isEditMode()) return;
       
       if (typeof __mollie === "undefined") {
@@ -9758,7 +9758,7 @@ var JotForm = {
       JotForm.mollie.init();
     },
   
-    handleBluepay: function () {
+    handleBluepay: function() {
       if (JotForm.isEditMode()) return;
       
       if (typeof __bluepay === "undefined") {
@@ -9771,7 +9771,7 @@ var JotForm = {
       JotForm.bluepay.init();
     },
   
-    handlePaypalSPB: function () {
+    handlePaypalSPB: function() {
       JotForm.paypalSPB = __paypalSPB;
       try {
         JotForm.paypalSPB.init();
@@ -9790,7 +9790,7 @@ var JotForm = {
      * Handles the payment subproducts behavior
      */
 
-    handlePaymentSubProducts: function () {
+    handlePaymentSubProducts: function() {
 
         var heights = [];                   // container for the heights of the products when opened and closed
         var optionValues = [];              // container for the values of the properties when opened and closed
@@ -9825,7 +9825,7 @@ var JotForm = {
             setTimeout(function() {
                 showSubProducts(sp);
             }, 1000);
-            sp.observe('click', function () {
+            sp.observe('click', function() {
                 showSubProducts(this);
             });
 
@@ -9869,7 +9869,7 @@ var JotForm = {
                 JotForm.populateProductValues(el, optionValues);
             }
             // resume calculation
-            setTimeout(function () {
+            setTimeout(function() {
                 JotForm.totalCounter(JotForm.prices)
             }, 300);
         };
@@ -9950,11 +9950,11 @@ var JotForm = {
         }
     },
 
-    handlePaymentSubProductsV1: function () {
+    handlePaymentSubProductsV1: function() {
       var selectedValues = [];
 
       $$('.form-product-has-subproducts').each(function (sp) {
-          sp.observe('click', function () {
+          sp.observe('click', function() {
               if (sp.checked) {
                   sp.up(".form-product-item").classList.remove('sub_product');
                   sp.up(".form-product-item").classList.add('show_sub_product');
@@ -9976,9 +9976,9 @@ var JotForm = {
     /**
      * handles toggling of lightbox for product images
      */
-    handleProductLightbox: function () {
+    handleProductLightbox: function() {
         $$('.form-product-image-with-options').forEach(function (image) {
-            image.observe('click', function () {
+            image.observe('click', function() {
                 var pid = image.up('.form-product-item').getAttribute('pid');
                 if (isIframeEmbedFormPure()) {
                     onProductImageClicked(pid, true);
@@ -10638,14 +10638,14 @@ var JotForm = {
         }
         $H(prices).each(function (pair) {
             if ($(pair.key)) {
-              $(pair.key).observe('click', function () {
+              $(pair.key).observe('click', function() {
                 JotForm.countTotal(prices);
               });
             }
             // if this is a subscription with custom pricing
             if (pair.value.price == "custom") {
                 $(pair.key + '_custom_price').stopObserving('keyup'); // prevent stacking of listeners
-                $(pair.key + '_custom_price').observe('keyup', function () {
+                $(pair.key + '_custom_price').observe('keyup', function() {
                     JotForm.countTotal(prices);
                 });
             }
@@ -10658,7 +10658,7 @@ var JotForm = {
                 var selectSurcharge = document.querySelector('select[id*="input_' + surcharge.field + '"]');
                 if (selectSurcharge) {
                     selectSurcharge.stopObserving('change'); // prevent stacking of listeners
-                    selectSurcharge.observe('change', function () {
+                    selectSurcharge.observe('change', function() {
                         setTimeout(JotForm.countTotal(), 500);
                     });
                 }
@@ -10666,7 +10666,7 @@ var JotForm = {
                 var inputSurcharge = document.querySelector('input[id="input_' + surcharge.field + '"]');
                 if (inputSurcharge) {
                     inputSurcharge.stopObserving('keyup'); // prevent stacking of listeners
-                    inputSurcharge.observe('keyup', function () {
+                    inputSurcharge.observe('keyup', function() {
                         setTimeout(JotForm.countTotal(), 500);
                     });
                 }
@@ -10675,7 +10675,7 @@ var JotForm = {
 
             var triggerAssociatedElement = function (el) {
                 var prodID = $(el).id.match(/input_([0-9]*)_quantity_/) || $(el).id.match(/input_([0-9]*)_custom_/);
-                setTimeout(function () {
+                setTimeout(function() {
 
                     if (prodID && $('id_' + prodID[1])) {
                         $('id_' + prodID[1]).triggerEvent('click');
@@ -10748,12 +10748,12 @@ var JotForm = {
                 // This is not a good solution, yet I believe we need to crush them until we find a better one
 
                 function setQuantityFieldEventsForTotalCalculation () {
-                    $(pair.value.quantityField).observe('change', function () {
+                    $(pair.value.quantityField).observe('change', function() {
                         setTimeout(countQuantityTotal, 50);
                         triggerAssociatedElement(this);
                     });
                     // calculate total for custom quantity (text box)
-                    $(pair.value.quantityField).observe('keyup', function () {
+                    $(pair.value.quantityField).observe('keyup', function() {
                         setTimeout(countQuantityTotal, 50);
                         triggerAssociatedElement(this);
                     });
@@ -10785,11 +10785,11 @@ var JotForm = {
                     }
                 }
 
-                $(pair.value.specialPriceField).observe('change', function () {
+                $(pair.value.specialPriceField).observe('change', function() {
                     setTimeout(countSpecialTotal, 50);
                     triggerAssociatedElement(this);
                 });
-                $(pair.value.specialPriceField).observe('keyup', function () {
+                $(pair.value.specialPriceField).observe('keyup', function() {
                     setTimeout(countSpecialTotal, 50);
                 });
             }
@@ -10994,7 +10994,7 @@ var JotForm = {
      * Handles payment coupon code verification
      */
 
-    handleCoupon: function () {
+    handleCoupon: function() {
         var $this = this;
         JotForm.countTotal(JotForm.prices);
         if ($('coupon-button')) {
@@ -11019,7 +11019,7 @@ var JotForm = {
             $$('input[name="coupon"]')[0].value = "";
 
             // verify the coupon on click
-            cb.observe('click', function () {
+            cb.observe('click', function() {
                 if (ci.value) {
                     cb.hide();
                     cl.show();
@@ -11106,7 +11106,7 @@ var JotForm = {
             }
 
             // When 'Change' button is clicked
-            $('coupon-button').addEventListener('click', function () {
+            $('coupon-button').addEventListener('click', function() {
               cm.innerHTML = "";
             });
           }
@@ -11148,7 +11148,7 @@ var JotForm = {
         ci.disable();
         cb.innerHTML = this.paymentTexts.couponChange || 'Change';
         // When 'Change' button is clicked
-        cb.observe('click', function () {
+        cb.observe('click', function() {
             if (JotForm.isEditMode()) { return; }
             // Clear hidden coupon input value
             cf.value = '';
@@ -11398,7 +11398,7 @@ var JotForm = {
          * SCRIPT embed. However when we delay the execution
          * Image request this problems resolves.
          */
-        setTimeout(function () {
+        setTimeout(function() {
             // https://submit.jotformpro.com certificate has compatibility issues with IE8 #418400
             var UA = navigator.userAgent.toLowerCase(),
                 IE = (UA.indexOf('msie') != -1) ? parseInt(UA.split('msie')[1], 10) : false;
@@ -11482,12 +11482,12 @@ var JotForm = {
     /**
      * Highlights the lines when an input is focused
      */
-    highLightLines: function () {
+    highLightLines: function() {
 
         // Highlight selected line
         $$('.form-line').each(function (l, i) {
             l.select('input, select, textarea, div, table div, button, div div span[tabIndex]:not([tabIndex="-1"]), a, iframe').each(function (i) {
-                i.observe('focus', function () {
+                i.observe('focus', function() {
                     if (l.parentElement && (l.parentElement.hasClassName('form-section') || l.parentElement.hasClassName('form-section-closed'))) {
                         if (JotForm.isCollapsed(l) && !l.parentElement.hasClassName('form-section-opening')) {
                             JotForm.getCollapseBar(l).run('click');
@@ -11505,7 +11505,7 @@ var JotForm = {
                     if (l.__classAdded) {
                         l.__classAdded = false;
                     }
-                }).observe('blur', function () {
+                }).observe('blur', function() {
                     if (!JotForm.highlightInputs) {
                         return;
                     }
@@ -11675,7 +11675,7 @@ var JotForm = {
     /**
      * Emre: to eneable/disable all submit buttons in multi-forms
      */
-    enableDisableButtonsInMultiForms: function () {
+    enableDisableButtonsInMultiForms: function() {
         var allButtons = $$('.form-submit-button');
         allButtons.each(function (b) {
             if (b.up('ul.form-section')) {
@@ -11693,8 +11693,8 @@ var JotForm = {
     /**
      * Enables back the buttons
      */
-    enableButtons: function () {
-        setTimeout(function () {
+    enableButtons: function() {
+        setTimeout(function() {
             $$('.form-submit-button').each(function (b) {
                 if(!b.hasClassName("conditionallyDisabled")) {
                     b.enable();
@@ -11706,8 +11706,8 @@ var JotForm = {
         }, 60);
     },
 
-    disableButtons: function () {
-        setTimeout(function () {
+    disableButtons: function() {
+        setTimeout(function() {
             $$('.form-submit-button:not(.js-new-sacl-button)').each(function (b) {
                 if (b.innerHTML.indexOf('<img') === -1 && (b.type === 'submit' || b.classList.contains('jsMobileSubmit'))) {
                     if (!b.oldText2) {
@@ -11728,7 +11728,7 @@ var JotForm = {
      * - Adds confirmation for form reset
      * - Handles the print button
      */
-    setButtonActions: function () {
+    setButtonActions: function() {
         // window.checkForHiddenSection = false;
 
         $$('.form-submit-button:not(.forReviewButton):not(.js-new-sacl-button)').each(function (b) {
@@ -11775,7 +11775,7 @@ var JotForm = {
                     //     window.checkForHiddenSection = false;
                     // }
 
-                    setTimeout(function () {
+                    setTimeout(function() {
                         //Emre: to display all submit buttons
                         if (!$$('.form-error-message')[0] && !$$('.form-textarea-limit-indicator-error')[0]) { //Emre: when limit text are is used, submit button doesn't work (51335)
                             var allButtons = $$('.form-submit-button:not(.js-new-sacl-button)');
@@ -11796,7 +11796,7 @@ var JotForm = {
         });
 
         $$('.form-submit-reset').each(function (b) {
-            b.onclick = function () {
+            b.onclick = function() {
                 if (!confirm(JotForm.texts.confirmClearForm)) {
                     return false;
                 } else {
@@ -11812,7 +11812,7 @@ var JotForm = {
                     }
                     if (/chrom(e|ium)/.test(navigator.userAgent.toLowerCase()) && $('coupon-button')) {
                         // #935284 chrome browsers does not clear total price if it has payment coupon
-                        setTimeout(function () {
+                        setTimeout(function() {
                             if ($('payment_total')) {
                                 JotForm.totalCounter(JotForm.prices);
                             }
@@ -11856,7 +11856,7 @@ var JotForm = {
                 //b#423200 ensure that radios/chks are reset to defaults when autofill is enabled
                 var autofill = $$('form')[0].readAttribute('data-autofill');
                 if (autofill) {
-                    setTimeout(function () {
+                    setTimeout(function() {
                         for (var inputId in JotForm.defaultValues) {
                             var input = $(inputId);
                             if (input && (input.type == "radio" || input.type == "checkbox")) {
@@ -11876,7 +11876,7 @@ var JotForm = {
                     }, 40);
                 }
 
-                setTimeout(function () {
+                setTimeout(function() {
                     $$('.custom-hint-group').each(function (element) { //redisplay textarea hints
                         element.hasContent = ( element.value && element.value.replace(/\n/gim, "<br>") != element.readAttribute('data-customhint')) ? true : false;
                         element.showCustomPlaceHolder();
@@ -11885,7 +11885,7 @@ var JotForm = {
 
 
                 //clear rich text
-                setTimeout(function () {
+                setTimeout(function() {
                     $$('.nicEdit-main').each(function (richArea) {
                         var txtarea = richArea.up('.form-line').down('textarea');
                         if (txtarea) {
@@ -11900,7 +11900,7 @@ var JotForm = {
                 }, 40);
 
                 //reset payment
-                setTimeout(function () {
+                setTimeout(function() {
                     if ($('coupon-button') && $('coupon-button').triggerEvent) {
                         $('coupon-button').triggerEvent("click");
                     }
@@ -11910,7 +11910,7 @@ var JotForm = {
                 }, 40);
 
                 // reset widget inputs
-                setTimeout(function () {
+                setTimeout(function() {
                     $$('input.form-widget').each(function (node) {
                         node.value = '';
                         node.fire('widget:clear', {
@@ -11919,7 +11919,7 @@ var JotForm = {
                     });
                 }, 40);
 
-                setTimeout(function () {
+                setTimeout(function() {
                     $$('.currentDate').each(function (el) {
                         var id = el.id.replace(/day_/, "");
                         JotForm.formatDate({date: (new Date()), dateField: $('id_' + id)});
@@ -11936,7 +11936,7 @@ var JotForm = {
                     });
                 }, 40);
 
-                setTimeout(function () {
+                setTimeout(function() {
                     JotForm.runAllConditions();
                 }, 50);
             };
@@ -11944,7 +11944,7 @@ var JotForm = {
 
         $$('.form-submit-print').each(function (print_button) {
 
-            print_button.observe("click", function () {
+            print_button.observe("click", function() {
                 $(print_button.parentNode).hide();
                 //nicedit compatibility start:
                 var hidden_nicedits_arr = []; //nicedit.js rich text editors require special actions this will hold them to allow us to restore them to later stage
@@ -12028,7 +12028,7 @@ var JotForm = {
         });
     },
 
-    hasMinTotalOrderAmount: function () {
+    hasMinTotalOrderAmount: function() {
       var minTotalOrderAmountHiddenField = document.getElementsByName('minTotalOrderAmount');
       var hasMinTotalOrderAmount = typeof minTotalOrderAmountHiddenField !== 'undefined' && minTotalOrderAmountHiddenField.length > 0;
       var minTotalOrderAmount = hasMinTotalOrderAmount === true ? minTotalOrderAmountHiddenField[0].value : '0';
@@ -12039,7 +12039,7 @@ var JotForm = {
       
     },
   
-    handleMinTotalOrderAmount: function () {
+    handleMinTotalOrderAmount: function() {
        if (JotForm.isPaymentSelected() === true && JotForm.hasMinTotalOrderAmount() === true && JotForm.minTotalOrderAmount > 0 && JotForm.getPaymentTotalAmount() < JotForm.minTotalOrderAmount) {
           var errorTxt = JotForm.texts.ccDonationMinLimitError.replace('{minAmount}', JotForm.minTotalOrderAmount).replace('{currency}', JotForm.currencyFormat.curr);
           JotForm.errored(document.querySelectorAll('[data-payment]')[0], errorTxt);
@@ -12059,23 +12059,23 @@ var JotForm = {
     /**
      * Handles the functionality of control_grading tool
      */
-    initGradingInputs: function () {
+    initGradingInputs: function() {
 
         var _this = this;//JotForm object
 
         $$('.form-grading-input').each(function (item) {
 
             //register a blur event to validate the
-            item.observe('blur', function () {
+            item.observe('blur', function() {
                 item.validateGradingInputs();
             });
-            item.observe('keyup', function () {
+            item.observe('keyup', function() {
                 item.validateGradingInputs();
             });
 
             //create a function that will check the validity of inputs
             //attach it to the items/grading inputs
-            item.validateGradingInputs = function () {
+            item.validateGradingInputs = function() {
                 var item = this,
                     id = item.id.replace(/input_(\d+)_\d+/, "$1"),
                     total = 0,
@@ -12132,15 +12132,15 @@ var JotForm = {
     /**
      * Handles the functionality of control_spinner tool
      */
-    initSpinnerInputs: function () {
+    initSpinnerInputs: function() {
         var _this = this;//JotForm object
 
         $$('.form-spinner-input').each(function (item) {
 
             //register a blur/change event to validate the data
-            item.observe('blur', function () {
+            item.observe('blur', function() {
                 item.validateSpinnerInputs();
-            }).observe('change', function () {
+            }).observe('change', function() {
                 item.validateSpinnerInputs();
             });
 
@@ -12158,7 +12158,7 @@ var JotForm = {
 
             //create a function that will check the validity of inputs
             //attach it to the items/spinner inputs
-            item.validateSpinnerInputs = function () {
+            item.validateSpinnerInputs = function() {
                 var item = this,
                     id = item.id.replace(/input_(\d+)_\d+/, "$1"),
                     numeric = /^(-?\d+[\.]?)+$/,
@@ -12199,7 +12199,7 @@ var JotForm = {
     /**
      * 
      */
-    initTestEnvForNewDefaultTheme: function () {
+    initTestEnvForNewDefaultTheme: function() {
         if (
             window
             && window.location
@@ -12216,7 +12216,7 @@ var JotForm = {
     /**
      * init time input events for timev2 (time & datetime fields)
      */
-    initTimev2Inputs: function () {
+    initTimev2Inputs: function() {
         var inputs = document.querySelectorAll('input[id*="timeInput"][data-version="v2"]');
         var userClickDetected = false;
         var userTouchDetected = false;
@@ -12461,7 +12461,7 @@ var JotForm = {
         }
     },
 
-    initOtherV2Options: function () {
+    initOtherV2Options: function() {
         var handleInputView = function (params) {
             var e = params.e || null;
             var container = params.container || null;
@@ -12588,7 +12588,7 @@ var JotForm = {
                 input.checked = true;
             } else {
                 input.setAttribute('checked-before', 0);
-                setTimeout(function () {
+                setTimeout(function() {
                     input.checked = false;
                 }, 0);
             }
@@ -12664,9 +12664,9 @@ var JotForm = {
     /**
      * Handles the validation for minimum character length of control_textbox field
      */
-    initTextboxValidation: function () {
+    initTextboxValidation: function() {
         $$('.form-textbox[data-minlength]').each(function (item) {
-            item.validateTextboxMinsize = function () {
+            item.validateTextboxMinsize = function() {
                 var item = this;
 
                 //correct any errors first that is attach in the item obj
@@ -12701,17 +12701,17 @@ var JotForm = {
     /**
      * Handles the functionality of control_number tool
      */
-    initNumberInputs: function () {
+    initNumberInputs: function() {
         var _this = this;//JotForm object
 
         $$('.form-number-input').each(function (item) {
 
             //register a blur/change event to validate the data
-            item.observe('blur', function () {
+            item.observe('blur', function() {
                 item.validateNumberInputs();
-            }).observe('change', function () {
+            }).observe('change', function() {
                 item.validateNumberInputs();
-            }).observe('keyup', function () {
+            }).observe('keyup', function() {
                 item.validateNumberInputs();
             }).observe('keypress', function (event) {
 
@@ -12744,7 +12744,7 @@ var JotForm = {
 
             //create a function that will check the validity of inputs
             //attach it to the items/number inputs
-            item.validateNumberInputs = function () {
+            item.validateNumberInputs = function() {
                 var item = this,
                     id = item.id.replace(/input_(\d+)_\d+/, "$1"),
                     numeric = /^-?(\d+[\.]?)+$|([\.]\d+)+$/;
@@ -12837,7 +12837,7 @@ var JotForm = {
             }
         });
     },
-    handlePages: function () {
+    handlePages: function() {
         var $this = this;
         var pages = [];
         var last;
@@ -12891,7 +12891,7 @@ var JotForm = {
 
             var form = JotForm.getForm(section)
 
-            section.select('.form-pagebreak-next').invoke('observe', 'click', function () { // When next button is clicked
+            section.select('.form-pagebreak-next').invoke('observe', 'click', function() { // When next button is clicked
 
                 if (JotForm.saving || JotForm.loadingPendingSubmission) {
                     return;
@@ -12979,7 +12979,7 @@ var JotForm = {
                 }
             });
 
-            section.select('.form-pagebreak-back').invoke('observe', 'click', function () { // When back button is clicked
+            section.select('.form-pagebreak-back').invoke('observe', 'click', function() { // When back button is clicked
 
                 if (!$this.noJump && window.parent && window.parent != window) {
                     window.parent.postMessage('scrollIntoView::'+form.id, '*');
@@ -13025,7 +13025,7 @@ var JotForm = {
 
                 checkLanguageDropdownPage();
 
-                setTimeout(function () {
+                setTimeout(function() {
                     JotForm.runAllCalculations(true); //so newly hidden fields may be excluded
                 }, 10);
 
@@ -13083,7 +13083,7 @@ var JotForm = {
                     last.insert(li);
                 }
 
-                back.observe('click', function () {
+                back.observe('click', function() {
                     if (JotForm.saving) {
                         return;
                     }
@@ -13096,7 +13096,7 @@ var JotForm = {
     /**
      * Go straight to page on form load
      */
-    jumpToPage: function () {
+    jumpToPage: function() {
         var page = document.get.jumpToPage;
         var sections = $$('.form-section:not([id^=section_])');
 
@@ -13148,7 +13148,7 @@ var JotForm = {
     /**
      * Handles the functionality of Form Collapse tool
      */
-    handleFormCollapse: function () {
+    handleFormCollapse: function() {
         var $this = this;
         var openBar = false;
         var openCount = 0;
@@ -13164,7 +13164,7 @@ var JotForm = {
                     openCount++;
                 }
             }
-            bar.observe('click', function () {
+            bar.observe('click', function() {
                 if (section.closed) {
                     section.setStyle('overflow:visible; height:auto');
                     var h = section.getHeight();
@@ -13186,7 +13186,7 @@ var JotForm = {
                     openBar = section;
                     section.setStyle('overflow:hidden; height:' + height + 'px');
                     // Wait for focus
-                    setTimeout(function () {
+                    setTimeout(function() {
                         section.scrollTop = 0;
                         section.className = "form-section";
                     }, 1);
@@ -13194,7 +13194,7 @@ var JotForm = {
                     section.shift({
                         height: h,
                         duration: 0.5,
-                        onStart: function () {
+                        onStart: function() {
                             // ready every widget if any
                             section.select('.form-line[data-type=control_widget]').each(function (e) {
                                 var field = e.id.split('_').last();
@@ -13274,7 +13274,7 @@ var JotForm = {
      * Handles Authorize.Net payment validation
      */
 
-    handleAuthNet: function () {
+    handleAuthNet: function() {
         var thisForm = $$('.jotform-form')[0];
         var paymentFieldId = $$('input[name="simple_fpc"]')[0].value;
         Event.observe(thisForm, 'submit', function (event) {
@@ -13295,7 +13295,7 @@ var JotForm = {
                 // if there are errors
                 if (errors) {
                     Event.stop(event);
-                    setTimeout(function () {
+                    setTimeout(function() {
                         JotForm.errored($$('.cc_firstName')[0], errors);
                         // on multi-page forms, attach error to submit button if it is in a page separate from the Authnet fields
                         var cc_number = $$('.cc_number')[0];
@@ -13478,7 +13478,7 @@ var JotForm = {
     }
           // sign-signatures end
   },
-    handleFITBInputs: function () {
+    handleFITBInputs: function() {
         function getInputWidth(fitbInput) {
           var width = 0;
           var textElement = document.createElement('span');
@@ -13639,7 +13639,7 @@ var JotForm = {
      *  Handles Paypal Pro payment methods
      *  and field validations
      */
-    handlePaypalPro: function () {
+    handlePaypalPro: function() {
         if ($('creditCardTable')) {
             var thisForm = $$('.jotform-form')[0];
             var paymentFieldId = $$('input[name="simple_fpc"]')[0].value;
@@ -13774,7 +13774,7 @@ var JotForm = {
                 }
             });
             $$('.paymentTypeRadios').each(function (radio) {
-                radio.observe('click', function () {
+                radio.observe('click', function() {
                     if (radio.checked && radio.value === "express") {
                         JotForm.setCreditCardVisibility(false);
                     }
@@ -13812,7 +13812,7 @@ var JotForm = {
         }
     },
 
-    handleCybersource: function () {
+    handleCybersource: function() {
       // skip on edit mode
       if (window.location.pathname.match(/^\/edit/) || (["edit", "inlineEdit", "submissionToPDF"].indexOf(document.get.mode) > -1 && document.get.sid)) {
         return;
@@ -13888,14 +13888,14 @@ var JotForm = {
             arrow.setStyle('top:' + ((h / 2) - 20) + 'px');
             arrowsmall.setStyle('top:' + ((h / 2) - 17) + 'px');
 
-            $(cont).mouseEnter(function () {
+            $(cont).mouseEnter(function() {
                 cont.setStyle('z-index:10000');
                 if (!cont.hasClassName('form-line-active')) {
                     cont.addClassName('form-line-active');
                     cont.__classAdded = true;
                 }
                 bubble.show();
-            }, function () {
+            }, function() {
                 if (cont.__classAdded) {
                     cont.removeClassName('form-line-active');
                     cont.__classAdded = false;
@@ -13903,7 +13903,7 @@ var JotForm = {
                 cont.setStyle('z-index:0');
                 bubble.hide();
             });
-            $(input).observe('keydown', function () {
+            $(input).observe('keydown', function() {
                 cont.setStyle('z-index:0');
                 bubble.hide();
             });
@@ -13915,7 +13915,7 @@ var JotForm = {
                    cont.setStyle('z-index:10000');
                    bubble.show();
                 })
-                $(input).mouseEnter(function () {
+                $(input).mouseEnter(function() {
                     cont.setStyle('z-index:10000');
                     bubble.show();
                 })
@@ -13925,22 +13925,22 @@ var JotForm = {
                 })
 
             } else {
-                $(cont).mouseEnter(function () {
+                $(cont).mouseEnter(function() {
                     cont.setStyle('z-index:10000');
                     bubble.show();
-                }, function () {
+                }, function() {
                     cont.setStyle('z-index:0');
                     bubble.hide();
                 });
-                $(input).observe('keyup', function () {
+                $(input).observe('keyup', function() {
                     cont.setStyle('z-index:0');
                     bubble.hide();
                 });
-                $(input).observe('focus', function () {
+                $(input).observe('focus', function() {
                     cont.setStyle('z-index:10000');
                     bubble.show();
                 });
-                $(input).observe('blur', function () {
+                $(input).observe('blur', function() {
                     cont.setStyle('z-index:0');
                     bubble.hide();
                 });
@@ -13956,7 +13956,7 @@ var JotForm = {
      */
     validateAll: function (form, scopeSelector) {
 
-        var _log = function () {
+        var _log = function() {
             if (window.location.href.indexOf('stripeDebug') !== -1) {
                 console.log.apply(console, arguments);
             }
@@ -14251,7 +14251,7 @@ var JotForm = {
             }
         }
 
-        setTimeout(function () {
+        setTimeout(function() {
             if ($$('.form-validation-error').length == 0) {
                 JotForm.hideButtonMessage();
             }
@@ -14263,7 +14263,7 @@ var JotForm = {
         return true;
     },
 
-    hideButtonMessage: function () {
+    hideButtonMessage: function() {
       if (window.FORM_MODE == 'cardform') {
         $$('.form-submit-button').each(function (button) {
           var buttonParentNode = button.parentNode.parentNode;
@@ -14352,7 +14352,7 @@ var JotForm = {
         }, 50);
     },
 
-    disableGoButton: function () {
+    disableGoButton: function() {
         if (navigator.appVersion.indexOf("iPhone") != -1 || navigator.appVersion.indexOf("iPad") != -1 || navigator.appVersion.indexOf("Android") != -1) {
             $$('input').each(function (input) {
                 input.observe('keypress', function (e) {
@@ -14374,7 +14374,7 @@ var JotForm = {
         }
     },
 
-    toggleDisableSubmitMessage: function () {
+    toggleDisableSubmitMessage: function() {
         var submitButtonCardIndex = window.CardForm.getLastVisibleIndex();
         if (typeof(submitButtonCardIndex) === "number" && document.getElementsByClassName('jfCard')) {
             var jfCardElement = document.getElementsByClassName('jfCard')[submitButtonCardIndex];
@@ -14404,7 +14404,7 @@ var JotForm = {
     /**
      * Sets all validations to forms
      */
-    validator: function () {
+    validator: function() {
         JotForm.validatorExecuted = true;
         if (this.debugOptions && this.debugOptions.stopValidations) {
             this.info('Validations stopped by debug parameter');
@@ -14493,7 +14493,7 @@ var JotForm = {
                                     }
                                 }
                             } else if (JotForm.submitError == "jumpToFirstError") {
-                                setTimeout(function () {
+                                setTimeout(function() {
                                     var firstError = $$('.form-error-message').first();
                                     if(firstError) {
                                         if (JotForm.isCollapsed(firstError)) {
@@ -14677,11 +14677,11 @@ var JotForm = {
                     e.stop();
                     window.parent.saveAsImage();
                     // JotForm.enableButtons();
-                    $(document).observe('image:loaded', function () {
+                    $(document).observe('image:loaded', function() {
                         var block;
                         $(document.body).insert(block = new Element('div').setStyle('position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.85);'));
                         block.insert('<table height="100%" width="100%"><tr><td align="center" valign="middle" style="font-family:Verdana;color:#fff;font-size:16px;">Please Wait...</td></tr></table>');
-                        setTimeout(function () {
+                        setTimeout(function() {
                             form.submit();
                         }, 1000);
                     });
@@ -14731,7 +14731,7 @@ var JotForm = {
                     var required = !!upload.validateInput;
                     var exVal = upload.validateInput || Prototype.K;
 
-                    upload.validateInput = function () {
+                    upload.validateInput = function() {
 
                         //clean any errors first if any
                         upload.errored = false;
@@ -14810,7 +14810,7 @@ var JotForm = {
                                         //convert string to binary
                                         binary: ab2str(e.target.result)
                                     };
-                                    ImageInfo.loadInfo(args, function () {
+                                    ImageInfo.loadInfo(args, function() {
                                         var info = ImageInfo.getAllFields(file.name);
                                         if (info.format === 'UNKNOWN') {
                                             return JotForm.errored(upload, "You have uploaded an invalid image file type.");
@@ -14987,7 +14987,7 @@ var JotForm = {
 
             if (input.hinted === true) {
                 input.clearHint();
-                setTimeout(function () {
+                setTimeout(function() {
                     input.hintClear();
                 }, 150);
             } // Clear hint value if exists
@@ -15833,7 +15833,7 @@ var JotForm = {
 
         if (input.type == 'checkbox' || input.type == 'radio') {
             if(input.parentNode.hasClassName('jfCheckbox') || input.parentNode.hasClassName('jfRadio')){
-                input.observe('change', function () {
+                input.observe('change', function() {
                     input.validateInput();
                 });
             }
@@ -15841,7 +15841,7 @@ var JotForm = {
             var vals = JotForm.getInputValidations(input);
 
             if (!vals.include('requireEveryRow') && !vals.include('requireEveryCell') && !input.classList.contains('form-'+input.type+'-other')){
-                input.observe('change', function () {
+                input.observe('change', function() {
                     input.validateInput();
                 });
             }
@@ -15882,7 +15882,7 @@ var JotForm = {
         }
 
         if (input.up('.form-spinner')) {
-            var spinnerEvent = function () {
+            var spinnerEvent = function() {
                 input.validateInput();
             };
             input.up('.form-spinner').down('.form-spinner-up').observe('click', spinnerEvent);
@@ -15890,7 +15890,7 @@ var JotForm = {
         }
     },
 
-    isFillingOffline: function () {
+    isFillingOffline: function() {
       var offlineFormQS = getQuerystring('offline_forms');
       return !!(offlineFormQS === 'true' || JotForm.switchedToOffline);
     },
@@ -15901,7 +15901,7 @@ var JotForm = {
      * watch login events to automatically populate fields
      * disable submits until login is completed
      */
-    FBInit: function () {
+    FBInit: function() {
         // Disable the Submit's here, form will not submit until integration is completed
         JotForm.FBNoSubmit = true;
         // Check if user is logged-in or not
@@ -16043,7 +16043,7 @@ var JotForm = {
         element.hasContent = ( element.value && element.value.replace(/\n/gim, "<br>") != value ) ? true : false;
 
         //function to show the custom placeholder
-        element.showCustomPlaceHolder = function () {
+        element.showCustomPlaceHolder = function() {
             if (!this.hasContent) {
                 this.placeholder = new_value;
                 //exclude spellcheck onto the control
@@ -16052,7 +16052,7 @@ var JotForm = {
         };
 
         //function to hide the custom placeholder
-        element.hideCustomPlaceHolder = function () {
+        element.hideCustomPlaceHolder = function() {
             if (!this.hasContent) {
                 this.placeholder = "";
                 //exclude spellcheck onto the control
@@ -16076,14 +16076,14 @@ var JotForm = {
             }
         }).observe('paste', function (e) {
             $this = this;
-            setTimeout(function () {
+            setTimeout(function() {
                 $this.hasContent = ( $this.value.length > 0 && $this.value !== new_value) ? true : false;
             }, 2);
         });
 
         // special case for rich text
         if (element && element.type === "textarea" && element.hasAttribute('data-richtext')) {
-            setTimeout(function () {
+            setTimeout(function() {
                 var editor = $$('#id_' + element.id.replace('input_', '') + ' .nicEdit-main')[0] || null;
                 var editorInstance = nicEditors.findEditor(element.id);
                 if (editor) {
@@ -16094,14 +16094,14 @@ var JotForm = {
                             editorInstance.setContent(new_value);
                         }
                     }
-                    editor.observe('blur', function () {
+                    editor.observe('blur', function() {
                         if (!editorInstance.getContent() || editorInstance.getContent() === "<br>") {
                             editor.setStyle({'color': '#babbc0'});
                             editorInstance.setContent(new_value);
                             element.writeAttribute("spellcheck", "false").addClassName('form-custom-hint');
                         }
                     });
-                    editor.observe('focus', function () {
+                    editor.observe('focus', function() {
                         editor.setStyle({'color': ''});
                         element.removeClassName('form-custom-hint').removeAttribute('spellcheck');
                         if (editorInstance.getContent() === new_value) {
@@ -16115,7 +16115,7 @@ var JotForm = {
 
         //catch the submission of a form, and remove all custom placeholder
         //since we are using the said trick, this needs to be done
-        element.up('form.jotform-form').observe('submit', function () {
+        element.up('form.jotform-form').observe('submit', function() {
             this.select('.custom-hint-group').each(function (elem) {
                 elem.hideCustomPlaceHolder();
             });
@@ -16202,14 +16202,14 @@ var JotForm = {
     /*
      ** Show progress bar on screen and set up listeners
      */
-    setupProgressBar: function () {
+    setupProgressBar: function() {
         JotForm.progressBar = new ProgressBar("progressBar", {'height': '20px', 'width': '95%'});
         var countFields = ['select', 'radio', 'checkbox', 'file', 'combined', 'email', 'address', 'combined', 'datetime', 'time',
             'birthdate', 'number', 'radio', 'number', 'radio', 'autocomplete', 'radio', 'text', 'textarea', 'signature', 'div', 'slider'];
         var totalFields = 0;
         var completedFields = 0;
 
-        var updateProgress = function () {
+        var updateProgress = function() {
             completedFields = 0;
             $$('.form-line').each(function (el) {
                 var id = el.id.split("_")[1];
@@ -16234,7 +16234,7 @@ var JotForm = {
         };
 
         var setListener = function (el, ev) {
-            $(el).observe(ev, function () {
+            $(el).observe(ev, function() {
                 updateProgress();
             });
         };
@@ -16319,7 +16319,7 @@ var JotForm = {
             var rich = $(field).down('.nicEdit-main');
             var txtarea = $(field).down('textarea');
             if (rich && txtarea) {
-                rich.observe('keyup', function () {
+                rich.observe('keyup', function() {
                     txtarea.value = rich.innerHTML;
                     if (txtarea.triggerEvent) txtarea.triggerEvent('keyup');
                 });
@@ -16458,13 +16458,13 @@ var JotForm = {
         excludeFields: excludeFields,
         ttl: params.ttl,
         allowBindOnChange: (params.bindChange && params.bindChange == 'on') ? true : false,
-        onBeforeSave: function () {
+        onBeforeSave: function() {
         },
-        onSave: function () {
+        onSave: function() {
         },
-        onRelease: function () {
+        onRelease: function() {
         },
-        onBeforeRestore: function () {
+        onBeforeRestore: function() {
         },
         onRestore: function (data) {
           //check for custom hints
@@ -16498,7 +16498,7 @@ var JotForm = {
 
     },
 
-    runAllConditions: function () {
+    runAllConditions: function() {
         $H(JotForm.fieldConditions).each(function (pair) {
             var field = pair.key;
             var event = pair.value.event;
@@ -16539,7 +16539,7 @@ var JotForm = {
     return field;
   },
 
-  handleSSOPrefill: function () {
+  handleSSOPrefill: function() {
     if (this.isEditMode() || getQuerystring('jf_createPrefill') == '1') {
       return;
     }
@@ -16831,7 +16831,7 @@ var JotForm = {
      * this depends on the users masking format
      */
     setInputTextMasking: function (elem, maskValue, unmask) {
-        setTimeout(function () { //wait for prepopulations to be run before setting the mask
+        setTimeout(function() { //wait for prepopulations to be run before setting the mask
             JotForm.setQuestionMasking("#" + elem, 'textMasking', maskValue, unmask);
         }, 10);
     },
@@ -16841,7 +16841,7 @@ var JotForm = {
      * this depends on the users masking format
      */
     setPhoneMaskingValidator: function (elem, maskValue, unmask) {
-        setTimeout(function () { //wait for prepopulations to be run before setting the mask
+        setTimeout(function() { //wait for prepopulations to be run before setting the mask
             JotForm.setQuestionMasking("#" + elem, 'phoneMasking', maskValue, unmask);
         }, 10);
     },
@@ -16850,7 +16850,7 @@ var JotForm = {
      * will load external script file
      * currently it is used to import editMode function
      */
-    loadScript: function () {
+    loadScript: function() {
 
         var toLoad = arguments.length;
         var callback;
@@ -16868,7 +16868,7 @@ var JotForm = {
             toLoad--;
             callback = arguments[arguments.length - 1];
         } else {
-            callback = function () {
+            callback = function() {
             }; // noop
         }
         for (var i = 0; i < toLoad; i++) {
@@ -16880,7 +16880,7 @@ var JotForm = {
                 script.addEventListener('load', callback, false);
             } else {
                 //for IE8
-                var handleScriptStateChangeIE8 = function () {
+                var handleScriptStateChangeIE8 = function() {
                     if (script.readyState == 'loaded') {
                         callback();
                     }
@@ -17241,7 +17241,7 @@ var JotForm = {
                 currIndex = newIndex;
             };
 
-            var handleMobileNextClick = function () {
+            var handleMobileNextClick = function() {
                 newIndex = currIndex + 1;
                 if (newIndex !== rowLength) {
                     newEl = rowList[newIndex];
@@ -17256,7 +17256,7 @@ var JotForm = {
                 }
             };
 
-            var handleMobilePrevClick = function () {
+            var handleMobilePrevClick = function() {
               if (currIndex !== 0) {
                 newIndex = currIndex - 1;
                 newEl = rowList[newIndex];
@@ -17293,7 +17293,7 @@ var JotForm = {
                     var matrixTable = matrix.getElementsByClassName('jfMatrixTable')[0];
                     var matrixHeader = matrix.getElementsByClassName('jfMatrixHeader')[0];
 
-                    matrixTable.addEventListener('scroll', function () {
+                    matrixTable.addEventListener('scroll', function() {
                       matrixHeader.scrollLeft = matrixTable.scrollLeft;
                     });
                 }
@@ -17809,7 +17809,7 @@ var JotForm = {
             req.open(method, url, true);
             req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
             req.onerror = errback;
-            req.onreadystatechange = function () {
+            req.onreadystatechange = function() {
                 if (req.readyState === 4) {
                     if (req.status >= 200 && req.status < 400) {
                         try {
@@ -18564,7 +18564,7 @@ function newDefaultThemeHandler(opts) {
     this.targetElArr = null;
 
     // check dom elements based on paramater (dataType)
-    this.initElement = function () {
+    this.initElement = function() {
         if (!this.selector) {
             return false;
         }
@@ -18582,7 +18582,7 @@ function newDefaultThemeHandler(opts) {
         return true;
     }
 
-    this.render = function () {
+    this.render = function() {
         if (this.initElement()) {
             this.run(this.targetElArr);
         }

@@ -14,7 +14,7 @@ if(window.console === undefined){
     if (!window.console || !console.firebug) {
         (function (m, i) {
             window.console = {};
-            var e = function () {};
+            var e = function() {};
             while (i--) { window.console[m[i]] = e; }
         })('log debug info warn error assert dir dirxml trace group groupEnd time timeEnd profile profileEnd count'.split(' '), 16);
     }

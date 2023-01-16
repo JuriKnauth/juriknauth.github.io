@@ -25,7 +25,7 @@
     <title>Juri Knauth's Services and Portfolio. Software/Game Developer/Mentor. </title>
     <link rel="stylesheet" type="text/css" href="boilerplate.min.css">
     <script>
-        $(function () {
+        $(function() {
             $("#loadbotbar").load("BotBar.html");
             $("#loadindexmenu").load("IndexMenu.html");
             $("#loadblogmenu").load("BlogMenu.html");
@@ -1441,7 +1441,7 @@
         JotForm.newPaymentUIForNewCreatedForms = false;
         JotForm.clearFieldOnHide = "disable";
 
-        JotForm.init(function () {
+        JotForm.init(function() {
             /*INIT-START*/
             if (window.JotForm && JotForm.accessible) $('input_8').setAttribute('tabindex', 0);
             if (window.JotForm && JotForm.accessible) $('input_13').setAttribute('tabindex', 0);
@@ -1501,7 +1501,7 @@
             "text": "Phone Number",
             "type": "control_phone"
         }]);
-        setTimeout(function () {
+        setTimeout(function() {
             JotForm.paymentExtrasOnTheFly([null, null, {
                 "name": "submit",
                 "qid": "2",
@@ -1726,7 +1726,7 @@
                                                                 }
                                                             }
 
-                                                            var hcaptchaExpiredCallbackinput_14 = function () {
+                                                            var hcaptchaExpiredCallbackinput_14 = function() {
                                                                 var hiddenInput = $("input_14");
                                                                 hiddenInput.writeAttribute("value", false);
                                                                 if (hiddenInput.validateInput) {

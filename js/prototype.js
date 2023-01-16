@@ -1384,7 +1384,7 @@ if (!Array.from) {
       Since that usage may have been spreaded over the codebase, we need to provide such convenience in native usage too.
     */
     var unsafeEvery = wrapNative(Array.prototype.every);
-    var safeEvery = function () {
+    var safeEvery = function() {
       // Safe call
       if (arguments.length === 0) return unsafeEvery(Prototype.K);
 
@@ -2215,7 +2215,7 @@ Element.Methods = {
     var ANY_INNERHTML_BUGGY = SELECT_ELEMENT_INNERHTML_BUGGY ||
      TABLE_ELEMENT_INNERHTML_BUGGY || LINK_ELEMENT_INNERHTML_BUGGY;
 
-    var SCRIPT_ELEMENT_REJECTS_TEXTNODE_APPENDING = (function () {
+    var SCRIPT_ELEMENT_REJECTS_TEXTNODE_APPENDING = (function() {
       var s = document.createElement("script"),
           isBuggy = false;
       try {

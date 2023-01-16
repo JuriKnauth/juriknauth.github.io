@@ -8,18 +8,18 @@
 	w.respond = respond;
 
 	//define update even in native-mq-supporting browsers, to avoid errors
-	respond.update = function () {};
+	respond.update = function() {};
 
 	//define ajax obj
 	var requestQueue = [],
-		xmlHttp = (function () {
+		xmlHttp = (function() {
 			var xmlhttpmethod = false;
 			try {
 				xmlhttpmethod = new w.XMLHttpRequest();
 			} catch (e) {
 				xmlhttpmethod = new w.ActiveXObject("Microsoft.XMLHTTP");
 			}
-			return function () {
+			return function() {
 				return xmlhttpmethod;
 			};
 		})(),
@@ -31,7 +31,7 @@
 				return;
 			}
 			req.open("GET", url, true);
-			req.onreadystatechange = function () {
+			req.onreadystatechange = function() {
 				if (req.readyState !== 4 || req.status !== 200 && req.status !== 304) {
 					return;
 				}
@@ -90,7 +90,7 @@
 		eminpx,
 
 		// returns the value of 1em in pixels
-		getEmValue = function () {
+		getEmValue = function() {
 			var ret,
 				div = doc.createElement('div'),
 				body = doc.body,
@@ -281,7 +281,7 @@
 		},
 
 		//recurse through request queue, get css text
-		makeRequests = function () {
+		makeRequests = function() {
 			if (requestQueue.length) {
 				var thisRequest = requestQueue.shift();
 
@@ -291,7 +291,7 @@
 
 					// by wrapping recursive function call in setTimeout
 					// we prevent "Stack overflow" error in IE7
-					w.setTimeout(function () {
+					w.setTimeout(function() {
 						makeRequests();
 					}, 0);
 				});
@@ -299,7 +299,7 @@
 		},
 
 		//loop stylesheets, send text content to translate
-		ripCSS = function () {
+		ripCSS = function() {
 
 			for (var i = 0; i < links.length; i++) {
 				var sheet = links[i],

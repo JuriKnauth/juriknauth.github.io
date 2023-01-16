@@ -163,7 +163,7 @@ if (typeof JSON !== 'object') {
     JSON = {};
 }
 
-(function () {
+(function() {
     'use strict';
 
     function f(n) {
