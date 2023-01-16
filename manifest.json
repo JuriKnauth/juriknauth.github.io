@@ -17,6 +17,6 @@
     "background_color": "#000000",
     "lang": "en-US",
     "display": "standalone",
-    "scope": "/maps/",
+    "scope": "/",
     "theme_color": "#000000"
 }
