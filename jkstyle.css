@@ -1013,6 +1013,7 @@ input:checked+.slider:before {
 }
 
 .contact-input, .contact-textarea{
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     border: 0;
     margin: 10px 0;
     padding: 20px;
@@ -1027,6 +1028,7 @@ input:checked+.slider:before {
     border: 0;
     outline: none;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .overlay {
