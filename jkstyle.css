@@ -344,7 +344,7 @@ article, aside, section
 }
 
 #home_01 {
-    background: url(../Images/Knauth_HeadShot_01_Crop.jpg);
+    background: url(../Images/pre_Knauth_HeadShot_01_Crop.jpg);
     display: block;
     background-size: 100% 100%;
     top: 0;
@@ -384,7 +384,7 @@ article, aside, section
 }
 
 #home_01:hover {
-    background: url(../Images/Knauth_HeadShot_01_Crop_Pixel.jpg);
+    background: url(../Images/pre_Knauth_HeadShot_01_Crop_Pixel.jpg);
     background-size: 100% 100%;
     -webkit-transition: background .5s linear;
     -moz-transition: background .5s linear;
