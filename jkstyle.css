@@ -343,6 +343,21 @@ article, aside, section
     transition: background .5s linear
 }
 
+#home_01 {
+    background: url(../Images/Knauth_HeadShot_01_Crop.jpg);
+    display: block;
+    background-size: 100% 100%;
+    top: 0;
+    table-layout: fixed;
+    max-height: 100%;
+    max-width: 100%;
+    left: 0;
+    -webkit-transition: background .5s linear;
+    -moz-transition: background .5s linear;
+    -o-transition: background .5s linear;
+    transition: background .5s linear
+}
+
 .homeimg {
     opacity: 0;
     display: block;
@@ -361,6 +376,15 @@ article, aside, section
 
 #home:hover {
     background: url(../Images/preJK.jpg);
+    background-size: 100% 100%;
+    -webkit-transition: background .5s linear;
+    -moz-transition: background .5s linear;
+    -o-transition: background .5s linear;
+    transition: background .5s linear
+}
+
+#home_01:hover {
+    background: url(../Images/Knauth_HeadShot_01_Crop_Pixel.jpg);
     background-size: 100% 100%;
     -webkit-transition: background .5s linear;
     -moz-transition: background .5s linear;
