@@ -1403,6 +1403,10 @@ a.anchor {
     cursor: pointer
 }
 
+.dropdown{
+    margin-right: 1px;
+}
+
 .dropdown,
 linav a,
 linavb a {
