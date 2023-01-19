@@ -615,8 +615,12 @@ a {
     word-break: break-all;
 }
 
-div,
-figure,
+div
+{
+    padding: 0
+}
+
+figure
 p {
     margin: 2px;
     padding: 0
