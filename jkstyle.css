@@ -1533,6 +1533,7 @@ input.toggle-round-right-left:checked+label:after {
 
 .icon-container {
     position: relative;
+    display: none;
 }
 
 .bottom-left {
