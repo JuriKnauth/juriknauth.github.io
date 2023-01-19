@@ -147,7 +147,7 @@ h5 {
     padding: 0px 0px 0px 5px;
 }
 
-.article-title h5{
+.article-title h5 {
     padding: 0px;
 }
 
@@ -801,6 +801,8 @@ figure p {
     height: auto;
     font-size: 1.0em;
     font-weight: 400;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .article-content3 {
@@ -1407,7 +1409,7 @@ a.anchor {
     cursor: pointer
 }
 
-.dropdown{
+.dropdown {
     margin-right: 1px;
 }
 
