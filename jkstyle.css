@@ -147,6 +147,10 @@ h5 {
     padding: 0px 0px 0px 5px;
 }
 
+.article-title h5{
+    padding: 0px;
+}
+
 h6 {
     padding: 0px;
 }
