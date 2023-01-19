@@ -770,6 +770,7 @@ p {
 }
 
 .article-titleR {
+    display:none;
     float: right;
     color: #000;
     flex-shrink: 0;
