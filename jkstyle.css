@@ -151,6 +151,15 @@ h6 {
     padding: 0px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    width: 100%;
+}
+
 p {
     text-align: justify;
     margin-right: 5px;
@@ -615,13 +624,11 @@ a {
     word-break: break-all;
 }
 
-div
-{
+div {
     padding: 0
 }
 
-figure
-p {
+figure p {
     margin: 2px;
     padding: 0
 }
@@ -775,7 +782,7 @@ p {
 }
 
 .article-titleR {
-    display:none;
+    display: none;
     float: right;
     color: #000;
     flex-shrink: 0;
@@ -855,9 +862,8 @@ p {
     width: 400px
 }
 
-#mainmenu
-{
-    margin: 2px 2px 2px 0px;
+#mainmenu {
+    margin: 2px 2px 2px 2px;
 }
 
 .main-column {
