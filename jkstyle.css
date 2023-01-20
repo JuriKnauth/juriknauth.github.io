@@ -579,7 +579,6 @@ linavb a:hover {
 }
 
 .botbar {
-    cursor: pointer;
     overflow: hidden;
     background-color: #000;
     position: absolute;
