@@ -218,6 +218,10 @@ img {
     border-style: none
 }
 
+.nomargin {
+    margin: 0;
+}
+
 article,
 aside,
 section {
