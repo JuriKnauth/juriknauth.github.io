@@ -16,13 +16,13 @@
     <title>Juri Knauth's Services and Portfolio. Software/Game Developer/Mentor. </title>
     <link rel="stylesheet" type="text/css" href="boilerplate.min.css">
     <script type="text/javascript" src="jkscript.min.js"></script>
-<script type="text/javascript" src="respond.min.js"></script>
+    <script type="text/javascript" src="respond.min.js"></script>
     <script type="text/javascript" src="jquery-3.6.3.min.js"></script>
     <script>
         $(function() {
             $("#loadbotbar").load("BotBar.html");
             $("#loadindexmenu").load("IndexMenu.html");
-            $("#loadblogmenu").load("BlogMenu.html");
+            $("#loadservicesmenu").load("ServicesMenu.html");
             $("#loadprojectsmenu").load("ProjectsMenu.html");
             $("#loadcontactmenu").load("ContactMenu.html");
         });
@@ -33,27 +33,31 @@
     <div class="containerBG">
         <div class="main">
             <div id="mainmenu">
-                <ulnav>
-                    <linavb class="dropdown">
-                        <a href="/" id="DefaultI" class="dropbtnimg">
-                            <picture class="logo" id="logo" width="52" height="52" alt="jklogo" style="text-align:left;">
-                                <source srcset="jkiconcropD.webp" type="image/webp">
-                                <img loading="lazy" src="jkiconcropD.png" alt="logo" id="logo" width="52" height="52" style="text-align:left;">
-                            </picture>
-                        </a>
-                        <div id="loadindexmenu"> </div>
-                    </linavb>
-                    <linav class="dropdown"> <a href="Blog.html" id="DefaultB" class="dropbtn"><b>Blog</b></a>
-                        <div id="loadblogmenu"> </div>
-                    </linav>
-                    <linav class="dropdown"> <a href="Projects.html" id="Projects" class="dropbtn"><b
-								color="white">Projects</b></a>
-                        <div id="loadprojectsmenu"> </div>
-                    </linav>
-                    <linav class="dropdown"> <a href="Contact.html" id="DefaultC" class="dropbtn"><b>Contact</b></a>
-                        <div id="loadcontactmenu"> </div>
-                    </linav>
-                </ulnav>
+                <header>
+                    <nav>
+                        <ulnav>
+                            <linavb class="dropdown">
+                                <a href="/" id="DefaultI" class="dropbtnimg">
+                                    <picture class="logo" id="logo" width="52" height="52" alt="jklogo" style="text-align:left;">
+                                        <source srcset="jkiconcropD.webp" type="image/webp">
+                                        <img loading="lazy" src="jkiconcropD.png" alt="logo" id="logo" width="52" height="52" style="text-align:left;">
+                                    </picture>
+                                </a>
+                                <div id="loadindexmenu"> </div>
+                            </linavb>
+                            <linav class="dropdown"> <a href="Services.html" id="DefaultB" class="dropbtn"><b>Services</b></a>
+                                <div id="loadservicesmenu"> </div>
+                            </linav>
+                            <linav class="dropdown"> <a href="Projects.html" id="Projects" class="dropbtn"><b
+                                        color="white">Projects</b></a>
+                                <div id="loadprojectsmenu"> </div>
+                            </linav>
+                            <linav class="dropdown"> <a href="Contact.html" id="DefaultC" class="dropbtn"><b>Contact</b></a>
+                                <div id="loadcontactmenu"> </div>
+                            </linav>
+                        </ulnav>
+                    </nav>
+                </header>
             </div>
             <div id="ProjectsB" class="tabcontent" w>
                 <div class="articlebodyDesc">

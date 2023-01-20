@@ -575,7 +575,8 @@ linavb a:hover {
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
     margin: 5px auto;
     padding: 14px 16px;
-    bottom: 0px
+    bottom: 0px;
+    z-index: 1000;
 }
 
 .botbar {
