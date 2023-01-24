@@ -396,6 +396,10 @@ section {
     margin: 100% auto
 }
 
+.black {
+    color: black;
+}
+
 #home {
     background: url(../Images/preEJK.jpg);
     display: block;
@@ -549,7 +553,8 @@ section {
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
     z-index: 550;
-    padding: 14px
+    padding: 14px;
+    margin-top: 4px;
 }
 
 .dropdown-content a {
