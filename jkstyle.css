@@ -31,6 +31,19 @@ body {
     margin: 0
 }
 
+.auto {
+    text-rendering: auto;
+    }
+.optimizeSpeed{
+text-rendering: optimizeSpeed;
+}
+.optimizeLegibility {
+text-rendering: optimizeLegibility;
+}
+.geometricPrecision{
+text-rendering: geometricPrecision;
+}
+
 .backgroundImage {
     top: 0;
     left: 0;
@@ -248,7 +261,8 @@ section {
     height: 360px;
     width: 640px;
     vertical-align: middle;
-    margin: auto
+    margin: auto;
+    overflow: hidden;
 }
 
 .Slides,
