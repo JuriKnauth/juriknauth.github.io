@@ -469,7 +469,7 @@ section {
     -o-transition: background .5s linear
 }
 
-#ulnav {
+.ulnav {
     list-style-type: none;
     overflow: hidden;
     background-color: #000;
@@ -485,13 +485,13 @@ section {
     padding: 0
 }
 
-#linav {
+.linav {
     color: #fff;
     float: left;
 }
 
 .dropbtn,
-#linav a {
+.linav a {
     display: inline-block;
     color: #000;
     text-align: left;
@@ -501,7 +501,7 @@ section {
 }
 
 .dropdown:hover .dropbtn,
-#linav a:hover {
+.linav a:hover {
     color: #000;
     background-color: #636e72;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .36), 0 1px 2px rgba(0, 0, 0, .48);
@@ -513,13 +513,13 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, .24), 0 1px 2px rgba(0, 0, 0, .36)
 }
 
-#linavb {
+.linavb {
     color: #fff;
     float: left;
 }
 
 .dropbtnimg,
-#linavb a {
+.linavb a {
     display: inline-block;
     color: #000;
     text-align: left;
@@ -528,7 +528,7 @@ section {
 }
 
 .dropbtnimg:hover,
-#linavb a:hover {
+.linavb a:hover {
     color: #000;
     background-color: #b2bec3;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .36), 0 1px 2px rgba(0, 0, 0, .48);
@@ -1433,8 +1433,8 @@ a.anchor {
 }
 
 .dropdown,
-#linav a,
-#linavb a {
+.linav a,
+.linavb a {
     color: #fff;
     display: inline-block;
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
