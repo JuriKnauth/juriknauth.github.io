@@ -371,7 +371,7 @@ Protoplus.ui = {
             fadeOut:false,
             shadow:false
         }, options || {});
-        text = (options.title)? "<b>"+options.title+"</b><br>"+text : text;
+        text = (options.title)? "<strong>"+options.title+"</strong><br>"+text : text;
         element.hover(function(el, evt){
             var vpd = document.viewport.getDimensions();
             var getBoxLocation = function(e){

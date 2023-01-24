@@ -723,7 +723,7 @@ var JotForm = {
             all = div.getElementsByTagName('i');
 
         while (
-            div.innerHTML = '<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->',
+            div.innerHTML = '<!--[if gt IE ' + (++v) + ']><em></em><![endif]-->',
                 all[0]
             );
 
@@ -1135,7 +1135,7 @@ var JotForm = {
                 // old form footer
                 var constructSubmitBanner = function(){
                     var button = Array.from(document.querySelectorAll('.form-submit-button')).find(function(el) {return !(el.hasClassName('form-sacl-button') || el.hasClassName('js-new-sacl-button')) });
-                    var brandingText = (JotForm.newDefaultTheme && JotForm.poweredByText) ? JotForm.poweredByText.replace(/Jotform/, '<b>Jotform</b>') : JotForm.poweredByText;
+                    var brandingText = (JotForm.newDefaultTheme && JotForm.poweredByText) ? JotForm.poweredByText.replace(/Jotform/, '<strong>Jotform</strong>') : JotForm.poweredByText;
                     if (window && window.location.href.indexOf('branding21') !== -1) {
                       brandingText = brandingText.replace('JotForm', 'Jotform');
                     }
@@ -2934,7 +2934,7 @@ var JotForm = {
                     if(justCalculate){
                         return [hours, min];
                     }
-                    durationLabel.update('<b>Total ' + hours + ':' + min + '</b>');
+                    durationLabel.update('<strong>Total ' + hours + ':' + min + '</strong>');
                     durationLabel.setStyle({'color': 'black'});
                     $$('input[id=duration_' + id + '_ampmRange][type="hidden"]').first().setValue(hours + ':' + min);
                 } else if (!justCalculate) {
@@ -3860,7 +3860,7 @@ var JotForm = {
                         var val = match;
                         li.val = val;
                         try {
-                            val = match.replace(new RegExp('(' + word + ')', 'gim'), '<b>$1</b>');
+                            val = match.replace(new RegExp('(' + word + ')', 'gim'), '<strong>$1</strong>');
                         }
                         catch (e) {
                             JotForm.error(e);
@@ -12116,7 +12116,7 @@ var JotForm = {
 
                     if (total > allowed_total) {
                         //do the error display
-                        $("grade_error_" + id).innerHTML = ' ' + JotForm.texts.lessThan + ' <b>' + allowed_total + '</b>.';
+                        $("grade_error_" + id).innerHTML = ' ' + JotForm.texts.lessThan + ' <strong>' + allowed_total + '</strong>.';
                         return JotForm.errored(item, JotForm.texts.gradingScoreError + " " + allowed_total);
                     }
                     else {
