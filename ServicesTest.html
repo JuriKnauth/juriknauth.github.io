@@ -1,0 +1,451 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=0.85" name="viewport" />
+    <meta
+      name="description"
+      content="Juri Knauth's Services and Portfolio. Software/Game Developer and Mentor. This website presents the services I offer and my projects. Services Page."
+    />
+    <meta
+      name="keywords"
+      content="JK,Juri,Knauth,Game,Design,Development,Mentoring,Designer,Developer,Mentor,Teacher,Solo Game Developer,QA,Unity,Unity3D,Unreal,Services,Portfolio,Showcase,Blog,Projects,Contact,Video,Board,Maps,3D,2D,Art,Concepts,Escape,Room,Mods,Pirates,Splashy,Endstation,Spielhauer"
+    />
+    <meta name="author" content="Juri Knauth" />
+    <meta
+      name="google-site-verification"
+      content="Dq4rDSuTWs3ExXxiyk6i_zEx1SzejW9sK8RM-V13lU"
+    />
+    <base href="https://www.juriknauth.com/" />
+    <link rel="canonical" href="https://www.juriknauth.com/Services.html" />
+    <link rel="stylesheet" type="text/css" href="jkstyle.min.css" />
+    <link rel="favicon" href="https://juriknauth.github.io/favicon.ico" />
+    <link rel="favicon-16x16" href="favicon-16x16.ico" type="image/x-icon" />
+    <title>
+      Juri Knauth's Services and Portfolio. Software/Game Developer/Mentor.
+    </title>
+    <link rel="stylesheet" type="text/css" href="boilerplate.min.css" />
+    <script src="jkscript.min.js"></script>
+    <
+    <script src="respond.min.js"></script>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script>
+      $(function () {
+        $("#loadbotbar").load("BotBar.html");
+        $("#loadindexmenu").load("IndexMenu.html");
+        $("#loadservicesmenu").load("ServicesMenu.html");
+        $("#loadprojectsmenu").load("ProjectsMenu.html");
+        $("#loadcontactmenu").load("ContactMenu.html");
+      });
+      function toggleDiv(attribute) {
+        var elements = document.getElementsByClassName("infoClass");
+        for (i = 0; i < elements.length; i++) {
+          if (elements[i].id === attribute) {
+            if (elements[i].style.display === "none") {
+              elements[i].style.display = "block";
+            } else {
+              elements[i].style.display = "none";
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      #toggle-1 + label:before {
+        content: "Development";
+      }
+      #toggle-1 + label:after {
+        content: "Development";
+      }
+      #toggle-2 + label:before {
+        content: "Design";
+      }
+      #toggle-2 + label:after {
+        content: "Design";
+      }
+      #toggle-3 + label:before {
+        content: "Mentor";
+      }
+      #toggle-3 + label:after {
+        content: "Mentor";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="containerBG">
+      <div class="main">
+        <div id="mainmenu">
+          <div class="dropdown linavb">
+            <a href="/" id="DefaultI" class="dropbtnimg">
+              <picture class="logo" style="text-align: left">
+                <img
+                  loading="lazy"
+                  src="jkiconcropD.png"
+                  alt="logo"
+                  width="52"
+                  height="52"
+                  style="text-align: left"
+                />
+              </picture>
+            </a>
+            <div id="loadindexmenu"></div>
+          </div>
+          <div class="dropdown linav">
+            <a href="Services.html" id="Blog" class="dropbtn"
+              ><strong>Services</strong></a
+            >
+            <div id="loadservicesmenu"></div>
+          </div>
+          <div class="dropdown linav">
+            <a href="Projects.html" id="DefaultP" class="dropbtn"
+              ><strong>Projects</strong></a
+            >
+            <div id="loadprojectsmenu"></div>
+          </div>
+          <div class="dropdown linav">
+            <a href="Contact.html" id="DefaultC" class="dropbtn"
+              ><strong>Contact</strong></a
+            >
+            <div id="loadcontactmenu"></div>
+          </div>
+        </div>
+        <div id="BlogB" class="tabcontent">
+          <div class="articlebodyDesc">
+            <p style="text-align: justify" class="article-content" id="BannerB">
+              <em>An overview of the services I offer. <br /></em>
+            </p>
+          </div>
+          <div class="articlebody">
+            <a class="anchor" id="Services" name="Services"></a>
+            <h2 class="article-titleL">Services</h2>
+            <br />
+            <div class="columns">
+              <div class="nested-column" style="margin: 4px">
+                <div class="switch">
+                  <input
+                    id="toggle-1"
+                    class="toggle toggle-round-right-left"
+                    type="checkbox"
+                    checked
+                  />
+                  <label
+                    for="toggle-1"
+                    onclick="toggleDiv('Development')"
+                  ></label>
+                </div>
+                <div class="switch">
+                  <input
+                    id="toggle-2"
+                    class="toggle toggle-round-right-left"
+                    type="checkbox"
+                    checked
+                  />
+                  <label for="toggle-2" onclick="toggleDiv('Design')"></label>
+                </div>
+                <div class="switch">
+                  <input
+                    id="toggle-3"
+                    class="toggle toggle-round-right-left"
+                    type="checkbox"
+                    checked
+                  />
+                  <label for="toggle-3" onclick="toggleDiv('Mentor')"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="infoClass"
+            id="Development"
+            style="margin: 0px; padding: 0px; display: block"
+          >
+            <div class="articlebody">
+              <a class="anchor" id="Development" name="Development"></a>
+              <h2 class="article-title">Development</h2>
+              <p style="text-align: justify" class="article-content">
+                From understanding the real problem, figuring out the customer
+                requirements, avoiding pitfalls, to designing flexible, stable,
+                testable and extendable systems with integrated measurements. It
+                starts with being a good listener and ends with a well-suited
+                custom solution.
+              </p>
+              <div class="columns" style="flex-wrap: wrap">
+                <div class="nested-column">
+                  <div class="article">
+                    <div class="article-body">
+                      <p class="article-content">Game Development</p>
+                      <hr class="nomargin" />
+                      <p class="article-info">
+                        Good game development requires a good overview of the
+                        project and joining all the moving parts. Creating tools
+                        for level and game designers, and bringing the creations
+                        of the various departments to life. <br /><br />
+                      </p>
+                      <p class="article-info">
+                        <em
+                          >Fast iteration cycles and squeezing out performance
+                          wherever and whenever it is needed.</em
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="nested-column">
+                  <div class="article">
+                    <div class="article-body">
+                      <p class="article-content">AR/ VR</p>
+                      <hr class="nomargin" />
+                      <p class="article-info">
+                        Augmented and virtual reality can create a truly unique
+                        experience with the latest technologies or bring them
+                        into the mainstream - all you need is a camera. This is
+                        an area that offers a lot of new possibilities and where
+                        new worlds can be opened up. <br /><br />
+                      </p>
+                      <p class="article-info">
+                        <em
+                          >Specifically, accessibility and availability are big
+                          areas.</em
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="nested-column">
+                  <div class="article">
+                    <div class="article-body">
+                      <p class="article-content">Mobile</p>
+                      <hr class="nomargin" />
+                      <p class="article-info">
+                        Cell phones and all their little gadgets and sensors are
+                        just a buffet to develop the next amazing apps that will
+                        revolutionize our lives. <br /><br />
+                      </p>
+                      <p class="article-info">
+                        <em
+                          >Developing for older phones that don't need the
+                          latest hardware, and to save batteries and hardware
+                          are some of the things a green developer can do.</em
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="nested-column">
+                  <div class="article">
+                    <div class="article-body">
+                      <p class="article-content">Unity</p>
+                      <hr class="nomargin" />
+                      <p class="article-info">
+                        A simple and beginner-friendly game engine with endless
+                        possibilities. The game engine I teach to students and
+                        colleagues. It can be deployed to multiple devices, be
+                        it web, AR or mobile. <br /><br />
+                      </p>
+                      <p class="article-info">
+                        <em
+                          >Being able to work and iterate so quickly with Unity
+                          is extremely valuable for getting immediate feedback
+                          and experimenting.</em
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="infoClass"
+            id="Design"
+            style="margin: 0px; padding: 0px; display: block"
+          >
+            <div class="articlebody">
+              <a class="anchor" id="Design" name="Design"></a>
+              <h2 class="article-title">Design</h2>
+              <p style="text-align: justify" class="article-content">
+                Good designs must meet many criteria. They must be unique and
+                appealing, and stand out in the current media landscape.
+                Unanimous world designs have a believable and authentic look,
+                they feel alive and have a story engraved in them. Characters
+                must be relatable and recognizable from a distance.
+                <br /><br /><em>Form must follow function and vice versa. </em>
+              </p>
+              <div class="columns" style="flex-wrap: wrap">
+                <div class="nested-column">
+                  <div class="article">
+                    <div class="article-body">
+                      <p class="article-content">Game Design</p>
+                      <hr class="nomargin" />
+                      <p class="article-info">
+                        Unique, intuative, and memorable games require a
+                        compelling story, meaningful decisions, and engaging
+                        game mechanics. Everything must fit together like a
+                        symphony, a well-oiled engine, or an ecological cycle.
+                        It should "click," be easy to understand and hard to
+                        master, and keep the player on their toes. <br /><br />
+                      </p>
+                      <p class="article-info">
+                        <em
+                          >Gathering feedback, testing, and balancing are
+                          integral parts of this.</em
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="nested-column">
+                  <div class="article">
+                    <div class="article-body">
+                      <p class="article-content">UI/ UX</p>
+                      <hr class="nomargin" />
+                      <p class="article-info">
+                        User experience has a lot in common with game design. Be
+                        it accessibility and the experience with the product.
+                        But it goes further than that, as the experience starts
+                        earlier and lasts longer, the overall design, and the
+                        customer's identity and expectations come into play.
+                        <br /><br />
+                      </p>
+                      <p class="article-info">
+                        <em
+                          >Community design and feedback channels are
+                          crucial.</em
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="nested-column">
+                  <div class="article">
+                    <div class="article-body">
+                      <p class="article-content">3D</p>
+                      <hr class="nomargin" />
+                      <p class="article-info">
+                        Good 3D modeling requires a special understanding of
+                        readability; it requires a clear silhouette, special
+                        accent colors, and animations to make them stand out
+                        from the untamed environments we find them in.<br /><br />
+                      </p>
+                      <p class="article-info">
+                        <em>
+                          Rig requirements, bone setup, poly density, and
+                          texture fidelity all need to be tested and
+                          communicated.</em
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="nested-column">
+                  <div class="article">
+                    <div class="article-body">
+                      <p class="article-content">Level</p>
+                      <hr class="nomargin" />
+                      <p class="article-info">
+                        Designing spaces where people want to gather and linger,
+                        feel intimidated, or want to explore. Giving players the
+                        urge to move on and find their way to the next point of
+                        interest, making them feel like they are moving freely,
+                        while in reality they are being guided along a carefully
+                        designed path. <br /><br />
+                      </p>
+                      <p class="article-info">
+                        <em
+                          >Balanced multiplayer maps, different tactical paths
+                          and exciting bottlenecks.</em
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="infoClass"
+            id="Mentor"
+            style="margin: 0px; padding: 0px; display: block"
+          >
+            <div class="articlebody">
+              <a class="anchor" id="Mentor" name="Mentor"></a>
+              <h2 class="article-title">Mentor</h2>
+              <p style="text-align: justify" class="article-content">
+                It is always exciting to watch people develop and guide new
+                people. Each background is unique and requires a deep dive into
+                obscure topics, but also brings insight and new perspectives.
+                <br /><br /><em
+                  >Customized learning paths are constantly evolving and
+                  adapting to new challenges.</em
+                >
+              </p>
+              <div class="columns" style="flex-wrap: wrap">
+                <div class="nested-column">
+                  <div class="article">
+                    <div class="article-body">
+                      <p class="article-content">Game Development</p>
+                      <hr class="nomargin" />
+                      <p class="article-info">
+                        Programming is essentially translating requirements and
+                        defining clear rules. Once you've written a game manual
+                        and cleared up any ambiguities, you're well equipped to
+                        write a manual for an application. Mastering tools and
+                        programming languages is critical, but even more
+                        important is working in agile teams that send you on a
+                        journey that has growth built right into it.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="nested-column">
+                  <div class="article">
+                    <div class="article-body">
+                      <p class="article-content">Game Design</p>
+                      <hr class="nomargin" />
+                      <p class="article-info">
+                        Learning the basics of game design and developing a
+                        common language are valuable, but most importantly are
+                        techniques and problem-solving skills that a true game
+                        designer needs. Balancing entire game systems and
+                        creating emotional experiences that support each other
+                        and don't get in each other's way are some of these
+                        challenges.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="nested-column">
+                  <div class="article">
+                    <div class="article-body">
+                      <p class="article-content">Agile Development</p>
+                      <hr class="nomargin" />
+                      <p class="article-info">
+                        Being truly agile means adapting to the needs of the
+                        team, the tech stack, and the product. Good
+                        communication and constant honest feedback are at the
+                        heart of agile development. Leading reviews, retros, and
+                        planning sprints require experience in this area.
+                        Constantly evaluating and redefining new techniques
+                        requires switching between open and closed mindsets to
+                        keep improving the team, which is what ultimately
+                        matters.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gridContainer clearfix">
+        <div id="div1" class="fluid"></div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div id="loadbotbar" class="bottomMain"></div>
+    </div>
+  </body>
+</html>
