@@ -844,10 +844,11 @@ figure p {
   .dropbtn {
     padding: 14px 10px;
   }
+}
+@media screen and (min-width: 360px) {
   .switchContainer {
     grid-template-columns: repeat(2, 1fr);
   }
-}
 @media screen and (min-width: 800px) {
   .column,
   .columns {
@@ -936,7 +937,6 @@ figure p {
   padding: 18px 9px 18px 9px;
 }
 .switchContainer {
-  grid-template-columns: repeat(4, 1fr);
   display: grid;
   width: 100%;
   column-gap: 4px;
