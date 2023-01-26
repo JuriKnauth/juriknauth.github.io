@@ -844,6 +844,9 @@ figure p {
   .dropbtn {
     padding: 14px 10px;
   }
+  .switchContainer {
+    grid-template-columns: repeat(1, 1);
+  }
 }
 @media screen and (min-width: 800px) {
   .column,
@@ -855,6 +858,9 @@ figure p {
   .first-article .article-body {
     flex: 1;
   }
+  .switchContainer {
+    grid-template-columns: repeat(2, 1);
+  }
 }
 @media screen and (min-width: 1000px) {
   .first-article {
@@ -862,6 +868,9 @@ figure p {
   }
   .first-article .article-body {
     flex: 1;
+  }
+  .switchContainer {
+    grid-template-columns: repeat(3, 1);
   }
 }
 .tablinkdum {
@@ -925,6 +934,21 @@ figure p {
     "Avant Garde", Futura, sans-serif;
   margin: 2px;
   padding: 18px 9px 18px 9px;
+}
+.switchContainer {
+  grid-template-columns: repeat(4, 1);
+  display: grid;
+  width: 100%;
+  column-gap: 4px;
+  row-gap: 4px;
+  justify-content: center;
+  align-content: center;
+}
+.switchElement {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 .switch {
   position: relative;
@@ -1356,7 +1380,6 @@ tr:nth-child(even) {
   cursor: pointer;
   border-radius: 60px;
   padding: 2px;
-  width: 155px;
   height: 25px;
   overflow: hidden;
 }
