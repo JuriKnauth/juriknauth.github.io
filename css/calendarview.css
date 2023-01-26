@@ -1,30 +1,27 @@
-div.calendar
-{
+div.calendar {
   color: #000;
-  font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
-  -moz-box-shadow:0px 0px 8px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow:0px 0px 8px rgba(0, 0, 0, 0.5);
-  box-shadow:0px 0px 8px rgba(0, 0, 0, 0.5);
-  
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
 }
 
-div.calendar.popup
-{
+div.calendar.popup {
   margin-left: -40px;
   margin-top: -100px;
-  z-index:100000;
+  z-index: 100000;
 }
-div.calendar td.weekend{
-    background:#b5cfe9;
+div.calendar td.weekend {
+  background: #b5cfe9;
 }
-div.calendar .today{
-    background: #D9360D !important;
+div.calendar .today {
+  background: #d9360d !important;
 }
-div.calendar .title, div.calendar .button{
-    color:#f9621a;
+div.calendar .title,
+div.calendar .button {
+  color: #f9621a;
 }
-div.calendar table
-{
+div.calendar table {
   background-color: #eee;
   border: 1px solid #aaa;
   border-collapse: collapse;
@@ -35,20 +32,17 @@ div.calendar thead {
 }
 
 div.calendar td,
-div.calendar th
-{
+div.calendar th {
   font-size: 11px;
   padding: 3px;
   text-align: center;
 }
 
-div.calendar td.title
-{
+div.calendar td.title {
   font-weight: bold;
 }
 
-div.calendar th
-{
+div.calendar th {
   background: #ddd;
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
@@ -64,8 +58,7 @@ div.calendar tr.days td {
 }
 
 div.calendar tr.days td:hover:not(.unselectable),
-div.calendar td.button:hover:not(.unselectable)
-{
+div.calendar td.button:hover:not(.unselectable) {
   background-color: #0178b8;
   color: #fff;
   cursor: pointer;
@@ -75,26 +68,21 @@ div.calendar td.button:hover:not(.unselectable)
   cursor: default !important;
 }
 
-div.calendar tr.days td:active
-div.calendar td.button:active
-{
+div.calendar tr.days td:active div.calendar td.button:active {
   background-color: #cde;
 }
 
-div.calendar tr.days td.selected
-{
+div.calendar tr.days td.selected {
   font-weight: bold;
   background-color: #fff;
   color: #000;
 }
 
-div.calendar tr.days td.today
-{
+div.calendar tr.days td.today {
   font-weight: bold;
   color: #fff;
 }
 
-div.calendar tr.days td.otherDay
-{
-  color: #95959A;
+div.calendar tr.days td.otherDay {
+  color: #95959a;
 }
