@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
 <html lang="en-US">
-
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=0.85" name="viewport">
@@ -28,7 +27,6 @@
             $("#loadprojectsmenu").load("ProjectsMenu.html");
             $("#loadcontactmenu").load("ContactMenu.html");
         });
-
         function toggleDiv(attribute) {
             var elements = document.getElementsByClassName("infoClass");
             for (i = 0; i < elements.length; i++) {
@@ -46,106 +44,83 @@
         #toggle-1+label:before {
             content: "News";
         }
-
         #toggle-1+label:after {
             content: "News";
         }
-
         #toggle-2+label:before {
             content: "Game Jam";
         }
-
         #toggle-2+label:after {
             content: "Game Jam";
         }
-
         #toggle-3+label:before {
             content: "Game Design";
         }
-
         #toggle-3+label:after {
             content: "Game Design";
         }
-
         #toggle-4+label:before {
             content: "Level Design";
         }
-
         #toggle-4+label:after {
             content: "Level Design";
         }
-
         #toggle-5+label:before {
             content: "Board Game";
         }
-
         #toggle-5+label:after {
             content: "Board Game";
         }
-
         #toggle-6+label:before {
             content: "2D Art";
         }
-
         #toggle-6+label:after {
             content: "2D Art";
         }
-
         #toggle-7+label:before {
             content: "3D Art";
         }
-
         #toggle-7+label:after {
             content: "3D Art";
         }
-
         #toggle-8+label:before {
             content: "Motion";
         }
-
         #toggle-8+label:after {
             content: "Motion";
         }
-
         #toggle-9+label:before {
             content: "Web";
         }
-
         #toggle-9+label:after {
             content: "Web";
         }
-
         #toggle-10+label:before {
             content: "Programming";
         }
-
         #toggle-10+label:after {
             content: "Programming";
         }
-
         #toggle-11+label:before {
             content: "Other";
         }
-
         #toggle-11+label:after {
             content: "Other";
         }
     </style>
 </head>
-
 <body>
     <div class="containerBG">
         <div class="main">
             <div id="mainmenu">
                 <header>
                     <nav>
-
                         <div class="dropdown linavb">
                             <a href="/" id="DefaultI" class="dropbtnimg">
                                 <picture class="logo" style="text-align:left;">
                                     <source srcset="jkiconcropD.webp" type="image/webp">
-                                    <img loading="lazy" src="jkiconcropD.png" alt="logo"width="52"
-                                        height="52" style="text-align:left;">
+                                    <img loading="lazy" src="jkiconcropD.png" alt="logo" width="52" height="52"
+                                        style="text-align:left;">
                                 </picture>
                             </a>
                             <div id="loadindexmenu"> </div>
@@ -162,7 +137,6 @@
                                 class="dropbtn"><strong>Contact</strong></a>
                             <div id="loadcontactmenu"> </div>
                         </div>
-
                     </nav>
                 </header>
             </div>
@@ -176,52 +150,50 @@
                     <a class="anchor" id="Blog" name="Blog"></a>
                     <h2 class="article-titleL"> Blog</h2>
                     <br>
-                    <div class="columns">
-                        <div class="nested-column" style="margin: 4px;">
-                            <div class="switch">
-                                <input id="toggle-1" class="toggle toggle-round-right-left" type="checkbox" checked>
-                                <label for="toggle-1" onclick="toggleDiv('News')"></label>
-                            </div>
-                            <div class="switch">
-                                <input id="toggle-2" class="toggle toggle-round-right-left" type="checkbox" checked>
-                                <label for="toggle-2" onclick="toggleDiv('Game Jam')"></label>
-                            </div>
-                            <div class="switch">
-                                <input id="toggle-3" class="toggle toggle-round-right-left" type="checkbox" checked>
-                                <label for="toggle-3" onclick="toggleDiv('Game Design')"></label>
-                            </div>
-                            <div class="switch">
-                                <input id="toggle-4" class="toggle toggle-round-right-left" type="checkbox" checked>
-                                <label for="toggle-4" onclick="toggleDiv('Level Design')"></label>
-                            </div>
-                            <div class="switch">
-                                <input id="toggle-5" class="toggle toggle-round-right-left" type="checkbox" checked>
-                                <label for="toggle-5" onclick="toggleDiv('Board Game')"></label>
-                            </div>
-                            <div class="switch">
-                                <input id="toggle-6" class="toggle toggle-round-right-left" type="checkbox" checked>
-                                <label for="toggle-6" onclick="toggleDiv('2D Art')"></label>
-                            </div>
-                            <div class="switch">
-                                <input id="toggle-7" class="toggle toggle-round-right-left" type="checkbox" checked>
-                                <label for="toggle-7" onclick="toggleDiv('3D Art')"></label>
-                            </div>
-                            <div class="switch">
-                                <input id="toggle-8" class="toggle toggle-round-right-left" type="checkbox" checked>
-                                <label for="toggle-8" onclick="toggleDiv('Motion')"></label>
-                            </div>
-                            <div class="switch">
-                                <input id="toggle-9" class="toggle toggle-round-right-left" type="checkbox" checked>
-                                <label for="toggle-9" onclick="toggleDiv('Web')"></label>
-                            </div>
-                            <div class="switch">
-                                <input id="toggle-10" class="toggle toggle-round-right-left" type="checkbox" checked>
-                                <label for="toggle-10" onclick="toggleDiv('Programming')"></label>
-                            </div>
-                            <div class="switch">
-                                <input id="toggle-11" class="toggle toggle-round-right-left" type="checkbox" checked>
-                                <label for="toggle-11" onclick="toggleDiv('Other')"></label>
-                            </div>
+                    <div class="switchcontainer">
+                        <div class="switchelement">
+                            <input id="toggle-1" class="toggle toggle-round-right-left" type="checkbox" checked>
+                            <label for="toggle-1" onclick="toggleDiv('News')"></label>
+                        </div>
+                        <div class="switchelement">
+                            <input id="toggle-2" class="toggle toggle-round-right-left" type="checkbox" checked>
+                            <label for="toggle-2" onclick="toggleDiv('Game Jam')"></label>
+                        </div>
+                        <div class="switchelement">
+                            <input id="toggle-3" class="toggle toggle-round-right-left" type="checkbox" checked>
+                            <label for="toggle-3" onclick="toggleDiv('Game Design')"></label>
+                        </div>
+                        <div class="switchelement">
+                            <input id="toggle-4" class="toggle toggle-round-right-left" type="checkbox" checked>
+                            <label for="toggle-4" onclick="toggleDiv('Level Design')"></label>
+                        </div>
+                        <div class="switchelement">
+                            <input id="toggle-5" class="toggle toggle-round-right-left" type="checkbox" checked>
+                            <label for="toggle-5" onclick="toggleDiv('Board Game')"></label>
+                        </div>
+                        <div class="switchelement">
+                            <input id="toggle-6" class="toggle toggle-round-right-left" type="checkbox" checked>
+                            <label for="toggle-6" onclick="toggleDiv('2D Art')"></label>
+                        </div>
+                        <div class="switchelement">
+                            <input id="toggle-7" class="toggle toggle-round-right-left" type="checkbox" checked>
+                            <label for="toggle-7" onclick="toggleDiv('3D Art')"></label>
+                        </div>
+                        <div class="switchelement">
+                            <input id="toggle-8" class="toggle toggle-round-right-left" type="checkbox" checked>
+                            <label for="toggle-8" onclick="toggleDiv('Motion')"></label>
+                        </div>
+                        <div class="switchelement">
+                            <input id="toggle-9" class="toggle toggle-round-right-left" type="checkbox" checked>
+                            <label for="toggle-9" onclick="toggleDiv('Web')"></label>
+                        </div>
+                        <div class="switchelement">
+                            <input id="toggle-10" class="toggle toggle-round-right-left" type="checkbox" checked>
+                            <label for="toggle-10" onclick="toggleDiv('Programming')"></label>
+                        </div>
+                        <div class="switchelement">
+                            <input id="toggle-11" class="toggle toggle-round-right-left" type="checkbox" checked>
+                            <label for="toggle-11" onclick="toggleDiv('Other')"></label>
                         </div>
                     </div>
                 </div>
@@ -3213,5 +3185,4 @@
         <div id="loadbotbar" class="bottomMain"> </div>
     </div>
 </body>
-
 </html>

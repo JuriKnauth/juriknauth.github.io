@@ -36,7 +36,6 @@
         $("#loadprojectsmenu").load("ProjectsMenu.html");
         $("#loadcontactmenu").load("ContactMenu.html");
       });
-
       function toggleDiv(attribute) {
         var elements = document.getElementsByClassName("infoClass");
         for (i = 0; i < elements.length; i++) {
@@ -54,29 +53,23 @@
       #toggle-1 + label:before {
         content: "Development";
       }
-
       #toggle-1 + label:after {
         content: "Development";
       }
-
       #toggle-2 + label:before {
         content: "Design";
       }
-
       #toggle-2 + label:after {
         content: "Design";
       }
-
       #toggle-3 + label:before {
         content: "Mentor";
       }
-
       #toggle-3 + label:after {
         content: "Mentor";
       }
     </style>
   </head>
-
   <body>
     <div class="containerBG">
       <div class="main">
@@ -121,43 +114,40 @@
               <em>An overview of the services I offer. <br /></em>
             </p>
           </div>
-
           <div class="articlebody">
             <a class="anchor" id="Services" name="Services"></a>
             <h2 class="article-titleL">Services</h2>
             <br />
-            <div class="columns">
-              <div class="nested-column" style="margin: 4px">
-                <div class="switch">
-                  <input
-                    id="toggle-1"
-                    class="toggle toggle-round-right-left"
-                    type="checkbox"
-                    checked
-                  />
-                  <label
-                    for="toggle-1"
-                    onclick="toggleDiv('Development')"
-                  ></label>
-                </div>
-                <div class="switch">
-                  <input
-                    id="toggle-2"
-                    class="toggle toggle-round-right-left"
-                    type="checkbox"
-                    checked
-                  />
-                  <label for="toggle-2" onclick="toggleDiv('Design')"></label>
-                </div>
-                <div class="switch">
-                  <input
-                    id="toggle-3"
-                    class="toggle toggle-round-right-left"
-                    type="checkbox"
-                    checked
-                  />
-                  <label for="toggle-3" onclick="toggleDiv('Mentor')"></label>
-                </div>
+            <div class="switchcontainer">
+              <div class="switchelement">
+                <input
+                  id="toggle-1"
+                  class="toggle toggle-round-right-left"
+                  type="checkbox"
+                  checked
+                />
+                <label
+                  for="toggle-1"
+                  onclick="toggleDiv('Development')"
+                ></label>
+              </div>
+              <div class="switchelement">
+                <input
+                  id="toggle-2"
+                  class="toggle toggle-round-right-left"
+                  type="checkbox"
+                  checked
+                />
+                <label for="toggle-2" onclick="toggleDiv('Design')"></label>
+              </div>
+              <div class="switchelement">
+                <input
+                  id="toggle-3"
+                  class="toggle toggle-round-right-left"
+                  type="checkbox"
+                  checked
+                />
+                <label for="toggle-3" onclick="toggleDiv('Mentor')"></label>
               </div>
             </div>
           </div>
