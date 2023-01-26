@@ -845,7 +845,12 @@ figure p {
     padding: 14px 10px;
   }
 }
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 349px) {
+  .switchContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 350px) {
   .switchContainer {
     grid-template-columns: repeat(2, 1fr);
   }
