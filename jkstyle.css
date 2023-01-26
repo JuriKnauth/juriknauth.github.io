@@ -1268,65 +1268,65 @@ a.anchor {
   list-style-type: none;
 }
 .Default {
-  color: #fff;
+  color: #fff !important;
 }
 .DefaultI {
-  color: #fff;
-  box-shadow: 2px 0px #b2bec3;
+  color: #fff !important;
+  box-shadow: 2px 0px #b2bec3!important;
 }
 .DefaultB {
-  color: #fff;
-  box-shadow: 2px 0px #d63031;
+  color: #fff !important;
+  box-shadow: 2px 0px #d63031!important;
 }
 .DefaultS {
-  color: #fff;
-  box-shadow: 2px 0px #d63031;
+  color: #fff !important;
+  box-shadow: 2px 0px #d63031!important;
 }
 .DefaultP {
-  color: #fff;
-  box-shadow: 2px 0px #fdcb6e;
+  color: #fff !important;
+  box-shadow: 2px 0px #fdcb6e !important;
 }
 .DefaultC {
-  color: #fff;
-  box-shadow: 2px 0px #81ecec;
+  color: #fff !important;
+  box-shadow: 2px 0px #81ecec !important;
 }
 .Index {
-  color: #000;
-  background-color: #b2bec3;
-  box-shadow: 2px 0px #b2bec3;
+  color: #000 !important;
+  background-color: #b2bec3 !important;
+  box-shadow: 2px 0px #b2bec3 !important;
 }
 .IndexB,
 .IndexC {
-  background-color: #b2bec3;
+  background-color: #b2bec3 !important;
 }
 .Services,
 .Blog {
-  color: #000;
-  background-color: #d63031;
-  box-shadow: 2px 0px #d63031;
+  color: #000 !important;
+  background-color: #d63031 !important;
+  box-shadow: 2px 0px #d63031 !important;
 }
 .Projects {
-  color: #000;
-  background-color: #fdcb6e;
-  box-shadow: 2px 0px #fdcb6e;
+  color: #000 !important;
+  background-color: #fdcb6e !important;
+  box-shadow: 2px 0px #fdcb6e !important;
 }
 .Contact {
-  color: #000;
-  background-color: #81ecec;
-  box-shadow: 2px 0px #81ecec;
+  color: #000 !important;
+  background-color: #81ecec !important;
+  box-shadow: 2px 0px #81ecec !important;
 }
 .ServicesB,
 .BlogB {
-  background-color: #d63031;
+  background-color: #d63031 !important;
 }
 .ProjectsB {
-  background-color: #fdcb6e;
+  background-color: #fdcb6e !important;
 }
 .ContactB {
-  background-color: #81ecec;
+  background-color: #81ecec !important;
 }
 .ContactV {
-  background-color: #b71540;
+  background-color: #b71540 !important;
 }
 .img-fluid:hover,
 .img:hover,
