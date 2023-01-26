@@ -1267,65 +1267,65 @@ a.anchor {
 .nobull {
   list-style-type: none;
 }
-#Default {
+.Default {
   color: #fff;
 }
-#DefaultI {
+.DefaultI {
   color: #fff;
   box-shadow: 2px 0px #b2bec3;
 }
-#DefaultB {
+.DefaultB {
   color: #fff;
   box-shadow: 2px 0px #d63031;
 }
-#DefaultS {
+.DefaultS {
   color: #fff;
   box-shadow: 2px 0px #d63031;
 }
-#DefaultP {
+.DefaultP {
   color: #fff;
   box-shadow: 2px 0px #fdcb6e;
 }
-#DefaultC {
+.DefaultC {
   color: #fff;
   box-shadow: 2px 0px #81ecec;
 }
-#Index {
+.Index {
   color: #000;
   background-color: #b2bec3;
   box-shadow: 2px 0px #b2bec3;
 }
-#IndexB,
-#IndexC {
+.IndexB,
+.IndexC {
   background-color: #b2bec3;
 }
-#Services,
-#Blog {
+.Services,
+.Blog {
   color: #000;
   background-color: #d63031;
   box-shadow: 2px 0px #d63031;
 }
-#Projects {
+.Projects {
   color: #000;
   background-color: #fdcb6e;
   box-shadow: 2px 0px #fdcb6e;
 }
-#Contact {
+.Contact {
   color: #000;
   background-color: #81ecec;
   box-shadow: 2px 0px #81ecec;
 }
-#ServicesB,
-#BlogB {
+.ServicesB,
+.BlogB {
   background-color: #d63031;
 }
-#ProjectsB {
+.ProjectsB {
   background-color: #fdcb6e;
 }
-#ContactB {
+.ContactB {
   background-color: #81ecec;
 }
-#ContactV {
+.ContactV {
   background-color: #b71540;
 }
 .img-fluid:hover,
