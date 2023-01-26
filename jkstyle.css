@@ -250,6 +250,10 @@ section {
   margin: auto;
   overflow: hidden;
 }
+iframe{
+  border: none;
+  overflow: hidden;
+}
 .Slides,
 .Slides1,
 .Slides2 {
