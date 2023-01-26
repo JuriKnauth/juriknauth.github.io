@@ -866,17 +866,17 @@ figure p {
 }
 @media (min-width: 360px) {
   .switchContainer {
-    grid-template-columns: repeat(2, 1);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 800px) {
   .switchContainer {
-    grid-template-columns: repeat(3, 1);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 1000px) {
   .switchContainer {
-    grid-template-columns: repeat(4, 1);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .tablinkdum {
@@ -942,7 +942,7 @@ figure p {
   padding: 18px 9px 18px 9px;
 }
 .switchContainer {
-  grid-template-columns: repeat(4, 1);
+  grid-template-columns: repeat(4, 1fr);
   display: grid;
   width: 100%;
   column-gap: 4px;
@@ -953,7 +953,6 @@ figure p {
 .switchElement {
   position: relative;
   display: inline-block;
-  width: 60px;
   height: 34px;
 }
 .switch {
