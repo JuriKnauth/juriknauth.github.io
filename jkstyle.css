@@ -849,6 +849,7 @@ figure p {
   .switchContainer {
     grid-template-columns: repeat(2, 1fr);
   }
+}
 @media screen and (min-width: 800px) {
   .column,
   .columns {
