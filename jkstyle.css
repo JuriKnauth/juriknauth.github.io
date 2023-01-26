@@ -844,6 +844,9 @@ figure p {
   .dropbtn {
     padding: 14px 10px;
   }
+  .switchContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media screen and (min-width: 800px) {
   .column,
@@ -855,6 +858,9 @@ figure p {
   .first-article .article-body {
     flex: 1;
   }
+  .switchContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media screen and (min-width: 1000px) {
   .first-article {
@@ -863,18 +869,6 @@ figure p {
   .first-article .article-body {
     flex: 1;
   }
-}
-@media (min-width: 360px) {
-  .switchContainer {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 800px) {
-  .switchContainer {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (min-width: 1000px) {
   .switchContainer {
     grid-template-columns: repeat(4, 1fr);
   }
