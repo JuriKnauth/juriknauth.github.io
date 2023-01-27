@@ -667,7 +667,6 @@ figure p {
   flex-wrap: wrap;
   height: 100%;
   margin: 10px 0px 0px 0px;
-  padding-right: 4px;
 }
 .article:focus,
 .article:hover {
@@ -795,6 +794,9 @@ figure p {
   font-size: 0.85em;
   line-height: 1.2;
   text-align: right;
+}
+.Title{
+  padding-left: 5px;
 }
 .bot-info {
   color: #fff;
