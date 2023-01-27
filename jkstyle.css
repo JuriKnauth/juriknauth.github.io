@@ -1496,24 +1496,24 @@ input.toggle-round-right-left:checked+label:after {
   text-align: -webkit-center;
   text-align: -moz-center;
 }
-#Green {
+.Green {
   color: #00b894;
 }
-#Red {
+.Red {
   color: #d63031;
 }
-#Yellow {
+.Yellow {
   color: #fdcb6e;
 }
-#Purple {
+.Purple {
   color: #6c5ce7;
 }
-#Blue {
+.Blue {
   color: #0984e3;
 }
-#Teal {
+.Teal {
   color: #00cec9;
 }
-#Orange {
+.Orange {
   color: #e17055;
 }
