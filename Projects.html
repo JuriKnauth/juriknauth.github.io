@@ -54,14 +54,12 @@
         $("#loadcontactmenu").load("ContactMenu.html");
       });
       function toggleDiv(attribute) {
-        let elements = document.getElementsByClassName("infoClass");
+        let elements = document.getElementsByClassName(attribute);
         for (i = 0; i < elements.length; i++) {
-          if (elements[i].id === attribute) {
-            if (elements[i].style.display === "none") {
-              elements[i].style.display = "block";
-            } else {
-              elements[i].style.display = "none";
-            }
+          if (elements[i].style.display === "none") {
+            elements[i].style.display = "block";
+          } else {
+            elements[i].style.display = "none";
           }
         }
       }
@@ -231,7 +229,10 @@
                   class="toggle toggle-round-right-left"
                   type="checkbox"
                 />
-                <label for="toggle-4" onclick="toggleDiv('Players')"></label>
+                <label
+                  for="toggle-4"
+                  onclick="toggleDiv('PlayerCount')"
+                ></label>
               </div>
               <div class="switchelement">
                 <input
@@ -319,7 +320,7 @@
                   </div>
                   <div class="article-body">
                     <div class="article-content">
-                      <div class="infoClass" id="Title">
+                      <div class="infoClass Title">
                         <h6><strong>Swear To God</strong></h6>
                       </div>
                     </div>
@@ -338,54 +339,34 @@
                           id="Ranking"
                           style="display: none"
                         ></li>
-                        <li class="infoClass" id="Genre" style="display: none">
+                        <li class="infoClass Genre" style="display: none">
                           <strong>Genre: </strong> Platformer, Educational
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Players"
-                          style="display: none"
-                        >
+                        <li class="infoClass PlayerCount" style="display: none">
                           <strong>Player Count: </strong> 1
                         </li>
-                        <li class="infoClass" id="Age" style="display: none">
+                        <li class="infoClass Age" style="display: none">
                           <strong>Age rating: </strong> 12
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Platform"
-                          style="display: none"
-                        >
+                        <li class="infoClass Platform" style="display: none">
                           <strong>Platform: </strong> PC
                         </li>
-                        <li class="infoClass" id="Input" style="display: none">
+                        <li class="infoClass Input" style="display: none">
                           <strong>Input: </strong> Keyboard and Mouse
                         </li>
-                        <li class="infoClass" id="Status" style="display: none">
+                        <li class="infoClass Status" style="display: none">
                           <strong>Status: </strong> Released Versin 1.2
                         </li>
-                        <li
-                          class="infoClass"
-                          id="TeamSize"
-                          style="display: none"
-                        >
+                        <li class="infoClass TeamSize" style="display: none">
                           <strong>Team size: </strong> 1
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Position"
-                          style="display: none"
-                        >
+                        <li class="infoClass Position" style="display: none">
                           <strong>Position: </strong> Solo Game Developer
                         </li>
-                        <li class="infoClass" id="Date" style="display: none">
+                        <li class="infoClass Date" style="display: none">
                           <strong>Date: </strong> 2020/04/30
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Updated"
-                          style="display: none"
-                        >
+                        <li class="infoClass Updated" style="display: none">
                           <strong>Updated: </strong> 2020/05/19
                         </li>
                       </ul>
@@ -413,7 +394,7 @@
                   </div>
                   <div class="article-body">
                     <div class="article-content">
-                      <div class="infoClass" id="Title">
+                      <div class="infoClass Title">
                         <h6><strong>A Shot In The Dark</strong></h6>
                       </div>
                     </div>
@@ -432,54 +413,34 @@
                           id="Ranking"
                           style="display: none"
                         ></li>
-                        <li class="infoClass" id="Genre" style="display: none">
+                        <li class="infoClass Genre" style="display: none">
                           <strong>Genre: </strong> Twin-Stick, Top-Down-Shooter
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Players"
-                          style="display: none"
-                        >
+                        <li class="infoClass PlayerCount" style="display: none">
                           <strong>Player Count: </strong> 2-4 Local-Multiplayer
                         </li>
-                        <li class="infoClass" id="Age" style="display: none">
+                        <li class="infoClass Age" style="display: none">
                           <strong>Age rating: </strong> 12
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Platform"
-                          style="display: none"
-                        >
+                        <li class="infoClass Platform" style="display: none">
                           <strong>Platform: </strong> PC
                         </li>
-                        <li class="infoClass" id="Input" style="display: none">
+                        <li class="infoClass Input" style="display: none">
                           <strong>Input: </strong> Gamepad
                         </li>
-                        <li class="infoClass" id="Status" style="display: none">
+                        <li class="infoClass Status" style="display: none">
                           <strong>Status: </strong> Released Versin 0.2
                         </li>
-                        <li
-                          class="infoClass"
-                          id="TeamSize"
-                          style="display: none"
-                        >
+                        <li class="infoClass TeamSize" style="display: none">
                           <strong>Team size: </strong> 4
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Position"
-                          style="display: none"
-                        >
+                        <li class="infoClass Position" style="display: none">
                           <strong>Position: </strong> Game Developer
                         </li>
-                        <li class="infoClass" id="Date" style="display: none">
+                        <li class="infoClass Date" style="display: none">
                           <strong>Date: </strong> 2019/04
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Updated"
-                          style="display: none"
-                        >
+                        <li class="infoClass Updated" style="display: none">
                           <strong>Updated: </strong>
                         </li>
                       </ul>
@@ -507,7 +468,7 @@
                   </div>
                   <div class="article-body">
                     <div class="article-content">
-                      <div class="infoClass" id="Title">
+                      <div class="infoClass Title">
                         <h6><strong>Pirate Splashy</strong></h6>
                       </div>
                     </div>
@@ -526,56 +487,36 @@
                           id="Ranking"
                           style="display: none"
                         ></li>
-                        <li class="infoClass" id="Genre" style="display: none">
+                        <li class="infoClass Genre" style="display: none">
                           <strong>Genre: </strong> Party
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Players"
-                          style="display: none"
-                        >
+                        <li class="infoClass PlayerCount" style="display: none">
                           <strong>Player Count: </strong> 1-6 Local-Multiplayer
                         </li>
-                        <li class="infoClass" id="Age" style="display: none">
+                        <li class="infoClass Age" style="display: none">
                           <strong>Age rating: </strong> 0
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Platform"
-                          style="display: none"
-                        >
+                        <li class="infoClass Platform" style="display: none">
                           <strong>Platform: </strong> Xbox One, PC
                         </li>
-                        <li class="infoClass" id="Input" style="display: none">
+                        <li class="infoClass Input" style="display: none">
                           <strong>Input: </strong> Kinect, Webcam, Gamepad,
                           Keyboard
                         </li>
-                        <li class="infoClass" id="Status" style="display: none">
+                        <li class="infoClass Status" style="display: none">
                           <strong>Status: </strong> Closed Beta
                         </li>
-                        <li
-                          class="infoClass"
-                          id="TeamSize"
-                          style="display: none"
-                        >
+                        <li class="infoClass TeamSize" style="display: none">
                           <strong>Team size: </strong> 4
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Position"
-                          style="display: none"
-                        >
+                        <li class="infoClass Position" style="display: none">
                           <strong>Position: </strong> Product Owner, Game
                           Designer and Developer
                         </li>
-                        <li class="infoClass" id="Date" style="display: none">
+                        <li class="infoClass Date" style="display: none">
                           <strong>Date: </strong> 2017/07
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Updated"
-                          style="display: none"
-                        >
+                        <li class="infoClass Updated" style="display: none">
                           <strong>Updated: </strong>
                         </li>
                       </ul>
@@ -603,7 +544,7 @@
                   </div>
                   <div class="article-body">
                     <div class="article-content">
-                      <div class="infoClass" id="Title">
+                      <div class="infoClass Title">
                         <h6><strong>Ninja Car</strong></h6>
                       </div>
                     </div>
@@ -622,55 +563,35 @@
                           id="Ranking"
                           style="display: none"
                         ></li>
-                        <li class="infoClass" id="Genre" style="display: none">
+                        <li class="infoClass Genre" style="display: none">
                           <strong>Genre: </strong> Racing
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Players"
-                          style="display: none"
-                        >
+                        <li class="infoClass PlayerCount" style="display: none">
                           <strong>Player Count: </strong> 1-2 Local-Multiplayer
                         </li>
-                        <li class="infoClass" id="Age" style="display: none">
+                        <li class="infoClass Age" style="display: none">
                           <strong>Age rating: </strong> 6
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Platform"
-                          style="display: none"
-                        >
+                        <li class="infoClass Platform" style="display: none">
                           <strong>Platform: </strong> Android
                         </li>
-                        <li class="infoClass" id="Input" style="display: none">
+                        <li class="infoClass Input" style="display: none">
                           <strong>Input: </strong> Touch
                         </li>
-                        <li class="infoClass" id="Status" style="display: none">
+                        <li class="infoClass Status" style="display: none">
                           <strong>Status: </strong> Released Demo
                         </li>
-                        <li
-                          class="infoClass"
-                          id="TeamSize"
-                          style="display: none"
-                        >
+                        <li class="infoClass TeamSize" style="display: none">
                           <strong>Team size: </strong> 2
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Position"
-                          style="display: none"
-                        >
+                        <li class="infoClass Position" style="display: none">
                           <strong>Position: </strong> Game Developer, Game
                           Designer
                         </li>
-                        <li class="infoClass" id="Date" style="display: none">
+                        <li class="infoClass Date" style="display: none">
                           <strong>Date: </strong> 2018/11
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Updated"
-                          style="display: none"
-                        >
+                        <li class="infoClass Updated" style="display: none">
                           <strong>Updated: </strong>
                         </li>
                       </ul>
@@ -702,7 +623,7 @@
                   </div>
                   <div class="article-body">
                     <div class="article-content">
-                      <div class="infoClass" id="Title">
+                      <div class="infoClass Title">
                         <h6><strong>Chloe and Brendan 2018</strong></h6>
                       </div>
                     </div>
@@ -721,56 +642,36 @@
                           id="Ranking"
                           style="display: none"
                         ></li>
-                        <li class="infoClass" id="Genre" style="display: none">
+                        <li class="infoClass Genre" style="display: none">
                           <strong>Genre: </strong> Romance, Story, Personalized
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Players"
-                          style="display: none"
-                        >
+                        <li class="infoClass PlayerCount" style="display: none">
                           <strong>Player Count: </strong> 2 Server-based
                           networked multiplayer
                         </li>
-                        <li class="infoClass" id="Age" style="display: none">
+                        <li class="infoClass Age" style="display: none">
                           <strong>Age rating: </strong> 0
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Platform"
-                          style="display: none"
-                        >
+                        <li class="infoClass Platform" style="display: none">
                           <strong>Platform: </strong> Android
                         </li>
-                        <li class="infoClass" id="Input" style="display: none">
+                        <li class="infoClass Input" style="display: none">
                           <strong>Input: </strong> Touch
                         </li>
-                        <li class="infoClass" id="Status" style="display: none">
+                        <li class="infoClass Status" style="display: none">
                           <strong>Status: </strong> Closed Alpha - Paused
                         </li>
-                        <li
-                          class="infoClass"
-                          id="TeamSize"
-                          style="display: none"
-                        >
+                        <li class="infoClass TeamSize" style="display: none">
                           <strong>Team size: </strong> 2
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Position"
-                          style="display: none"
-                        >
+                        <li class="infoClass Position" style="display: none">
                           <strong>Position: </strong> Game Developer, Game
                           Designer
                         </li>
-                        <li class="infoClass" id="Date" style="display: none">
+                        <li class="infoClass Date" style="display: none">
                           <strong>Date: </strong> 2018/05
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Updated"
-                          style="display: none"
-                        >
+                        <li class="infoClass Updated" style="display: none">
                           <strong>Updated: </strong>
                         </li>
                       </ul>
@@ -802,7 +703,7 @@
                   </div>
                   <div class="article-body">
                     <div class="article-content">
-                      <div class="infoClass" id="Title">
+                      <div class="infoClass Title">
                         <h6><strong>You Are On The Wrong Path</strong></h6>
                       </div>
                     </div>
@@ -821,54 +722,34 @@
                           id="Ranking"
                           style="display: none"
                         ></li>
-                        <li class="infoClass" id="Genre" style="display: none">
+                        <li class="infoClass Genre" style="display: none">
                           <strong>Genre: </strong> Arcade, Action
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Players"
-                          style="display: none"
-                        >
+                        <li class="infoClass PlayerCount" style="display: none">
                           <strong>Player Count: </strong> 1-2 Local-Multiplayer
                         </li>
-                        <li class="infoClass" id="Age" style="display: none">
+                        <li class="infoClass Age" style="display: none">
                           <strong>Age rating: </strong> 12
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Platform"
-                          style="display: none"
-                        >
+                        <li class="infoClass Platform" style="display: none">
                           <strong>Platform: </strong> PC
                         </li>
-                        <li class="infoClass" id="Input" style="display: none">
+                        <li class="infoClass Input" style="display: none">
                           <strong>Input: </strong> Gamepad
                         </li>
-                        <li class="infoClass" id="Status" style="display: none">
+                        <li class="infoClass Status" style="display: none">
                           <strong>Status: </strong> Released Versin 1.2
                         </li>
-                        <li
-                          class="infoClass"
-                          id="TeamSize"
-                          style="display: none"
-                        >
+                        <li class="infoClass TeamSize" style="display: none">
                           <strong>Team size: </strong> 1
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Position"
-                          style="display: none"
-                        >
+                        <li class="infoClass Position" style="display: none">
                           <strong>Position: </strong> Solo Game Developer
                         </li>
-                        <li class="infoClass" id="Date" style="display: none">
+                        <li class="infoClass Date" style="display: none">
                           <strong>Date: </strong> 2020/04/21
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Updated"
-                          style="display: none"
-                        >
+                        <li class="infoClass Updated" style="display: none">
                           <strong>Updated: </strong> 2020/04/21
                         </li>
                       </ul>
@@ -893,7 +774,7 @@
                   </div>
                   <div class="article-body">
                     <div class="article-content">
-                      <div class="infoClass" id="Title">
+                      <div class="infoClass Title">
                         <h6><strong>Bachelor thesis: MDAPPRC</strong></h6>
                       </div>
                     </div>
@@ -918,8 +799,7 @@
                           style="display: none"
                         ></li>
                         <li
-                          class="infoClass"
-                          id="Players"
+                          class="infoClass PlayerCount"
                           style="display: none"
                         ></li>
                         <li
@@ -928,8 +808,7 @@
                           style="display: none"
                         ></li>
                         <li
-                          class="infoClass"
-                          id="Platform"
+                          class="infoClass Platform"
                           style="display: none"
                         ></li>
                         <li
@@ -937,31 +816,19 @@
                           id="Input"
                           style="display: none"
                         ></li>
-                        <li class="infoClass" id="Status" style="display: none">
+                        <li class="infoClass Status" style="display: none">
                           <strong>Status: </strong> Certified
                         </li>
-                        <li
-                          class="infoClass"
-                          id="TeamSize"
-                          style="display: none"
-                        >
+                        <li class="infoClass TeamSize" style="display: none">
                           <strong>Team size: </strong> 1
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Position"
-                          style="display: none"
-                        >
+                        <li class="infoClass Position" style="display: none">
                           <strong>Position: </strong> Researcher
                         </li>
-                        <li class="infoClass" id="Date" style="display: none">
+                        <li class="infoClass Date" style="display: none">
                           <strong>Date: </strong> 2019/01
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Updated"
-                          style="display: none"
-                        >
+                        <li class="infoClass Updated" style="display: none">
                           <strong>Updated: </strong>
                         </li>
                       </ul>
@@ -989,7 +856,7 @@
                   </div>
                   <div class="article-body">
                     <div class="article-content">
-                      <div class="infoClass" id="Title">
+                      <div class="infoClass Title">
                         <h6><strong>Endstation</strong></h6>
                       </div>
                     </div>
@@ -1008,51 +875,31 @@
                           id="Ranking"
                           style="display: none"
                         ></li>
-                        <li class="infoClass" id="Genre" style="display: none">
+                        <li class="infoClass Genre" style="display: none">
                           <strong>Genre: </strong> Riddles, Puzzle
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Players"
-                          style="display: none"
-                        >
+                        <li class="infoClass PlayerCount" style="display: none">
                           <strong>Player Count: </strong> 2-4
                         </li>
-                        <li class="infoClass" id="Age" style="display: none">
+                        <li class="infoClass Age" style="display: none">
                           <strong>Age rating: </strong> 6
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Platform"
-                          style="display: none"
-                        >
+                        <li class="infoClass Platform" style="display: none">
                           <strong>Platform: </strong> Escape Room
                         </li>
-                        <li class="infoClass" id="Status" style="display: none">
+                        <li class="infoClass Status" style="display: none">
                           <strong>Status: </strong> Dismantled
                         </li>
-                        <li
-                          class="infoClass"
-                          id="TeamSize"
-                          style="display: none"
-                        >
+                        <li class="infoClass TeamSize" style="display: none">
                           <strong>Team size: </strong> 10
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Position"
-                          style="display: none"
-                        >
+                        <li class="infoClass Position" style="display: none">
                           <strong>Position: </strong> Game Designer, Mechanic
                         </li>
-                        <li class="infoClass" id="Date" style="display: none">
+                        <li class="infoClass Date" style="display: none">
                           <strong>Date: </strong> 2017/06
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Updated"
-                          style="display: none"
-                        >
+                        <li class="infoClass Updated" style="display: none">
                           <strong>Updated: </strong>
                         </li>
                       </ul>
@@ -1080,7 +927,7 @@
                   </div>
                   <div class="article-body">
                     <div class="article-content">
-                      <div class="infoClass" id="Title">
+                      <div class="infoClass Title">
                         <h6><strong>Bread and Games</strong></h6>
                       </div>
                     </div>
@@ -1099,55 +946,35 @@
                           id="Ranking"
                           style="display: none"
                         ></li>
-                        <li class="infoClass" id="Genre" style="display: none">
+                        <li class="infoClass Genre" style="display: none">
                           <strong>Genre: </strong> Twin-Stick, Top-Down-Shooter
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Players"
-                          style="display: none"
-                        >
+                        <li class="infoClass PlayerCount" style="display: none">
                           <strong>Player Count: </strong> 2 Local-Multiplayer
                         </li>
-                        <li class="infoClass" id="Age" style="display: none">
+                        <li class="infoClass Age" style="display: none">
                           <strong>Age rating: </strong> 6
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Platform"
-                          style="display: none"
-                        >
+                        <li class="infoClass Platform" style="display: none">
                           <strong>Platform: </strong> PC
                         </li>
-                        <li class="infoClass" id="Input" style="display: none">
+                        <li class="infoClass Input" style="display: none">
                           <strong>Input: </strong> Gamepad
                         </li>
-                        <li class="infoClass" id="Status" style="display: none">
+                        <li class="infoClass Status" style="display: none">
                           <strong>Status: </strong> Released Version 1.2
                         </li>
-                        <li
-                          class="infoClass"
-                          id="TeamSize"
-                          style="display: none"
-                        >
+                        <li class="infoClass TeamSize" style="display: none">
                           <strong>Team size: </strong> 12
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Position"
-                          style="display: none"
-                        >
+                        <li class="infoClass Position" style="display: none">
                           <strong>Position: </strong> Lead Game Developer, Game
                           Designer
                         </li>
-                        <li class="infoClass" id="Date" style="display: none">
+                        <li class="infoClass Date" style="display: none">
                           <strong>Date: </strong> 2018/01
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Updated"
-                          style="display: none"
-                        >
+                        <li class="infoClass Updated" style="display: none">
                           <strong>Updated: </strong>
                         </li>
                       </ul>
@@ -1175,7 +1002,7 @@
                   </div>
                   <div class="article-body">
                     <div class="article-content">
-                      <div class="infoClass" id="Title">
+                      <div class="infoClass Title">
                         <h6><strong>Fluffy Dice</strong></h6>
                       </div>
                     </div>
@@ -1194,55 +1021,35 @@
                           id="Ranking"
                           style="display: none"
                         ></li>
-                        <li class="infoClass" id="Genre" style="display: none">
+                        <li class="infoClass Genre" style="display: none">
                           <strong>Genre: </strong> Party, Sport, Dice-Rolling
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Players"
-                          style="display: none"
-                        >
+                        <li class="infoClass PlayerCount" style="display: none">
                           <strong>Player Count: </strong> 1-2 Local-Multiplayer
                         </li>
-                        <li class="infoClass" id="Age" style="display: none">
+                        <li class="infoClass Age" style="display: none">
                           <strong>Age rating: </strong> 6
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Platform"
-                          style="display: none"
-                        >
+                        <li class="infoClass Platform" style="display: none">
                           <strong>Platform: </strong> PC
                         </li>
-                        <li class="infoClass" id="Input" style="display: none">
+                        <li class="infoClass Input" style="display: none">
                           <strong>Input: </strong> Gamepad, Keyboard
                         </li>
-                        <li class="infoClass" id="Status" style="display: none">
+                        <li class="infoClass Status" style="display: none">
                           <strong>Status: </strong> Beta
                         </li>
-                        <li
-                          class="infoClass"
-                          id="TeamSize"
-                          style="display: none"
-                        >
+                        <li class="infoClass TeamSize" style="display: none">
                           <strong>Team size: </strong> 9
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Position"
-                          style="display: none"
-                        >
+                        <li class="infoClass Position" style="display: none">
                           <strong>Position: </strong> Game Designer, Game
                           Developer
                         </li>
-                        <li class="infoClass" id="Date" style="display: none">
+                        <li class="infoClass Date" style="display: none">
                           <strong>Date: </strong> 2017/01
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Updated"
-                          style="display: none"
-                        >
+                        <li class="infoClass Updated" style="display: none">
                           <strong>Updated: </strong>
                         </li>
                       </ul>
@@ -1270,7 +1077,7 @@
                   </div>
                   <div class="article-body">
                     <div class="article-content">
-                      <div class="infoClass" id="Title">
+                      <div class="infoClass Title">
                         <h6><strong>Crashed Captain</strong></h6>
                       </div>
                     </div>
@@ -1289,55 +1096,35 @@
                           id="Ranking"
                           style="display: none"
                         ></li>
-                        <li class="infoClass" id="Genre" style="display: none">
+                        <li class="infoClass Genre" style="display: none">
                           <strong>Genre: </strong> Marble, Arcade
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Players"
-                          style="display: none"
-                        >
+                        <li class="infoClass PlayerCount" style="display: none">
                           <strong>Player Count: </strong> 1
                         </li>
-                        <li class="infoClass" id="Age" style="display: none">
+                        <li class="infoClass Age" style="display: none">
                           <strong>Age rating: </strong> 12
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Platform"
-                          style="display: none"
-                        >
+                        <li class="infoClass Platform" style="display: none">
                           <strong>Platform: </strong> Android
                         </li>
-                        <li class="infoClass" id="Input" style="display: none">
+                        <li class="infoClass Input" style="display: none">
                           <strong>Input: </strong> Gyroscope
                         </li>
-                        <li class="infoClass" id="Status" style="display: none">
+                        <li class="infoClass Status" style="display: none">
                           <strong>Status: </strong> Alpha - Frozen
                         </li>
-                        <li
-                          class="infoClass"
-                          id="TeamSize"
-                          style="display: none"
-                        >
+                        <li class="infoClass TeamSize" style="display: none">
                           <strong>Team size: </strong> 5
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Position"
-                          style="display: none"
-                        >
+                        <li class="infoClass Position" style="display: none">
                           <strong>Position: </strong> Product Owner, Game
                           Designer
                         </li>
-                        <li class="infoClass" id="Date" style="display: none">
+                        <li class="infoClass Date" style="display: none">
                           <strong>Date: </strong> 2016/08
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Updated"
-                          style="display: none"
-                        >
+                        <li class="infoClass Updated" style="display: none">
                           <strong>Updated: </strong>
                         </li>
                       </ul>
@@ -1365,7 +1152,7 @@
                   </div>
                   <div class="article-body">
                     <div class="article-content">
-                      <div class="infoClass" id="Title">
+                      <div class="infoClass Title">
                         <h6><strong>V.o.A.</strong></h6>
                       </div>
                     </div>
@@ -1390,8 +1177,7 @@
                           style="display: none"
                         ></li>
                         <li
-                          class="infoClass"
-                          id="Players"
+                          class="infoClass PlayerCount"
                           style="display: none"
                         ></li>
                         <li
@@ -1400,8 +1186,7 @@
                           style="display: none"
                         ></li>
                         <li
-                          class="infoClass"
-                          id="Platform"
+                          class="infoClass Platform"
                           style="display: none"
                         ></li>
                         <li
@@ -1409,31 +1194,19 @@
                           id="Input"
                           style="display: none"
                         ></li>
-                        <li class="infoClass" id="Status" style="display: none">
+                        <li class="infoClass Status" style="display: none">
                           <strong>Status: </strong> Undisclosed
                         </li>
-                        <li
-                          class="infoClass"
-                          id="TeamSize"
-                          style="display: none"
-                        >
+                        <li class="infoClass TeamSize" style="display: none">
                           <strong>Team size: </strong> 1
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Position"
-                          style="display: none"
-                        >
+                        <li class="infoClass Position" style="display: none">
                           <strong>Position: </strong> Solopreneure
                         </li>
-                        <li class="infoClass" id="Date" style="display: none">
+                        <li class="infoClass Date" style="display: none">
                           <strong>Date: </strong> 2016/03
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Updated"
-                          style="display: none"
-                        >
+                        <li class="infoClass Updated" style="display: none">
                           <strong>Updated: </strong>
                         </li>
                       </ul>
@@ -1461,7 +1234,7 @@
                   </div>
                   <div class="article-body">
                     <div class="article-content">
-                      <div class="infoClass" id="Title">
+                      <div class="infoClass Title">
                         <h6><strong>Adam Mania!</strong></h6>
                       </div>
                     </div>
@@ -1480,24 +1253,16 @@
                           id="Ranking"
                           style="display: none"
                         ></li>
-                        <li class="infoClass" id="Genre" style="display: none">
+                        <li class="infoClass Genre" style="display: none">
                           <strong>Genre: </strong> Dungen Crawler
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Players"
-                          style="display: none"
-                        >
+                        <li class="infoClass PlayerCount" style="display: none">
                           <strong>Player Count: </strong> 2-4
                         </li>
-                        <li class="infoClass" id="Age" style="display: none">
+                        <li class="infoClass Age" style="display: none">
                           <strong>Age rating: </strong> 12
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Platform"
-                          style="display: none"
-                        >
+                        <li class="infoClass Platform" style="display: none">
                           <strong>Platform: </strong> Board Game
                         </li>
                         <li
@@ -1505,31 +1270,19 @@
                           id="Input"
                           style="display: none"
                         ></li>
-                        <li class="infoClass" id="Status" style="display: none">
+                        <li class="infoClass Status" style="display: none">
                           <strong>Status: </strong> Prototype
                         </li>
-                        <li
-                          class="infoClass"
-                          id="TeamSize"
-                          style="display: none"
-                        >
+                        <li class="infoClass TeamSize" style="display: none">
                           <strong>Team size: </strong> 4
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Position"
-                          style="display: none"
-                        >
+                        <li class="infoClass Position" style="display: none">
                           <strong>Position: </strong> Game Designer, Artist
                         </li>
-                        <li class="infoClass" id="Date" style="display: none">
+                        <li class="infoClass Date" style="display: none">
                           <strong>Date: </strong> 2015/12
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Updated"
-                          style="display: none"
-                        >
+                        <li class="infoClass Updated" style="display: none">
                           <strong>Updated: </strong>
                         </li>
                       </ul>
@@ -1557,7 +1310,7 @@
                   </div>
                   <div class="article-body">
                     <div class="article-content">
-                      <div class="infoClass" id="Title">
+                      <div class="infoClass Title">
                         <h6><strong>Shadow of War</strong></h6>
                       </div>
                     </div>
@@ -1582,48 +1335,31 @@
                           style="display: none"
                         ></li>
                         <li
-                          class="infoClass"
-                          id="Players"
+                          class="infoClass PlayerCount"
                           style="display: none"
                         ></li>
-                        <li class="infoClass" id="Age" style="display: none">
+                        <li class="infoClass Age" style="display: none">
                           <strong>Age rating: </strong> 12
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Platform"
-                          style="display: none"
-                        >
+                        <li class="infoClass Platform" style="display: none">
                           <strong>Platform: </strong> PC
                         </li>
-                        <li class="infoClass" id="Input" style="display: none">
+                        <li class="infoClass Input" style="display: none">
                           <strong>Input: </strong> Keyboard &amp; Mouse
                         </li>
-                        <li class="infoClass" id="Status" style="display: none">
+                        <li class="infoClass Status" style="display: none">
                           <strong>Status: </strong> Undisclosed
                         </li>
-                        <li
-                          class="infoClass"
-                          id="TeamSize"
-                          style="display: none"
-                        >
+                        <li class="infoClass TeamSize" style="display: none">
                           <strong>Team size: </strong> 4
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Position"
-                          style="display: none"
-                        >
+                        <li class="infoClass Position" style="display: none">
                           <strong>Position: </strong> Solopreneure
                         </li>
-                        <li class="infoClass" id="Date" style="display: none">
+                        <li class="infoClass Date" style="display: none">
                           <strong>Date: </strong> 2013/03
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Updated"
-                          style="display: none"
-                        >
+                        <li class="infoClass Updated" style="display: none">
                           <strong>Updated: </strong>
                         </li>
                       </ul>
@@ -1654,7 +1390,7 @@
                   </div>
                   <div class="article-body">
                     <div class="article-content">
-                      <div class="infoClass" id="Title">
+                      <div class="infoClass Title">
                         <h6><strong>Game or recruitment tool?</strong></h6>
                       </div>
                     </div>
@@ -1679,8 +1415,7 @@
                           style="display: none"
                         ></li>
                         <li
-                          class="infoClass"
-                          id="Players"
+                          class="infoClass PlayerCount"
                           style="display: none"
                         ></li>
                         <li
@@ -1689,8 +1424,7 @@
                           style="display: none"
                         ></li>
                         <li
-                          class="infoClass"
-                          id="Platform"
+                          class="infoClass Platform"
                           style="display: none"
                         ></li>
                         <li
@@ -1698,31 +1432,19 @@
                           id="Input"
                           style="display: none"
                         ></li>
-                        <li class="infoClass" id="Status" style="display: none">
+                        <li class="infoClass Status" style="display: none">
                           <strong>Status: </strong> Certified
                         </li>
-                        <li
-                          class="infoClass"
-                          id="TeamSize"
-                          style="display: none"
-                        >
+                        <li class="infoClass TeamSize" style="display: none">
                           <strong>Team size: </strong> 1
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Position"
-                          style="display: none"
-                        >
+                        <li class="infoClass Position" style="display: none">
                           <strong>Position: </strong> Researcher
                         </li>
-                        <li class="infoClass" id="Date" style="display: none">
+                        <li class="infoClass Date" style="display: none">
                           <strong>Date: </strong> 2015/01
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Updated"
-                          style="display: none"
-                        >
+                        <li class="infoClass Updated" style="display: none">
                           <strong>Updated: </strong>
                         </li>
                       </ul>
@@ -1750,7 +1472,7 @@
                   </div>
                   <div class="article-body">
                     <div class="article-content">
-                      <div class="infoClass" id="Title">
+                      <div class="infoClass Title">
                         <h6><strong>Heul Doch!</strong></h6>
                       </div>
                     </div>
@@ -1769,24 +1491,16 @@
                           id="Ranking"
                           style="display: none"
                         ></li>
-                        <li class="infoClass" id="Genre" style="display: none">
+                        <li class="infoClass Genre" style="display: none">
                           <strong>Genre: </strong> Strategy
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Players"
-                          style="display: none"
-                        >
+                        <li class="infoClass PlayerCount" style="display: none">
                           <strong>Player Count: </strong> 2-4
                         </li>
-                        <li class="infoClass" id="Age" style="display: none">
+                        <li class="infoClass Age" style="display: none">
                           <strong>Age rating: </strong> 12
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Platform"
-                          style="display: none"
-                        >
+                        <li class="infoClass Platform" style="display: none">
                           <strong>Platform: </strong> Board Game
                         </li>
                         <li
@@ -1794,31 +1508,19 @@
                           id="Input"
                           style="display: none"
                         ></li>
-                        <li class="infoClass" id="Status" style="display: none">
+                        <li class="infoClass Status" style="display: none">
                           <strong>Status: </strong> Prototype Versin 1.2
                         </li>
-                        <li
-                          class="infoClass"
-                          id="TeamSize"
-                          style="display: none"
-                        >
+                        <li class="infoClass TeamSize" style="display: none">
                           <strong>Team size: </strong> 1
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Position"
-                          style="display: none"
-                        >
+                        <li class="infoClass Position" style="display: none">
                           <strong>Position: </strong> Solopreneure
                         </li>
-                        <li class="infoClass" id="Date" style="display: none">
+                        <li class="infoClass Date" style="display: none">
                           <strong>Date: </strong> 2019/04
                         </li>
-                        <li
-                          class="infoClass"
-                          id="Updated"
-                          style="display: none"
-                        >
+                        <li class="infoClass Updated" style="display: none">
                           <strong>Updated: </strong>
                         </li>
                       </ul>
