@@ -37,14 +37,12 @@
         $("#loadcontactmenu").load("ContactMenu.html");
       });
       function toggleDiv(attribute) {
-        var elements = document.getElementsByClassName("infoClass");
+        let elements = document.getElementsByClassName(attribute);
         for (i = 0; i < elements.length; i++) {
-          if (elements[i].id === attribute) {
-            if (elements[i].style.display === "none") {
-              elements[i].style.display = "block";
-            } else {
-              elements[i].style.display = "none";
-            }
+          if (elements[i].style.display === "none") {
+            elements[i].style.display = "block";
+          } else {
+            elements[i].style.display = "none";
           }
         }
       }
@@ -152,8 +150,7 @@
             </div>
           </div>
           <div
-            class="infoClass"
-            id="Development"
+            class="infoClass Development"
             style="margin: 0px; padding: 0px; display: block"
           >
             <div class="articlebody">
@@ -253,8 +250,7 @@
             </div>
           </div>
           <div
-            class="infoClass"
-            id="Design"
+            class="infoClass Design"
             style="margin: 0px; padding: 0px; display: block"
           >
             <div class="articlebody">
@@ -360,8 +356,7 @@
             </div>
           </div>
           <div
-            class="infoClass"
-            id="Mentor"
+            class="infoClass Mentor"
             style="margin: 0px; padding: 0px; display: block"
           >
             <div class="articlebody">
