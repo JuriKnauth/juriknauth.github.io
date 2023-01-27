@@ -582,8 +582,6 @@ iframe{
   margin: 0 auto;
   padding: 0;
   background-color: #000;
-  position: relative;
-  top: -2;
 }
 .bottomMain {
   max-width: 1040px;
@@ -823,9 +821,6 @@ figure p {
   order: 2;
   padding-top: 0;
   width: 400px;
-}
-#mainmenu {
-  margin: 2px 2px 2px 2px;
 }
 .main-column {
   flex: 3;
