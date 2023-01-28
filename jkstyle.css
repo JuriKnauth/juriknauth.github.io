@@ -1310,7 +1310,7 @@ a.anchor {
 }
 .IndexB,
 .IndexC {
-  background-color: #b2bec3 !important;
+  /* background-color: #b2bec3 !important; */
 }
 .Services,
 .Blog {
@@ -1330,16 +1330,16 @@ a.anchor {
 }
 .ServicesB,
 .BlogB {
-  background-color: #d63031 !important;
+  /* background-color: #d63031 !important; */
 }
 .ProjectsB {
-  background-color: #fdcb6e !important;
+  /* background-color: #fdcb6e !important; */
 }
 .ContactB {
-  background-color: #81ecec !important;
+  /* background-color: #81ecec !important; */
 }
 .ContactV {
-  background-color: #b71540 !important;
+  /* background-color: #b71540 !important; */
 }
 .img-fluid:hover,
 .img:hover,
