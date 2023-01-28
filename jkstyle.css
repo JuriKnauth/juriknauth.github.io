@@ -20,7 +20,6 @@ body {
   z-index: 0;
   background-color: #000;
   height: 0;
-  color: #000;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
@@ -313,7 +312,7 @@ iframe{
   min-height: 100%;
   vertical-align: middle;
   margin: auto;
-  background-image: url(../Images/BackGround.jpg);
+  /* background-image: url(../Images/BackGround.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -324,7 +323,8 @@ iframe{
   -moz-background-attachment: fixed;
   -o-background-attachment: fixed;
   -ms-background-attachment: fixed;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+  background-color: #202122;
 }
 .containerBGV {
   top: 0px;
@@ -544,7 +544,6 @@ iframe{
   bottom: 0;
   left: 0;
   position: absolute;
-  max-width: 1040px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   display: flex;
   flex: 1;
@@ -575,7 +574,15 @@ iframe{
   bottom: 0px;
 }
 .main {
+  max-width: 1040px;
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+}
+.mainmenu {
+  position: absolute;
   height: 52px;
+  width: 100%;
   max-width: 1040px;
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
     "Avant Garde", Futura, sans-serif;
@@ -584,11 +591,14 @@ iframe{
   background-color: #000;
 }
 .bottomMain {
-  max-width: 1040px;
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
     "Avant Garde", Futura, sans-serif;
   margin: 0 auto;
   padding: 0;
+}
+.bottomn {
+  max-width: 1040px;
+  margin: 0 auto;
 }
 table {
   border-collapse: collapse;
@@ -613,6 +623,11 @@ div {
 figure p {
   margin: 2px;
   padding: 0;
+}
+header{
+  margin: 0 auto;
+  max-width: 1040px;
+  background-color: #000;
 }
 .header {
   color: #000;
@@ -659,7 +674,7 @@ figure p {
   height: auto;
 }
 .article {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
   color: #000;
   display: flex;
   flex: 1;
@@ -717,7 +732,7 @@ figure p {
   margin-top: 10px;
   background-color: #fff;
   height: auto;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
   padding: 10px 10px 20px 10px;
   overflow: auto;
 }
@@ -726,7 +741,7 @@ figure p {
   flex-direction: column;
   background-color: #fff;
   height: auto;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
   padding: 5px;
 }
 .article-title {
@@ -904,7 +919,7 @@ figure p {
   outline: 0;
   cursor: pointer;
   font-size: 17px;
-  width: auto;
+  width: auto;.tabcontent
   min-width: 48px;
   max-width: 1040px;
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
@@ -931,21 +946,21 @@ figure p {
   padding: 9px 9px;
 }
 .tabcontent {
-  float: left;
   color: #f2f2f2;
   text-align: left;
   text-decoration: none;
   font-size: 17px;
   vertical-align: top;
-  max-width: 1040px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  /* max-width: 1040px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
   display: flex;
   flex: 1;
   flex-direction: column;
   flex-basis: auto;
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L",
     "Avant Garde", Futura, sans-serif;
-  padding: 18px 9px 18px 9px;
+  /* padding: 18px 9px 18px 9px; */
+  padding-top: 65px;
 }
 .switchcontainer {
   display: grid;
