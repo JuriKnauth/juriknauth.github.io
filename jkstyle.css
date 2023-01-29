@@ -312,7 +312,7 @@ iframe{
   min-height: 100%;
   vertical-align: middle;
   margin: auto;
-  /* background-image: url(../Images/BackGround.jpg);
+  background-image: url(../Images/BGBlur.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -323,8 +323,8 @@ iframe{
   -moz-background-attachment: fixed;
   -o-background-attachment: fixed;
   -ms-background-attachment: fixed;
-  background-attachment: fixed; */
-  background-color: #202122;
+  background-attachment: fixed;
+  /* background-color: #202122; */
 }
 .containerBGV {
   top: 0px;
