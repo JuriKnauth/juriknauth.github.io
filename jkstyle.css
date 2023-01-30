@@ -1530,3 +1530,7 @@ input.toggle-round-right-left:checked+label:after {
 .Orange {
   color: #e17055;
 }
+.work-date {
+  margin-top: 10px;
+  padding-left: 32px;
+}
