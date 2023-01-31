@@ -25,3 +25,10 @@ Stomt.push([
   },
 ]);
 document.addEventListener("touchstart", onTouchStart, { passive: true });
+$(function () {
+  $("#loadbotbar").load("BotBar.html");
+  $("#loadindexmenu").load("IndexMenu.html");
+  $("#loadservicesmenu").load("ServicesMenu.html");
+  $("#loadprojectsmenu").load("ProjectsMenu.html");
+  $("#loadcontactmenu").load("ContactMenu.html");
+});
