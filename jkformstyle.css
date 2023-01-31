@@ -1,0 +1,33 @@
+﻿@charset "utf-8";
+.form-label-left {
+    width: 150px;
+}
+.form-line {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.form-label-right {
+    width: 150px;
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+}
+.form-all {
+    margin: 0px auto;
+    width: 100%;
+    color: rgb(62, 62, 62) !important;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
+    font-size: 14px;
+}
+.form-radio-item label,
+.form-checkbox-item label,
+.form-grading-label,
+.form-header {
+    color: #2E2E2E;
+}
+.form-line {
+    padding: 10px 0px 10px 0px;
+}
