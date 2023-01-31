@@ -34,6 +34,16 @@
             $("#loadprojectsmenu").load("ProjectsMenu.html");
             $("#loadcontactmenu").load("ContactMenu.html");
         });
+        function toggleDiv(attribute) {
+            let elements = document.getElementsByClassName(attribute);
+            for (i = 0; i < elements.length; i++) {
+                if (elements[i].style.display === "none") {
+                    elements[i].style.display = "block";
+                } else {
+                    elements[i].style.display = "none";
+                }
+            }
+        }
     </script>
     <!--ContactForm Header-->
     <link rel="alternate" type="application/json+oembed"
@@ -62,6 +72,14 @@
     <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
     <script src="jksjotform.min.js"></script>
     <!--/ContactForm Header-->
+    <style>
+        #toggle-1+label:before {
+            content: "Show More";
+        }
+        #toggle-1+label:after {
+            content: "Show Less";
+        }
+    </style>
 </head>
 <body>
     <div class="containerBG">
@@ -165,44 +183,44 @@
                             <div class="article-body">
                                 <h5 class="article-title"> Contact Details </h5>
                                 <div class="article-content" style="padding: 0px 0px 0px 0px;">
-                                    <p style="text-align:justify;" class="article-content">I'm always looking for new
-                                        things, so if you think we could do something great together, don't hesitate to
-                                        contact me!<br />
-                                        <p>
-                                            <p style="text-align:justify;" class="article-content">You can reach me
-                                                during my business hours Mon. to Fri. from 08:00 to 17:00.</p>
-                                            <div style="text-align:justify;" class="article-content">
-                                                <footer class="article-info" style="margin-top: 0px;">
-                                                    <table class="tableclass">
-                                                        <tr>
-                                                            <td width="100"><strong>Email: </strong></td>
-                                                            <td><a href="mailto:mail@juriknauth.com"
-                                                                    style="text-indent: 40px">mail@juriknauth.com </a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><strong>Tel: </strong></td>
-                                                            <td><a href="tel:+49-176-62-32-9631"
-                                                                    style="text-indent: 40px">0049 176
-                                                                    62 32 9631 </a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="100"><strong>Skype: </strong></td>
-                                                            <td><a href="skype:juriknauth"
-                                                                    style="text-indent: 40px">juriknauth </a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="100"><strong>Discord: </strong></td>
-                                                            <td>JuriKnauth#9219</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="100"><strong>QR-Code: </strong></td>
-                                                            <td><a href="qr.html">juriknauth.com</a></td>
-                                                        </tr>
-                                                    </table>
-                                                </footer>
-                                            </div>
+                                    <p style="text-align:justify;" class="article-content"> I'm always looking for new things, so if you think we could do
+                                        something great together, don't hesitate to contact me!<br /></p>
+                                    <p style="text-align:justify;" class="article-content">
+                                        You can reach me during my business hours Monday to Friday from
+                                        08:00 to 17:00.
+                                    </p><br />
+                                    <div style="text-align:justify;" class="article-content">
+                                        <footer class="article-info" style="margin-top: 0px;">
+                                            <table class="tableclass">
+                                                <tr>
+                                                    <td width="100"><strong>Email: </strong></td>
+                                                    <td><a href="mailto:mail@juriknauth.com"
+                                                            style="text-indent: 40px">mail@juriknauth.com </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Tel: </strong></td>
+                                                    <td><a href="tel:+49-176-62-32-9631" style="text-indent: 40px">0049
+                                                            176
+                                                            62 32 9631 </a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="100"><strong>Skype: </strong></td>
+                                                    <td><a href="skype:juriknauth" style="text-indent: 40px">juriknauth
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="100"><strong>Discord: </strong></td>
+                                                    <td>JuriKnauth#9219</td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="100"><strong>QR-Code: </strong></td>
+                                                    <td><a href="qr.html">juriknauth.com</a></td>
+                                                </tr>
+                                            </table>
+                                        </footer>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -430,16 +448,15 @@
                                 <a href="/">
                                     <picture class="img-fluid">
                                         <source srcset="../Images/jk1_512.webp" type="image/webp" />
-                                        <img loading="lazy" src="../Images/jk1_512.png"
-                                            alt="JK Logo" />
+                                        <img loading="lazy" src="../Images/jk1_512.png" alt="JK Logo" />
                                     </picture>
                                 </a>
                                 <div class="article-body">
                                     <a href="/">
-                                    <p class="article-content">
-                                        <strong>Juri Knauth </strong><br />
-                                    </p><br />
-                                </a>
+                                        <p class="article-content">
+                                            <strong>Juri Knauth </strong><br />
+                                        </p><br />
+                                    </a>
                                     <p class="article-content">
                                         Projects:
                                         <a href="/Projects/SwearToGod">Swear To God</a>, <a
@@ -480,15 +497,16 @@
                                 </a>
                                 <div class="article-body">
                                     <a href="http://beam-cross-realities.com/">
-                                    <p class="article-content">
-                                        <strong>Beam cross realities </strong><br />
-                                    </p><br />
-                                </a>
+                                        <p class="article-content">
+                                            <strong>Beam cross realities </strong><br />
+                                        </p><br />
+                                    </a>
                                     <p class="article-content">
                                         Projects:
                                         <a href="/Projects/OperationLegendary">Operation Legendary</a>, <a
                                             href="/Projects/UvexSafetyAR.html">Uvex Safety AR</a>, <a
-                                            href="/Projects/Loop5ArcadeGames.html">Loop5 Arcade Games </a> and a few more.
+                                            href="/Projects/Loop5ArcadeGames.html">Loop5 Arcade Games </a> and a few
+                                        more.
                                     </p>
                                 </div>
                             </div>
@@ -531,12 +549,12 @@
                                     </picture>
                                 </a>
                                 <a href="https://www.sae.edu/deu/de/campus/berlin">
-                                <div class="article-body">
-                                    <p class="article-content">
-                                        <strong>SAE-Institute </strong><br />
-                                    </p>
-                                </div>
-                            </a>
+                                    <div class="article-body">
+                                        <p class="article-content">
+                                            <strong>SAE-Institute </strong><br />
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="nested-column">
@@ -576,10 +594,10 @@
                                 </a>
                                 <div class="article-body">
                                     <a href="http://pixelsplit.games/">
-                                    <p class="article-content">
-                                        <strong>Pixelsplit </strong><br />
-                                    </p><br />
-                                </a>
+                                        <p class="article-content">
+                                            <strong>Pixelsplit </strong><br />
+                                        </p><br />
+                                    </a>
                                     <p class="article-content">
                                         Projects:
                                         <a href="/Projects/DeadlyDays.html">Deadly Days</a>, and a few more.
@@ -617,10 +635,10 @@
                                 </a>
                                 <div class="article-body">
                                     <a href="https://www.facebook.com/imgamestudio/">
-                                    <p class="article-content">
-                                        <strong>Phantom 8</strong><br />
-                                    </p><br />
-                                </a>
+                                        <p class="article-content">
+                                            <strong>Phantom 8</strong><br />
+                                        </p><br />
+                                    </a>
                                     <p class="article-content">
                                         Projects:
                                         <a href="/Projects/PastCure.html">Past Cure</a>
@@ -659,10 +677,10 @@
                                 </a>
                                 <div class="article-body">
                                     <a href="https://smilegatewest.com/">
-                                    <p class="article-content">
-                                        <strong>Smilegate Europe </strong><br />
-                                    </p><br />
-                                </a>
+                                        <p class="article-content">
+                                            <strong>Smilegate Europe </strong><br />
+                                        </p><br />
+                                    </a>
                                     <p class="article-content">
                                         Projects:
                                         <a href="/Projects/CrossFire.html">Cross Fire</a>
@@ -705,19 +723,22 @@
                                 <div class="article-content" style="padding:0px 6px">
                                     <ul style="margin-block-start:0em; margin-block-end:0em;">
                                         <li>
-                                            Mediadesign Hochschule für Design und Informatik
+                                            <a href="https://www.mediadesign.de/" target="_blank">
+                                                Mediadesign Hochschule für Design und Informatik</a>
                                             <br> Berlin
                                             <br> Bachelor of Science, Game Design
                                             <br> 2015 - 2019
                                         </li>
                                         <li>
-                                            Technische Universität
+                                            <a href="https://www.tu.berlin/" target="_blank">
+                                                Technische Universität</a>
                                             <br> Berlin
                                             <br> Transport Engineering
                                             <br> 2012 - 2015
                                         </li>
                                         <li>
-                                            Freie Universität
+                                            <a href="https://www.fu-berlin.de/" target="_blank">
+                                                Freie Universität</a>
                                             <br> Berlin
                                             <br> History and Cultural Studies
                                             <br> 2011 - 2012
@@ -768,16 +789,79 @@
                                             <br> Berlin
                                             <br> Mediadesign Hochschule für Design und Informatik
                                             <br> 2019
+                                            <br> Projects: <a href="/Blog#Nova">Sculpting Nova</a> and a few more.
                                         </li>
                                         <li>
                                             Additional Accreditation: Classical Artwork
                                             <br> Berlin
                                             <br> Mediadesign Hochschule für Design und Informatik
                                             <br> 2019
+                                            <br> Projects: <a href="/Blog#BarFuss">2D Animation</a>, <a
+                                                href="/Blog#ImWestenNichtsNeues">Storyboard thumbs</a> and a few more.
                                         </li>
                                     </ul>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="columns More" id="More" name="More" style="display: none;">
+                        <hr>
+                        <div class="nested-column More" style="display: none;">
+                            <div class="article-body">
+                                <div class="article-content" style="padding:0px 6px">
+                                    <ul style="margin-block-start:0em; margin-block-end:0em;">
+                                        <li>
+                                            <a href="https://refactoring.guru/cert/r/MTAyODg0" target="_blank">Dive Into
+                                                Refactoring</a>
+                                            <br> Refactoring Guru
+                                            <br> 2023/01/11
+                                        </li>
+                                        <li>
+                                            <a href="https://www.freecodecamp.org/certification/fcc1fdb88dc-641f-4898-b27b-c2aa9ca8321a/responsive-web-design"
+                                                target="_blank">Responsive Web Design</a>
+                                            <br> freeCodeCamp
+                                            <br> 2023/01/20
+                                        </li>
+                                        <li>
+                                            <a href="https://www.sololearn.com/certificates/CT-NKHZEBSG"
+                                                target="_blank">C#</a>
+                                            <br> SoloLearn
+                                            <br> 2023/01/11
+                                        </li>
+                                        <li>
+                                            <a href="https://www.sololearn.com/certificates/CT-QZRA0XYT"
+                                                target="_blank">Web Development Fundamentals</a>
+                                            <br> SoloLearn
+                                            <br> 2023/01/22
+                                        </li>
+                                        <li>
+                                            <a href="https://www.sololearn.com/certificates/CT-CROCBSYF"
+                                                target="_blank">Java Script</a>
+                                            <br> SoloLearn
+                                            <br> 2023/01/31
+                                        </li>
+                                        <li>
+                                            <a href="https://www.sololearn.com/certificates/CT-WXE4996Z"
+                                                target="_blank">HTML</a>
+                                            <br> SoloLearn
+                                            <br> 2023/01/17
+                                        </li>
+                                        <li>
+                                            <a href="https://www.sololearn.com/certificates/CT-TCAQFGCR"
+                                                target="_blank">CSS</a>
+                                            <br> SoloLearn
+                                            <br> 2023/01/21
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="switchcontainer" style="grid-template-columns: repeat(1,1fr);">
+                        <div class="switchelement">
+                            <input id="toggle-1" class="toggle toggle-round-right-left" type="checkbox" />
+                            <label for="toggle-1" onclick="toggleDiv('More')"></label>
                         </div>
                     </div>
                 </div>
