@@ -28,7 +28,25 @@
     <script src="jkscript.min.js"></script>
     <script src="respond.min.js"></script>
     <script src="jquery-3.6.3.min.js"></script>
-    <script src="jksfilter.min.js"></script>
+    <script>
+      $(function () {
+        $("#loadbotbar").load("BotBar.html");
+        $("#loadindexmenu").load("IndexMenu.html");
+        $("#loadservicesmenu").load("ServicesMenu.html");
+        $("#loadprojectsmenu").load("ProjectsMenu.html");
+        $("#loadcontactmenu").load("ContactMenu.html");
+      });
+      function toggleDiv(attribute) {
+        let elements = document.getElementsByClassName(attribute);
+        for (i = 0; i < elements.length; i++) {
+          if (elements[i].style.display === "none") {
+            elements[i].style.display = "block";
+          } else {
+            elements[i].style.display = "none";
+          }
+        }
+      }
+    </script>
     <style>
       #toggle-1 + label:before {
         content: "Development";
