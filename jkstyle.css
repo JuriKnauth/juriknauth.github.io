@@ -249,7 +249,7 @@ section {
   margin: auto;
   overflow: hidden;
 }
-iframe{
+iframe {
   border: none;
   overflow: hidden;
 }
@@ -622,7 +622,7 @@ figure p {
   margin: 2px;
   padding: 0;
 }
-header{
+header {
   margin: 0 auto;
   max-width: 1040px;
   background-color: #000;
@@ -809,7 +809,7 @@ header{
   line-height: 1.2;
   text-align: right;
 }
-.Title{
+.Title {
   padding-left: 5px;
 }
 .bot-info {
@@ -856,7 +856,9 @@ header{
   .dropbtn {
     padding: 18px 6px;
   }
-  .dropdown, .linav a, .linavb a {
+  .dropdown,
+  .linav a,
+  .linavb a {
     font-size: 12px;
   }
 }
@@ -1285,15 +1287,15 @@ a.anchor {
 }
 .DefaultI {
   color: #fff !important;
-  box-shadow: 2px 0px #b2bec3!important;
+  box-shadow: 2px 0px #b2bec3 !important;
 }
 .DefaultB {
   color: #fff !important;
-  box-shadow: 2px 0px #d63031!important;
+  box-shadow: 2px 0px #d63031 !important;
 }
 .DefaultS {
   color: #fff !important;
-  box-shadow: 2px 0px #d63031!important;
+  box-shadow: 2px 0px #d63031 !important;
 }
 .DefaultP {
   color: #fff !important;
@@ -1533,4 +1535,47 @@ input.toggle-round-right-left:checked+label:after {
 .work-date {
   margin-top: 10px;
   padding-left: 32px;
+}
+.progressInfo {
+  float: right;
+  text-align: right;
+  position: relative;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.progressHeader {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+progress {
+  appearance: none;
+  height: 0.5em;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 15px;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  display: block;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  color: black;
+}
+progress[value]::-webkit-progress-value {
+  background-image:
+    -webkit-linear-gradient(top,
+      rgba(255, 255, 255, .25),
+      rgba(0, 0, 0, .25)),
+    -webkit-linear-gradient(left, #81ecec, #fdcb6e, #d63031);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+progress[value]::-webkit-progress-value::before {
+  content: 'value';
+  position: absolute;
+  right: 0;
+  color: black;
 }
