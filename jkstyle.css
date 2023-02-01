@@ -687,6 +687,9 @@ header {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   color: #444;
 }
+.article a:hover, a:active, a:visited, a:focus {
+  text-decoration:none !important;
+}
 .articlelink {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   color: #000;
@@ -1584,4 +1587,23 @@ progress[value]::-webkit-progress-value::before {
   font-size: 0.85em;
   padding-bottom: 0px;
   padding-top: 0px;
+}
+.paddingNull {
+  /* box-shadow: 0 1px 3px rgba(255, 255, 255, 0.24), 0 1px 2px rgba(255, 255, 255, 0.48); */
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  padding: 5px !important;
+}
+.paddingNull:focus,
+.paddingNull:hover {
+  box-shadow: inset 0 7px 35px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.44);
+  color: #444;
+}
+.paddingNull a:hover, a:active, a:visited, a:focus {
+  text-decoration:none !important;
 }
