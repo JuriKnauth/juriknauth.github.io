@@ -8,6 +8,7 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
 }
 *,
 :after,
