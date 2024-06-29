@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.JuriKnauth.SOS",
+      "sha256_cert_fingerprints":
+        ["F4:64:FF:03:D2:FB:94:1B:F6:AE:99:10:48:D9:32:FE:E0:35:F6:7D:4E:D4:B6:DC:17:9B:F8:C1:A4:1C:85:67"]
+    }
+  }
+]
