@@ -1580,19 +1580,21 @@ progress[value]::-webkit-progress-bar {
   color: black;
 }
 progress[value]::-webkit-progress-value {
-  background-image:
-    -webkit-linear-gradient(top,
-      rgba(255, 255, 255, .25),
-      rgba(0, 0, 0, .25)),
-    -webkit-linear-gradient(left, #81ecec, #fdcb6e, #d63031);
+  background-image: linear-gradient(to right, #d63031, #fdcb6e, #81ecec);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   border-radius: 2px;
-  background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 progress[value]::-webkit-progress-value::before {
-  content: 'value';
+  content: '';
   position: absolute;
   right: 0;
-  color: black;
+}
+progress::-moz-progress-bar {
+  background-image: linear-gradient(to right, #d63031, #fdcb6e, #81ecec);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 2px;
 }
 .smallProgress {
   height: 0.25em;
