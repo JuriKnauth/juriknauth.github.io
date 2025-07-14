@@ -1581,7 +1581,7 @@ progress[value]::-webkit-progress-bar {
 }
 progress[value]::-webkit-progress-value {
   background-image: linear-gradient(to right, #d63031, #fdcb6e, #81ecec);
-  background-size: 100% 1px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   border-radius: 2px;
 }
@@ -1592,7 +1592,7 @@ progress[value]::-webkit-progress-value::before {
 }
 progress::-moz-progress-bar {
   background-image: linear-gradient(to right, #d63031, #fdcb6e, #81ecec);
-  background-size: 100% 1px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   border-radius: 2px;
 }
