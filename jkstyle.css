@@ -171,6 +171,18 @@ h5,
 h6 {
   width: 100%;
 }
+.article-subtitle {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  color: #222;
+}
+.book-list {
+  margin-left: 20px;
+  margin-bottom: 16px;
+  padding-left: 0;
+  list-style-type: disc;
+}
 p {
   text-align: justify;
   margin-right: 5px;
