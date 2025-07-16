@@ -693,7 +693,6 @@ header {
   flex-wrap: wrap;
   height: 100%;
   margin: 10px 0px 0px 0px;
-  width: fit-content;
 }
 .article:focus,
 .article:hover {
