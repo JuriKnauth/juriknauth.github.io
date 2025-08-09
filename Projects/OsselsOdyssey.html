@@ -89,6 +89,48 @@
         document.querySelectorAll('.ba-compare').forEach(initCompare);
       })();
     </script>
+        <style>
+          .wrap { max-width: 880px; width: 100%; }
+          h1 { font-size: clamp(1.4rem, 1.2rem + 1.6vw, 2.2rem); margin: 0 0 .5rem; }
+          p.note { opacity: .8; margin-top: 0; }
+          /* --- Before/After Component --- */
+          .ba-compare {
+            position: relative; isolation: isolate; overflow: hidden; border-radius: var(--ba-radius);
+            box-shadow: var(--ba-shadow); background: #111; aspect-ratio: 16/9; /* keep things tidy; remove if not desired */
+            --pos: 50%; /* slider position as percentage */
+            --handle-size: 46px;
+          }
+          .ba-compare img, .ba-compare video { display: block; width: 100%; height: 100%; object-fit: cover; }
+          /* The "after" image sits on top and gets clipped by the slider position */
+          .ba-after { position: absolute; inset: 0; clip-path: polygon(0 0, var(--pos) 0, var(--pos) 100%, 0 100%); }
+          /* Divider line */
+          .ba-divider { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 2px; background: white; mix-blend-mode: difference; pointer-events: none; }
+          /* Handle */
+          .ba-handle {
+            position: absolute; top: 50%; left: var(--pos); transform: translate(-50%, -50%);
+            width: var(--handle-size); height: var(--handle-size); border-radius: 50%;
+            background: white; box-shadow: 0 6px 18px rgba(0,0,0,.4);
+            display: grid; place-items: center; cursor: grab; outline: none; border: 0;
+          }
+          .ba-handle:active { cursor: grabbing; }
+          .ba-handle::before, .ba-handle::after {
+            content: ""; position: absolute; width: 12px; height: 12px; border: 2px solid #000; border-top: 0; border-right: 0; transform: rotate(45deg);
+          }
+          .ba-handle::before { left: 10px; }
+          .ba-handle::after  { right: 10px; transform: rotate(-135deg); }
+          /* Range input for accessibility & keyboard control (visually hidden) */
+          .ba-range { position: absolute; inset: 0; opacity: 0; }
+          .ba-range:focus-visible ~ .ba-handle { outline: 3px solid var(--ba-accent); }
+          /* Corner labels */
+          .ba-label {
+            position: absolute; top: 10px; padding: 6px 10px; border-radius: 999px; font-weight: 700; font-size: .9rem; letter-spacing: .3px;
+            background: rgba(0,0,0,.55); color: white; backdrop-filter: blur(4px);
+          }
+          .ba-label--before { left: 10px; }
+          .ba-label--after  { right: 10px; }
+          /* Demo-only: button styling */
+      .btn { background: var(--ba-accent); color: #0b0b0b; border: none; padding: .6rem .9rem; border-radius: 999px; font-weight: 700; cursor: pointer; }
+    </style>
   </head>
   Skip around a magical keyboard echoing cusswords
   <body>
@@ -335,8 +377,6 @@
                     <div class="ba-divider" aria-hidden="true"></div>
                     <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Comparison slider position" />
                     <button class="ba-handle" type="button" aria-label="Drag to compare"></button>
-                    <figcaption class="ba-label ba-label--before">OLD (Unity 4)</figcaption>
-                    <figcaption class="ba-label ba-label--after">NEW (Unity 6)</figcaption>
                   </figure>
                 </div>
               </div>
