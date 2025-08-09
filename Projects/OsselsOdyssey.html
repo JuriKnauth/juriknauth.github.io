@@ -111,8 +111,8 @@
         --ba-accent: #00d2ff;
       }
       .wrap {
-        max-width: 880px;
         width: 100%;
+        max-width: none;
       }
       h1 {
         font-size: clamp(1.4rem, 1.2rem + 1.6vw, 2.2rem);
@@ -130,16 +130,23 @@
         border-radius: var(--ba-radius);
         box-shadow: var(--ba-shadow);
         background: #111;
-        aspect-ratio: 16/9; /* keep things tidy; remove if not desired */
+        width: 100%; /* fill horizontal space */
+        height: auto; /* let height be determined by aspect ratio */
+        aspect-ratio: 16/9; /* keeps proportions */
         --pos: 50%; /* slider position as percentage */
         --handle-size: 46px;
       }
-      .ba-compare img,
       .ba-compare video {
         display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+      .ba-compare img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* ensures no stretching but fills */
       }
       /* The "after" image sits on top and gets clipped by the slider position */
       .ba-after {
@@ -476,15 +483,15 @@
                     aria-label="Before and After comparison: Old vs New"
                   >
                     <img
-                      src="../Images/o_Ossel_Ingame_01_old.jpg"
-                      alt="Old build screenshot"
+                      src="../Images/o_Ossel_Ingame_01.jpg"
+                      alt="New build screenshot"
                       loading="lazy"
                       class="img-fluid"
                     />
                     <div class="ba-after">
                       <img
-                        src="../Images/o_Ossel_Ingame_01.jpg"
-                        alt="New build screenshot"
+                        src="../Images/o_Ossel_Ingame_01_old.jpg"
+                        alt="Old build screenshot"
                         loading="lazy"
                         class="img-fluid"
                       />
@@ -504,10 +511,10 @@
                       aria-label="Drag to compare"
                     ></button>
                     <figcaption class="ba-label ba-label--before">
-                      OLD (Unity 4)
+                      Old (Unity 4)
                     </figcaption>
                     <figcaption class="ba-label ba-label--after">
-                      NEW (Unity 6)
+                      New (Unity 6)
                     </figcaption>
                   </figure>
                 </div>
