@@ -99,10 +99,17 @@
             }
           });
         }
-        document.querySelectorAll(".ba-compare").forEach(initCompare);
+        document.addEventListener("DOMContentLoaded", function () {
+          document.querySelectorAll(".ba-compare").forEach(initCompare);
+        });
       })();
     </script>
     <style>
+      :root {
+        --ba-radius: 16px;
+        --ba-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        --ba-accent: #00d2ff;
+      }
       .wrap {
         max-width: 880px;
         width: 100%;
@@ -229,7 +236,6 @@
       }
     </style>
   </head>
-  Skip around a magical keyboard echoing cusswords
   <body>
     <div class="containerBG">
       <div class="main">
@@ -463,24 +469,24 @@
             <h2 class="article-title">Old vs New</h2>
             <div class="columns">
               <div class="nested-column">
-                <a class="anchor" id="1" name="1"></a>
                 <div class="wrap">
-                  <h1>Ossel’s Odyssey – Old vs New</h1>
                   <figure
                     class="ba-compare"
                     data-start="50"
                     aria-label="Before and After comparison: Old vs New"
                   >
                     <img
-                      src="o_Ossel_Ingame_01_old.jpg"
+                      src="../Images/o_Ossel_Ingame_01_old.jpg"
                       alt="Old build screenshot"
                       loading="lazy"
+                      class="img-fluid"
                     />
                     <div class="ba-after">
                       <img
-                        src="o_Ossel_Ingame_01.jpg"
+                        src="../Images/o_Ossel_Ingame_01.jpg"
                         alt="New build screenshot"
                         loading="lazy"
+                        class="img-fluid"
                       />
                     </div>
                     <div class="ba-divider" aria-hidden="true"></div>
