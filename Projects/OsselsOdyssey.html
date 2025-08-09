@@ -58,6 +58,36 @@
         $("#loadprojectsmenu").load("ProjectsMenu.html");
         $("#loadcontactmenu").load("ContactMenu.html");
       });
+      (function(){
+        function initCompare(root){
+          const range = root.querySelector('.ba-range');
+          const handle = root.querySelector('.ba-handle');
+          const divider = root.querySelector('.ba-divider');
+          const setPos = (val) => {
+            const clamped = Math.max(0, Math.min(100, val));
+            root.style.setProperty('--pos', clamped + '%');
+            range.value = clamped;
+          };
+          setPos(parseFloat(root.dataset.start || range.value || 50));
+          range.addEventListener('input', (e)=> setPos(e.target.value));
+          let dragging = false;
+          const rectPct = (clientX) => {
+            const r = root.getBoundingClientRect();
+            return ((clientX - r.left) / r.width) * 100;
+          };
+          const start = (e) => { dragging = true; root.setPointerCapture?.(e.pointerId); };
+          const move  = (e) => { if(!dragging) return; setPos(rectPct(e.clientX)); };
+          const end   = ()=> dragging = false;
+          root.addEventListener('pointerdown', (e)=>{ start(e); move(e); });
+          window.addEventListener('pointermove', move);
+          window.addEventListener('pointerup', end);
+          root.addEventListener('keydown', (e)=>{
+            if(e.key === 'ArrowLeft'){ setPos(parseFloat(range.value) - 2); }
+            if(e.key === 'ArrowRight'){ setPos(parseFloat(range.value) + 2); }
+          });
+        }
+        document.querySelectorAll('.ba-compare').forEach(initCompare);
+      })();
     </script>
   </head>
   Skip around a magical keyboard echoing cusswords
@@ -288,6 +318,28 @@
                 </a>
               </div>
             </div>
+          </div>
+          <div class="articlebody">
+            <a class="anchor" id="OldVsNew" name="OldVsNew"></a>
+            <h2 class="article-title">Old vs New</h2>
+            <div class="columns">
+              <div class="nested-column">
+                <a class="anchor" id="1" name="1"></a>
+                <div class="wrap">
+                  <h1>Ossel’s Odyssey – Old vs New</h1>
+                  <figure class="ba-compare" data-start="50" aria-label="Before and After comparison: Old vs New">
+                    <img src="o_Ossel_Ingame_01_old.jpg" alt="Old build screenshot" loading="lazy" />
+                    <div class="ba-after">
+                      <img src="o_Ossel_Ingame_01.jpg" alt="New build screenshot" loading="lazy" />
+                    </div>
+                    <div class="ba-divider" aria-hidden="true"></div>
+                    <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Comparison slider position" />
+                    <button class="ba-handle" type="button" aria-label="Drag to compare"></button>
+                    <figcaption class="ba-label ba-label--before">OLD (Unity 4)</figcaption>
+                    <figcaption class="ba-label ba-label--after">NEW (Unity 6)</figcaption>
+                  </figure>
+                </div>
+              </div>
           </div>
           <div class="articlebody">
             <a class="anchor" id="Screenshots" name="Screenshots"></a>
